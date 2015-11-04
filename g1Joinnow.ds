@@ -1,0 +1,104 @@
+<testcase name='g1Joinnow' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="REPOSITORY/registrationTestData/testdata/stagemembers102715.csv" exectype="runstepbystep" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;http://g-member-stg1.copart.de/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Deutsch&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.de/#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ajax active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Deutsch')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;English&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;SelectedLanguage&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;lang&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;region&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='lang']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modal-language-select']/div/div/div[1]/form/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, I Can Read It&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;confirmlang&quot;)" selected="false"/>
+		<accessor type="click" value="link(141)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.de/#[4]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large grid_4_DE confirm-lang active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, I Can Read It')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='confirmlang']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='content-lang']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Auctions&quot;)" selected="false"/>
+		<accessor type="click" value="link(11)" selected="true"/>
+		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.de/DE/Auctions/Today&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Auctions')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-auction']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/DE/Auctions/Today')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Join Live Auction&quot;)" selected="false"/>
+		<accessor type="click" value="link(38)" selected="true"/>
+		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.de/de/Auctions/JoinAuctionModal?strURL=5003-A&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button small blue ajax join-button&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Join Live Auction')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='LiveAuctions']/tbody/tr/td[5]/table/tbody/tr/td/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Auctions/JoinAuctionModal?strURL=5003-A')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
