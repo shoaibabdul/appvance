@@ -34,6 +34,7 @@
     <resource name="g1savedSearch_buyer.ds" type="ds" path="{scenario}/g1savedSearch_buyer.ds" cache="false"/>
     <resource name="g1Joinnow.ds" type="ds" path="{scenario}/g1Joinnow.ds" cache="false"/>
     <resource name="g1buyerRegistration.ds" type="ds" path="{scenario}/g1buyerRegistration.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/automation/testdata/100members.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="R3_amazon" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="Never"/>
@@ -46,7 +47,18 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Buyer emails" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="100members.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="user credentials" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="100members.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -97,7 +109,9 @@
     </controller>
     <testcase name="member_login" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1Login.ds"/>
+        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1Login.ds">
+          <argument name="Buyer emails" method="getNextData" dpl="Buyer emails"/>
+        </run>
       </test>
     </testcase>
     <testcase name="LotDeatils" expand="yes" optionState="true" thinktimeState="true">
@@ -107,7 +121,9 @@
     </testcase>
     <testcase name="SavedSearch" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="Saved Search as Member" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1savedSearch_buyer.ds"/>
+        <run name="Saved Search as Member" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1savedSearch_buyer.ds">
+          <argument name="user credentials" method="getNextData" dpl="user credentials"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Join Auction" expand="yes" optionState="true" thinktimeState="true">
