@@ -29,15 +29,14 @@
     <categorization>round2_Baseline Performance test Stage</categorization>
   </basics>
   <resources>
-    <resource name="newbuyerLogin.ds" type="ds" path="{scenario}/newbuyerLogin.ds" cache="false"/>
-    <resource name="NewLotDetails.ds" type="ds" path="{scenario}/NewLotDetails.ds" cache="false"/>
-    <resource name="savedSearchBuyer.ds" type="ds" path="{scenario}/savedSearchBuyer.ds" cache="false"/>
-    <resource name="random_email_gen.ds" type="ds" path="{scenario}/random_email_gen.ds" cache="false"/>
-    <resource name="clickJoinNowButton.ds" type="ds" path="{scenario}/clickJoinNowButton.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/g1-perf/testdata/100members.csv" cache="false"/>
+    <resource name="g1Login.ds" type="ds" path="{scenario}/g1Login.ds" cache="false"/>
+    <resource name="g1LotDetails_public.ds" type="ds" path="{scenario}/g1LotDetails_public.ds" cache="false"/>
+    <resource name="g1savedSearch_buyer.ds" type="ds" path="{scenario}/g1savedSearch_buyer.ds" cache="false"/>
+    <resource name="g1Joinnow.ds" type="ds" path="{scenario}/g1Joinnow.ds" cache="false"/>
+    <resource name="g1buyerRegistration.ds" type="ds" path="{scenario}/g1buyerRegistration.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="R3_amazon" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="Never"/>
+    <cloud name="R3_amazon" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="Never"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -47,18 +46,7 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources>
-    <dpl name="buyers" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="100members.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Untitled2" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="100members.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -109,31 +97,27 @@
     </controller>
     <testcase name="member_login" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="login" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="newbuyerLogin.ds">
-          <argument name="buyers" method="getNextData" dpl="buyers"/>
-        </run>
+        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1Login.ds"/>
       </test>
     </testcase>
     <testcase name="LotDeatils" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="LotDetails" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="NewLotDetails.ds"/>
+        <run name="LotDetails as Public" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1LotDetails_public.ds"/>
       </test>
     </testcase>
     <testcase name="SavedSearch" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="SSearch" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="savedSearchBuyer.ds">
-          <argument name="Untitled2" method="getRandomData" dpl="Untitled2"/>
-        </run>
+        <run name="Saved Search as Member" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1savedSearch_buyer.ds"/>
       </test>
     </testcase>
     <testcase name="Join Auction" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="Join Auction" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="clickJoinNowButton.ds"/>
+        <run name="Click Join Live Auction button" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1Joinnow.ds"/>
       </test>
     </testcase>
     <testcase name="Member Reg" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="member registration " testclass="sahi" method="firefox-xvfb" langtype="ds" resource="random_email_gen.ds"/>
+        <run name="New Member registration." testclass="sahi" method="firefox-xvfb" langtype="ds" resource="g1buyerRegistration.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -142,7 +126,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="round_2_baseline_perf_tests" name="round_2_baseline_perf_tests">
-      <testcase name="member_login" totalexecutions="1" users="10">
+      <testcase name="member_login" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -161,7 +145,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="LotDeatils" totalexecutions="1" users="10">
+      <testcase name="LotDeatils" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -180,7 +164,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="SavedSearch" totalexecutions="1" users="10">
+      <testcase name="SavedSearch" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -218,7 +202,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="Member Reg" totalexecutions="1" users="10">
+      <testcase name="Member Reg" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -243,7 +227,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-152-90-110.compute-1.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-175-190-104.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
