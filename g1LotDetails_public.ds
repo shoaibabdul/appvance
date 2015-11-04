@@ -1,0 +1,116 @@
+<testcase name='g1LotDetails_public' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;http://g-member-stg1.copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Deutsch&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ajax&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Deutsch')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;English&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;SelectedLanguage&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;lang&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;region&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='lang']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modal-language-select']/div/div/div[1]/form/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, I Can Read It&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;confirmlang&quot;)" selected="false"/>
+		<accessor type="click" value="link(139)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#[4]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large grid_4_DE confirm-lang active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, I Can Read It')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='confirmlang']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='content-lang']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;button large grid_4 dual-input&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='searchbytype']/table[2]/tbody/tr/td/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;2&quot;)" selected="true"/>
+		<accessor type="click" value="link(48)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/de/search?companyCode_vf=de&amp;Sort=sd&amp;LotTypes=V&amp;YearFrom=2005&amp;YearTo=2016&amp;searchTitle=2005-2016%2C&amp;cn=2005-2016%2C&amp;Page=2&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;pager-num[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'2')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[1]/div[2]/div[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/search?companyCode_vf=de&amp;Sort=sd&amp;LotTypes=V&amp;YearFrom=2005&amp;YearTo=2016&amp;searchTitle=2005-2016%2C&amp;cn=2005-2016%2C&amp;Page=2')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;2005 Audi A4 Tdi&quot;)" selected="false"/>
+		<accessor type="click" value="link(79)" selected="true"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/de/Lot/50001495?searchId=107159566&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'2005 Audi A4 Tdi')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[4]/table/tbody/tr[2]/td[1]/div/div[2]/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Lot/50001495?searchId=107159566')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[1]/div/div[2]/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
