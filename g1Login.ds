@@ -1,0 +1,146 @@
+<testcase name='g1Login' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="REPOSITORY/registrationTestData/testdata/stagemembers102715.csv" exectype="runstepbystep" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;http://g-member-stg1.copart.de/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Deutsch&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ajax&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Deutsch')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;English&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;SelectedLanguage&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;lang&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;region&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='lang']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modal-language-select']/div/div/div[1]/form/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, I Can Read It&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;confirmlang&quot;)" selected="false"/>
+		<accessor type="click" value="link(139)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#[4]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large grid_4_DE confirm-lang active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, I Can Read It')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='confirmlang']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='content-lang']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/de/Account/LogOn&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign In')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Account/LogOn')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[1]/a[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$memberid&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;right emailval&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$password&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;right&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/div[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Sign Into Your Account&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;button large blue right&quot;)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//fieldset/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/de/Account/LogOff&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Account/LogOff')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
