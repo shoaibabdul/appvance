@@ -1,0 +1,362 @@
+<testcase name='g1buyerRegistration' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;http://g-member-stg1.copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Deutsch&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ajax active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Deutsch')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;English&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;SelectedLanguage&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;lang&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;region&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='lang']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modal-language-select']/div/div/div[1]/form/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, I Can Read It&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;confirmlang&quot;)" selected="false"/>
+		<accessor type="click" value="link(139)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/#[4]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large grid_4_DE confirm-lang active&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, I Can Read It')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='confirmlang']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='content-lang']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Register&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g-member-stg1.copart.de/de/Registration&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Register')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Registration')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Fnam&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='FirstName']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Fname&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='FirstName']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Lname&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;LastName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;LastName&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(1)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='LastName']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;cts&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Company&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Company&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(2)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Company']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[3]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[3]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;main street&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;MailingAddress.StreetAddress1&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;MailingAddress_StreetAddress1&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(4)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg[4]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='MailingAddress_StreetAddress1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[5]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[5]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Berlin&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;MailingAddress.State&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;MailingAddress_State&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(1)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;select grid_6 omega normal[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='MailingAddress_State']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[8]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[8]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Berlin&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;MailingAddress.City&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;MailingAddress_City&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(6)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;group-input omega reg[6]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='MailingAddress_City']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[9]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[9]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;10150&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;MailingAddress.PostalCode1&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;MailingAddress_PostalCode1&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(7)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;text grid_2&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='MailingAddress_PostalCode1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[1]/ul/li[10]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[10]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;MailingPhysicalAddressesSame&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;address-mailing-same&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;true&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;left&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='address-mailing-same']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[2]/ul/li/label[2]/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//label[2]/input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Poland&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;VATCountry&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;VAT_Country&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(4)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;select grid_6 omega normal[4]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='VAT_Country']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[4]/ul/li[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="eval('Math.floor(Math.random()*10)')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;VAT&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;VAT&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(12)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;omega phone&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='VAT']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[4]/ul/li[2]/input[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="store" value="eval('\&quot;test\&quot;+Math.floor(Math.random()*100000)+\&quot;@mailinator.com\&quot;')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="emailAddr" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="textbox(&quot;Email&quot;)" selected="false"/>
+		<accessor type="assertExists" value="textbox(&quot;Email&quot;)" selected="false"/>
+		<accessor type="assertExists" value="textbox(12)" selected="false"/>
+		<accessor type="assertExists" value="textbox(&quot;group-input omega emailval&quot;)" selected="false"/>
+		<accessor type='' value="textbox(&quot;Email&quot;).storedVars[&quot;emailAddr&quot;]" selected="false"/>
+		<accessor type='' value="textbox(&quot;Email&quot;),storedVars[&quot;emailAddr&quot;]" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Email']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[4]/ul/li[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//fieldset[4]/ul/li[1]/input&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="textbox(&quot;ConfirmEmail&quot;)" selected="false"/>
+		<accessor type="assertExists" value="textbox(&quot;ConfirmEmail&quot;)" selected="false"/>
+		<accessor type="assertExists" value="textbox(13)" selected="false"/>
+		<accessor type="assertExists" value="textbox(&quot;group-input omega confirm emailval&quot;)" selected="false"/>
+		<accessor type='' value="textbox(&quot;ConfirmEmail&quot;),storedVars['emailAddr&quot;]" selected="false"/>
+		<accessor type='' value="textbox(&quot;ConfirmEmail&quot;),storedVars[&quot;emailAddr&quot;]" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='ConfirmEmail']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[4]/ul/li[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//fieldset[4]/ul/li[2]/input&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;123467890&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;PhoneNumber1&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;PhoneNumber1&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(14)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;omega phone&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='PhoneNumber1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='otherPhone1']/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;Is18OrOver&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;true[1]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='Is18OrOver']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='entry']/fieldset[5]/ul/li/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//fieldset[5]/ul/li/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Submit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;button large blue&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='submit-section']/fieldset/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
