@@ -16,7 +16,7 @@
 
 
 
-<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="wait" value="300" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
