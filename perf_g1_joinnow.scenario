@@ -83,7 +83,7 @@
   </options>
   <templates>
     <controller name="clickJoinNowButton_pef">
-      <round name="clickJoinNowButton_pef" totalusers="30" testtype="users" totaliterations="30">
+      <round name="clickJoinNowButton_pef" totalusers="5" testtype="users" totaliterations="5">
         <testcase name="joinNowandSigIn" executions="1"/>
       </round>
     </controller>
@@ -98,7 +98,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="clickJoinNowButton_pef" name="clickJoinNowButton_pef">
-      <testcase name="joinNowandSigIn" totalexecutions="1" users="30">
+      <testcase name="joinNowandSigIn" totalexecutions="1" users="5">
         <options>
           <opt name="RampUpUsers" value="0"/>
           <opt name="RampUpSeconds" value="0"/>
