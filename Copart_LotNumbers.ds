@@ -1,0 +1,32 @@
+<testcase name='Copart_LotNumbers' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="SERVER/C:/Users/Administrator/Desktop/copart_lots.csv" exectype="runstepbystep" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;$Lot_Numbers&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
