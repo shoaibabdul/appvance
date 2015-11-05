@@ -119,7 +119,7 @@
 
 
 
-<step action="setValue" value="&quot;$memberid&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value="&quot;$usename&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
