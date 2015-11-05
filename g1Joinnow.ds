@@ -87,10 +87,10 @@
 
 <step action="click" value='' type="web" desc="clicking joinlive button" isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Join Live Auction&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Join Live Auction&quot;)" selected="true"/>
 		<accessor type="click" value="link(38)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.de/de/Auctions/JoinAuctionModal?strURL=5003-A&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;button small blue ajax join-button&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;button small blue ajax join-button&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Join Live Auction')]&quot;" selected="true"/>
