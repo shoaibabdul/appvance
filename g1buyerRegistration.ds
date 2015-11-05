@@ -258,7 +258,7 @@
 
 
 
-<step action="store" value="eval('\&quot;test\&quot;+Math.floor(Math.random()*100000)+\&quot;@mailinator.com\&quot;')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="store" value="eval('\&quot;QAtest\&quot;+Math.floor(Math.random()*100000)+\&quot;@mailinator.com\&quot;')" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="emailAddr" selected="true"/>
