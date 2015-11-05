@@ -99,7 +99,7 @@
   </options>
   <templates>
     <controller name="round_2_baseline_perf_tests">
-      <round name="round_2_baseline_perf_tests" totalusers="150" testtype="users" totaliterations="300">
+      <round name="round_2_baseline_perf_tests" totalusers="500" testtype="users" totaliterations="1000">
         <testcase name="member_login" executions="1"/>
         <testcase name="LotDeatils" executions="1"/>
         <testcase name="SavedSearch" executions="1"/>
@@ -142,7 +142,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="round_2_baseline_perf_tests" name="round_2_baseline_perf_tests">
-      <testcase name="member_login" totalexecutions="1" users="30">
+      <testcase name="member_login" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -161,7 +161,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="LotDeatils" totalexecutions="1" users="30">
+      <testcase name="LotDeatils" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -180,7 +180,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="SavedSearch" totalexecutions="1" users="30">
+      <testcase name="SavedSearch" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -199,7 +199,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="Join Auction" totalexecutions="1" users="30">
+      <testcase name="Join Auction" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
@@ -218,7 +218,7 @@
           <opt name="ThinkTimeMax" value="5000"/>
         </options>
       </testcase>
-      <testcase name="Member Reg" totalexecutions="1" users="30">
+      <testcase name="Member Reg" totalexecutions="1" users="100">
         <options>
           <opt name="RampUpUsers" value="5"/>
           <opt name="RampUpSeconds" value="3"/>
