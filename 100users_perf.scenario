@@ -157,8 +157,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="3000"/>
-          <opt name="ThinkTimeMax" value="5000"/>
+          <opt name="ThinkTimeMin" value="5000"/>
+          <opt name="ThinkTimeMax" value="8000"/>
         </options>
       </testcase>
       <testcase name="LotDeatils" totalexecutions="1" users="100">
@@ -176,8 +176,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="3000"/>
-          <opt name="ThinkTimeMax" value="5000"/>
+          <opt name="ThinkTimeMin" value="5000"/>
+          <opt name="ThinkTimeMax" value="8000"/>
         </options>
       </testcase>
       <testcase name="SavedSearch" totalexecutions="1" users="100">
@@ -195,8 +195,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="3000"/>
-          <opt name="ThinkTimeMax" value="5000"/>
+          <opt name="ThinkTimeMin" value="5000"/>
+          <opt name="ThinkTimeMax" value="8000"/>
         </options>
       </testcase>
       <testcase name="Join Auction" totalexecutions="1" users="100">
@@ -214,8 +214,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="3000"/>
-          <opt name="ThinkTimeMax" value="5000"/>
+          <opt name="ThinkTimeMin" value="5000"/>
+          <opt name="ThinkTimeMax" value="8000"/>
         </options>
       </testcase>
       <testcase name="Member Reg" totalexecutions="1" users="100">
@@ -233,8 +233,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="3000"/>
-          <opt name="ThinkTimeMax" value="5000"/>
+          <opt name="ThinkTimeMin" value="5000"/>
+          <opt name="ThinkTimeMax" value="8000"/>
         </options>
       </testcase>
     </iteration>
