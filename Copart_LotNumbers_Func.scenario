@@ -30,6 +30,7 @@
   </basics>
   <resources>
     <resource name="Copart_LotNumbers.ds" type="ds" path="{scenario}/Copart_LotNumbers.ds" cache="false"/>
+    <resource name="Copart_LotNumbers.ds" type="ds" path="{scenario}/Copart_LotNumbers.ds" cache="false"/>
     <resource type="data" path="{scenario}/copart_lots.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/automation/testdata/copart_lots.csv" cache="false"/>
   </resources>
