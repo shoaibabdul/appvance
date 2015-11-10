@@ -142,20 +142,4 @@
 </step>
 
 
-
-<step action="setValue" value="&quot;&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
-	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
-		<accessor type="setValue" value="textbox(&quot;omega&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='lotNumberTextBox']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[1]/li[2]/div/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[2]/div/input&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
 </testcase>
