@@ -33,6 +33,7 @@
     <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
     <resource name="Seller_OnSaleNow.ds" type="ds" path="{scenario}/Seller_OnSaleNow.ds" cache="false"/>
     <resource name="Seller_BidApproval.ds" type="ds" path="{scenario}/Seller_BidApproval.ds" cache="false"/>
+    <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -86,7 +87,7 @@
   </options>
   <templates>
     <controller name="seller_qa_perf">
-      <round name="seller_qa_perf" totalusers="20" testtype="users" totaliterations="40" totalexecutions="1"/>
+      <round name="seller_qa_perf" totalusers="25" testtype="users" totaliterations="50" totalexecutions="1"/>
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
@@ -103,9 +104,14 @@
         <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_OnSaleNow.ds"/>
       </test>
     </testcase>
-    <testcase name="BiadApproval" expand="yes">
+    <testcase name="BidApproval" expand="yes">
       <test>
         <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Proquote" expand="yes">
+      <test>
+        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_Proquote.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -117,7 +123,8 @@
       <testcase name="LogIn" users="5"/>
       <testcase name="LotDisplay" users="5"/>
       <testcase name="OnSaleNow" users="5"/>
-      <testcase name="BiadApproval" users="5"/>
+      <testcase name="BidApproval" users="5"/>
+      <testcase name="Proquote" users="5"/>
     </iteration>
   </execution>
   <logs>
