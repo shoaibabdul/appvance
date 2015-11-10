@@ -86,7 +86,7 @@
   </options>
   <templates>
     <controller name="seller_qa_perf">
-      <round name="seller_qa_perf" totalusers="25" testtype="users" totaliterations="25" totalexecutions="1"/>
+      <round name="seller_qa_perf" totalusers="20" testtype="users" totaliterations="40" totalexecutions="1"/>
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
