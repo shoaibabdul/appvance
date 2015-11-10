@@ -5,12 +5,15 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://seller.qa.copart.com&quot;" type="web" desc="Open C3Seller QA webpage." isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://tcseller.copart.com/home.html&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
-		<accessor type="navigateTo" value='' selected="true"/>
+		<accessor type='' value='' selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
