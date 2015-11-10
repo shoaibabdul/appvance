@@ -5,7 +5,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://seller.qa.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://seller.qa.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -16,7 +16,7 @@
 
 
 
-<step action="setValue" value="&quot;selauto&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="setValue" value="&quot;selauto&quot;" type="web" desc="Enter UserName" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -31,7 +31,7 @@
 
 
 
-<step action="setValue" value="&quot;welcome2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;welcome2&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -46,7 +46,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="click" value='' type="web" desc="Click Login Button" isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -62,7 +62,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Click Locations Button" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(28)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="click" value='' type="web" desc="Click My Account Button" isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;My Account&quot;)" selected="true"/>
 		<accessor type="click" value="link(29)" selected="false"/>
@@ -96,7 +96,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Click Support Button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Support&quot;)" selected="true"/>
 		<accessor type="click" value="link(33)" selected="false"/>
@@ -113,7 +113,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc="Click Sign Out Button" isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
@@ -130,7 +130,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Click Yes, Continue Button" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(86)" selected="false"/>
