@@ -96,7 +96,7 @@
   </options>
   <templates>
     <controller name="tc_seller_qa_perf">
-      <round name="tc_seller_qa_perf" totalusers="100" time="30" testtype="users" totaliterations="200"/>
+      <round name="tc_seller_qa_perf" totalusers="5" time="10" testtype="users" totaliterations="5"/>
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
@@ -131,11 +131,11 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="tc_seller_qa_perf" name="tc_seller_qa_perf">
-      <testcase name="LogIn" users="20"/>
-      <testcase name="LotDisplay" users="20"/>
-      <testcase name="OnSaleNow" users="20"/>
-      <testcase name="BidApproval" users="20"/>
-      <testcase name="Proquote" users="20"/>
+      <testcase name="LogIn" users="5"/>
+      <testcase name="LotDisplay" users="1"/>
+      <testcase name="OnSaleNow" users="1"/>
+      <testcase name="BidApproval" users="1"/>
+      <testcase name="Proquote" users="1"/>
     </iteration>
   </execution>
   <logs>
