@@ -129,7 +129,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="tc_seller_qa_perf" name="tc_seller_qa_perf">
-      <testcase name="LogIn" users="5">
+      <testcase name="LogIn" users="20">
         <options>
           <opt name="RampUpUsers" value="0"/>
           <opt name="RampUpSeconds" value="0"/>
@@ -148,7 +148,7 @@
           <opt name="ThinkTimeMax" value="15000"/>
         </options>
       </testcase>
-      <testcase name="LotDisplay" users="5">
+      <testcase name="LotDisplay" users="20">
         <options>
           <opt name="RampUpUsers" value="0"/>
           <opt name="RampUpSeconds" value="0"/>
@@ -167,7 +167,7 @@
           <opt name="ThinkTimeMax" value="15000"/>
         </options>
       </testcase>
-      <testcase name="OnSaleNow" users="5">
+      <testcase name="OnSaleNow" users="20">
         <options>
           <opt name="RampUpUsers" value="0"/>
           <opt name="RampUpSeconds" value="0"/>
