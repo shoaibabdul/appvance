@@ -81,17 +81,15 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval[9]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;Status:  - On Approval[3]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[9]&quot;)" selected="false"/>
-		<accessor type="click" value="link(101)" selected="true"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/bidApprovalDetails.html?lotId=21039613&amp;yardno=023&amp;vixflag=&amp;numberRuns=54&amp;itemno=46&amp;auctionDate=11/10/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_[3]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tcseller.copart.com/home.html[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[10]/td[15]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=21039613&amp;yardno=023&amp;vixflag=&amp;numberRuns=54&amp;itemno=46&amp;auctionDate=11/10/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[10]/td[15]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'My Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('MyCopart');\&quot;]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -99,9 +97,41 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Bid Approval[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;title[23]&quot;)" selected="false"/>
+		<accessor type="click" value="span(74)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;On Approval[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;bidApproval_20[8]&quot;)" selected="false"/>
+		<accessor type="click" value="link(96)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tcseller.copart.com/bidApprovalDetails.html?lotId=49260375&amp;yardno=012&amp;vixflag=&amp;numberRuns=3&amp;itemno=0&amp;auctionDate=&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='c3CommonDataTable']/tbody/tr[9]/td[15]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=49260375&amp;yardno=012&amp;vixflag=&amp;numberRuns=3&amp;itemno=0&amp;auctionDate=')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[9]/td[15]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/bidApprovalDetails.html?lotId=21039613&amp;yardno=023&amp;vixflag=&amp;numberRuns=54&amp;itemno=46&amp;auctionDate=11/10/2015#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tcseller.copart.com/bidApprovalDetails.html?lotId=49260375&amp;yardno=012&amp;vixflag=&amp;numberRuns=3&amp;itemno=0&amp;auctionDate=#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
@@ -114,18 +144,18 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="false"/>
-		<accessor type="click" value="link(109)" selected="true"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(109)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tcseller.copart.com/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, Continue')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='modalButtonDiv']/ul/li[2]/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//a[contains(@href, 'logout')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
