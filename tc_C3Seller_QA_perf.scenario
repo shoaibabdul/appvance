@@ -34,6 +34,7 @@
     <resource name="ts_Seller_OnSaleNow.ds" type="ds" path="{scenario}/ts_Seller_OnSaleNow.ds" cache="false"/>
     <resource name="ts_Seller_BidApproval.ds" type="ds" path="{scenario}/ts_Seller_BidApproval.ds" cache="false"/>
     <resource name="ts_Seller_Proquote.ds" type="ds" path="{scenario}/ts_Seller_Proquote.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lync_users.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -46,7 +47,13 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="LyncUsers" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="lync_users.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -91,7 +98,9 @@
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LogIn.ds"/>
+        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LogIn.ds">
+          <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
+        </run>
       </test>
     </testcase>
     <testcase name="LotDisplay" expand="yes">
