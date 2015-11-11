@@ -94,31 +94,31 @@
   </options>
   <templates>
     <controller name="tc_seller_qa_perf">
-      <round name="tc_seller_qa_perf" totalusers="25" testtype="users" totaliterations="50" totalexecutions="1"/>
+      <round name="tc_seller_qa_perf" totalusers="100" time="30" testtype="users" totaliterations="200"/>
     </controller>
-    <testcase name="LogIn" expand="yes">
+    <testcase name="LogIn" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LogIn.ds">
           <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
         </run>
       </test>
     </testcase>
-    <testcase name="LotDisplay" expand="yes">
+    <testcase name="LotDisplay" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LotDisplay.ds"/>
       </test>
     </testcase>
-    <testcase name="OnSaleNow" expand="yes">
+    <testcase name="OnSaleNow" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_OnSaleNow.ds"/>
       </test>
     </testcase>
-    <testcase name="BidApproval" expand="yes">
+    <testcase name="BidApproval" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_BidApproval.ds"/>
       </test>
     </testcase>
-    <testcase name="Proquote" expand="yes">
+    <testcase name="Proquote" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_Proquote.ds"/>
       </test>
@@ -129,11 +129,101 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="tc_seller_qa_perf" name="tc_seller_qa_perf">
-      <testcase name="LogIn" users="5"/>
-      <testcase name="LotDisplay" users="5"/>
-      <testcase name="OnSaleNow" users="5"/>
-      <testcase name="BidApproval" users="5"/>
-      <testcase name="Proquote" users="5"/>
+      <testcase name="LogIn" users="5">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="10000"/>
+          <opt name="ThinkTimeMax" value="15000"/>
+        </options>
+      </testcase>
+      <testcase name="LotDisplay" users="5">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="10000"/>
+          <opt name="ThinkTimeMax" value="15000"/>
+        </options>
+      </testcase>
+      <testcase name="OnSaleNow" users="5">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="10000"/>
+          <opt name="ThinkTimeMax" value="15000"/>
+        </options>
+      </testcase>
+      <testcase name="BidApproval" users="5">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="10000"/>
+          <opt name="ThinkTimeMax" value="15000"/>
+        </options>
+      </testcase>
+      <testcase name="Proquote" users="5">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="10000"/>
+          <opt name="ThinkTimeMax" value="15000"/>
+        </options>
+      </testcase>
     </iteration>
   </execution>
   <logs>
