@@ -96,24 +96,24 @@
     <controller name="tc_seller_qa_perf">
       <round name="tc_seller_qa_perf" totalusers="100" time="30" testtype="users" totaliterations="200"/>
     </controller>
-    <testcase name="LogIn" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="LogIn" expand="yes">
       <test>
         <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LogIn.ds">
           <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
         </run>
       </test>
     </testcase>
-    <testcase name="LotDisplay" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="LotDisplay" expand="yes">
       <test>
         <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LotDisplay.ds"/>
       </test>
     </testcase>
-    <testcase name="OnSaleNow" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="OnSaleNow" expand="yes">
       <test>
         <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_OnSaleNow.ds"/>
       </test>
     </testcase>
-    <testcase name="BidApproval" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="BidApproval" expand="yes">
       <test>
         <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_BidApproval.ds"/>
       </test>
@@ -129,82 +129,10 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="tc_seller_qa_perf" name="tc_seller_qa_perf">
-      <testcase name="LogIn" users="20">
-        <options>
-          <opt name="RampUpUsers" value="1"/>
-          <opt name="RampUpSeconds" value="5"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="10000"/>
-          <opt name="ThinkTimeMax" value="15000"/>
-        </options>
-      </testcase>
-      <testcase name="LotDisplay" users="20">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="10000"/>
-          <opt name="ThinkTimeMax" value="15000"/>
-        </options>
-      </testcase>
-      <testcase name="OnSaleNow" users="20">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="10000"/>
-          <opt name="ThinkTimeMax" value="15000"/>
-        </options>
-      </testcase>
-      <testcase name="BidApproval" users="5">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="10000"/>
-          <opt name="ThinkTimeMax" value="15000"/>
-        </options>
-      </testcase>
+      <testcase name="LogIn" users="20"/>
+      <testcase name="LotDisplay" users="20"/>
+      <testcase name="OnSaleNow" users="20"/>
+      <testcase name="BidApproval" users="20"/>
       <testcase name="Proquote" users="5">
         <options>
           <opt name="RampUpUsers" value="0"/>
