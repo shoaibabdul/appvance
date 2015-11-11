@@ -37,7 +37,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lync_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
