@@ -67,20 +67,6 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="false"/>
-		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="false"/>
-		<accessor type="click" value="span(75)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
-	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://tcseller.copart.com/home.html[1]&quot;)" selected="false"/>
@@ -95,7 +81,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Bid Approval[1]&quot;)" selected="true"/>
 		<accessor type="click" value="span(&quot;title[23]&quot;)" selected="false"/>
@@ -109,7 +95,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;On Approval[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
@@ -127,7 +113,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
@@ -144,7 +130,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(109)" selected="false"/>
