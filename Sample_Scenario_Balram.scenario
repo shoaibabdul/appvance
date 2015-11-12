@@ -84,7 +84,7 @@
   <templates>
     <controller name="SampleScenarioBalram">
       <round name="SampleScenarioBalram" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="5"/>
+        <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="10"/>
       </round>
     </controller>
     <testcase name="TC1_LotDisplay_Sample_Balram" expand="yes">
@@ -98,7 +98,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="SampleScenarioBalram" name="SampleScenarioBalram">
-      <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="5" users="5"/>
+      <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="10" users="5"/>
     </iteration>
   </execution>
   <logs>
