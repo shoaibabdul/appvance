@@ -65,7 +65,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
     </options>
     <options type="selenium">
       <opt name="loglevel" value="INFO"/>
@@ -83,7 +83,7 @@
   </options>
   <templates>
     <controller name="SampleScenarioBalram">
-      <round name="SampleScenarioBalram" totalusers="5" testtype="users" totaliterations="5" totalexecutions="1"/>
+      <round name="SampleScenarioBalram" totalusers="5" time="60" maxtime="60" testtype="users" totaliterations="5" totalexecutions="10"/>
     </controller>
     <testcase name="TC1_LotDisplay_Sample_Balram" expand="yes">
       <test>
