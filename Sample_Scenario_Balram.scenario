@@ -20,24 +20,19 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>tc_C3Seller_QA_Pef</name>
+    <name>Sample_Scenario_Balram</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName>Ravendra</basicName>
-    <creator>Ravendra</creator>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram Anthareddy</creator>
     <links/>
     <versions>1.0</versions>
-    <categorization>C3 Seller QA web</categorization>
+    <categorization>C3 Seller QA Web</categorization>
   </basics>
   <resources>
-    <resource name="ts_Seller_LogIn.ds" type="ds" path="{scenario}/ts_Seller_LogIn.ds" cache="false"/>
-    <resource name="ts_Seller_LotDisplay.ds" type="ds" path="{scenario}/ts_Seller_LotDisplay.ds" cache="false"/>
-    <resource name="ts_Seller_OnSaleNow.ds" type="ds" path="{scenario}/ts_Seller_OnSaleNow.ds" cache="false"/>
-    <resource name="ts_Seller_BidApproval.ds" type="ds" path="{scenario}/ts_Seller_BidApproval.ds" cache="false"/>
-    <resource name="ts_Seller_Proquote.ds" type="ds" path="{scenario}/ts_Seller_Proquote.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lync_users.csv" cache="false"/>
+    <resource name="TC1_LotDisplay_Sample_Balram.ds" type="ds" path="{scenario}/TC1_LotDisplay_Sample_Balram.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -47,13 +42,7 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources>
-    <dpl name="LyncUsers" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="lync_users.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -62,10 +51,8 @@
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="5"/>
-      <opt name="MaxRampUpTime" value="20"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="5"/>
-      <opt name="MaxRampDownTime" value="20"/>
       <opt name="ThinkTimeMin" value="10000"/>
       <opt name="ThinkTimeMax" value="15000"/>
       <opt name="MinSleepTime" value="0"/>
@@ -78,7 +65,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
     </options>
     <options type="selenium">
       <opt name="loglevel" value="INFO"/>
@@ -95,34 +82,14 @@
     </options>
   </options>
   <templates>
-    <controller name="tc_seller_qa_perf">
-      <round name="tc_seller_qa_perf" totalusers="250" time="30" testtype="users" totaliterations="250"/>
+    <controller name="SampleScenarioBalram">
+      <round name="SampleScenarioBalram" totalusers="5" testtype="users" totaliterations="5">
+        <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="10"/>
+      </round>
     </controller>
-    <testcase name="LogIn" expand="yes">
+    <testcase name="TC1_LotDisplay_Sample_Balram" expand="yes">
       <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LogIn.ds">
-          <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="LotDisplay" expand="yes">
-      <test>
-        <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_LotDisplay.ds"/>
-      </test>
-    </testcase>
-    <testcase name="OnSaleNow" expand="yes">
-      <test>
-        <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_OnSaleNow.ds"/>
-      </test>
-    </testcase>
-    <testcase name="BidApproval" expand="yes">
-      <test>
-        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_BidApproval.ds"/>
-      </test>
-    </testcase>
-    <testcase name="Proquote" expand="yes">
-      <test>
-        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="ts_Seller_Proquote.ds"/>
+        <run name="TC1_LotDisplay_Sample_Balram" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC1_LotDisplay_Sample_Balram.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -130,12 +97,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="tc_seller_qa_perf" name="tc_seller_qa_perf">
-      <testcase name="LogIn" users="50"/>
-      <testcase name="LotDisplay" users="50"/>
-      <testcase name="OnSaleNow" users="50"/>
-      <testcase name="BidApproval" users="50"/>
-      <testcase name="Proquote" users="50"/>
+    <iteration controller="SampleScenarioBalram" name="SampleScenarioBalram">
+      <testcase name="TC1_LotDisplay_Sample_Balram" totalexecutions="10" users="5"/>
     </iteration>
   </execution>
   <logs>

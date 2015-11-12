@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>tc_C3Seller_QA_Pef</name>
+    <name>TC_C3_Seller_QA_Perf_Test_111215_Run01</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Ravendra</basicName>
     <creator>Ravendra</creator>
@@ -61,11 +61,11 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="5"/>
-      <opt name="MaxRampUpTime" value="20"/>
+      <opt name="RampUpSeconds" value="2"/>
+      <opt name="MaxRampUpTime" value="10"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="5"/>
-      <opt name="MaxRampDownTime" value="20"/>
+      <opt name="RampDownSeconds" value="2"/>
+      <opt name="MaxRampDownTime" value="10"/>
       <opt name="ThinkTimeMin" value="10000"/>
       <opt name="ThinkTimeMax" value="15000"/>
       <opt name="MinSleepTime" value="0"/>
