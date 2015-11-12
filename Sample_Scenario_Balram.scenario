@@ -22,11 +22,11 @@
   <basics>
     <name>Sample_Scenario_Balram</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName/>
-    <creator/>
+    <basicName>Balram</basicName>
+    <creator>Balram</creator>
     <links/>
-    <versions/>
-    <categorization/>
+    <versions>1.0</versions>
+    <categorization>C3 Seller QA Web</categorization>
   </basics>
   <resources>
     <resource name="TC1_LotDisplay_Sample_Balram.ds" type="ds" path="{scenario}/TC1_LotDisplay_Sample_Balram.ds" cache="false"/>
@@ -82,12 +82,12 @@
     </options>
   </options>
   <templates>
-    <controller name="Untitled2">
-      <round name="Untitled2" totalusers="1" testtype="users" totaliterations="1" totalexecutions="1"/>
+    <controller name="SampleScenarioBalram">
+      <round name="SampleScenarioBalram" totalusers="5" testtype="users" totaliterations="5" totalexecutions="1"/>
     </controller>
-    <testcase name="Untitled1" expand="yes">
+    <testcase name="TC1_LotDisplay_Sample_Balram" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_LotDisplay_Sample_Balram.ds"/>
+        <run name="TC1_LotDisplay_Sample_Balram" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC1_LotDisplay_Sample_Balram.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -95,8 +95,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="Untitled2" name="Untitled2">
-      <testcase name="Untitled1" users="1"/>
+    <iteration controller="SampleScenarioBalram" name="SampleScenarioBalram">
+      <testcase name="TC1_LotDisplay_Sample_Balram" users="5"/>
     </iteration>
   </execution>
   <logs>
