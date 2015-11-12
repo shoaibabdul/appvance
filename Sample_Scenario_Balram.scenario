@@ -22,8 +22,8 @@
   <basics>
     <name>Sample_Scenario_Balram</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName>Balram</basicName>
-    <creator>Balram</creator>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram Anthareddy</creator>
     <links/>
     <versions>1.0</versions>
     <categorization>C3 Seller QA Web</categorization>
