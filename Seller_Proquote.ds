@@ -89,7 +89,7 @@
 
 
 
-<step action="setSelected" value="&quot;[JST1] JUST TRANSPORTATION (SEARS MERCHANDISE GROUP , CA)&quot;" type="web" desc="Selecting Seller from Dropdown" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;[AAB4] ADVANCE AUTO BROKERS INC. (TAMPA , FL)&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
@@ -105,7 +105,7 @@
 
 
 
-<step action="setValue" value="&quot;75035&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value="&quot;75034&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;sellerDetail.sellerZip&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;sellerZip&quot;)" selected="false"/>
@@ -126,7 +126,7 @@
 		<accessor type="click" value="link(&quot;Submit&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;btnSubmit&quot;)" selected="false"/>
 		<accessor type="click" value="link(64)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/CVEProquote.html#[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://seller.copart.com/CVEProquote.html#[10]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large active&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -139,7 +139,7 @@
 
 
 
-<step action="setSelected" value="&quot;2015&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="setSelected" value="&quot;2006&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="false"/>
@@ -155,7 +155,7 @@
 
 
 
-<step action="setSelected" value="&quot;Honda&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;Acura&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="false"/>
@@ -171,7 +171,7 @@
 
 
 
-<step action="setSelected" value="&quot;ACCORD&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="setSelected" value="&quot;CSX&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="false"/>
@@ -222,7 +222,7 @@
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;damageType&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;damageType&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;damageType&quot;)" selected="false"/>
 		<accessor type="click" value="checkbox(&quot;AO&quot;)" selected="false"/>
 		<accessor type="click" value="checkbox(&quot;damageTypeCheckbox&quot;)" selected="false"/>
 		<accessor type="click" value="checkbox(4)" selected="false"/>
@@ -241,7 +241,7 @@
 		<accessor type="click" value="link(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;btnAutoSearch&quot;)" selected="false"/>
 		<accessor type="click" value="link(67)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/CVEProquote.html#[12]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://seller.copart.com/CVEProquote.html#[12]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large active[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -258,7 +258,7 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://seller.qa.copart.com/c3/CVEProquoteAutoMotorcycleResult.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://seller.copart.com/CVEProquoteAutoMotorcycleResult.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
@@ -266,6 +266,23 @@
 		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/div/div[1]/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(104)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://seller.copart.com/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, Continue')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modalButtonDiv']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
