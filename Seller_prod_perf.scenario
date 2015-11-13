@@ -116,7 +116,7 @@
   </options>
   <templates>
     <controller name="Prod_C3Seller_perf">
-      <round name="Prod_C3Seller_perf" totalusers="1000" time="30" testtype="users" totaliterations="4000"/>
+      <round name="Prod_C3Seller_perf" totalusers="1000" time="60" testtype="users" totaliterations="4000"/>
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
