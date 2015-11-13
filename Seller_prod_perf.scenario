@@ -34,9 +34,10 @@
     <resource name="Seller_OnSaleNow.ds" type="ds" path="{scenario}/Seller_OnSaleNow.ds" cache="false"/>
     <resource name="Seller_BidApproval.ds" type="ds" path="{scenario}/Seller_BidApproval.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/seller_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="amazaon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -46,7 +47,33 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="seller_users.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Untitled2" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="seller_users.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Untitled3" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="seller_users.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Untitled4" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="seller_users.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Untitled5" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="seller_users.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -99,27 +126,37 @@
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LogIn.ds"/>
+        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LogIn.ds">
+          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
+        </run>
       </test>
     </testcase>
     <testcase name="LotDisplay" expand="yes">
       <test>
-        <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LotDisplay.ds"/>
+        <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LotDisplay.ds">
+          <argument name="Untitled2" method="getNextData" dpl="Untitled2"/>
+        </run>
       </test>
     </testcase>
     <testcase name="OnSaleNow" expand="yes">
       <test>
-        <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_OnSaleNow.ds"/>
+        <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_OnSaleNow.ds">
+          <argument name="Untitled3" method="getNextData" dpl="Untitled3"/>
+        </run>
       </test>
     </testcase>
     <testcase name="BidApproval" expand="yes">
       <test>
-        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds"/>
+        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds">
+          <argument name="Untitled4" method="getNextData" dpl="Untitled4"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Proquote" expand="yes">
       <test>
-        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_Proquote.ds"/>
+        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_Proquote.ds">
+          <argument name="Untitled5" method="getNextData" dpl="Untitled5"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
