@@ -1,8 +1,12 @@
-uname,pwd
-DEM0000001,welcome93
-DEM0000003,COPART    
-DEM0000004    ,C12345    
-DEM0000005     ,DEMO6     
-DEM0000006 ,PASSWORD6 
-DEM0000007 ,PASSWORD7 
-DEM0000008,PASSWORD8
+url,uname,pwd,seller
+http://tempseller.copart.com,DEM0000001,welcome93,"[CBUS] COPART AUTO AUCTIONS - BUS (FAIRFIELD,CA)"
+http://tempseller.copart.com,DEM0000003,COPART    ,"[AAAG] AUTO GUARDIAN (WALNUT CREEK,CA)"
+http://tempseller.copart.com,DEM0000005     ,DEMO6     ,"[CBUS] COPART AUTO AUCTIONS - BUS (FAIRFIELD,CA)"
+http://tempseller.copart.com,DEM0000006 ,PASSWORD6 ,"[CBUS] COPART AUTO AUCTIONS - BUS (FAIRFIELD,CA)"
+http://tempseller.copart.com,DEM0000002,SWDBM6GWKR,
+http://tempseller.copart.com,DEM0000004,C12345,
+http://tempseller.copart.com,DEM0000007,welcome7,
+http://tempseller.copart.com,DEM0000008,welcome8,
+http://tempseller.copart.com,DEM0000009,welcome9,
+http://tempseller.copart.com,DEM0000010,cobalt140,
+http://tempseller.copart.com,DEM0000011,MAVERICK41,
