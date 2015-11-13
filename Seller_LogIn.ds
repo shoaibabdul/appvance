@@ -67,9 +67,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
-		<accessor type="click" value="link(1)" selected="true"/>
-		<accessor type="click" value="link(&quot;https://seller.copart.com/home.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c3seller.copart.com/home.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
@@ -84,9 +84,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="false"/>
-		<accessor type="click" value="link(98)" selected="true"/>
-		<accessor type="click" value="link(&quot;https://seller.copart.com/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(98)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c3seller.copart.com/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
