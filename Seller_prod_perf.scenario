@@ -116,13 +116,7 @@
   </options>
   <templates>
     <controller name="Prod_C3Seller_perf">
-      <round name="Prod_C3Seller_perf" totalusers="10" testtype="users" totaliterations="10">
-        <testcase name="LogIn"/>
-        <testcase name="LotDisplay"/>
-        <testcase name="OnSaleNow"/>
-        <testcase name="BidApproval"/>
-        <testcase name="Proquote"/>
-      </round>
+      <round name="Prod_C3Seller_perf" totalusers="1000" time="30" testtype="users" totaliterations="4000"/>
     </controller>
     <testcase name="LogIn" expand="yes">
       <test>
@@ -165,11 +159,11 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Prod_C3Seller_perf" name="Prod_C3Seller_perf">
-      <testcase name="LogIn" users="2"/>
-      <testcase name="LotDisplay" users="2"/>
-      <testcase name="OnSaleNow" users="2"/>
-      <testcase name="BidApproval" users="2"/>
-      <testcase name="Proquote" users="2"/>
+      <testcase name="LogIn" users="200"/>
+      <testcase name="LotDisplay" users="200"/>
+      <testcase name="OnSaleNow" users="200"/>
+      <testcase name="BidApproval" users="200"/>
+      <testcase name="Proquote" users="200"/>
     </iteration>
   </execution>
   <logs>
