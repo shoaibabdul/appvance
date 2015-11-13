@@ -20,8 +20,8 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;OK&quot;)" selected="false"/>
 		<accessor type="click" value="link(101)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/testing/AuroraVersion#[7]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;button large close grid_2 center&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/testing/AuroraVersion#[7]&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;button large close grid_2 center&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'OK')]&quot;" selected="true"/>
