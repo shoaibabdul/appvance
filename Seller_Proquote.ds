@@ -142,7 +142,7 @@
 
 
 
-<step action="setSelected" value="&quot;2006&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="setSelected" value="&quot;2002&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="false"/>
@@ -158,7 +158,7 @@
 
 
 
-<step action="setSelected" value="&quot;Acura&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;Toyota&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="false"/>
@@ -174,7 +174,7 @@
 
 
 
-<step action="setSelected" value="&quot;CSX&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="setSelected" value="&quot;CAMRY&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="false"/>
