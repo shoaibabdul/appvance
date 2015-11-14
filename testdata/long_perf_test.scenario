@@ -72,20 +72,20 @@
   </datasources>
   <options>
     <options type="apc">
-      <opt name="SleepTime" value="30"/>
+      <opt name="SleepTime" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
-      <opt name="SleepTime" value="30"/>
-      <opt name="RampUpUsers" value="10"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="100"/>
-      <opt name="RampDownUsers" value="10"/>
+      <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="120"/>
+      <opt name="MaxRampDownTime" value="100"/>
       <opt name="ThinkTimeMin" value="5000"/>
       <opt name="ThinkTimeMax" value="10000"/>
-      <opt name="MinSleepTime" value="30"/>
-      <opt name="MaxSleepTime" value="30"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="PercentageLogsSaved" value="100"/>
