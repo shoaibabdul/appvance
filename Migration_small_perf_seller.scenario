@@ -29,11 +29,6 @@
     <categorization>Test during Migration onto LV servers</categorization>
   </basics>
   <resources>
-    <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
-    <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
-    <resource name="small_Seller_BidApproval.ds" type="ds" path="{scenario}/small_Seller_BidApproval.ds" cache="false"/>
-    <resource name="small_Seller_LogIn.ds" type="ds" path="{scenario}/small_Seller_LogIn.ds" cache="false"/>
-    <resource name="small_Seller_OnSaleNow.ds" type="ds" path="{scenario}/small_Seller_OnSaleNow.ds" cache="false"/>
     <resource name="Migration_Seller_LotDisplay.ds" type="ds" path="{scenario}/Migration_Seller_LotDisplay.ds" cache="false"/>
     <resource name="Migration_small_Seller_BidApproval.ds" type="ds" path="{scenario}/Migration_small_Seller_BidApproval.ds" cache="false"/>
     <resource name="Migration_small_Seller_OnSaleNow.ds" type="ds" path="{scenario}/Migration_small_Seller_OnSaleNow.ds" cache="false"/>
