@@ -96,8 +96,8 @@
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[20]&quot;)" selected="false"/>
-		<accessor type="click" value="span(69)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="false"/>
+		<accessor type="click" value="span(73)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
@@ -107,20 +107,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[4]&quot;)" selected="false"/>
-		<accessor type="click" value="link(79)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="false"/>
+		<accessor type='' value='' selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[5]/td[15]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[5]/td[15]/a&quot;" selected="false"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
@@ -128,165 +123,38 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Bid Approval[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;title[21]&quot;)" selected="false"/>
-		<accessor type="click" value="span(68)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[2]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[2]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;bidApproval_20[9]&quot;)" selected="false"/>
 		<accessor type="click" value="link(99)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[10]/td[15]/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//tr[10]/td[15]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
 
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[20]&quot;)" selected="false"/>
-		<accessor type="click" value="span(67)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[9]&quot;)" selected="false"/>
-		<accessor type="click" value="link(97)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[10]/td[15]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[10]/td[15]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[20]&quot;)" selected="false"/>
-		<accessor type="click" value="span(69)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[4]&quot;)" selected="false"/>
-		<accessor type="click" value="link(79)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[5]/td[15]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[5]/td[15]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="false"/>
-		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="true"/>
-		<accessor type="click" value="span(75)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;Status: - On Approval&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[5]&quot;)" selected="false"/>
-		<accessor type="click" value="link(85)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://seller.copart.com/bidApprovalDetails.html?lotId=18098005&amp;yardno=017&amp;vixflag=&amp;numberRuns=3&amp;itemno=2592&amp;auctionDate=11/12/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='c3CommonDataTable']/tbody/tr[6]/td[15]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=18098005&amp;yardno=017&amp;vixflag=&amp;numberRuns=3&amp;itemno=2592&amp;auctionDate=11/12/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[6]/td[15]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
@@ -303,7 +171,7 @@
 
 
 
-<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
@@ -317,7 +185,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(108)" selected="false"/>
