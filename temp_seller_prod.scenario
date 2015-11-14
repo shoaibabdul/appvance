@@ -107,7 +107,7 @@
   </options>
   <templates>
     <controller name="temp_seller_pro">
-      <round name="temp_seller_pro" totalusers="10" testtype="users" totaliterations="10" totalexecutions="2"/>
+      <round name="temp_seller_pro" totalusers="1000" time="75" testtype="users" totaliterations="1000"/>
     </controller>
     <testcase name="LotDisplay" expand="yes">
       <test>
@@ -146,11 +146,11 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="temp_seller_pro" name="temp_seller_pro">
-      <testcase name="LotDisplay" users="2"/>
-      <testcase name="BidApproval" users="2"/>
-      <testcase name="OnSaleNow" users="2"/>
-      <testcase name="LogIn" users="2"/>
-      <testcase name="Proquote" users="2"/>
+      <testcase name="LotDisplay" users="200"/>
+      <testcase name="BidApproval" users="200"/>
+      <testcase name="OnSaleNow" users="200"/>
+      <testcase name="LogIn" users="200"/>
+      <testcase name="Proquote" users="200"/>
     </iteration>
   </execution>
   <logs>
