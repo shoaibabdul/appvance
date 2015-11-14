@@ -76,12 +76,12 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="30"/>
-      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpUsers" value="10"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="100"/>
-      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownUsers" value="10"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="500"/>
+      <opt name="MaxRampDownTime" value="120"/>
       <opt name="ThinkTimeMin" value="5000"/>
       <opt name="ThinkTimeMax" value="10000"/>
       <opt name="MinSleepTime" value="30"/>
