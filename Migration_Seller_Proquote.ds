@@ -124,9 +124,9 @@
 
 <step action="setSelected" value="&quot;[AACH] ACA CHOICE (WALNUT CREEK , CA)&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;proq-selectBox&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
