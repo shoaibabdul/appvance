@@ -98,8 +98,8 @@
     </options>
     <options type="selenium">
       <opt name="loglevel" value="INFO"/>
-      <opt name="throwExceptionOnScriptError" value="false"/>
-      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
