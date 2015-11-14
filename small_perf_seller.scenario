@@ -34,6 +34,8 @@
     <resource name="Seller_LogIn.ds" type="ds" path="{scenario}/Seller_LogIn.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
     <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
+    <resource name="small_Seller_BidApproval.ds" type="ds" path="{scenario}/small_Seller_BidApproval.ds" cache="false"/>
+    <resource name="small_Seller_LogIn.ds" type="ds" path="{scenario}/small_Seller_LogIn.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
   </resources>
@@ -129,7 +131,7 @@
     </testcase>
     <testcase name="BidApproval" expand="yes">
       <test>
-        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds">
+        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="small_Seller_BidApproval.ds">
           <argument name="all  valid users " method="getNextData" dpl="all  valid users "/>
         </run>
       </test>
@@ -143,7 +145,7 @@
     </testcase>
     <testcase name="LogIn" expand="yes">
       <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LogIn.ds">
+        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="small_Seller_LogIn.ds">
           <argument name="all valid users " method="getNextData" dpl="all valid users "/>
         </run>
       </test>
