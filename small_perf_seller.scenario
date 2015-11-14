@@ -34,8 +34,6 @@
     <resource name="Seller_LogIn.ds" type="ds" path="{scenario}/Seller_LogIn.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
     <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
-    <resource type="data" path="{scenario}/lots_seller.csv" cache="false"/>
-    <resource type="data" path="{scenario}/valid_users.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
   </resources>
