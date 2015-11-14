@@ -64,6 +64,11 @@
         <argument name="file" value="Username_pwd.csv"/>
       </argument>
     </dpl>
+    <dpl name="Untitled4" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="Username_pwd.csv"/>
+      </argument>
+    </dpl>
   </datasources>
   <options>
     <options type="apc">
@@ -118,7 +123,9 @@
     </testcase>
     <testcase name="BidApproval" expand="yes">
       <test>
-        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds"/>
+        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds">
+          <argument name="Untitled4" method="getNextData" dpl="Untitled4"/>
+        </run>
       </test>
     </testcase>
     <testcase name="OnSaleNow" expand="yes">
