@@ -35,6 +35,7 @@
     <resource name="Migration_small_Seller_LogIn.ds" type="ds" path="{scenario}/Migration_small_Seller_LogIn.ds" cache="false"/>
     <resource name="Migration_Seller_Proquote.ds" type="ds" path="{scenario}/Migration_Seller_Proquote.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -54,11 +55,6 @@
         <argument name="file" value="lots_seller.csv"/>
       </argument>
     </dpl>
-    <dpl name="all  valid users " type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="valid_users.csv"/>
-      </argument>
-    </dpl>
     <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="valid_users.csv"/>
@@ -67,6 +63,11 @@
     <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="valid_users.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="BidApproval Users" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="bidapproval_users.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -130,7 +131,7 @@
     <testcase name="BidApproval" expand="yes">
       <test>
         <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Migration_small_Seller_BidApproval.ds">
-          <argument name="all  valid users " method="getNextData" dpl="all  valid users "/>
+          <argument name="BidApproval Users" method="getNextData" dpl="BidApproval Users"/>
         </run>
       </test>
     </testcase>
