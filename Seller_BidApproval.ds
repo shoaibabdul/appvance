@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_perf/testdata/seller_users.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/testdata/Username_pwd.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://tempseller.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -33,7 +33,7 @@
 
 
 
-<step action="setValue" value="&quot;DEM0000003&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$uname&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -48,7 +48,7 @@
 
 
 
-<step action="setValue" value="&quot;copart&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="setValue" value="&quot;$pwd&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
