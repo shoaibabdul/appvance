@@ -111,8 +111,8 @@
     </options>
   </options>
   <templates>
-    <controller name="temp_seller_pro">
-      <round name="temp_seller_pro" totalusers="90" testtype="users" totaliterations="540">
+    <controller name="smallLoad_temp_seller">
+      <round name="smallLoad_temp_seller" totalusers="90" testtype="users" totaliterations="540">
         <testcase name="LotDisplay"/>
         <testcase name="BidApproval"/>
         <testcase name="OnSaleNow"/>
@@ -158,7 +158,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="temp_seller_pro" name="temp_seller_pro">
+    <iteration controller="smallLoad_temp_seller" name="smallLoad_temp_seller">
       <testcase name="LotDisplay" users="15"/>
       <testcase name="BidApproval" users="15"/>
       <testcase name="OnSaleNow" users="15"/>
