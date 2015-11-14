@@ -38,7 +38,7 @@
     <resource type="data" path="{scenario}/Username_pwd.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="6" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -78,7 +78,7 @@
       <opt name="SleepTime" value="30"/>
       <opt name="RampUpUsers" value="2"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="500"/>
+      <opt name="MaxRampUpTime" value="100"/>
       <opt name="RampDownUsers" value="2"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="500"/>
