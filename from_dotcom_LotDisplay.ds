@@ -107,34 +107,20 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
-		<accessor type="click" value="link(1)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://c3seller.copart.com/sellerhome.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Lot Display[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(58)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c3seller.copart.com/search.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;lotDisplaySecondNav[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('SignOut');clickSignOut()\&quot;]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/div/div[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[6]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[6]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;bottom_nav&quot;)" selected="true"/>
-		<accessor type="click" value="div(35)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[3]/div&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="radio(&quot;localExact&quot;)" selected="true"/>
 		<accessor type="click" value="radio(&quot;localExact&quot;)" selected="false"/>
@@ -150,7 +136,7 @@
 
 
 
-<step action="setValue" value="&quot;$lotnumber&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;$lotnumber&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
@@ -166,7 +152,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
@@ -177,6 +163,23 @@
 		<accessor attribute='' value="&quot;//button[@id='btnSubmit']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[2]/li[2]/button&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c3seller.copart.com/sellerhome.html#&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('SignOut');clickSignOut()\&quot;]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/div/div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
