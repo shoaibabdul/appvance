@@ -29,9 +29,6 @@
     <categorization/>
   </basics>
   <resources>
-    <resource name="Seller_BidApproval.ds" type="ds" path="{scenario}/Seller_BidApproval.ds" cache="false"/>
-    <resource name="Seller_OnSaleNow.ds" type="ds" path="{scenario}/Seller_OnSaleNow.ds" cache="false"/>
-    <resource name="Seller_LogIn.ds" type="ds" path="{scenario}/Seller_LogIn.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
     <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
     <resource name="small_Seller_BidApproval.ds" type="ds" path="{scenario}/small_Seller_BidApproval.ds" cache="false"/>
