@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -150,7 +150,7 @@
 
 
 
-<step action="setValue" value="&quot;25601775&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;$lotnumber&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
