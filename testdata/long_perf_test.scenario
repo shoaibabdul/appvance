@@ -35,7 +35,7 @@
     <resource name="Seller_LogIn.ds" type="ds" path="{scenario}/Seller_LogIn.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="{scenario}/Seller_Proquote.ds" cache="false"/>
     <resource type="data" path="{scenario}/lots_seller.csv" cache="false"/>
-    <resource type="data" path="{scenario}/Username_pwd.csv" cache="false"/>
+    <resource type="data" path="{scenario}/valid_users.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
@@ -54,19 +54,19 @@
         <argument name="file" value="lots_seller.csv"/>
       </argument>
     </dpl>
-    <dpl name="UserNamePWD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="all  valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Username_pwd.csv"/>
+        <argument name="file" value="valid_users.csv"/>
       </argument>
     </dpl>
-    <dpl name="UserName and PWD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Username_pwd.csv"/>
+        <argument name="file" value="valid_users.csv"/>
       </argument>
     </dpl>
-    <dpl name="Untitled4" type="HashDPL" langtype="java" method="setup">
+    <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Username_pwd.csv"/>
+        <argument name="file" value="valid_users.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -130,21 +130,21 @@
     <testcase name="BidApproval" expand="yes">
       <test>
         <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_BidApproval.ds">
-          <argument name="Untitled4" method="getNextData" dpl="Untitled4"/>
+          <argument name="all  valid users " method="getNextData" dpl="all  valid users "/>
         </run>
       </test>
     </testcase>
     <testcase name="OnSaleNow" expand="yes">
       <test>
         <run name="OnSaleNow" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_OnSaleNow.ds">
-          <argument name="UserNamePWD" method="getNextData" dpl="UserNamePWD"/>
+          <argument name="all valid users " method="getNextData" dpl="all valid users "/>
         </run>
       </test>
     </testcase>
     <testcase name="LogIn" expand="yes">
       <test>
         <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LogIn.ds">
-          <argument name="UserName and PWD" method="getNextData" dpl="UserName and PWD"/>
+          <argument name="all valid users " method="getNextData" dpl="all valid users "/>
         </run>
       </test>
     </testcase>
