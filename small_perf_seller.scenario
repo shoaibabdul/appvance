@@ -36,6 +36,8 @@
     <resource name="Seller_LotDisplay.ds" type="ds" path="{scenario}/Seller_LotDisplay.ds" cache="false"/>
     <resource type="data" path="{scenario}/lots_seller.csv" cache="false"/>
     <resource type="data" path="{scenario}/valid_users.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
