@@ -107,7 +107,7 @@
   </options>
   <templates>
     <controller name="temp_seller_pro">
-      <round name="temp_seller_pro" totalusers="1000" time="75" testtype="users" totaliterations="1000"/>
+      <round name="temp_seller_pro" totalusers="1000" time="80" testtype="users" totaliterations="1000"/>
     </controller>
     <testcase name="LotDisplay" expand="yes">
       <test>
