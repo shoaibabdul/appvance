@@ -134,7 +134,7 @@
 
 
 
-<step action="setSelected" value="&quot;http://tempseller.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="setSelected" value="&quot;$seller&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
