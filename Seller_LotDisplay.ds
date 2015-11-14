@@ -3,17 +3,14 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_perf/testdata/seller_users.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
-<step action="navigateTo" value="&quot;$url&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://tempseller.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
@@ -68,8 +65,8 @@
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Lot Display[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(50)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://c3seller.copart.com/search.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(58)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tempseller.copart.com/search.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;lotDisplaySecondNav[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -80,23 +77,7 @@
 
 
 
-<step action="setSelected" value="&quot;$url&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
-	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;make&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;make&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;cf_dropdown1&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='make']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[1]/li[7]/div/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="click" value="radio(&quot;localExact&quot;)" selected="true"/>
 		<accessor type="click" value="radio(&quot;localExact&quot;)" selected="false"/>
@@ -112,7 +93,7 @@
 
 
 
-<step action="setValue" value="&quot;25715845&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value="&quot;25715185&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
@@ -128,90 +109,27 @@
 
 
 
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;button large blue&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[2]/li[2]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
-	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
-		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
-		<accessor type="click" value="submit(&quot;button large blue&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@id='btnSubmit']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[2]/li[2]/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="setValue" value="&quot;&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
-	<dialect type="sahi">
-		<accessor type="setValue" value="searchbox(&quot;wildcardSearch&quot;)" selected="true"/>
-		<accessor type="setValue" value="searchbox(0)" selected="false"/>
-		<accessor type="setValue" value="searchbox(&quot;search-input noPrint&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='wildcardSearch']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/form/div[1]/input[1]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="setSelected" value="&quot;CAMRY&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
-	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;model&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;model&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(1)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;lotdisp_input&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='model']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[1]/li[8]/div/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[8]/div/select&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="setSelected" value="&quot;2002&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
-	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;year&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;year&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(2)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;w120&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='year']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='modelRow']/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[9]/div/select&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
-	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
-		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
-		<accessor type="click" value="submit(&quot;button large blue&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@id='btnSubmit']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='select-seller']/fieldset/ul[2]/li[2]/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://c3seller.copart.com/searchResults.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tempseller.copart.com/lotdisplymgmt.html?src=tab&amp;lot=25715185#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
@@ -224,12 +142,12 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
-		<accessor type="click" value="link(116)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://c3seller.copart.com/logout&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
+		<accessor type="click" value="link(142)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tempseller.copart.com/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large[3]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, Continue')]&quot;" selected="true"/>
