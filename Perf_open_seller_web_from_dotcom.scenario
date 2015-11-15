@@ -20,13 +20,13 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>open_seller_web_from_dotcom</name>
+    <name>Perf_open_seller_web_from_dotcom</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Ravendra</basicName>
     <creator/>
     <links/>
     <versions/>
-    <categorization>Functional test </categorization>
+    <categorization>Performance Test</categorization>
   </basics>
   <resources>
     <resource name="from_dotcom_SignIn.ds" type="ds" path="{scenario}/from_dotcom_SignIn.ds" cache="false"/>
@@ -39,7 +39,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -82,10 +82,12 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="2"/>
+      <opt name="MaxRampUpTime" value="5"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="2"/>
+      <opt name="MaxRampDownTime" value="5"/>
       <opt name="ThinkTimeMin" value="0"/>
       <opt name="ThinkTimeMax" value="0"/>
       <opt name="MinSleepTime" value="0"/>
@@ -115,8 +117,8 @@
     </options>
   </options>
   <templates>
-    <controller name="5 Iterations">
-      <round totalusers="1" iterations="5"/>
+    <controller name="performance_test">
+      <round name="performance_test" totalusers="1" time="30" testtype="users" totaliterations="1"/>
     </controller>
     <testcase name="LogIn from dotcom" expand="yes">
       <test>
@@ -155,13 +157,13 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest">
-    <iteration name="iteration 5 Iterations" controller="5 Iterations">
-      <testcase name="LogIn from dotcom" users="1"/>
-      <testcase name="LotDisplay from dotcom" users="1"/>
-      <testcase name="BidApproval from dotcom" users="1"/>
-      <testcase name="OnSaleNow from dotcom" users="1"/>
-      <testcase name="Proquote from dotcom" users="1"/>
+  <execution type="loadtest">
+    <iteration controller="performance_test" name="performance_test">
+      <testcase name="LogIn from dotcom" users="10"/>
+      <testcase name="LotDisplay from dotcom" users="10"/>
+      <testcase name="BidApproval from dotcom" users="10"/>
+      <testcase name="OnSaleNow from dotcom" users="10"/>
+      <testcase name="Proquote from dotcom" users="10"/>
     </iteration>
   </execution>
   <logs>
