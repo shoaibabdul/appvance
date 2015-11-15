@@ -94,7 +94,7 @@
 	<dialect type="sahi">
 		<accessor type="assertExists" value="span(&quot;View all lots ready for the auction[1]&quot;)" selected="true"/>
 		<accessor type="assertExists" value="span(&quot;sub-title[21]&quot;)" selected="false"/>
-		<accessor type="assertExists" value="span(72)" selected="false"/>
+		<accessor type="assertExists" value="span(70)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[2]/a/span[3]&quot;" selected="false"/>
