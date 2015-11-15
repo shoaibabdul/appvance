@@ -115,8 +115,8 @@
     </options>
   </options>
   <templates>
-    <controller name="5 Iterations">
-      <round totalusers="1" iterations="5"/>
+    <controller name="2 Iterations">
+      <round totalusers="1" iterations="2"/>
     </controller>
     <testcase name="LogIn from dotcom" expand="yes">
       <test>
@@ -156,7 +156,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="functionaltest">
-    <iteration name="iteration 5 Iterations" controller="5 Iterations">
+    <iteration name="iteration 2 Iterations" controller="2 Iterations">
       <testcase name="LogIn from dotcom" users="1"/>
       <testcase name="LotDisplay from dotcom" users="1"/>
       <testcase name="BidApproval from dotcom" users="1"/>
