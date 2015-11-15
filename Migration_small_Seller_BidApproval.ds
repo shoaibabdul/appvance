@@ -123,18 +123,19 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;Status: A - On Approval&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bidApproval_20[9]&quot;)" selected="false"/>
-		<accessor type="click" value="link(99)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;bid_approval_status_A&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Awaiting Your Response&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Status: E - Awaiting Your Response&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;bidApproval_20&quot;)" selected="false"/>
+		<accessor type="click" value="link(63)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tempseller.copart.com/bidApprovalDetails.html?lotId=22348145&amp;yardno=020&amp;vixflag=&amp;numberRuns=1&amp;itemno=4065&amp;auctionDate=11/13/2015&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;bid_approval_status_E&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'On Approval')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[10]/td[15]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=20824245&amp;yardno=043&amp;vixflag=&amp;numberRuns=2&amp;itemno=876&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[10]/td[15]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Awaiting Your Response')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='bidApproval_20']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[1]/td[15]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'bidApprovalDetails.html?lotId=22348145&amp;yardno=020&amp;vixflag=&amp;numberRuns=1&amp;itemno=4065&amp;auctionDate=11/13/2015')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[15]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
