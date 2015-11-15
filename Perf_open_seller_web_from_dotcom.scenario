@@ -118,7 +118,13 @@
   </options>
   <templates>
     <controller name="performance_test">
-      <round name="performance_test" totalusers="1" time="30" testtype="users" totaliterations="1"/>
+      <round name="performance_test" totalusers="50" testtype="users" totaliterations="100">
+        <testcase name="LogIn from dotcom"/>
+        <testcase name="LotDisplay from dotcom"/>
+        <testcase name="BidApproval from dotcom"/>
+        <testcase name="OnSaleNow from dotcom"/>
+        <testcase name="Proquote from dotcom"/>
+      </round>
     </controller>
     <testcase name="LogIn from dotcom" expand="yes">
       <test>
