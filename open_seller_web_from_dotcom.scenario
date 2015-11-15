@@ -38,7 +38,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -91,7 +91,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -106,7 +106,7 @@
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
-      <opt name="takeSnapshot" value="false"/>
+      <opt name="takeSnapshot" value="true"/>
     </options>
     <options type="seleniumrc">
       <opt name="listenport" value="6543"/>
@@ -161,7 +161,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
