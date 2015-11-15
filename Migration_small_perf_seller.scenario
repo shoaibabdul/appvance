@@ -113,13 +113,7 @@
   </options>
   <templates>
     <controller name="Migration_LV_Servers_small_load">
-      <round name="Migration_LV_Servers_small_load" totalusers="90" testtype="users" totaliterations="540">
-        <testcase name="LotDisplay"/>
-        <testcase name="BidApproval"/>
-        <testcase name="OnSaleNow"/>
-        <testcase name="LogIn"/>
-        <testcase name="Proquote"/>
-      </round>
+      <round name="Migration_LV_Servers_small_load" totalusers="90" time="30" testtype="users" totaliterations="540"/>
     </controller>
     <testcase name="LotDisplay" expand="yes">
       <test>
@@ -160,10 +154,10 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Migration_LV_Servers_small_load" name="Migration_LV_Servers_small_load">
-      <testcase name="LotDisplay" users="15"/>
+      <testcase name="LotDisplay" users="10"/>
       <testcase name="BidApproval" users="15"/>
-      <testcase name="OnSaleNow" users="15"/>
-      <testcase name="LogIn" users="15"/>
+      <testcase name="OnSaleNow" users="25"/>
+      <testcase name="LogIn" users="25"/>
       <testcase name="Proquote" users="15"/>
     </iteration>
   </execution>
