@@ -39,7 +39,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -77,12 +77,12 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpUsers" value="2"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="10"/>
-      <opt name="RampDownUsers" value="1"/>
+      <opt name="MaxRampUpTime" value="5"/>
+      <opt name="RampDownUsers" value="2"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="10"/>
+      <opt name="MaxRampDownTime" value="5"/>
       <opt name="ThinkTimeMin" value="5000"/>
       <opt name="ThinkTimeMax" value="10000"/>
       <opt name="MinSleepTime" value="0"/>
