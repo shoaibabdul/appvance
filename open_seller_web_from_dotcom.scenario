@@ -33,6 +33,7 @@
     <resource name="from_dotcom_LotDisplay.ds" type="ds" path="{scenario}/from_dotcom_LotDisplay.ds" cache="false"/>
     <resource name="from_dotcom_BidApproval.ds" type="ds" path="{scenario}/from_dotcom_BidApproval.ds" cache="false"/>
     <resource name="from_dotcom_OnSaleNow.ds" type="ds" path="{scenario}/from_dotcom_OnSaleNow.ds" cache="false"/>
+    <resource name="from_dotcom_Proquote.ds" type="ds" path="{scenario}/from_dotcom_Proquote.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
@@ -145,6 +146,11 @@
         </run>
       </test>
     </testcase>
+    <testcase name="Proquote from dotcom" expand="yes">
+      <test>
+        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="from_dotcom_Proquote.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -155,6 +161,7 @@
       <testcase name="LotDisplay from dotcom" users="1"/>
       <testcase name="BidApproval from dotcom" users="1"/>
       <testcase name="OnSaleNow from dotcom" users="1"/>
+      <testcase name="Proquote from dotcom" users="1"/>
     </iteration>
   </execution>
   <logs>
