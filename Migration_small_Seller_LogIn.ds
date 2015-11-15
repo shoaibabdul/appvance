@@ -97,7 +97,7 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://c3seller.copart.com/home.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://tempseller.copart.com/home.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
