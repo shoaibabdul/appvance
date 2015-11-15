@@ -39,7 +39,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -118,7 +118,7 @@
   </options>
   <templates>
     <controller name="performance_test">
-      <round name="performance_test" totalusers="50" testtype="users" totaliterations="100">
+      <round name="performance_test" totalusers="5" testtype="users" totaliterations="10">
         <testcase name="LogIn from dotcom"/>
         <testcase name="LotDisplay from dotcom"/>
         <testcase name="BidApproval from dotcom"/>
@@ -165,11 +165,11 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="performance_test" name="performance_test">
-      <testcase name="LogIn from dotcom" users="10"/>
-      <testcase name="LotDisplay from dotcom" users="10"/>
-      <testcase name="BidApproval from dotcom" users="10"/>
-      <testcase name="OnSaleNow from dotcom" users="10"/>
-      <testcase name="Proquote from dotcom" users="10"/>
+      <testcase name="LogIn from dotcom" users="1"/>
+      <testcase name="LotDisplay from dotcom" users="1"/>
+      <testcase name="BidApproval from dotcom" users="1"/>
+      <testcase name="OnSaleNow from dotcom" users="1"/>
+      <testcase name="Proquote from dotcom" users="1"/>
     </iteration>
   </execution>
   <logs>
