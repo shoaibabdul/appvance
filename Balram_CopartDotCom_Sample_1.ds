@@ -52,6 +52,7 @@
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;right&quot;)" selected="false"/>
+		<accessor type='' value="link(&quot;Sign In&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
@@ -65,7 +66,7 @@
 <step action="setValue" value="&quot;copart1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(0)" selected="false"/>
 		<accessor type="setValue" value="password(&quot;right&quot;)" selected="false"/>
 	</dialect>
@@ -108,7 +109,7 @@
 
 
 
-<step action="setSelected" value="&quot;2012&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setSelected" value="&quot;2011&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;YearFrom&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;yearFrom&quot;)" selected="false"/>
@@ -124,7 +125,7 @@
 
 
 
-<step action="setSelected" value="&quot;HONDA&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setSelected" value="&quot;TOYOTA&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;ddlMakes&quot;)" selected="false"/>
@@ -140,7 +141,7 @@
 
 
 
-<step action="setSelected" value="&quot;ACCORD&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="setSelected" value="&quot;CAMRY&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;ModelGroups&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;ddlModels&quot;)" selected="false"/>
@@ -206,7 +207,7 @@
 
 
 
-<step action="setValue" value="&quot;PerfTest_03&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="setValue" value="&quot;PerfTest_04&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;SearchName&quot;)" selected="false"/>
