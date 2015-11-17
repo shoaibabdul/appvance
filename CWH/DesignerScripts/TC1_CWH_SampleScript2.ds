@@ -1,0 +1,340 @@
+<testcase name='TC1_CWH_SampleScript2' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com/formWidget.php?i=8&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;ABCD&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='First_Name']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/div[1]/table/tbody/tr[8]/td[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;XYZ&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Last_Name']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/div[1]/table/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;abc.xyz@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Email&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Email&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(2)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Email']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/div[1]/table/tbody/tr[12]/td/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[12]/td/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;25&quot;)" selected="true"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/formWidget.php?i=8#[6]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ui-state-default ui-state-hover&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'25')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;8am-12pm&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;time&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;datetime&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='datetime']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/div[1]/table/tbody/tr[16]/td[3]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;1234 Dallas Pkwy&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Mailing_Address1&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Mailing_Address1&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(4)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Mailing_Address1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[2]/td[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Dallas&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;City&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;City&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(6)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='City']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[6]/td/table/tbody/tr[1]/td[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[1]/td[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;TX - Texas&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;State&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;State&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='State']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[6]/td/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;75040&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(7)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Zip']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[6]/td/table/tbody/tr[1]/td[3]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[3]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;111&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;Home_Telephone_Ac&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;Home_Telephone_Ac&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(12)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Home_Telephone_Ac']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[21]/td[2]/table/tbody/tr[1]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[1]/td[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;222&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;homephonea&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;homephonea&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(13)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='homephonea']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[21]/td[2]/table/tbody/tr[1]/td[4]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[4]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;3333&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;homephoneb&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;homephoneb&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(14)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='homephoneb']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[21]/td[2]/table/tbody/tr[1]/td[6]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[6]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;2013&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(4)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='Year1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[1]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;SUBARU&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(5)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='Make']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;BAJA SPORT&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='Model']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[3]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[1]/td[3]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Drivable']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='LienRelease']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[9]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[9]/td[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;PerfTest&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="true"/>
+		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
+		<accessor type="setValue" value="textarea(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//textarea[@id='Comments']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[12]/td/textarea&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//textarea&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;pfgw2I&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;txtCaptcha&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;captchatext&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(22)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='captchatext']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[21]/td[2]/table/tbody/tr/td[2]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Verify&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;verifycaptchabtn&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;verifycaptchabtn&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
+		<accessor type="click" value="button(&quot;captchaButton[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='verifycaptchabtn']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[23]/td[2]/input[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Donate my vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;submit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;registerButton&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;customSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='registerButton']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/div[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
