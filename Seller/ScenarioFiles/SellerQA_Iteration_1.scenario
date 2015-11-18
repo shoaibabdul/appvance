@@ -29,15 +29,9 @@
     <categorization>Test during Migration onto LV servers</categorization>
   </basics>
   <resources>
-    <resource name="Migration_Seller_LotDisplay.ds" type="ds" path="{scenario}/Migration_Seller_LotDisplay.ds" cache="false"/>
-    <resource name="Migration_small_Seller_BidApproval.ds" type="ds" path="{scenario}/Migration_small_Seller_BidApproval.ds" cache="false"/>
-    <resource name="Migration_small_Seller_OnSaleNow.ds" type="ds" path="{scenario}/Migration_small_Seller_OnSaleNow.ds" cache="false"/>
-    <resource name="Migration_small_Seller_LogIn.ds" type="ds" path="{scenario}/Migration_small_Seller_LogIn.ds" cache="false"/>
-    <resource name="Migration_Seller_Proquote.ds" type="ds" path="{scenario}/Migration_Seller_Proquote.ds" cache="false"/>
     <resource name="Seller_OnSaleNow.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_OnSaleNow.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/lots_seller.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/bidapproval_users.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/testdata/valid_users.csv" cache="false"/>
+    <resource name="Seller_LogIn.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_LogIn.ds" cache="false"/>
+    <resource name="Seller_Proquote.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_Proquote.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Seller/seller_testdata/qa_lyncusers.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -52,24 +46,14 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="LotSellers" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="lots_seller.csv"/>
-      </argument>
-    </dpl>
     <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="valid_users.csv"/>
       </argument>
     </dpl>
-    <dpl name="all valid users " type="HashDPL" langtype="java" method="setup">
+    <dpl name="LyncUsers" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="valid_users.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="BidApproval Users" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="bidapproval_users.csv"/>
+        <argument name="file" value="qa_lyncusers.csv"/>
       </argument>
     </dpl>
     <dpl name="LyncUsers" type="HashDPL" langtype="java" method="setup">
@@ -121,44 +105,28 @@
   <templates>
     <controller name="SellerQA_Iteration_1">
       <round name="SellerQA_Iteration_1" totalusers="10" testtype="users" totaliterations="20">
-        <testcase name="LotDisplay"/>
-        <testcase name="BidApproval"/>
-        <testcase name="LogIn"/>
-        <testcase name="Proquote"/>
         <testcase name="QA_OnSaleNow"/>
+        <testcase name="QA_SellerLogIn"/>
+        <testcase name="QA_Seller Proquote"/>
       </round>
     </controller>
-    <testcase name="LotDisplay" expand="yes">
-      <test>
-        <run name="LotDisplay" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Migration_Seller_LotDisplay.ds">
-          <argument name="LotSellers" method="getNextData" dpl="LotSellers"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="BidApproval" expand="yes">
-      <test>
-        <run name="BidApproval" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Migration_small_Seller_BidApproval.ds">
-          <argument name="BidApproval Users" method="getNextData" dpl="BidApproval Users"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="LogIn" expand="yes">
-      <test>
-        <run name="LogIn" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Migration_small_Seller_LogIn.ds">
-          <argument name="all valid users " method="getNextData" dpl="all valid users "/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Proquote" expand="yes">
-      <test>
-        <run name="Proquote" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Migration_Seller_Proquote.ds"/>
-      </test>
-    </testcase>
     <testcase name="QA_OnSaleNow" expand="yes">
       <test>
         <run name="Click on OnSaleNow Menu Item" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_OnSaleNow.ds">
           <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
         </run>
+      </test>
+    </testcase>
+    <testcase name="QA_SellerLogIn" expand="yes">
+      <test>
+        <run name="SignIn and SignOut" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_LogIn.ds">
+          <argument name="LyncUsers" method="getNextData" dpl="LyncUsers"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="QA_Seller Proquote" expand="yes">
+      <test>
+        <run name="Click on Proquote Menu Item" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_Proquote.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -167,11 +135,9 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="SellerQA_Iteration_1" name="SellerQA_Iteration_1">
-      <testcase name="LotDisplay" users="2"/>
-      <testcase name="BidApproval" users="15"/>
-      <testcase name="LogIn" users="25"/>
-      <testcase name="Proquote" users="15"/>
-      <testcase name="QA_OnSaleNow" users="1"/>
+      <testcase name="QA_OnSaleNow" users="2"/>
+      <testcase name="QA_SellerLogIn" users="2"/>
+      <testcase name="QA_Seller Proquote" users="2"/>
     </iteration>
   </execution>
   <logs>
