@@ -33,7 +33,7 @@
 
 
 
-<step action="setValue" value="http://seller.qa.copart.com" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$lyncusername&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
