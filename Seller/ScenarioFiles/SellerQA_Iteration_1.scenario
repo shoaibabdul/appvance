@@ -121,7 +121,7 @@
       <round name="SellerQA_Iteration_1" totalusers="10" time="5" testtype="users" totaliterations="20"/>
     </controller>
     <controller name="SellerQA_Iteration_2">
-      <round name="SellerQA_Iteration_2" totalusers="20" testtype="users" totaliterations="20"/>
+      <round name="SellerQA_Iteration_2" totalusers="20" time="5" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="QA_OnSaleNow" expand="yes">
       <test>
