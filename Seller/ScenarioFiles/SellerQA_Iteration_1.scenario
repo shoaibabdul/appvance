@@ -118,7 +118,13 @@
   </options>
   <templates>
     <controller name="SellerQA_Iteration_1">
-      <round name="SellerQA_Iteration_1" totalusers="10" time="10" testtype="users" totaliterations="20"/>
+      <round name="SellerQA_Iteration_1" totalusers="10" testtype="users" totaliterations="20">
+        <testcase name="QA_OnSaleNow"/>
+        <testcase name="QA_SellerLogIn"/>
+        <testcase name="QA_Seller Proquote"/>
+        <testcase name="QA_Seller LotDisplay"/>
+        <testcase name="QA_Seller BidApproval"/>
+      </round>
     </controller>
     <testcase name="QA_OnSaleNow" expand="yes">
       <test>
