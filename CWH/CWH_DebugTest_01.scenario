@@ -59,7 +59,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -98,12 +98,21 @@
     <iteration controller="LaunchURL_1" name="LaunchURL_1">
       <testcase name="TC1_CWH_LaunchURL" users="10">
         <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
           <opt name="IntervalTime" value="0"/>
           <opt name="MinIntervalTime" value="0"/>
           <opt name="MaxIntervalTime" value="0"/>
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="0"/>
+          <opt name="ThinkTimeMax" value="0"/>
         </options>
       </testcase>
     </iteration>
@@ -112,7 +121,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
