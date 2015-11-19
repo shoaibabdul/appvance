@@ -90,7 +90,7 @@
   </options>
   <templates>
     <controller name="calib_test_perf_itr1">
-      <round name="calib_test_perf_itr1" totalusers="10" time="3" testtype="users" totaliterations="10"/>
+      <round name="calib_test_perf_itr1" totalusers="10" time="10" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="BidApproval_10_users" expand="yes">
       <test>
