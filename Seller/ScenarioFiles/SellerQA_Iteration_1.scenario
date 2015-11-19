@@ -32,7 +32,9 @@
     <resource name="Seller_OnSaleNow.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_OnSaleNow.ds" cache="false"/>
     <resource name="Seller_LogIn.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_LogIn.ds" cache="false"/>
     <resource name="Seller_Proquote.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller_Proquote.ds" cache="false"/>
+    <resource name="Seller LotDisplay.ds" type="ds" path="REPOSITORY/C3Seller_perf/Seller/DesignerScripts/Seller LotDisplay.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Seller/seller_testdata/qa_lyncusers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Seller/seller_testdata/lots_in_qa.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_RC3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -59,6 +61,11 @@
     <dpl name="LyncUsers" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="qa_lyncusers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Lot numbers for Lync uder in QA" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="lots_in_qa.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -108,6 +115,7 @@
         <testcase name="QA_OnSaleNow"/>
         <testcase name="QA_SellerLogIn"/>
         <testcase name="QA_Seller Proquote"/>
+        <testcase name="QA_Seller LotDisplay"/>
       </round>
     </controller>
     <testcase name="QA_OnSaleNow" expand="yes">
@@ -129,6 +137,13 @@
         <run name="Click on Proquote Menu Item" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller_Proquote.ds"/>
       </test>
     </testcase>
+    <testcase name="QA_Seller LotDisplay" expand="yes">
+      <test>
+        <run name="View LotDisplay page" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="Seller LotDisplay.ds">
+          <argument name="Lot numbers for Lync uder in QA" method="getNextData" dpl="Lot numbers for Lync uder in QA"/>
+        </run>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -138,6 +153,7 @@
       <testcase name="QA_OnSaleNow" users="2"/>
       <testcase name="QA_SellerLogIn" users="2"/>
       <testcase name="QA_Seller Proquote" users="2"/>
+      <testcase name="QA_Seller LotDisplay" users="2"/>
     </iteration>
   </execution>
   <logs>
