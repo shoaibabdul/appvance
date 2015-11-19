@@ -32,7 +32,7 @@
     <resource name="TC1_CWH_LaunchURL.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC1_CWH_LaunchURL.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="All" terminate="None" reboot="Never"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -83,9 +83,9 @@
   </options>
   <templates>
     <controller name="LaunchURL_1">
-      <round name="LaunchURL_1" totalusers="10" testtype="users" totaliterations="10" totalexecutions="5"/>
+      <round name="LaunchURL_1" totalusers="10" testtype="users" totaliterations="10" totalexecutions="1"/>
     </controller>
-    <testcase name="TC1_CWH_LaunchURL" expand="yes" thinktimeState="true">
+    <testcase name="TC1_CWH_LaunchURL" expand="yes">
       <test>
         <run name="CWH_LaunchURL_Debug" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC1_CWH_LaunchURL.ds"/>
       </test>
@@ -96,25 +96,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="LaunchURL_1" name="LaunchURL_1">
-      <testcase name="TC1_CWH_LaunchURL" users="10">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="0"/>
-          <opt name="ThinkTimeMax" value="0"/>
-        </options>
-      </testcase>
+      <testcase name="TC1_CWH_LaunchURL" users="10"/>
     </iteration>
   </execution>
   <logs>
