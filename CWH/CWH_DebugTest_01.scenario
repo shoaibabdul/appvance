@@ -53,14 +53,14 @@
       <opt name="RampUpSeconds" value="0"/>
       <opt name="RampDownUsers" value="0"/>
       <opt name="RampDownSeconds" value="0"/>
-      <opt name="ThinkTimeMin" value="-1"/>
-      <opt name="ThinkTimeMax" value="-1"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="PercentageLogsSaved" value="100"/>
-      <opt name="ThinkTime" value="-1"/>
+      <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
@@ -83,11 +83,9 @@
   </options>
   <templates>
     <controller name="LaunchURL_1">
-      <round name="LaunchURL_1" totalusers="10" time="1" maxtime="1" testtype="users" totaliterations="10">
-        <testcase name="TC1_CWH_LaunchURL" totalexecutions="10"/>
-      </round>
+      <round name="LaunchURL_1" totalusers="30" time="1" testtype="users" totaliterations="30"/>
     </controller>
-    <testcase name="TC1_CWH_LaunchURL" expand="yes" thinktimeState="true">
+    <testcase name="TC1_CWH_LaunchURL" expand="yes">
       <test>
         <run name="CWH_LaunchURL_Debug" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC1_CWH_LaunchURL.ds"/>
       </test>
@@ -98,25 +96,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="LaunchURL_1" name="LaunchURL_1">
-      <testcase name="TC1_CWH_LaunchURL" totalexecutions="10" users="10">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="0"/>
-          <opt name="ThinkTimeMax" value="0"/>
-        </options>
-      </testcase>
+      <testcase name="TC1_CWH_LaunchURL" totalexecutions="10" users="10"/>
     </iteration>
   </execution>
   <logs>
