@@ -1,0 +1,64 @@
+<testcase name='Sample_GoogleSearch' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://google.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;san jose&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;lst-ib&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;gsfi lst-d-f&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='lst-ib']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='gs_lc0']/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;btnG&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;lsb&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@name='btnG']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='sblsbb']/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;San Jose, CA - Official Website&quot;)" selected="true"/>
+		<accessor type="click" value="link(57)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0ahUKEwi4vpS_h57JAhWK8CYKHY2DDd0QFggdMAA&amp;url=http%3A%2F%2Fwww.sanjoseca.gov%2F&amp;usg=AFQjCNHQr8JJyeakF_oNGC805xxvpthnmQ&amp;bvm=bv.108194040,d.eWE&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'San Jose, CA - Official Website')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ol[@id='rso']/div[1]/div[1]/div/h3/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[@href='http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0ahUKEwi4vpS_h57JAhWK8CYKHY2DDd0QFggdMAA&amp;url=http%3A%2F%2Fwww.sanjoseca.gov%2F&amp;usg=AFQjCNHQr8JJyeakF_oNGC805xxvpthnmQ&amp;bvm=bv.108194040,d.eWE']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h3/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
