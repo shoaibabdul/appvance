@@ -96,7 +96,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="LaunchURL_1" name="LaunchURL_1">
-      <testcase name="TC1_CWH_LaunchURL" users="10"/>
+      <testcase name="TC1_CWH_LaunchURL" users="30"/>
     </iteration>
   </execution>
   <logs>
