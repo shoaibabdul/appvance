@@ -83,7 +83,7 @@
   </options>
   <templates>
     <controller name="LaunchURL_1">
-      <round name="LaunchURL_1" totalusers="10" time="1" testtype="users" totaliterations="10"/>
+      <round name="LaunchURL_1" totalusers="30" time="1" testtype="users" totaliterations="30"/>
     </controller>
     <testcase name="TC1_CWH_LaunchURL" expand="yes">
       <test>
@@ -96,7 +96,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="LaunchURL_1" name="LaunchURL_1">
-      <testcase name="TC1_CWH_LaunchURL" totalexecutions="30" users="10"/>
+      <testcase name="TC1_CWH_LaunchURL" users="10"/>
     </iteration>
   </execution>
   <logs>
