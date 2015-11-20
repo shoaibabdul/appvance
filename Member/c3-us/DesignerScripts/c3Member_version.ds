@@ -106,7 +106,22 @@
 
 
 
-<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="store" value="_exists(_cell(&quot;3.22.0.2&quot;))" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="version" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="assertExists" value="cell(&quot;AuroraWeb&quot;)" selected="true"/>
 		<accessor type="assertExists" value="row(&quot;AuroraWeb 3.22.0.2&quot;)" selected="false"/>
@@ -124,7 +139,7 @@
 
 
 
-<step action="alert" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="_alert" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="&quot;Aurora Web present&quot;" selected="true"/>
@@ -139,7 +154,7 @@
 
 
 
-<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="assertExists" value="cell(&quot;3.22.0.2&quot;)" selected="true"/>
 		<accessor type="assertExists" value="row(&quot;AuroraWeb 3.22.0.2&quot;)" selected="false"/>
@@ -157,7 +172,7 @@
 
 
 
-<step action="alert" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="_alert" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="&quot;version present&quot;" selected="true"/>
@@ -172,7 +187,7 @@
 
 
 
-<step action="endif" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="endif" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
