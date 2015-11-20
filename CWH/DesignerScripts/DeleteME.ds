@@ -1,0 +1,94 @@
+<testcase name='DeleteME' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling="stop"/>
+
+<step action="wait" value="5013" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="42717" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="link(&quot;Login&quot;)" selected="true"/>
+		<accessor type="assertExists" value="link(13)" selected="false"/>
+		<accessor type="assertExists" value="link(&quot;https://qa.carswithheart.com/partners/&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Login')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[@id='headercontact']/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'partners/')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[2]/li[3]/a&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="div(&quot;header&quot;)" selected="true"/>
+		<accessor type="assertExists" value="div(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='header']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='wrapper']/div[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div/div[1]&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="link(&quot;Preffered Partners&quot;)" selected="true"/>
+		<accessor type="assertExists" value="link(16)" selected="false"/>
+		<accessor type="assertExists" value="link(&quot;https://qa.carswithheart.com/partners-list[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Preffered Partners')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[@id='quicklinks']/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
