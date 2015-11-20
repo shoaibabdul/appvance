@@ -85,9 +85,7 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_Navigation_DebugTest_1">
-      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="10">
-        <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="2"/>
-      </round>
+      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="10" totalexecutions="10"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
       <test>
