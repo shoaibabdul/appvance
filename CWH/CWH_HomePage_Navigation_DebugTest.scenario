@@ -85,7 +85,9 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_Navigation_DebugTest_1">
-      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="10" totalexecutions="20"/>
+      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="10">
+        <testcase name="TC1_CWH_HomePage_Navigation_1" executions="10"/>
+      </round>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
       <test>
@@ -98,7 +100,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_HomePage_Navigation_DebugTest_1" name="CWH_HomePage_Navigation_DebugTest_1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" users="10"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="10" users="10"/>
     </iteration>
   </execution>
   <logs>
