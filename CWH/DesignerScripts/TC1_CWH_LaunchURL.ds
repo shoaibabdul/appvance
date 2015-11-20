@@ -16,21 +16,7 @@
 
 
 
-<step action="wait" value="5000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="link(&quot;Preffered Partners&quot;)" selected="true"/>
