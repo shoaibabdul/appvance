@@ -83,9 +83,7 @@
   </options>
   <templates>
     <controller name="LaunchURL_1">
-      <round name="LaunchURL_1" totalusers="10" time="1" maxtime="1" testtype="users" totaliterations="10">
-        <testcase name="TC1_CWH_LaunchURL" executions="30"/>
-      </round>
+      <round name="LaunchURL_1" totalusers="10" time="1" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="TC1_CWH_LaunchURL" expand="yes">
       <test>
