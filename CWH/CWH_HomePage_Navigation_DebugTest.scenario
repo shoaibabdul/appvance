@@ -32,7 +32,7 @@
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="5" instantiate="Required" terminate="None" reboot="After"/>
+    <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -49,10 +49,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="3"/>
+      <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="60"/>
-      <opt name="RampDownUsers" value="3"/>
+      <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="60"/>
       <opt name="ThinkTimeMin" value="0"/>
@@ -85,7 +85,7 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_Navigation_DebugTest_1">
-      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="100" testtype="users" totaliterations="200">
+      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="50">
         <testcase name="TC1_CWH_HomePage_Navigation_1" executions="10"/>
       </round>
     </controller>
@@ -100,7 +100,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_HomePage_Navigation_DebugTest_1" name="CWH_HomePage_Navigation_DebugTest_1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="10" users="100"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="10" users="10"/>
     </iteration>
   </execution>
   <logs>
