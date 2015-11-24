@@ -29,7 +29,7 @@
     <categorization>CWH Project</categorization>
   </basics>
   <resources>
-    <resource name="TC1_CWH_HomePage_Navigation_Dev.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC1_CWH_HomePage_Navigation_Dev.ds" cache="false"/>
+    <resource name="TC1_CWH_HomePage_Navigation_Dev.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation_Dev.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_rc3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_R3_Config.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
