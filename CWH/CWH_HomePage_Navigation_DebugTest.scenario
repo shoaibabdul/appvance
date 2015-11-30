@@ -91,7 +91,7 @@
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
