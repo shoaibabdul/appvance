@@ -1,0 +1,82 @@
+<testcase name='TC1_CWH_Homepage_Navigation_V2' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com/&quot;" type="web" desc="Launch Website URL" isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Donor Inf" isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/donor-faq&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Donor Information')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='nav']/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'donor-faq')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Partner" isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/partner-with-us&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Partner With Us')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='nav']/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'partner-with-us')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Contact" isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/contact&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Contact Us')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='nav']/li[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'contact')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/ul[1]/li[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/index&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='nav']/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'index')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
