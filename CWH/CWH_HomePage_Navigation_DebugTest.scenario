@@ -33,7 +33,7 @@
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_c3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
+    <cloud name="Amazon_c3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="All" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -107,10 +107,10 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="5" users="10"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_1" users="10"/>
     </iteration>
     <iteration controller="CWH_DebugTest_Iteration2" name="CWH_DebugTest_Iteration2">
-      <testcase name="TC1_CWH_HomePage_Navigation_2" totalexecutions="5" users="20"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_2" users="20"/>
     </iteration>
   </execution>
   <logs>
