@@ -30,6 +30,7 @@
   </basics>
   <resources>
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
+    <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_c3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
@@ -84,9 +85,14 @@
     </options>
   </options>
   <templates>
-    <controller name="CWH_HomePage_Navigation_DebugTest_1">
-      <round name="CWH_HomePage_Navigation_DebugTest_1" totalusers="10" testtype="users" totaliterations="50">
-        <testcase name="TC1_CWH_HomePage_Navigation_1" executions="1"/>
+    <controller name="CWH_DebugTest_Iteration1">
+      <round name="CWH_DebugTest_Iteration1" totalusers="10" testtype="users" totaliterations="50">
+        <testcase name="TC1_CWH_HomePage_Navigation_1" executions="5"/>
+      </round>
+    </controller>
+    <controller name="CWH_DebugTest_Iteration2">
+      <round name="CWH_DebugTest_Iteration2" totalusers="20" testtype="users" totaliterations="20">
+        <testcase name="TC1_CWH_HomePage_Navigation_2" executions="5"/>
       </round>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
@@ -94,13 +100,21 @@
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
       </test>
     </testcase>
+    <testcase name="TC1_CWH_HomePage_Navigation_2" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="CWH_HomePage_Navigation_DebugTest_1" name="CWH_HomePage_Navigation_DebugTest_1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="1" users="10"/>
+    <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
+      <testcase name="TC1_CWH_HomePage_Navigation_1" totalexecutions="5" users="10"/>
+    </iteration>
+    <iteration controller="CWH_DebugTest_Iteration2" name="CWH_DebugTest_Iteration2">
+      <testcase name="TC1_CWH_HomePage_Navigation_2" totalexecutions="5" users="20"/>
     </iteration>
   </execution>
   <logs>
