@@ -83,10 +83,10 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="10" time="5" testtype="users" totaliterations="50"/>
+      <round name="CWH_DebugTest_Iteration1" totalusers="30" time="5" testtype="users" totaliterations="30"/>
     </controller>
     <controller name="CWH_DebugTest_Iteration2">
-      <round name="CWH_DebugTest_Iteration2" totalusers="20" time="5" testtype="users" totaliterations="20"/>
+      <round name="CWH_DebugTest_Iteration2" totalusers="40" time="5" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" optionState="true">
       <test>
@@ -104,7 +104,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" users="20">
+      <testcase name="TC1_CWH_HomePage_Navigation_1" users="30">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
@@ -125,13 +125,13 @@
       </testcase>
     </iteration>
     <iteration controller="CWH_DebugTest_Iteration2" name="CWH_DebugTest_Iteration2">
-      <testcase name="TC1_CWH_HomePage_Navigation_2" users="30">
+      <testcase name="TC1_CWH_HomePage_Navigation_2" users="40">
         <options>
           <opt name="RampUpUsers" value="1"/>
-          <opt name="RampUpSeconds" value="0.66"/>
+          <opt name="RampUpSeconds" value="0.75"/>
           <opt name="MaxRampUpTime" value="100"/>
           <opt name="RampDownUsers" value="1"/>
-          <opt name="RampDownSeconds" value="0.66"/>
+          <opt name="RampDownSeconds" value="0.75"/>
           <opt name="MaxRampDownTime" value="100"/>
           <opt name="InitialRampUpDelay" value="0"/>
           <opt name="IntervalTime" value="0"/>
