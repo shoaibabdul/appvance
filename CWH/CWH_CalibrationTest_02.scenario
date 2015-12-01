@@ -30,6 +30,7 @@
   </basics>
   <resources>
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
+    <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="{scenario}/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_c3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="All" terminate="None" reboot="After"/>
@@ -83,10 +84,13 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="30" time="5" testtype="users" totaliterations="30"/>
+      <round name="CWH_DebugTest_Iteration1" totalusers="30" time="10" testtype="users" totaliterations="30"/>
     </controller>
     <controller name="CWH_DebugTest_Iteration2">
-      <round name="CWH_DebugTest_Iteration2" totalusers="40" time="5" testtype="users" totaliterations="40"/>
+      <round name="CWH_DebugTest_Iteration2" totalusers="40" time="10" testtype="users" totaliterations="40"/>
+    </controller>
+    <controller name="CWH_DebugTest_Iteration3">
+      <round name="CWH_DebugTest_Iteration3" totalusers="50" time="10" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" optionState="true">
       <test>
@@ -96,6 +100,11 @@
     <testcase name="TC1_CWH_HomePage_Navigation_2" expand="yes" optionState="true">
       <test>
         <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
+      </test>
+    </testcase>
+    <testcase name="TC1_CWH_HomePage_Navigation_3" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -144,6 +153,9 @@
           <opt name="ThinkTimeMax" value="0"/>
         </options>
       </testcase>
+    </iteration>
+    <iteration controller="CWH_DebugTest_Iteration3" name="CWH_DebugTest_Iteration3">
+      <testcase name="TC1_CWH_HomePage_Navigation_3" users="50"/>
     </iteration>
   </execution>
   <logs>
