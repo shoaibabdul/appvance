@@ -86,14 +86,10 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="10" testtype="users" totaliterations="50">
-        <testcase name="TC1_CWH_HomePage_Navigation_1" executions="5"/>
-      </round>
+      <round name="CWH_DebugTest_Iteration1" totalusers="10" time="5" testtype="users" totaliterations="50"/>
     </controller>
     <controller name="CWH_DebugTest_Iteration2">
-      <round name="CWH_DebugTest_Iteration2" totalusers="20" testtype="users" totaliterations="20">
-        <testcase name="TC1_CWH_HomePage_Navigation_2" executions="5"/>
-      </round>
+      <round name="CWH_DebugTest_Iteration2" totalusers="20" time="5" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
       <test>
