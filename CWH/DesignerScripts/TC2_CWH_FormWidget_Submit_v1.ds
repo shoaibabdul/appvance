@@ -157,7 +157,7 @@
 
 
 
-<step action="setValue" value="&quot;12345&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;00001&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="false"/>
