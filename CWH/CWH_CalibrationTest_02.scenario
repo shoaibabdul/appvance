@@ -82,14 +82,14 @@
     </options>
   </options>
   <templates>
-    <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="30" time="10" testtype="users" totaliterations="30"/>
+    <controller name="CWH_Iteration1">
+      <round name="CWH_Iteration1" totalusers="30" time="10" testtype="users" totaliterations="30"/>
     </controller>
-    <controller name="CWH_DebugTest_Iteration2">
-      <round name="CWH_DebugTest_Iteration2" totalusers="40" time="10" testtype="users" totaliterations="40"/>
+    <controller name="CWH_Iteration2">
+      <round name="CWH_Iteration2" totalusers="40" time="10" testtype="users" totaliterations="40"/>
     </controller>
-    <controller name="CWH_DebugTest_Iteration3">
-      <round name="CWH_DebugTest_Iteration3" totalusers="50" time="10" testtype="users" totaliterations="50"/>
+    <controller name="CWH_Iteration3">
+      <round name="CWH_Iteration3" totalusers="50" time="10" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" optionState="true">
       <test>
@@ -111,7 +111,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
+    <iteration controller="CWH_Iteration1" name="CWH_Iteration1">
       <testcase name="TC1_CWH_HomePage_Navigation_1" users="30">
         <options>
           <opt name="RampUpUsers" value="1"/>
@@ -132,7 +132,7 @@
         </options>
       </testcase>
     </iteration>
-    <iteration controller="CWH_DebugTest_Iteration2" name="CWH_DebugTest_Iteration2">
+    <iteration controller="CWH_Iteration2" name="CWH_Iteration2">
       <testcase name="TC1_CWH_HomePage_Navigation_2" users="40">
         <options>
           <opt name="RampUpUsers" value="1"/>
@@ -153,7 +153,7 @@
         </options>
       </testcase>
     </iteration>
-    <iteration controller="CWH_DebugTest_Iteration3" name="CWH_DebugTest_Iteration3">
+    <iteration controller="CWH_Iteration3" name="CWH_Iteration3">
       <testcase name="TC1_CWH_HomePage_Navigation_3" users="50">
         <options>
           <opt name="RampUpUsers" value="1"/>
