@@ -5,7 +5,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=124&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=125&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -395,9 +395,10 @@
 
 <step action="setValue" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=125&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="true"/>
+		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
 		<accessor type="setValue" value="textarea(0)" selected="false"/>
+		<accessor type='' value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//textarea[@id='Comments']&quot;" selected="true"/>
