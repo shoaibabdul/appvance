@@ -30,7 +30,7 @@
 <step action="setValue" value="&quot;John1234&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,7 +56,7 @@
 <step action="setValue" value="&quot;Abc123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -393,7 +393,7 @@
 
 
 
-<step action="setValue" value="&quot;PerformanceTesting&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="setValue" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=125&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="true"/>
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
