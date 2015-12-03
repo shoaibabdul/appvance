@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" exectype="runspecificstep19" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;$UID&quot;" type="web" desc="Launch FormWidget URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
