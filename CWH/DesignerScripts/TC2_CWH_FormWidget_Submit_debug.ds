@@ -3,9 +3,9 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/CWH_FormWidget_ParameterFile1.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=124&quot;" type="web" desc="Launch FormWidget URL" isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;$UID&quot;" type="web" desc="Launch FormWidget URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -27,7 +27,7 @@
 
 
 
-<step action="setValue" value="&quot;Copart123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$FirstName&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="false"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;CWH123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$LastName&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="setValue" value="&quot;1234 Dallas Pkwy&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$Address&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Mailing_Address1&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;Mailing_Address1&quot;)" selected="false"/>
@@ -105,7 +105,7 @@
 
 
 
-<step action="setValue" value="&quot;Dallas&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;$City&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;City&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;City&quot;)" selected="false"/>
@@ -131,7 +131,7 @@
 
 
 
-<step action="setSelected" value="&quot;TX - Texas&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;$State&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;State&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;State&quot;)" selected="false"/>
@@ -157,7 +157,7 @@
 
 
 
-<step action="setValue" value="&quot;00001&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$Zip&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;Zip&quot;)" selected="false"/>
@@ -287,7 +287,7 @@
 
 
 
-<step action="setSelected" value="&quot;2015&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="setSelected" value="&quot;$Year&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="false"/>
@@ -313,7 +313,7 @@
 
 
 
-<step action="setSelected" value="&quot;TOYOTA&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="false"/>
@@ -339,7 +339,7 @@
 
 
 
-<step action="setSelected" value="&quot;CAMRY&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="setSelected" value="&quot;$Model&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="false"/>
@@ -419,7 +419,7 @@
 
 
 
-<step action="setValue" value="&quot;CWH Performance Testing&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+<step action="setValue" value="&quot;$Comments&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="true"/>
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
@@ -434,12 +434,15 @@
 
 
 
-<step action="wait" value="&quot;https://qa.carswithheart.com/qaformWidget.php?i=124&quot;" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type='' value='' selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
