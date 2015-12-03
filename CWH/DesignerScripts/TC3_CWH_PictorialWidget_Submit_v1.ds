@@ -55,7 +55,7 @@
 
 
 
-<step action="setValue" value="&quot;copart1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;copart12&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;First_Name&quot;)" selected="false"/>
@@ -82,7 +82,7 @@
 
 
 
-<step action="setValue" value="&quot;abc1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;abc12&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;Last_Name&quot;)" selected="false"/>
@@ -406,7 +406,7 @@
 
 
 
-<step action="setSelected" value="&quot;ACCORD&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="setSelected" value="&quot;CRV&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="false"/>
