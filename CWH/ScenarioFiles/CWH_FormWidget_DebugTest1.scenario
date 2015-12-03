@@ -92,7 +92,7 @@
   </options>
   <templates>
     <controller name="CWH_FormWidget_DebugTest1">
-      <round name="CWH_FormWidget_DebugTest1" totalusers="30" time="5" testtype="users" totaliterations="30"/>
+      <round name="CWH_FormWidget_DebugTest1" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="CWH_FormWidget_DebugTest1" expand="yes">
       <test>
@@ -107,7 +107,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_DebugTest1" name="CWH_FormWidget_DebugTest1">
-      <testcase name="CWH_FormWidget_DebugTest1" users="30"/>
+      <testcase name="CWH_FormWidget_DebugTest1" users="10"/>
     </iteration>
   </execution>
   <logs>
