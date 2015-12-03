@@ -51,10 +51,10 @@
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="60"/>
+      <opt name="MaxRampUpTime" value="200"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="60"/>
+      <opt name="MaxRampDownTime" value="200"/>
       <opt name="ThinkTimeMin" value="0"/>
       <opt name="ThinkTimeMax" value="0"/>
       <opt name="MinSleepTime" value="0"/>
@@ -85,7 +85,7 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="10" time="5" testtype="users" totaliterations="50"/>
+      <round name="CWH_DebugTest_Iteration1" totalusers="100" time="15" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
       <test>
@@ -98,7 +98,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" users="10"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_1" users="100"/>
     </iteration>
   </execution>
   <logs>
