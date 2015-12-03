@@ -97,7 +97,7 @@
     <testcase name="CWH_FormWidget_DebugTest1" expand="yes">
       <test>
         <run name="CWH_FormWidget_DebugTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
-          <argument name="Untitled1" method="getNextUniqueData" dpl="Untitled1"/>
+          <argument name="Untitled1" method="getRandomData" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
