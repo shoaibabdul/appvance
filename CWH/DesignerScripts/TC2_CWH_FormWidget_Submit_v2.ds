@@ -1,9 +1,9 @@
-<testcase name='TC2_CWH_FormWidget_Submit_debug' description='' author='' version=''>
+<testcase name='TC2_CWH_FormWidget_Submit_v2' description='' author='' version=''>
 
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/data.csv" exectype="runspecificstep3" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;$UID&quot;" type="web" desc="Launch FormWidget URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -261,16 +261,16 @@
 
 
 
-<step action="setSelected" value="&quot;$Year&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="setSelected" value="&quot;Afternoon&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(4)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;besttime&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;besttime&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(3)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='Year1']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@id='besttime']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[2]/tbody/tr[21]/td[2]/table/tbody/tr[1]/td[7]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[7]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -287,16 +287,16 @@
 
 
 
-<step action="setSelected" value="&quot;$Make&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="setSelected" value="&quot;$Year&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(5)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Year1&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(4)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='Make']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@id='Year1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[1]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -313,16 +313,16 @@
 
 
 
-<step action="setSelected" value="&quot;$Model&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Make&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(5)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='Model']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[3]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[1]/td[3]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@id='Make']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/table/tbody/tr[1]/td[2]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -339,23 +339,22 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="setSelected" value="&quot;$Model&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;Model&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='Drivable']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@id='Model']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[3]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[1]/td[3]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="3000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -368,15 +367,15 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(1)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;Drivable&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='LienRelease']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[9]/td[2]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[9]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='Drivable']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//table[3]/tbody/tr[8]/td[2]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -393,7 +392,34 @@
 
 
 
-<step action="setValue" value="&quot;$Comments&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;LienRelease&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='LienRelease']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='formElem']/table[3]/tbody/tr[9]/td[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[9]/td[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$Comments&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="true"/>
 		<accessor type="setValue" value="textarea(&quot;Comments&quot;)" selected="false"/>
@@ -408,7 +434,7 @@
 
 
 
-<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
@@ -422,7 +448,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Donate My Vehicle Button" isThinkTime='false' isCommented='false' sequence="32">
+<step action="click" value='' type="web" desc="Click Donate My Vehicle Button" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Donate my vehicle&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;submit&quot;)" selected="false"/>
@@ -434,20 +460,6 @@
 		<accessor attribute='' value="&quot;//input[@id='registerButton']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//form[@id='formElem']/div[2]/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
