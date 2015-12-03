@@ -20,20 +20,20 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>Untitled Functional Test</name>
+    <name>CWH_FormWidget_DebugTest1</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName/>
-    <creator/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
     <links/>
-    <versions/>
-    <categorization/>
+    <versions>v1</versions>
+    <categorization>CWH project</categorization>
   </basics>
   <resources>
     <resource name="TC2_CWH_FormWidget_Submit_Final.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC2_CWH_FormWidget_Submit_Final.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="All" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -56,17 +56,19 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="100"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="100"/>
       <opt name="ThinkTimeMin" value="0"/>
       <opt name="ThinkTimeMax" value="0"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -89,12 +91,12 @@
     </options>
   </options>
   <templates>
-    <controller name="Untitled2">
-      <round name="Untitled2" totalusers="1" testtype="users" totaliterations="1" totalexecutions="1"/>
+    <controller name="CWH_FormWidget_DebugTest1">
+      <round name="CWH_FormWidget_DebugTest1" totalusers="30" time="5" testtype="users" totaliterations="30"/>
     </controller>
-    <testcase name="Untitled1" expand="yes">
+    <testcase name="CWH_FormWidget_DebugTest1" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
+        <run name="CWH_FormWidget_DebugTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
           <argument name="Untitled1" method="getNextUniqueData" dpl="Untitled1"/>
         </run>
       </test>
@@ -104,15 +106,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="Untitled2" name="Untitled2">
-      <testcase name="Untitled1" users="1"/>
+    <iteration controller="CWH_FormWidget_DebugTest1" name="CWH_FormWidget_DebugTest1">
+      <testcase name="CWH_FormWidget_DebugTest1" users="30"/>
     </iteration>
   </execution>
   <logs>
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
