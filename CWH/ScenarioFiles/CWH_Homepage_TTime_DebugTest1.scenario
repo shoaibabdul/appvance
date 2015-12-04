@@ -84,10 +84,10 @@
   <templates>
     <controller name="Untitled1">
       <round name="Untitled1" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="Untitled1" executions="3"/>
+        <testcase name="Untitled1" executions="1"/>
       </round>
     </controller>
-    <testcase name="Untitled1" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="Untitled1" expand="yes" thinktimeState="true">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_HomePage_TTime_DebugScript.ds"/>
       </test>
@@ -98,7 +98,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Untitled1" name="Untitled1">
-      <testcase name="Untitled1" totalexecutions="3" users="10">
+      <testcase name="Untitled1" totalexecutions="1" users="10">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
