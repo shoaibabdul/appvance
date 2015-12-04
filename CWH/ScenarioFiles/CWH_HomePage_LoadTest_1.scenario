@@ -83,7 +83,7 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_LT_1">
-      <round name="CWH_HomePage_LT_1" totalusers="100" time="10" testtype="users" totaliterations="100"/>
+      <round name="CWH_HomePage_LT_1" totalusers="40" time="10" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="CWH_HomePage_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
