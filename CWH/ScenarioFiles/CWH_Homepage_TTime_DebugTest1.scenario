@@ -55,8 +55,8 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="100"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1"/>
+      <opt name="ThinkTimeMax" value="5"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -67,7 +67,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
     </options>
     <options type="selenium">
       <opt name="loglevel" value="INFO"/>
@@ -89,7 +89,7 @@
         <testcase name="Untitled1" executions="2"/>
       </round>
     </controller>
-    <testcase name="Untitled1" expand="yes" thinktimeState="true">
+    <testcase name="Untitled1" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_HomePage_TTime_DebugScript.ds"/>
       </test>
@@ -100,25 +100,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Untitled1" name="Untitled1">
-      <testcase name="Untitled1" totalexecutions="2" users="5">
-        <options>
-          <opt name="RampUpUsers" value="0"/>
-          <opt name="RampUpSeconds" value="0"/>
-          <opt name="MaxRampUpTime" value="0"/>
-          <opt name="RampDownUsers" value="0"/>
-          <opt name="RampDownSeconds" value="0"/>
-          <opt name="MaxRampDownTime" value="0"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="1"/>
-          <opt name="ThinkTimeMax" value="10"/>
-        </options>
-      </testcase>
+      <testcase name="Untitled1" totalexecutions="2" users="5"/>
     </iteration>
   </execution>
   <logs>
