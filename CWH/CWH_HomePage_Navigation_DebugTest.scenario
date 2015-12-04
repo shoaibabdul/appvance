@@ -55,8 +55,8 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="200"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1"/>
+      <opt name="ThinkTimeMax" value="8"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -67,7 +67,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
     </options>
     <options type="selenium">
       <opt name="loglevel" value="INFO"/>
@@ -85,7 +85,7 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="10" time="15" testtype="users" totaliterations="10"/>
+      <round name="CWH_DebugTest_Iteration1" totalusers="5" time="5" testtype="users" totaliterations="5"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" thinktimeState="true">
       <test>
