@@ -3,20 +3,9 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="wait" value="5010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="navigateTo" value="&quot;https://qa.carswithheart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com/&quot;" type="web" desc="Launch CWH WebSite URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -27,7 +16,7 @@
 
 
 
-<step action="wait" value="55068" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -38,7 +27,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="click" value='' type="web" desc="Clk Donor Information" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
@@ -54,7 +43,7 @@
 
 
 
-<step action="wait" value="2973" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -65,7 +54,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="click" value='' type="web" desc="Clk Partner" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="true"/>
 		<accessor type="click" value="link(4)" selected="false"/>
@@ -81,7 +70,7 @@
 
 
 
-<step action="wait" value="3970" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -92,7 +81,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc="Clk Contact" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="true"/>
 		<accessor type="click" value="link(11)" selected="false"/>
@@ -108,7 +97,7 @@
 
 
 
-<step action="wait" value="7990" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -119,7 +108,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
