@@ -87,7 +87,7 @@
     <controller name="CWH_DebugTest_Iteration1">
       <round name="CWH_DebugTest_Iteration1" totalusers="10" time="15" testtype="users" totaliterations="10"/>
     </controller>
-    <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes">
+    <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" thinktimeState="true">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
       </test>
@@ -98,7 +98,25 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" users="10"/>
+      <testcase name="TC1_CWH_HomePage_Navigation_1" users="10">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="1"/>
+          <opt name="ThinkTimeMax" value="8"/>
+        </options>
+      </testcase>
     </iteration>
   </execution>
   <logs>
