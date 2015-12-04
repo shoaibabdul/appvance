@@ -56,7 +56,7 @@
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="100"/>
       <opt name="ThinkTimeMin" value="1"/>
-      <opt name="ThinkTimeMax" value="5"/>
+      <opt name="ThinkTimeMax" value="10"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
