@@ -95,7 +95,7 @@
     <testcase name="CWH_PictorialWidget_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="CWH_PictorialWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC3_CWH_PictorialWidget_Submit_Final.ds">
-          <argument name="CWH Pictorial Data" method="getRandomData" dpl="CWH Pictorial Data"/>
+          <argument name="CWH Pictorial Data" method="getNextData" dpl="CWH Pictorial Data"/>
         </run>
       </test>
     </testcase>
@@ -113,6 +113,7 @@
           <opt name="RampDownUsers" value="1"/>
           <opt name="RampDownSeconds" value="1"/>
           <opt name="MaxRampDownTime" value="100"/>
+          <opt name="InitialRampUpDelay" value="0"/>
           <opt name="IntervalTime" value="0"/>
           <opt name="MinIntervalTime" value="0"/>
           <opt name="MaxIntervalTime" value="0"/>
