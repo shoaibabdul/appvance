@@ -3,9 +3,20 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
-<step action="navigateTo" value="&quot;https://qa.carswithheart.com/&quot;" type="web" desc="Launch CWH URL" isThinkTime='false' isCommented='false' sequence="0">
+<step action="wait" value="5010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://qa.carswithheart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -16,24 +27,21 @@
 
 
 
-<step action="wait" value="5" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="wait" value="55068" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
 
 
-<step action="click" value='' type="web" desc="Click_DonorInformationButton" isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="false"/>
-		<accessor type="click" value="link(2)" selected="true"/>
+		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/donor-faq&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -46,24 +54,21 @@
 
 
 
-<step action="wait" value="5" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="wait" value="2973" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
 
 
-<step action="click" value='' type="web" desc="Click_PartnerWithUsButton" isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="false"/>
-		<accessor type="click" value="link(4)" selected="true"/>
+		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/partner-with-us&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -76,54 +81,21 @@
 
 
 
-<step action="wait" value="5" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="wait" value="3970" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
 
 
-<step action="click" value='' type="web" desc="Click_HomeButton" isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="false"/>
-		<accessor type="click" value="link(1)" selected="true"/>
-		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/index&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//ul[@id='nav']/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'index')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="5" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Click_ContactUsButton" isThinkTime='false' isCommented='false' sequence="8">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="false"/>
-		<accessor type="click" value="link(11)" selected="true"/>
+		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/contact&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -131,6 +103,34 @@
 		<accessor attribute='' value="&quot;//ul[@id='nav']/li[4]/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//a[contains(@href, 'contact')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[1]/ul[1]/li[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7990" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/index[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;selected&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='nav']/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'index')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
