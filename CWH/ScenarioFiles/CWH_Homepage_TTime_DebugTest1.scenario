@@ -84,7 +84,7 @@
   <templates>
     <controller name="Untitled1">
       <round name="Untitled1" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="Untitled1" executions="2"/>
+        <testcase name="Untitled1" executions="3"/>
       </round>
     </controller>
     <testcase name="Untitled1" expand="yes" optionState="true" thinktimeState="true">
@@ -98,7 +98,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Untitled1" name="Untitled1">
-      <testcase name="Untitled1" totalexecutions="2" users="5">
+      <testcase name="Untitled1" totalexecutions="3" users="10">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
