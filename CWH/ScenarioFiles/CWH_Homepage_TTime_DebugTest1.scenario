@@ -113,8 +113,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="1"/>
-          <opt name="ThinkTimeMax" value="5"/>
+          <opt name="ThinkTimeMin" value="1000"/>
+          <opt name="ThinkTimeMax" value="1000"/>
         </options>
       </testcase>
     </iteration>
