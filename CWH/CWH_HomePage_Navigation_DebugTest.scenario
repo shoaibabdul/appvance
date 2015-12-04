@@ -83,7 +83,7 @@
   </options>
   <templates>
     <controller name="CWH_DebugTest_Iteration1">
-      <round name="CWH_DebugTest_Iteration1" totalusers="50" time="30" testtype="users" totaliterations="50"/>
+      <round name="CWH_DebugTest_Iteration1" totalusers="20" time="30" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="TC1_CWH_HomePage_Navigation_1" expand="yes" optionState="true" thinktimeState="true">
       <test>
@@ -96,7 +96,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_DebugTest_Iteration1" name="CWH_DebugTest_Iteration1">
-      <testcase name="TC1_CWH_HomePage_Navigation_1" users="50">
+      <testcase name="TC1_CWH_HomePage_Navigation_1" users="20">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
