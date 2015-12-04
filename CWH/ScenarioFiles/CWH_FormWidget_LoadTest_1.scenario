@@ -44,7 +44,7 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
+    <dpl name="CWH Form Data" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="cwh_formwidget_testdata.csv"/>
       </argument>
@@ -92,10 +92,10 @@
     <controller name="CWH_FormWidget_LoadTest1">
       <round name="CWH_FormWidget_LoadTest1" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
-    <testcase name="CWH_FormWidget_DebugTest1" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="CWH_FormWidget_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
         <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
-          <argument name="Untitled1" method="getRandomData" dpl="Untitled1"/>
+          <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
         </run>
       </test>
     </testcase>
@@ -105,7 +105,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_DebugTest1" users="10">
+      <testcase name="CWH_FormWidget_LoadTest1" users="10">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
