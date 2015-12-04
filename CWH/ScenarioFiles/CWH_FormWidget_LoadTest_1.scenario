@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>CWH_FormWidget_DebugTest1</name>
+    <name>CWH_FormWidget_LoadTest1</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -91,12 +91,12 @@
     </options>
   </options>
   <templates>
-    <controller name="CWH_FormWidget_DebugTest1">
-      <round name="CWH_FormWidget_DebugTest1" totalusers="10" time="5" testtype="users" totaliterations="10"/>
+    <controller name="CWH_FormWidget_LoadTest1">
+      <round name="CWH_FormWidget_LoadTest1" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="CWH_FormWidget_DebugTest1" expand="yes">
       <test>
-        <run name="CWH_FormWidget_DebugTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
+        <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
           <argument name="Untitled1" method="getRandomData" dpl="Untitled1"/>
         </run>
       </test>
@@ -106,7 +106,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="CWH_FormWidget_DebugTest1" name="CWH_FormWidget_DebugTest1">
+    <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
       <testcase name="CWH_FormWidget_DebugTest1" users="10"/>
     </iteration>
   </execution>
