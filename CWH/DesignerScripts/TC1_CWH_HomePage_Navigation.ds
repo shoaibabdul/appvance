@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc="Clk Donor Information" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="true"/>
-		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;Donor Information&quot;)" selected="false"/>
+		<accessor type="click" value="link(2)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/donor-faq&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,8 +56,8 @@
 
 <step action="click" value='' type="web" desc="Clk Partner" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="true"/>
-		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;Partner With Us&quot;)" selected="false"/>
+		<accessor type="click" value="link(4)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/partner-with-us&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -83,8 +83,8 @@
 
 <step action="click" value='' type="web" desc="Clk Contact" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="true"/>
-		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;Contact Us&quot;)" selected="false"/>
+		<accessor type="click" value="link(11)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/contact&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -110,8 +110,8 @@
 
 <step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
-		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="false"/>
+		<accessor type="click" value="link(1)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/index[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;selected&quot;)" selected="false"/>
 	</dialect>
