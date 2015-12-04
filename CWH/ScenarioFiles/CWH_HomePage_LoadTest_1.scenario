@@ -83,9 +83,7 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_LT_1">
-      <round name="CWH_HomePage_LT_1" totalusers="30" testtype="users" totaliterations="30">
-        <testcase name="CWH_HomePage_LoadTest1" executions="10"/>
-      </round>
+      <round name="CWH_HomePage_LT_1" totalusers="30" time="5" testtype="users" totaliterations="30"/>
     </controller>
     <testcase name="CWH_HomePage_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
@@ -114,7 +112,7 @@
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
           <opt name="ThinkTimeMin" value="1000"/>
-          <opt name="ThinkTimeMax" value="8000"/>
+          <opt name="ThinkTimeMax" value="3000"/>
         </options>
       </testcase>
     </iteration>
