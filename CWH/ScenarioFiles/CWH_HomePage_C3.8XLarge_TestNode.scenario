@@ -32,7 +32,7 @@
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="testnode" location="http://52.91.40.73:8080/TMServer/ws/TestNode"/>
+    <node name="testnode" location="http://ec2-52-91-40-73.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
