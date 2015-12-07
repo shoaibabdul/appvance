@@ -83,9 +83,7 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_LT_1">
-      <round name="CWH_HomePage_LT_1" totalusers="1" testtype="users" totaliterations="1">
-        <testcase name="CWH_HomePage_LoadTest1" executions="1"/>
-      </round>
+      <round name="CWH_HomePage_LT_1" totalusers="50" time="10" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="CWH_HomePage_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
@@ -96,14 +94,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_HomePage_LT_1" name="CWH_HomePage_LT_1">
-      <testcase name="CWH_HomePage_LoadTest1" totalexecutions="1" users="1">
+      <testcase name="CWH_HomePage_LoadTest1" totalexecutions="1" users="50">
         <options>
           <opt name="RampUpUsers" value="1"/>
-          <opt name="RampUpSeconds" value="1"/>
-          <opt name="MaxRampUpTime" value="100"/>
+          <opt name="RampUpSeconds" value="2"/>
+          <opt name="MaxRampUpTime" value="200"/>
           <opt name="RampDownUsers" value="1"/>
-          <opt name="RampDownSeconds" value="1"/>
-          <opt name="MaxRampDownTime" value="100"/>
+          <opt name="RampDownSeconds" value="2"/>
+          <opt name="MaxRampDownTime" value="200"/>
           <opt name="InitialRampUpDelay" value="0"/>
           <opt name="IntervalTime" value="0"/>
           <opt name="MinIntervalTime" value="0"/>
