@@ -33,7 +33,7 @@
     <resource name="TC1_CWH_HomePage.ds" type="ds" path="SERVER/home/ubuntu/TC1_CWH_HomePage.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="ec2" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <node name="testnode" location="http://ec2-52-90-163-43.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
