@@ -90,7 +90,9 @@
   </options>
   <templates>
     <controller name="CWH_FormWidget_LoadTest1">
-      <round name="CWH_FormWidget_LoadTest1" totalusers="500" time="30" testtype="users" totaliterations="5000"/>
+      <round name="CWH_FormWidget_LoadTest1" totalusers="500" testtype="users" totaliterations="5000">
+        <testcase name="CWH_FormWidget_LoadTest1" executions="10"/>
+      </round>
     </controller>
     <testcase name="CWH_FormWidget_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
@@ -103,7 +105,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_LoadTest1" users="500">
+      <testcase name="CWH_FormWidget_LoadTest1" totalexecutions="10" users="500">
         <options>
           <opt name="RampUpUsers" value="3"/>
           <opt name="RampUpSeconds" value="1"/>
