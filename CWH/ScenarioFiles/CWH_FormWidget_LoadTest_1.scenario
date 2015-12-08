@@ -90,11 +90,9 @@
   </options>
   <templates>
     <controller name="CWH_FormWidget_LoadTest1">
-      <round name="CWH_FormWidget_LoadTest1" totalusers="500" testtype="users" totaliterations="5000">
-        <testcase name="CWH_FormWidget_LoadTest1" executions="10"/>
-      </round>
+      <round name="CWH_FormWidget_LoadTest1" totalusers="100" time="10" testtype="users" totaliterations="1000"/>
     </controller>
-    <testcase name="CWH_FormWidget_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
+    <testcase name="CWH_FormWidget_LoadTest1" expand="yes" thinktimeState="true">
       <test>
         <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
           <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
@@ -105,7 +103,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_LoadTest1" totalexecutions="10" users="500">
+      <testcase name="CWH_FormWidget_LoadTest1" totalexecutions="10" users="100">
         <options>
           <opt name="RampUpUsers" value="3"/>
           <opt name="RampUpSeconds" value="1"/>
