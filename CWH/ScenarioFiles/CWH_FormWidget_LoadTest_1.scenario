@@ -103,7 +103,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_LoadTest1" totalexecutions="10" users="100">
+      <testcase name="CWH_FormWidget_LoadTest1" users="100">
         <options>
           <opt name="RampUpUsers" value="3"/>
           <opt name="RampUpSeconds" value="1"/>
@@ -118,8 +118,8 @@
           <opt name="SleepTime" value="0"/>
           <opt name="MinSleepTime" value="0"/>
           <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="1000"/>
-          <opt name="ThinkTimeMax" value="3000"/>
+          <opt name="ThinkTimeMin" value="-1"/>
+          <opt name="ThinkTimeMax" value="-1"/>
         </options>
       </testcase>
     </iteration>
