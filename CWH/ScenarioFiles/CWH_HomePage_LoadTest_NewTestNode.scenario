@@ -32,7 +32,7 @@
     <resource name="TC1_CWH_HomePage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC1_CWH_HomePage_Navigation.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_EC2" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_EC2" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -83,11 +83,11 @@
   </options>
   <templates>
     <controller name="CWH_HomePage_LT_1">
-      <round name="CWH_HomePage_LT_1" totalusers="50" time="10" testtype="users" totaliterations="100"/>
+      <round name="CWH_HomePage_LT_1" totalusers="50" time="20" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="CWH_HomePage_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
-        <run name="CWH_HomePage_LT1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage.ds"/>
+        <run name="CWH_HomePage_LT1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_CWH_HomePage_Navigation.ds"/>
       </test>
     </testcase>
   </templates>
