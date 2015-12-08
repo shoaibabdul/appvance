@@ -98,10 +98,10 @@
       <testcase name="CWH_HomePage_LoadTest1" users="100">
         <options>
           <opt name="RampUpUsers" value="1"/>
-          <opt name="RampUpSeconds" value="3"/>
+          <opt name="RampUpSeconds" value="1"/>
           <opt name="MaxRampUpTime" value="1000"/>
           <opt name="RampDownUsers" value="1"/>
-          <opt name="RampDownSeconds" value="3"/>
+          <opt name="RampDownSeconds" value="1"/>
           <opt name="MaxRampDownTime" value="1000"/>
           <opt name="InitialRampUpDelay" value="0"/>
           <opt name="IntervalTime" value="0"/>
