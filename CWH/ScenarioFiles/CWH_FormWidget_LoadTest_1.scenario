@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -90,7 +90,9 @@
   </options>
   <templates>
     <controller name="CWH_FormWidget_LoadTest1">
-      <round name="CWH_FormWidget_LoadTest1" totalusers="10" time="10" testtype="users" totaliterations="10"/>
+      <round name="CWH_FormWidget_LoadTest1" totalusers="1" testtype="users" totaliterations="1">
+        <testcase name="CWH_FormWidget_LoadTest1" executions="1"/>
+      </round>
     </controller>
     <testcase name="CWH_FormWidget_LoadTest1" expand="yes" optionState="true" thinktimeState="true">
       <test>
@@ -103,7 +105,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_LoadTest1" users="10">
+      <testcase name="CWH_FormWidget_LoadTest1" totalexecutions="1" users="1">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
