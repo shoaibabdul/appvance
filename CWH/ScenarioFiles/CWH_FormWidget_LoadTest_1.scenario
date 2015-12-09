@@ -90,7 +90,7 @@
   </options>
   <templates>
     <controller name="CWH_FormWidget_LoadTest1">
-      <round name="CWH_FormWidget_LoadTest1" totalusers="600" time="10" testtype="users" totaliterations="1800"/>
+      <round name="CWH_FormWidget_LoadTest1" totalusers="600" time="20" testtype="users" totaliterations="1800"/>
     </controller>
     <testcase name="CWH_FormWidget_LoadTest1" expand="yes" thinktimeState="true">
       <test>
