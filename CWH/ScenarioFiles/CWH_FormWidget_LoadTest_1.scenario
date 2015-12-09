@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="10" instantiate="Required" terminate="None" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="10" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -92,7 +92,7 @@
     <controller name="CWH_FormWidget_LoadTest1">
       <round name="CWH_FormWidget_LoadTest1" totalusers="600" time="20" testtype="users" totaliterations="1800"/>
     </controller>
-    <testcase name="CWH_FormWidget_LoadTest1" expand="yes" thinktimeState="true">
+    <testcase name="CWH_FormWidget_LoadTest1" expand="yes">
       <test>
         <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
           <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
@@ -103,25 +103,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-      <testcase name="CWH_FormWidget_LoadTest1" users="600">
-        <options>
-          <opt name="RampUpUsers" value="3"/>
-          <opt name="RampUpSeconds" value="1"/>
-          <opt name="MaxRampUpTime" value="1000"/>
-          <opt name="RampDownUsers" value="3"/>
-          <opt name="RampDownSeconds" value="1"/>
-          <opt name="MaxRampDownTime" value="1000"/>
-          <opt name="InitialRampUpDelay" value="0"/>
-          <opt name="IntervalTime" value="0"/>
-          <opt name="MinIntervalTime" value="0"/>
-          <opt name="MaxIntervalTime" value="0"/>
-          <opt name="SleepTime" value="0"/>
-          <opt name="MinSleepTime" value="0"/>
-          <opt name="MaxSleepTime" value="0"/>
-          <opt name="ThinkTimeMin" value="-1"/>
-          <opt name="ThinkTimeMax" value="-1"/>
-        </options>
-      </testcase>
+      <testcase name="CWH_FormWidget_LoadTest1" users="600"/>
     </iteration>
   </execution>
   <logs>
