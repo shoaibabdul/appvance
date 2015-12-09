@@ -455,10 +455,10 @@
 
 <step action="assertExists" value='' type="web" desc="Thank You Message" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="assertExists" value="cell(&quot;THANK YOU&quot;)" selected="true"/>
+		<accessor type="assertExists" value="cell(&quot;THANK YOU&quot;)" selected="false"/>
 		<accessor type="assertExists" value="cell(&quot;tuheader&quot;)" selected="false"/>
 		<accessor type="assertExists" value="row(&quot;THANK YOU&quot;)" selected="false"/>
-		<accessor type="assertExists" value="row(0)" selected="false"/>
+		<accessor type="assertExists" value="row(0)" selected="true"/>
 		<accessor type="assertExists" value="table(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
