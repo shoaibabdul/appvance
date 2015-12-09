@@ -103,7 +103,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="CWH_PictorialWidget_LoadTest1" name="CWH_PictorialWidget_LoadTest1">
-      <testcase name="CWH_PictorialWidget_LoadTest1" users="10">
+      <testcase name="CWH_PictorialWidget_LoadTest1" users="100">
         <options>
           <opt name="RampUpUsers" value="1"/>
           <opt name="RampUpSeconds" value="1"/>
