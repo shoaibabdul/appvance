@@ -19,106 +19,124 @@
 * file 'LICENSE.txt', which is part of this source code package.
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
-<basics>
-  <name>CWH_FormWidget_LoadTest1</name>
-  <defaultdirectory>{scenario}</defaultdirectory>
-  <basicName>Balram Anthareddy</basicName>
-  <creator>Balram</creator>
-  <links/>
-  <versions>v1</versions>
-  <categorization>CWH project</categorization>
-</basics>
-<resources>
-  <resource name="TC2_CWH_FormWidget_Submit_Final.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC2_CWH_FormWidget_Submit_Final.ds" cache="false"/>
-  <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
-</resources>
-<testnodes>
-  <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="10" instantiate="All" terminate="All" reboot="After"/>
-</testnodes>
-<bundles>
-  <bundle name="hibernate" version="3.0"/>
-  <bundle name="mysql" version="5.0"/>
-  <bundle name="sahi" version="sahi_pro"/>
-  <bundle name="ds" version="2.0"/>
-  <bundle name="seleniumrc" version="2.45"/>
-  <bundle name="htmlunit" version="2.15.2648"/>
-</bundles>
-<datasources>
-  <dpl name="CWH Form Data" type="HashDPL" langtype="java" method="setup">
-    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-      <argument name="file" value="cwh_formwidget_testdata.csv"/>
-    </argument>
-  </dpl>
-</datasources>
-<options>
-  <options type="apc">
-    <opt name="SleepTime" value="0"/>
-    <opt name="testnode_concurrent_users" value="0"/>
-    <opt name="global_concurrent_users" value="0"/>
-    <opt name="SleepTime" value="0"/>
-    <opt name="RampUpUsers" value="0"/>
-    <opt name="RampUpSeconds" value="0"/>
-    <opt name="RampDownUsers" value="0"/>
-    <opt name="RampDownSeconds" value="0"/>
-    <opt name="ThinkTimeMin" value="0"/>
-    <opt name="ThinkTimeMax" value="0"/>
-    <opt name="MinSleepTime" value="0"/>
-    <opt name="MaxSleepTime" value="0"/>
-    <opt name="MinIntervalTime" value="0"/>
-    <opt name="MaxIntervalTime" value="0"/>
-    <opt name="PercentageLogsSaved" value="100"/>
-    <opt name="ThinkTime" value="0"/>
-    <opt name="IntervalTime" value="0"/>
-    <opt name="DynamicIpAddress" value="false"/>
-    <opt name="EnableSavingLogs" value="true"/>
-    <opt name="AlwaysSaveLogOnFailure" value="true"/>
-    <opt name="AddThinkTimeToStep" value="false"/>
+  <basics>
+    <name>CWH_FormWidget_LoadTest1</name>
+    <defaultdirectory>{scenario}</defaultdirectory>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <links/>
+    <versions>v1</versions>
+    <categorization>CWH project</categorization>
+  </basics>
+  <resources>
+    <resource name="TC2_CWH_FormWidget_Submit_Final.ds" type="ds" path="REPOSITORY/C3Seller_perf/CWH/DesignerScripts/TC2_CWH_FormWidget_Submit_Final.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/CWH/cwh_testdata/cwh_formwidget_testdata.csv" cache="false"/>
+  </resources>
+  <testnodes>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="15" instantiate="All" terminate="All" reboot="After"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="CWH Form Data" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="cwh_formwidget_testdata.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SleepTime" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="0"/>
+      <opt name="RampUpSeconds" value="0"/>
+      <opt name="RampDownUsers" value="0"/>
+      <opt name="RampDownSeconds" value="0"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="ThinkTime" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="loglevel" value="INFO"/>
+      <opt name="throwExceptionOnScriptError" value="false"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
+    </options>
+    <options type="sahi">
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="port" value="5555"/>
+    </options>
   </options>
-  <options type="selenium">
-    <opt name="loglevel" value="INFO"/>
-    <opt name="throwExceptionOnScriptError" value="false"/>
-    <opt name="throwExceptionOnFailingStatusCode" value="false"/>
-  </options>
-  <options type="sahi">
-    <opt name="clearCache" value="true"/>
-    <opt name="takeSnapshot" value="false"/>
-  </options>
-  <options type="seleniumrc">
-    <opt name="listenport" value="6543"/>
-    <opt name="port" value="5555"/>
-  </options>
-</options>
-<templates>
-  <controller name="CWH_FormWidget_LoadTest1">
-    <round name="CWH_FormWidget_LoadTest1" totalusers="600" time="20" testtype="users" totaliterations="1800"/>
-  </controller>
-  <testcase name="CWH_FormWidget_LoadTest1" expand="yes">
-    <test>
-      <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
-        <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
-      </run>
-    </test>
-  </testcase>
-</templates>
-<monitoring enablednodes="true" enabledtarget="false"/>
-<execution type="loadtest">
-  <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
-    <testcase name="CWH_FormWidget_LoadTest1" users="600"/>
-  </iteration>
-</execution>
-<logs>
-  <log type="database">
-    <opt name="hibernate.connection.username" value="apc"/>
-    <opt name="hibernate.connection.password" value="apc"/>
-    <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
-    <opt name="hibernate.default_schema" value="apc"/>
-    <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-  </log>
-</logs>
-<integrations>
-  <integration type="RQM">
-    <opt name="Enabled" value="false"/>
-  </integration>
-</integrations>
-<notifications/>
+  <templates>
+    <controller name="CWH_FormWidget_LoadTest1">
+      <round name="CWH_FormWidget_LoadTest1" totalusers="800" time="20" testtype="users" totaliterations="8000"/>
+    </controller>
+    <testcase name="CWH_FormWidget_LoadTest1" expand="yes" thinktimeState="true">
+      <test>
+        <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
+          <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
+        </run>
+      </test>
+    </testcase>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest">
+    <iteration controller="CWH_FormWidget_LoadTest1" name="CWH_FormWidget_LoadTest1">
+      <testcase name="CWH_FormWidget_LoadTest1" users="800">
+        <options>
+          <opt name="RampUpUsers" value="0"/>
+          <opt name="RampUpSeconds" value="0"/>
+          <opt name="MaxRampUpTime" value="0"/>
+          <opt name="RampDownUsers" value="0"/>
+          <opt name="RampDownSeconds" value="0"/>
+          <opt name="MaxRampDownTime" value="0"/>
+          <opt name="InitialRampUpDelay" value="0"/>
+          <opt name="IntervalTime" value="0"/>
+          <opt name="MinIntervalTime" value="0"/>
+          <opt name="MaxIntervalTime" value="0"/>
+          <opt name="SleepTime" value="0"/>
+          <opt name="MinSleepTime" value="0"/>
+          <opt name="MaxSleepTime" value="0"/>
+          <opt name="ThinkTimeMin" value="-1"/>
+          <opt name="ThinkTimeMax" value="-1"/>
+        </options>
+      </testcase>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+    </log>
+  </logs>
+  <integrations>
+    <integration type="RQM">
+      <opt name="Enabled" value="false"/>
+    </integration>
+  </integrations>
+  <notifications/>
 </testscenario>
