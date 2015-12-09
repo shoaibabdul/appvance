@@ -453,7 +453,7 @@
 
 
 
-<step action="assertExists" value='' type="web" desc="Thank You Message" isThinkTime='false' isCommented='false' sequence="34">
+<step action="assertExists" value='' type="web" desc="Form Thank You Message" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="assertExists" value="cell(&quot;THANK YOU&quot;)" selected="false"/>
 		<accessor type="assertExists" value="cell(&quot;tuheader&quot;)" selected="false"/>
