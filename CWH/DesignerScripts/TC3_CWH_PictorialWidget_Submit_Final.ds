@@ -556,7 +556,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
+<step action="wait" value="2000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
@@ -584,6 +584,22 @@
 	</dialect>
 	<dialect type="flextesting">
 		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Click Donate Another Vehicle" isThinkTime='false' isCommented='false' sequence="43">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Donate Another Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(0)" selected="true"/>
+		<accessor type="click" value="link(&quot;https://qa.carswithheart.com/qadonationForm.php?i=124&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Donate Another Vehicle')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='thankyou']/table/tbody/tr[3]/td/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/qadonationForm.php?i=124')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a&quot;" selected="false"/>
 	</dialect>
 </step>
 
