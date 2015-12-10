@@ -589,7 +589,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Donate Another Vehicle" isThinkTime='false' isCommented='false' sequence="43">
+<step action="click" value='' type="web" desc="Click Pictorial Donate Another Vehicle" isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Donate Another Vehicle&quot;)" selected="false"/>
 		<accessor type="click" value="link(0)" selected="true"/>
