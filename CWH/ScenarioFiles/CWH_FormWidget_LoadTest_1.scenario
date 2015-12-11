@@ -95,7 +95,7 @@
     <testcase name="CWH_FormWidget_LoadTest1" expand="yes" thinktimeState="true">
       <test>
         <run name="CWH_FormWidget_LoadTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC2_CWH_FormWidget_Submit_Final.ds">
-          <argument name="CWH Form Data" method="getRandomData" dpl="CWH Form Data"/>
+          <argument name="CWH Form Data" method="getNextData" dpl="CWH Form Data"/>
         </run>
       </test>
     </testcase>
