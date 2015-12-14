@@ -1,0 +1,216 @@
+<testcase name='TC1_PublicHomePage' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5011" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;http://qa2.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8980" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;OK&quot;)" selected="true"/>
+		<accessor type="click" value="link(199)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/#[5]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large close grid_2 center&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'OK')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div/div/div[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3967" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Find a Vehicle')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-findvehicle']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/Search/VehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4953" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Auctions&quot;)" selected="true"/>
+		<accessor type="click" value="link(15)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/Today&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Auctions')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-auction']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/Auctions/Today')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3922" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Locations&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-location']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/Locations')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10896" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sell a Vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="link(22)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/HowToSell/Individual&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sell a Vehicle')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-sell']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/HowToSell/Individual')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[5]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3805" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Support&quot;)" selected="true"/>
+		<accessor type="click" value="link(26)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/Content/US/en/Support/How-to-Buy/Overview&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Support')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-support']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/Content/US/en/Support/How-to-Buy/Overview')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[6]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7734" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
