@@ -182,7 +182,7 @@
 
 
 
-<step action="setValue" value="&quot;HONDA&quot;" type="web" desc="Enter &quot;Car Make&quot;" isThinkTime='false' isCommented='false' sequence="13">
+<step action="setValue" value="&quot;Nissan&quot;" type="web" desc="Enter &quot;Car Make&quot;" isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
