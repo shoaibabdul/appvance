@@ -57,7 +57,7 @@
 
 
 
-<step action="wait" value="3000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="wait" value="2000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
