@@ -80,7 +80,7 @@
 
 
 
-<step action="setValue" value="&quot;4929abc&quot;" type="web" desc="Enter &quot;LotNumber&quot;" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;22871123&quot;" type="web" desc="Enter &quot;LotNumber&quot;" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
