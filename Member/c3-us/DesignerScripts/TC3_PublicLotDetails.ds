@@ -1,0 +1,110 @@
+<testcase name='TC3_PublicLotDetails' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://qa2.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;OK&quot;)" selected="true"/>
+		<accessor type="click" value="link(199)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/#[5]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large close grid_2 center&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'OK')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div/div/div[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Find a Vehicle')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-findvehicle']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/Search/VehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='txtsearchBox']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;View All Photos&quot;)" selected="true"/>
+		<accessor type="click" value="link(45)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/us/Lot/24774913/Photos?SearchId=0&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'View All Photos')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/span/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/Lot/24774913/Photos?SearchId=0')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/div[1]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
