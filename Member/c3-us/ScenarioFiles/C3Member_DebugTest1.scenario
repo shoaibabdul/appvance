@@ -30,9 +30,6 @@
   </basics>
   <resources>
     <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
-    <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
-    <resource name="TC6_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC6_MemberHomePage.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/c3-us/us-testdata/C3M_Login_Data.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
