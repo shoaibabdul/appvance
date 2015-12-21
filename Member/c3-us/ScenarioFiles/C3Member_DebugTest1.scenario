@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C3Member_DebugTest2</name>
+    <name>C3Member_DebugTest1</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -35,7 +35,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/c3-us/us-testdata/C3M_Login_Data.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="Required" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -45,13 +45,7 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources>
-    <dpl name="C3MemberLogin" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3M_Login_Data.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -93,33 +87,19 @@
     </options>
   </options>
   <templates>
-    <controller name="C3Member_DebugTest2_01">
-      <round name="C3Member_DebugTest2_01" totalusers="10" time="10" testtype="users" totaliterations="10"/>
+    <controller name="C3Member_DebugTest1_01">
+      <round name="C3Member_DebugTest1_01" totalusers="5" time="5" testtype="users" totaliterations="5"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
-    <testcase name="TC2_PublicSearchResults" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds"/>
-      </test>
-    </testcase>
-    <testcase name="TC6_MemberHomePage" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberHomePage.ds">
-          <argument name="C3MemberLogin" method="getNextData" dpl="C3MemberLogin"/>
-        </run>
-      </test>
-    </testcase>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C3Member_DebugTest2_01" name="C3Member_DebugTest2_01">
-      <testcase name="TC1_PublicHomePage" users="3"/>
-      <testcase name="TC2_PublicSearchResults" users="3"/>
-      <testcase name="TC6_MemberHomePage" users="4"/>
+    <iteration controller="C3Member_DebugTest1_01" name="C3Member_DebugTest1_01">
+      <testcase name="TC1_PublicHomePage" users="5"/>
     </iteration>
   </execution>
   <logs>
