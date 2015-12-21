@@ -375,7 +375,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc="Click &quot;Sales List3&quot; button" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="link(&quot;Sales List[1]&quot;)" selected="true"/>
@@ -401,7 +401,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="click" value='' type="web" desc="Click &quot;Future3&quot; link" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="link(&quot;Future[3]&quot;)" selected="true"/>
