@@ -344,7 +344,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+<step action="click" value='' type="web" desc="Click &quot;Sales List1&quot; button" isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Sales List[1]&quot;)" selected="false"/>
 		<accessor type="click" value="span(&quot;title[20]&quot;)" selected="false"/>
@@ -373,7 +373,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc="Click &quot;Future1&quot; link" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(75)" selected="false"/>
@@ -402,7 +402,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="click" value='' type="web" desc="Click &quot;Sales List2&quot; button" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;See our lists of sales by location.[1]&quot;)" selected="false"/>
 		<accessor type="click" value="span(&quot;sub-title[20]&quot;)" selected="true"/>
@@ -430,7 +430,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+<step action="click" value='' type="web" desc="Click &quot;Future2&quot; link" isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
 		<accessor type="click" value="link(76)" selected="false"/>
@@ -459,7 +459,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+<step action="click" value='' type="web" desc="Click &quot;Sales List3&quot; button" isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;See our lists of sales by location.[1]&quot;)" selected="false"/>
 		<accessor type="click" value="span(&quot;sub-title[20]&quot;)" selected="true"/>
@@ -487,7 +487,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+<step action="click" value='' type="web" desc="Click &quot;Future3&quot; link" isThinkTime='false' isCommented='false' sequence="35">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[3]&quot;)" selected="true"/>
 		<accessor type="click" value="link(77)" selected="false"/>
