@@ -89,7 +89,7 @@
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
-        <run name="C3MemberDebugTest1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_PublicHomePage.ds"/>
+        <run name="C3MemberDebugTest1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
   </templates>
