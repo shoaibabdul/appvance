@@ -22,7 +22,7 @@
   <basics>
     <name>C3Member_DebugTest1</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName>Balram ANthareddy</basicName>
+    <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
     <versions>v1</versions>
@@ -35,7 +35,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/c3-us/us-testdata/C3M_Login_Data.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -68,7 +68,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -124,7 +124,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
