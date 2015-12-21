@@ -264,7 +264,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click &quot;Sales List&quot; button" isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Click &quot;Sales List1&quot; button" isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(42)" selected="false"/>
@@ -321,20 +321,15 @@
 
 
 
-<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc="Select &quot;Show All Results1&quot; " isThinkTime='false' isCommented='false' sequence="23">
+<step action="click" value='' type="web" desc="Click &quot;Sales List2&quot; link" isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;Show All Results&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;2500&quot;)" selected="false"/>
-		<accessor type='' value="option(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(40)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//option[@value='2500']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']/option[4]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//option[4]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -354,35 +349,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click &quot;Sales List&quot; link" isThinkTime='false' isCommented='false' sequence="25">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(40)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Click &quot;Future2&quot; link" isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc="Click &quot;Future2&quot; link" isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
 		<accessor type="click" value="link(49)" selected="false"/>
@@ -397,9 +364,21 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="false"/>
@@ -411,20 +390,27 @@
 
 
 
-<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc="Select &quot;Show All Results2&quot; " isThinkTime='false' isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;Show All Results&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;2500&quot;)" selected="false"/>
-		<accessor type='' value="option(3)" selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//option[@value='2500']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']/option[4]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//option[4]&quot;" selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="link(&quot;Future[3]&quot;)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
