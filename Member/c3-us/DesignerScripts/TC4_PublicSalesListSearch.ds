@@ -264,7 +264,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Click &quot;Sales List&quot; button" isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(42)" selected="false"/>
@@ -292,7 +292,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+<step action="click" value='' type="web" desc="Click &quot;Future1&quot; link" isThinkTime='false' isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(48)" selected="false"/>
@@ -321,7 +321,7 @@
 
 
 
-<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc="Select &quot;Show All Results1&quot; " isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
@@ -354,7 +354,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+<step action="click" value='' type="web" desc="Click &quot;Sales List&quot; link" isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(40)" selected="false"/>
@@ -382,7 +382,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc="Click &quot;Future2&quot; link" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
 		<accessor type="click" value="link(49)" selected="false"/>
@@ -411,7 +411,7 @@
 
 
 
-<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc="Select &quot;Show All Results2&quot; " isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
