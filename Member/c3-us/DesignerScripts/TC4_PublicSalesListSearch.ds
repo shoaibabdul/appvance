@@ -250,7 +250,187 @@
 
 
 
-<step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(42)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(48)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/us/search?yardNumber=14&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=TX%20-%20LONGVIEW&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[2]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?yardNumber=14&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=TX%20-%20LONGVIEW&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+		<accessor type='' value="option(&quot;Show All Results&quot;)" selected="false"/>
+		<accessor type='' value="option(&quot;2500&quot;)" selected="false"/>
+		<accessor type='' value="option(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//option[@value='2500']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']/option[4]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//option[4]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(40)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
+		<accessor type="click" value="link(49)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://qa2.copart.com/us/search?yardNumber=38&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=WI%20-%20MADISON&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[3]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?yardNumber=38&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=WI%20-%20MADISON&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+		<accessor type='' value="option(&quot;Show All Results&quot;)" selected="false"/>
+		<accessor type='' value="option(&quot;2500&quot;)" selected="false"/>
+		<accessor type='' value="option(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//option[@value='2500']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']/option[4]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//option[4]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -261,7 +441,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(8)" selected="false"/>
@@ -277,7 +457,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
