@@ -364,7 +364,7 @@
 
 
 
-<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -375,58 +375,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(42)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="3056" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
-		<accessor type="click" value="link(49)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://qa2.copart.com/us/search?yardNumber=38&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=WI%20-%20MADISON&amp;cn=loc&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[3]/td[7]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?yardNumber=38&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=WI%20-%20MADISON&amp;cn=loc')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//tr[3]/td[7]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="13088" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+<step action="click" value='' type="web" desc="Click &quot;Sales List3&quot; button" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(40)" selected="false"/>
@@ -440,7 +389,7 @@
 
 
 
-<step action="wait" value="2052" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -451,7 +400,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+<step action="click" value='' type="web" desc="Click &quot;Future3&quot; link" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Future[3]&quot;)" selected="true"/>
 		<accessor type="click" value="link(50)" selected="false"/>
@@ -466,7 +415,7 @@
 
 
 
-<step action="wait" value="23131" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -477,7 +426,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+<step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(8)" selected="false"/>
@@ -493,34 +442,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="37">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
-		<accessor type="click" value="link(8)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://qa2.copart.com/US&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '/US')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
