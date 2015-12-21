@@ -1,0 +1,138 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>C3Member_DebugTest1</name>
+    <defaultdirectory>{scenario}</defaultdirectory>
+    <basicName>Balram ANthareddy</basicName>
+    <creator>Balram</creator>
+    <links/>
+    <versions>v1</versions>
+    <categorization>C3Member Project</categorization>
+  </basics>
+  <resources>
+    <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
+    <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
+    <resource name="TC6_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/c3-us/DesignerScripts/TC6_MemberHomePage.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/c3-us/us-testdata/C3M_Login_Data.csv" cache="false"/>
+  </resources>
+  <testnodes>
+    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="C3MemberLogin" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3M_Login_Data.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SleepTime" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="0"/>
+      <opt name="RampUpSeconds" value="0"/>
+      <opt name="RampDownUsers" value="0"/>
+      <opt name="RampDownSeconds" value="0"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="ThinkTime" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="loglevel" value="INFO"/>
+      <opt name="throwExceptionOnScriptError" value="false"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
+    </options>
+    <options type="sahi">
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="port" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="C3Member_DebugTest1_01">
+      <round name="C3Member_DebugTest1_01" totalusers="10" time="10" testtype="users" totaliterations="10"/>
+    </controller>
+    <testcase name="TC1_PublicHomePage" expand="yes">
+      <test>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
+      </test>
+    </testcase>
+    <testcase name="TC2_PublicSearchResults" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds"/>
+      </test>
+    </testcase>
+    <testcase name="TC6_MemberHomePage" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberHomePage.ds">
+          <argument name="C3MemberLogin" method="getNextData" dpl="C3MemberLogin"/>
+        </run>
+      </test>
+    </testcase>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest">
+    <iteration controller="C3Member_DebugTest1_01" name="C3Member_DebugTest1_01">
+      <testcase name="TC1_PublicHomePage" users="3"/>
+      <testcase name="TC2_PublicSearchResults" users="3"/>
+      <testcase name="TC6_MemberHomePage" users="4"/>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+    </log>
+  </logs>
+  <integrations>
+    <integration type="RQM">
+      <opt name="Enabled" value="false"/>
+    </integration>
+  </integrations>
+  <notifications/>
+</testscenario>
