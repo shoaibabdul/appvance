@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -16,7 +16,7 @@
 
 
 
-<step action="wait" value="26992" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -43,7 +43,7 @@
 
 
 
-<step action="wait" value="6949" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -69,7 +69,7 @@
 
 
 
-<step action="wait" value="5915" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -96,7 +96,7 @@
 
 
 
-<step action="wait" value="5928" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -123,7 +123,7 @@
 
 
 
-<step action="wait" value="3872" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -144,6 +144,20 @@
 		<accessor attribute='' value="&quot;//a[contains(text(),'Início')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
