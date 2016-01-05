@@ -125,8 +125,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1BR_LoadTest_DryRun">
-      <round name="G1BR_LoadTest_DryRun" totalusers="40" time="30" testtype="users" totaliterations="40"/>
+    <controller name="G1BR_LoadTest_DryRun_1">
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="30" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="PublicHomePage" expand="yes">
       <test>
@@ -183,7 +183,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1BR_LoadTest_DryRun" name="G1BR_LoadTest_DryRun">
+    <iteration controller="G1BR_LoadTest_DryRun_1" name="G1BR_LoadTest_DryRun_1">
       <testcase name="PublicHomePage" users="5"/>
       <testcase name="Untitled2" users="5"/>
       <testcase name="Untitled3" users="5"/>
