@@ -92,12 +92,14 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="5"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="5"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="5000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -142,40 +144,40 @@
     </testcase>
     <testcase name="PublicLotDetails3" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
           <argument name="Pub_LotNumbers" method="getNextData" dpl="Pub_LotNumbers"/>
         </run>
       </test>
     </testcase>
     <testcase name="PublicHeaderSearch4" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
       </test>
     </testcase>
     <testcase name="MemberHomePage5" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
           <argument name="LoginIDs" method="getNextData" dpl="LoginIDs"/>
         </run>
       </test>
     </testcase>
     <testcase name="MemberSearchResults6" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
           <argument name="Login_CarMake" method="getNextData" dpl="Login_CarMake"/>
         </run>
       </test>
     </testcase>
     <testcase name="MemberLotDetails7" expand="yes">
       <test>
-        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
+        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
           <argument name="Login_LotNumbers" method="getNextData" dpl="Login_LotNumbers"/>
         </run>
       </test>
     </testcase>
     <testcase name="MemberHeaderSearch8" expand="yes">
       <test>
-        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
+        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
           <argument name="LoginID" method="getNextData" dpl="LoginID"/>
         </run>
       </test>
