@@ -128,7 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_1">
-      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" testtype="users" totaliterations="40" totalexecutions="10"/>
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="20" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="PublicHomePage1" expand="yes">
       <test>
