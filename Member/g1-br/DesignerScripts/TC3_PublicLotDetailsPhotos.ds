@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Find a Vehicle&quot; button" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Busca de Veículos&quot;)" selected="true"/>
-		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;Busca de Veículos&quot;)" selected="false"/>
+		<accessor type="click" value="link(6)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.com.br/BR/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,9 +56,9 @@
 
 <step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter &quot;Lot Number&quot; LookUp" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;LotNumbers&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;LotNumbers&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;LotNumbers&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;single-input&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -83,9 +83,9 @@
 
 <step action="click" value='' type="web" desc="Submit &quot;LotLookUp&quot; button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Pesquisar pelo Código&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Pesquisar pelo Código&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;button large grid_4 single-input&quot;)" selected="false"/>
-		<accessor type="click" value="submit(1)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
@@ -109,8 +109,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;ViewAllPhotos&quot; link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Visualizar todas as fotos&quot;)" selected="true"/>
-		<accessor type="click" value="link(27)" selected="false"/>
+		<accessor type="click" value="link(&quot;Visualizar todas as fotos&quot;)" selected="false"/>
+		<accessor type="click" value="link(27)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.com.br/br/Lot/260850/Photos?SearchId=1188768358&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -136,8 +136,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Início&quot;)" selected="true"/>
-		<accessor type="click" value="link(5)" selected="false"/>
+		<accessor type="click" value="link(&quot;Início&quot;)" selected="false"/>
+		<accessor type="click" value="link(5)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.com.br/[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
