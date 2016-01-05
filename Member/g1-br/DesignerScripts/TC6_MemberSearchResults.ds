@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_CarMake_Data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc="Launch G1 Brazil URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;13419@gmail.com&quot;" type="web" desc="Enter &quot;User ID&quot; " isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$LoginID&quot;" type="web" desc="Enter &quot;User ID&quot; " isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="setValue" value="&quot;Copart@1&quot;" type="web" desc="Enter &quot;Password&quot;" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter &quot;Password&quot;" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
@@ -159,7 +159,7 @@
 
 
 
-<step action="setValue" value="&quot;Honda&quot;" type="web" desc="Enter &quot;Vehicle Make&quot;" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$CarMake&quot;" type="web" desc="Enter &quot;Vehicle Make&quot;" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
