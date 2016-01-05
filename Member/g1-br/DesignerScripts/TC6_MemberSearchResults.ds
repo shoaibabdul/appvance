@@ -5,7 +5,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc="Launch G1 Brazil URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -27,7 +27,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Click &quot;Sign In&quot; link" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Entrar&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;13419@gmail.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;13419@gmail.com&quot;" type="web" desc="Enter &quot;User ID&quot; " isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="setValue" value="&quot;Copart@1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;Copart@1&quot;" type="web" desc="Enter &quot;Password&quot;" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
@@ -107,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Click &quot;Sign into your Account&quot; button" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Entrar com sua conta&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
@@ -134,7 +134,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Scroll Over and select &quot;Vehicle Finder&quot; link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Opções de pesquisa rápidas e avançadas.[1]&quot;)" selected="true"/>
 		<accessor type="click" value="span(&quot;sub-title[9]&quot;)" selected="false"/>
@@ -159,7 +159,7 @@
 
 
 
-<step action="setValue" value="&quot;Honda&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;Honda&quot;" type="web" desc="Enter &quot;Vehicle Make&quot;" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
@@ -185,7 +185,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Click &quot;Search&quot; button" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
@@ -210,7 +210,7 @@
 
 
 
-<step action="setSelected" value="&quot;Mostrar 50 resultados&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="setSelected" value="&quot;Mostrar 50 resultados&quot;" type="web" desc="Select &quot;50 Results&quot; page" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
@@ -237,7 +237,7 @@
 
 
 
-<step action="setSelected" value="&quot;Mostrar 100 resultados&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="setSelected" value="&quot;Mostrar 100 resultados&quot;" type="web" desc="Select &quot;100 Results&quot; page" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
@@ -264,7 +264,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Click &quot;Sign Out&quot; link" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sair&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
