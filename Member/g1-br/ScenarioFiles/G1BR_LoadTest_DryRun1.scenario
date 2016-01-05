@@ -126,54 +126,54 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_1">
-      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="30" testtype="users" totaliterations="40"/>
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" testtype="users" totaliterations="40" totalexecutions="10"/>
     </controller>
-    <testcase name="PublicHomePage" expand="yes">
+    <testcase name="PublicHomePage1" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled2" expand="yes">
+    <testcase name="PublicSearchResults2" expand="yes">
       <test>
         <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
           <argument name="Pub_CarMake" method="getNextData" dpl="Pub_CarMake"/>
         </run>
       </test>
     </testcase>
-    <testcase name="Untitled3" expand="yes">
+    <testcase name="PublicLotDetails3" expand="yes">
       <test>
         <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
           <argument name="Pub_LotNumbers" method="getNextData" dpl="Pub_LotNumbers"/>
         </run>
       </test>
     </testcase>
-    <testcase name="Untitled4" expand="yes">
+    <testcase name="PublicHeaderSearch4" expand="yes">
       <test>
         <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled5" expand="yes">
+    <testcase name="MemberHomePage5" expand="yes">
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
           <argument name="LoginIDs" method="getNextData" dpl="LoginIDs"/>
         </run>
       </test>
     </testcase>
-    <testcase name="Untitled6" expand="yes">
+    <testcase name="MemberSearchResults6" expand="yes">
       <test>
         <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
           <argument name="Login_CarMake" method="getNextData" dpl="Login_CarMake"/>
         </run>
       </test>
     </testcase>
-    <testcase name="Untitled7" expand="yes">
+    <testcase name="MemberLotDetails7" expand="yes">
       <test>
         <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
           <argument name="Login_LotNumbers" method="getNextData" dpl="Login_LotNumbers"/>
         </run>
       </test>
     </testcase>
-    <testcase name="Untitled8" expand="yes">
+    <testcase name="MemberHeaderSearch8" expand="yes">
       <test>
         <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
           <argument name="LoginID" method="getNextData" dpl="LoginID"/>
@@ -184,14 +184,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun_1" name="G1BR_LoadTest_DryRun_1">
-      <testcase name="PublicHomePage" users="5"/>
-      <testcase name="Untitled2" users="5"/>
-      <testcase name="Untitled3" users="5"/>
-      <testcase name="Untitled4" users="5"/>
-      <testcase name="Untitled5" users="5"/>
-      <testcase name="Untitled6" users="5"/>
-      <testcase name="Untitled7" users="5"/>
-      <testcase name="Untitled8" users="5"/>
+      <testcase name="PublicHomePage1" users="5"/>
+      <testcase name="PublicSearchResults2" users="5"/>
+      <testcase name="PublicLotDetails3" users="5"/>
+      <testcase name="PublicHeaderSearch4" users="5"/>
+      <testcase name="MemberHomePage5" users="5"/>
+      <testcase name="MemberSearchResults6" users="5"/>
+      <testcase name="MemberLotDetails7" users="5"/>
+      <testcase name="MemberHeaderSearch8" users="5"/>
     </iteration>
   </execution>
   <logs>
