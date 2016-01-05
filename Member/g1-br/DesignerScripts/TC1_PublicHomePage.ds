@@ -5,7 +5,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc="Launch G1 Brazil URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -27,7 +27,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Click &quot;Find a Vehicle&quot; button" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Busca de Veículos&quot;)" selected="true"/>
 		<accessor type="click" value="link(6)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Click &quot;Auctions&quot; button" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Agenda de Leilões&quot;)" selected="true"/>
 		<accessor type="click" value="link(11)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Click &quot;Locations&quot; button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Localização dos Pátios&quot;)" selected="true"/>
 		<accessor type="click" value="link(15)" selected="false"/>
@@ -107,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Click &quot;Support&quot; button" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Suporte&quot;)" selected="true"/>
 		<accessor type="click" value="link(16)" selected="false"/>
@@ -134,7 +134,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Início&quot;)" selected="true"/>
 		<accessor type="click" value="link(5)" selected="false"/>
