@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1BR_LoadTest1_100Users</name>
+    <name>G1BR_LoadTest2_1000Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="20" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -93,11 +93,11 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="9"/>
-      <opt name="MaxRampUpTime" value="10000"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="2000"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="9"/>
-      <opt name="MaxRampDownTime" value="10000"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="2000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="5000"/>
       <opt name="MinSleepTime" value="0"/>
@@ -128,7 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest1_100Users">
-      <round name="G1BR_LoadTest1_100Users" totalusers="100" time="90" testtype="users" totaliterations="100"/>
+      <round name="G1BR_LoadTest1_100Users" totalusers="1000" time="90" testtype="users" totaliterations="2000"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
@@ -186,14 +186,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest1_100Users" name="G1BR_LoadTest1_100Users">
-      <testcase name="TC1_PublicHomePage" users="13"/>
-      <testcase name="TC2_PublicSearchResults" users="12"/>
-      <testcase name="TC3_PublicLotDetails" users="12"/>
-      <testcase name="TC4_PublicHeaderSearch" users="13"/>
-      <testcase name="TC5_MemberHomePage" users="13"/>
-      <testcase name="TC6_MemberSearchResults" users="12"/>
-      <testcase name="TC7_MemberLotDetails" users="12"/>
-      <testcase name="TC8_MemberHeaderSearch" users="13"/>
+      <testcase name="TC1_PublicHomePage" users="130"/>
+      <testcase name="TC2_PublicSearchResults" users="120"/>
+      <testcase name="TC3_PublicLotDetails" users="120"/>
+      <testcase name="TC4_PublicHeaderSearch" users="130"/>
+      <testcase name="TC5_MemberHomePage" users="130"/>
+      <testcase name="TC6_MemberSearchResults" users="120"/>
+      <testcase name="TC7_MemberLotDetails" users="120"/>
+      <testcase name="TC8_MemberHeaderSearch" users="130"/>
     </iteration>
   </execution>
   <logs>
