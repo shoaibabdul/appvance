@@ -32,8 +32,16 @@
     <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
     <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
     <resource name="TC3_PublicLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC3_PublicLotDetailsPhotos.ds" cache="false"/>
+    <resource name="TC4_PublicHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC4_PublicHeaderSearch.ds" cache="false"/>
+    <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
+    <resource name="TC6_MemberSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC6_MemberSearchResults.ds" cache="false"/>
+    <resource name="TC7_MemberLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC7_MemberLotDetailsPhotos.ds" cache="false"/>
+    <resource name="TC8_MemberHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC8_MemberHeaderSearch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_CarMake_Data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_CarMake_Data.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -46,7 +54,38 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Pub_CarMake" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRPublic_CarMake_Data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Pub_LotNumbers" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRPublic_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="LoginIDs" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRLoginIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Login_CarMake" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRLogin_CarMake_Data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Login_LotNumbers" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRLogin_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="LoginID" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1BRLoginIDs.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -94,11 +133,65 @@
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
+    <testcase name="Untitled2" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
+          <argument name="Pub_CarMake" method="getNextData" dpl="Pub_CarMake"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="Untitled3" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
+          <argument name="Pub_LotNumbers" method="getNextData" dpl="Pub_LotNumbers"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="Untitled4" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled5" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
+          <argument name="LoginIDs" method="getNextData" dpl="LoginIDs"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="Untitled6" expand="yes">
+      <test>
+        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
+          <argument name="Login_CarMake" method="getNextData" dpl="Login_CarMake"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="Untitled7" expand="yes">
+      <test>
+        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
+          <argument name="Login_LotNumbers" method="getNextData" dpl="Login_LotNumbers"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="Untitled8" expand="yes">
+      <test>
+        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
+          <argument name="LoginID" method="getNextData" dpl="LoginID"/>
+        </run>
+      </test>
+    </testcase>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun" name="G1BR_LoadTest_DryRun">
       <testcase name="PublicHomePage" users="5"/>
+      <testcase name="Untitled2" users="5"/>
+      <testcase name="Untitled3" users="5"/>
+      <testcase name="Untitled4" users="5"/>
+      <testcase name="Untitled5" users="5"/>
+      <testcase name="Untitled6" users="5"/>
+      <testcase name="Untitled7" users="5"/>
+      <testcase name="Untitled8" users="5"/>
     </iteration>
   </execution>
   <logs>
