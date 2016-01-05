@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Find a Vehicle&quot; button" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Busca de Veículos&quot;)" selected="true"/>
-		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;Busca de Veículos&quot;)" selected="false"/>
+		<accessor type="click" value="link(6)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.com.br/BR/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,9 +56,9 @@
 
 <step action="setValue" value="&quot;$CarMake&quot;" type="web" desc="Enter &quot;Vehicle Make&quot;" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="false"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
-		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -82,9 +82,9 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Search&quot; " isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
-		<accessor type="click" value="submit(0)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
@@ -107,9 +107,9 @@
 
 <step action="setSelected" value="&quot;Mostrar 50 resultados&quot;" type="web" desc="Select &quot;50 Results&quot; page" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -134,9 +134,9 @@
 
 <step action="setSelected" value="&quot;Mostrar 100 resultados&quot;" type="web" desc="Select &quot;100 Results&quot; page" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
