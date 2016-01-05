@@ -94,10 +94,10 @@
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="9"/>
-      <opt name="MaxRampUpTime" value="10000"/>
+      <opt name="MaxRampUpTime" value="2000"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="9"/>
-      <opt name="MaxRampDownTime" value="10000"/>
+      <opt name="MaxRampDownTime" value="2000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="5000"/>
       <opt name="MinSleepTime" value="0"/>
