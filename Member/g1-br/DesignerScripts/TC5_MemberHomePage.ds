@@ -82,9 +82,9 @@
 
 <step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter &quot;Password&quot;" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(0)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
 		<accessor type="setValue" value="password(&quot;right&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
