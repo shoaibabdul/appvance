@@ -27,7 +27,7 @@
 
 
 
-<step action="setValue" value="&quot;257640&quot;" type="web" desc="Enter &quot;Lot Number&quot;" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter &quot;Lot Number&quot;" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="false"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
