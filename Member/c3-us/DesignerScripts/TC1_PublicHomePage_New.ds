@@ -32,10 +32,10 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Find a Vehicle&quot; button" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
-		<accessor type='' value="link(10)" selected="true"/>
+		<accessor type='' value="link(10)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Find a Vehicle')]&quot;" selected="true"/>
@@ -87,10 +87,10 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Locations&quot; button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(21)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/Locations&quot;)" selected="false"/>
-		<accessor type='' value="link(22)" selected="true"/>
+		<accessor type='' value="link(22)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
@@ -115,10 +115,10 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Sell a Vehicle&quot; button" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sell a Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sell a Vehicle&quot;)" selected="true"/>
 		<accessor type="click" value="link(22)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://qa2.copart.com/US/HowToSell/Individual&quot;)" selected="false"/>
-		<accessor type='' value="link(23)" selected="true"/>
+		<accessor type='' value="link(23)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sell a Vehicle')]&quot;" selected="true"/>
@@ -143,10 +143,10 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Support&quot; button" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Support&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Support&quot;)" selected="true"/>
 		<accessor type="click" value="link(26)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://qa2.copart.com/Content/US/en/Support/How-to-Buy/Overview&quot;)" selected="false"/>
-		<accessor type='' value="link(27)" selected="true"/>
+		<accessor type='' value="link(27)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Support')]&quot;" selected="true"/>
@@ -171,10 +171,10 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Home&quot; button" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(8)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://qa2.copart.com/US&quot;)" selected="false"/>
-		<accessor type='' value="link(11)" selected="true"/>
+		<accessor type='' value="link(11)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
