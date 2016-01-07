@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1BR_LoadTest_DryRun2</name>
+    <name>G1BR_LoadTest_DryRun3</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -127,8 +127,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1BR_LoadTest_DryRun_2">
-      <round name="G1BR_LoadTest_DryRun_2" totalusers="8" testtype="users" totaliterations="8">
+    <controller name="G1BR_LoadTest_DryRun_3">
+      <round name="G1BR_LoadTest_DryRun_3" totalusers="8" testtype="users" totaliterations="8">
         <testcase name="TC1_PublicHomePage" executions="5"/>
         <testcase name="TC2_PublicSearchResults" executions="5"/>
         <testcase name="TC3_PublicLotDetails" executions="5"/>
@@ -194,7 +194,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1BR_LoadTest_DryRun_2" name="G1BR_LoadTest_DryRun_2">
+    <iteration controller="G1BR_LoadTest_DryRun_3" name="G1BR_LoadTest_DryRun_3">
       <testcase name="TC1_PublicHomePage" totalexecutions="5" users="1"/>
       <testcase name="TC2_PublicSearchResults" totalexecutions="5" users="1"/>
       <testcase name="TC3_PublicLotDetails" totalexecutions="5" users="1"/>
