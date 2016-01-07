@@ -29,19 +29,10 @@
     <categorization>G1BR Project</categorization>
   </basics>
   <resources>
-    <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
-    <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
     <resource name="TC3_PublicLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC3_PublicLotDetailsPhotos.ds" cache="false"/>
-    <resource name="TC4_PublicHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC4_PublicHeaderSearch.ds" cache="false"/>
-    <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
-    <resource name="TC6_MemberSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC6_MemberSearchResults.ds" cache="false"/>
     <resource name="TC7_MemberLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC7_MemberLotDetailsPhotos.ds" cache="false"/>
-    <resource name="TC8_MemberHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC8_MemberHeaderSearch.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_CarMake_Data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_CarMake_Data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
