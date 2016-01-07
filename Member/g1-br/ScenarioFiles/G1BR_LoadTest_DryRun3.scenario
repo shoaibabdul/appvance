@@ -55,34 +55,14 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="Pub_CarMake" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRPublic_CarMake_Data.csv"/>
-      </argument>
-    </dpl>
     <dpl name="Pub_LotNumbers" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G1BRPublic_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="LoginIDs" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLoginIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Login_CarMake" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLogin_CarMake_Data.csv"/>
-      </argument>
-    </dpl>
     <dpl name="Login_LotNumbers" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G1BRLogin_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="LoginID" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLoginIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -128,52 +108,12 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_3">
-      <round name="G1BR_LoadTest_DryRun_3" totalusers="8" testtype="users" totaliterations="8">
-        <testcase name="TC1_PublicHomePage" executions="5"/>
-        <testcase name="TC2_PublicSearchResults" executions="5"/>
-        <testcase name="TC3_PublicLotDetails" executions="5"/>
-        <testcase name="TC4_PublicHeaderSearch" executions="5"/>
-        <testcase name="TC5_MemberHomePage" executions="5"/>
-        <testcase name="TC6_MemberSearchResults" executions="5"/>
-        <testcase name="TC7_MemberLotDetails" executions="5"/>
-        <testcase name="TC8_MemberHeaderSearch" executions="5"/>
-      </round>
+      <round name="G1BR_LoadTest_DryRun_3" totalusers="10" time="10" testtype="users" totaliterations="10"/>
     </controller>
-    <testcase name="TC1_PublicHomePage" expand="yes">
-      <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
-      </test>
-    </testcase>
-    <testcase name="TC2_PublicSearchResults" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
-          <argument name="Pub_CarMake" method="getRandomData" dpl="Pub_CarMake"/>
-        </run>
-      </test>
-    </testcase>
     <testcase name="TC3_PublicLotDetails" expand="yes">
       <test>
         <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
           <argument name="Pub_LotNumbers" method="getRandomData" dpl="Pub_LotNumbers"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC4_PublicHeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
-      </test>
-    </testcase>
-    <testcase name="TC5_MemberHomePage" expand="yes">
-      <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
-          <argument name="LoginIDs" method="getRandomData" dpl="LoginIDs"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC6_MemberSearchResults" expand="yes">
-      <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
-          <argument name="Login_CarMake" method="getRandomData" dpl="Login_CarMake"/>
         </run>
       </test>
     </testcase>
@@ -184,25 +124,12 @@
         </run>
       </test>
     </testcase>
-    <testcase name="TC8_MemberHeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
-          <argument name="LoginID" method="getRandomData" dpl="LoginID"/>
-        </run>
-      </test>
-    </testcase>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun_3" name="G1BR_LoadTest_DryRun_3">
-      <testcase name="TC1_PublicHomePage" totalexecutions="5" users="1"/>
-      <testcase name="TC2_PublicSearchResults" totalexecutions="5" users="1"/>
-      <testcase name="TC3_PublicLotDetails" totalexecutions="5" users="1"/>
-      <testcase name="TC4_PublicHeaderSearch" totalexecutions="5" users="1"/>
-      <testcase name="TC5_MemberHomePage" totalexecutions="5" users="1"/>
-      <testcase name="TC6_MemberSearchResults" totalexecutions="5" users="1"/>
-      <testcase name="TC7_MemberLotDetails" totalexecutions="5" users="1"/>
-      <testcase name="TC8_MemberHeaderSearch" totalexecutions="5" users="1"/>
+      <testcase name="TC3_PublicLotDetails" users="5"/>
+      <testcase name="TC7_MemberLotDetails" users="5"/>
     </iteration>
   </execution>
   <logs>
