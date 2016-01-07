@@ -98,8 +98,8 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="5"/>
       <opt name="MaxRampDownTime" value="1000"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="5000"/>
+      <opt name="ThinkTimeMin" value="5000"/>
+      <opt name="ThinkTimeMax" value="15000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
