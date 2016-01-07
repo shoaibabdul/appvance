@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://g1member-qa3.copart.com.br&quot;" type="web" desc="Launch G1BR URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
