@@ -128,16 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_2">
-      <round name="G1BR_LoadTest_DryRun_2" totalusers="40" testtype="users" totaliterations="40">
-        <testcase name="TC1_PublicHomePage" executions="5"/>
-        <testcase name="TC2_PublicSearchResults" executions="5"/>
-        <testcase name="TC3_PublicLotDetails" executions="5"/>
-        <testcase name="TC4_PublicHeaderSearch" executions="5"/>
-        <testcase name="TC5_MemberHomePage" executions="5"/>
-        <testcase name="TC6_MemberSearchResults" executions="5"/>
-        <testcase name="TC7_MemberLotDetails" executions="5"/>
-        <testcase name="TC8_MemberHeaderSearch" executions="5"/>
-      </round>
+      <round name="G1BR_LoadTest_DryRun_2" totalusers="40" testtype="users" totaliterations="40" totalexecutions="10"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
