@@ -128,7 +128,16 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_1">
-      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" testtype="users" totaliterations="40" totalexecutions="10"/>
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" testtype="users" totaliterations="40">
+        <testcase name="TC1_PublicHomePage" executions="10"/>
+        <testcase name="TC2_PublicSearchResults" executions="10"/>
+        <testcase name="TC3_PublicLotDetails" executions="10"/>
+        <testcase name="TC4_PublicHeaderSearch" executions="10"/>
+        <testcase name="TC5_MemberHomePage" executions="10"/>
+        <testcase name="TC6_MemberSearchResults" executions="10"/>
+        <testcase name="TC7_MemberLotDetails" executions="10"/>
+        <testcase name="TC8_MemberHeaderSearch" executions="10"/>
+      </round>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
@@ -186,14 +195,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun_1" name="G1BR_LoadTest_DryRun_1">
-      <testcase name="TC1_PublicHomePage" users="5"/>
-      <testcase name="TC2_PublicSearchResults" users="5"/>
-      <testcase name="TC3_PublicLotDetails" users="5"/>
-      <testcase name="TC4_PublicHeaderSearch" users="5"/>
-      <testcase name="TC5_MemberHomePage" users="5"/>
-      <testcase name="TC6_MemberSearchResults" users="5"/>
-      <testcase name="TC7_MemberLotDetails" users="5"/>
-      <testcase name="TC8_MemberHeaderSearch" users="5"/>
+      <testcase name="TC1_PublicHomePage" totalexecutions="10" users="5"/>
+      <testcase name="TC2_PublicSearchResults" totalexecutions="10" users="5"/>
+      <testcase name="TC3_PublicLotDetails" totalexecutions="10" users="5"/>
+      <testcase name="TC4_PublicHeaderSearch" totalexecutions="10" users="5"/>
+      <testcase name="TC5_MemberHomePage" totalexecutions="10" users="5"/>
+      <testcase name="TC6_MemberSearchResults" totalexecutions="10" users="5"/>
+      <testcase name="TC7_MemberLotDetails" totalexecutions="10" users="5"/>
+      <testcase name="TC8_MemberHeaderSearch" totalexecutions="10" users="5"/>
     </iteration>
   </execution>
   <logs>
