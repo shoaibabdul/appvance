@@ -186,14 +186,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun_2" name="G1BR_LoadTest_DryRun_2">
-      <testcase name="TC1_PublicHomePage" totalexecutions="5" users="5"/>
-      <testcase name="TC2_PublicSearchResults" totalexecutions="5" users="5"/>
-      <testcase name="TC3_PublicLotDetails" totalexecutions="5" users="5"/>
-      <testcase name="TC4_PublicHeaderSearch" totalexecutions="5" users="5"/>
-      <testcase name="TC5_MemberHomePage" totalexecutions="5" users="5"/>
-      <testcase name="TC6_MemberSearchResults" totalexecutions="5" users="5"/>
-      <testcase name="TC7_MemberLotDetails" totalexecutions="5" users="5"/>
-      <testcase name="TC8_MemberHeaderSearch" totalexecutions="5" users="5"/>
+      <testcase name="TC1_PublicHomePage" users="5"/>
+      <testcase name="TC2_PublicSearchResults" users="5"/>
+      <testcase name="TC3_PublicLotDetails" users="5"/>
+      <testcase name="TC4_PublicHeaderSearch" users="5"/>
+      <testcase name="TC5_MemberHomePage" users="5"/>
+      <testcase name="TC6_MemberSearchResults" users="5"/>
+      <testcase name="TC7_MemberLotDetails" users="5"/>
+      <testcase name="TC8_MemberHeaderSearch" users="5"/>
     </iteration>
   </execution>
   <logs>
