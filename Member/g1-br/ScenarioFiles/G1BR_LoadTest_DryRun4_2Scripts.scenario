@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1BR_LoadTest_DryRun3</name>
+    <name>G1BR_LoadTest_DryRun4</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -29,13 +29,12 @@
     <categorization>G1BR Project</categorization>
   </basics>
   <resources>
-    <resource name="TC3_PublicLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC3_PublicLotDetailsPhotos.ds" cache="false"/>
-    <resource name="TC7_MemberLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC7_MemberLotDetailsPhotos.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_LotNumbers.csv" cache="false"/>
+    <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
+    <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -46,14 +45,9 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="Pub_LotNumbers" type="HashDPL" langtype="java" method="setup">
+    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRPublic_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Login_LotNumbers" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLogin_LotNumbers.csv"/>
+        <argument name="file" value="G1BRLoginIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -98,29 +92,27 @@
     </options>
   </options>
   <templates>
-    <controller name="G1BR_LoadTest_DryRun_3">
-      <round name="G1BR_LoadTest_DryRun_3" totalusers="10" time="10" testtype="users" totaliterations="10"/>
+    <controller name="G1BR_LoadTest_DryRun_4">
+      <round name="G1BR_LoadTest_DryRun_4" totalusers="40" time="20" testtype="users" totaliterations="40"/>
     </controller>
-    <testcase name="TC3_PublicLotDetails" expand="yes">
+    <testcase name="TC1_Pub_HomePage" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
-          <argument name="Pub_LotNumbers" method="getRandomData" dpl="Pub_LotNumbers"/>
-        </run>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
-    <testcase name="TC7_MemberLotDetails" expand="yes">
+    <testcase name="TC5_Mem_HomePage" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
-          <argument name="Login_LotNumbers" method="getRandomData" dpl="Login_LotNumbers"/>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
+          <argument name="Untitled1" method="getRandomData" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1BR_LoadTest_DryRun_3" name="G1BR_LoadTest_DryRun_3">
-      <testcase name="TC3_PublicLotDetails" users="5"/>
-      <testcase name="TC7_MemberLotDetails" users="5"/>
+    <iteration controller="G1BR_LoadTest_DryRun_4" name="G1BR_LoadTest_DryRun_4">
+      <testcase name="TC1_Pub_HomePage" users="20"/>
+      <testcase name="TC5_Mem_HomePage" users="20"/>
     </iteration>
   </execution>
   <logs>
