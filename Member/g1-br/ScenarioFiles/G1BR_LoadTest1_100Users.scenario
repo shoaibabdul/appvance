@@ -93,10 +93,10 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="6"/>
+      <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="2000"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="6"/>
+      <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="2000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="5000"/>
@@ -128,7 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest1_100Users">
-      <round name="G1BR_LoadTest1_100Users" totalusers="100" time="90" testtype="users" totaliterations="100"/>
+      <round name="G1BR_LoadTest1_100Users" totalusers="100" time="65" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
