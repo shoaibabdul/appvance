@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/home/ubuntu/Appvance/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -104,7 +104,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="PercentageLogsSaved" value="5"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -128,7 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_1">
-      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="10" testtype="users" totaliterations="40"/>
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="20" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
@@ -200,7 +200,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-91-69-250.compute-1.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-52-23-207-203.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
