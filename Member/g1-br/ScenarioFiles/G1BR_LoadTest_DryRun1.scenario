@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/EC2_C3_8XLarge_Config_41.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -128,7 +128,7 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_1">
-      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="20" testtype="users" totaliterations="40"/>
+      <round name="G1BR_LoadTest_DryRun_1" totalusers="40" time="15" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
