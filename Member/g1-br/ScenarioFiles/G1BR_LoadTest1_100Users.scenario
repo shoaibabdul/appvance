@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/EC2_C3_8XLarge_Config_41.cloud" amount="4" instantiate="All" terminate="None" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
