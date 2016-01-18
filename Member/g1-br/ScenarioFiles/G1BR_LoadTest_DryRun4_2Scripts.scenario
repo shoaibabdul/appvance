@@ -29,11 +29,8 @@
     <categorization>G1BR Project</categorization>
   </basics>
   <resources>
-    <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
-    <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
     <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
     <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
