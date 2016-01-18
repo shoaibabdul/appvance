@@ -92,7 +92,10 @@
   </options>
   <templates>
     <controller name="G1BR_LoadTest_DryRun_4">
-      <round name="G1BR_LoadTest_DryRun_4" totalusers="10" time="2" testtype="users" totaliterations="10"/>
+      <round name="G1BR_LoadTest_DryRun_4" totalusers="4" testtype="users" totaliterations="4">
+        <testcase name="TC1_Pub_HomePage" executions="1"/>
+        <testcase name="TC5_Mem_HomePage" executions="1"/>
+      </round>
     </controller>
     <testcase name="TC1_Pub_HomePage" expand="yes">
       <test>
@@ -112,8 +115,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1BR_LoadTest_DryRun_4" name="G1BR_LoadTest_DryRun_4">
-      <testcase name="TC1_Pub_HomePage" users="5"/>
-      <testcase name="TC5_Mem_HomePage" users="5"/>
+      <testcase name="TC1_Pub_HomePage" totalexecutions="1" users="2"/>
+      <testcase name="TC5_Mem_HomePage" totalexecutions="1" users="2"/>
     </iteration>
   </execution>
   <logs>
