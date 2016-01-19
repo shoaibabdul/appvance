@@ -110,11 +110,12 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
     </options>
     <options type="selenium">
-      <opt name="throwExceptionOnScriptError" value="true"/>
-      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
+      <opt name="loglevel" value="INFO"/>
+      <opt name="throwExceptionOnScriptError" value="false"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
@@ -181,8 +182,6 @@
         </run>
       </test>
     </testcase>
-    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
-    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
