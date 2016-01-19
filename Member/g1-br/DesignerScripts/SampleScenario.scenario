@@ -29,7 +29,7 @@
     <categorization/>
   </basics>
   <resources>
-    <resource name="SampleScripts.ds" type="ds" path="{scenario}/SampleScripts.ds" cache="false"/>
+    <resource name="TC1_PublicHomePage.ds" type="ds" path="{scenario}/TC1_PublicHomePage.ds" cache="false"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -87,7 +87,7 @@
     </controller>
     <testcase name="Untitled1" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="SampleScripts.ds"/>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
   </templates>
