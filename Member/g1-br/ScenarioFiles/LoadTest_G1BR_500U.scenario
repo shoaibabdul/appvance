@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="20" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -92,12 +92,12 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="3"/>
-      <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="3"/>
-      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="2000"/>
+      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="2000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="8000"/>
       <opt name="MinSleepTime" value="0"/>
