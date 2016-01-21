@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>LoadTest_G1BR_100U</name>
+    <name>LoadTest_G1BR_500U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -126,8 +126,8 @@
     </options>
   </options>
   <templates>
-    <controller name="LoadTest_G1BR_100U_1">
-      <round name="LoadTest_G1BR_100U_1" totalusers="100" time="65" testtype="users" totaliterations="400"/>
+    <controller name="LoadTest_G1BR_500U_1">
+      <round name="LoadTest_G1BR_500U_1" totalusers="500" time="65" testtype="users" totaliterations="2000"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
@@ -186,15 +186,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="LoadTest_G1BR_100U_1" name="LoadTest_G1BR_100U_1">
-      <testcase name="TC1_PublicHomePage" users="13"/>
-      <testcase name="TC2_PublicSearchResults" users="12"/>
-      <testcase name="TC3_PublicLotDetails" users="12"/>
-      <testcase name="TC4_PublicHeaderSearch" users="13"/>
-      <testcase name="TC5_MemberHomePage" users="13"/>
-      <testcase name="TC6_MemberSearchResults" users="12"/>
-      <testcase name="TC7_MemberLotDetails" users="12"/>
-      <testcase name="TC8_MemberHeaderSearch" users="13"/>
+    <iteration controller="LoadTest_G1BR_500U_1" name="LoadTest_G1BR_500U_1">
+      <testcase name="TC1_PublicHomePage" users="65"/>
+      <testcase name="TC2_PublicSearchResults" users="60"/>
+      <testcase name="TC3_PublicLotDetails" users="60"/>
+      <testcase name="TC4_PublicHeaderSearch" users="65"/>
+      <testcase name="TC5_MemberHomePage" users="65"/>
+      <testcase name="TC6_MemberSearchResults" users="60"/>
+      <testcase name="TC7_MemberLotDetails" users="60"/>
+      <testcase name="TC8_MemberHeaderSearch" users="65"/>
     </iteration>
   </execution>
   <logs>
