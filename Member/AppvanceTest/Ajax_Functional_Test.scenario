@@ -33,7 +33,7 @@ file 'LICENSE.txt', which is part of this source code package.
     <resource name="AddCompany.ds" type="ds" path="{scenario}/AddCompany.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="ec2" type="EC2" config="REPOSITORY/C3Seller_Perf/Member/g1-br/ScenarioFiles/APC215.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -68,12 +68,11 @@ file 'LICENSE.txt', which is part of this source code package.
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="ReportThinkTime" value="false"/>
     </options>
     <options type="selenium">
-      <opt name="loglevel" value="INFO"/>
-      <opt name="throwExceptionOnScriptError" value="false"/>
-      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="har">
       <opt name="threadPool" value="10"/>
