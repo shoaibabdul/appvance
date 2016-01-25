@@ -65,12 +65,11 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="ReportThinkTime" value="false"/>
     </options>
     <options type="selenium">
-      <opt name="loglevel" value="INFO"/>
-      <opt name="throwExceptionOnScriptError" value="false"/>
-      <opt name="throwExceptionOnFailingStatusCode" value="false"/>
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
@@ -103,7 +102,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://appvancerds.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
