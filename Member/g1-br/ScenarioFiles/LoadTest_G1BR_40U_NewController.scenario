@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1BR_LoadTest_DryRun1_NewCont</name>
+    <name>LoadTest_G1BR_40U_NewController</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="REPOSITORY/C3Seller_Perf/Member/AppvanceTest/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -126,8 +126,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1BR_LoadTest_DryRun1_NewCont_1">
-      <round name="G1BR_LoadTest_DryRun1_NewCont_1" totalusers="40" time="15" testtype="users" totaliterations="40"/>
+    <controller name="LoadTest_G1BR_40U_NewController_1">
+      <round name="LoadTest_G1BR_40U_NewController_1" totalusers="40" time="15" testtype="users" totaliterations="40"/>
     </controller>
     <testcase name="TC1_PubHPage" expand="yes">
       <test>
@@ -186,7 +186,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1BR_LoadTest_DryRun1_NewCont_1" name="G1BR_LoadTest_DryRun1_NewCont_1">
+    <iteration controller="LoadTest_G1BR_40U_NewController_1" name="LoadTest_G1BR_40U_NewController_1">
       <testcase name="TC1_PubHPage" users="5"/>
       <testcase name="TC2_PudSearch" users="5"/>
       <testcase name="TC3_PubLot" users="5"/>
