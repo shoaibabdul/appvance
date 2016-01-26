@@ -127,7 +127,7 @@
   </options>
   <templates>
     <controller name="LoadTest_G1BR_500U_1">
-      <round name="LoadTest_G1BR_500U_1" totalusers="500" time="65" testtype="users" totaliterations="2000"/>
+      <round name="LoadTest_G1BR_500U_1" totalusers="500" time="20" testtype="users" totaliterations="2000"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
