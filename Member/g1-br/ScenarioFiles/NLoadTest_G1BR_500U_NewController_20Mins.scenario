@@ -199,7 +199,7 @@
     </iteration>
   </execution>
   <logs>
-    <log type="database">
+    <log type="udatabase">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
       <opt name="hibernate.connection.url" value="jdbc:mysql://appvancerds.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:3306/apc"/>
