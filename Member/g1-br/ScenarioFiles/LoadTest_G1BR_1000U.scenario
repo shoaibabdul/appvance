@@ -129,52 +129,52 @@
     <controller name="LoadTest_G1BR_1000U_1">
       <round name="LoadTest_G1BR_1000U_1" totalusers="1000" time="65" testtype="users" totaliterations="20000"/>
     </controller>
-    <testcase name="TC1_PublicHomePage" expand="yes">
+    <testcase name="TC1_PublicHomePage" expand="no">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
-    <testcase name="TC2_PublicSearchResults" expand="yes">
+    <testcase name="TC2_PublicSearchResults" expand="no">
       <test>
         <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
           <argument name="PublicCarMake" method="getNextData" dpl="PublicCarMake"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC3_PublicLotDetails" expand="yes">
+    <testcase name="TC3_PublicLotDetails" expand="no">
       <test>
         <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
           <argument name="PublicLotNos" method="getNextData" dpl="PublicLotNos"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC4_PublicHeaderSearch" expand="yes">
+    <testcase name="TC4_PublicHeaderSearch" expand="no">
       <test>
         <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="TC5_MemberHomePage" expand="yes">
+    <testcase name="TC5_MemberHomePage" expand="no">
       <test>
         <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
           <argument name="MemberLoginIds" method="getNextData" dpl="MemberLoginIds"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC6_MemberSearchResults" expand="yes">
+    <testcase name="TC6_MemberSearchResults" expand="no">
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
           <argument name="MemberCarMake" method="getNextData" dpl="MemberCarMake"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC7_MemberLotDetails" expand="yes">
+    <testcase name="TC7_MemberLotDetails" expand="no">
       <test>
         <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
           <argument name="MemberLotNos" method="getNextData" dpl="MemberLotNos"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC8_MemberHeaderSearch" expand="yes">
+    <testcase name="TC8_MemberHeaderSearch" expand="no">
       <test>
         <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
           <argument name="MemberLoginId" method="getNextData" dpl="MemberLoginId"/>
@@ -187,14 +187,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="LoadTest_G1BR_1000U_1" name="LoadTest_G1BR_1000U_1">
-      <testcase name="TC1_PublicHomePage" users="65"/>
-      <testcase name="TC2_PublicSearchResults" users="60"/>
-      <testcase name="TC3_PublicLotDetails" users="60"/>
-      <testcase name="TC4_PublicHeaderSearch" users="65"/>
-      <testcase name="TC5_MemberHomePage" users="65"/>
-      <testcase name="TC6_MemberSearchResults" users="60"/>
-      <testcase name="TC7_MemberLotDetails" users="60"/>
-      <testcase name="TC8_MemberHeaderSearch" users="65"/>
+      <testcase name="TC1_PublicHomePage" users="130"/>
+      <testcase name="TC2_PublicSearchResults" users="120"/>
+      <testcase name="TC3_PublicLotDetails" users="120"/>
+      <testcase name="TC4_PublicHeaderSearch" users="130"/>
+      <testcase name="TC5_MemberHomePage" users="130"/>
+      <testcase name="TC6_MemberSearchResults" users="120"/>
+      <testcase name="TC7_MemberLotDetails" users="120"/>
+      <testcase name="TC8_MemberHeaderSearch" users="130"/>
     </iteration>
   </execution>
   <logs>
