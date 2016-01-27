@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>LoadTest_G1BR_500U</name>
+    <name>LoadTest_G1BR_1000U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="20" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="40" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -92,10 +92,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpUsers" value="4"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="2000"/>
-      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownUsers" value="4"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="2000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -126,8 +126,8 @@
     </options>
   </options>
   <templates>
-    <controller name="LoadTest_G1BR_500U_1">
-      <round name="LoadTest_G1BR_500U_1" totalusers="500" time="65" testtype="users" totaliterations="2000"/>
+    <controller name="LoadTest_G1BR_1000U_1">
+      <round name="LoadTest_G1BR_1000U_1" totalusers="1000" time="65" testtype="users" totaliterations="20000"/>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
       <test>
@@ -186,15 +186,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="LoadTest_G1BR_500U_1" name="LoadTest_G1BR_500U_1">
-      <testcase name="TC1_PublicHomePage" users="65"/>
-      <testcase name="TC2_PublicSearchResults" users="60"/>
-      <testcase name="TC3_PublicLotDetails" users="60"/>
-      <testcase name="TC4_PublicHeaderSearch" users="65"/>
-      <testcase name="TC5_MemberHomePage" users="65"/>
-      <testcase name="TC6_MemberSearchResults" users="60"/>
-      <testcase name="TC7_MemberLotDetails" users="60"/>
-      <testcase name="TC8_MemberHeaderSearch" users="65"/>
+    <iteration controller="LoadTest_G1BR_1000U_1" name="LoadTest_G1BR_1000U_1">
+      <testcase name="TC1_PublicHomePage" users="130"/>
+      <testcase name="TC2_PublicSearchResults" users="120"/>
+      <testcase name="TC3_PublicLotDetails" users="120"/>
+      <testcase name="TC4_PublicHeaderSearch" users="130"/>
+      <testcase name="TC5_MemberHomePage" users="130"/>
+      <testcase name="TC6_MemberSearchResults" users="120"/>
+      <testcase name="TC7_MemberLotDetails" users="120"/>
+      <testcase name="TC8_MemberHeaderSearch" users="130"/>
     </iteration>
   </execution>
   <logs>
