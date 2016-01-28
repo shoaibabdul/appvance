@@ -19,198 +19,197 @@
 * file 'LICENSE.txt', which is part of this source code package.
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
-  <basics>
-    <name>LoadTest_G1BR_1000U</name>
-    <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName>Balram Anthareddy</basicName>
-    <creator>Balram</creator>
-    <links/>
-    <versions>v1.1</versions>
-    <categorization>G1BrazilProject</categorization>
-  </basics>
-  <resources>
-    <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
-    <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
-    <resource name="TC3_PublicLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC3_PublicLotDetailsPhotos.ds" cache="false"/>
-    <resource name="TC4_PublicHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC4_PublicHeaderSearch.ds" cache="false"/>
-    <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
-    <resource name="TC6_MemberSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC6_MemberSearchResults.ds" cache="false"/>
-    <resource name="TC7_MemberLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC7_MemberLotDetailsPhotos.ds" cache="false"/>
-    <resource name="TC8_MemberHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC8_MemberHeaderSearch.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_CarMake_Data.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_CarMake_Data.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
-  </resources>
-  <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="40" instantiate="All" terminate="All" reboot="After"/>
-  </testnodes>
-  <bundles>
-    <bundle name="hibernate" version="3.0"/>
-    <bundle name="sahi" version="sahi_pro"/>
-    <bundle name="ds" version="2.0"/>
-    <bundle name="seleniumrc" version="2.45"/>
-    <bundle name="htmlunit" version="2.15.2648"/>
-    <bundle name="oracle" version="10.2.0.5"/>
-    <bundle name="mysql" version="5.0"/>
-  </bundles>
-  <datasources>
-    <dpl name="PublicCarMake" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRPublic_CarMake_Data.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="PublicLotNos" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRPublic_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="MemberLoginIds" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLoginIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="MemberCarMake" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLogin_CarMake_Data.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="MemberLotNos" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLogin_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="MemberLoginId" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1BRLoginIDs.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
-  <options>
-    <options type="apc">
-      <opt name="SleepTime" value="0"/>
-      <opt name="testnode_concurrent_users" value="0"/>
-      <opt name="global_concurrent_users" value="0"/>
-      <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="4"/>
-      <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="2000"/>
-      <opt name="RampDownUsers" value="4"/>
-      <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="2000"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
-      <opt name="MinSleepTime" value="0"/>
-      <opt name="MaxSleepTime" value="0"/>
-      <opt name="MinIntervalTime" value="0"/>
-      <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
-      <opt name="ThinkTime" value="0"/>
-      <opt name="IntervalTime" value="0"/>
-      <opt name="DynamicIpAddress" value="false"/>
-      <opt name="EnableSavingLogs" value="true"/>
-      <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="false"/>
-    </options>
-    <options type="selenium">
-      <opt name="throwExceptionOnScriptError" value="true"/>
-      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
-    </options>
-    <options type="sahi">
-      <opt name="clearCache" value="true"/>
-      <opt name="takeSnapshot" value="false"/>
-    </options>
-    <options type="seleniumrc">
-      <opt name="listenport" value="6543"/>
-      <opt name="port" value="5555"/>
-    </options>
+<basics>
+  <name>LoadTest_G1BR_1000U</name>
+  <defaultdirectory>{scenario}</defaultdirectory>
+  <basicName>Balram Anthareddy</basicName>
+  <creator>Balram</creator>
+  <links/>
+  <versions>v1.1</versions>
+  <categorization>G1BrazilProject</categorization>
+</basics>
+<resources>
+  <resource name="TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC1_PublicHomePage.ds" cache="false"/>
+  <resource name="TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC2_PublicSearchResults.ds" cache="false"/>
+  <resource name="TC3_PublicLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC3_PublicLotDetailsPhotos.ds" cache="false"/>
+  <resource name="TC4_PublicHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC4_PublicHeaderSearch.ds" cache="false"/>
+  <resource name="TC5_MemberHomePage.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC5_MemberHomePage.ds" cache="false"/>
+  <resource name="TC6_MemberSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC6_MemberSearchResults.ds" cache="false"/>
+  <resource name="TC7_MemberLotDetailsPhotos.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC7_MemberLotDetailsPhotos.ds" cache="false"/>
+  <resource name="TC8_MemberHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_perf/Member/g1-br/DesignerScripts/TC8_MemberHeaderSearch.ds" cache="false"/>
+  <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_CarMake_Data.csv" cache="false"/>
+  <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRPublic_LotNumbers.csv" cache="false"/>
+  <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_CarMake_Data.csv" cache="false"/>
+  <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLogin_LotNumbers.csv" cache="false"/>
+  <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
+</resources>
+<testnodes>
+  <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="40" instantiate="All" terminate="All" reboot="After"/>
+</testnodes>
+<bundles>
+  <bundle name="hibernate" version="3.0"/>
+  <bundle name="sahi" version="sahi_pro"/>
+  <bundle name="ds" version="2.0"/>
+  <bundle name="seleniumrc" version="2.45"/>
+  <bundle name="htmlunit" version="2.15.2648"/>
+  <bundle name="oracle" version="10.2.0.5"/>
+</bundles>
+<datasources>
+  <dpl name="PublicCarMake" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRPublic_CarMake_Data.csv"/>
+    </argument>
+  </dpl>
+  <dpl name="PublicLotNos" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRPublic_LotNumbers.csv"/>
+    </argument>
+  </dpl>
+  <dpl name="MemberLoginIds" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRLoginIDs.csv"/>
+    </argument>
+  </dpl>
+  <dpl name="MemberCarMake" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRLogin_CarMake_Data.csv"/>
+    </argument>
+  </dpl>
+  <dpl name="MemberLotNos" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRLogin_LotNumbers.csv"/>
+    </argument>
+  </dpl>
+  <dpl name="MemberLoginId" type="HashDPL" langtype="java" method="setup">
+    <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+      <argument name="file" value="G1BRLoginIDs.csv"/>
+    </argument>
+  </dpl>
+</datasources>
+<options>
+  <options type="apc">
+    <opt name="SleepTime" value="0"/>
+    <opt name="testnode_concurrent_users" value="0"/>
+    <opt name="global_concurrent_users" value="0"/>
+    <opt name="SleepTime" value="0"/>
+    <opt name="RampUpUsers" value="4"/>
+    <opt name="RampUpSeconds" value="1"/>
+    <opt name="MaxRampUpTime" value="2000"/>
+    <opt name="RampDownUsers" value="4"/>
+    <opt name="RampDownSeconds" value="1"/>
+    <opt name="MaxRampDownTime" value="2000"/>
+    <opt name="ThinkTimeMin" value="1000"/>
+    <opt name="ThinkTimeMax" value="8000"/>
+    <opt name="MinSleepTime" value="0"/>
+    <opt name="MaxSleepTime" value="0"/>
+    <opt name="MinIntervalTime" value="0"/>
+    <opt name="MaxIntervalTime" value="0"/>
+    <opt name="PercentageLogsSaved" value="0"/>
+    <opt name="ThinkTime" value="0"/>
+    <opt name="IntervalTime" value="0"/>
+    <opt name="DynamicIpAddress" value="false"/>
+    <opt name="EnableSavingLogs" value="true"/>
+    <opt name="AlwaysSaveLogOnFailure" value="true"/>
+    <opt name="ReportThinkTime" value="false"/>
   </options>
-  <templates>
-    <controller name="LoadTest_G1BR_1000U_1">
-      <round name="LoadTest_G1BR_1000U_1" totalusers="1000" time="65" testtype="users" totaliterations="20000"/>
-    </controller>
-    <testcase name="TC1_PublicHomePage" expand="yes">
-      <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
-      </test>
-    </testcase>
-    <testcase name="TC2_PublicSearchResults" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
-          <argument name="PublicCarMake" method="getNextData" dpl="PublicCarMake"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC3_PublicLotDetails" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
-          <argument name="PublicLotNos" method="getNextData" dpl="PublicLotNos"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC4_PublicHeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
-      </test>
-    </testcase>
-    <testcase name="TC5_MemberHomePage" expand="yes">
-      <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
-          <argument name="MemberLoginIds" method="getNextData" dpl="MemberLoginIds"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC6_MemberSearchResults" expand="yes">
-      <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
-          <argument name="MemberCarMake" method="getNextData" dpl="MemberCarMake"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC7_MemberLotDetails" expand="yes">
-      <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
-          <argument name="MemberLotNos" method="getNextData" dpl="MemberLotNos"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC8_MemberHeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
-          <argument name="MemberLoginId" method="getNextData" dpl="MemberLoginId"/>
-        </run>
-      </test>
-    </testcase>
-    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
-    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
-  </templates>
-  <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="loadtest">
-    <iteration controller="LoadTest_G1BR_1000U_1" name="LoadTest_G1BR_1000U_1">
-      <testcase name="TC1_PublicHomePage" users="130"/>
-      <testcase name="TC2_PublicSearchResults" users="120"/>
-      <testcase name="TC3_PublicLotDetails" users="120"/>
-      <testcase name="TC4_PublicHeaderSearch" users="130"/>
-      <testcase name="TC5_MemberHomePage" users="130"/>
-      <testcase name="TC6_MemberSearchResults" users="120"/>
-      <testcase name="TC7_MemberLotDetails" users="120"/>
-      <testcase name="TC8_MemberHeaderSearch" users="130"/>
-    </iteration>
-  </execution>
-  <logs>
-    <log type="database">
-      <opt name="hibernate.connection.username" value="apc"/>
-      <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@apc.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:1521:ORCL"/>
-      <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
-    </log>
-  </logs>
-  <integrations>
-    <integration type="RQM">
-      <opt name="Enabled" value="false"/>
-    </integration>
-  </integrations>
-  <notifications/>
+  <options type="selenium">
+    <opt name="throwExceptionOnScriptError" value="true"/>
+    <opt name="throwExceptionOnFailingStatusCode" value="true"/>
+  </options>
+  <options type="sahi">
+    <opt name="clearCache" value="true"/>
+    <opt name="takeSnapshot" value="false"/>
+  </options>
+  <options type="seleniumrc">
+    <opt name="listenport" value="6543"/>
+    <opt name="port" value="5555"/>
+  </options>
+</options>
+<templates>
+  <controller name="LoadTest_G1BR_1000U_1">
+    <round name="LoadTest_G1BR_1000U_1" totalusers="1000" time="65" testtype="users" totaliterations="20000"/>
+  </controller>
+  <testcase name="TC1_PublicHomePage" expand="yes">
+    <test>
+      <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_PublicHomePage.ds"/>
+    </test>
+  </testcase>
+  <testcase name="TC2_PublicSearchResults" expand="yes">
+    <test>
+      <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_PublicSearchResults.ds">
+        <argument name="PublicCarMake" method="getNextData" dpl="PublicCarMake"/>
+      </run>
+    </test>
+  </testcase>
+  <testcase name="TC3_PublicLotDetails" expand="yes">
+    <test>
+      <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_PublicLotDetailsPhotos.ds">
+        <argument name="PublicLotNos" method="getNextData" dpl="PublicLotNos"/>
+      </run>
+    </test>
+  </testcase>
+  <testcase name="TC4_PublicHeaderSearch" expand="yes">
+    <test>
+      <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_PublicHeaderSearch.ds"/>
+    </test>
+  </testcase>
+  <testcase name="TC5_MemberHomePage" expand="yes">
+    <test>
+      <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_MemberHomePage.ds">
+        <argument name="MemberLoginIds" method="getNextData" dpl="MemberLoginIds"/>
+      </run>
+    </test>
+  </testcase>
+  <testcase name="TC6_MemberSearchResults" expand="yes">
+    <test>
+      <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_MemberSearchResults.ds">
+        <argument name="MemberCarMake" method="getNextData" dpl="MemberCarMake"/>
+      </run>
+    </test>
+  </testcase>
+  <testcase name="TC7_MemberLotDetails" expand="yes">
+    <test>
+      <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_MemberLotDetailsPhotos.ds">
+        <argument name="MemberLotNos" method="getNextData" dpl="MemberLotNos"/>
+      </run>
+    </test>
+  </testcase>
+  <testcase name="TC8_MemberHeaderSearch" expand="yes">
+    <test>
+      <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="TC8_MemberHeaderSearch.ds">
+        <argument name="MemberLoginId" method="getNextData" dpl="MemberLoginId"/>
+      </run>
+    </test>
+  </testcase>
+  <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+</templates>
+<monitoring enablednodes="true" enabledtarget="false"/>
+<execution type="loadtest">
+  <iteration controller="LoadTest_G1BR_1000U_1" name="LoadTest_G1BR_1000U_1">
+    <testcase name="TC1_PublicHomePage" users="130"/>
+    <testcase name="TC2_PublicSearchResults" users="120"/>
+    <testcase name="TC3_PublicLotDetails" users="120"/>
+    <testcase name="TC4_PublicHeaderSearch" users="130"/>
+    <testcase name="TC5_MemberHomePage" users="130"/>
+    <testcase name="TC6_MemberSearchResults" users="120"/>
+    <testcase name="TC7_MemberLotDetails" users="120"/>
+    <testcase name="TC8_MemberHeaderSearch" users="130"/>
+  </iteration>
+</execution>
+<logs>
+  <log type="database">
+    <opt name="hibernate.connection.username" value="apc"/>
+    <opt name="hibernate.connection.password" value="apc"/>
+    <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@apc.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+    <opt name="hibernate.default_schema" value="apc"/>
+    <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+  </log>
+</logs>
+<integrations>
+  <integration type="RQM">
+    <opt name="Enabled" value="false"/>
+  </integration>
+</integrations>
+<notifications/>
 </testscenario>
