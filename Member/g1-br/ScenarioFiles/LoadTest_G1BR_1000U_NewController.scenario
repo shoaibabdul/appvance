@@ -48,11 +48,11 @@
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
-    <bundle name="mysql" version="5.0"/>
     <bundle name="sahi" version="sahi_pro"/>
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
     <dpl name="PublicCarMake" type="HashDPL" langtype="java" method="setup">
@@ -201,9 +201,9 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://appvancerds.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@apc.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:1521:ORCL"/>
       <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
     </log>
   </logs>
   <integrations>
