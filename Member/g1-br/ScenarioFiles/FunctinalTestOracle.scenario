@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>LoadTest_G1BR_1000U</name>
+    <name>Functional test oracle</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_perf/Member/g1-br/br-testdata/G1BRLoginIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="40" instantiate="All" terminate="All" reboot="After"/>
+    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -53,6 +53,7 @@
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources/>
   <options>
@@ -95,9 +96,9 @@
     </options>
   </options>
   <templates>
-    <controller name="LoadTest_G1BR_1000U_1">
-      <round name="LoadTest_G1BR_1000U_1" totalusers="1" testtype="users" totaliterations="40">
-        <testcase name="TC1_PublicHomePage"/>
+    <controller name="Functional test">
+      <round name="Functional test" totalusers="1" testtype="users" totaliterations="40">
+        <testcase name="TC1_PublicHomePage" executions="1"/>
       </round>
     </controller>
     <testcase name="TC1_PublicHomePage" expand="yes">
@@ -110,17 +111,17 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="LoadTest_G1BR_1000U_1" name="LoadTest_G1BR_1000U_1">
-      <testcase name="TC1_PublicHomePage" users="1"/>
+    <iteration controller="Functional test" name="Functional test">
+      <testcase name="TC1_PublicHomePage" totalexecutions="1" users="1"/>
     </iteration>
   </execution>
   <logs>
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://appvancerds.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@apc.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:1521:ORCL"/>
       <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
     </log>
   </logs>
   <integrations>
