@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Find a Vehicle&quot; link" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
-		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(11)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,8 +56,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Auctions&quot; link" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Auctions&quot;)" selected="true"/>
-		<accessor type="click" value="link(17)" selected="false"/>
+		<accessor type="click" value="link(&quot;Auctions&quot;)" selected="false"/>
+		<accessor type="click" value="link(17)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/Today&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -83,8 +83,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Locations&quot; link" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(23)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="false"/>
+		<accessor type="click" value="link(23)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Locations&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -110,8 +110,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Sell a Vehicle&quot; link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sell a Vehicle&quot;)" selected="true"/>
-		<accessor type="click" value="link(25)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sell a Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(25)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/HowToSell/Individual&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -137,8 +137,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Support&quot; link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Support&quot;)" selected="true"/>
-		<accessor type="click" value="link(29)" selected="false"/>
+		<accessor type="click" value="link(&quot;Support&quot;)" selected="false"/>
+		<accessor type="click" value="link(29)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/Content/US/en/Support/How-to-Buy/Overview&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -164,8 +164,8 @@
 
 <step action="click" value='' type="web" desc="Click &quot;Home&quot; link" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
-		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="false"/>
+		<accessor type="click" value="link(11)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
