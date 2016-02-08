@@ -54,7 +54,36 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;34967775&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="searchbox(0)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
@@ -63,33 +92,6 @@
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;View All Photos&quot;)" selected="true"/>
-		<accessor type="click" value="link(53)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/Lot/34967775/Photos?SearchId=656531259&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'View All Photos')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/span/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '/us/Lot/34967775/Photos?SearchId=656531259')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[1]/div[1]/span/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -108,6 +110,33 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;View All Photos&quot;)" selected="true"/>
+		<accessor type="click" value="link(53)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/Lot/34967775/Photos?SearchId=656531259&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'View All Photos')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/span/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/Lot/34967775/Photos?SearchId=656531259')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/div[1]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US&quot;)" selected="false"/>
@@ -121,7 +150,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
