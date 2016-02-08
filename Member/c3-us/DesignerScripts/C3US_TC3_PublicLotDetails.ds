@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
-		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="false"/>
+		<accessor type="click" value="link(11)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
