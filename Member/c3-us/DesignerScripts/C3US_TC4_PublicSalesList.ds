@@ -1,0 +1,419 @@
+<testcase name='C3US_TC4_PublicSalesList' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://c-member-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Find a Vehicle')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-findvehicle']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/US/Search/VehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future&quot;)" selected="true"/>
+		<accessor type="click" value="link(50)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=18&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=OK%20-%20OKLAHOMA%20CITY&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Future')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[1]/td[7]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=18&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=OK%20-%20OKLAHOMA%20CITY&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Show All Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(51)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=6&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=CA%20-%20SAN%20JOSE&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[2]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=6&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=CST&amp;SearchResultType=SaleList&amp;searchTitle=CA%20-%20SAN%20JOSE&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
+		<accessor type="click" value="link(52)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=28&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=PA%20-%20PITTSBURGH%20NORTH&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[3]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=28&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=PA%20-%20PITTSBURGH%20NORTH&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[3]&quot;)" selected="true"/>
+		<accessor type="click" value="link(53)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=9&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=PST&amp;SearchResultType=SaleList&amp;searchTitle=OR%20-%20PORTLAND%20NORTH&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[4]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=9&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=PST&amp;SearchResultType=SaleList&amp;searchTitle=OR%20-%20PORTLAND%20NORTH&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[4]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[4]&quot;)" selected="true"/>
+		<accessor type="click" value="link(54)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=201&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=ON%20-%20TORONTO&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[5]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=201&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=ON%20-%20TORONTO&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[5]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(43)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Auctions/SalesList[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[5]&quot;)" selected="true"/>
+		<accessor type="click" value="link(55)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?YardNumber=23&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=CT%20-%20HARTFORD&amp;cn=loc&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='FutureAuctions']/tbody/tr[6]/td[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?YardNumber=23&amp;RadioGroup=Location&amp;AuctionDateTime=1%2F1%2F0001%2012%3A00%3A00%20AM&amp;AuctionTimeZoneCode=EST&amp;SearchResultType=SaleList&amp;searchTitle=CT%20-%20HARTFORD&amp;cn=loc')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[6]/td[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
