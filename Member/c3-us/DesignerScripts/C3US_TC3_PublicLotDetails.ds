@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
 <step action="navigateTo" value="&quot;http://c-member-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="false"/>
-		<accessor type="click" value="link(11)" selected="true"/>
+		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/US/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -54,30 +54,27 @@
 
 
 
-<step action="setValue" value="&quot;34967775&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;34879435&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-		<accessor type='' value="searchbox(0)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='txtsearchBox']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
@@ -112,12 +109,12 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;View All Photos&quot;)" selected="true"/>
 		<accessor type="click" value="link(53)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/Lot/34967775/Photos?SearchId=656531259&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/Lot/34879435/Photos?SearchId=1199155621&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'View All Photos')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/span/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '/us/Lot/34967775/Photos?SearchId=656531259')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/Lot/34879435/Photos?SearchId=1199155621')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[1]/div[1]/span/a&quot;" selected="false"/>
 	</dialect>
 </step>
