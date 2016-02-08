@@ -105,17 +105,17 @@
 
 
 
-<step action="setSelected" value="&quot;Show 50 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;classic-view&quot;)" selected="true"/>
+		<accessor type="click" value="link(90)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?q=Honda&amp;Page=1&amp;ShowWatchedLotsOnly=False&amp;cn=&amp;vf_titlgroup=&amp;InitialFilters=&amp;OriginalCount=4759&amp;ShowClassicView=false&amp;PageSize=20&amp;Sort=sd#[8]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;small classicview-blue tooltip-onload&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[@id='classic-view']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[3]/a[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/a[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -132,17 +132,17 @@
 
 
 
-<step action="setSelected" value="&quot;Show 100 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;list-view&quot;)" selected="true"/>
+		<accessor type="click" value="link(89)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://c-member-qa1.copart.com/us/search?q=Honda&amp;Page=1&amp;ShowWatchedLotsOnly=False&amp;cn=&amp;vf_titlgroup=&amp;InitialFilters=&amp;OriginalCount=4759&amp;ShowClassicView=true&amp;PageSize=20&amp;Sort=sd#[7]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;small listview-blue&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[@id='list-view']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[3]/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/a[1]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -159,7 +159,61 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setSelected" value="&quot;Show 50 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;Show 100 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='searchResultListContainer']/div[1]/div[2]/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
@@ -174,7 +228,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
