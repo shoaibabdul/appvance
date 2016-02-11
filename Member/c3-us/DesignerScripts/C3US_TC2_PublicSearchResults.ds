@@ -5,7 +5,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://c-member-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://c-member-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -27,7 +27,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Click Find a Vehicle tab" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Find a Vehicle&quot;)" selected="true"/>
 		<accessor type="click" value="link(11)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;Honda&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;Honda&quot;" type="web" desc="Enter CarMake " isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Click Submit button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
@@ -105,7 +105,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Change Doc Type to ClassicView" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;classic-view&quot;)" selected="true"/>
 		<accessor type="click" value="link(90)" selected="false"/>
@@ -132,7 +132,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Change Doc Type to ListView" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;list-view&quot;)" selected="true"/>
 		<accessor type="click" value="link(89)" selected="false"/>
@@ -159,7 +159,7 @@
 
 
 
-<step action="setSelected" value="&quot;Show 50 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setSelected" value="&quot;Show 50 Results&quot;" type="web" desc="Set PageSize to 50 " isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
@@ -186,7 +186,7 @@
 
 
 
-<step action="setSelected" value="&quot;Show 100 Results&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="setSelected" value="&quot;Show 100 Results&quot;" type="web" desc="Set PageSize to 100" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
@@ -213,7 +213,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Click Home tab" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
