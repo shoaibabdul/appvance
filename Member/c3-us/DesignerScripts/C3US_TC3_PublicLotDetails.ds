@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_LotNumber.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://c-member-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;34879435&quot;" type="web" desc="Enter LotNumber" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$LotNumber&quot;" type="web" desc="Enter LotNumber" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
