@@ -32,6 +32,8 @@
     <resource name="C3US_TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC1_PublicHomePage.ds" cache="false"/>
     <resource name="C3US_TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC2_PublicSearchResults.ds" cache="false"/>
     <resource name="C3US_TC3_PublicLotDetails.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC3_PublicLotDetails.ds" cache="false"/>
+    <resource name="C3US_TC4_PublicSalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC4_PublicSalesList.ds" cache="false"/>
+    <resource name="C3US_TC5_PublicHeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC5_PublicHeaderSearch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_CarMake.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_LotNumber.csv" cache="false"/>
   </resources>
@@ -118,6 +120,16 @@
         </run>
       </test>
     </testcase>
+    <testcase name="C3US_TC4_PublicSalesList" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC4_PublicSalesList.ds"/>
+      </test>
+    </testcase>
+    <testcase name="C3US_TC5_PublicHeaderSearch" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC5_PublicHeaderSearch.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -127,6 +139,8 @@
       <testcase name="C3US_TC1_PublicHomePage" users="1"/>
       <testcase name="C3US_TC2_PublicSearchResults" users="1"/>
       <testcase name="C3US_TC3_PublicLotDetails" users="1"/>
+      <testcase name="C3US_TC4_PublicSalesList" users="1"/>
+      <testcase name="C3US_TC5_PublicHeaderSearch" users="1"/>
     </iteration>
   </execution>
   <logs>
