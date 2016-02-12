@@ -93,7 +93,7 @@
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
     </dpl>
-    <dpl name="MerberUserIds" type="HashDPL" langtype="java" method="setup">
+    <dpl name="MemberUserIds" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
@@ -186,7 +186,7 @@
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC6_MemberHomePage.ds">
           <argument name="MemberUserIds6" method="getNextData" dpl="MemberUserIds6"/>
-          <argument name="MerberUserIds" method="getNextData" dpl="MerberUserIds"/>
+          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
         </run>
       </test>
     </testcase>
