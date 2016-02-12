@@ -30,6 +30,10 @@
   </basics>
   <resources>
     <resource name="C3US_TC1_PublicHomePage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC1_PublicHomePage.ds" cache="false"/>
+    <resource name="C3US_TC2_PublicSearchResults.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC2_PublicSearchResults.ds" cache="false"/>
+    <resource name="C3US_TC3_PublicLotDetails.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/C3US_TC3_PublicLotDetails.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_CarMake.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_LotNumber.csv" cache="false"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -42,7 +46,18 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="PublicCarMake" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3M_US_CarMake.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="PublicLotNumbers" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3M_US_LotNumber.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -89,6 +104,20 @@
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC1_PublicHomePage.ds"/>
       </test>
     </testcase>
+    <testcase name="C3US_TC2_PublicSearchResults" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC2_PublicSearchResults.ds">
+          <argument name="PublicCarMake" method="getNextData" dpl="PublicCarMake"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="C3US_TC3_PublicLotDetails" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC3_PublicLotDetails.ds">
+          <argument name="PublicLotNumbers" method="getNextData" dpl="PublicLotNumbers"/>
+        </run>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -96,6 +125,8 @@
   <execution type="loadtest">
     <iteration controller="C3M_US_SmokeTest_01" name="C3M_US_SmokeTest_01">
       <testcase name="C3US_TC1_PublicHomePage" users="1"/>
+      <testcase name="C3US_TC2_PublicSearchResults" users="1"/>
+      <testcase name="C3US_TC3_PublicLotDetails" users="1"/>
     </iteration>
   </execution>
   <logs>
