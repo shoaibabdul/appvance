@@ -155,7 +155,7 @@
   </options>
   <templates>
     <controller name="C3M_US_SmokeTest_01">
-      <round name="C3M_US_SmokeTest_01" totalusers="10" time="10" maxtime="10" testtype="users" totaliterations="10" totalexecutions="2"/>
+      <round name="C3M_US_SmokeTest_01" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="C3US_TC1_PublicHomePage" expand="yes">
       <test>
