@@ -68,7 +68,7 @@
         <argument name="file" value="C3M_US_LotNumber.csv"/>
       </argument>
     </dpl>
-    <dpl name="MemberUserIds9" type="HashDPL" langtype="java" method="setup">
+    <dpl name="MemberUserIds" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
@@ -83,7 +83,7 @@
         <argument name="file" value="C3M_US_UserId_LotNumber.csv"/>
       </argument>
     </dpl>
-    <dpl name="MemberUserIds10" type="HashDPL" langtype="java" method="setup">
+    <dpl name="MemberUserIds" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
@@ -93,7 +93,7 @@
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
     </dpl>
-    <dpl name="MerberUserIds6" type="HashDPL" langtype="java" method="setup">
+    <dpl name="MerberUserIds" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
@@ -186,7 +186,7 @@
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC6_MemberHomePage.ds">
           <argument name="MemberUserIds6" method="getNextData" dpl="MemberUserIds6"/>
-          <argument name="MerberUserIds6" method="getNextData" dpl="MerberUserIds6"/>
+          <argument name="MerberUserIds" method="getNextData" dpl="MerberUserIds"/>
         </run>
       </test>
     </testcase>
@@ -207,14 +207,14 @@
     <testcase name="C3US_TC9_MemberSalesList" expand="yes">
       <test>
         <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC9_MemberSalesList.ds">
-          <argument name="MemberUserIds9" method="getNextData" dpl="MemberUserIds9"/>
+          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
         </run>
       </test>
     </testcase>
     <testcase name="C3US_TC10_MemberHeaderSearch" expand="yes">
       <test>
         <run name="Untitled10" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC10_MemberHeaderSearch.ds">
-          <argument name="MemberUserIds10" method="getNextData" dpl="MemberUserIds10"/>
+          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
         </run>
       </test>
     </testcase>
