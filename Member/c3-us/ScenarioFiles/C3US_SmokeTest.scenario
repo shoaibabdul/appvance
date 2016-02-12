@@ -92,11 +92,6 @@
         <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
     </dpl>
-    <dpl name="MemberUserIds6" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3M_US_UserId.csv"/>
-      </argument>
-    </dpl>
   </datasources>
   <options>
     <options type="apc">
@@ -171,7 +166,6 @@
     <testcase name="C3US_TC6_MemberHomePage" expand="yes">
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC6_MemberHomePage.ds">
-          <argument name="MemberUserIds6" method="getNextData" dpl="MemberUserIds6"/>
           <argument name="MemberUserIds6" method="getNextData" dpl="MemberUserIds6"/>
         </run>
       </test>
