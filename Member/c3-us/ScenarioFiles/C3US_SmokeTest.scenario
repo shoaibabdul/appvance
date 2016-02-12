@@ -155,18 +155,7 @@
   </options>
   <templates>
     <controller name="C3M_US_SmokeTest_01">
-      <round name="C3M_US_SmokeTest_01" totalusers="10" testtype="users" totaliterations="10">
-        <testcase name="C3US_TC1_PublicHomePage" totalexecutions="2"/>
-        <testcase name="C3US_TC2_PublicSearchResults" totalexecutions="2"/>
-        <testcase name="C3US_TC3_PublicLotDetails" totalexecutions="2"/>
-        <testcase name="C3US_TC4_PublicSalesList" totalexecutions="2"/>
-        <testcase name="C3US_TC5_PublicHeaderSearch" totalexecutions="2"/>
-        <testcase name="C3US_TC6_MemberHomePage" totalexecutions="2"/>
-        <testcase name="C3US_TC7_MemberSearchResults" totalexecutions="2"/>
-        <testcase name="C3US_TC8_MemberLotDetails" totalexecutions="2"/>
-        <testcase name="C3US_TC9_MemberSalesList" totalexecutions="2"/>
-        <testcase name="C3US_TC10_MemberHeaderSearch" totalexecutions="2"/>
-      </round>
+      <round name="C3M_US_SmokeTest_01" totalusers="10" time="10" maxtime="10" testtype="users" totaliterations="10" totalexecutions="2"/>
     </controller>
     <testcase name="C3US_TC1_PublicHomePage" expand="yes">
       <test>
