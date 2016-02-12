@@ -43,7 +43,6 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_LotNumber.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_UserId_CarMake.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_UserId_LotNumber.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_UserId.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_C3" type="EC2" config="REPOSITORY/C3Seller_Perf/Member/g1-br/ScenarioFiles/APC215.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
@@ -66,11 +65,6 @@
     <dpl name="PublicLotNumbers" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3M_US_LotNumber.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="MemberUserIds" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3M_US_UserId.csv"/>
       </argument>
     </dpl>
     <dpl name="MemberCarMake" type="HashDPL" langtype="java" method="setup">
@@ -186,7 +180,6 @@
       <test>
         <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC6_MemberHomePage.ds">
           <argument name="MemberUserIds6" method="getNextData" dpl="MemberUserIds6"/>
-          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
         </run>
       </test>
     </testcase>
@@ -206,16 +199,12 @@
     </testcase>
     <testcase name="C3US_TC9_MemberSalesList" expand="yes">
       <test>
-        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC9_MemberSalesList.ds">
-          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
-        </run>
+        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC9_MemberSalesList.ds"/>
       </test>
     </testcase>
     <testcase name="C3US_TC10_MemberHeaderSearch" expand="yes">
       <test>
-        <run name="Untitled10" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC10_MemberHeaderSearch.ds">
-          <argument name="MemberUserIds" method="getNextData" dpl="MemberUserIds"/>
-        </run>
+        <run name="Untitled10" testclass="sahi" method="chrome" langtype="ds" resource="C3US_TC10_MemberHeaderSearch.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
