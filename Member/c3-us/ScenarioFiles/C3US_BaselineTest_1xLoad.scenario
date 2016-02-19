@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C3M_US_DryRunTest</name>
+    <name>C3M_US_BaselineTest_1xLoad</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -154,8 +154,8 @@
     </options>
   </options>
   <templates>
-    <controller name="C3M_US_DryRunTest_01">
-      <round name="C3M_US_DryRunTest_01" totalusers="20" time="20" testtype="users" totaliterations="20"/>
+    <controller name="C3M_US_BaselineTest_1xLoad">
+      <round name="C3M_US_BaselineTest_1xLoad" totalusers="50" time="65" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="C3US_TC1_PublicHomePage" expand="yes">
       <test>
@@ -226,17 +226,17 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C3M_US_DryRunTest_01" name="C3M_US_DryRunTest_01">
-      <testcase name="C3US_TC1_PublicHomePage" users="2"/>
-      <testcase name="C3US_TC2_PublicSearchResults" users="2"/>
-      <testcase name="C3US_TC3_PublicLotDetails" users="2"/>
-      <testcase name="C3US_TC4_PublicSalesList" users="2"/>
-      <testcase name="C3US_TC5_PublicHeaderSearch" users="2"/>
-      <testcase name="C3US_TC6_MemberHomePage" users="2"/>
-      <testcase name="C3US_TC7_MemberSearchResults" users="2"/>
-      <testcase name="C3US_TC8_MemberLotDetails" users="2"/>
-      <testcase name="C3US_TC9_MemberSalesList" users="2"/>
-      <testcase name="C3US_TC10_MemberHeaderSearch" users="2"/>
+    <iteration controller="C3M_US_BaselineTest_1xLoad" name="C3M_US_BaselineTest_1xLoad">
+      <testcase name="C3US_TC1_PublicHomePage" users="5"/>
+      <testcase name="C3US_TC2_PublicSearchResults" users="5"/>
+      <testcase name="C3US_TC3_PublicLotDetails" users="5"/>
+      <testcase name="C3US_TC4_PublicSalesList" users="5"/>
+      <testcase name="C3US_TC5_PublicHeaderSearch" users="5"/>
+      <testcase name="C3US_TC6_MemberHomePage" users="5"/>
+      <testcase name="C3US_TC7_MemberSearchResults" users="5"/>
+      <testcase name="C3US_TC8_MemberLotDetails" users="5"/>
+      <testcase name="C3US_TC9_MemberSalesList" users="5"/>
+      <testcase name="C3US_TC10_MemberHeaderSearch" users="5"/>
     </iteration>
   </execution>
   <logs>
