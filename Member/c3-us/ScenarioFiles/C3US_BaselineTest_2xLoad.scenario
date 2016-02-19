@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C3M_US_BaselineTest_1xLoad</name>
+    <name>C3M_US_BaselineTest_2xLoad</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -46,7 +46,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/C3M_US_UserId.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="REPOSITORY/C3Seller_Perf/Member/g1-br/ScenarioFiles/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="REPOSITORY/C3Seller_Perf/Member/g1-br/ScenarioFiles/APC215.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -154,8 +154,8 @@
     </options>
   </options>
   <templates>
-    <controller name="C3M_US_BaselineTest_1xLoad">
-      <round name="C3M_US_BaselineTest_1xLoad" totalusers="50" time="65" testtype="users" totaliterations="100"/>
+    <controller name="C3M_US_BaselineTest_2xLoad">
+      <round name="C3M_US_BaselineTest_2xLoad" totalusers="100" time="65" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="C3US_TC1_PublicHomePage" expand="yes">
       <test>
@@ -226,17 +226,17 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C3M_US_BaselineTest_1xLoad" name="C3M_US_BaselineTest_1xLoad">
-      <testcase name="C3US_TC1_PublicHomePage" users="5"/>
-      <testcase name="C3US_TC2_PublicSearchResults" users="5"/>
-      <testcase name="C3US_TC3_PublicLotDetails" users="5"/>
-      <testcase name="C3US_TC4_PublicSalesList" users="5"/>
-      <testcase name="C3US_TC5_PublicHeaderSearch" users="5"/>
-      <testcase name="C3US_TC6_MemberHomePage" users="5"/>
-      <testcase name="C3US_TC7_MemberSearchResults" users="5"/>
-      <testcase name="C3US_TC8_MemberLotDetails" users="5"/>
-      <testcase name="C3US_TC9_MemberSalesList" users="5"/>
-      <testcase name="C3US_TC10_MemberHeaderSearch" users="5"/>
+    <iteration controller="C3M_US_BaselineTest_2xLoad" name="C3M_US_BaselineTest_2xLoad">
+      <testcase name="C3US_TC1_PublicHomePage" users="10"/>
+      <testcase name="C3US_TC2_PublicSearchResults" users="10"/>
+      <testcase name="C3US_TC3_PublicLotDetails" users="10"/>
+      <testcase name="C3US_TC4_PublicSalesList" users="10"/>
+      <testcase name="C3US_TC5_PublicHeaderSearch" users="10"/>
+      <testcase name="C3US_TC6_MemberHomePage" users="10"/>
+      <testcase name="C3US_TC7_MemberSearchResults" users="10"/>
+      <testcase name="C3US_TC8_MemberLotDetails" users="10"/>
+      <testcase name="C3US_TC9_MemberSalesList" users="10"/>
+      <testcase name="C3US_TC10_MemberHeaderSearch" users="10"/>
     </iteration>
   </execution>
   <logs>
