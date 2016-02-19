@@ -109,7 +109,7 @@ file 'LICENSE.txt', which is part of this source code package.
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@apc.cj7ftkrgeamp.us-east-1.rds.amazonaws.com:1521:ORCL"/>
       <opt name="hibernate.default_schema" value="apc"/>
       <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
     </log>
