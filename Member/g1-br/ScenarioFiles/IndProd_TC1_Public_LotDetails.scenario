@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>IndProd_LotDetails_LoadTest1</name>
+    <name>IndProd_TC1_Public_LotDetails</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -50,11 +50,6 @@
     <dpl name="IndProdLots" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="IndProd_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="IndProdLotsLogin" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="IndProd_LotNumbersLogin.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -98,8 +93,8 @@
     </options>
   </options>
   <templates>
-    <controller name="IndProd_LotDetails_LoadTest01">
-      <round name="IndProd_LotDetails_LoadTest01" totalusers="100" time="30" testtype="users" totaliterations="200"/>
+    <controller name="IndProd_Public_LotDetails">
+      <round name="IndProd_Public_LotDetails" totalusers="50" time="30" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="ProdInd_LotDetailsPage" expand="yes">
       <test>
@@ -108,21 +103,13 @@
         </run>
       </test>
     </testcase>
-    <testcase name="ProdInd_LotDetailsLoginPage" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="ProdInd_TC2_LotDetailsPageLogin.ds">
-          <argument name="IndProdLotsLogin" method="getNextData" dpl="IndProdLotsLogin"/>
-        </run>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="IndProd_LotDetails_LoadTest01" name="IndProd_LotDetails_LoadTest01">
+    <iteration controller="IndProd_Public_LotDetails" name="IndProd_Public_LotDetails">
       <testcase name="ProdInd_LotDetailsPage" users="50"/>
-      <testcase name="ProdInd_LotDetailsLoginPage" users="50"/>
     </iteration>
   </execution>
   <logs>
