@@ -35,7 +35,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/IndProd_LotNumbersLogin.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon" type="EC2" config="{scenario}/APC215.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -65,10 +65,10 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="2"/>
+      <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="2"/>
+      <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="8000"/>
@@ -99,7 +99,7 @@
   </options>
   <templates>
     <controller name="IndProd_LotDetails_LoadTest01">
-      <round name="IndProd_LotDetails_LoadTest01" totalusers="4" time="30" testtype="users" totaliterations="8"/>
+      <round name="IndProd_LotDetails_LoadTest01" totalusers="50" time="15" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="ProdInd_LotDetailsPage" expand="yes">
       <test>
@@ -121,8 +121,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="IndProd_LotDetails_LoadTest01" name="IndProd_LotDetails_LoadTest01">
-      <testcase name="ProdInd_LotDetailsPage" users="2"/>
-      <testcase name="ProdInd_LotDetailsLoginPage" users="2"/>
+      <testcase name="ProdInd_LotDetailsPage" users="25"/>
+      <testcase name="ProdInd_LotDetailsLoginPage" users="25"/>
     </iteration>
   </execution>
   <logs>
