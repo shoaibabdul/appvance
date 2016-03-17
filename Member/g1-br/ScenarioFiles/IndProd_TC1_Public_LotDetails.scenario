@@ -92,7 +92,7 @@
   </options>
   <templates>
     <controller name="IndProd_Public_LotDetails">
-      <round name="IndProd_Public_LotDetails" totalusers="50" time="30" testtype="users" totaliterations="200"/>
+      <round name="IndProd_Public_LotDetails" totalusers="50" time="15" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="ProdInd_LotDetailsPage" expand="yes">
       <test>
