@@ -1,0 +1,112 @@
+<testcase name='ProdGermany_TC1_LotDetailsPage' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;50003134&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='txtsearchBox']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;2003 Volkswagen New Beetle Cabriolet 1.6 ...&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;2003 Volkswagen New Beetle Cabriolet 1.6 1Y-New Beetle[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(46)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://www.copart.de/de/Lot/50003134?searchId=1654452804&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'2003 Volkswagen New Beetle Cabriolet 1.6 ...')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick='saveScroll();']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[4]/table/tbody/tr/td[1]/div/div[2]/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Lot/50003134?searchId=1654452804')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
