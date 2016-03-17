@@ -3,7 +3,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/GERProd_LotNumbers.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://copart.de&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -27,7 +27,7 @@
 
 
 
-<step action="setValue" value="&quot;50003134&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="false"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
