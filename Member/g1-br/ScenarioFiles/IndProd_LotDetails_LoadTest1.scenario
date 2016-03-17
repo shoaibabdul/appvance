@@ -99,7 +99,7 @@
   </options>
   <templates>
     <controller name="IndProd_LotDetails_LoadTest01">
-      <round name="IndProd_LotDetails_LoadTest01" totalusers="50" time="15" testtype="users" totaliterations="50"/>
+      <round name="IndProd_LotDetails_LoadTest01" totalusers="100" time="30" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="ProdInd_LotDetailsPage" expand="yes">
       <test>
@@ -121,8 +121,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="IndProd_LotDetails_LoadTest01" name="IndProd_LotDetails_LoadTest01">
-      <testcase name="ProdInd_LotDetailsPage" users="25"/>
-      <testcase name="ProdInd_LotDetailsLoginPage" users="25"/>
+      <testcase name="ProdInd_LotDetailsPage" users="50"/>
+      <testcase name="ProdInd_LotDetailsLoginPage" users="50"/>
     </iteration>
   </execution>
   <logs>
