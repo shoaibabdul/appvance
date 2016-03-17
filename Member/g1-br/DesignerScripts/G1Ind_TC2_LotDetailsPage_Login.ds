@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;$UserId&quot;" type="web" desc="Enter UserId" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$UserId&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -107,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Enter SignInButton" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Click SignIntoAccButton" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Sign Into Your Account&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
@@ -160,7 +160,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Search Button" isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Enter SearchButton" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
@@ -185,18 +185,17 @@
 
 
 
-<step action="click" value='' type="web" desc="Open Lot Liink" isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Open Lot Link" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;2010 Audi Q5 2.0TFSI&quot;)" selected="false"/>
-		<accessor type="click" value="link(64)" selected="true"/>
-		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.in/in/Lot/50014797?searchId=547571160&quot;)" selected="false"/>
-		<accessor type='' value="link(67)" selected="false"/>
+		<accessor type="click" value="link(67)" selected="true"/>
+		<accessor type="click" value="link(&quot;http://g1member-qa3.copart.in/in/Lot/50014797?searchId=2016758540&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'2010 Audi Q5 2.0TFSI')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//a[@onclick='saveScroll();']&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[4]/table/tbody/tr/td[1]/div/div[2]/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '/in/Lot/50014797?searchId=547571160')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/in/Lot/50014797?searchId=2016758540')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[2]/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
