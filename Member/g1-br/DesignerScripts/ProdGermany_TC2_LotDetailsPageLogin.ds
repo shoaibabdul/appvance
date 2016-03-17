@@ -29,8 +29,8 @@
 
 <step action="click" value='' type="web" desc="Click SignIn link" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Anmelden&quot;)" selected="true"/>
-		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;Anmelden&quot;)" selected="false"/>
+		<accessor type="click" value="link(1)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://www.copart.de/de/Account/LogOn&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -55,9 +55,9 @@
 
 <step action="setValue" value="&quot;testdepiv3@outlook.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;right emailval&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -82,9 +82,9 @@
 
 <step action="setValue" value="&quot;copart111&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;right&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -109,10 +109,10 @@
 
 <step action="click" value='' type="web" desc="Click SigInButton" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Melden Sie sich an&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Melden Sie sich an&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;button large blue right&quot;)" selected="false"/>
-		<accessor type="click" value="submit(1)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@name='btnSubmit']&quot;" selected="true"/>
@@ -136,9 +136,9 @@
 
 <step action="setValue" value="&quot;50003134&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="false"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
-		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -162,9 +162,9 @@
 
 <step action="click" value='' type="web" desc="Click SearchButton" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="false"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
-		<accessor type="click" value="submit(0)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
@@ -187,9 +187,9 @@
 
 <step action="click" value='' type="web" desc="Open Lot link" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;2003 Volkswagen New Beetle Cabriolet 1.6 ...&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;2003 Volkswagen New Beetle Cabriolet 1.6 ...&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;2003 Volkswagen New Beetle Cabriolet 1.6 1Y-New Beetle[1]&quot;)" selected="false"/>
-		<accessor type="click" value="link(65)" selected="false"/>
+		<accessor type="click" value="link(65)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://www.copart.de/de/Lot/50003134?searchId=1803779958&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -216,8 +216,8 @@
 
 <step action="click" value='' type="web" desc="Click SignOut link" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Abmelden&quot;)" selected="true"/>
-		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;Abmelden&quot;)" selected="false"/>
+		<accessor type="click" value="link(2)" selected="true"/>
 		<accessor type="click" value="link(&quot;http://www.copart.de/de/Account/LogOff&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
