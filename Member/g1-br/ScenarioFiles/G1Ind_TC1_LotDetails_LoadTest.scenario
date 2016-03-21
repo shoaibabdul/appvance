@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1Ind_LotDetails_LoadTest</name>
+    <name>G1Ind_TC1_LotDetails_LoadTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -30,12 +30,10 @@
   </basics>
   <resources>
     <resource name="G1Ind_TC1_LotDetailsPage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/G1Ind_TC1_LotDetailsPage.ds" cache="false"/>
-    <resource name="G1Ind_TC2_LotDetailsPage_Login.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/G1Ind_TC2_LotDetailsPage_Login.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1IndLotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1IndLotNumbers_Login.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -52,11 +50,6 @@
         <argument name="file" value="G1IndLotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G1IndLotNosLogin" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1IndLotNumbers_Login.csv"/>
-      </argument>
-    </dpl>
   </datasources>
   <options>
     <options type="apc">
@@ -65,10 +58,10 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="3"/>
+      <opt name="RampUpSeconds" value="2"/>
       <opt name="MaxRampUpTime" value="1000"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="3"/>
+      <opt name="RampDownSeconds" value="2"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="5000"/>
@@ -98,8 +91,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1Ind_LotDetails_LoadTest_01">
-      <round name="G1Ind_LotDetails_LoadTest_01" totalusers="4" time="5" testtype="users" totaliterations="8"/>
+    <controller name="G1Ind_TC1_Pub_LotDetails_01">
+      <round name="G1Ind_TC1_Pub_LotDetails_01" totalusers="50" time="30" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="G1Ind_TC1_LotDetailsPage" expand="yes">
       <test>
@@ -108,21 +101,13 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G1Ind_TC2_LotDetailsPage_Login" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1Ind_TC2_LotDetailsPage_Login.ds">
-          <argument name="G1IndLotNosLogin" method="getNextData" dpl="G1IndLotNosLogin"/>
-        </run>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1Ind_LotDetails_LoadTest_01" name="G1Ind_LotDetails_LoadTest_01">
-      <testcase name="G1Ind_TC1_LotDetailsPage" users="2"/>
-      <testcase name="G1Ind_TC2_LotDetailsPage_Login" users="2"/>
+    <iteration controller="G1Ind_TC1_Pub_LotDetails_01" name="G1Ind_TC1_Pub_LotDetails_01">
+      <testcase name="G1Ind_TC1_LotDetailsPage" users="50"/>
     </iteration>
   </execution>
   <logs>
