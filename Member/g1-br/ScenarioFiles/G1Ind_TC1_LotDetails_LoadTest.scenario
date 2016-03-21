@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1IndLotNumbers.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -92,7 +92,7 @@
   </options>
   <templates>
     <controller name="G1Ind_TC1_Pub_LotDetails_01">
-      <round name="G1Ind_TC1_Pub_LotDetails_01" totalusers="5" time="5" testtype="users" totaliterations="10"/>
+      <round name="G1Ind_TC1_Pub_LotDetails_01" totalusers="50" time="30" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="G1Ind_TC1_LotDetailsPage" expand="yes">
       <test>
@@ -107,7 +107,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1Ind_TC1_Pub_LotDetails_01" name="G1Ind_TC1_Pub_LotDetails_01">
-      <testcase name="G1Ind_TC1_LotDetailsPage" users="5"/>
+      <testcase name="G1Ind_TC1_LotDetailsPage" users="50"/>
     </iteration>
   </execution>
   <logs>
