@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>IndProd_TC1_Public_LotDetails</name>
+    <name>IndProd_TC2LoginLotDetails01</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -29,8 +29,8 @@
     <categorization>IndProd</categorization>
   </basics>
   <resources>
-    <resource name="ProdInd_TC1_LotDetailsPage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/ProdInd_TC1_LotDetailsPage.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/IndProd_LotNumbers.csv" cache="false"/>
+    <resource name="ProdInd_TC2_LotDetailsPageLogin.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/ProdInd_TC2_LotDetailsPageLogin.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/IndProd_LotNumbersLogin.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -45,9 +45,9 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="IndProdLots" type="HashDPL" langtype="java" method="setup">
+    <dpl name="IndProdLotsLogin" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="IndProd_LotNumbers.csv"/>
+        <argument name="file" value="IndProd_LotNumbersLogin.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -91,13 +91,13 @@
     </options>
   </options>
   <templates>
-    <controller name="IndProd_Public_LotDetails">
-      <round name="IndProd_Public_LotDetails" totalusers="50" time="15" testtype="users" totaliterations="200"/>
+    <controller name="IndProd_TC2LoginLotDetails01">
+      <round name="IndProd_TC2LoginLotDetails01" totalusers="50" time="30" testtype="users" totaliterations="100"/>
     </controller>
-    <testcase name="ProdInd_LotDetailsPage" expand="yes">
+    <testcase name="ProdInd_LotDetailsLoginPage" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="ProdInd_TC1_LotDetailsPage.ds">
-          <argument name="IndProdLots" method="getNextData" dpl="IndProdLots"/>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="ProdInd_TC2_LotDetailsPageLogin.ds">
+          <argument name="IndProdLotsLogin" method="getNextData" dpl="IndProdLotsLogin"/>
         </run>
       </test>
     </testcase>
@@ -106,8 +106,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="IndProd_Public_LotDetails" name="IndProd_Public_LotDetails">
-      <testcase name="ProdInd_LotDetailsPage" users="50"/>
+    <iteration controller="IndProd_TC2LoginLotDetails01" name="IndProd_TC2LoginLotDetails01">
+      <testcase name="ProdInd_LotDetailsLoginPage" users="50"/>
     </iteration>
   </execution>
   <logs>

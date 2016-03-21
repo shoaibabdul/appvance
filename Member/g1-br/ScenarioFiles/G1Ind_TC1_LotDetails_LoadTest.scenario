@@ -20,20 +20,20 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>IndProd_TC1_Public_LotDetails</name>
+    <name>G1Ind_TC1_LotDetails_LoadTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
     <versions>v1</versions>
-    <categorization>IndProd</categorization>
+    <categorization>G1India_Project</categorization>
   </basics>
   <resources>
-    <resource name="ProdInd_TC1_LotDetailsPage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/ProdInd_TC1_LotDetailsPage.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/IndProd_LotNumbers.csv" cache="false"/>
+    <resource name="G1Ind_TC1_LotDetailsPage.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/g1-br/DesignerScripts/G1Ind_TC1_LotDetailsPage.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/G1IndLotNumbers.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="{scenario}/APC215.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -45,9 +45,9 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="IndProdLots" type="HashDPL" langtype="java" method="setup">
+    <dpl name="G1IndLotNos" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="IndProd_LotNumbers.csv"/>
+        <argument name="file" value="G1IndLotNumbers.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -64,7 +64,7 @@
       <opt name="RampDownSeconds" value="2"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMax" value="5000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -91,13 +91,13 @@
     </options>
   </options>
   <templates>
-    <controller name="IndProd_Public_LotDetails">
-      <round name="IndProd_Public_LotDetails" totalusers="50" time="15" testtype="users" totaliterations="200"/>
+    <controller name="G1Ind_TC1_Pub_LotDetails_01">
+      <round name="G1Ind_TC1_Pub_LotDetails_01" totalusers="50" time="30" testtype="users" totaliterations="50"/>
     </controller>
-    <testcase name="ProdInd_LotDetailsPage" expand="yes">
+    <testcase name="G1Ind_TC1_LotDetailsPage" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="ProdInd_TC1_LotDetailsPage.ds">
-          <argument name="IndProdLots" method="getNextData" dpl="IndProdLots"/>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G1Ind_TC1_LotDetailsPage.ds">
+          <argument name="G1IndLotNos" method="getNextData" dpl="G1IndLotNos"/>
         </run>
       </test>
     </testcase>
@@ -106,8 +106,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="IndProd_Public_LotDetails" name="IndProd_Public_LotDetails">
-      <testcase name="ProdInd_LotDetailsPage" users="50"/>
+    <iteration controller="G1Ind_TC1_Pub_LotDetails_01" name="G1Ind_TC1_Pub_LotDetails_01">
+      <testcase name="G1Ind_TC1_LotDetailsPage" users="50"/>
     </iteration>
   </execution>
   <logs>
