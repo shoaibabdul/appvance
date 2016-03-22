@@ -35,7 +35,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/g1-br/br-testdata/Spain_STG1_MemberLotNumbers.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="4" instantiate="All" terminate="All" reboot="After"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -99,7 +99,7 @@
   </options>
   <templates>
     <controller name="Spain_Stg1_LoadTest1">
-      <round name="Spain_Stg1_LoadTest1" totalusers="10" time="5" testtype="users" totaliterations="10"/>
+      <round name="Spain_Stg1_LoadTest1" totalusers="100" time="30" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="STG1_SPAIN_TC1_LotDetails" expand="yes">
       <test>
@@ -121,8 +121,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Spain_Stg1_LoadTest1" name="Spain_Stg1_LoadTest1">
-      <testcase name="STG1_SPAIN_TC1_LotDetails" users="5"/>
-      <testcase name="STG1_SPAIN_TC2_MemberLotDetails" users="5"/>
+      <testcase name="STG1_SPAIN_TC1_LotDetails" users="50"/>
+      <testcase name="STG1_SPAIN_TC2_MemberLotDetails" users="50"/>
     </iteration>
   </execution>
   <logs>
