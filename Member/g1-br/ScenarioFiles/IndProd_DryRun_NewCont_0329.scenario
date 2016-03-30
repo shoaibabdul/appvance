@@ -131,9 +131,9 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://mysqlcopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
       <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
     </log>
   </logs>
   <integrations>
