@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='TC2_C3SellerUS_MyCopart_Navigation' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10967" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;demoa&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;right w165&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4971" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;welcome1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;right w165&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;javascript:filterChar(login_form_standard%20,%20'logs')&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large blue right&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Login')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, \&quot;javascript:filterChar(login_form_standard , 'logs')\&quot;)]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="24955" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Enter assignments for the auction[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[15]&quot;)" selected="false"/>
+		<accessor type="click" value="span(52)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[2]/ul/li[1]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/ul/li[1]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9896" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Review issues and clear lots for pickup[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[16]&quot;)" selected="false"/>
+		<accessor type="click" value="span(55)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[2]/ul/li[2]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[2]/ul/li[2]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="19808" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;nav-dropdown ico_icon-titleIssues[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(56)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[3]/ul/li[1]/a/span[1]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[3]/ul/li[1]/a/span[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="49890" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Review outstanding Title Direct issue[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[18]&quot;)" selected="false"/>
+		<accessor type="click" value="span(61)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[3]/ul/li[2]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[3]/ul/li[2]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10830" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="false"/>
+		<accessor type="click" value="span(73)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[1]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7648" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;View all lots ready for the auction[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[23]&quot;)" selected="false"/>
+		<accessor type="click" value="span(76)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[2]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[2]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="15739" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;View auction dashboard[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[24]&quot;)" selected="false"/>
+		<accessor type="click" value="span(79)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[4]/ul/li[3]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[4]/ul/li[3]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7555" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Generate and schedule reports[1]&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;sub-title[27]&quot;)" selected="false"/>
+		<accessor type="click" value="span(88)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[5]/ul/li[1]/a/span[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[5]/ul/li[1]/a/span[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="17579" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Lot Display[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(56)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/search.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;lotDisplaySecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[6]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[6]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5358" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(57)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/inventoryManagementTool.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;imtSecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5597" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Seller Dashboard[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(58)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/biSingleSignOn.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;sellerDashboardSecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[8]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[8]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6533" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Proquote 3.0[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(59)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/CVEProquote.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;proquoteSecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[9]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[9]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="11340" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(36)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html[3]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;dashboardSecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5228" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html#&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('SignOut');clickSignOut()\&quot;]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/div/div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1444" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(95)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, Continue')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modalButtonDiv']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
