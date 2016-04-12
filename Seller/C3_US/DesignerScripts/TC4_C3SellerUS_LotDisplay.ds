@@ -474,7 +474,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click SIgnOut" isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc="Click SignOut" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
