@@ -30,9 +30,9 @@
 
 <step action="setValue" value="&quot;demoa&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;right w165&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -56,9 +56,9 @@
 
 <step action="setValue" value="&quot;welcome1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;right w165&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -82,8 +82,8 @@
 
 <step action="click" value='' type="web" desc="Click Login Button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
-		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;Login&quot;)" selected="false"/>
+		<accessor type="click" value="link(4)" selected="true"/>
 		<accessor type="click" value="link(&quot;javascript:filterChar(login_form_standard%20,%20'logs')&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large blue right&quot;)" selected="false"/>
 	</dialect>
@@ -109,8 +109,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Assg &amp; Select Assg Entry" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Enter assignments for the auction[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[15]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Enter assignments for the auction[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[15]&quot;)" selected="true"/>
 		<accessor type="click" value="span(52)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -134,8 +134,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Assg &amp; Select Clear for Pickup" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Review issues and clear lots for pickup[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[16]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Review issues and clear lots for pickup[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[16]&quot;)" selected="true"/>
 		<accessor type="click" value="span(55)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -159,8 +159,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Title &amp; Select Title Issues" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;nav-dropdown ico_icon-titleIssues[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(56)" selected="false"/>
+		<accessor type="click" value="span(&quot;nav-dropdown ico_icon-titleIssues[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(56)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[3]/ul/li[1]/a/span[1]&quot;" selected="true"/>
@@ -183,8 +183,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Title &amp; Select Title Direct Issues" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Review outstanding Title Direct issue[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[18]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Review outstanding Title Direct issue[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[18]&quot;)" selected="true"/>
 		<accessor type="click" value="span(61)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -208,8 +208,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Auctions &amp; Select Bid Approval" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Manage lots with reserves and bid approvals[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[22]&quot;)" selected="true"/>
 		<accessor type="click" value="span(73)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -233,8 +233,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Auctions &amp; Select On Sale Now" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;View all lots ready for the auction[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[23]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;View all lots ready for the auction[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[23]&quot;)" selected="true"/>
 		<accessor type="click" value="span(76)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -258,8 +258,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Auctions &amp; Select Auctions Dashboard" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;View auction dashboard[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[24]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;View auction dashboard[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[24]&quot;)" selected="true"/>
 		<accessor type="click" value="span(79)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -283,8 +283,8 @@
 
 <step action="click" value='' type="web" desc="Scroll Over Reporting &amp; Select Reports" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Generate and schedule reports[1]&quot;)" selected="true"/>
-		<accessor type="click" value="span(&quot;sub-title[27]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Generate and schedule reports[1]&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;sub-title[27]&quot;)" selected="true"/>
 		<accessor type="click" value="span(88)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -308,8 +308,8 @@
 
 <step action="click" value='' type="web" desc="Click Lot Display Link" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Lot Display[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(56)" selected="false"/>
+		<accessor type="click" value="link(&quot;Lot Display[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(56)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/search.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;lotDisplaySecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -334,8 +334,8 @@
 
 <step action="click" value='' type="web" desc="Click IMT link" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(57)" selected="false"/>
+		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(57)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/inventoryManagementTool.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;imtSecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -360,8 +360,8 @@
 
 <step action="click" value='' type="web" desc="Click Seller Dashboard" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Seller Dashboard[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(58)" selected="false"/>
+		<accessor type="click" value="link(&quot;Seller Dashboard[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(58)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/biSingleSignOn.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;sellerDashboardSecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -386,8 +386,8 @@
 
 <step action="click" value='' type="web" desc="Click Proquote" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Proquote 3.0[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(59)" selected="false"/>
+		<accessor type="click" value="link(&quot;Proquote 3.0[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(59)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/CVEProquote.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;proquoteSecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -412,8 +412,8 @@
 
 <step action="click" value='' type="web" desc="Click Home" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(36)" selected="false"/>
+		<accessor type="click" value="link(&quot;Home[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(36)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html[3]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;dashboardSecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -438,8 +438,8 @@
 
 <step action="click" value='' type="web" desc="Click SignOut" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
-		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
+		<accessor type="click" value="link(1)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -466,8 +466,8 @@
 
 <step action="click" value='' type="web" desc="Click Yes, Continue" isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
-		<accessor type="click" value="link(95)" selected="false"/>
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="false"/>
+		<accessor type="click" value="link(95)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
 	</dialect>
