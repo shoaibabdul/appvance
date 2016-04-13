@@ -476,8 +476,8 @@
 
 <step action="click" value='' type="web" desc="Click SignOut" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
-		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
+		<accessor type="click" value="link(1)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
