@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='TC7_C3SellerUS_IMT' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;demoa&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;right w165&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;welcome1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;right w165&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;javascript:filterChar(login_form_standard%20,%20'logs')&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large blue right&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Login')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, \&quot;javascript:filterChar(login_form_standard , 'logs')\&quot;)]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(57)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/inventoryManagementTool.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;imtSecondNav[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='fix-subnav']/div[1]/div/ul/li[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[7]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="[&quot;CALIFORNIA&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;grid_4 notranslate&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='facilityState']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3_1']/tbody/tr[2]/td[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="[&quot;CA - SAN JOSE&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(1)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;grid_4 notranslate[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='facility']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3_1']/tbody/tr[2]/td[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[2]/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
+		<accessor type="click" value="button(&quot;button_Search button large grid_2&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='btnSearch']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3']/tbody/tr[2]/td/div/input[3]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
+		<accessor type="click" value="button(0)" selected="false"/>
+		<accessor type="click" value="button(&quot;button_Search button-clear small grid_2&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='btnClear']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3']/tbody/tr[2]/td/div/input[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td/div/input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="[&quot;TEXAS&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;grid_4 notranslate&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='facilityState']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3_1']/tbody/tr[2]/td[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
+		<accessor type="click" value="button(&quot;button_Search button large grid_2&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='btnSearch']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3']/tbody/tr[2]/td/div/input[3]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[3]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
+		<accessor type="click" value="button(0)" selected="false"/>
+		<accessor type="click" value="button(&quot;button_Search button-clear small grid_2&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='btnClear']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='inventoryManagementTool_3']/tbody/tr[2]/td/div/input[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td/div/input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'My Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('MyCopart');\&quot;]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html#&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@onclick=\&quot;doTagPageHeader('SignOut');clickSignOut()\&quot;]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//header[@id='header']/div[2]/div/div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(95)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Yes, Continue')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='modalButtonDiv']/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
