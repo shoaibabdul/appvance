@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;demoa&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;demoa&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;welcome1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;welcome1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Click LoginButton" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
 		<accessor type="click" value="link(4)" selected="false"/>
@@ -107,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Click IMT link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(57)" selected="false"/>
@@ -133,7 +133,7 @@
 
 
 
-<step action="setSelected" value="[&quot;CALIFORNIA&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="[&quot;CALIFORNIA&quot;]" type="web" desc="Select State1" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
@@ -160,7 +160,7 @@
 
 
 
-<step action="setSelected" value="[&quot;CA - SAN JOSE&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setSelected" value="[&quot;CA - SAN JOSE&quot;]" type="web" desc="Select Location1" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
@@ -187,7 +187,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Click StartButton1" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
@@ -215,7 +215,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Click ClearButton1" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
@@ -243,7 +243,7 @@
 
 
 
-<step action="setSelected" value="[&quot;TEXAS&quot;]" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="setSelected" value="[&quot;TEXAS&quot;]" type="web" desc="Select State2" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
@@ -270,7 +270,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Click StartButton2" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
@@ -298,7 +298,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Click ClearButton2" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
