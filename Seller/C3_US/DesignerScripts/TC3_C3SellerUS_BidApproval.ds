@@ -132,7 +132,7 @@
 
 
 
-<step action="setValue" value="&quot;14130956&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;49922926&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(1)" selected="false"/>
 		<accessor type="setValue" value="searchbox(&quot;form-control input-sm&quot;)" selected="true"/>
