@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='STG_C3MUS_TC2_FeaturedItems_Search' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Buy It Now&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Buy It Now&quot;)" selected="false"/>
+		<accessor type="click" value="link(62)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?FilterCodes=B1&amp;oc=True&amp;ocN=buy%20it%20now&amp;ocR=homepage&amp;cn=b1&amp;searchTitle=Buy%20It%20Now&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Buy It Now')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tabs-3']/ul[1]/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?FilterCodes=B1&amp;oc=True&amp;ocN=buy%20it%20now&amp;ocR=homepage&amp;cn=b1&amp;searchTitle=Buy%20It%20Now')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/div/div[1]/ul[1]/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/US&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
