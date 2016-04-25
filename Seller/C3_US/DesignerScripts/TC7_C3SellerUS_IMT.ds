@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC7IMT_data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;demoa&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$LynkUserID&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;welcome1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -133,7 +133,7 @@
 
 
 
-<step action="setSelected" value="[&quot;CALIFORNIA&quot;]" type="web" desc="Select State1" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;$LocState1&quot;" type="web" desc="Select State1" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
@@ -160,7 +160,7 @@
 
 
 
-<step action="setSelected" value="[&quot;CA - SAN JOSE&quot;]" type="web" desc="Select Location1" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setSelected" value="&quot;$Location&quot;" type="web" desc="Select Location1" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
@@ -243,7 +243,7 @@
 
 
 
-<step action="setSelected" value="[&quot;CALIFORNIA&quot;]" type="web" desc="Select State2" isThinkTime='false' isCommented='false' sequence="18">
+<step action="setSelected" value="&quot;$LocState2&quot;" type="web" desc="Select State2" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
@@ -270,7 +270,7 @@
 
 
 
-<step action="setSelected" value="[&quot;[C001] COPART AUTO AUCTIONS (VALLEJO ,CA)&quot;]" type="web" desc="Select SellerID" isThinkTime='false' isCommented='false' sequence="20">
+<step action="setSelected" value="&quot;$SellerID&quot;" type="web" desc="Select SellerID" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="false"/>
