@@ -34,9 +34,13 @@
     <resource name="STG_C3MUS_TC3_VehicleTypes_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC3_VehicleTypes_Search.ds" cache="false"/>
     <resource name="STG_C3MUS_TC4_Makes_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC4_Makes_Search.ds" cache="false"/>
     <resource name="STG_C3MUS_TC5_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC5_HeaderSearch.ds" cache="false"/>
+    <resource name="STG_C3MUS_TC6_FindaVehicle_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC6_FindaVehicle_Search.ds" cache="false"/>
+    <resource name="STG_C3MUS_TC7_HPVehicleFinder_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC7_HPVehicleFinder_Search.ds" cache="false"/>
+    <resource name="STG_C3MUS_TC8_FilterSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/c3-us/DesignerScripts/STG_C3MUS_TC8_FilterSearch.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/c3-us/us-testdata/STG_C3US_TC6_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -46,7 +50,13 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="STG_C3MUS_TC6_Data" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_C3US_TC6_TestData.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -114,6 +124,23 @@
         <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="STG_C3MUS_TC5_HeaderSearch.ds"/>
       </test>
     </testcase>
+    <testcase name="STG_C3MUS_TC6_FindaVehicle_Search" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="STG_C3MUS_TC6_FindaVehicle_Search.ds">
+          <argument name="STG_C3MUS_TC6_Data" method="getNextData" dpl="STG_C3MUS_TC6_Data"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="STG_C3MUS_TC7_HPVehicleFinder_Search" expand="yes">
+      <test>
+        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="STG_C3MUS_TC7_HPVehicleFinder_Search.ds"/>
+      </test>
+    </testcase>
+    <testcase name="STG_C3MUS_TC8_FilterSearch" expand="yes">
+      <test>
+        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="STG_C3MUS_TC8_FilterSearch.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -125,6 +152,9 @@
       <testcase name="STG_C3MUS_TC3_VehicleTypes_Search" users="1"/>
       <testcase name="STG_C3MUS_TC4_Makes_Search" users="1"/>
       <testcase name="STG_C3MUS_TC5_HeaderSearch" users="2"/>
+      <testcase name="STG_C3MUS_TC6_FindaVehicle_Search" users="1"/>
+      <testcase name="STG_C3MUS_TC7_HPVehicleFinder_Search" users="1"/>
+      <testcase name="STG_C3MUS_TC8_FilterSearch" users="1"/>
     </iteration>
   </execution>
   <logs>
