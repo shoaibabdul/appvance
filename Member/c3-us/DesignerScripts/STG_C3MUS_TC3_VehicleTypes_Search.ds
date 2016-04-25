@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk Vehicle Types" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Types&quot;)" selected="true"/>
 		<accessor type="click" value="link(60)" selected="false"/>
@@ -55,7 +55,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Automobiles link" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Automobiles&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;Automobiles&quot;)" selected="false"/>
@@ -83,7 +83,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -109,7 +109,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk Vehicle Types" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Types&quot;)" selected="true"/>
 		<accessor type="click" value="link(60)" selected="false"/>
@@ -136,7 +136,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk Motorcycles link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Motorcycles&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;Motorcycles&quot;)" selected="false"/>
@@ -164,7 +164,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -190,7 +190,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Vehicle Types" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Types&quot;)" selected="true"/>
 		<accessor type="click" value="link(60)" selected="false"/>
@@ -217,7 +217,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk Pickup Truck links" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Pickup Truck..&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;Pickup Trucks&quot;)" selected="false"/>
@@ -245,7 +245,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -271,7 +271,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Vehicle Types " isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Types&quot;)" selected="true"/>
 		<accessor type="click" value="link(60)" selected="false"/>
@@ -298,7 +298,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk SUVs link" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;SUVs&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;SUVs&quot;)" selected="false"/>
@@ -326,7 +326,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
