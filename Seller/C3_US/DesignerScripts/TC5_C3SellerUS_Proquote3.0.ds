@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC5Proquote_data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;demoa&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$LynkUserID&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;welcome1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -133,7 +133,7 @@
 
 
 
-<step action="setSelected" value="&quot;[C001] COPART AUTO AUCTIONS (VALLEJO , CA)&quot;" type="web" desc="Select Seller" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;$SellerID&quot;" type="web" desc="Select Seller" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;sellerList&quot;)" selected="false"/>
@@ -160,7 +160,7 @@
 
 
 
-<step action="setValue" value="&quot;94590&quot;" type="web" desc="Enter Zipcode" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$Zipcode&quot;" type="web" desc="Enter Zipcode" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;sellerDetail.sellerZip&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;sellerZip&quot;)" selected="false"/>
@@ -216,7 +216,7 @@
 
 
 
-<step action="setSelected" value="&quot;2010&quot;" type="web" desc="Select Year" isThinkTime='false' isCommented='false' sequence="16">
+<step action="setSelected" value="&quot;$Year&quot;" type="web" desc="Select Year" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;lotYearList&quot;)" selected="false"/>
@@ -243,7 +243,7 @@
 
 
 
-<step action="setSelected" value="&quot;Toyota&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="18">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;makeOfVehicleList&quot;)" selected="false"/>
@@ -270,7 +270,7 @@
 
 
 
-<step action="setSelected" value="&quot;CAMRY&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="20">
+<step action="setSelected" value="&quot;$Model&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;modelTypeList&quot;)" selected="false"/>
