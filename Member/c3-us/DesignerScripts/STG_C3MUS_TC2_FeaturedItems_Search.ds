@@ -4,20 +4,9 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
-<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
-	<dialect type="sahi">
-		<accessor type="navigateTo" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+<step action="wait" value="5005" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -28,10 +17,32 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="13987" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Buy It Now&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;Buy It Now&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Buy It Now&quot;)" selected="false"/>
 		<accessor type="click" value="link(62)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?FilterCodes=B1&amp;oc=True&amp;ocN=buy%20it%20now&amp;ocR=homepage&amp;cn=b1&amp;searchTitle=Buy%20It%20Now&quot;)" selected="false"/>
 	</dialect>
@@ -45,7 +56,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="wait" value="14982" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -56,30 +67,232 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
-		<accessor type="click" value="link(9)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/US&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="wait" value="20964" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Clean Title&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Clean Title&quot;)" selected="false"/>
+		<accessor type="click" value="link(63)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?TitleType=C&amp;oc=True&amp;ocN=clean%20title&amp;ocR=homepage&amp;cn=titl&amp;searchTitle=Clean%20Title&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Clean Title')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tabs-3']/ul[1]/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?TitleType=C&amp;oc=True&amp;ocN=clean%20title&amp;ocR=homepage&amp;cn=titl&amp;searchTitle=Clean%20Title')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/div/div[1]/ul[1]/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="12918" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="32923" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Lots with Bi..&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Lots with Bids&quot;)" selected="false"/>
+		<accessor type="click" value="link(71)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?FilterCodes=4&amp;oc=True&amp;ocN=lots%20with%20bids&amp;ocR=homepage&amp;cn=4&amp;searchTitle=Lots%20with%20Bids&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Lots with Bi..')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tabs-3']/ul[2]/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?FilterCodes=4&amp;oc=True&amp;ocN=lots%20with%20bids&amp;ocR=homepage&amp;cn=4&amp;searchTitle=Lots%20with%20Bids')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[2]/li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10828" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="15847" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Pure Sale It..&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Pure Sale Items&quot;)" selected="false"/>
+		<accessor type="click" value="link(80)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?FilterCodes=2&amp;oc=True&amp;ocN=pure%20sale%20items&amp;ocR=homepage&amp;cn=2&amp;searchTitle=Pure%20Sale%20Items&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Pure Sale It..')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tabs-3']/ul[3]/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?FilterCodes=2&amp;oc=True&amp;ocN=pure%20sale%20items&amp;ocR=homepage&amp;cn=2&amp;searchTitle=Pure%20Sale%20Items')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[3]/li[5]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9832" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="14812" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Salvage Titl..&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Salvage Title&quot;)" selected="false"/>
+		<accessor type="click" value="link(85)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/search?TitleType=S&amp;oc=True&amp;ocN=salvage%20title&amp;ocR=homepage&amp;cn=titl&amp;searchTitle=Salvage%20Title&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Salvage Titl..')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tabs-3']/ul[4]/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/search?TitleType=S&amp;oc=True&amp;ocN=salvage%20title&amp;ocR=homepage&amp;cn=titl&amp;searchTitle=Salvage%20Title')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//ul[4]/li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10780" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
