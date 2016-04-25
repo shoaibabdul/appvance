@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC4LotDisp_data.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-seller-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;demog&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$LynkUserID&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -54,7 +54,7 @@
 
 
 
-<step action="setValue" value="&quot;demog1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -160,7 +160,7 @@
 
 
 
-<step action="setValue" value="&quot;49949446&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$LotNumber&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;lotNumberTextBox&quot;)" selected="false"/>
@@ -244,7 +244,7 @@
 
 
 
-<step action="setValue" value="&quot;5105105105&quot;" type="web" desc="Modify Phone Number" isThinkTime='false' isCommented='false' sequence="18">
+<step action="setValue" value="&quot;$PhoneNo&quot;" type="web" desc="Modify Phone Number" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot; &quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;Owner-Phone-Number&quot;)" selected="false"/>
