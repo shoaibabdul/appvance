@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='STG_C3MUS_TC8_FilterSearch' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5007" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8038" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="14890" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;filtercodes&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;B1&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;input-checkbox filters&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='filtercodes']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='divFETI']/li[1]/div/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8920" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;make&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;ACUR&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;input-checkbox filters[4]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(5)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='make']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='divMAKE']/li[1]/div/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/div/ul/li[1]/div/div/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7895" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;model&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;3.2 CL&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;input-checkbox filters[8]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(9)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='model']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='divMODL']/li[1]/div/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div[2]/div/ul/li[1]/div/div/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9901" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;span-filter-row&quot;)" selected="false"/>
+		<accessor type="click" value="span(37)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='search-filters-complete']/div/div/h5/span[3]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span[3]/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7831" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;See More / All&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;showMore&quot;)" selected="false"/>
+		<accessor type="click" value="link(49)" selected="false"/>
+		<accessor type="click" value="link(&quot;javascript:void(0)&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'See More / All')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='showMore']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='facetitems-filters-FETI']/div/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'javascript:void(0)')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/a[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="13857" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;filtercodes[7]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;0&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;input-checkbox filters[7]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(8)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='filtercodes' and @value='0']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='divFETI']/li[8]/div/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[8]/div/div/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="21818" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;make[1]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;ACUR&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;input-checkbox filters[13]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(14)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='make' and @value='ACUR']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//ul[@id='divMAKE']/li[2]/div/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/div/ul/li[2]/div/div/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="17775" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;span-filter-row&quot;)" selected="false"/>
+		<accessor type="click" value="span(37)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='search-filters-complete']/div/div/h5/span[3]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span[3]/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5717" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://rnpc3w001.copart.com/us/home.html&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/us/home.html')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//h1/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
