@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://rnpc3w001.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Submit Header Search" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Sel Checkbox Filtercodes0" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;filtercodes&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;B1&quot;)" selected="false"/>
@@ -80,7 +80,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Sel Checkbox Make0" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;make&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;ACUR&quot;)" selected="false"/>
@@ -107,7 +107,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Sel Checkbox Model0" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;model&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;3.2 CL&quot;)" selected="false"/>
@@ -134,7 +134,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk Clear All link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Clear All&quot;)" selected="true"/>
 		<accessor type="click" value="span(&quot;span-filter-row&quot;)" selected="false"/>
@@ -159,7 +159,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk See More link" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;See More / All&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;showMore&quot;)" selected="false"/>
@@ -188,7 +188,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Sel Checkbox Filtercodes7" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;filtercodes[7]&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;0&quot;)" selected="false"/>
@@ -215,7 +215,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Sel Checkbox Make1" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;make[1]&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;ACUR&quot;)" selected="false"/>
@@ -242,7 +242,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk Clear All link" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Clear All&quot;)" selected="true"/>
 		<accessor type="click" value="span(&quot;span-filter-row&quot;)" selected="false"/>
@@ -267,7 +267,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
