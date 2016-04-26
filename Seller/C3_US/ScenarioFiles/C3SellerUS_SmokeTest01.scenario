@@ -61,16 +61,6 @@
         <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC2_TestData" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC3_TestData" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC3BidApp_data.csv"/>
-      </argument>
-    </dpl>
     <dpl name="TC4_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3SUS_TC4LotDisp_data.csv"/>
@@ -79,16 +69,6 @@
     <dpl name="TC5_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3SUS_TC5Proquote_data.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC6_TestData" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC6HeaderSearch_data.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC7_TestData" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC7IMT_data.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -135,26 +115,12 @@
   </options>
   <templates>
     <controller name="C3SUS_DryRun01">
-      <round name="C3SUS_DryRun01" totalusers="14" time="10" testtype="users" totaliterations="28"/>
+      <round name="C3SUS_DryRun01" totalusers="6" time="10" testtype="users" totaliterations="12"/>
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
           <argument name="TC1_Testdata" method="getNextData" dpl="TC1_Testdata"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC2_C3SUS_MyCopart_Navigation" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_C3SellerUS_MyCopart_Navigation.ds">
-          <argument name="TC2_TestData" method="getNextData" dpl="TC2_TestData"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC3_C3SUS_BidApproval" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_C3SellerUS_BidApproval.ds">
-          <argument name="TC3_TestData" method="getNextData" dpl="TC3_TestData"/>
         </run>
       </test>
     </testcase>
@@ -172,20 +138,6 @@
         </run>
       </test>
     </testcase>
-    <testcase name="TC6_C3SUS_HeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_C3SellerUS_HeaderSearch.ds">
-          <argument name="TC6_TestData" method="getNextData" dpl="TC6_TestData"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC7_C3SUS_IMT" expand="yes">
-      <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_C3SellerUS_IMT.ds">
-          <argument name="TC7_TestData" method="getNextData" dpl="TC7_TestData"/>
-        </run>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -193,12 +145,8 @@
   <execution type="loadtest">
     <iteration controller="C3SUS_DryRun01" name="C3SUS_DryRun01">
       <testcase name="TC1_C3SUS_Homepage_Navigation" users="2"/>
-      <testcase name="TC2_C3SUS_MyCopart_Navigation" users="2"/>
-      <testcase name="TC3_C3SUS_BidApproval" users="2"/>
       <testcase name="TC4_C3SUS_LotDisplay" users="2"/>
       <testcase name="TC5_C3SUS_Proquote3.0" users="2"/>
-      <testcase name="TC6_C3SUS_HeaderSearch" users="2"/>
-      <testcase name="TC7_C3SUS_IMT" users="2"/>
     </iteration>
   </execution>
   <logs>
