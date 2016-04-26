@@ -112,21 +112,21 @@
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
           <argument name="TC1_Testdata" method="getNextData" dpl="TC1_Testdata"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC4_C3SUS_LotDisplay" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
+        <run name="Untitled4" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
           <argument name="TC4_TestData" method="getNextData" dpl="TC4_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC5_C3SUS_Proquote3.0" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_C3SellerUS_Proquote3.0.ds">
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="TC5_C3SellerUS_Proquote3.0.ds">
           <argument name="TC5_TestData" method="getNextData" dpl="TC5_TestData"/>
         </run>
       </test>
