@@ -119,7 +119,7 @@
     </testcase>
     <testcase name="TC4_C3SUS_LotDisplay" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="firefox-xvfb" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
           <argument name="TC4_TestData" method="getNextData" dpl="TC4_TestData"/>
         </run>
       </test>
