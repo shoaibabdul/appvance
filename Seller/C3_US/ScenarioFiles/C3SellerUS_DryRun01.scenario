@@ -135,7 +135,7 @@
   </options>
   <templates>
     <controller name="C3SUS_DryRun01">
-      <round name="C3SUS_DryRun01" totalusers="16" time="10" testtype="users" totaliterations="16"/>
+      <round name="C3SUS_DryRun01" totalusers="14" time="10" testtype="users" totaliterations="28"/>
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
