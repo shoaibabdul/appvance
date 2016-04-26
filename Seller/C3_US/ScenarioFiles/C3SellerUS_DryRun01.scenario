@@ -31,7 +31,11 @@
   <resources>
     <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
     <resource name="TC2_C3SellerUS_MyCopart_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC2_C3SellerUS_MyCopart_Navigation.ds" cache="false"/>
+    <resource name="TC3_C3SellerUS_BidApproval.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC3_C3SellerUS_BidApproval.ds" cache="false"/>
+    <resource name="TC4_C3SellerUS_LotDisplay.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC4_C3SellerUS_LotDisplay.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC3BidApp_data.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC4LotDisp_data.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
@@ -54,6 +58,16 @@
     <dpl name="TC2_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC3_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC3BidApp_data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC4LotDisp_data.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -116,6 +130,20 @@
         </run>
       </test>
     </testcase>
+    <testcase name="TC3_C3SUS_BidApproval" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC3_C3SellerUS_BidApproval.ds">
+          <argument name="TC3_TestData" method="getNextData" dpl="TC3_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC4_C3SUS_LotDisplay" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
+          <argument name="TC4_TestData" method="getNextData" dpl="TC4_TestData"/>
+        </run>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -124,6 +152,8 @@
     <iteration controller="C3SUS_DryRun01" name="C3SUS_DryRun01">
       <testcase name="TC1_C3SUS_Homepage_Navigation" users="2"/>
       <testcase name="TC2_C3SUS_MyCopart_Navigation" users="2"/>
+      <testcase name="TC3_C3SUS_BidApproval" users="2"/>
+      <testcase name="TC4_C3SUS_LotDisplay" users="2"/>
     </iteration>
   </execution>
   <logs>
