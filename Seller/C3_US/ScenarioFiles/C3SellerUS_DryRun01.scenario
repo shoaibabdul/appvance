@@ -30,6 +30,7 @@
   </basics>
   <resources>
     <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
+    <resource name="TC2_C3SellerUS_MyCopart_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC2_C3SellerUS_MyCopart_Navigation.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -38,14 +39,19 @@
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="sahi" version="sahi_pro"/>
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
-    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="TC1TC2_Testdata" type="HashDPL" langtype="java" method="setup">
+    <dpl name="TC1_Testdata" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC2_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
       </argument>
@@ -99,7 +105,14 @@
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
-          <argument name="TC1TC2_Testdata" method="getNextData" dpl="TC1TC2_Testdata"/>
+          <argument name="TC1_Testdata" method="getNextData" dpl="TC1_Testdata"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC2_C3SUS_MyCopart_Navigation" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_C3SellerUS_MyCopart_Navigation.ds">
+          <argument name="TC2_TestData" method="getNextData" dpl="TC2_TestData"/>
         </run>
       </test>
     </testcase>
@@ -110,6 +123,7 @@
   <execution type="loadtest">
     <iteration controller="C3SUS_DryRun01" name="C3SUS_DryRun01">
       <testcase name="TC1_C3SUS_Homepage_Navigation" users="2"/>
+      <testcase name="TC2_C3SUS_MyCopart_Navigation" users="2"/>
     </iteration>
   </execution>
   <logs>
