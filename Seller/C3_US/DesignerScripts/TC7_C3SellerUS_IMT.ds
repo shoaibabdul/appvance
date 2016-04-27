@@ -30,9 +30,9 @@
 
 <step action="setValue" value="&quot;$LynkUserID&quot;" type="web" desc="Enter LynkUserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;right w165&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -82,8 +82,8 @@
 
 <step action="click" value='' type="web" desc="Click LoginButton" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Login&quot;)" selected="false"/>
-		<accessor type="click" value="link(4)" selected="true"/>
+		<accessor type="click" value="link(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
 		<accessor type="click" value="link(&quot;javascript:filterChar(login_form_standard%20,%20'logs')&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large blue right&quot;)" selected="false"/>
 	</dialect>
@@ -109,8 +109,8 @@
 
 <step action="click" value='' type="web" desc="Click IMT link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="false"/>
-		<accessor type="click" value="link(57)" selected="true"/>
+		<accessor type="click" value="link(&quot;Inventory Management Tool[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(57)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/inventoryManagementTool.html[1]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;imtSecondNav[1]&quot;)" selected="false"/>
 	</dialect>
@@ -135,9 +135,9 @@
 
 <step action="setSelected" value="&quot;$LocState1&quot;" type="web" desc="Select State1" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;grid_4 notranslate&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -162,9 +162,9 @@
 
 <step action="setSelected" value="&quot;$Location&quot;" type="web" desc="Select Location1" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(1)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facility&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(1)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;grid_4 notranslate[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -189,10 +189,10 @@
 
 <step action="click" value='' type="web" desc="Click StartButton1" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Start&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
-		<accessor type="click" value="button(1)" selected="true"/>
+		<accessor type="click" value="button(1)" selected="false"/>
 		<accessor type="click" value="button(&quot;button_Search button large grid_2&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -217,10 +217,10 @@
 
 <step action="click" value='' type="web" desc="Click ClearButton1" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Clear&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
-		<accessor type="click" value="button(0)" selected="true"/>
+		<accessor type="click" value="button(0)" selected="false"/>
 		<accessor type="click" value="button(&quot;button_Search button-clear small grid_2&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -245,9 +245,9 @@
 
 <step action="setSelected" value="&quot;$LocState2&quot;" type="web" desc="Select State2" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(0)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;facilityState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;grid_4 notranslate&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -272,9 +272,9 @@
 
 <step action="setSelected" value="&quot;$SellerID&quot;" type="web" desc="Select SellerID" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(3)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;sellerID&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(3)" selected="false"/>
 		<accessor type="setSelected" value="select(&quot;grid_4 notranslate[3]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -299,10 +299,10 @@
 
 <step action="click" value='' type="web" desc="Click StartButton2" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Start&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Start&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;btnSearch&quot;)" selected="false"/>
-		<accessor type="click" value="button(1)" selected="true"/>
+		<accessor type="click" value="button(1)" selected="false"/>
 		<accessor type="click" value="button(&quot;button_Search button large grid_2&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -327,10 +327,10 @@
 
 <step action="click" value='' type="web" desc="Click ClearButton2" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Clear&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Clear&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;btnClear&quot;)" selected="false"/>
-		<accessor type="click" value="button(0)" selected="true"/>
+		<accessor type="click" value="button(0)" selected="false"/>
 		<accessor type="click" value="button(&quot;button_Search button-clear small grid_2&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -355,8 +355,8 @@
 
 <step action="click" value='' type="web" desc="Click MyCopart" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="false"/>
-		<accessor type="click" value="link(2)" selected="true"/>
+		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -382,8 +382,8 @@
 
 <step action="click" value='' type="web" desc="Click SignOut" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
-		<accessor type="click" value="link(1)" selected="true"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(1)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/home.html#&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -410,8 +410,8 @@
 
 <step action="click" value='' type="web" desc="Click Yes, Continue" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="false"/>
-		<accessor type="click" value="link(95)" selected="true"/>
+		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
+		<accessor type="click" value="link(95)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://c-seller-qa1.copart.com/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;button large&quot;)" selected="false"/>
 	</dialect>
