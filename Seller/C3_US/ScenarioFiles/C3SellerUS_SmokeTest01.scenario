@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C3SellerUS_DryRun01</name>
+    <name>C3SellerUS_SmokeTest01</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -107,8 +107,8 @@
     </options>
   </options>
   <templates>
-    <controller name="C3SUS_DryRun01">
-      <round name="C3SUS_DryRun01" totalusers="6" time="10" testtype="users" totaliterations="12"/>
+    <controller name="C3SUS_SmokeTest01">
+      <round name="C3SUS_SmokeTest01" totalusers="6" time="10" testtype="users" totaliterations="12"/>
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
@@ -136,7 +136,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C3SUS_DryRun01" name="C3SUS_DryRun01">
+    <iteration controller="C3SUS_SmokeTest01" name="C3SUS_SmokeTest01">
       <testcase name="TC1_C3SUS_Homepage_Navigation" users="2"/>
       <testcase name="TC4_C3SUS_LotDisplay" users="2"/>
       <testcase name="TC5_C3SUS_Proquote3.0" users="2"/>
