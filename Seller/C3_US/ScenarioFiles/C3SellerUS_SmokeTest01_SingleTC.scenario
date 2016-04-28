@@ -83,7 +83,7 @@
       <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
-      <opt name="waitForPageToLoad" value="false"/>
+      <opt name="waitForPageToLoad" value="true"/>
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
     </options>
