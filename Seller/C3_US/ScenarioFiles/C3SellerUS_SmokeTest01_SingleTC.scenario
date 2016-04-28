@@ -63,14 +63,14 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="2"/>
       <opt name="MaxRampDownTime" value="1000"/>
-      <opt name="ThinkTimeMin" value="-1"/>
-      <opt name="ThinkTimeMax" value="-1"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
-      <opt name="ThinkTime" value="-1"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
@@ -94,7 +94,9 @@
   </options>
   <templates>
     <controller name="C3SUS_SmokeTest01_SingleTC">
-      <round name="C3SUS_SmokeTest01_SingleTC" totalusers="1" testtype="users" totaliterations="2" totalexecutions="2"/>
+      <round name="C3SUS_SmokeTest01_SingleTC" totalusers="15" testtype="users" totaliterations="15">
+        <testcase name="TC1_C3SUS_Homepage_Navigation" executions="2"/>
+      </round>
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
@@ -109,7 +111,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="C3SUS_SmokeTest01_SingleTC" name="C3SUS_SmokeTest01_SingleTC">
-      <testcase name="TC1_C3SUS_Homepage_Navigation" users="1"/>
+      <testcase name="TC1_C3SUS_Homepage_Navigation" totalexecutions="2" users="15"/>
     </iteration>
   </execution>
   <logs>
