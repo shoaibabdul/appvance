@@ -94,7 +94,7 @@
   </options>
   <templates>
     <controller name="C3SUS_SmokeTest01_SingleTC">
-      <round name="C3SUS_SmokeTest01_SingleTC" totalusers="15" testtype="users" totaliterations="15">
+      <round name="C3SUS_SmokeTest01_SingleTC" totalusers="10" testtype="users" totaliterations="10">
         <testcase name="TC1_C3SUS_Homepage_Navigation" executions="2"/>
       </round>
     </controller>
@@ -111,7 +111,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="C3SUS_SmokeTest01_SingleTC" name="C3SUS_SmokeTest01_SingleTC">
-      <testcase name="TC1_C3SUS_Homepage_Navigation" totalexecutions="2" users="15"/>
+      <testcase name="TC1_C3SUS_Homepage_Navigation" totalexecutions="2" users="10"/>
     </iteration>
   </execution>
   <logs>
