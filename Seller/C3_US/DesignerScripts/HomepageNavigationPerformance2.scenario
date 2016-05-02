@@ -93,7 +93,7 @@
   <templates>
     <controller name="Homepage2User">
       <round name="Homepage2User" totalusers="2" testtype="users" totaliterations="2">
-        <testcase name="Untitled1" executions="10"/>
+        <testcase name="Untitled1" executions="3"/>
       </round>
     </controller>
     <testcase name="Untitled1" expand="yes" iterationState="true">
@@ -109,9 +109,9 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Homepage2User" name="Homepage2User">
-      <testcase name="Untitled1" totalexecutions="10" users="2">
+      <testcase name="Untitled1" totalexecutions="3" users="15">
         <locations>
-          <location name="testnode" users="2"/>
+          <location name="testnode" users="15"/>
         </locations>
       </testcase>
     </iteration>
