@@ -30,9 +30,6 @@
   </basics>
   <resources>
     <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="{scenario}/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
-    <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="{scenario}/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
-    <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="{scenario}/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
-    <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="{scenario}/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
