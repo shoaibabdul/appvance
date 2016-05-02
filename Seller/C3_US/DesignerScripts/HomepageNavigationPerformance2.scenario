@@ -50,21 +50,6 @@
         <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="Untitled2" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Untitled3" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Untitled4" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
-      </argument>
-    </dpl>
   </datasources>
   <options>
     <options type="apc">
@@ -111,46 +96,10 @@
         <testcase name="Untitled1" executions="10"/>
       </round>
     </controller>
-    <controller name="Homepage4User">
-      <round name="Homepage4User" totalusers="4" testtype="users" totaliterations="4">
-        <testcase name="Untitled2" executions="10"/>
-      </round>
-    </controller>
-    <controller name="Homepage8User">
-      <round name="Homepage8User" totalusers="8" testtype="users" totaliterations="8">
-        <testcase name="Homepage8Users" executions="10"/>
-      </round>
-    </controller>
-    <controller name="Homepage16User">
-      <round name="Homepage16User" totalusers="16" testtype="users" totaliterations="16">
-        <testcase name="Homepage16Users" executions="10"/>
-      </round>
-    </controller>
     <testcase name="Untitled1" expand="yes">
       <test>
         <run name="Homepage2Users" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
           <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Untitled2" expand="yes">
-      <test>
-        <run name="Homepage4Users" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
-          <argument name="Untitled2" method="getNextData" dpl="Untitled2"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Homepage8Users" expand="yes">
-      <test>
-        <run name="Homepage8Users" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
-          <argument name="Untitled3" method="getNextData" dpl="Untitled3"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Homepage16Users" expand="yes">
-      <test>
-        <run name="Homepage16Users" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
-          <argument name="Untitled4" method="getNextData" dpl="Untitled4"/>
         </run>
       </test>
     </testcase>
@@ -161,15 +110,6 @@
   <execution type="loadtest">
     <iteration controller="Homepage2User" name="Homepage2User">
       <testcase name="Untitled1" totalexecutions="10" users="2"/>
-    </iteration>
-    <iteration controller="Homepage4User" name="Homepage4User">
-      <testcase name="Untitled2" totalexecutions="10" users="4"/>
-    </iteration>
-    <iteration controller="Homepage8User" name="Homepage8User">
-      <testcase name="Homepage8Users" totalexecutions="10" users="8"/>
-    </iteration>
-    <iteration controller="Homepage16User" name="Homepage16User">
-      <testcase name="Homepage16Users" totalexecutions="10" users="16"/>
     </iteration>
   </execution>
   <logs>
