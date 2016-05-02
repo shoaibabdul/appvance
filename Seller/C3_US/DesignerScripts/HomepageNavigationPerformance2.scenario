@@ -96,7 +96,7 @@
         <testcase name="Untitled1" executions="3"/>
       </round>
     </controller>
-    <testcase name="Untitled1" expand="yes" iterationState="true">
+    <testcase name="Untitled1" expand="yes">
       <test>
         <run name="Homepage2Users" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
           <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
@@ -109,11 +109,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Homepage2User" name="Homepage2User">
-      <testcase name="Untitled1" totalexecutions="3" users="15">
-        <locations>
-          <location name="Amazon_C3" users="15"/>
-        </locations>
-      </testcase>
+      <testcase name="Untitled1" totalexecutions="3" users="15"/>
     </iteration>
   </execution>
   <logs>
