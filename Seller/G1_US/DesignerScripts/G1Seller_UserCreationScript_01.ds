@@ -87,7 +87,7 @@
 
 
 
-<step action="setValue" value="&quot;$Email1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;balram16@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(2)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-valid ng-dirty&quot;)" selected="false"/>
@@ -193,7 +193,7 @@
 
 
 
-<step action="setValue" value="&quot;$Email2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="setValue" value="&quot;balram16@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(5)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-valid ng-dirty[3]&quot;)" selected="false"/>
