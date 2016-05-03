@@ -22,8 +22,8 @@
   <basics>
     <name>G1Seller_TestUserCreation</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName/>
-    <creator/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
     <links/>
     <versions/>
     <categorization/>
