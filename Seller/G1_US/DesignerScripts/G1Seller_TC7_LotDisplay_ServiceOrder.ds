@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-seller-qa2.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-seller-qa2.copart.com&quot;" type="web" desc="Launch G1Seller URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;balram13@milinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;balram13@mailinator.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -55,17 +55,17 @@
 
 
 
-<step action="setValue" value="&quot;balram13@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;welcome123&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
-		<accessor type="setValue" value="textbox(&quot;form-control&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='loginbox']/div[3]/div[2]/form/div[1]/div/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='loginbox']/div[3]/div[2]/form/div[2]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -82,17 +82,16 @@
 
 
 
-<step action="setValue" value="&quot;welcome123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Clk Login Button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
-		<accessor type="setValue" value="password(&quot;form-control&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;Login&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-primary btn-lg&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='loginbox']/div[3]/div[2]/form/div[2]/div/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='loginbox']/div[3]/div[2]/form/div[4]/div[2]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -109,16 +108,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk LotDisplay link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Login&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btn btn-primary btn-lg&quot;)" selected="false"/>
-		<accessor type="click" value="submit(0)" selected="false"/>
+		<accessor type="click" value="link(&quot;Lot Display&quot;)" selected="true"/>
+		<accessor type="click" value="link(14)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#/lotSearch&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;nochild ng-binding[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='loginbox']/div[3]/div[2]/form/div[4]/div[2]/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Lot Display')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/lotSearch')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[4]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -135,17 +135,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;50000737&quot;" type="web" desc="Enter LotNo with ServiceOrder" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Lot Display&quot;)" selected="true"/>
-		<accessor type="click" value="link(14)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#/lotSearch&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;nochild ng-binding[1]&quot;)" selected="false"/>
+		<accessor type="setValue" value="numberbox(&quot;lot&quot;)" selected="true"/>
+		<accessor type="setValue" value="numberbox(&quot;lot&quot;)" selected="false"/>
+		<accessor type="setValue" value="numberbox(0)" selected="false"/>
+		<accessor type="setValue" value="numberbox(&quot;form-control ng-pristine ng-untouched ng-valid ng-valid-pattern ng-valid-minlength&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Lot Display')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/lotSearch')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='lot']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/div/section/div/form/ul/li[3]/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[3]/div[1]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -162,17 +162,15 @@
 
 
 
-<step action="setValue" value="&quot;50000737&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk Search Button" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="setValue" value="numberbox(&quot;lot&quot;)" selected="true"/>
-		<accessor type="setValue" value="numberbox(&quot;lot&quot;)" selected="false"/>
-		<accessor type="setValue" value="numberbox(0)" selected="false"/>
-		<accessor type="setValue" value="numberbox(&quot;form-control ng-pristine ng-untouched ng-valid ng-valid-pattern ng-valid-minlength&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='lot']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/div/section/div/form/ul/li[3]/div[1]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[3]/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/div/section/div/form/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -189,15 +187,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Service Order link" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
-		<accessor type="click" value="button(1)" selected="false"/>
+		<accessor type="click" value="link(&quot;Service Order&quot;)" selected="true"/>
+		<accessor type="click" value="link(23)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[4]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/div/section/div/form/div/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Service Order')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='exTab']/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div/div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -214,34 +214,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Service Order&quot;)" selected="true"/>
-		<accessor type="click" value="link(23)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html[1]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;ng-binding[4]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Service Order')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='exTab']/div/ul/li[2]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div/div/ul/li[2]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk My Copart" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;myCopart&quot;)" selected="false"/>
@@ -258,7 +231,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -269,7 +242,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;home&quot;)" selected="false"/>
@@ -286,7 +259,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -297,7 +270,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk Sign Out link" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;signoutLink&quot;)" selected="false"/>
@@ -314,7 +287,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -325,7 +298,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk Yes, Cont" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(44)" selected="false"/>
@@ -342,7 +315,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
