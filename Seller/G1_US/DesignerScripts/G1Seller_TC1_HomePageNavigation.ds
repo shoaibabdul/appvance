@@ -82,7 +82,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Login Button" isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Clk Login Button" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Login&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-primary btn-lg&quot;)" selected="false"/>
@@ -108,7 +108,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Location Tab" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk Location Tab" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Location&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;location&quot;)" selected="false"/>
@@ -137,7 +137,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click My Account Tab" isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk My Account Tab" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;My Account&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;myAccount&quot;)" selected="false"/>
@@ -166,7 +166,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Account Info Tab" isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk Account Info Tab" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Account Information&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;accountInformation&quot;)" selected="false"/>
