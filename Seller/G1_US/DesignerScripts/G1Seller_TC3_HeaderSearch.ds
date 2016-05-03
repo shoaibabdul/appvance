@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g-seller-qa2.copart.com&quot;" type="web" desc="Launch G1Seller URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
