@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TestUserCreationData.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g1cobalt-qa2.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -87,7 +87,7 @@
 
 
 
-<step action="setValue" value="&quot;balram15@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$Email1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(2)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-valid ng-dirty&quot;)" selected="false"/>
@@ -193,7 +193,7 @@
 
 
 
-<step action="setValue" value="&quot;balram15@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="setValue" value="&quot;$Email2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(5)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-valid ng-dirty[3]&quot;)" selected="false"/>
