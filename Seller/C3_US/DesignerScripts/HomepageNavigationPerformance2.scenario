@@ -92,7 +92,7 @@
   </options>
   <templates>
     <controller name="Homepage2User">
-      <round name="Homepage2User" totalusers="2" testtype="users" totaliterations="2">
+      <round name="Homepage2User" totalusers="15" testtype="users" totaliterations="15">
         <testcase name="Untitled1" executions="3"/>
       </round>
     </controller>
