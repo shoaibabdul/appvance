@@ -183,7 +183,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Germany link" isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Germany link" isThinkTime='false' isCommented="true" sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;GERMANY&quot;)" selected="true"/>
 		<accessor type="click" value="link(53)" selected="false"/>
@@ -198,7 +198,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="15">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -209,7 +209,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk India link" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk India link" isThinkTime='false' isCommented="true" sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;INDIA&quot;)" selected="true"/>
 		<accessor type="click" value="link(54)" selected="false"/>
@@ -224,7 +224,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -235,7 +235,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Spain link" isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk Spain link" isThinkTime='false' isCommented="true" sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;SPAIN&quot;)" selected="true"/>
 		<accessor type="click" value="link(55)" selected="false"/>
@@ -250,7 +250,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
