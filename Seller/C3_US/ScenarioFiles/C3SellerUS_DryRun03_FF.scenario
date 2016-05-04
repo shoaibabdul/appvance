@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C3SellerUS_DryRun02_May</name>
+    <name>C3SellerUS_DryRun02_FF</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -42,7 +42,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC7IMT_data.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="None" terminate="None" reboot="After" username="appvance" password="appvance"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -109,7 +109,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="false"/>
+      <opt name="ReportThinkTime" value="true"/>
       <opt name="AddThinkTimeToStep" value="false"/>
     </options>
     <options type="selenium">
@@ -127,47 +127,47 @@
     </options>
   </options>
   <templates>
-    <controller name="C3SUS_DryRun_02">
-      <round name="C3SUS_DryRun_02" totalusers="15" time="20" testtype="users" totaliterations="30"/>
+    <controller name="C3SUS_DryRun_FF_03">
+      <round name="C3SUS_DryRun_FF_03" totalusers="15" time="20" testtype="users" totaliterations="30"/>
     </controller>
     <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
           <argument name="TC1_Testdata" method="getNextData" dpl="TC1_Testdata"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC2_C3SUS_MyCopart_Navigation" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_C3SellerUS_MyCopart_Navigation.ds">
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="TC2_C3SellerUS_MyCopart_Navigation.ds">
           <argument name="TC2_TestData" method="getNextData" dpl="TC2_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC4_C3SUS_LotDisplay" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
           <argument name="TC4_TestData" method="getNextData" dpl="TC4_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC5_C3SUS_Proquote3.0" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_C3SellerUS_Proquote3.0.ds">
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="TC5_C3SellerUS_Proquote3.0.ds">
           <argument name="TC5_TestData" method="getNextData" dpl="TC5_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC6_C3SUS_HeaderSearch" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_C3SellerUS_HeaderSearch.ds">
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="TC6_C3SellerUS_HeaderSearch.ds">
           <argument name="TC6_TestData" method="getNextData" dpl="TC6_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC7_C3SUS_IMT" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_C3SellerUS_IMT.ds">
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="TC7_C3SellerUS_IMT.ds">
           <argument name="TC7_TestData" method="getNextData" dpl="TC7_TestData"/>
         </run>
       </test>
@@ -177,7 +177,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C3SUS_DryRun_02" name="C3SUS_DryRun_02">
+    <iteration controller="C3SUS_DryRun_FF_03" name="C3SUS_DryRun_FF_03">
       <testcase name="TC1_C3SUS_Homepage_Navigation" users="3"/>
       <testcase name="TC2_C3SUS_MyCopart_Navigation" users="3"/>
       <testcase name="TC4_C3SUS_LotDisplay" users="3"/>
