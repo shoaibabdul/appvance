@@ -85,7 +85,7 @@
         <argument name="file" value="G1Seller_TC5_LotNoSearch.csv"/>
       </argument>
     </dpl>
-    <dpl name="G1Seller_Data" type="HashDPL" langtype="java" method="setup">
+    <dpl name="G1Seller_TC6_Data" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G1Seller_TC6_ImageLot.csv"/>
       </argument>
@@ -147,7 +147,7 @@
   </options>
   <templates>
     <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="9" time="10" testtype="users" totaliterations="9"/>
+      <round name="G1Seller_SmokeTest_01" totalusers="9" time="20" testtype="users" totaliterations="9"/>
     </controller>
     <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
       <test>
@@ -179,35 +179,35 @@
     </testcase>
     <testcase name="G1Seller_TC5_LotNoSearch" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC5_LotNoSearch.ds">
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC5_LotNoSearch.ds">
           <argument name="G1Seller_TC5_Data" method="getNextData" dpl="G1Seller_TC5_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC6_LotDisplayImages" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC6_LotDisplayImages.ds">
-          <argument name="G1Seller_Data" method="getNextData" dpl="G1Seller_Data"/>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC6_LotDisplayImages.ds">
+          <argument name="G1Seller_TC6_Data" method="getNextData" dpl="G1Seller_TC6_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC7_LotDisplay_ServiceOrder.ds">
+        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC7_LotDisplay_ServiceOrder.ds">
           <argument name="G1Seller_TC7_Data" method="getNextData" dpl="G1Seller_TC7_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC8_LotDisplay_VBLog" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC8_LotDisplay_VBLog.ds">
+        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC8_LotDisplay_VBLog.ds">
           <argument name="G1Seller_TC8_Data" method="getNextData" dpl="G1Seller_TC8_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
+        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
           <argument name="G1Seller_TC9_Data" method="getNextData" dpl="G1Seller_TC9_Data"/>
         </run>
       </test>
