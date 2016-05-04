@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC2_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g-seller-qa2.copart.com&quot;" type="web" desc="Launch G1Seller URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;balram7@mailinator.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -55,7 +55,7 @@
 
 
 
-<step action="setValue" value="&quot;welcome123&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
