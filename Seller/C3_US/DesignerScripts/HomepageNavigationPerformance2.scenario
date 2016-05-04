@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="All" terminate="None" reboot="After" username="appvance" password="appvance"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -93,7 +93,7 @@
   <templates>
     <controller name="Homepage2User">
       <round name="Homepage2User" totalusers="15" testtype="users" totaliterations="15">
-        <testcase name="Untitled1" executions="3"/>
+        <testcase name="Untitled1" executions="10"/>
       </round>
     </controller>
     <testcase name="Untitled1" expand="yes">
@@ -109,7 +109,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Homepage2User" name="Homepage2User">
-      <testcase name="Untitled1" totalexecutions="3" users="15"/>
+      <testcase name="Untitled1" totalexecutions="10" users="15"/>
     </iteration>
   </execution>
   <logs>
