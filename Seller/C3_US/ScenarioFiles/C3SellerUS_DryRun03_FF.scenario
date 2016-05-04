@@ -109,7 +109,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
       <opt name="AddThinkTimeToStep" value="false"/>
     </options>
     <options type="selenium">
