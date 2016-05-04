@@ -1,0 +1,204 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>C3SellerUS_DryRun02_May</name>
+    <defaultdirectory>{scenario}</defaultdirectory>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <links/>
+    <versions>v1</versions>
+    <categorization>C3Seller US Project</categorization>
+  </basics>
+  <resources>
+    <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
+    <resource name="TC2_C3SellerUS_MyCopart_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC2_C3SellerUS_MyCopart_Navigation.ds" cache="false"/>
+    <resource name="TC4_C3SellerUS_LotDisplay.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC4_C3SellerUS_LotDisplay.ds" cache="false"/>
+    <resource name="TC5_C3SellerUS_Proquote3.0.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC5_C3SellerUS_Proquote3.0.ds" cache="false"/>
+    <resource name="TC6_C3SellerUS_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC6_C3SellerUS_HeaderSearch.ds" cache="false"/>
+    <resource name="TC7_C3SellerUS_IMT.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC7_C3SellerUS_IMT.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC4LotDisp_data.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC5Proquote_data.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC6HeaderSearch_data.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC7IMT_data.csv" cache="false"/>
+  </resources>
+  <testnodes>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="None" terminate="None" reboot="After" username="appvance" password="appvance"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="TC1_Testdata" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC2_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC1TC2_LynkUserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC4LotDisp_data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC5_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC5Proquote_data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC6_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC6HeaderSearch_data.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC7_TestData" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="C3SUS_TC7IMT_data.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SleepTime" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="2"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="2"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="ThinkTime" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
+    </options>
+    <options type="sahi">
+      <opt name="waitForPageToLoad" value="true"/>
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="port" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="C3SUS_DryRun_02">
+      <round name="C3SUS_DryRun_02" totalusers="15" time="20" testtype="users" totaliterations="30"/>
+    </controller>
+    <testcase name="TC1_C3SUS_Homepage_Navigation" expand="yes">
+      <test>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_C3SellerUS_Homepage_Navigation.ds">
+          <argument name="TC1_Testdata" method="getNextData" dpl="TC1_Testdata"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC2_C3SUS_MyCopart_Navigation" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_C3SellerUS_MyCopart_Navigation.ds">
+          <argument name="TC2_TestData" method="getNextData" dpl="TC2_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC4_C3SUS_LotDisplay" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_C3SellerUS_LotDisplay.ds">
+          <argument name="TC4_TestData" method="getNextData" dpl="TC4_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC5_C3SUS_Proquote3.0" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_C3SellerUS_Proquote3.0.ds">
+          <argument name="TC5_TestData" method="getNextData" dpl="TC5_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC6_C3SUS_HeaderSearch" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_C3SellerUS_HeaderSearch.ds">
+          <argument name="TC6_TestData" method="getNextData" dpl="TC6_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC7_C3SUS_IMT" expand="yes">
+      <test>
+        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC7_C3SellerUS_IMT.ds">
+          <argument name="TC7_TestData" method="getNextData" dpl="TC7_TestData"/>
+        </run>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest">
+    <iteration controller="C3SUS_DryRun_02" name="C3SUS_DryRun_02">
+      <testcase name="TC1_C3SUS_Homepage_Navigation" users="3"/>
+      <testcase name="TC2_C3SUS_MyCopart_Navigation" users="3"/>
+      <testcase name="TC4_C3SUS_LotDisplay" users="3"/>
+      <testcase name="TC5_C3SUS_Proquote3.0" users="2"/>
+      <testcase name="TC6_C3SUS_HeaderSearch" users="2"/>
+      <testcase name="TC7_C3SUS_IMT" users="2"/>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+    </log>
+  </logs>
+  <integrations>
+    <integration type="RQM">
+      <opt name="Enabled" value="false"/>
+    </integration>
+  </integrations>
+  <notifications/>
+</testscenario>
