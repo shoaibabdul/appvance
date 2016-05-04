@@ -31,13 +31,11 @@
   <resources>
     <resource name="TC1_C3SellerUS_Homepage_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC1_C3SellerUS_Homepage_Navigation.ds" cache="false"/>
     <resource name="TC2_C3SellerUS_MyCopart_Navigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC2_C3SellerUS_MyCopart_Navigation.ds" cache="false"/>
-    <resource name="TC3_C3SellerUS_BidApproval.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC3_C3SellerUS_BidApproval.ds" cache="false"/>
     <resource name="TC4_C3SellerUS_LotDisplay.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC4_C3SellerUS_LotDisplay.ds" cache="false"/>
     <resource name="TC5_C3SellerUS_Proquote3.0.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC5_C3SellerUS_Proquote3.0.ds" cache="false"/>
     <resource name="TC6_C3SellerUS_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC6_C3SellerUS_HeaderSearch.ds" cache="false"/>
     <resource name="TC7_C3SellerUS_IMT.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/DesignerScripts/TC7_C3SellerUS_IMT.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC3BidApp_data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC4LotDisp_data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC5Proquote_data.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC6HeaderSearch_data.csv" cache="false"/>
@@ -105,7 +103,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
