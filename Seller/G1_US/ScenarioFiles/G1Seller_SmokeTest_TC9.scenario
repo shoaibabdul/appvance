@@ -29,23 +29,7 @@
     <categorization>G1Seller May2016 Release</categorization>
   </basics>
   <resources>
-    <resource name="G1Seller_TC1_HomePageNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC1_HomePageNavigation.ds" cache="false"/>
-    <resource name="G1Seller_TC2_MyCopartNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC2_MyCopartNavigation.ds" cache="false"/>
-    <resource name="G1Seller_TC3_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC3_HeaderSearch.ds" cache="false"/>
-    <resource name="G1Seller_TC4_LotDisplay_CombinationSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC4_LotDisplay_CombinationSearch.ds" cache="false"/>
-    <resource name="G1Seller_TC5_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC5_LotNoSearch.ds" cache="false"/>
-    <resource name="G1Seller_TC6_LotDisplayImages.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC6_LotDisplayImages.ds" cache="false"/>
-    <resource name="G1Seller_TC7_LotDisplay_ServiceOrder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC7_LotDisplay_ServiceOrder.ds" cache="false"/>
-    <resource name="G1Seller_TC8_LotDisplay_VBLog.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC8_LotDisplay_VBLog.ds" cache="false"/>
     <resource name="G1Seller_TC9_AssignmentEntry.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/DesignerScripts/G1Seller_TC9_AssignmentEntry.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC1_UserIDs.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC2_UserIDs.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC3_UserIDs.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC4_LotDisCombSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC5_LotNoSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC6_ImageLot.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC7_ServiceOrderLot.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC8_VBLogLot.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC9_AssgEntry.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -61,46 +45,6 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="G1Seller_TC1_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC1_UserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC2_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC2_UserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC3_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC3_UserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC4_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC4_LotDisCombSearch.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC5_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC5_LotNoSearch.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC6_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC6_ImageLot.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC7_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC7_ServiceOrderLot.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G1Seller_TC8_Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1Seller_TC8_VBLogLot.csv"/>
-      </argument>
-    </dpl>
     <dpl name="G1Seller_TC9_Data" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G1Seller_TC9_AssgEntry.csv"/>
@@ -150,64 +94,8 @@
   </options>
   <templates>
     <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="9" time="10" testtype="users" totaliterations="9"/>
+      <round name="G1Seller_SmokeTest_01" totalusers="3" time="5" testtype="users" totaliterations="3"/>
     </controller>
-    <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
-      <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC1_HomePageNavigation.ds">
-          <argument name="G1Seller_TC1_Data" method="getNextData" dpl="G1Seller_TC1_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC2_MyCopartNavigation" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC2_MyCopartNavigation.ds">
-          <argument name="G1Seller_TC2_Data" method="getNextData" dpl="G1Seller_TC2_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC3_HeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC3_HeaderSearch.ds">
-          <argument name="G1Seller_TC3_Data" method="getNextData" dpl="G1Seller_TC3_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC4_LotDisp_CombSearch" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC4_LotDisplay_CombinationSearch.ds">
-          <argument name="G1Seller_TC4_Data" method="getNextData" dpl="G1Seller_TC4_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC5_LotNoSearch" expand="yes">
-      <test>
-        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC5_LotNoSearch.ds">
-          <argument name="G1Seller_TC5_Data" method="getNextData" dpl="G1Seller_TC5_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC6_LotDisplayImages" expand="yes">
-      <test>
-        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC6_LotDisplayImages.ds">
-          <argument name="G1Seller_TC6_Data" method="getNextData" dpl="G1Seller_TC6_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" expand="yes">
-      <test>
-        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC7_LotDisplay_ServiceOrder.ds">
-          <argument name="G1Seller_TC7_Data" method="getNextData" dpl="G1Seller_TC7_Data"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G1Seller_TC8_LotDisplay_VBLog" expand="yes">
-      <test>
-        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC8_LotDisplay_VBLog.ds">
-          <argument name="G1Seller_TC8_Data" method="getNextData" dpl="G1Seller_TC8_Data"/>
-        </run>
-      </test>
-    </testcase>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
         <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
@@ -221,15 +109,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1Seller_SmokeTest_01" name="G1Seller_SmokeTest_01">
-      <testcase name="G1Seller_TC1_HomePageNavigation" users="1"/>
-      <testcase name="G1Seller_TC2_MyCopartNavigation" users="1"/>
-      <testcase name="G1Seller_TC3_HeaderSearch" users="1"/>
-      <testcase name="G1Seller_TC4_LotDisp_CombSearch" users="1"/>
-      <testcase name="G1Seller_TC5_LotNoSearch" users="1"/>
-      <testcase name="G1Seller_TC6_LotDisplayImages" users="1"/>
-      <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" users="1"/>
-      <testcase name="G1Seller_TC8_LotDisplay_VBLog" users="1"/>
-      <testcase name="G1Seller_TC9_AssignmentEntry" users="1"/>
+      <testcase name="G1Seller_TC9_AssignmentEntry" users="3"/>
     </iteration>
   </execution>
   <logs>
