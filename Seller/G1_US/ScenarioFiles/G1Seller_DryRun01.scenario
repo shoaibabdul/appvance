@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1Seller_SmokeTest</name>
+    <name>G1Seller_DryRun</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -49,7 +49,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC9_AssgEntry.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="2" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -149,8 +149,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="9" time="10" testtype="users" totaliterations="9"/>
+    <controller name="G1Seller_DryRun_01">
+      <round name="G1Seller_DryRun_01" totalusers="30" time="20" testtype="users" totaliterations="30"/>
     </controller>
     <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
       <test>
@@ -220,16 +220,16 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1Seller_SmokeTest_01" name="G1Seller_SmokeTest_01">
-      <testcase name="G1Seller_TC1_HomePageNavigation" users="1"/>
-      <testcase name="G1Seller_TC2_MyCopartNavigation" users="1"/>
-      <testcase name="G1Seller_TC3_HeaderSearch" users="1"/>
-      <testcase name="G1Seller_TC4_LotDisp_CombSearch" users="1"/>
-      <testcase name="G1Seller_TC5_LotNoSearch" users="1"/>
-      <testcase name="G1Seller_TC6_LotDisplayImages" users="1"/>
-      <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" users="1"/>
-      <testcase name="G1Seller_TC8_LotDisplay_VBLog" users="1"/>
-      <testcase name="G1Seller_TC9_AssignmentEntry" users="1"/>
+    <iteration controller="G1Seller_DryRun_01" name="G1Seller_DryRun_01">
+      <testcase name="G1Seller_TC1_HomePageNavigation" users="4"/>
+      <testcase name="G1Seller_TC2_MyCopartNavigation" users="4"/>
+      <testcase name="G1Seller_TC3_HeaderSearch" users="4"/>
+      <testcase name="G1Seller_TC4_LotDisp_CombSearch" users="3"/>
+      <testcase name="G1Seller_TC5_LotNoSearch" users="3"/>
+      <testcase name="G1Seller_TC6_LotDisplayImages" users="3"/>
+      <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" users="3"/>
+      <testcase name="G1Seller_TC8_LotDisplay_VBLog" users="3"/>
+      <testcase name="G1Seller_TC9_AssignmentEntry" users="3"/>
     </iteration>
   </execution>
   <logs>
