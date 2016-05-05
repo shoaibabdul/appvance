@@ -94,7 +94,7 @@
   </options>
   <templates>
     <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="3" time="5" testtype="users" totaliterations="3"/>
+      <round name="G1Seller_SmokeTest_01" totalusers="3" time="10" testtype="users" totaliterations="3"/>
     </controller>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
