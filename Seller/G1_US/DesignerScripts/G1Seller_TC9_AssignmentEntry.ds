@@ -282,14 +282,16 @@
 
 
 
-<step action="setSelected" value="&quot;$Year&quot;" type="web" desc="Select Model Year" isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk on Screen" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(2)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="click" value="div(&quot;mainView&quot;)" selected="true"/>
+		<accessor type="click" value="div(&quot;ng-scope&quot;)" selected="false"/>
+		<accessor type="click" value="div(25)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div[1]/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[5]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='main']/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -306,14 +308,14 @@
 
 
 
-<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="24">
+<step action="setSelected" value="&quot;$Year&quot;" type="web" desc="Select Model Year" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(3)" selected="true"/>
+		<accessor type="setSelected" value="select(2)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div[2]/div[1]/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div[1]/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[5]/div[1]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -330,14 +332,14 @@
 
 
 
-<step action="setSelected" value="&quot;$Model&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="26">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(4)" selected="true"/>
+		<accessor type="setSelected" value="select(3)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[6]/div[1]/div[1]/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[1]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div[2]/div[1]/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div[1]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -354,14 +356,14 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Keys Yes" isThinkTime='false' isCommented='false' sequence="28">
+<step action="setSelected" value="&quot;$Model&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(13)" selected="true"/>
+		<accessor type="setSelected" value="select(4)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[12]/div[1]/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[12]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[6]/div[1]/div[1]/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div[1]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -378,14 +380,14 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Towable Yes" isThinkTime='false' isCommented='false' sequence="30">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Keys Yes" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(14)" selected="true"/>
+		<accessor type="setSelected" value="select(13)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[12]/div[2]/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[12]/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[12]/div[1]/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[12]/div[1]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -402,14 +404,14 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select VAT YEs" isThinkTime='false' isCommented='false' sequence="32">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Towable Yes" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(15)" selected="true"/>
+		<accessor type="setSelected" value="select(14)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[13]/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[13]/div/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[12]/div[2]/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[12]/div[2]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -426,15 +428,14 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step2" isThinkTime='false' isCommented='false' sequence="34">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select VAT YEs" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Save and Proceed&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
-		<accessor type="click" value="button(1)" selected="false"/>
+		<accessor type="setSelected" value="select(15)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/div/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[13]/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[13]/div/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -451,14 +452,15 @@
 
 
 
-<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select PickUpReq No" isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step2" isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(0)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Save and Proceed&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/ul/li[2]/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -475,14 +477,14 @@
 
 
 
-<step action="setSelected" value="&quot;$LocYard&quot;" type="web" desc="Select Location Yard" isThinkTime='false' isCommented='false' sequence="38">
+<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select PickUpReq No" isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(2)" selected="true"/>
+		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/ul/div[2]/li/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/li/div/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/ul/li[2]/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -499,16 +501,14 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step3" isThinkTime='false' isCommented='false' sequence="40">
+<step action="setSelected" value="&quot;$LocYard&quot;" type="web" desc="Select Location Yard" isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
-		<accessor type="click" value="submit(1)" selected="false"/>
+		<accessor type="setSelected" value="select(2)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@type='button ']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/div/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//form[1]/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/ul/div[2]/li/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/li/div/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -525,14 +525,16 @@
 
 
 
-<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select BidApp No" isThinkTime='false' isCommented='false' sequence="42">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step3" isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(0)" selected="true"/>
-		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[2]/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[@type='button ']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form[1]/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form[1]/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -549,14 +551,14 @@
 
 
 
-<step action="setValue" value="&quot;$LotNotes&quot;" type="web" desc="Enter Lot Notes" isThinkTime='false' isCommented='false' sequence="44">
+<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select BidApp No" isThinkTime='false' isCommented='false' sequence="44">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textarea(1)" selected="true"/>
-		<accessor type="setValue" value="textarea(&quot;form-control h110  ng-untouched ng-valid ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div/textarea&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//li[5]/div/textarea&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[2]/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -573,16 +575,14 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step4" isThinkTime='false' isCommented='false' sequence="46">
+<step action="setValue" value="&quot;$LotNotes&quot;" type="web" desc="Enter Lot Notes" isThinkTime='false' isCommented='false' sequence="46">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
-		<accessor type="click" value="submit(1)" selected="false"/>
+		<accessor type="setValue" value="textarea(1)" selected="true"/>
+		<accessor type="setValue" value="textarea(&quot;form-control h110  ng-untouched ng-valid ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@type='button ']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/div/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/ul/li[5]/div/textarea&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[5]/div/textarea&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -599,9 +599,9 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SubmitButton for Step5" isThinkTime='false' isCommented='false' sequence="48">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step4" isThinkTime='false' isCommented='false' sequence="48">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Submit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
 		<accessor type="click" value="submit(1)" selected="false"/>
 	</dialect>
@@ -625,18 +625,16 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk My Copart" isThinkTime='false' isCommented='false' sequence="50">
+<step action="click" value='' type="web" desc="Clk SubmitButton for Step5" isThinkTime='false' isCommented='false' sequence="50">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;myCopart&quot;)" selected="false"/>
-		<accessor type="click" value="link(8)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;dropdown-toggle ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;Submit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'My Copart')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[@id='myCopart']&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[@type='button ']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='mainView']/div/div[2]/main/section/div[2]/form/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//form/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -653,18 +651,18 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="52">
+<step action="click" value='' type="web" desc="Clk My Copart" isThinkTime='false' isCommented='false' sequence="52">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;home&quot;)" selected="false"/>
-		<accessor type="click" value="link(9)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#/[1]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;nochild ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;myCopart&quot;)" selected="false"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;dropdown-toggle ng-binding&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[@id='home']&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'My Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='myCopart']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -681,18 +679,18 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Sign Out link" isThinkTime='false' isCommented='false' sequence="54">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="54">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
-		<accessor type="click" value="link(&quot;signoutLink&quot;)" selected="false"/>
-		<accessor type="click" value="link(3)" selected="false"/>
-		<accessor type="click" value="link(&quot;bluelinktxt ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;home&quot;)" selected="false"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-seller-qa2.copart.com/sellerhome.html#/[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;nochild ng-binding&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[@id='signoutLink']&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[@id='loginheader']/div[2]/div/div[3]/div[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Home')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='home']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -709,7 +707,35 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Yes, Cont" isThinkTime='false' isCommented='false' sequence="56">
+<step action="click" value='' type="web" desc="Clk Sign Out link" isThinkTime='false' isCommented='false' sequence="56">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;signoutLink&quot;)" selected="false"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;bluelinktxt ng-binding&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@id='signoutLink']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='loginheader']/div[2]/div/div[3]/div[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="57">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Yes, Cont" isThinkTime='false' isCommented='false' sequence="58">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(44)" selected="false"/>
@@ -726,7 +752,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="57">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="59">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
