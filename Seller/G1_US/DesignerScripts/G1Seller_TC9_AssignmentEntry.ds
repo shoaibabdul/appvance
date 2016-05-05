@@ -256,11 +256,22 @@
 
 
 
-<step action="setValue" value="&quot;$RefNumber&quot;" type="web" desc="Enter Reference Number" isThinkTime='false' isCommented='false' sequence="20">
+<step action="wait" value="45046" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;123456&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;referenceNumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
-		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid-maxlength ng-dirty ng-valid-parse ng-valid ng-valid-minlength&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-valid-minlength ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='']&quot;" selected="true"/>
@@ -271,7 +282,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -282,33 +293,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk on Screen" isThinkTime='false' isCommented='false' sequence="22">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;mainView&quot;)" selected="true"/>
-		<accessor type="click" value="div(&quot;ng-scope&quot;)" selected="false"/>
-		<accessor type="click" value="div(25)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='mainView']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='main']/div&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[4]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="setSelected" value="&quot;$Year&quot;" type="web" desc="Select Model Year" isThinkTime='false' isCommented='false' sequence="24">
+<step action="setSelected" value="&quot;$Year&quot;" type="web" desc="Select Model Year" isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(2)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -321,7 +306,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -332,7 +317,7 @@
 
 
 
-<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="26">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(3)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -345,7 +330,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -356,7 +341,7 @@
 
 
 
-<step action="setSelected" value="&quot;$Model&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="28">
+<step action="setSelected" value="&quot;$Model&quot;" type="web" desc="Select Model" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(4)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -369,7 +354,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -380,7 +365,7 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Keys Yes" isThinkTime='false' isCommented='false' sequence="30">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Keys Yes" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(13)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -393,7 +378,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -404,7 +389,7 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Towable Yes" isThinkTime='false' isCommented='false' sequence="32">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select Towable Yes" isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(14)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -417,7 +402,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -428,7 +413,7 @@
 
 
 
-<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select VAT YEs" isThinkTime='false' isCommented='false' sequence="34">
+<step action="setSelected" value="&quot;Yes&quot;" type="web" desc="Select VAT YEs" isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(15)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -441,7 +426,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -452,7 +437,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step2" isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step2" isThinkTime='false' isCommented='false' sequence="35">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Save and Proceed&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
@@ -466,7 +451,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -477,7 +462,7 @@
 
 
 
-<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select PickUpReq No" isThinkTime='false' isCommented='false' sequence="38">
+<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select PickUpReq No" isThinkTime='false' isCommented='false' sequence="37">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -490,7 +475,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -501,7 +486,7 @@
 
 
 
-<step action="setSelected" value="&quot;$LocYard&quot;" type="web" desc="Select Location Yard" isThinkTime='false' isCommented='false' sequence="40">
+<step action="setSelected" value="&quot;$LocYard&quot;" type="web" desc="Select Location Yard" isThinkTime='false' isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(2)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -514,7 +499,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -525,7 +510,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step3" isThinkTime='false' isCommented='false' sequence="42">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step3" isThinkTime='false' isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
@@ -540,7 +525,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -551,7 +536,7 @@
 
 
 
-<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select BidApp No" isThinkTime='false' isCommented='false' sequence="44">
+<step action="setSelected" value="&quot;No&quot;" type="web" desc="Select BidApp No" isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(0)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -564,7 +549,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -575,7 +560,7 @@
 
 
 
-<step action="setValue" value="&quot;$LotNotes&quot;" type="web" desc="Enter Lot Notes" isThinkTime='false' isCommented='false' sequence="46">
+<step action="setValue" value="&quot;$LotNotes&quot;" type="web" desc="Enter Lot Notes" isThinkTime='false' isCommented='false' sequence="45">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(1)" selected="true"/>
 		<accessor type="setValue" value="textarea(&quot;form-control h110  ng-untouched ng-valid ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -588,7 +573,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="46">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -599,7 +584,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step4" isThinkTime='false' isCommented='false' sequence="48">
+<step action="click" value='' type="web" desc="Clk Save &amp; Proceed Step4" isThinkTime='false' isCommented='false' sequence="47">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Save and Proceed&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
@@ -614,7 +599,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="49">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="48">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -625,7 +610,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SubmitButton for Step5" isThinkTime='false' isCommented='false' sequence="50">
+<step action="click" value='' type="web" desc="Clk SubmitButton for Step5" isThinkTime='false' isCommented='false' sequence="49">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Submit&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-primary ng-binding&quot;)" selected="false"/>
@@ -640,7 +625,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="51">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="50">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -651,7 +636,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk My Copart" isThinkTime='false' isCommented='false' sequence="52">
+<step action="click" value='' type="web" desc="Clk My Copart" isThinkTime='false' isCommented='false' sequence="51">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;myCopart&quot;)" selected="false"/>
@@ -668,7 +653,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="53">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="52">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -679,7 +664,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="54">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="53">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;home&quot;)" selected="false"/>
@@ -696,7 +681,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="55">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="54">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -707,7 +692,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Sign Out link" isThinkTime='false' isCommented='false' sequence="56">
+<step action="click" value='' type="web" desc="Clk Sign Out link" isThinkTime='false' isCommented='false' sequence="55">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(&quot;signoutLink&quot;)" selected="false"/>
@@ -724,7 +709,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="57">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="56">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -735,7 +720,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Yes, Cont" isThinkTime='false' isCommented='false' sequence="58">
+<step action="click" value='' type="web" desc="Clk Yes, Cont" isThinkTime='false' isCommented='false' sequence="57">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Yes, Continue&quot;)" selected="true"/>
 		<accessor type="click" value="link(44)" selected="false"/>
@@ -752,7 +737,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="59">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="58">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
