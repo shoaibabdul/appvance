@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1Seller_100Users_LoadTest</name>
+    <name>G1Seller_200Users_LoadTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -113,11 +113,11 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="2"/>
+      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpSeconds" value="3"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="2"/>
+      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownSeconds" value="3"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="8000"/>
@@ -149,8 +149,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1Seller_100Users_LoadTest_01">
-      <round name="G1Seller_100Users_LoadTest_01" totalusers="100" time="65" testtype="users" totaliterations="500"/>
+    <controller name="G1Seller_200Users_LoadTest_01">
+      <round name="G1Seller_200Users_LoadTest_01" totalusers="200" time="65" testtype="users" totaliterations="1000"/>
     </controller>
     <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
       <test>
@@ -220,16 +220,16 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1Seller_100Users_LoadTest_01" name="G1Seller_100Users_LoadTest_01">
-      <testcase name="G1Seller_TC1_HomePageNavigation" users="12"/>
-      <testcase name="G1Seller_TC2_MyCopartNavigation" users="11"/>
-      <testcase name="G1Seller_TC3_HeaderSearch" users="11"/>
-      <testcase name="G1Seller_TC4_LotDisp_CombSearch" users="11"/>
-      <testcase name="G1Seller_TC5_LotNoSearch" users="11"/>
-      <testcase name="G1Seller_TC6_LotDisplayImages" users="11"/>
-      <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" users="11"/>
-      <testcase name="G1Seller_TC8_LotDisplay_VBLog" users="11"/>
-      <testcase name="G1Seller_TC9_AssignmentEntry" users="11"/>
+    <iteration controller="G1Seller_200Users_LoadTest_01" name="G1Seller_200Users_LoadTest_01">
+      <testcase name="G1Seller_TC1_HomePageNavigation" users="23"/>
+      <testcase name="G1Seller_TC2_MyCopartNavigation" users="23"/>
+      <testcase name="G1Seller_TC3_HeaderSearch" users="22"/>
+      <testcase name="G1Seller_TC4_LotDisp_CombSearch" users="22"/>
+      <testcase name="G1Seller_TC5_LotNoSearch" users="22"/>
+      <testcase name="G1Seller_TC6_LotDisplayImages" users="22"/>
+      <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" users="22"/>
+      <testcase name="G1Seller_TC8_LotDisplay_VBLog" users="22"/>
+      <testcase name="G1Seller_TC9_AssignmentEntry" users="22"/>
     </iteration>
   </execution>
   <logs>
