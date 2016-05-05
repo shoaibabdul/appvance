@@ -256,7 +256,7 @@
 
 
 
-<step action="setValue" value="&quot;123456&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="setValue" value="&quot;123456&quot;" type="web" desc="Enter Reference Number" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;referenceNumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
