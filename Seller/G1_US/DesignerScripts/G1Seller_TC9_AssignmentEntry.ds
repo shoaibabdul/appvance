@@ -258,8 +258,8 @@
 
 <step action="setValue" value="&quot;5104495818&quot;" type="web" desc="Enter Reference Number" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;referenceNumber&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(1)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;referenceNumber&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(1)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid-maxlength ng-dirty ng-valid-parse ng-valid ng-valid-minlength&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
