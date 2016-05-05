@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C3_US/Testdata/C3SUS_TC1TC2_LynkUserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="All" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="5" instantiate="None" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
