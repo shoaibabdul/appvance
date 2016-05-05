@@ -100,7 +100,7 @@
     </controller>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
-        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
+        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
           <argument name="G1Seller_TC9_Data" method="getNextData" dpl="G1Seller_TC9_Data"/>
         </run>
       </test>
