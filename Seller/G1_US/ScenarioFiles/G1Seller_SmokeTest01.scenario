@@ -49,7 +49,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/G1_US/Testdata/G1Seller_TC9_AssgEntry.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="Required" terminate="None" reboot="After" username="appvance" password="appvance"/>
+    <cloud name="Amazon_C3" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC220.cloud" amount="1" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -131,7 +131,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="false"/>
+      <opt name="ReportThinkTime" value="true"/>
       <opt name="AddThinkTimeToStep" value="false"/>
     </options>
     <options type="selenium">
@@ -150,67 +150,67 @@
   </options>
   <templates>
     <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="9" time="20" testtype="users" totaliterations="9"/>
+      <round name="G1Seller_SmokeTest_01" totalusers="9" time="10" testtype="users" totaliterations="9"/>
     </controller>
     <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC1_HomePageNavigation.ds">
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC1_HomePageNavigation.ds">
           <argument name="G1Seller_TC1_Data" method="getNextData" dpl="G1Seller_TC1_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC2_MyCopartNavigation" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC2_MyCopartNavigation.ds">
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC2_MyCopartNavigation.ds">
           <argument name="G1Seller_TC2_Data" method="getNextData" dpl="G1Seller_TC2_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC3_HeaderSearch" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC3_HeaderSearch.ds">
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC3_HeaderSearch.ds">
           <argument name="G1Seller_TC3_Data" method="getNextData" dpl="G1Seller_TC3_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC4_LotDisp_CombSearch" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC4_LotDisplay_CombinationSearch.ds">
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC4_LotDisplay_CombinationSearch.ds">
           <argument name="G1Seller_TC4_Data" method="getNextData" dpl="G1Seller_TC4_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC5_LotNoSearch" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC5_LotNoSearch.ds">
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC5_LotNoSearch.ds">
           <argument name="G1Seller_TC5_Data" method="getNextData" dpl="G1Seller_TC5_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC6_LotDisplayImages" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC6_LotDisplayImages.ds">
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC6_LotDisplayImages.ds">
           <argument name="G1Seller_TC6_Data" method="getNextData" dpl="G1Seller_TC6_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC7_LotDisplay_ServiceOrder" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC7_LotDisplay_ServiceOrder.ds">
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC7_LotDisplay_ServiceOrder.ds">
           <argument name="G1Seller_TC7_Data" method="getNextData" dpl="G1Seller_TC7_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC8_LotDisplay_VBLog" expand="yes">
       <test>
-        <run name="Untitled8" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC8_LotDisplay_VBLog.ds">
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC8_LotDisplay_VBLog.ds">
           <argument name="G1Seller_TC8_Data" method="getNextData" dpl="G1Seller_TC8_Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
-        <run name="Untitled9" testclass="sahi" method="chrome" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
+        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G1Seller_TC9_AssignmentEntry.ds">
           <argument name="G1Seller_TC9_Data" method="getNextData" dpl="G1Seller_TC9_Data"/>
         </run>
       </test>
