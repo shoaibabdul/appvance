@@ -94,7 +94,9 @@
   </options>
   <templates>
     <controller name="G1Seller_SmokeTest_01">
-      <round name="G1Seller_SmokeTest_01" totalusers="3" time="10" testtype="users" totaliterations="3"/>
+      <round name="G1Seller_SmokeTest_01" totalusers="2" testtype="users" totaliterations="2">
+        <testcase name="G1Seller_TC9_AssignmentEntry" executions="5"/>
+      </round>
     </controller>
     <testcase name="G1Seller_TC9_AssignmentEntry" expand="yes">
       <test>
@@ -109,7 +111,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1Seller_SmokeTest_01" name="G1Seller_SmokeTest_01">
-      <testcase name="G1Seller_TC9_AssignmentEntry" users="3"/>
+      <testcase name="G1Seller_TC9_AssignmentEntry" totalexecutions="5" users="2"/>
     </iteration>
   </execution>
   <logs>
