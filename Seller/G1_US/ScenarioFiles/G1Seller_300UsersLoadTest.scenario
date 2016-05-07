@@ -149,8 +149,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1Seller_200Users_LoadTest_01">
-      <round name="G1Seller_200Users_LoadTest_01" totalusers="300" time="65" testtype="users" totaliterations="3000"/>
+    <controller name="G1Seller_300Users_LoadTest_01">
+      <round name="G1Seller_300Users_LoadTest_01" totalusers="300" time="65" testtype="users" totaliterations="3000"/>
     </controller>
     <testcase name="G1Seller_TC1_HomePageNavigation" expand="yes">
       <test>
@@ -220,7 +220,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1Seller_200Users_LoadTest_01" name="G1Seller_200Users_LoadTest_01">
+    <iteration controller="G1Seller_300Users_LoadTest_01" name="G1Seller_300Users_LoadTest_01">
       <testcase name="G1Seller_TC1_HomePageNavigation" users="34"/>
       <testcase name="G1Seller_TC2_MyCopartNavigation" users="34"/>
       <testcase name="G1Seller_TC3_HeaderSearch" users="34"/>
