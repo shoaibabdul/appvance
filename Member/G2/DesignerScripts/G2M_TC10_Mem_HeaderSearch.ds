@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk SignIn" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign In&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
@@ -56,7 +56,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Member" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Member&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -85,7 +85,7 @@
 
 
 
-<step action="setValue" value="&quot;2811&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;2811&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -112,7 +112,7 @@
 
 
 
-<step action="setValue" value="&quot;copart1&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;copart1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -139,7 +139,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Submit LogIn" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Sign Into Your Account&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-lblue butn&quot;)" selected="false"/>
@@ -164,7 +164,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Submit HeaderSearch" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(0)" selected="true"/>
 	</dialect>
@@ -188,7 +188,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
 		<accessor type="click" value="link(6)" selected="false"/>
@@ -216,7 +216,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
