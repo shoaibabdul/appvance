@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='G2M_TC4_Pub_SalesList' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8957" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6942" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future&quot;)" selected="true"/>
+		<accessor type="click" value="link(37)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/15?location=GA%20-%20ATLANTA%20WEST&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Future')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[1]/td[7]/span/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/15?location=GA - ATLANTA WEST')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="13943" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5921" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(38)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/1?location=CA%20-%20VALLEJO%20:%20FOR%20QA%20ONLY&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[2]/td[7]/span/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/1?location=CA - VALLEJO : FOR QA ONLY')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[7]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="13903" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8867" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[2]&quot;)" selected="true"/>
+		<accessor type="click" value="link(41)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/312?location=IA%20-%20CRASHEDTOYS%20ELDRIDGE&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[3]/td[7]/span/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/312?location=IA - CRASHEDTOYS ELDRIDGE')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[7]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8821" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4793" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[3]&quot;)" selected="true"/>
+		<accessor type="click" value="link(44)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/23?location=CT%20-%20HARTFORD&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[4]/td[7]/span/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/23?location=CT - HARTFORD')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[4]/td[7]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7789" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6729" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Future[4]&quot;)" selected="true"/>
+		<accessor type="click" value="link(45)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/14?location=TX%20-%20LONGVIEW&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[5]/td[7]/span/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/14?location=TX - LONGVIEW')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[5]/td[7]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10718" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(9)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
