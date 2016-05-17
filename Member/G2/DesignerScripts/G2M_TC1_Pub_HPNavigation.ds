@@ -112,7 +112,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Brokers &amp; Market Makers link" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk B&amp;M Makers link" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Brokers and Market Makers&quot;)" selected="true"/>
 		<accessor type="click" value="link(30)" selected="false"/>
@@ -155,15 +155,12 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
