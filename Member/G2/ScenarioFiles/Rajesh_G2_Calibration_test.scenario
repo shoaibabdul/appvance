@@ -101,7 +101,7 @@
     </testcase>
     <testcase name="Iteration01" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
+        <run name="HP Nav" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
