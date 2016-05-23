@@ -99,7 +99,7 @@
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled2" expand="yes">
+    <testcase name="Iteration01" expand="yes">
       <test>
         <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
       </test>
@@ -113,7 +113,7 @@
       <testcase name="DummyTest" users="10"/>
     </iteration>
     <iteration controller="Iteration01" name="Iteration01">
-      <testcase name="Untitled2" users="50"/>
+      <testcase name="Iteration01" users="50"/>
     </iteration>
   </execution>
   <logs>
