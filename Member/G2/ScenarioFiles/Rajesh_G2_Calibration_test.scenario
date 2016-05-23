@@ -29,9 +29,7 @@
     <categorization/>
   </basics>
   <resources>
-    <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="{scenario}/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
-    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/G2M_TC4_Pub_SalesList.ds" cache="false"/>
-    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
+    <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
