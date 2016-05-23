@@ -30,8 +30,6 @@
   </basics>
   <resources>
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
-    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
-    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
     <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
     <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
   </resources>
@@ -96,9 +94,6 @@
     <controller name="Iteration01">
       <round name="Iteration01" totalusers="50" time="10" testtype="users" totaliterations="50"/>
     </controller>
-    <controller name="Iteration02">
-      <round name="Iteration02" totalusers="100" time="10" testtype="users" totaliterations="100"/>
-    </controller>
     <testcase name="DummyTest" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
@@ -122,7 +117,6 @@
     <iteration controller="Iteration01" name="Iteration01">
       <testcase name="Untitled2" users="50"/>
     </iteration>
-    <iteration controller="Iteration02" name="Iteration02"/>
   </execution>
   <logs>
     <log type="database">
