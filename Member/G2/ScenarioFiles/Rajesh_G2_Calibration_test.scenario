@@ -90,7 +90,7 @@
       <round name="Dummy_Ite01" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <controller name="Iteration01">
-      <round name="Iteration01" totalusers="50" time="10" testtype="users" totaliterations="50"/>
+      <round name="Iteration01" totalusers="20" time="5" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="DummyTest" expand="yes">
       <test>
