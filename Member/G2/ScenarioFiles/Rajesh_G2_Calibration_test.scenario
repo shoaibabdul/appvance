@@ -111,7 +111,7 @@
       <testcase name="DummyTest" users="10"/>
     </iteration>
     <iteration controller="Iteration01" name="Iteration01">
-      <testcase name="Iteration01" users="50"/>
+      <testcase name="Iteration01" users="20"/>
     </iteration>
   </execution>
   <logs>
