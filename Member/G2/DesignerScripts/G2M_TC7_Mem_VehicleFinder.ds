@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC7_VehicleFinder.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -85,7 +85,7 @@
 
 
 
-<step action="setValue" value="&quot;2811&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -112,7 +112,7 @@
 
 
 
-<step action="setValue" value="&quot;copart1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -192,7 +192,7 @@
 
 
 
-<step action="setValue" value="&quot;Ford&quot;" type="web" desc="Enter Make" isThinkTime='false' isCommented='false' sequence="14">
+<step action="setValue" value="&quot;$VehicleFinder&quot;" type="web" desc="Enter Make" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
