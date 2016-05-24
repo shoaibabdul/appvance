@@ -1,0 +1,621 @@
+UserID,Password,VehicleFinder
+16161,copart1,Automobiles
+16181,copart1,Motorcycles
+16211,copart1,All Over
+16218,copart1,Front End
+16220,copart1,Rear End
+16228,copart1,Salvage Title
+16240,copart1,Acura
+16241,copart1,Audi
+16248,copart1,BMW
+16257,copart1,Chevrolet
+16296,copart1,Chrysler
+16312,copart1,Dodge
+16318,copart1,Ford
+16320,copart1,GMC
+16326,copart1,Honda
+16330,copart1,Hyundai
+16352,copart1,Infiniti
+16385,copart1,Jeep
+16402,copart1,Kia
+16416,copart1,Lexus
+16423,copart1,Mazda
+16435,copart1,Nissan
+16454,copart1,Subaru
+16488,copart1,Toyota
+16491,copart1,Volkswagen
+16503,copart1,Automobiles
+16532,copart1,Motorcycles
+2823,copart1,All Over
+2811,copart1,Front End
+2851,copart1,Rear End
+2853,copart1,Salvage Title
+16161,copart1,Acura
+16181,copart1,Audi
+16211,copart1,BMW
+16218,copart1,Chevrolet
+16220,copart1,Chrysler
+16228,copart1,Dodge
+16240,copart1,Ford
+16241,copart1,GMC
+16248,copart1,Honda
+16257,copart1,Hyundai
+16296,copart1,Infiniti
+16312,copart1,Jeep
+16318,copart1,Kia
+16320,copart1,Lexus
+16326,copart1,Mazda
+16330,copart1,Nissan
+16352,copart1,Subaru
+16385,copart1,Toyota
+16402,copart1,Volkswagen
+16416,copart1,Automobiles
+16423,copart1,Motorcycles
+16435,copart1,All Over
+16454,copart1,Front End
+16488,copart1,Rear End
+16491,copart1,Salvage Title
+16503,copart1,Acura
+16532,copart1,Audi
+2823,copart1,BMW
+2811,copart1,Chevrolet
+2851,copart1,Chrysler
+2853,copart1,Dodge
+16161,copart1,Ford
+16181,copart1,GMC
+16211,copart1,Honda
+16218,copart1,Hyundai
+16220,copart1,Infiniti
+16228,copart1,Jeep
+16240,copart1,Kia
+16241,copart1,Lexus
+16248,copart1,Mazda
+16257,copart1,Nissan
+16296,copart1,Subaru
+16312,copart1,Toyota
+16318,copart1,Volkswagen
+16320,copart1,Automobiles
+16326,copart1,Motorcycles
+16330,copart1,All Over
+16352,copart1,Front End
+16385,copart1,Rear End
+16402,copart1,Salvage Title
+16416,copart1,Acura
+16423,copart1,Audi
+16435,copart1,BMW
+16454,copart1,Chevrolet
+16488,copart1,Chrysler
+16491,copart1,Dodge
+16503,copart1,Ford
+16532,copart1,GMC
+2823,copart1,Honda
+2811,copart1,Hyundai
+2851,copart1,Infiniti
+2853,copart1,Jeep
+16161,copart1,Kia
+16181,copart1,Lexus
+16211,copart1,Mazda
+16218,copart1,Nissan
+16220,copart1,Subaru
+16228,copart1,Toyota
+16240,copart1,Volkswagen
+16241,copart1,Automobiles
+16248,copart1,Motorcycles
+16257,copart1,All Over
+16296,copart1,Front End
+16312,copart1,Rear End
+16318,copart1,Salvage Title
+16320,copart1,Acura
+16326,copart1,Audi
+16330,copart1,BMW
+16352,copart1,Chevrolet
+16385,copart1,Chrysler
+16402,copart1,Dodge
+16416,copart1,Ford
+16423,copart1,GMC
+16435,copart1,Honda
+16454,copart1,Hyundai
+16488,copart1,Infiniti
+16491,copart1,Jeep
+16503,copart1,Kia
+16532,copart1,Lexus
+2823,copart1,Mazda
+2811,copart1,Nissan
+2851,copart1,Subaru
+2853,copart1,Toyota
+16161,copart1,Volkswagen
+16181,copart1,Automobiles
+16211,copart1,Motorcycles
+16218,copart1,All Over
+16220,copart1,Front End
+16228,copart1,Rear End
+16240,copart1,Salvage Title
+16241,copart1,Acura
+16248,copart1,Audi
+16257,copart1,BMW
+16296,copart1,Chevrolet
+16312,copart1,Chrysler
+16318,copart1,Dodge
+16320,copart1,Ford
+16326,copart1,GMC
+16330,copart1,Honda
+16352,copart1,Hyundai
+16385,copart1,Infiniti
+16402,copart1,Jeep
+16416,copart1,Kia
+16423,copart1,Lexus
+16435,copart1,Mazda
+16454,copart1,Nissan
+16488,copart1,Subaru
+16491,copart1,Toyota
+16503,copart1,Volkswagen
+16532,copart1,Automobiles
+2823,copart1,Motorcycles
+2811,copart1,All Over
+2851,copart1,Front End
+2853,copart1,Rear End
+16161,copart1,Salvage Title
+16181,copart1,Acura
+16211,copart1,Audi
+16218,copart1,BMW
+16220,copart1,Chevrolet
+16228,copart1,Chrysler
+16240,copart1,Dodge
+16241,copart1,Ford
+16248,copart1,GMC
+16257,copart1,Honda
+16296,copart1,Hyundai
+16312,copart1,Infiniti
+16318,copart1,Jeep
+16320,copart1,Kia
+16326,copart1,Lexus
+16330,copart1,Mazda
+16352,copart1,Nissan
+16385,copart1,Subaru
+16402,copart1,Toyota
+16416,copart1,Volkswagen
+16423,copart1,Automobiles
+16435,copart1,Motorcycles
+16454,copart1,All Over
+16488,copart1,Front End
+16491,copart1,Rear End
+16503,copart1,Salvage Title
+16532,copart1,Acura
+2823,copart1,Audi
+2811,copart1,BMW
+2851,copart1,Chevrolet
+2853,copart1,Chrysler
+16161,copart1,Dodge
+16181,copart1,Ford
+16211,copart1,GMC
+16218,copart1,Honda
+16220,copart1,Hyundai
+16228,copart1,Infiniti
+16240,copart1,Jeep
+16241,copart1,Kia
+16248,copart1,Lexus
+16257,copart1,Mazda
+16296,copart1,Nissan
+16312,copart1,Subaru
+16318,copart1,Toyota
+16320,copart1,Volkswagen
+16326,copart1,Automobiles
+16330,copart1,Motorcycles
+16352,copart1,All Over
+16385,copart1,Front End
+16402,copart1,Rear End
+16416,copart1,Salvage Title
+16423,copart1,Acura
+16435,copart1,Audi
+16454,copart1,BMW
+16488,copart1,Chevrolet
+16491,copart1,Chrysler
+16503,copart1,Dodge
+16532,copart1,Ford
+2823,copart1,GMC
+2811,copart1,Honda
+2851,copart1,Hyundai
+2853,copart1,Infiniti
+16161,copart1,Jeep
+16181,copart1,Kia
+16211,copart1,Lexus
+16218,copart1,Mazda
+16220,copart1,Nissan
+16228,copart1,Subaru
+16240,copart1,Toyota
+16241,copart1,Volkswagen
+16248,copart1,Automobiles
+16257,copart1,Motorcycles
+16296,copart1,All Over
+16312,copart1,Front End
+16318,copart1,Rear End
+16320,copart1,Salvage Title
+16326,copart1,Acura
+16330,copart1,Audi
+16352,copart1,BMW
+16385,copart1,Chevrolet
+16402,copart1,Chrysler
+16416,copart1,Dodge
+16423,copart1,Ford
+16435,copart1,GMC
+16454,copart1,Honda
+16488,copart1,Hyundai
+16491,copart1,Infiniti
+16503,copart1,Jeep
+16532,copart1,Kia
+2823,copart1,Lexus
+2811,copart1,Mazda
+2851,copart1,Nissan
+2853,copart1,Subaru
+16161,copart1,Toyota
+16181,copart1,Volkswagen
+16211,copart1,Automobiles
+16218,copart1,Motorcycles
+16220,copart1,All Over
+16228,copart1,Front End
+16240,copart1,Rear End
+16241,copart1,Salvage Title
+16248,copart1,Acura
+16257,copart1,Audi
+16296,copart1,BMW
+16312,copart1,Chevrolet
+16318,copart1,Chrysler
+16320,copart1,Dodge
+16326,copart1,Ford
+16330,copart1,GMC
+16352,copart1,Honda
+16385,copart1,Hyundai
+16402,copart1,Infiniti
+16416,copart1,Jeep
+16423,copart1,Kia
+16435,copart1,Lexus
+16454,copart1,Mazda
+16488,copart1,Nissan
+16491,copart1,Subaru
+16503,copart1,Toyota
+16532,copart1,Volkswagen
+2823,copart1,Automobiles
+2811,copart1,Motorcycles
+2851,copart1,All Over
+2853,copart1,Front End
+16161,copart1,Rear End
+16181,copart1,Salvage Title
+16211,copart1,Acura
+16218,copart1,Audi
+16220,copart1,BMW
+16228,copart1,Chevrolet
+16240,copart1,Chrysler
+16241,copart1,Dodge
+16248,copart1,Ford
+16257,copart1,GMC
+16296,copart1,Honda
+16312,copart1,Hyundai
+16318,copart1,Infiniti
+16320,copart1,Jeep
+16326,copart1,Kia
+16330,copart1,Lexus
+16352,copart1,Mazda
+16385,copart1,Nissan
+16402,copart1,Subaru
+16416,copart1,Toyota
+16423,copart1,Volkswagen
+16435,copart1,Automobiles
+16454,copart1,Motorcycles
+16488,copart1,All Over
+16491,copart1,Front End
+16503,copart1,Rear End
+16532,copart1,Salvage Title
+2823,copart1,Acura
+2811,copart1,Audi
+2851,copart1,BMW
+2853,copart1,Chevrolet
+16161,copart1,Chrysler
+16181,copart1,Dodge
+16211,copart1,Ford
+16218,copart1,GMC
+16220,copart1,Honda
+16228,copart1,Hyundai
+16240,copart1,Infiniti
+16241,copart1,Jeep
+16248,copart1,Kia
+16257,copart1,Lexus
+16296,copart1,Mazda
+16312,copart1,Nissan
+16318,copart1,Subaru
+16320,copart1,Toyota
+16326,copart1,Volkswagen
+16330,copart1,Automobiles
+16352,copart1,Motorcycles
+16385,copart1,All Over
+16402,copart1,Front End
+16416,copart1,Rear End
+16423,copart1,Salvage Title
+16435,copart1,Acura
+16454,copart1,Audi
+16488,copart1,BMW
+16491,copart1,Chevrolet
+16503,copart1,Chrysler
+16532,copart1,Dodge
+2823,copart1,Ford
+2811,copart1,GMC
+2851,copart1,Honda
+2853,copart1,Hyundai
+16161,copart1,Infiniti
+16181,copart1,Jeep
+16211,copart1,Kia
+16218,copart1,Lexus
+16220,copart1,Mazda
+16228,copart1,Nissan
+16240,copart1,Subaru
+16241,copart1,Toyota
+16248,copart1,Volkswagen
+16257,copart1,Automobiles
+16296,copart1,Motorcycles
+16312,copart1,All Over
+16318,copart1,Front End
+16320,copart1,Rear End
+16326,copart1,Salvage Title
+16330,copart1,Acura
+16352,copart1,Audi
+16385,copart1,BMW
+16402,copart1,Chevrolet
+16416,copart1,Chrysler
+16423,copart1,Dodge
+16435,copart1,Ford
+16454,copart1,GMC
+16488,copart1,Honda
+16491,copart1,Hyundai
+16503,copart1,Infiniti
+16532,copart1,Jeep
+2823,copart1,Kia
+2811,copart1,Lexus
+2851,copart1,Mazda
+2853,copart1,Nissan
+16161,copart1,Subaru
+16181,copart1,Toyota
+16211,copart1,Volkswagen
+16218,copart1,Automobiles
+16220,copart1,Motorcycles
+16228,copart1,All Over
+16240,copart1,Front End
+16241,copart1,Rear End
+16248,copart1,Salvage Title
+16257,copart1,Acura
+16296,copart1,Audi
+16312,copart1,BMW
+16318,copart1,Chevrolet
+16320,copart1,Chrysler
+16326,copart1,Dodge
+16330,copart1,Ford
+16352,copart1,GMC
+16385,copart1,Honda
+16402,copart1,Hyundai
+16416,copart1,Infiniti
+16423,copart1,Jeep
+16435,copart1,Kia
+16454,copart1,Lexus
+16488,copart1,Mazda
+16491,copart1,Nissan
+16503,copart1,Subaru
+16532,copart1,Toyota
+2823,copart1,Volkswagen
+2811,copart1,Automobiles
+2851,copart1,Motorcycles
+2853,copart1,All Over
+16161,copart1,Front End
+16181,copart1,Rear End
+16211,copart1,Salvage Title
+16218,copart1,Acura
+16220,copart1,Audi
+16228,copart1,BMW
+16240,copart1,Chevrolet
+16241,copart1,Chrysler
+16248,copart1,Dodge
+16257,copart1,Ford
+16296,copart1,GMC
+16312,copart1,Honda
+16318,copart1,Hyundai
+16320,copart1,Infiniti
+16326,copart1,Jeep
+16330,copart1,Kia
+16352,copart1,Lexus
+16385,copart1,Mazda
+16402,copart1,Nissan
+16416,copart1,Subaru
+16423,copart1,Toyota
+16435,copart1,Volkswagen
+16454,copart1,Automobiles
+16488,copart1,Motorcycles
+16491,copart1,All Over
+16503,copart1,Front End
+16532,copart1,Rear End
+2823,copart1,Salvage Title
+2811,copart1,Acura
+2851,copart1,Audi
+2853,copart1,BMW
+16161,copart1,Chevrolet
+16181,copart1,Chrysler
+16211,copart1,Dodge
+16218,copart1,Ford
+16220,copart1,GMC
+16228,copart1,Honda
+16240,copart1,Hyundai
+16241,copart1,Infiniti
+16248,copart1,Jeep
+16257,copart1,Kia
+16296,copart1,Lexus
+16312,copart1,Mazda
+16318,copart1,Nissan
+16320,copart1,Subaru
+16326,copart1,Toyota
+16330,copart1,Volkswagen
+16352,copart1,Automobiles
+16385,copart1,Motorcycles
+16402,copart1,All Over
+16416,copart1,Front End
+16423,copart1,Rear End
+16435,copart1,Salvage Title
+16454,copart1,Acura
+16488,copart1,Audi
+16491,copart1,BMW
+16503,copart1,Chevrolet
+16532,copart1,Chrysler
+2823,copart1,Dodge
+2811,copart1,Ford
+2851,copart1,GMC
+2853,copart1,Honda
+16161,copart1,Hyundai
+16181,copart1,Infiniti
+16211,copart1,Jeep
+16218,copart1,Kia
+16220,copart1,Lexus
+16228,copart1,Mazda
+16240,copart1,Nissan
+16241,copart1,Subaru
+16248,copart1,Toyota
+16257,copart1,Volkswagen
+16296,copart1,Automobiles
+16312,copart1,Motorcycles
+16318,copart1,All Over
+16320,copart1,Front End
+16326,copart1,Rear End
+16330,copart1,Salvage Title
+16352,copart1,Acura
+16385,copart1,Audi
+16402,copart1,BMW
+16416,copart1,Chevrolet
+16423,copart1,Chrysler
+16435,copart1,Dodge
+16454,copart1,Ford
+16488,copart1,GMC
+16491,copart1,Honda
+16503,copart1,Hyundai
+16532,copart1,Infiniti
+2823,copart1,Jeep
+2811,copart1,Kia
+2851,copart1,Lexus
+2853,copart1,Mazda
+16161,copart1,Nissan
+16181,copart1,Subaru
+16211,copart1,Toyota
+16218,copart1,Volkswagen
+16220,copart1,Automobiles
+16228,copart1,Motorcycles
+16240,copart1,All Over
+16241,copart1,Front End
+16248,copart1,Rear End
+16257,copart1,Salvage Title
+16296,copart1,Acura
+16312,copart1,Audi
+16318,copart1,BMW
+16320,copart1,Chevrolet
+16326,copart1,Chrysler
+16330,copart1,Dodge
+16352,copart1,Ford
+16385,copart1,GMC
+16402,copart1,Honda
+16416,copart1,Hyundai
+16423,copart1,Infiniti
+16435,copart1,Jeep
+16454,copart1,Kia
+16488,copart1,Lexus
+16491,copart1,Mazda
+16503,copart1,Nissan
+16532,copart1,Subaru
+2823,copart1,Toyota
+2811,copart1,Volkswagen
+2851,copart1,Automobiles
+2853,copart1,Motorcycles
+16161,copart1,All Over
+16181,copart1,Front End
+16211,copart1,Rear End
+16218,copart1,Salvage Title
+16220,copart1,Acura
+16228,copart1,Audi
+16240,copart1,BMW
+16241,copart1,Chevrolet
+16248,copart1,Chrysler
+16257,copart1,Dodge
+16296,copart1,Ford
+16312,copart1,GMC
+16318,copart1,Honda
+16320,copart1,Hyundai
+16326,copart1,Infiniti
+16330,copart1,Jeep
+16352,copart1,Kia
+16385,copart1,Lexus
+16402,copart1,Mazda
+16416,copart1,Nissan
+16423,copart1,Subaru
+16435,copart1,Toyota
+16454,copart1,Volkswagen
+16488,copart1,Automobiles
+16491,copart1,Motorcycles
+16503,copart1,All Over
+16532,copart1,Front End
+2823,copart1,Rear End
+2811,copart1,Salvage Title
+2851,copart1,Acura
+2853,copart1,Audi
+16161,copart1,BMW
+16181,copart1,Chevrolet
+16211,copart1,Chrysler
+16218,copart1,Dodge
+16220,copart1,Ford
+16228,copart1,GMC
+16240,copart1,Honda
+16241,copart1,Hyundai
+16248,copart1,Infiniti
+16257,copart1,Jeep
+16296,copart1,Kia
+16312,copart1,Lexus
+16318,copart1,Mazda
+16320,copart1,Nissan
+16326,copart1,Subaru
+16330,copart1,Toyota
+16352,copart1,Volkswagen
+16385,copart1,Automobiles
+16402,copart1,Motorcycles
+16416,copart1,All Over
+16423,copart1,Front End
+16435,copart1,Rear End
+16454,copart1,Salvage Title
+16488,copart1,Acura
+16491,copart1,Audi
+16503,copart1,BMW
+16532,copart1,Chevrolet
+2823,copart1,Chrysler
+2811,copart1,Dodge
+2851,copart1,Ford
+2853,copart1,GMC
+16161,copart1,Honda
+16181,copart1,Hyundai
+16211,copart1,Infiniti
+16218,copart1,Jeep
+16220,copart1,Kia
+16228,copart1,Lexus
+16240,copart1,Mazda
+16241,copart1,Nissan
+16248,copart1,Subaru
+16257,copart1,Toyota
+16296,copart1,Volkswagen
+16312,copart1,Automobiles
+16318,copart1,Motorcycles
+16320,copart1,All Over
+16326,copart1,Front End
+16330,copart1,Rear End
+16352,copart1,Salvage Title
+16385,copart1,Acura
+16402,copart1,Audi
+16416,copart1,BMW
+16423,copart1,Chevrolet
+16435,copart1,Chrysler
+16454,copart1,Dodge
+16488,copart1,Ford
+16491,copart1,GMC
+16503,copart1,Honda
+16532,copart1,Hyundai
+2823,copart1,Infiniti
+2811,copart1,Jeep
+2851,copart1,Kia
+2853,copart1,Lexus
