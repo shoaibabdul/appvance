@@ -118,7 +118,7 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_DryRun" expand="yes">
+    <testcase name="G2M_DryRunTest" expand="yes">
       <test>
         <run name="G2M_TC1_Pub_HPNavigation" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
         <run name="G2M_TC2_Pub_VehicleFinder" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds">
@@ -138,7 +138,7 @@
       <testcase name="G2M_TC6_Mem_HPNavigation" users="10"/>
     </iteration>
     <iteration controller="G2M_LoadTest_DryRun_02" name="G2M_LoadTest_DryRun_02">
-      <testcase name="G2M_DryRun" users="20"/>
+      <testcase name="G2M_DryRunTest" users="20"/>
     </iteration>
   </execution>
   <logs>
