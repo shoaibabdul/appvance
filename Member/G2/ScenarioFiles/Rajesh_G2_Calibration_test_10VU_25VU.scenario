@@ -32,7 +32,7 @@
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
+    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -111,7 +111,7 @@
       <testcase name="DummyTest" users="10"/>
     </iteration>
     <iteration controller="Iteration01" name="Iteration01">
-      <testcase name="Iteration01" users="25"/>
+      <testcase name="Iteration01" users="50"/>
     </iteration>
   </execution>
   <logs>
