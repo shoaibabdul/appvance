@@ -91,7 +91,7 @@
   </options>
   <templates>
     <controller name="G2M_DummyTest_DryRun_01">
-      <round name="G2M_DummyTest_DryRun_01" totalusers="20" time="20" testtype="users" totaliterations="20"/>
+      <round name="G2M_DummyTest_DryRun_01" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <controller name="G2M_LoadTest_DryRun_02">
       <round name="G2M_LoadTest_DryRun_02" totalusers="20" testtype="users" totaliterations="20" totalexecutions="20"/>
