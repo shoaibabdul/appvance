@@ -135,7 +135,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_DummyTest_DryRun_01" name="G2M_DummyTest_DryRun_01">
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="20"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="10"/>
     </iteration>
     <iteration controller="G2M_LoadTest_DryRun_02" name="G2M_LoadTest_DryRun_02">
       <testcase name="G2M_DryRun" users="20"/>
