@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_LoadTest_DryRun_New</name>
+    <name>G2M_LoadTest_50Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -101,10 +101,10 @@
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="1"/>
+      <opt name="RampUpSeconds" value="6"/>
       <opt name="MaxRampUpTime" value="1000"/>
       <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="1"/>
+      <opt name="RampDownSeconds" value="6"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="8000"/>
@@ -136,8 +136,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_DryRun_01">
-      <round name="G2M_DryRun_01" totalusers="20" time="10" testtype="users" totaliterations="20"/>
+    <controller name="G2M_LT_50Users_01">
+      <round name="G2M_LT_50Users_01" totalusers="50" time="30" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -208,17 +208,17 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_DryRun_01" name="G2M_DryRun_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="2"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="2"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="2"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="2"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="2"/>
-      <testcase name="G2M_TC7_Mem_VehicleFinder" users="2"/>
-      <testcase name="G2M_TC8_Mem_LotNoSearch" users="2"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="2"/>
-      <testcase name="G2M_TC10_Mem_HeaderSearch" users="2"/>
+    <iteration controller="G2M_LT_50Users_01" name="G2M_LT_50Users_01">
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="5"/>
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="5"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="5"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="5"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="5"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="5"/>
+      <testcase name="G2M_TC7_Mem_VehicleFinder" users="5"/>
+      <testcase name="G2M_TC8_Mem_LotNoSearch" users="5"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="5"/>
+      <testcase name="G2M_TC10_Mem_HeaderSearch" users="5"/>
     </iteration>
   </execution>
   <logs>
