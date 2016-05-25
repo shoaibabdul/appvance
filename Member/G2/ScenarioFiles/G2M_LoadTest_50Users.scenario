@@ -46,7 +46,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Testnode" location="http://54.208.188.39:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Testnode" location="http://54.210.110.224:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
