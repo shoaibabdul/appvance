@@ -46,7 +46,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <node name="Testnode" location="http://54.208.188.39:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -115,7 +115,7 @@
       <opt name="PercentageLogsSaved" value="50"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
-      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="DynamicIpAddress" value="true"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="ReportThinkTime" value="false"/>
