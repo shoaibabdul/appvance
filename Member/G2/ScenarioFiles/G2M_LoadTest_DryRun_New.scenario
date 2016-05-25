@@ -34,8 +34,16 @@
     <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
     <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
     <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
+    <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC6_Mem_HPNavigation.ds" cache="false"/>
+    <resource name="G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC7_Mem_VehicleFinder.ds" cache="false"/>
+    <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
+    <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC9_Mem_SalesList.ds" cache="false"/>
+    <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC7_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC8_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -57,6 +65,31 @@
     <dpl name="G2M_TC3" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_TC6" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_TC7" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_TC8" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_TC9" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_TC10" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -132,6 +165,41 @@
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
+    <testcase name="G2M_TC6_Mem_HPNavigation" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds">
+          <argument name="G2M_TC6" method="getNextData" dpl="G2M_TC6"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_TC7_Mem_VehicleFinder" expand="yes">
+      <test>
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC7_Mem_VehicleFinder.ds">
+          <argument name="G2M_TC7" method="getNextData" dpl="G2M_TC7"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_TC8_Mem_LotNoSearch" expand="yes">
+      <test>
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC8_Mem_LotNoSearch.ds">
+          <argument name="G2M_TC8" method="getNextData" dpl="G2M_TC8"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_TC9_Mem_SalesList" expand="yes">
+      <test>
+        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC9_Mem_SalesList.ds">
+          <argument name="G2M_TC9" method="getNextData" dpl="G2M_TC9"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_TC10_Mem_HeaderSearch" expand="yes">
+      <test>
+        <run name="Untitled10" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC10_Mem_HeaderSearch.ds">
+          <argument name="G2M_TC10" method="getNextData" dpl="G2M_TC10"/>
+        </run>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -143,6 +211,11 @@
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="2"/>
       <testcase name="G2M_TC4_Pub_SalesList" users="2"/>
       <testcase name="G2M_TC5_Pub_HeaderSearch" users="2"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="2"/>
+      <testcase name="G2M_TC7_Mem_VehicleFinder" users="2"/>
+      <testcase name="G2M_TC8_Mem_LotNoSearch" users="2"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="2"/>
+      <testcase name="G2M_TC10_Mem_HeaderSearch" users="2"/>
     </iteration>
   </execution>
   <logs>
