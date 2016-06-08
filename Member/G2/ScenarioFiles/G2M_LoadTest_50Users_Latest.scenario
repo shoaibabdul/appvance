@@ -46,8 +46,6 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Testnode2" location="http://52.91.55.200:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
-    <node name="Testnode1" location="http://54.210.110.224:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="8" instantiate="None" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
