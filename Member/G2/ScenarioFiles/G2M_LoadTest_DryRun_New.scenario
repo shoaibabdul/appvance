@@ -137,7 +137,7 @@
   </options>
   <templates>
     <controller name="G2M_DryRun_01">
-      <round name="G2M_DryRun_01" totalusers="20" time="5" testtype="users" totaliterations="20"/>
+      <round name="G2M_DryRun_01" totalusers="20" time="10" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
