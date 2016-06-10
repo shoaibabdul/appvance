@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_LoadTest_100Users</name>
+    <name>G2M_LoadTest_200Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -46,7 +46,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="4" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="8" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -137,7 +137,7 @@
   </options>
   <templates>
     <controller name="G2M_LT_100Users_01">
-      <round name="G2M_LT_100Users_01" totalusers="100" time="30" testtype="users" totaliterations="200"/>
+      <round name="G2M_LT_100Users_01" totalusers="200" time="30" testtype="users" totaliterations="800"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -209,16 +209,16 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_LT_100Users_01" name="G2M_LT_100Users_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="10"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="10"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="10"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="10"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="10"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="10"/>
-      <testcase name="G2M_TC7_Mem_VehicleFinder" users="10"/>
-      <testcase name="G2M_TC8_Mem_LotNoSearch" users="10"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="10"/>
-      <testcase name="G2M_TC10_Mem_HeaderSearch" users="10"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="20"/>
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="20"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="20"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="20"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="20"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="20"/>
+      <testcase name="G2M_TC7_Mem_VehicleFinder" users="20"/>
+      <testcase name="G2M_TC8_Mem_LotNoSearch" users="20"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="20"/>
+      <testcase name="G2M_TC10_Mem_HeaderSearch" users="20"/>
     </iteration>
   </execution>
   <logs>
