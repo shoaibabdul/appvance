@@ -6,18 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="wait" value="5016" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +17,7 @@
 
 
 
-<step action="wait" value="7002" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -39,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="click" value='' type="web" desc="Clk Vehicle Finder" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
 		<accessor type="click" value="link(12)" selected="false"/>
@@ -55,7 +44,7 @@
 
 
 
-<step action="wait" value="25927" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -66,7 +55,7 @@
 
 
 
-<step action="setValue" value="&quot;50009736&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="setValue" value="&quot;50009736&quot;" type="web" desc="Enter LookUp LotNo" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(3)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse ng-valid-editable&quot;)" selected="false"/>
@@ -79,7 +68,7 @@
 
 
 
-<step action="wait" value="5949" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -90,7 +79,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc="Submit Search by LotNo" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Search By Lot#&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue right ng-binding[1]&quot;)" selected="false"/>
@@ -104,7 +93,7 @@
 
 
 
-<step action="wait" value="8914" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -115,7 +104,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(10)" selected="false"/>
@@ -130,7 +119,7 @@
 
 
 
-<step action="wait" value="6876" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
