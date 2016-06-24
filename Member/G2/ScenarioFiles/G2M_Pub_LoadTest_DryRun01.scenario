@@ -64,7 +64,7 @@
         <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC11_FreeSearchTD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="TC11_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
       </argument>
@@ -152,7 +152,7 @@
     <testcase name="G2M_TC11_Pub_VF_FreeSearch" expand="yes">
       <test>
         <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds">
-          <argument name="TC11_FreeSearchTD" method="getNextData" dpl="TC11_FreeSearchTD"/>
+          <argument name="TC11_TestData" method="getNextData" dpl="TC11_TestData"/>
         </run>
       </test>
     </testcase>
