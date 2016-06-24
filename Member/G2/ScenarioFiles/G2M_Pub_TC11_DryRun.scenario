@@ -29,17 +29,8 @@
     <categorization>G2Member Project</categorization>
   </basics>
   <resources>
-    <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
-    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
-    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
-    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
-    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
     <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" cache="false"/>
-    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC11_VF_FreeSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
@@ -103,7 +94,7 @@
   </options>
   <templates>
     <controller name="G2M_Pub_TC11_DryRun_01">
-      <round name="G2M_Pub_TC11_DryRun_01" totalusers="5" time="10" testtype="users" totaliterations="50"/>
+      <round name="G2M_Pub_TC11_DryRun_01" totalusers="5" time="5" testtype="users" totaliterations="50"/>
     </controller>
     <testcase name="G2M_TC11_Pub_VF_FreeSearch" expand="yes">
       <test>
