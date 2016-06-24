@@ -64,11 +64,6 @@
         <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC11_FreeSearchTD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
-      </argument>
-    </dpl>
     <dpl name="G2M_TC12_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
@@ -149,13 +144,6 @@
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC11_Pub_VF_FreeSearch" expand="yes">
-      <test>
-        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds">
-          <argument name="TC11_FreeSearchTD" method="getNextData" dpl="TC11_FreeSearchTD"/>
-        </run>
-      </test>
-    </testcase>
     <testcase name="G2M_TC12_Pub_LookUpLotSearch" expand="yes">
       <test>
         <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds">
@@ -174,7 +162,6 @@
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="20"/>
       <testcase name="G2M_TC4_Pub_SalesList" users="20"/>
       <testcase name="G2M_TC5_Pub_HeaderSearch" users="20"/>
-      <testcase name="G2M_TC11_Pub_VF_FreeSearch" users="50"/>
       <testcase name="G2M_TC12_Pub_LookUpLotSearch" users="50"/>
     </iteration>
   </execution>
