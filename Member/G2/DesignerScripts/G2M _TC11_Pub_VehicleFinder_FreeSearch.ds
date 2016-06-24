@@ -79,7 +79,7 @@
 
 
 
-<step action="setSelected" value="&quot;$Year From&quot;" type="web" desc="Select Year From" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;$YearFrom&quot;" type="web" desc="Select Year From" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(4)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -103,7 +103,7 @@
 
 
 
-<step action="setSelected" value="&quot;$Year To&quot;" type="web" desc="Select Year To" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setSelected" value="&quot;$YearTo&quot;" type="web" desc="Select Year To" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(5)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
