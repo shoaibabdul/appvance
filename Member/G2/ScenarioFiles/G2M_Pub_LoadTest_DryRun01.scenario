@@ -117,8 +117,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_Pub_LT_200Users_01">
-      <round name="G2M_Pub_LT_200Users_01" totalusers="20" time="10" testtype="users" totaliterations="160"/>
+    <controller name="G2M_Pub_LT_DryRun_01">
+      <round name="G2M_Pub_LT_DryRun_01" totalusers="20" time="10" testtype="users" totaliterations="160"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -168,7 +168,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_Pub_LT_200Users_01" name="G2M_Pub_LT_200Users_01">
+    <iteration controller="G2M_Pub_LT_DryRun_01" name="G2M_Pub_LT_DryRun_01">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
