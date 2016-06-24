@@ -1,4 +1,4 @@
-VehicleTypes,Year From,Year To,Make
+VehicleTypes,YearFrom,YearTo,Make
 AUTOMOBILE,2006,2017,ACURA
 AUTOMOBILE,2007,2017,AUDI
 AUTOMOBILE,2008,2017,BMW
