@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='DeleteMe' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/vehicleFinder[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Vehicle Finder')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(23)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/locationsList&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Brokers and Market Makers&quot;)" selected="true"/>
+		<accessor type="click" value="link(36)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/brokersmarketmakers/1&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Brokers and Market Makers')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[7]/ul/li[4]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/home.html#/brokersmarketmakers/1')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/ul/li[4]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
