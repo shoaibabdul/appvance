@@ -266,19 +266,17 @@
 
 
 
-<step action='' value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Sel Checkbox" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;paymentType&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(3)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;edit_input form-control ng-untouched ng-valid ng-valid-required ng-dirty ng-valid-parse&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;Money Order&quot;)" selected="false"/>
-		<accessor type='' value="option(&quot;string:M&quot;)" selected="false"/>
-		<accessor type='' value="option(593)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;terms&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;submit_check&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//option[@value='string:M']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='tab2']/div[2]/div/div[1]/form/ul/li[1]/span/select/option[2]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//span/select/option[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='terms']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='tab2']/div[2]/div/div[1]/form/div[2]/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -295,17 +293,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk Save button" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;terms&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;submit_check&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(0)" selected="false"/>
+		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-lblue&quot;)" selected="false"/>
+		<accessor type="click" value="submit(8)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='terms']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='tab2']/div[2]/div/div[1]/form/div[2]/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='tab2']/div[2]/div/div[2]/button[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[2]/div/div[2]/button[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -322,32 +318,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
-	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;btn btn-lblue&quot;)" selected="false"/>
-		<accessor type="click" value="submit(8)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='tab2']/div[2]/div/div[2]/button[2]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[2]/div/div[2]/button[2]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
 		<accessor type="click" value="link(6)" selected="false"/>
@@ -364,7 +335,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -375,7 +346,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -392,7 +363,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
