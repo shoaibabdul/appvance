@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_NewSprocs_DryRun_50Users</name>
+    <name>G2M_NewSprocs_LT_200Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -139,11 +139,11 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
-      <opt name="RampUpSeconds" value="1"/>
+      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpSeconds" value="3"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
-      <opt name="RampDownSeconds" value="1"/>
+      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownSeconds" value="3"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
       <opt name="ThinkTimeMax" value="8000"/>
@@ -176,7 +176,7 @@
   </options>
   <templates>
     <controller name="G2M_NewSprocs_50Users_01">
-      <round name="G2M_NewSprocs_50Users_01" totalusers="50" time="10" testtype="users" totaliterations="400"/>
+      <round name="G2M_NewSprocs_50Users_01" totalusers="200" time="30" testtype="users" totaliterations="1600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -295,23 +295,23 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_NewSprocs_50Users_01" name="G2M_NewSprocs_50Users_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="3"/>
-      <testcase name="G2M_TC7_Mem_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC8_Mem_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="3"/>
-      <testcase name="G2M_TC10_Mem_HeaderSearch" users="3"/>
-      <testcase name="TC11_G2M _Public_VehicleFinder_FreeSearch" users="3"/>
-      <testcase name="TC12_G2M _Public_LotLookUp" users="3"/>
-      <testcase name="TC13_G2M_Member_WatchList" users="3"/>
-      <testcase name="TC14_G2M_Member_PreferencesEdit" users="3"/>
-      <testcase name="TC15_G2M_Member_CompareLots" users="3"/>
-      <testcase name="TC16_G2M_Member_LotsWonLost" users="3"/>
-      <testcase name="TC17_G2M_Member_SavedSearchs" users="3"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="12"/>
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="12"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="12"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="12"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="12"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="12"/>
+      <testcase name="G2M_TC7_Mem_VehicleFinder" users="12"/>
+      <testcase name="G2M_TC8_Mem_LotNoSearch" users="12"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="12"/>
+      <testcase name="G2M_TC10_Mem_HeaderSearch" users="12"/>
+      <testcase name="TC11_G2M _Public_VehicleFinder_FreeSearch" users="12"/>
+      <testcase name="TC12_G2M _Public_LotLookUp" users="12"/>
+      <testcase name="TC13_G2M_Member_WatchList" users="12"/>
+      <testcase name="TC14_G2M_Member_PreferencesEdit" users="11"/>
+      <testcase name="TC15_G2M_Member_CompareLots" users="11"/>
+      <testcase name="TC16_G2M_Member_LotsWonLost" users="11"/>
+      <testcase name="TC17_G2M_Member_SavedSearchs" users="11"/>
     </iteration>
   </execution>
   <logs>
