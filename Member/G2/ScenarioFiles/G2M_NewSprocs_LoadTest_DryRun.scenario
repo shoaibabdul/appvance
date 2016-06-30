@@ -39,7 +39,6 @@
     <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
     <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC9_Mem_SalesList.ds" cache="false"/>
     <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
-    <resource name="G2M _TC11_Pub_VF_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VF_FreeSearch.ds" cache="false"/>
     <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" cache="false"/>
     <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
     <resource name="G2M_TC13_Mem_WatchList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC13_Mem_WatchList.ds" cache="false"/>
