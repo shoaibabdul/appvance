@@ -326,7 +326,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk CurrentDate" isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk CurrentDateSale" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;06/30/2016&quot;)" selected="true"/>
 		<accessor type="click" value="link(72)" selected="false"/>
@@ -380,7 +380,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk FutureDate" isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk FutureDateSale" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;07/12/2016&quot;)" selected="true"/>
 		<accessor type="click" value="link(174)" selected="false"/>
