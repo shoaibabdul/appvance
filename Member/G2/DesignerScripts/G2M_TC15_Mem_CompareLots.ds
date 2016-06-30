@@ -188,18 +188,17 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Sel Checkbox1" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
-		<accessor type="click" value="link(6)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/dashboard&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;ng-binding[1]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;lot-select&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14647856&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(137)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/dashboard')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='lot-select']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[1]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[1]/div/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -216,7 +215,142 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Sel Checkbox2" isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[1]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14647966&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(138)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14647966']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[2]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox3" isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[2]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14648266&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(139)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14648266']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[3]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox4" isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[3]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14648376&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(140)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14648376']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[4]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[4]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Compare button" isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Compare&quot;)" selected="true"/>
+		<accessor type="click" value="link(94)" selected="false"/>
+		<accessor type="click" value="link(&quot;btn btn-black[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Compare')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div[1]/div/div[2]/div[3]/div[1]/div[1]/ul/li[2]/span/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
+		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/dashboard&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/dashboard')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -233,7 +367,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
