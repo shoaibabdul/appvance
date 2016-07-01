@@ -256,7 +256,7 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC!3_Member_WatchList" expand="yes">
+    <testcase name="G2M_TC13_Member_WatchList" expand="yes">
       <test>
         <run name="Untitled13" testclass="sahi" method="chrome" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds">
           <argument name="TC13_TestData" method="getNextData" dpl="TC13_TestData"/>
@@ -307,7 +307,7 @@
       <testcase name="G2M_TC10_Mem_HeaderSearch" users="3"/>
       <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="3"/>
       <testcase name="G2M _TC12_Public_LotLookUp" users="3"/>
-      <testcase name="G2M_TC!3_Member_WatchList" users="3"/>
+      <testcase name="G2M_TC13_Member_WatchList" users="3"/>
       <testcase name="G2M_TC14_Member_PreferencesEdit" users="3"/>
       <testcase name="G2M_TC15_Member_CompareLots" users="3"/>
       <testcase name="G2M_TC16_Member_LotsWonLost" users="3"/>
