@@ -85,7 +85,7 @@
 
 
 
-<step action="setValue" value="&quot;$110588&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;110588&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
