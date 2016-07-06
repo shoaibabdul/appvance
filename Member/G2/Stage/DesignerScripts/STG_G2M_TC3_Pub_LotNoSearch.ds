@@ -6,7 +6,7 @@
 
 <dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" exectype="runstepbystep" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://g2-member-stg1.crashedtoys.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter Lot No " isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;37949055&quot;" type="web" desc="Enter Lot No " isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
