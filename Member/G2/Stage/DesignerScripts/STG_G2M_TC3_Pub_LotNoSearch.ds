@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;27197586&quot;" type="web" desc="Enter Lot No " isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;32155705&quot;" type="web" desc="Enter Lot No " isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
