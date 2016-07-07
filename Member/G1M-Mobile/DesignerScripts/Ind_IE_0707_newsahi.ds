@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='Ind_IE_0707_newsahi' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.in/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="clickXY" value="9,18" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="clickXY" value="image(&quot;png[4]&quot;)" selected="true"/>
+		<accessor type="clickXY" value="image(5)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAC3ElEQVR4AeXYT0hUURQG8GtYY01TSkaEtNAGF1FBLaJ/EFQmFVkEraxNJAWRGNHCkgr7QxAYRAwqQUWaWGOLCAWjgv64iGbTxJA2kVgRLUoLIjPs9S2+4DF437vMuTMOJPxAOeee+6Fy572r/puvSMuVjdAM/eCk+ATtsBumgkqXEizewyAOvYAWOAOn4BI8SAneCPnZCloKMW4ch2qY5tGfBxugm2u+w6ZMB10LDu1y1wytcv2LHM5U0DXc4C3MByVwk7OO2A46h4M/QgCUBW2cudlm0D4OnWfQOx1ChnMH4TcU2AhawZCHfPoOQgIcl05Y4bEmzL6IjaD9MOJRL4MBbvgGmuA83HIFPuax/h57ZkiCLuSQE5r6bPjKnsoJ6iFo85mxjPUaSdCjHBL2+W0s9plzh32LNPUfcF8S9DaMexz8DrSC8lHA3g5NvRdGJUFjkNTU9nLzpaAMPIVfmtplcCRBB+C5plbP4cWGQa95hDknDRqHhKa2j8OXGAZ9AmOaWpM0aDf89DkRmg1CBtjbqalH4Y8k6FluUKip97Be7jOnw+d0GIJXkqBV3GCLpl4EI+ypmKAehKusN2pmBFmPSIIWGvx5w/COfQm4AKf/HfR00mP9TvZUST9C4/DNoK8OkuC4dMFqn3V32RuQBj3AQdzQVxBCMMWgN5+ze208lAQ5rAeUZTWcvV4clKL6w13kMwzbfHAu032uC1Ry5n5rQekhB8+yFHRQ82EiDlrOoNcthNzOWbXWg1IXNygVBh2GL5l8ry9i0GeCkA2csVUe1GyjHWmsLebavmzdPX2A0TQuvh4xaEm2gi7nhu2gDFVzTX22b/Muam869A83r7N+7UhDMA5Bw5uWkskKGmaAxx49x03e2+VBzZ+uGjxuAKOgJjUo3WCgdaBoJozBe8jLiaCUTLlDesmfF4DKpaBzGSwGrfx+G2u5E5RWgkN1oHIyKNXq3yjlQXPeX34rxrEw8kfKAAAAAElFTkSuQmCC')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[3]/div/div[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[3]/div/div[1]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="span(4)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-bars&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[1]/div[2]/div[3]/span[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="clickXY" value="23,0" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="clickXY" value="image(&quot;png[6]&quot;)" selected="true"/>
+		<accessor type="clickXY" value="image(6)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAQAAABvygHQAAAA40lEQVR4Ae3XrWrDYBSH8QOBipiIklIRWVsaN1PRiwj0BnoBvY/a3kGpTaGqapuN2mBykRODqMH80y9VDiWk50QU8n/8z77vkecfbzyyfwQR7vXJmlnDFlCHLpGGpe2iHTol8EcrdvSQm3IyGzqmYq9YsaFn9pcDoS8qjPjhldAXvbLvRL6okFBSEHmgmu37osKQr1OxLyrEF3ZgRTVbUJL4okLEB9/e6At/bKyoJrcEdtROalSTZlSTZlSTZlSTZlSTdlSRfuhEk3a00iQ5me8T3X17OnRF2rB5HWo7JPxrBT0CPZ0mO6Keb9IAAAAASUVORK5CYII=')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div/div/div[4]/div[2]/a[2]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div[2]/a[2]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;Member Sign In Sign-in to Copart now so you can start bidding and winning! Forgot your username or password? Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="div(18)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;G1MM002@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;UserName&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='UserName']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/form/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;copart123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='Password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/form/input[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(0)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Sign In&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/form/div[2]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;LOCATIONS&quot;)" selected="true"/>
+		<accessor type="click" value="div(33)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[3]/div/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[3]/div/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="span(4)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-bars&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[1]/div[2]/div[3]/span[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="clickXY" value="19,3" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="clickXY" value="image(&quot;png[8]&quot;)" selected="true"/>
+		<accessor type="clickXY" value="image(8)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAQAAABvygHQAAAA40lEQVR4Ae3XrWrDYBSH8QOBipiIklIRWVsaN1PRiwj0BnoBvY/a3kGpTaGqapuN2mBykRODqMH80y9VDiWk50QU8n/8z77vkecfbzyyfwQR7vXJmlnDFlCHLpGGpe2iHTol8EcrdvSQm3IyGzqmYq9YsaFn9pcDoS8qjPjhldAXvbLvRL6okFBSEHmgmu37osKQr1OxLyrEF3ZgRTVbUJL4okLEB9/e6At/bKyoJrcEdtROalSTZlSTZlSTZlSTZlSTdlSRfuhEk3a00iQ5me8T3X17OnRF2rB5HWo7JPxrBT0CPZ0mO6Keb9IAAAAASUVORK5CYII=')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div/div/div[5]/div[2]/a[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/div[2]/a[1]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
