@@ -71,7 +71,7 @@
 
 
 
-<step action="setValue" value="&quot;G1MM002@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="node.value" value="&quot;G1MM002@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;UserName&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(0)" selected="false"/>
@@ -85,7 +85,7 @@
 
 
 
-<step action="setValue" value="&quot;copart123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="node.value" value="&quot;copart123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(0)" selected="false"/>
