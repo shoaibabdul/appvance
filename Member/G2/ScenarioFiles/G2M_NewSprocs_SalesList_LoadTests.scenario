@@ -95,7 +95,7 @@
   </options>
   <templates>
     <controller name="G2M_NewSprocs_SalesList_01">
-      <round name="G2M_NewSprocs_SalesList_01" totalusers="50" time="30" testtype="users" totaliterations="500"/>
+      <round name="G2M_NewSprocs_SalesList_01" totalusers="50" time="10" testtype="users" totaliterations="500"/>
     </controller>
     <testcase name="G2M_TC4_Pub_SalesList" expand="yes">
       <test>
