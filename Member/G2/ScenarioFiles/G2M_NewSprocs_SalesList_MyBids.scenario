@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_NewSprocs_LT_200Users</name>
+    <name>G2M_NewSprocs_SalesList_MyBids_200Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -30,28 +30,9 @@
   </basics>
   <resources>
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
-    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
-    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
     <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
-    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
     <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC6_Mem_HPNavigation.ds" cache="false"/>
-    <resource name="G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC7_Mem_VehicleFinder.ds" cache="false"/>
-    <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
     <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC9_Mem_SalesList.ds" cache="false"/>
-    <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
-    <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" cache="false"/>
-    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
-    <resource name="G2M_TC13_Mem_WatchList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC13_Mem_WatchList.ds" cache="false"/>
-    <resource name="G2M_TC14_Mem_PreferencesEditSave.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC14_Mem_PreferencesEditSave.ds" cache="false"/>
-    <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC15_Mem_CompareLots.ds" cache="false"/>
-    <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds" cache="false"/>
-    <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC7_VehicleFinder.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC8_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC11_VF_FreeSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -120,8 +101,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_NewSprocs_LT_200_01">
-      <round name="G2M_NewSprocs_LT_200_01" totalusers="200" time="30" testtype="users" totaliterations="1600"/>
+    <controller name="G2M_SalesList_MyBids_200Users_01">
+      <round name="G2M_SalesList_MyBids_200Users_01" totalusers="200" time="30" testtype="users" totaliterations="1600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -147,22 +128,16 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC16_Member_LotsWonLost" expand="yes">
-      <test>
-        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds"/>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_NewSprocs_LT_200_01" name="G2M_NewSprocs_LT_200_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="12"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="12"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="12"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="12"/>
-      <testcase name="G2M_TC16_Member_LotsWonLost" users="11"/>
+    <iteration controller="G2M_SalesList_MyBids_200Users_01" name="G2M_SalesList_MyBids_200Users_01">
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="50"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="50"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="50"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="50"/>
     </iteration>
   </execution>
   <logs>
