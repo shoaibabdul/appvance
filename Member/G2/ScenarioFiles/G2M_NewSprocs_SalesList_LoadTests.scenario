@@ -95,7 +95,7 @@
   </options>
   <templates>
     <controller name="G2M_NewSprocs_SalesList_01">
-      <round name="G2M_NewSprocs_SalesList_01" totalusers="50" time="10" testtype="users" totaliterations="500"/>
+      <round name="G2M_NewSprocs_SalesList_01" totalusers="10" time="10" testtype="users" totaliterations="20"/>
     </controller>
     <testcase name="G2M_TC4_Pub_SalesList" expand="yes">
       <test>
@@ -115,8 +115,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_NewSprocs_SalesList_01" name="G2M_NewSprocs_SalesList_01">
-      <testcase name="G2M_TC4_Pub_SalesList" users="25"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="25"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="5"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="5"/>
     </iteration>
   </execution>
   <logs>
