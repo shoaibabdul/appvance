@@ -331,7 +331,8 @@
 		<accessor type="click" value="link(&quot;07/01/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(103)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/23/2016-07-01?location=CT%20-%20HARTFORD&amp;saleDate=07/01/2016%2007:00%20AM%20PDT&amp;liveAuction=true&amp;from=/salesListResult&amp;yardNum=23&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/07/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/07/2016&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;07/11/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/01/2016')]&quot;" selected="true"/>
@@ -381,36 +382,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk FutureDateLink" isThinkTime='false' isCommented='false' sequence="28">
-	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/12/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(173)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/311/2016-07-12?location=MN%20-%20CRASHEDTOYS%20EAST%20BETHEL&amp;saleDate=07/12/2016%2011:00%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=311&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/18/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/08/2016&quot;)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'07/12/2016')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[128]/td[6]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/311/2016-07-12?location=MN - CRASHEDTOYS EAST BETHEL&amp;saleDate=07/12/2016 11:00 AM PDT&amp;from=/salesListResult&amp;yardNum=311')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[6]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
@@ -425,7 +397,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
