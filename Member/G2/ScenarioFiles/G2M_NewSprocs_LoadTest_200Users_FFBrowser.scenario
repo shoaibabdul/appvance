@@ -132,6 +132,11 @@
         <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
+    <dpl name="TC16_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
   </datasources>
   <options>
     <options type="apc">
@@ -279,7 +284,9 @@
     </testcase>
     <testcase name="G2M_TC16_Member_LotsWonLost" expand="yes">
       <test>
-        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds"/>
+        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds">
+          <argument name="TC16_TD" method="getNextData" dpl="TC16_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_TC17_Member_SavedSearchs" expand="yes">
