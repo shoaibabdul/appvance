@@ -26,7 +26,7 @@
     <creator>Balram</creator>
     <links/>
     <versions>v1.1</versions>
-    <categorization>G2Member Project</categorization>
+    <categorization>G2M_StgEnv</categorization>
   </basics>
   <resources>
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
@@ -72,6 +72,8 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC3_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC7_VehicleFinder.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
@@ -96,14 +98,14 @@
         <argument name="file" value="STG_G2M_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2M_TC6" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC6" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2M_TC7" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC7" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
+        <argument name="file" value="STG_G2M_TC7_VehicleFinder.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC8" type="HashDPL" langtype="java" method="setup">
@@ -229,14 +231,14 @@
     <testcase name="G2M_TC6_Mem_HPNavigation" expand="yes">
       <test>
         <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC6_Mem_HPNav.ds">
-          <argument name="G2M_TC6" method="getNextData" dpl="G2M_TC6"/>
+          <argument name="STG_G2M_TC6" method="getNextData" dpl="STG_G2M_TC6"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC7_Mem_VehicleFinder" expand="yes">
       <test>
         <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC7_Mem_VehicleFinder.ds">
-          <argument name="G2M_TC7" method="getNextData" dpl="G2M_TC7"/>
+          <argument name="STG_G2M_TC7" method="getNextData" dpl="STG_G2M_TC7"/>
         </run>
       </test>
     </testcase>
