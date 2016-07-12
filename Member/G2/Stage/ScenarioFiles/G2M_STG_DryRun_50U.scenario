@@ -162,7 +162,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="ReportThinkTime" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
       <opt name="AddThinkTimeToStep" value="false"/>
     </options>
     <options type="selenium">
@@ -212,49 +212,49 @@
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC5_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC6_Mem_HPNavigation" expand="yes">
+    <testcase name="STG_G2M_TC6_Mem_HPNav" expand="yes">
       <test>
         <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC6_Mem_HPNav.ds">
           <argument name="STG_G2M_TC6" method="getNextData" dpl="STG_G2M_TC6"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC7_Mem_VehicleFinder" expand="yes">
+    <testcase name="STG_G2M_TC7_Mem_VF" expand="yes">
       <test>
         <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC7_Mem_VehicleFinder.ds">
           <argument name="STG_G2M_TC7" method="getNextData" dpl="STG_G2M_TC7"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC8_Mem_LotNoSearch" expand="yes">
+    <testcase name="STG_G2M_TC8_Mem_LotSearch" expand="yes">
       <test>
         <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC8_Mem_LotNoSearch.ds">
           <argument name="STG_G2M_TC8" method="getNextData" dpl="STG_G2M_TC8"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC9_Mem_SalesList" expand="yes">
+    <testcase name="STG_G2M_TC9_Mem_Saleslist" expand="yes">
       <test>
         <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC9_Mem_SalesList.ds">
           <argument name="STG_G2M_TC9" method="getNextData" dpl="STG_G2M_TC9"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC10_Mem_HeaderSearch" expand="yes">
+    <testcase name="STG_G2M_TC10_Mem_HSearch" expand="yes">
       <test>
         <run name="Untitled10" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC10_Mem_HeaderSearch.ds">
           <argument name="STG_G2M_TC10" method="getNextData" dpl="STG_G2M_TC10"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" expand="yes">
+    <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" expand="yes">
       <test>
         <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds">
           <argument name="STG_G2M_TC11" method="getNextData" dpl="STG_G2M_TC11"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M _TC12_Public_LotLookUp" expand="yes">
+    <testcase name="STG_G2M _TC12_Pub_LotLookUp" expand="yes">
       <test>
         <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC12_Pub_LotLookUp_Search.ds">
           <argument name="STG_G2M_TC12" method="getNextData" dpl="STG_G2M_TC12"/>
@@ -307,13 +307,13 @@
       <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="3"/>
       <testcase name="STG_G2M_TC4_Pub_SalesList" users="3"/>
       <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="3"/>
-      <testcase name="G2M_TC7_Mem_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC8_Mem_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="3"/>
-      <testcase name="G2M_TC10_Mem_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="3"/>
-      <testcase name="G2M _TC12_Public_LotLookUp" users="3"/>
+      <testcase name="STG_G2M_TC6_Mem_HPNav" users="3"/>
+      <testcase name="STG_G2M_TC7_Mem_VF" users="3"/>
+      <testcase name="STG_G2M_TC8_Mem_LotSearch" users="3"/>
+      <testcase name="STG_G2M_TC9_Mem_Saleslist" users="3"/>
+      <testcase name="STG_G2M_TC10_Mem_HSearch" users="3"/>
+      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="3"/>
+      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="3"/>
       <testcase name="G2M_TC13_Member_WatchList" users="3"/>
       <testcase name="G2M_TC14_Member_PreferencesEdit" users="3"/>
       <testcase name="G2M_TC15_Member_CompareLots" users="3"/>
