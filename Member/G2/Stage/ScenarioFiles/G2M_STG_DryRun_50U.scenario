@@ -48,6 +48,21 @@
     <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds" cache="false"/>
     <resource name="STG_G2M_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC1_Pub_HPNav.ds" cache="false"/>
     <resource name="STG_G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
+    <resource name="STG_G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC4_Pub_SalesList.ds" cache="false"/>
+    <resource name="STG_G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC6_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC6_Mem_HPNav.ds" cache="false"/>
+    <resource name="STG_G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC7_Mem_VehicleFinder.ds" cache="false"/>
+    <resource name="STG_G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC9_Mem_SalesList.ds" cache="false"/>
+    <resource name="STG_G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC12_Pub_LotLookUp_Search.ds" cache="false"/>
+    <resource name="STG_G2M_TC13_Mem_WatchList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC13_Mem_WatchList.ds" cache="false"/>
+    <resource name="STG_G2M_TC14_Mem_PrefEditSave.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC14_Mem_PrefEditSave.ds" cache="false"/>
+    <resource name="STG_G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC15_Mem_CompareLots.ds" cache="false"/>
+    <resource name="STG_G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC16_Mem_LotsWonLost.ds" cache="false"/>
+    <resource name="STG_G2M_TC17_Mem_SavedSearches.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC17_Mem_SavedSearches.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC7_VehicleFinder.csv" cache="false"/>
@@ -56,6 +71,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC2_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC3_LotNumbers.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
@@ -75,9 +91,9 @@
         <argument name="file" value="STG_G2M_TC2_VehicleFinder.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2M_TC3" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC3" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
+        <argument name="file" value="STG_G2M_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC6" type="HashDPL" langtype="java" method="setup">
@@ -186,108 +202,108 @@
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC2_Pub_VehicleFinder" expand="yes">
+    <testcase name="STG_G2M_TC2_Pub_VehicleFinder" expand="yes">
       <test>
         <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC2_Pub_VehicleFinder.ds">
           <argument name="STG_G2M_TC2" method="getNextData" dpl="STG_G2M_TC2"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC3_Pub_LotNoSearch" expand="yes">
+    <testcase name="STG_G2M_TC3_Pub_LotNoSearch" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC3_Pub_LotNoSearch.ds">
-          <argument name="G2M_TC3" method="getNextData" dpl="G2M_TC3"/>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC3_Pub_LotNoSearch.ds">
+          <argument name="STG_G2M_TC3" method="getNextData" dpl="STG_G2M_TC3"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC4_Pub_SalesList" expand="yes">
+    <testcase name="STG_G2M_TC4_Pub_SalesList" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds"/>
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC4_Pub_SalesList.ds"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC5_Pub_HeaderSearch" expand="yes">
+    <testcase name="STG_G2M_TC5_Pub_HeaderSearch" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds"/>
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC5_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
     <testcase name="G2M_TC6_Mem_HPNavigation" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds">
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC6_Mem_HPNav.ds">
           <argument name="G2M_TC6" method="getNextData" dpl="G2M_TC6"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC7_Mem_VehicleFinder" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC7_Mem_VehicleFinder.ds">
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC7_Mem_VehicleFinder.ds">
           <argument name="G2M_TC7" method="getNextData" dpl="G2M_TC7"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC8_Mem_LotNoSearch" expand="yes">
       <test>
-        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC8_Mem_LotNoSearch.ds">
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC8_Mem_LotNoSearch.ds">
           <argument name="G2M_TC8" method="getNextData" dpl="G2M_TC8"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC9_Mem_SalesList" expand="yes">
       <test>
-        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC9_Mem_SalesList.ds">
+        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC9_Mem_SalesList.ds">
           <argument name="G2M_TC9" method="getNextData" dpl="G2M_TC9"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC10_Mem_HeaderSearch" expand="yes">
       <test>
-        <run name="Untitled10" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC10_Mem_HeaderSearch.ds">
+        <run name="Untitled10" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC10_Mem_HeaderSearch.ds">
           <argument name="G2M_TC10" method="getNextData" dpl="G2M_TC10"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" expand="yes">
       <test>
-        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds">
+        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds">
           <argument name="TC11_TestData" method="getNextData" dpl="TC11_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M _TC12_Public_LotLookUp" expand="yes">
       <test>
-        <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds">
+        <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC12_Pub_LotLookUp_Search.ds">
           <argument name="TC12_Testdata" method="getNextData" dpl="TC12_Testdata"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC13_Member_WatchList" expand="yes">
       <test>
-        <run name="Untitled13" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds">
+        <run name="Untitled13" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC13_Mem_WatchList.ds">
           <argument name="TC13_TestData" method="getNextData" dpl="TC13_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC14_Member_PreferencesEdit" expand="yes">
       <test>
-        <run name="Untitled14" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds">
+        <run name="Untitled14" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC14_Mem_PrefEditSave.ds">
           <argument name="TC14_TestData" method="getNextData" dpl="TC14_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC15_Member_CompareLots" expand="yes">
       <test>
-        <run name="Untitled15" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds">
+        <run name="Untitled15" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC15_Mem_CompareLots.ds">
           <argument name="TC15_TestData" method="getNextData" dpl="TC15_TestData"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC16_Member_LotsWonLost" expand="yes">
       <test>
-        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds"/>
+        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC16_Mem_LotsWonLost.ds"/>
       </test>
     </testcase>
     <testcase name="G2M_TC17_Member_SavedSearchs" expand="yes">
       <test>
-        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC17_Mem_SavedSearchs.ds">
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC17_Mem_SavedSearches.ds">
           <argument name="TC17_TestData" method="getNextData" dpl="TC17_TestData"/>
         </run>
       </test>
@@ -299,10 +315,10 @@
   <execution type="loadtest">
     <iteration controller="STG_G2M_DryRun_50U_01" name="STG_G2M_DryRun_50U_01">
       <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="2"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="3"/>
+      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="3"/>
+      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="3"/>
+      <testcase name="STG_G2M_TC4_Pub_SalesList" users="3"/>
+      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="3"/>
       <testcase name="G2M_TC6_Mem_HPNavigation" users="3"/>
       <testcase name="G2M_TC7_Mem_VehicleFinder" users="3"/>
       <testcase name="G2M_TC8_Mem_LotNoSearch" users="3"/>
