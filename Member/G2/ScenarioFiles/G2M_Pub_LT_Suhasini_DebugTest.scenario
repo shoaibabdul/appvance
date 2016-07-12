@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_Pub_LoadTest_DryRun01</name>
+    <name>G2M_Pub_LT_Suhasini</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -32,17 +32,11 @@
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
     <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
     <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
-    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
-    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
-    <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" cache="false"/>
-    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC11_VF_FreeSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="10" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -62,16 +56,6 @@
     <dpl name="G2M_TC3" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC11_TestData" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2M_TC12_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -117,8 +101,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_Pub_LT_DryRun_01">
-      <round name="G2M_Pub_LT_DryRun_01" totalusers="20" time="10" testtype="users" totaliterations="160"/>
+    <controller name="G2M_Pub_Suhasini_01">
+      <round name="G2M_Pub_Suhasini_01" totalusers="10" time="10" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -139,43 +123,15 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC4_Pub_SalesList" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds"/>
-      </test>
-    </testcase>
-    <testcase name="G2M_TC5_Pub_HeaderSearch" expand="yes">
-      <test>
-        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds"/>
-      </test>
-    </testcase>
-    <testcase name="G2M_TC11_Pub_VF_FreeSearch" expand="yes">
-      <test>
-        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds">
-          <argument name="TC11_TestData" method="getNextData" dpl="TC11_TestData"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="G2M_TC12_Pub_LookUpLotSearch" expand="yes">
-      <test>
-        <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds">
-          <argument name="G2M_TC12_TD" method="getNextData" dpl="G2M_TC12_TD"/>
-        </run>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_Pub_LT_DryRun_01" name="G2M_Pub_LT_DryRun_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
+    <iteration controller="G2M_Pub_Suhasini_01" name="G2M_Pub_Suhasini_01">
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="4"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC11_Pub_VF_FreeSearch" users="3"/>
-      <testcase name="G2M_TC12_Pub_LookUpLotSearch" users="3"/>
     </iteration>
   </execution>
   <logs>
