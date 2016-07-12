@@ -74,9 +74,9 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC7_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC8_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC11_VF_FreeSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
@@ -126,34 +126,39 @@
         <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="STG_TC11_TestData" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC11" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="STG_G2M_TC11_VF_FreeSearch.csv"/>
       </argument>
     </dpl>
-    <dpl name="STG_TC12_Testdata" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC12" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="STG_G2M_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC13_TestData" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC13" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC14_TestData" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC14" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC15_TestData" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC15" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC17_TestData" type="HashDPL" langtype="java" method="setup">
+    <dpl name="STG_G2M_TC17" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="STG_G2M_TC16" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -269,47 +274,49 @@
     <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" expand="yes">
       <test>
         <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds">
-          <argument name="STG_TC11_TestData" method="getNextData" dpl="STG_TC11_TestData"/>
+          <argument name="STG_G2M_TC11" method="getNextData" dpl="STG_G2M_TC11"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M _TC12_Public_LotLookUp" expand="yes">
       <test>
         <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC12_Pub_LotLookUp_Search.ds">
-          <argument name="STG_TC12_Testdata" method="getNextData" dpl="STG_TC12_Testdata"/>
+          <argument name="STG_G2M_TC12" method="getNextData" dpl="STG_G2M_TC12"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC13_Member_WatchList" expand="yes">
       <test>
         <run name="Untitled13" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC13_Mem_WatchList.ds">
-          <argument name="TC13_TestData" method="getNextData" dpl="TC13_TestData"/>
+          <argument name="STG_G2M_TC13" method="getNextData" dpl="STG_G2M_TC13"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC14_Member_PreferencesEdit" expand="yes">
       <test>
         <run name="Untitled14" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC14_Mem_PrefEditSave.ds">
-          <argument name="TC14_TestData" method="getNextData" dpl="TC14_TestData"/>
+          <argument name="STG_G2M_TC14" method="getNextData" dpl="STG_G2M_TC14"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC15_Member_CompareLots" expand="yes">
       <test>
         <run name="Untitled15" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC15_Mem_CompareLots.ds">
-          <argument name="TC15_TestData" method="getNextData" dpl="TC15_TestData"/>
+          <argument name="STG_G2M_TC15" method="getNextData" dpl="STG_G2M_TC15"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC16_Member_LotsWonLost" expand="yes">
       <test>
-        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC16_Mem_LotsWonLost.ds"/>
+        <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC16_Mem_LotsWonLost.ds">
+          <argument name="STG_G2M_TC16" method="getNextData" dpl="STG_G2M_TC16"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_TC17_Member_SavedSearchs" expand="yes">
       <test>
         <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC17_Mem_SavedSearches.ds">
-          <argument name="TC17_TestData" method="getNextData" dpl="TC17_TestData"/>
+          <argument name="STG_G2M_TC17" method="getNextData" dpl="STG_G2M_TC17"/>
         </run>
       </test>
     </testcase>
