@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.in/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.in/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Select Dropdown" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="span(2)" selected="true"/>
 		<accessor type="click" value="span(&quot;fa fa-bars&quot;)" selected="false"/>
@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Register link" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Register&quot;)" selected="true"/>
 		<accessor type="click" value="link(5)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="setValue" value="&quot;ballu003@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;ballu003@mailinator.com&quot;" type="web" desc="Enter Email ID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;Email&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(0)" selected="false"/>
@@ -104,7 +104,7 @@
 
 
 
-<step action="setValue" value="&quot;ballu003@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;ballu003@mailinator.com&quot;" type="web" desc="ReEnter Email ID" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;ConfirmEmail&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(1)" selected="false"/>
@@ -129,7 +129,7 @@
 
 
 
-<step action="setValue" value="&quot;Balram003&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;Balram003&quot;" type="web" desc="Enter FirstName" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
@@ -154,7 +154,7 @@
 
 
 
-<step action="setValue" value="&quot;Anthareddy003&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;Anthareddy003&quot;" type="web" desc="Enter LastName" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;LastName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
@@ -179,7 +179,7 @@
 
 
 
-<step action="setValue" value="&quot;Copart&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="setValue" value="&quot;Copart&quot;" type="web" desc="Enter CompanyName" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;Company&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(2)" selected="false"/>
@@ -204,7 +204,7 @@
 
 
 
-<step action="setSelected" value="&quot;India&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="setSelected" value="&quot;India&quot;" type="web" desc="Select Mailing Country" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;mailingAddressCountry&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(0)" selected="false"/>
@@ -229,7 +229,7 @@
 
 
 
-<step action="setValue" value="&quot;14185 Dallas Pkwy&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="setValue" value="&quot;14185 Dallas Pkwy&quot;" type="web" desc="Enter Street Address" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;mailingAddressStreet&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(3)" selected="false"/>
@@ -254,7 +254,7 @@
 
 
 
-<step action="setValue" value="&quot;Hyderabad&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="setValue" value="&quot;Hyderabad&quot;" type="web" desc="Enter City" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;mailingAddressCity&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(4)" selected="false"/>
@@ -279,7 +279,7 @@
 
 
 
-<step action="setSelected" value="&quot;Telangana&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="setSelected" value="&quot;Telangana&quot;" type="web" desc="Enter State" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;mailingAddressState&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(1)" selected="false"/>
@@ -304,7 +304,7 @@
 
 
 
-<step action="setValue" value="&quot;500016&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="setValue" value="&quot;500016&quot;" type="web" desc="Enter ZipCode" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;mailingAddressZip&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(5)" selected="false"/>
@@ -329,7 +329,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Select Checkox1" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;sameAddress&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
@@ -355,7 +355,7 @@
 
 
 
-<step action="setSelected" value="&quot;India&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="setSelected" value="&quot;India&quot;" type="web" desc="Select TaxCountry" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(&quot;TaxCountry&quot;)" selected="true"/>
 		<accessor type="setSelected" value="select(4)" selected="false"/>
@@ -380,7 +380,7 @@
 
 
 
-<step action="setValue" value="&quot;5104495818&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="setValue" value="&quot;5104495818&quot;" type="web" desc="Enter Phone Number" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="setValue" value="numberbox(&quot;PhoneNumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="numberbox(0)" selected="false"/>
@@ -405,7 +405,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+<step action="click" value='' type="web" desc="Select Checkbox2" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;TermsAndConditions&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
@@ -431,7 +431,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc="Clk RegisterButton" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(0)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Register&quot;)" selected="false"/>
@@ -456,7 +456,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="Clk Continue Button" isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Continue[1]&quot;)" selected="true"/>
 		<accessor type="click" value="div(23)" selected="false"/>
@@ -480,7 +480,7 @@
 
 
 
-<step action="clickXY" value="19,25" type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+<step action="clickXY" value="19,25" type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
