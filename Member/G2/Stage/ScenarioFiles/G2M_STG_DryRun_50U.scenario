@@ -261,35 +261,35 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC13_Member_WatchList" expand="yes">
+    <testcase name="STG_G2M_TC13_Mem_WatchList" expand="yes">
       <test>
         <run name="Untitled13" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC13_Mem_WatchList.ds">
           <argument name="STG_G2M_TC13" method="getNextData" dpl="STG_G2M_TC13"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC14_Member_PreferencesEdit" expand="yes">
+    <testcase name="G2M_TC14_Mem_PrefEdit" expand="yes">
       <test>
         <run name="Untitled14" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC14_Mem_PrefEditSave.ds">
           <argument name="STG_G2M_TC14" method="getNextData" dpl="STG_G2M_TC14"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC15_Member_CompareLots" expand="yes">
+    <testcase name="G2M_TC15_Mem_CompareLots" expand="yes">
       <test>
         <run name="Untitled15" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC15_Mem_CompareLots.ds">
           <argument name="STG_G2M_TC15" method="getNextData" dpl="STG_G2M_TC15"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC16_Member_LotsWonLost" expand="yes">
+    <testcase name="STG_G2M_TC16_Mem_LotsWonLost" expand="yes">
       <test>
         <run name="Untitled16" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC16_Mem_LotsWonLost.ds">
           <argument name="STG_G2M_TC16" method="getNextData" dpl="STG_G2M_TC16"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC17_Member_SavedSearchs" expand="yes">
+    <testcase name="STG_G2M_TC17_Mem_SavedSearchs" expand="yes">
       <test>
         <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC17_Mem_SavedSearches.ds">
           <argument name="STG_G2M_TC17" method="getNextData" dpl="STG_G2M_TC17"/>
@@ -314,11 +314,11 @@
       <testcase name="STG_G2M_TC10_Mem_HSearch" users="3"/>
       <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="3"/>
       <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="3"/>
-      <testcase name="G2M_TC13_Member_WatchList" users="3"/>
-      <testcase name="G2M_TC14_Member_PreferencesEdit" users="3"/>
-      <testcase name="G2M_TC15_Member_CompareLots" users="3"/>
-      <testcase name="G2M_TC16_Member_LotsWonLost" users="3"/>
-      <testcase name="G2M_TC17_Member_SavedSearchs" users="3"/>
+      <testcase name="STG_G2M_TC13_Mem_WatchList" users="3"/>
+      <testcase name="G2M_TC14_Mem_PrefEdit" users="3"/>
+      <testcase name="G2M_TC15_Mem_CompareLots" users="3"/>
+      <testcase name="STG_G2M_TC16_Mem_LotsWonLost" users="3"/>
+      <testcase name="STG_G2M_TC17_Mem_SavedSearchs" users="3"/>
     </iteration>
   </execution>
   <logs>
