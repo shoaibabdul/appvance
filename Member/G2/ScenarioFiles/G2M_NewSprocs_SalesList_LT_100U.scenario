@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_NewSprocs_SalesList</name>
+    <name>G2M_NewSprocs_SalesList_100U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -34,7 +34,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
+    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="4" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -94,8 +94,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_NewSprocs_SalesList_01">
-      <round name="G2M_NewSprocs_SalesList_01" totalusers="100" time="30" testtype="users" totaliterations="200"/>
+    <controller name="G2M_NewSprocs_SL_100U_01">
+      <round name="G2M_NewSprocs_SL_100U_01" totalusers="100" time="30" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="G2M_TC4_Pub_SalesList" expand="yes">
       <test>
@@ -114,9 +114,9 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_NewSprocs_SalesList_01" name="G2M_NewSprocs_SalesList_01">
-      <testcase name="G2M_TC4_Pub_SalesList" users="25"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="25"/>
+    <iteration controller="G2M_NewSprocs_SL_100U_01" name="G2M_NewSprocs_SL_100U_01">
+      <testcase name="G2M_TC4_Pub_SalesList" users="50"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="50"/>
     </iteration>
   </execution>
   <logs>
