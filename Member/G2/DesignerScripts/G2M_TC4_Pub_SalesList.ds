@@ -328,19 +328,15 @@
 
 <step action="click" value='' type="web" desc="Clk CurrentSalesDate" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/01/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(103)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/23/2016-07-01?location=CT%20-%20HARTFORD&amp;saleDate=07/01/2016%2007:00%20AM%20PDT&amp;liveAuction=true&amp;from=/salesListResult&amp;yardNum=23&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/07/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/11/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;072016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/20/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/13/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(198)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/311/2016-07-13?location=MN%20-%20CRASHEDTOYS%20EAST%20BETHEL&amp;saleDate=07/13/2016%2001:00%20PM%20PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=311&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'07/01/2016')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[60]/td[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/23/2016-07-01?location=CT - HARTFORD&amp;saleDate=07/01/2016 07:00 AM PDT&amp;liveAuction=true&amp;from=/salesListResult&amp;yardNum=23')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'07/13/2016')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[150]/td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/311/2016-07-13?location=MN - CRASHEDTOYS EAST BETHEL&amp;saleDate=07/13/2016 01:00 PM PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=311')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[150]/td[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -361,12 +357,12 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
 		<accessor type="click" value="link(13)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/salesListResult')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
@@ -384,7 +380,60 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk FutureSalesDate" isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;07/14/2016[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(199)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/311/2016-07-14?location=MN%20-%20CRASHEDTOYS%20EAST%20BETHEL&amp;saleDate=07/14/2016%2001:00%20PM%20PDT&amp;from=/salesListResult&amp;yardNum=311&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[150]/td[6]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/311/2016-07-14?location=MN - CRASHEDTOYS EAST BETHEL&amp;saleDate=07/14/2016 01:00 PM PDT&amp;from=/salesListResult&amp;yardNum=311')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[150]/td[6]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SalesList" isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
+		<accessor type="click" value="link(13)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
@@ -399,7 +448,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
