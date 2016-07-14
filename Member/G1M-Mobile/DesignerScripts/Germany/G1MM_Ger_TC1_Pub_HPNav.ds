@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.de&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk Auctions" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;AUKTIONEN&quot;)" selected="true"/>
 		<accessor type="click" value="div(28)" selected="false"/>
@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Auctions After Today" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Auktionen in den nächsten Tagen&quot;)" selected="true"/>
 		<accessor type="click" value="div(23)" selected="false"/>
@@ -76,7 +76,7 @@
 
 
 
-<step action="clickXY" value="21,26" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="clickXY" value="21,26" type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
@@ -151,7 +151,7 @@
 
 
 
-<step action="clickXY" value="15,24" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="clickXY" value="15,24" type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
@@ -176,7 +176,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Quick Picks" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;SCHNELLSUCHE&quot;)" selected="true"/>
 		<accessor type="click" value="div(51)" selected="false"/>
@@ -200,7 +200,7 @@
 
 
 
-<step action="clickXY" value="18,22" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="clickXY" value="18,22" type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
