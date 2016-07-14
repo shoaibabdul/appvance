@@ -175,21 +175,20 @@
 
 
 
-<step action="clickXY" value="19,35" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Quick Picks" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;png[8]&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(9)" selected="false"/>
+		<accessor type="click" value="div(&quot;SELECCIONES RÁPIDAS&quot;)" selected="true"/>
+		<accessor type="click" value="div(51)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAADMklEQVR4Ad2ZS0hUURjHHa0ocioSUrCkwseyogiCspqtm6g26lSbmVrUziA3gRWIj8GIMhjTRM3Ilrby0cNa2CboReI26EVUkhFByfQtfovD4XrH880ZiIIfer97/v/zD+ee+c65Bf/9v+vp3kIhJqSEKeG7kLGY515KiKEp0KARVQvXrEBzwqSQFrqEy0KfMME9c2y3UJPPoBuEIWPCcSFBPauWsWOGfoi616ANxgSDQjV1DVXCgOHX4CvoDQyfCTup+WA7nhnmyCnoBEadHoJVC5GAeidzTGqDjmOQ8BCyVTgfcj/BXA9cg6YRnvQQ8iheO7KMS4Z9DIIEcQRtHkJW4vV1iePbGB/PFjTKwBkPIdcIH/Hrd9DNoImGBR1hUIWHoK+FDJx20FWgGVksaDkDbnsIOYrXCD93O+qH0ZUHBe3hZmmOIdvxqRPO8XuRo0cpup6goAvCkxxDnrLW3ffCK40XWRbsoPuYoD6HkDE8HnG9musOpV89+gNm0HaK65SmW9C/NVq5w9TqlJ5r0afMoE+Fb0rDVcIXTMuM+hVqBVrING0G/SmMK82eE2iPVX8pvBNWCMUGUWHzUrzJJNkIykRpRcg7aE9Y9RLqNvOOTQ4rEUGVHVILurMB98qES8JFOv5m4Q3jHzssV51BQVMOIeNo7hmf02IegJWLfJ3+YKmi1dMH7VmiOMF4m198+DdZ47dy/zP/EeoOf3rlw9REl9PCzy7Wyj/CXMASM6fuH3iY/CxPgOFdqzZLyF2+lqc2DEuUhnvRHzdq96kdUnqWoE8FfYUeU5peQL+e65tcn+FaQ2PQV2iEBmBaafpC+MTvzUzQyrWWaTJ5a/OWoWsSDoZ09Jo2Lx3WOA87mtaiGwzbSSob543+tiI0xzDroFNvRbSbu1E0HxQLum5zp9guR1jofzt0RF62y/aDlcxifIRxtR5CJvDq832kUyhcFZo8hnyoPSSbDNn3LBcqPYTs0B6S2fTm6dhxG54Z5vB+kDsgVGkDou03/Bp9H42XWkfjY0LS4Wg8iSYDt/DM28uGGqE77GUD9Pp/2aCjSNjPmcCUMB/y+qadsUX+X9/8Y/wFZH4ep00AdbsAAAAASUVORK5CYII=')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[8]/div/div[1]/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[8]/div/div[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[8]/div/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[8]/div/div[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+<step action="wait" value="12243" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -200,7 +199,7 @@
 
 
 
-<step action="clickXY" value="18,22" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="clickXY" value="21,25" type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
@@ -214,15 +213,12 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="wait" value='' selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
