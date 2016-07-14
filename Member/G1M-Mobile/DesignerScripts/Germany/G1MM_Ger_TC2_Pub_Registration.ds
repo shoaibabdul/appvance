@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="wait" value="5022" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -550,7 +550,7 @@
 
 
 
-<step action="wait" value="1447" type="web" desc='' isThinkTime="true" isCommented='false' sequence="44">
+<step action="wait" value="9757" type="web" desc='' isThinkTime="true" isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -561,31 +561,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="45">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;AUKTIONEN SUCHE STANDORTE € MEINE GEBOTE WATCHLISTE ERSTEIGERT VERLOREN SCHNELLSUCHE GESPEICHERTE SUCHAUFTRÄGE Besuchen Sie die Website&quot;)" selected="true"/>
-		<accessor type="click" value="div(23)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div[2]/div/div[2]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="9757" type="web" desc='' isThinkTime="true" isCommented='false' sequence="46">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="26,20" type="web" desc='' isThinkTime='false' isCommented='false' sequence="47">
+<step action="clickXY" value="26,20" type="web" desc='' isThinkTime='false' isCommented='false' sequence="45">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
