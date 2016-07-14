@@ -1,0 +1,196 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>G2M_STG_Pub_300U_LT</name>
+    <defaultdirectory>{scenario}</defaultdirectory>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <links/>
+    <versions>v1.1</versions>
+    <categorization>G2M_StgEnv</categorization>
+  </basics>
+  <resources>
+    <resource name="STG_G2M_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="STG_G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
+    <resource name="STG_G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC4_Pub_SalesList.ds" cache="false"/>
+    <resource name="STG_G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" cache="false"/>
+    <resource name="STG_G2M_TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC12_Pub_LotLookUp_Search.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC2_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC3_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC11_VF_FreeSearch.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
+  </resources>
+  <testnodes>
+    <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="12" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="STG_G2M_TC2" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_G2M_TC2_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="STG_G2M_TC3" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_G2M_TC3_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="STG_G2M_TC11" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_G2M_TC11_VF_FreeSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="STG_G2M_TC12" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="STG_G2M_TC12_LotNo_LookUpSearch.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SleepTime" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="3"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="3"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="ThinkTime" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
+    </options>
+    <options type="sahi">
+      <opt name="waitForPageToLoad" value="true"/>
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="port" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="STG_G2M_Pub_300U_LT_01">
+      <round name="STG_G2M_Pub_300U_LT_01" totalusers="300" time="30" testtype="users" totaliterations="600"/>
+    </controller>
+    <testcase name="STG_G2M_TC1_Pub_HPNavigation" expand="yes">
+      <test>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC1_Pub_HPNav.ds"/>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M_TC2_Pub_VehicleFinder" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC2_Pub_VehicleFinder.ds">
+          <argument name="STG_G2M_TC2" method="getNextData" dpl="STG_G2M_TC2"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M_TC3_Pub_LotNoSearch" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC3_Pub_LotNoSearch.ds">
+          <argument name="STG_G2M_TC3" method="getNextData" dpl="STG_G2M_TC3"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M_TC4_Pub_SalesList" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC4_Pub_SalesList.ds"/>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M_TC5_Pub_HeaderSearch" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC5_Pub_HeaderSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" expand="yes">
+      <test>
+        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds">
+          <argument name="STG_G2M_TC11" method="getNextData" dpl="STG_G2M_TC11"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="STG_G2M _TC12_Pub_LotLookUp" expand="yes">
+      <test>
+        <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="STG_G2M_TC12_Pub_LotLookUp_Search.ds">
+          <argument name="STG_G2M_TC12" method="getNextData" dpl="STG_G2M_TC12"/>
+        </run>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest">
+    <iteration controller="STG_G2M_Pub_300U_LT_01" name="STG_G2M_Pub_300U_LT_01">
+      <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="43"/>
+      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="43"/>
+      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="43"/>
+      <testcase name="STG_G2M_TC4_Pub_SalesList" users="43"/>
+      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="43"/>
+      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="43"/>
+      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="42"/>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+    </log>
+  </logs>
+  <integrations>
+    <integration type="RQM">
+      <opt name="Enabled" value="false"/>
+    </integration>
+  </integrations>
+  <notifications/>
+</testscenario>
