@@ -201,7 +201,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="span(7)" selected="true"/>
 		<accessor type="click" value="span(&quot;fa fa-angle-down&quot;)" selected="false"/>
@@ -300,7 +300,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="span(9)" selected="true"/>
 		<accessor type="click" value="span(&quot;fa fa-angle-down[1]&quot;)" selected="false"/>
