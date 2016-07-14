@@ -34,25 +34,12 @@
     <resource name="STG_G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
     <resource name="STG_G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC4_Pub_SalesList.ds" cache="false"/>
     <resource name="STG_G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
-    <resource name="STG_G2M_TC6_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC6_Mem_HPNav.ds" cache="false"/>
-    <resource name="STG_G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC7_Mem_VehicleFinder.ds" cache="false"/>
-    <resource name="STG_G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
-    <resource name="STG_G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC9_Mem_SalesList.ds" cache="false"/>
-    <resource name="STG_G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
     <resource name="STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC11_Pub_VehFind_FreeSearch.ds" cache="false"/>
     <resource name="STG_G2M_TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC12_Pub_LotLookUp_Search.ds" cache="false"/>
-    <resource name="STG_G2M_TC13_Mem_WatchList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC13_Mem_WatchList.ds" cache="false"/>
-    <resource name="STG_G2M_TC14_Mem_PrefEditSave.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC14_Mem_PrefEditSave.ds" cache="false"/>
-    <resource name="STG_G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC15_Mem_CompareLots.ds" cache="false"/>
-    <resource name="STG_G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC16_Mem_LotsWonLost.ds" cache="false"/>
-    <resource name="STG_G2M_TC17_Mem_SavedSearches.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/STG_G2M_TC17_Mem_SavedSearches.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC3_LotNumbers.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC7_VehicleFinder.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC8_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC11_VF_FreeSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
