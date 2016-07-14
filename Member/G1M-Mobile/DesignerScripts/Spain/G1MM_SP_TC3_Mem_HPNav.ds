@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.es&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.es&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -30,12 +30,12 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="span(2)" selected="true"/>
-		<accessor type="click" value="span(&quot;fa fa-bars&quot;)" selected="false"/>
+		<accessor type="click" value="div(&quot;Entrar&quot;)" selected="true"/>
+		<accessor type="click" value="div(13)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[1]/div[2]/div[3]/span[2]/div/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//span[2]/div/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[1]/div[2]/div[3]/span[1]/a/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
