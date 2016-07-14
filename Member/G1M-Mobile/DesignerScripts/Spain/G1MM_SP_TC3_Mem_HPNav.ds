@@ -213,7 +213,7 @@
 
 
 
-<step action="wait" value="18353" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -238,7 +238,7 @@
 
 
 
-<step action="wait" value="23207" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -263,7 +263,7 @@
 
 
 
-<step action="wait" value="17171" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -287,7 +287,7 @@
 
 
 
-<step action="wait" value="21106" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -312,7 +312,7 @@
 
 
 
-<step action="wait" value="13077" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -336,7 +336,7 @@
 
 
 
-<step action="wait" value="15083" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -361,7 +361,7 @@
 
 
 
-<step action="wait" value="14080" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -385,7 +385,7 @@
 
 
 
-<step action="wait" value="16085" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -410,7 +410,7 @@
 
 
 
-<step action="wait" value="9064" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -434,7 +434,7 @@
 
 
 
-<step action="wait" value="15080" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -459,7 +459,7 @@
 
 
 
-<step action="wait" value="13079" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -483,7 +483,7 @@
 
 
 
-<step action="wait" value="17245" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -508,7 +508,7 @@
 
 
 
-<step action="wait" value="7070" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -532,7 +532,7 @@
 
 
 
-<step action="wait" value="21127" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -557,7 +557,7 @@
 
 
 
-<step action="wait" value="10068" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -581,7 +581,7 @@
 
 
 
-<step action="wait" value="6053" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -606,7 +606,7 @@
 
 
 
-<step action="wait" value="13093" type="web" desc='' isThinkTime="true" isCommented='false' sequence="49">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="49">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -630,7 +630,7 @@
 
 
 
-<step action="wait" value="8061" type="web" desc='' isThinkTime="true" isCommented='false' sequence="51">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="51">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
