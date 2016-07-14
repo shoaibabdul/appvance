@@ -201,15 +201,14 @@
 
 
 
-<step action="setSelected" value="&quot;Ungarn&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;mailingAddressCountry&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="click" value="span(7)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-angle-down&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@name='mailingAddressCountry']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[2]/span/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/span/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -226,14 +225,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="setSelected" value="&quot;Georgia&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="span(7)" selected="true"/>
-		<accessor type="click" value="span(&quot;fa fa-angle-down&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;mailingAddressCountry&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[2]/span/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/span/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@name='mailingAddressCountry']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -250,15 +250,15 @@
 
 
 
-<step action="setSelected" value="&quot;Georgia&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="setValue" value="&quot;14185 Dallas pkwy&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;mailingAddressCountry&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;mailingAddressStreet&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(3)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@name='mailingAddressCountry']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='mailingAddressStreet']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/input[6]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[6]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -275,15 +275,15 @@
 
 
 
-<step action="setValue" value="&quot;14185 Dallas pkwy&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="setValue" value="&quot;hyd&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;mailingAddressStreet&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(3)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;mailingAddressCity&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(4)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='mailingAddressStreet']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/input[6]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//input[6]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='mailingAddressCity']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -300,15 +300,14 @@
 
 
 
-<step action="setValue" value="&quot;hyd&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;mailingAddressCity&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(4)" selected="false"/>
+		<accessor type="click" value="span(9)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-angle-down[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='mailingAddressCity']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[3]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/div/span/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/span/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -325,14 +324,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="setSelected" value="&quot;Kakheti&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="span(9)" selected="true"/>
-		<accessor type="click" value="span(&quot;fa fa-angle-down[1]&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;mailingAddressState&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/div/span/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/span/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@name='mailingAddressState']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/div/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -349,15 +349,15 @@
 
 
 
-<step action="setSelected" value="&quot;Kakheti&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="setValue" value="&quot;12345&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;mailingAddressState&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(1)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;mailingAddressZip&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(5)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@name='mailingAddressState']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[3]/div/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[3]/div/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='mailingAddressZip']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[4]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -374,15 +374,16 @@
 
 
 
-<step action="setValue" value="&quot;12345&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;mailingAddressZip&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(5)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;sameAddress&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='mailingAddressZip']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[4]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[4]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='sameAddress']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[5]/div[1]/label/span[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span[1]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -399,16 +400,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+<step action="setSelected" value="&quot;Georgia&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;sameAddress&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;TaxCountry&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(4)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='sameAddress']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[5]/div[1]/label/span[1]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//span[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select[@name='TaxCountry']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[6]/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[6]/div[2]/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -425,15 +425,15 @@
 
 
 
-<step action="setSelected" value="&quot;Georgia&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+<step action="setValue" value="&quot;5104495818&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(&quot;TaxCountry&quot;)" selected="true"/>
-		<accessor type="setSelected" value="select(4)" selected="false"/>
+		<accessor type="setValue" value="numberbox(&quot;PhoneNumber&quot;)" selected="true"/>
+		<accessor type="setValue" value="numberbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//select[@name='TaxCountry']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[6]/div[2]/select&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[6]/div[2]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='PhoneNumber']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[7]/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[7]/input[1]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -450,15 +450,16 @@
 
 
 
-<step action="setValue" value="&quot;5104495818&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
-		<accessor type="setValue" value="numberbox(&quot;PhoneNumber&quot;)" selected="true"/>
-		<accessor type="setValue" value="numberbox(0)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;TermsAndConditions&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='PhoneNumber']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[7]/input[1]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[7]/input[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@name='TermsAndConditions']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[9]/label/span/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[9]/label/span/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -477,14 +478,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;TermsAndConditions&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;on[1]&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(1)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Registrieren&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@name='TermsAndConditions']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[9]/label/span/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[9]/label/span/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[10]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -503,13 +503,12 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(0)" selected="true"/>
-		<accessor type="click" value="submit(&quot;Registrieren&quot;)" selected="false"/>
+		<accessor type="click" value="div(&quot;Weiter[1]&quot;)" selected="true"/>
+		<accessor type="click" value="div(25)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div/div/form/div[10]/button&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[1]/div/div[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/div[3]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -526,31 +525,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Weiter[1]&quot;)" selected="true"/>
-		<accessor type="click" value="div(25)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[1]/div/div[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/div[3]&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="26,20" type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
+<step action="clickXY" value="26,20" type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="clickXY" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="clickXY" value="image(0)" selected="false"/>
@@ -564,7 +539,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="45">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
