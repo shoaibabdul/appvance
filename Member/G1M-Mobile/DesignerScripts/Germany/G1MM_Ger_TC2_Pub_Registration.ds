@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Registration" isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Register link" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Registrieren&quot;)" selected="true"/>
 		<accessor type="click" value="div(24)" selected="false"/>
@@ -326,7 +326,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Sel SameAddCheckbox1" isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Sel Same Add Checkbox1" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;sameAddress&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;on&quot;)" selected="false"/>
