@@ -182,13 +182,13 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="STG_G2M_Pub_DryRun_50U_01" name="STG_G2M_Pub_DryRun_50U_01">
-      <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="2"/>
-      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="3"/>
-      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="STG_G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="3"/>
-      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="3"/>
+      <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="8"/>
+      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="7"/>
+      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="7"/>
+      <testcase name="STG_G2M_TC4_Pub_SalesList" users="7"/>
+      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="7"/>
+      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="7"/>
+      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="7"/>
     </iteration>
   </execution>
   <logs>
