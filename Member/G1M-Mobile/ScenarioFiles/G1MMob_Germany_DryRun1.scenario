@@ -34,7 +34,7 @@
     <resource name="G1MM_Ger_TC3_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC3_Mem_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
+    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
