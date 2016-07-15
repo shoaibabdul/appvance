@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_STG_LT_200Users</name>
+    <name>G2M_STG_LT_300Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -180,8 +180,8 @@
     </options>
   </options>
   <templates>
-    <controller name="STG_G2M_LT_200U_01">
-      <round name="STG_G2M_LT_200U_01" totalusers="200" time="30" testtype="users" totaliterations="400"/>
+    <controller name="STG_G2M_LT_300U_01">
+      <round name="STG_G2M_LT_300U_01" totalusers="300" time="30" testtype="users" totaliterations="2400"/>
     </controller>
     <testcase name="STG_G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -301,24 +301,24 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="STG_G2M_LT_200U_01" name="STG_G2M_LT_200U_01">
-      <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="12"/>
-      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="12"/>
-      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="12"/>
-      <testcase name="STG_G2M_TC4_Pub_SalesList" users="12"/>
-      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="12"/>
-      <testcase name="STG_G2M_TC6_Mem_HPNav" users="12"/>
-      <testcase name="STG_G2M_TC7_Mem_VF" users="12"/>
-      <testcase name="STG_G2M_TC8_Mem_LotSearch" users="12"/>
-      <testcase name="STG_G2M_TC9_Mem_Saleslist" users="12"/>
-      <testcase name="STG_G2M_TC10_Mem_HSearch" users="12"/>
-      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="12"/>
-      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="12"/>
-      <testcase name="STG_G2M_TC13_Mem_WatchList" users="12"/>
-      <testcase name="STG_G2M_TC14_Mem_PrefrEdit" users="11"/>
-      <testcase name="STG_G2M_TC15_Mem_CompLots" users="11"/>
-      <testcase name="STG_G2M_TC16_Mem_LotsWonLost" users="11"/>
-      <testcase name="STG_G2M_TC17_Mem_SavedSearchs" users="11"/>
+    <iteration controller="STG_G2M_LT_300U_01" name="STG_G2M_LT_300U_01">
+      <testcase name="STG_G2M_TC1_Pub_HPNavigation" users="18"/>
+      <testcase name="STG_G2M_TC2_Pub_VehicleFinder" users="18"/>
+      <testcase name="STG_G2M_TC3_Pub_LotNoSearch" users="18"/>
+      <testcase name="STG_G2M_TC4_Pub_SalesList" users="18"/>
+      <testcase name="STG_G2M_TC5_Pub_HeaderSearch" users="18"/>
+      <testcase name="STG_G2M_TC6_Mem_HPNav" users="18"/>
+      <testcase name="STG_G2M_TC7_Mem_VF" users="18"/>
+      <testcase name="STG_G2M_TC8_Mem_LotSearch" users="18"/>
+      <testcase name="STG_G2M_TC9_Mem_Saleslist" users="18"/>
+      <testcase name="STG_G2M_TC10_Mem_HSearch" users="18"/>
+      <testcase name="STG_G2M_TC11 _Public_VF_FreeSearch" users="18"/>
+      <testcase name="STG_G2M _TC12_Pub_LotLookUp" users="17"/>
+      <testcase name="STG_G2M_TC13_Mem_WatchList" users="17"/>
+      <testcase name="STG_G2M_TC14_Mem_PrefrEdit" users="17"/>
+      <testcase name="STG_G2M_TC15_Mem_CompLots" users="17"/>
+      <testcase name="STG_G2M_TC16_Mem_LotsWonLost" users="17"/>
+      <testcase name="STG_G2M_TC17_Mem_SavedSearchs" users="17"/>
     </iteration>
   </execution>
   <logs>
