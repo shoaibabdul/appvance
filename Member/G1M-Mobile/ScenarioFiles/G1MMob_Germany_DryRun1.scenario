@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1MMob_India_DryRun01</name>
+    <name>G1MMob_Germany_DryRun01</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -29,9 +29,9 @@
     <categorization>G1MemberMobile</categorization>
   </basics>
   <resources>
-    <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="G1MM_Ind_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC2_Pub_Registration.ds" cache="false"/>
-    <resource name="G1MM_Ind_TC3_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC3_Mem_HPNav.ds" cache="false"/>
+    <resource name="G1MM_Ger_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="G1MM_Ger_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC2_Pub_Registration.ds" cache="false"/>
+    <resource name="G1MM_Ger_TC3_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC3_Mem_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -39,11 +39,11 @@
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="sahi" version="sahi_pro"/>
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
-    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources/>
   <options>
@@ -88,22 +88,22 @@
     </options>
   </options>
   <templates>
-    <controller name="G1MMob_India_DryRun1_01">
-      <round name="G1MMob_India_DryRun1_01" totalusers="15" time="10" testtype="users" totaliterations="15"/>
+    <controller name="G1MMob_Germany_DryRun1_01">
+      <round name="G1MMob_Germany_DryRun1_01" totalusers="15" time="10" testtype="users" totaliterations="15"/>
     </controller>
-    <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
+    <testcase name="G1MM_Ger_TC1_Pub_HPNav" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ind_TC1_Pub_HPNav.ds"/>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
-    <testcase name="G1MM_Ind_TC2_Pub_Registration" expand="yes">
+    <testcase name="G1MM_Ger_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ind_TC2_Pub_Registration.ds"/>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds"/>
       </test>
     </testcase>
-    <testcase name="G1MM_Ind_TC3_Mem_HPNav" expand="yes">
+    <testcase name="G1MM_Ger_TC3_Mem_HPNav" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ind_TC3_Mem_HPNav.ds"/>
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC3_Mem_HPNav.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -111,10 +111,10 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1MMob_India_DryRun1_01" name="G1MMob_India_DryRun1_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="5"/>
-      <testcase name="G1MM_Ind_TC2_Pub_Registration" users="5"/>
-      <testcase name="G1MM_Ind_TC3_Mem_HPNav" users="5"/>
+    <iteration controller="G1MMob_Germany_DryRun1_01" name="G1MMob_Germany_DryRun1_01">
+      <testcase name="G1MM_Ger_TC1_Pub_HPNav" users="5"/>
+      <testcase name="G1MM_Ger_TC2_Pub_Registration" users="5"/>
+      <testcase name="G1MM_Ger_TC3_Mem_HPNav" users="5"/>
     </iteration>
   </execution>
   <logs>
