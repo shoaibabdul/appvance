@@ -47,11 +47,6 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="G1MM_Ger_TC2" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G1MM_Ger_TC2_TestData.csv"/>
-      </argument>
-    </dpl>
     <dpl name="G1MM_SP_TC2" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G1MM_SP_TC2_TestData.csv"/>
@@ -101,18 +96,11 @@
   </options>
   <templates>
     <controller name="G1MMob_UserCreation_01">
-      <round name="G1MMob_UserCreation_01" totalusers="2" testtype="users" totaliterations="2" totalexecutions="10"/>
+      <round name="G1MMob_UserCreation_01" totalusers="1" testtype="users" totaliterations="1" totalexecutions="10"/>
     </controller>
-    <testcase name="G1MM_Ger_TC2_Pub_Registration" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds">
-          <argument name="G1MM_Ger_TC2" method="getNextData" dpl="G1MM_Ger_TC2"/>
-        </run>
-      </test>
-    </testcase>
     <testcase name="G1MM_SP_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC2_Pub_Registration.ds">
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_SP_TC2_Pub_Registration.ds">
           <argument name="G1MM_SP_TC2" method="getNextData" dpl="G1MM_SP_TC2"/>
         </run>
       </test>
@@ -123,7 +111,6 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_UserCreation_01" name="G1MMob_UserCreation_01">
-      <testcase name="G1MM_Ger_TC2_Pub_Registration" users="1"/>
       <testcase name="G1MM_SP_TC2_Pub_Registration" users="1"/>
     </iteration>
   </execution>
