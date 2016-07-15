@@ -129,7 +129,7 @@
 
 
 
-<step action="setValue" value="&quot;LoadTest&quot;" type="web" desc="Enter FirstName" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;LoadTest_Ind&quot;" type="web" desc="Enter FirstName" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;FirstName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
@@ -154,7 +154,7 @@
 
 
 
-<step action="setValue" value="&quot;PerfTest&quot;" type="web" desc="Enter LastName" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;PerfTest_Ind&quot;" type="web" desc="Enter LastName" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;LastName&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
