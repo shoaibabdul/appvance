@@ -219,20 +219,17 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk CurrentSalesDate" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk Current Sales Date" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/01/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(103)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/23/2016-07-01?location=CT%20-%20HARTFORD&amp;saleDate=07/01/2016%2007:00%20AM%20PDT&amp;liveAuction=true&amp;from=/salesListResult&amp;yardNum=23&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/06/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/12/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/14/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(46)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-stg1.crashedtoys.com/home.html#/saleListResult/313/2016-07-16?location=TX%20-%20CRASHEDTOYS%20DALLAS&amp;saleDate=07/16/2016%2011:00%20AM%20PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=313&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'07/01/2016')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[60]/td[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/23/2016-07-01?location=CT - HARTFORD&amp;saleDate=07/01/2016 07:00 AM PDT&amp;liveAuction=true&amp;from=/salesListResult&amp;yardNum=23')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'07/16/2016')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[3]/td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/313/2016-07-16?location=TX - CRASHEDTOYS DALLAS&amp;saleDate=07/16/2016 11:00 AM PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=313')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -252,13 +249,13 @@
 <step action="click" value='' type="web" desc="Clk SalesList" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
-		<accessor type="click" value="link(13)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(12)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-stg1.crashedtoys.com/home.html#/salesListResult&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[2]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, 'home.html#/salesListResult')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/salesListResult')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//li[2]/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
@@ -282,7 +279,8 @@
 		<accessor type="click" value="link(173)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/311/2016-07-12?location=MN%20-%20CRASHEDTOYS%20EAST%20BETHEL&amp;saleDate=07/12/2016%2011:00%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=311&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;07/20/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;07/23/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/12/2016')]&quot;" selected="true"/>
