@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_Ger_TC2_TestData.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.de/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -76,7 +76,7 @@
 
 
 
-<step action="setValue" value="&quot;Germany001@mailinator.com&quot;" type="web" desc="Enter Email ID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$GerEmailID&quot;" type="web" desc="Enter Email ID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;Email&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(0)" selected="false"/>
@@ -101,7 +101,7 @@
 
 
 
-<step action="setValue" value="&quot;Germany001@mailinator.com&quot;" type="web" desc="ReEnter Email ID" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;$GerConfEmailID&quot;" type="web" desc="ReEnter Email ID" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;ConfirmEmail&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(1)" selected="false"/>
