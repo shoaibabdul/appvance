@@ -30,9 +30,7 @@
   </basics>
   <resources>
     <resource name="G1MM_Ger_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC2_Pub_Registration.ds" cache="false"/>
-    <resource name="G1MM_SP_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC2_Pub_Registration.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_Ger_TC2_TestData.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_SP_TC2_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
@@ -71,7 +69,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
