@@ -93,17 +93,17 @@
     </controller>
     <testcase name="G1MM_Ger_TC1_Pub_HPNav" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
     <testcase name="G1MM_Ger_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds"/>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds"/>
       </test>
     </testcase>
     <testcase name="G1MM_Ger_TC3_Mem_HPNav" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC3_Mem_HPNav.ds"/>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC3_Mem_HPNav.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
