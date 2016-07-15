@@ -102,8 +102,8 @@
   <templates>
     <controller name="G1MMob_UserCreation_01">
       <round name="G1MMob_UserCreation_01" totalusers="2" testtype="users" totaliterations="2">
-        <testcase name="G1MM_Ger_TC2_Pub_Registration" executions="10"/>
-        <testcase name="G1MM_SP_TC2_Pub_Registration" executions="10"/>
+        <testcase name="G1MM_Ger_TC2_Pub_Registration" totalexecutions="10"/>
+        <testcase name="G1MM_SP_TC2_Pub_Registration" totalexecutions="10"/>
       </round>
     </controller>
     <testcase name="G1MM_Ger_TC2_Pub_Registration" expand="yes">
