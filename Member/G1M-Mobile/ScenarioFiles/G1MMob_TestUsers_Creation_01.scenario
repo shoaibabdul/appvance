@@ -123,8 +123,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_UserCreation_01" name="G1MMob_UserCreation_01">
-      <testcase name="G1MM_Ger_TC2_Pub_Registration" totalexecutions="10" users="1"/>
-      <testcase name="G1MM_SP_TC2_Pub_Registration" totalexecutions="10" users="1"/>
+      <testcase name="G1MM_Ger_TC2_Pub_Registration" users="1"/>
+      <testcase name="G1MM_SP_TC2_Pub_Registration" users="1"/>
     </iteration>
   </execution>
   <logs>
