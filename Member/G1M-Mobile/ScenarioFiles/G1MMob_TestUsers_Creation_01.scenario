@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1MMob_Germany_DryRun01</name>
+    <name>G1MMob_TestUsers_Creation</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -32,6 +32,9 @@
     <resource name="G1MM_Ger_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav.ds" cache="false"/>
     <resource name="G1MM_Ger_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC2_Pub_Registration.ds" cache="false"/>
     <resource name="G1MM_Ger_TC3_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC3_Mem_HPNav.ds" cache="false"/>
+    <resource name="G1MM_SP_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC2_Pub_Registration.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_Ger_TC2_TestData.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_SP_TC2_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="2" instantiate="All" terminate="All" reboot="After"/>
@@ -45,7 +48,18 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="G1MM_Ger_TC2" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1MM_Ger_TC2_TestData.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G1MM_SP_TC2" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G1MM_SP_TC2_TestData.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -88,22 +102,21 @@
     </options>
   </options>
   <templates>
-    <controller name="G1MMob_Germany_DryRun1_01">
-      <round name="G1MMob_Germany_DryRun1_01" totalusers="15" time="10" testtype="users" totaliterations="15"/>
+    <controller name="G1MMob_UserCreation_01">
+      <round name="G1MMob_UserCreation_01" totalusers="15" time="10" testtype="users" totaliterations="15"/>
     </controller>
-    <testcase name="G1MM_Ger_TC1_Pub_HPNav" expand="yes">
-      <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
-      </test>
-    </testcase>
     <testcase name="G1MM_Ger_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds"/>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC2_Pub_Registration.ds">
+          <argument name="G1MM_Ger_TC2" method="getNextData" dpl="G1MM_Ger_TC2"/>
+        </run>
       </test>
     </testcase>
-    <testcase name="G1MM_Ger_TC3_Mem_HPNav" expand="yes">
+    <testcase name="G1MM_SP_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_Ger_TC3_Mem_HPNav.ds"/>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_SP_TC2_Pub_Registration.ds">
+          <argument name="G1MM_SP_TC2" method="getNextData" dpl="G1MM_SP_TC2"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -111,10 +124,9 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1MMob_Germany_DryRun1_01" name="G1MMob_Germany_DryRun1_01">
-      <testcase name="G1MM_Ger_TC1_Pub_HPNav" users="5"/>
+    <iteration controller="G1MMob_UserCreation_01" name="G1MMob_UserCreation_01">
       <testcase name="G1MM_Ger_TC2_Pub_Registration" users="5"/>
-      <testcase name="G1MM_Ger_TC3_Mem_HPNav" users="5"/>
+      <testcase name="G1MM_SP_TC2_Pub_Registration" users="1"/>
     </iteration>
   </execution>
   <logs>
