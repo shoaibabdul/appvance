@@ -63,20 +63,20 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="3000"/>
+      <opt name="ThinkTimeMax" value="3000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="PercentageLogsSaved" value="100"/>
-      <opt name="ThinkTime" value="0"/>
+      <opt name="ThinkTime" value="3000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="ReportThinkTime" value="false"/>
-      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
     </options>
     <options type="selenium">
       <opt name="throwExceptionOnScriptError" value="true"/>
