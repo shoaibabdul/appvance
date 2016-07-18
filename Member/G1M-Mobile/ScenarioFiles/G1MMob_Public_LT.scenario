@@ -89,21 +89,11 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="6" testtype="users" totaliterations="6" totalexecutions="1"/>
+      <round name="G1MMob_Public_LT_01" totalusers="5" time="5" testtype="users" totaliterations="{totaliterations}"/>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ind_TC1_Pub_HPNav.ds"/>
-      </test>
-    </testcase>
-    <testcase name="G1MM_Ger_TC1_Pub_HPNav" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
-      </test>
-    </testcase>
-    <testcase name="G1MM_SP_TC1_Pub_HPNav" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -112,8 +102,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="2"/>
-      <testcase name="G1MM_Ger_TC1_Pub_HPNav" users="1"/>
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="5"/>
     </iteration>
   </execution>
   <logs>
