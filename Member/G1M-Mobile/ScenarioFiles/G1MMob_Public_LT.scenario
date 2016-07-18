@@ -30,8 +30,6 @@
   </basics>
   <resources>
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="G1MM_Ger_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="G1MM_SP_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC1_Pub_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
