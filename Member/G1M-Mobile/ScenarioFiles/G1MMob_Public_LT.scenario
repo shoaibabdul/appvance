@@ -88,8 +88,8 @@
     </options>
   </options>
   <templates>
-    <controller name="1 Iterations">
-      <round totalusers="1" iterations="1"/>
+    <controller name="G1MMob_Public_LT_01">
+      <round name="G1MMob_Public_LT_01" totalusers="6" testtype="users" totaliterations="6" totalexecutions="1"/>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
@@ -110,11 +110,10 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest">
-    <iteration name="iteration 1 Iterations" controller="1 Iterations">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="1"/>
+  <execution type="loadtest">
+    <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="2"/>
       <testcase name="G1MM_Ger_TC1_Pub_HPNav" users="1"/>
-      <testcase name="G1MM_SP_TC1_Pub_HPNav" users="1"/>
     </iteration>
   </execution>
   <logs>
