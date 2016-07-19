@@ -29,9 +29,7 @@
     <categorization>G1MemberMobile</categorization>
   </basics>
   <resources>
-    <resource name="G1MM_Ger_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC2_Pub_Registration.ds" cache="false"/>
     <resource name="G1MM_SP_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC2_Pub_Registration.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_Ger_TC2_TestData.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_SP_TC2_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
