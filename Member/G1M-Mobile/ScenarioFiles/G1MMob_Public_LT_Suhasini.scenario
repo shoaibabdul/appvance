@@ -87,7 +87,7 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="2" time="10" testtype="users" totaliterations="2"/>
+      <round name="G1MMob_Public_LT_01" totalusers="2" time="20" testtype="users" totaliterations="2"/>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
