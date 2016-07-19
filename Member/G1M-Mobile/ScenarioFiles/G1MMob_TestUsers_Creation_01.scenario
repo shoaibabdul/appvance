@@ -98,7 +98,7 @@
     </controller>
     <testcase name="G1MM_SP_TC2_Pub_Registration" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G1MM_SP_TC2_Pub_Registration.ds">
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC2_Pub_Registration.ds">
           <argument name="G1MM_SP_TC2" method="getNextData" dpl="G1MM_SP_TC2"/>
         </run>
       </test>
