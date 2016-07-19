@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1MMob_TestUsers_Creation</name>
+    <name>G1MMob_Users_Creation_Func</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -29,13 +29,11 @@
     <categorization>G1MemberMobile</categorization>
   </basics>
   <resources>
-    <resource name="G1MM_Ger_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC2_Pub_Registration.ds" cache="false"/>
     <resource name="G1MM_SP_TC2_Pub_Registration.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC2_Pub_Registration.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_Ger_TC2_TestData.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/TestData/G1MM_SP_TC2_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -95,8 +93,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1MMob_UserCreation_01">
-      <round name="G1MMob_UserCreation_01" totalusers="1" time="10" testtype="users" totaliterations="1"/>
+    <controller name="1 Iterations">
+      <round totalusers="1" iterations="1"/>
     </controller>
     <testcase name="G1MM_SP_TC2_Pub_Registration" expand="yes">
       <test>
@@ -109,9 +107,9 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="loadtest">
-    <iteration controller="G1MMob_UserCreation_01" name="G1MMob_UserCreation_01">
-      <testcase name="G1MM_SP_TC2_Pub_Registration" users="2"/>
+  <execution type="functionaltest">
+    <iteration name="iteration 1 Iterations" controller="1 Iterations">
+      <testcase name="G1MM_SP_TC2_Pub_Registration" users="1"/>
     </iteration>
   </execution>
   <logs>
