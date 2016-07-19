@@ -87,7 +87,9 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="2" testtype="users" totaliterations="2" totalexecutions="2"/>
+      <round name="G1MMob_Public_LT_01" totalusers="2" testtype="users" totaliterations="2">
+        <testcase name="G1MM_Ind_TC1_Pub_HPNav"/>
+      </round>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
@@ -100,7 +102,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="2" users="2"/>
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="2"/>
     </iteration>
   </execution>
   <logs>
