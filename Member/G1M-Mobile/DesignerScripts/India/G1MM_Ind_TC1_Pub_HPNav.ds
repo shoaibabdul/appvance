@@ -31,7 +31,8 @@
 <step action="click" value='' type="web" desc="Clk Auctions" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;AUCTIONS&quot;)" selected="false"/>
-		<accessor type="click" value="div(26)" selected="true"/>
+		<accessor type="click" value="div(26)" selected="false"/>
+		<accessor type="click" value="div(28)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[1]/div/div[2]&quot;" selected="true"/>
@@ -55,7 +56,8 @@
 <step action="click" value='' type="web" desc="Clk Auctions After Today" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Auctions After Today&quot;)" selected="false"/>
-		<accessor type="click" value="div(22)" selected="true"/>
+		<accessor type="click" value="div(22)" selected="false"/>
+		<accessor type="click" value="div(23)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[1]/div[2]&quot;" selected="true"/>
@@ -178,7 +180,8 @@
 <step action="click" value='' type="web" desc="Clk Locations" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;LOCATIONS&quot;)" selected="false"/>
-		<accessor type="click" value="div(32)" selected="true"/>
+		<accessor type="click" value="div(32)" selected="false"/>
+		<accessor type="click" value="div(34)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[3]/div/div[2]&quot;" selected="true"/>
@@ -227,7 +230,8 @@
 <step action="click" value='' type="web" desc="Clk Quick Picks" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;QUICK PICKS&quot;)" selected="false"/>
-		<accessor type="click" value="div(49)" selected="true"/>
+		<accessor type="click" value="div(49)" selected="false"/>
+		<accessor type="click" value="div(51)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a[8]/div/div[2]&quot;" selected="true"/>
