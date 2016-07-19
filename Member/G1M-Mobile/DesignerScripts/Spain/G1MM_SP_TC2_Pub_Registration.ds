@@ -76,7 +76,7 @@
 
 
 
-<step action="setValue" value="&quot;$SPEmailID&quot;" type="web" desc="Enter Email ID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$userid&quot;" type="web" desc="Enter Email ID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;Email&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(0)" selected="false"/>
@@ -101,7 +101,7 @@
 
 
 
-<step action="setValue" value="&quot;$SPConfEmailID&quot;" type="web" desc="ReEnter Email ID" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;$confuserid&quot;" type="web" desc="ReEnter Email ID" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;ConfirmEmail&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(1)" selected="false"/>
