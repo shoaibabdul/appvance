@@ -32,7 +32,7 @@
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314_Mobile.cloud" amount="1" instantiate="All" terminate="All" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314_Mobile.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
