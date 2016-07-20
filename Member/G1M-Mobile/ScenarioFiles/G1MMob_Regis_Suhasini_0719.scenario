@@ -94,7 +94,7 @@
   <templates>
     <controller name="G1MMob_UserCreation_01">
       <round name="G1MMob_UserCreation_01" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="G1MM_SP_TC2_Pub_Registration"/>
+        <testcase name="G1MM_SP_TC2_Pub_Registration" executions="2"/>
       </round>
     </controller>
     <testcase name="G1MM_SP_TC2_Pub_Registration" expand="yes">
@@ -110,7 +110,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_UserCreation_01" name="G1MMob_UserCreation_01">
-      <testcase name="G1MM_SP_TC2_Pub_Registration" users="5"/>
+      <testcase name="G1MM_SP_TC2_Pub_Registration" totalexecutions="2" users="5"/>
     </iteration>
   </execution>
   <logs>
