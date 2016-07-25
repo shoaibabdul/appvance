@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1MMob_Public_LT</name>
+    <name>G1MMob_Pub_Suhasini_0725</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -34,7 +34,7 @@
     <resource name="G1MM_SP_TC1_Pub_HPNav_Suhasini.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC1_Pub_HPNav_Suhasini.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="TN" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <node name="TN" location="http://ec2-54-209-243-62.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -90,23 +90,19 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="G1MM_Ind_TC1_Pub_HPNav" executions="1"/>
-        <testcase name="Untitled2" executions="1"/>
-        <testcase name="Untitled3" executions="1"/>
-      </round>
+      <round name="G1MMob_Public_LT_01" totalusers="10" time="10" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ind_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled2" expand="yes">
+    <testcase name="G1MM_Ger_TC1_Pub_HPNav" expand="yes">
       <test>
         <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav_Suhasini.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled3" expand="yes">
+    <testcase name="G1MM_SP_TC1_Pub_HPNav" expand="yes">
       <test>
         <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC1_Pub_HPNav_Suhasini.ds"/>
       </test>
@@ -117,9 +113,9 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="1" users="1"/>
-      <testcase name="Untitled2" totalexecutions="1" users="2"/>
-      <testcase name="Untitled3" totalexecutions="1" users="2"/>
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="1" users="3"/>
+      <testcase name="G1MM_Ger_TC1_Pub_HPNav" totalexecutions="1" users="3"/>
+      <testcase name="G1MM_SP_TC1_Pub_HPNav" totalexecutions="1" users="4"/>
     </iteration>
   </execution>
   <logs>
