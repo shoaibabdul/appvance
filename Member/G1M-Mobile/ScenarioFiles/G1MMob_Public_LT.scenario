@@ -90,7 +90,7 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="2" testtype="users" totaliterations="2">
+      <round name="G1MMob_Public_LT_01" totalusers="5" testtype="users" totaliterations="5">
         <testcase name="G1MM_Ind_TC1_Pub_HPNav" executions="1"/>
         <testcase name="Untitled2"/>
         <testcase name="Untitled3"/>
