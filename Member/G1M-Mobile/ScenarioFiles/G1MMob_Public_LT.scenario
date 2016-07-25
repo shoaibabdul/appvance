@@ -30,8 +30,8 @@
   </basics>
   <resources>
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="G1MM_Ger_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="G1MM_SP_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="G1MM_Ger_TC1_Pub_HPNav_Suhasini.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav_Suhasini.ds" cache="false"/>
+    <resource name="G1MM_SP_TC1_Pub_HPNav_Suhasini.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC1_Pub_HPNav_Suhasini.ds" cache="false"/>
   </resources>
   <testnodes>
     <node name="TN" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -103,12 +103,12 @@
     </testcase>
     <testcase name="Untitled2" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav_Suhasini.ds"/>
       </test>
     </testcase>
     <testcase name="Untitled3" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC1_Pub_HPNav.ds"/>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC1_Pub_HPNav_Suhasini.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
