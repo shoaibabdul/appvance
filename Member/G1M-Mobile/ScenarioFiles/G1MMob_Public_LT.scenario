@@ -31,9 +31,7 @@
   <resources>
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
   </resources>
-  <testnodes>
-    <cloud name="AmazonG1MM" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC314.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
-  </testnodes>
+  <testnodes/>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.0"/>
@@ -79,6 +77,7 @@
       <opt name="waitForPageToLoad" value="true"/>
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
+      <opt name="debugMode" value="false"/>
     </options>
     <options type="seleniumrc">
       <opt name="listenport" value="6543"/>
