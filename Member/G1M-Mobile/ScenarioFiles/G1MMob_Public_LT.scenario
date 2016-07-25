@@ -92,8 +92,8 @@
     <controller name="G1MMob_Public_LT_01">
       <round name="G1MMob_Public_LT_01" totalusers="5" testtype="users" totaliterations="5">
         <testcase name="G1MM_Ind_TC1_Pub_HPNav" executions="1"/>
-        <testcase name="Untitled2"/>
-        <testcase name="Untitled3"/>
+        <testcase name="Untitled2" executions="1"/>
+        <testcase name="Untitled3" executions="1"/>
       </round>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
@@ -118,8 +118,8 @@
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
       <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="1" users="1"/>
-      <testcase name="Untitled2" users="2"/>
-      <testcase name="Untitled3" users="1"/>
+      <testcase name="Untitled2" totalexecutions="1" users="2"/>
+      <testcase name="Untitled3" totalexecutions="1" users="2"/>
     </iteration>
   </execution>
   <logs>
