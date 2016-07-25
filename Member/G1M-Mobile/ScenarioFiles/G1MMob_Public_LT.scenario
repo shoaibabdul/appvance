@@ -32,7 +32,7 @@
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="TN" location="http://ec2-54-165-88-51.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="TN" location="http://localhost.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
