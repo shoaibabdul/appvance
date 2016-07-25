@@ -30,6 +30,8 @@
   </basics>
   <resources>
     <resource name="G1MM_Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/India/G1MM_Ind_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="G1MM_Ger_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Germany/G1MM_Ger_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="G1MM_SP_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1M-Mobile/DesignerScripts/Spain/G1MM_SP_TC1_Pub_HPNav.ds" cache="false"/>
   </resources>
   <testnodes>
     <node name="TN" location="http://localhost.com:8080/TMServer/ws/TestNode"/>
@@ -88,11 +90,25 @@
   </options>
   <templates>
     <controller name="G1MMob_Public_LT_01">
-      <round name="G1MMob_Public_LT_01" totalusers="2" time="10" testtype="users" totaliterations="2"/>
+      <round name="G1MMob_Public_LT_01" totalusers="2" testtype="users" totaliterations="2">
+        <testcase name="G1MM_Ind_TC1_Pub_HPNav" executions="1"/>
+        <testcase name="Untitled2"/>
+        <testcase name="Untitled3"/>
+      </round>
     </controller>
     <testcase name="G1MM_Ind_TC1_Pub_HPNav" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ind_TC1_Pub_HPNav.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled2" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_Ger_TC1_Pub_HPNav.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled3" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="G1MM_SP_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -101,7 +117,9 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="2"/>
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="1" users="1"/>
+      <testcase name="Untitled2" users="2"/>
+      <testcase name="Untitled3" users="1"/>
     </iteration>
   </execution>
   <logs>
