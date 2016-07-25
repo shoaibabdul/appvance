@@ -113,9 +113,9 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1MMob_Public_LT_01" name="G1MMob_Public_LT_01">
-      <testcase name="G1MM_Ind_TC1_Pub_HPNav" totalexecutions="1" users="3"/>
-      <testcase name="G1MM_Ger_TC1_Pub_HPNav" totalexecutions="1" users="3"/>
-      <testcase name="G1MM_SP_TC1_Pub_HPNav" totalexecutions="1" users="4"/>
+      <testcase name="G1MM_Ind_TC1_Pub_HPNav" users="3"/>
+      <testcase name="G1MM_Ger_TC1_Pub_HPNav" users="3"/>
+      <testcase name="G1MM_SP_TC1_Pub_HPNav" users="4"/>
     </iteration>
   </execution>
   <logs>
