@@ -55,8 +55,9 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="G2M_EC2_1" location="http://ec2-54-164-104-38.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="G2M_EC2_2" location="http://ec2-52-90-0-213.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_1" location="http://ec2-52-90-0-213.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_2" location="http://ec2-54-164-104-38.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_3" location="http://ec2-54-210-44-105.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
