@@ -357,9 +357,10 @@
 
 <step action="click" value='' type="web" desc="Clk Current Sales Date" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(58)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-stg1.crashedtoys.com/home.html#/saleListResult/313/2016-07-16?location=TX%20-%20CRASHEDTOYS%20DALLAS&amp;saleDate=07/16/2016%2011:00%20AM%20PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=313&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;08/03/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/16/2016')]&quot;" selected="true"/>
@@ -411,9 +412,10 @@
 
 <step action="click" value='' type="web" desc="Clk Future Sales Date" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/23/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/23/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(59)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-stg1.crashedtoys.com/home.html#/saleListResult/313/2016-07-23?location=TX%20-%20CRASHEDTOYS%20DALLAS&amp;saleDate=07/23/2016%2011:00%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=313&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;08/11/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/23/2016')]&quot;" selected="true"/>
