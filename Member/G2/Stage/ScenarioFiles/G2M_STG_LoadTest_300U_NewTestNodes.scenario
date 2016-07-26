@@ -55,9 +55,18 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="G2M_EC2_1" location="http://ec2-52-90-0-213.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="G2M_EC2_2" location="http://ec2-54-164-104-38.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="G2M_EC2_3" location="http://ec2-54-210-44-105.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_2" location="http://ec2-54-164-104-38.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_1" location="http://ec2-52-90-0-213.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_4" location="http://ec2-54-209-207-173.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_5" location="http://ec2-54-197-144-20.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_6" location="http://ec2-54-173-22-250.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_7" location="http://ec2-52-91-92-16.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_8" location="http://ec2-54-204-226-16.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_9" location="http://ec2-54-172-81-6.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_10" location="http://ec2-54-197-202-133.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_11" location="http://ec2-54-205-9-78.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="G2M_EC2_12" location="http://ec2-52-90-228-177.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
