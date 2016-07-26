@@ -280,7 +280,8 @@
 		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/saleListResult/311/2016-07-12?location=MN%20-%20CRASHEDTOYS%20EAST%20BETHEL&amp;saleDate=07/12/2016%2011:00%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=311&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;07/20/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;07/16/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;07/23/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;07/23/2016&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;08/11/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/12/2016')]&quot;" selected="true"/>
