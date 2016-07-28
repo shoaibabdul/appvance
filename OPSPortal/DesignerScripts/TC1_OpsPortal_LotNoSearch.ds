@@ -30,8 +30,8 @@
 
 <step action="setValue" value="&quot;Balram.Anthareddy@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-3811&quot;)" selected="false"/>
-		<accessor type="setValue" value="emailbox(0)" selected="true"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-3811&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-3811']&quot;" selected="true"/>
