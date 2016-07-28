@@ -127,8 +127,8 @@
 
 <step action="setValue" value="&quot;12121693&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-58210&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-58210&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-58210']&quot;" selected="true"/>
