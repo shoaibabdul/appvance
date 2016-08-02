@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-op-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -19,8 +19,8 @@
 
 <step action="setValue" value="&quot;Balram.Anthareddy@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-1224&quot;)" selected="true"/>
-		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-1224&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-1224']&quot;" selected="true"/>
@@ -33,8 +33,8 @@
 
 <step action="setValue" value="&quot;Dinglei9459&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-31722&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-31722&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-31722']&quot;" selected="true"/>
@@ -72,8 +72,8 @@
 
 <step action="setValue" value="&quot;12278964&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-34674&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-34674&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-34674']&quot;" selected="true"/>
@@ -123,18 +123,6 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
-		<accessor type="click" value="div(46)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div[1]/div/div[1]/button[1]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
-	<dialect type="sahi">
 		<accessor type="click" value="div(52)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
@@ -145,7 +133,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="div(54)" selected="true"/>
 	</dialect>
@@ -157,7 +145,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="click" value="div(56)" selected="true"/>
 	</dialect>
@@ -169,7 +157,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="div(58)" selected="true"/>
 	</dialect>
@@ -181,7 +169,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="click" value="div(60)" selected="true"/>
 	</dialect>
@@ -193,7 +181,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;BA&quot;)" selected="true"/>
 		<accessor type="click" value="span(1)" selected="false"/>
@@ -206,7 +194,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="16">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="15">
 	<dialect type="sahi">
 		<accessor type="click" value="div(11)" selected="true"/>
 	</dialect>
@@ -218,7 +206,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
 		<accessor type="click" value="div(261)" selected="false"/>
