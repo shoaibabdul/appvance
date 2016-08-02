@@ -31,7 +31,7 @@
 
 
 
-<step action="setValue" value="&quot;Dinglei9459&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;********&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-3605&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
