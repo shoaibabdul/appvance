@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
 <step action="navigateTo" value="&quot;https://c-op-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -17,24 +17,13 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+<step action="setValue" value="&quot;balram.anthareddy@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="setValue" value="&quot;Balram.Anthareddy@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
-	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-3811&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-56733&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-3811']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-56733']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[1]/div/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
 	</dialect>
@@ -42,24 +31,13 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="setValue" value="&quot;Dinglei9459&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="setValue" value="&quot;Karan9459&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
-	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-6779&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-46484&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-6779']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-46484']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[2]/div/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[2]/div/input&quot;" selected="false"/>
 	</dialect>
@@ -67,18 +45,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
 		<accessor type="click" value="span(2)" selected="false"/>
@@ -91,18 +58,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(17)" selected="true"/>
 	</dialect>
@@ -114,24 +70,13 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+<step action="setValue" value="&quot;12278964&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-6254&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="setValue" value="&quot;12121693&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
-	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-58210&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(0)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-58210']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-6254']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/form/div[1]/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
 	</dialect>
@@ -139,18 +84,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SEARCH&quot;)" selected="true"/>
 		<accessor type="click" value="span(4)" selected="false"/>
@@ -163,29 +97,19 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="span(10)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="54182" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="div(58)" selected="true"/>
 	</dialect>
@@ -197,269 +121,7 @@
 
 
 
-<step action="wait" value="7059" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
-	<dialect type="sahi">
-		<accessor type="click" value="div(60)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[8]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="8097" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="61,19" type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
-	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;logo.png&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(0)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1035" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="61,19" type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
-	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;logo.png&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(0)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1045" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="23,17" type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
-	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;logo.png&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(0)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="117" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="clickXY" value="23,17" type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
-	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;logo.png&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(0)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="4062" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;BA&quot;)" selected="true"/>
-		<accessor type="click" value="span(1)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/div[3]/div/button/div/div/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/button/div/div/span&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="68" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
-	<dialect type="sahi">
-		<accessor type="click" value="div(11)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/div[3]/div/button/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/button/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1079" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
-		<accessor type="click" value="div(33)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//span/div/div&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
-	<dialect type="sahi">
-		<accessor type="click" value="div(50)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[3]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
-	<dialect type="sahi">
-		<accessor type="click" value="div(52)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[4]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
-	<dialect type="sahi">
-		<accessor type="click" value="div(54)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[5]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="div(56)" selected="true"/>
 	</dialect>
@@ -471,12 +133,361 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="div(54)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="div(52)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="click" value="div(50)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="div(48)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="click" value="div(46)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div[1]/div/div[1]/button[1]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="div(48)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="click" value="div(48)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="div(48)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="click" value="div(48)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="div(50)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="div(50)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+	<dialect type="sahi">
+		<accessor type="click" value="div(52)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="39">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -484,22 +495,23 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="div(58)" selected="true"/>
+		<accessor type="click" value="div(54)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[7]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[7]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="span(14)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -507,53 +519,330 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
-		<accessor type="click" value="div(60)" selected="true"/>
+		<accessor type="click" value="span(14)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[8]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="div(56)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="clickXY" value="26,19" type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
 	<dialect type="sahi">
-		<accessor type="clickXY" value="image(&quot;logo.png&quot;)" selected="true"/>
-		<accessor type="clickXY" value="image(0)" selected="false"/>
+		<accessor type="click" value="span(15)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[6]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[6]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="45">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="span(14)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="46">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="47">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="48">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="49">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="50">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="51">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="52">
+	<dialect type="sahi">
+		<accessor type="click" value="div(50)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span/div[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//span/div[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="53">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="54">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="55">
+	<dialect type="sahi">
+		<accessor type="click" value="span(14)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="56">
+	<dialect type="sahi">
+		<accessor type="click" value="span(15)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[6]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[6]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="57">
+	<dialect type="sahi">
+		<accessor type="click" value="span(16)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[7]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[7]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="58">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="59">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="60">
+	<dialect type="sahi">
+		<accessor type="click" value="span(10)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[1]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/div/div[1]/button[1]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="61">
+	<dialect type="sahi">
+		<accessor type="click" value="span(15)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[6]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[6]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="62">
+	<dialect type="sahi">
+		<accessor type="click" value="span(12)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[3]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[3]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="63">
+	<dialect type="sahi">
+		<accessor type="click" value="span(14)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[5]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[5]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="64">
+	<dialect type="sahi">
+		<accessor type="click" value="span(13)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[4]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[4]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="65">
+	<dialect type="sahi">
+		<accessor type="click" value="span(11)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="66">
+	<dialect type="sahi">
+		<accessor type="click" value="span(17)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[8]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[8]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="67">
+	<dialect type="sahi">
+		<accessor type="click" value="span(16)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]/div[1]/div/div[1]/button[7]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[7]/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="68">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;BA&quot;)" selected="true"/>
+		<accessor type="click" value="div(12)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/div[3]/div/button/div/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/button/div/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="69">
 	<dialect type="sahi">
 		<accessor type="click" value="div(11)" selected="true"/>
 	</dialect>
@@ -565,38 +854,13 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="48">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="70">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
-		<accessor type="click" value="div(35)" selected="false"/>
+		<accessor type="click" value="div(147)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//span/div/div&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="49">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
