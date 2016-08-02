@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-op-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -72,8 +72,8 @@
 
 <step action="setValue" value="&quot;12278964&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-6254&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-6254&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-6254']&quot;" selected="true"/>
