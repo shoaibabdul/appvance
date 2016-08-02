@@ -218,7 +218,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="17">
 	<dialect type="sahi">
 		<accessor type="click" value="div(11)" selected="true"/>
 	</dialect>
