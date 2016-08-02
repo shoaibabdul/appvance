@@ -19,8 +19,8 @@
 
 <step action="setValue" value="&quot;Balram.Anthareddy@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-61000&quot;)" selected="true"/>
-		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-61000&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-61000']&quot;" selected="true"/>
@@ -33,8 +33,8 @@
 
 <step action="setValue" value="&quot;Dinglei9459&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-3605&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-3605&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-3605']&quot;" selected="true"/>
@@ -73,8 +73,8 @@
 
 <step action="setValue" value="&quot;12278964&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-47899&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-LotMax8-LotSearchF2-47899&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-LotMax8-LotSearchF2-47899']&quot;" selected="true"/>
