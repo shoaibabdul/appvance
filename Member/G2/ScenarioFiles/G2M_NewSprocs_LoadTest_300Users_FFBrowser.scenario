@@ -170,9 +170,9 @@
       <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
-      <opt name="waitForPageToLoad" value="true"/>
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
+      <opt name="debugMode" value="false"/>
     </options>
     <options type="seleniumrc">
       <opt name="listenport" value="6543"/>
