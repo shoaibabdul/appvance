@@ -328,16 +328,15 @@
 
 <step action="click" value='' type="web" desc="Clk Current Sales Date" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/18/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(58)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/312/2016-07-18?location=IA%20-%20CRASHEDTOYS%20G2%20MEMBER&amp;saleDate=07/18/2016%2002:15%20AM%20PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=312&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;08/04/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;08/08/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(164)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/saleListResult/12/2016-08-08?location=TX%20-%20DALLAS&amp;saleDate=08/08/2016%2012:00%20PM%20CDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=12&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'07/18/2016')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[15]/td[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/312/2016-07-18?location=IA - CRASHEDTOYS G2 MEMBER&amp;saleDate=07/18/2016 02:15 AM PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=312')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'08/08/2016')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[120]/td[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/12/2016-08-08?location=TX - DALLAS&amp;saleDate=08/08/2016 12:00 PM CDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=12')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[120]/td[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -358,7 +357,7 @@
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
 		<accessor type="click" value="link(13)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/salesListResult&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/salesListResult&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sales List')]&quot;" selected="true"/>
@@ -383,16 +382,14 @@
 
 <step action="click" value='' type="web" desc="Clk Future Sales Date" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;07/20/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(59)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/312/2016-07-20?location=IA%20-%20CRASHEDTOYS%20G2%20MEMBER&amp;saleDate=07/20/2016%2002:15%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=312&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;08/04/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;08/05/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;08/24/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(165)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/saleListResult/12/2016-08-24?location=TX%20-%20DALLAS&amp;saleDate=08/24/2016%2012:00%20PM%20CDT&amp;from=/salesListResult&amp;yardNum=12&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'07/20/2016')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[15]/td[6]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/312/2016-07-20?location=IA - CRASHEDTOYS G2 MEMBER&amp;saleDate=07/20/2016 02:15 AM PDT&amp;from=/salesListResult&amp;yardNum=312')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'08/24/2016')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='clientSideDataTable']/tbody/tr[120]/td[6]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/saleListResult/12/2016-08-24?location=TX - DALLAS&amp;saleDate=08/24/2016 12:00 PM CDT&amp;from=/salesListResult&amp;yardNum=12')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//td[6]/a&quot;" selected="false"/>
 	</dialect>
 </step>
