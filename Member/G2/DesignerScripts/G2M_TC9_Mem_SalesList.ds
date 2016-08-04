@@ -467,7 +467,8 @@
 		<accessor type="click" value="link(&quot;07/18/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(70)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/312/2016-07-18?location=IA%20-%20CRASHEDTOYS%20G2%20MEMBER&amp;saleDate=07/18/2016%2002:15%20AM%20PDT&amp;liveAuction=false&amp;from=/salesListResult&amp;yardNum=312&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;08/04/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;08/04/2016&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;08/05/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/18/2016')]&quot;" selected="true"/>
@@ -522,7 +523,8 @@
 		<accessor type="click" value="link(&quot;07/20/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(71)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/home.html#/saleListResult/312/2016-07-20?location=IA%20-%20CRASHEDTOYS%20G2%20MEMBER&amp;saleDate=07/20/2016%2002:15%20AM%20PDT&amp;from=/salesListResult&amp;yardNum=312&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;08/05/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;08/05/2016&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;08/08/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/20/2016')]&quot;" selected="true"/>
