@@ -181,8 +181,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_NewSprocs_LT_300_01">
-      <round name="G2M_NewSprocs_LT_300_01" totalusers="750" time="60" testtype="users" totaliterations="9000"/>
+    <controller name="G2M_NewSprocs_LT_750_01">
+      <round name="G2M_NewSprocs_LT_750_01" totalusers="750" time="60" testtype="users" totaliterations="9000"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -302,7 +302,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_NewSprocs_LT_300_01" name="G2M_NewSprocs_LT_300_01">
+    <iteration controller="G2M_NewSprocs_LT_750_01" name="G2M_NewSprocs_LT_750_01">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="45"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="45"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="44"/>
