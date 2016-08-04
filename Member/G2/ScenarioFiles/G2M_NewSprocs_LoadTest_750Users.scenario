@@ -25,7 +25,7 @@
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
-    <versions>v1.1</versions>
+    <versions>v1.2</versions>
     <categorization>G2Member Project</categorization>
   </basics>
   <resources>
@@ -55,7 +55,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC_0803.cloud" amount="12" instantiate="None" terminate="None" reboot="Never"/>
+    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC_0804.cloud" amount="30" instantiate="None" terminate="None" reboot="Never"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -182,7 +182,7 @@
   </options>
   <templates>
     <controller name="G2M_NewSprocs_LT_300_01">
-      <round name="G2M_NewSprocs_LT_300_01" totalusers="300" time="30" testtype="users" totaliterations="2400"/>
+      <round name="G2M_NewSprocs_LT_300_01" totalusers="750" time="60" testtype="users" totaliterations="9000"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -303,23 +303,23 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_NewSprocs_LT_300_01" name="G2M_NewSprocs_LT_300_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="18"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="18"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="18"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="18"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="18"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="18"/>
-      <testcase name="G2M_TC7_Mem_VehicleFinder" users="18"/>
-      <testcase name="G2M_TC8_Mem_LotNoSearch" users="18"/>
-      <testcase name="G2M_TC9_Mem_SalesList" users="18"/>
-      <testcase name="G2M_TC10_Mem_HeaderSearch" users="18"/>
-      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="18"/>
-      <testcase name="G2M _TC12_Public_LotLookUp" users="17"/>
-      <testcase name="G2M_TC13_Member_WatchList" users="17"/>
-      <testcase name="G2M_TC14_Member_PreferencesEdit" users="17"/>
-      <testcase name="G2M_TC15_Member_CompareLots" users="17"/>
-      <testcase name="G2M_TC16_Member_LotsWonLost" users="17"/>
-      <testcase name="G2M_TC17_Member_SavedSearchs" users="17"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="45"/>
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="45"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="44"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="44"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="44"/>
+      <testcase name="G2M_TC6_Mem_HPNavigation" users="44"/>
+      <testcase name="G2M_TC7_Mem_VehicleFinder" users="44"/>
+      <testcase name="G2M_TC8_Mem_LotNoSearch" users="44"/>
+      <testcase name="G2M_TC9_Mem_SalesList" users="44"/>
+      <testcase name="G2M_TC10_Mem_HeaderSearch" users="44"/>
+      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="44"/>
+      <testcase name="G2M _TC12_Public_LotLookUp" users="44"/>
+      <testcase name="G2M_TC13_Member_WatchList" users="44"/>
+      <testcase name="G2M_TC14_Member_PreferencesEdit" users="44"/>
+      <testcase name="G2M_TC15_Member_CompareLots" users="44"/>
+      <testcase name="G2M_TC16_Member_LotsWonLost" users="44"/>
+      <testcase name="G2M_TC17_Member_SavedSearchs" users="44"/>
     </iteration>
   </execution>
   <logs>
