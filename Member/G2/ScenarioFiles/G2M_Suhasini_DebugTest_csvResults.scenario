@@ -107,8 +107,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_Suhasini_Debug_01" name="G2M_Suhasini_Debug_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="36"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="36"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="5"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="5"/>
     </iteration>
   </execution>
   <logs>
