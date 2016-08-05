@@ -51,9 +51,9 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
-    <node name="Node2" location="http://ec2-54-85-78-105.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
     <node name="Node3" location="http://ec2-54-209-152-84.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Node2" location="http://ec2-54-85-78-105.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -244,20 +244,20 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_Suhasini_Debug_01" name="G2M_Suhasini_Debug_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="9"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="9"/>
-      <testcase name="Untitled2" users="9"/>
-      <testcase name="Untitled3" users="9"/>
-      <testcase name="Untitled4" users="9"/>
-      <testcase name="Untitled5" users="9"/>
-      <testcase name="Untitled6" users="9"/>
-      <testcase name="Untitled7" users="9"/>
-      <testcase name="Untitled8" users="9"/>
-      <testcase name="Untitled9" users="9"/>
-      <testcase name="Untitled10" users="11"/>
-      <testcase name="Untitled11" users="11"/>
-      <testcase name="Untitled12" users="11"/>
-      <testcase name="Untitled13" users="11"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="10"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="10"/>
+      <testcase name="Untitled2" users="10"/>
+      <testcase name="Untitled3" users="10"/>
+      <testcase name="Untitled4" users="10"/>
+      <testcase name="Untitled5" users="10"/>
+      <testcase name="Untitled6" users="10"/>
+      <testcase name="Untitled7" users="10"/>
+      <testcase name="Untitled8" users="10"/>
+      <testcase name="Untitled9" users="20"/>
+      <testcase name="Untitled10" users="20"/>
+      <testcase name="Untitled11" users="20"/>
+      <testcase name="Untitled12" users="20"/>
+      <testcase name="Untitled13" users="20"/>
     </iteration>
   </execution>
   <logs>
