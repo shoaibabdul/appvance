@@ -31,10 +31,20 @@
   <resources>
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds" cache="false"/>
     <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
+    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
+    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds" cache="false"/>
+    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC4_Pub_SalesList.ds" cache="false"/>
+    <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC6_Mem_HPNavigation.ds" cache="false"/>
+    <resource name="G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC7_Mem_VehicleFinder.ds" cache="false"/>
+    <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds" cache="false"/>
+    <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC9_Mem_SalesList.ds" cache="false"/>
+    <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds" cache="false"/>
+    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
+    <resource name="G2M_TC13_Mem_WatchList.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC13_Mem_WatchList.ds" cache="false"/>
+    <resource name="G2M_TC14_Mem_PreferencesEditSave.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC14_Mem_PreferencesEditSave.ds" cache="false"/>
+    <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC15_Mem_CompareLots.ds" cache="false"/>
   </resources>
-  <testnodes>
-    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC_0804.cloud" amount="1" instantiate="None" terminate="None" reboot="Never"/>
-  </testnodes>
+  <testnodes/>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.0"/>
@@ -101,6 +111,66 @@
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
+    <testcase name="Untitled2" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled3" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC3_Pub_LotNoSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled4" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled5" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled6" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC7_Mem_VehicleFinder.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled7" expand="yes">
+      <test>
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC8_Mem_LotNoSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled8" expand="yes">
+      <test>
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC9_Mem_SalesList.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled9" expand="yes">
+      <test>
+        <run name="Untitled9" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC10_Mem_HeaderSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled10" expand="yes">
+      <test>
+        <run name="Untitled10" testclass="sahi" method="firefox" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled11" expand="yes">
+      <test>
+        <run name="Untitled11" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled12" expand="yes">
+      <test>
+        <run name="Untitled12" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Untitled13" expand="yes">
+      <test>
+        <run name="Untitled13" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -109,6 +179,18 @@
     <iteration controller="G2M_Suhasini_Debug_01" name="G2M_Suhasini_Debug_01">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="5"/>
       <testcase name="G2M_TC5_Pub_HeaderSearch" users="5"/>
+      <testcase name="Untitled2" users="5"/>
+      <testcase name="Untitled3" users="5"/>
+      <testcase name="Untitled4" users="5"/>
+      <testcase name="Untitled5" users="5"/>
+      <testcase name="Untitled6" users="5"/>
+      <testcase name="Untitled7" users="5"/>
+      <testcase name="Untitled8" users="5"/>
+      <testcase name="Untitled9" users="5"/>
+      <testcase name="Untitled10" users="7"/>
+      <testcase name="Untitled11" users="7"/>
+      <testcase name="Untitled12" users="7"/>
+      <testcase name="Untitled13" users="7"/>
     </iteration>
   </execution>
   <logs>
