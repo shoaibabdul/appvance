@@ -48,6 +48,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
   </resources>
   <testnodes>
     <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
@@ -69,7 +70,7 @@
     </dpl>
     <dpl name="Untitled2" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC2_VehicleFinder.csv"/>
+        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
     <dpl name="Untitled3" type="HashDPL" langtype="java" method="setup">
