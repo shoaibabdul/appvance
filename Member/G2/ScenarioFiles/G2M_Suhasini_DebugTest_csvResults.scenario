@@ -101,7 +101,7 @@
   </options>
   <templates>
     <controller name="G2M_Suhasini_Debug_01">
-      <round name="G2M_Suhasini_Debug_01" totalusers="10" time="5" testtype="users" totaliterations="200"/>
+      <round name="G2M_Suhasini_Debug_01" totalusers="10" time="15" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
