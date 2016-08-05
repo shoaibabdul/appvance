@@ -45,7 +45,7 @@
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC15_Mem_CompareLots.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
