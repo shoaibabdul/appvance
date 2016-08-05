@@ -44,7 +44,9 @@
     <resource name="G2M_TC14_Mem_PreferencesEditSave.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC14_Mem_PreferencesEditSave.ds" cache="false"/>
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC15_Mem_CompareLots.ds" cache="false"/>
   </resources>
-  <testnodes/>
+  <testnodes>
+    <node name="Node1" location="http://ec2-54-86-79-63.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+  </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.0"/>
@@ -73,7 +75,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
@@ -197,9 +199,9 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-86-79-63.compute-1.amazonaws.com:3306/apc"/>
       <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
   </logs>
   <integrations>
