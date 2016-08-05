@@ -148,7 +148,7 @@
   </options>
   <templates>
     <controller name="G2M_Suhasini_Debug_01">
-      <round name="G2M_Suhasini_Debug_01" totalusers="10" time="15" testtype="users" totaliterations="200"/>
+      <round name="G2M_Suhasini_Debug_01" totalusers="10" time="25" testtype="users" totaliterations="200"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -242,20 +242,20 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_Suhasini_Debug_01" name="G2M_Suhasini_Debug_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="5"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="5"/>
-      <testcase name="Untitled2" users="5"/>
-      <testcase name="Untitled3" users="5"/>
-      <testcase name="Untitled4" users="5"/>
-      <testcase name="Untitled5" users="5"/>
-      <testcase name="Untitled6" users="5"/>
-      <testcase name="Untitled7" users="5"/>
-      <testcase name="Untitled8" users="5"/>
-      <testcase name="Untitled9" users="5"/>
-      <testcase name="Untitled10" users="7"/>
-      <testcase name="Untitled11" users="7"/>
-      <testcase name="Untitled12" users="7"/>
-      <testcase name="Untitled13" users="7"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="9"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="9"/>
+      <testcase name="Untitled2" users="9"/>
+      <testcase name="Untitled3" users="9"/>
+      <testcase name="Untitled4" users="9"/>
+      <testcase name="Untitled5" users="9"/>
+      <testcase name="Untitled6" users="9"/>
+      <testcase name="Untitled7" users="9"/>
+      <testcase name="Untitled8" users="9"/>
+      <testcase name="Untitled9" users="9"/>
+      <testcase name="Untitled10" users="11"/>
+      <testcase name="Untitled11" users="11"/>
+      <testcase name="Untitled12" users="11"/>
+      <testcase name="Untitled13" users="11"/>
     </iteration>
   </execution>
   <logs>
