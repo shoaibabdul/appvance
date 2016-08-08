@@ -100,7 +100,7 @@
 
 
 
-<step action="keyPress" value="13" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="keyPress" value="13" type="web" desc="Search Lot No" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type='' value="textbox(&quot;searchInput&quot;)" selected="true"/>
@@ -126,7 +126,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk on Tip2" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Tip: Pase a la izquierda o a la derecha en el vehículo para añadir a la lista de selección.&quot;)" selected="true"/>
 		<accessor type="click" value="div(62)" selected="false"/>
@@ -150,10 +150,10 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk on Image" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="image(&quot;20866135_1X.jpg&quot;)" selected="true"/>
-		<accessor type="click" value="image(2)" selected="false"/>
+		<accessor type="click" value="image(&quot;20866135_1X.jpg&quot;)" selected="false"/>
+		<accessor type="click" value="image(2)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//img[contains(@src,'https://g-images-qa1.copart.io/image_attachments/95821/copart_thumb/20866135_1X.jpg')]&quot;" selected="true"/>
@@ -175,7 +175,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
