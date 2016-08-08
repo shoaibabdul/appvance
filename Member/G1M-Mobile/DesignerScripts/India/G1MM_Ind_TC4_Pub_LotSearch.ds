@@ -153,7 +153,32 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="wait" value="8041" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;images_%284%29_-_Copy_-_Copy_-_Copy.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(2)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'https://g-images-qa1.copart.io/image_attachments/96092/copart_thumb/images_%284%29_-_Copy_-_Copy_-_Copy.jpg?1465884488')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;car_01-640x480_-_Copy_%282%29_-_Copy_-_Copy.jpg&quot;)" selected="true"/>
 		<accessor type="click" value="image(2)" selected="false"/>
@@ -167,7 +192,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -178,7 +203,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
@@ -192,7 +217,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
