@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.es/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.es/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk on Tip1" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Acceder a cualquier pantalla dentro de la aplicación de forma rápida usando este cajón navegación secundaria!&quot;)" selected="true"/>
 		<accessor type="click" value="span(13)" selected="false"/>
@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk on SearchBar" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(23)" selected="true"/>
 	</dialect>
@@ -75,7 +75,7 @@
 
 
 
-<step action="setValue" value="&quot;&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;50021250&quot;" type="web" desc="Enter Lot Number" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;searchInput&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
@@ -100,14 +100,16 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="keyPress" value="13" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Tip: Pase a la izquierda o a la derecha en el vehículo para añadir a la lista de selección.&quot;)" selected="true"/>
-		<accessor type="click" value="div(62)" selected="false"/>
+		<accessor type='' value='' selected="false"/>
+		<accessor type='' value="textbox(&quot;searchInput&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div/div[2]/div[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div[3]/div/div[2]/div[3]&quot;" selected="false"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
@@ -126,13 +128,12 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="image(&quot;20866135_1X.jpg&quot;)" selected="true"/>
-		<accessor type="click" value="image(2)" selected="false"/>
+		<accessor type="click" value="div(&quot;Tip: Pase a la izquierda o a la derecha en el vehículo para añadir a la lista de selección.&quot;)" selected="true"/>
+		<accessor type="click" value="div(62)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[contains(@src,'https://g-images-qa1.copart.io/image_attachments/95821/copart_thumb/20866135_1X.jpg')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div/div[2]/div[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div[3]/div/div[2]/div[3]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -151,6 +152,31 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;20866135_1X.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(2)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'https://g-images-qa1.copart.io/image_attachments/95821/copart_thumb/20866135_1X.jpg')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='root']/div/div/div/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[1]/div/div/div/div[1]/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
 	</dialect>
@@ -163,7 +189,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
