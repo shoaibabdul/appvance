@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.in&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g-mmember-qa1.copart.in&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk on Tip1" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Access any screen within the app quickly using this secondary navigation drawer!&quot;)" selected="true"/>
 		<accessor type="click" value="span(13)" selected="false"/>
@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Clk Auction" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;AUCTIONS&quot;)" selected="true"/>
 		<accessor type="click" value="div(29)" selected="false"/>
@@ -76,7 +76,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Clk Auctions After Today" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Auctions After Today&quot;)" selected="true"/>
 		<accessor type="click" value="div(24)" selected="false"/>
@@ -100,7 +100,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
@@ -125,7 +125,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk Finder" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;FINDER&quot;)" selected="true"/>
 		<accessor type="click" value="div(32)" selected="false"/>
@@ -149,7 +149,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Clk on Tip2" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Tip: Enter a free form text search or search by type&quot;)" selected="true"/>
 		<accessor type="click" value="div(49)" selected="false"/>
@@ -173,7 +173,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Submit" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(0)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Search&quot;)" selected="false"/>
@@ -198,7 +198,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk on Tip3" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Swipe left or right on vehicle to add selection to watchlist.&quot;)" selected="true"/>
 		<accessor type="click" value="span(56)" selected="false"/>
@@ -222,7 +222,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
@@ -247,7 +247,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Locations" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;LOCATIONS&quot;)" selected="true"/>
 		<accessor type="click" value="div(35)" selected="false"/>
@@ -271,7 +271,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
@@ -296,7 +296,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk Quick Picks" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;QUICK PICKS&quot;)" selected="true"/>
 		<accessor type="click" value="div(52)" selected="false"/>
@@ -320,7 +320,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Clk on Tip4" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Tip: Quickly find a category of vehicles using one of these featured categories.&quot;)" selected="true"/>
 		<accessor type="click" value="div(103)" selected="false"/>
@@ -344,7 +344,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
