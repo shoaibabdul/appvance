@@ -55,7 +55,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC339_0809.cloud" amount="2" instantiate="None" terminate="None" reboot="Never"/>
+    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC339_0809.cloud" amount="1" instantiate="None" terminate="None" reboot="Never"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
