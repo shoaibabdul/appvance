@@ -55,7 +55,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC_0803.cloud" amount="12" instantiate="None" terminate="None" reboot="Never"/>
+    <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC339_0809.cloud" amount="2" instantiate="None" terminate="None" reboot="Never"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -144,10 +144,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="3"/>
+      <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="3"/>
+      <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -181,8 +181,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_NewSprocs_LT_300_01">
-      <round name="G2M_NewSprocs_LT_300_01" totalusers="50" time="10" testtype="users" totaliterations="600"/>
+    <controller name="G2M_DryRun_50U_01">
+      <round name="G2M_DryRun_50U_01" totalusers="50" time="10" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -302,7 +302,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_NewSprocs_LT_300_01" name="G2M_NewSprocs_LT_300_01">
+    <iteration controller="G2M_DryRun_50U_01" name="G2M_DryRun_50U_01">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="3"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
