@@ -74,6 +74,8 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC7_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC8_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC11_VF_FreeSearch.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -126,37 +128,37 @@
     </dpl>
     <dpl name="TC11_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC11_VF_FreeSearch.csv"/>
       </argument>
     </dpl>
     <dpl name="TC12_Testdata" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
     <dpl name="TC13_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="TC14_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="TC15_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="TC17_TestData" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="TC16_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
