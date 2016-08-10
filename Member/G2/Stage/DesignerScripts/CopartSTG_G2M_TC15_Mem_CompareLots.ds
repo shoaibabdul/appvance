@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='CopartSTG_G2M_TC15_Mem_CompareLots' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/STG_G2M_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;http://g2-member-stg1.crashedtoys.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SignIn" isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#noPage&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;dropdown-toggle btn btn-lblue ng-binding&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign In')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div/div[1]/div/div/div[2]/div/div[2]/div/div/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#noPage')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Member" isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Member&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/login&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;btn btn-lblue ng-binding&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Member')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@type='button']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div/div[1]/div/div/div[2]/div/div[2]/div/div/ul/li[1]/div/div/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/login')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/div/div/a[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(2)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;form-control pull-right email ng-untouched ng-valid ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='show']/div[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control pull-right password ng-untouched ng-valid ng-valid-maxlength ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='show']/div[3]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Submit LogIn" isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Sign Into Your Account&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-lblue butn&quot;)" selected="false"/>
+		<accessor type="click" value="submit(7)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='show']/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form/div/div[2]/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Submit HeaderSearch" isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(0)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='search-form']/div/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox1" isThinkTime='false' isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14647856&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(137)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[1]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox2" isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[1]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14647966&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(138)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14647966']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[2]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[2]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox3" isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[2]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14648266&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(139)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14648266']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[3]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Checkbox4" isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="checkbox(&quot;lot-select[3]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;14648376&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;action-item ng-pristine ng-untouched ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(140)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='lot-select' and @value='14648376']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//table[@id='serverSideDataTable']/tbody/tr[4]/td[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[4]/td[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Compare button" isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Compare&quot;)" selected="true"/>
+		<accessor type="click" value="link(94)" selected="false"/>
+		<accessor type="click" value="link(&quot;btn btn-black[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Compare')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div[1]/div/div[2]/div[3]/div[1]/div[1]/ul/li[2]/span/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/span/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
+		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/dashboard&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/dashboard')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div/div[1]/div/div/div[2]/div/div[1]/ul/li/div/span/a[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/home.html#/logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
