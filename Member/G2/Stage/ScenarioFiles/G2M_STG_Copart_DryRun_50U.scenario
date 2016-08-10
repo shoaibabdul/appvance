@@ -184,7 +184,7 @@
     <controller name="G2M_STG_Copart_50U">
       <round name="G2M_STG_Copart_50U" totalusers="50" time="10" testtype="users" totaliterations="600"/>
     </controller>
-    <testcase name="CopartSTG_G2M_TC1_Pub_HPNavigation" expand="yes">
+    <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="CopartSTG_G2M_TC1_Pub_HPNav.ds"/>
       </test>
@@ -303,7 +303,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_STG_Copart_50U" name="G2M_STG_Copart_50U">
-      <testcase name="CopartSTG_G2M_TC1_Pub_HPNavigation" users="2"/>
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
       <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
