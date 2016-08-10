@@ -70,6 +70,11 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC11_VF_FreeSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC2_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC3_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC7_VehicleFinder.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC8_LotNumbers.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/TestData/CopartSTG_G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="G2M_Grid" type="Grid" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC339_0809.cloud" amount="12" instantiate="None" terminate="None" reboot="Never"/>
@@ -86,37 +91,37 @@
   <datasources>
     <dpl name="G2M_TC2" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC2_VehicleFinder.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC2_VehicleFinder.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC3" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC6" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC7" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC7_VehicleFinder.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC8" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC8_LotNumbers.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC9" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="G2M_TC10" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+        <argument name="file" value="CopartSTG_G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="TC11_TestData" type="HashDPL" langtype="java" method="setup">
