@@ -20,12 +20,12 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_NewSprocs_LT_300Users</name>
+    <name>G2M_STG_Copart_LT_300Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
-    <versions>v1.1</versions>
+    <versions>v1.2</versions>
     <categorization>G2Member Project</categorization>
   </basics>
   <resources>
@@ -46,6 +46,8 @@
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC15_Mem_CompareLots.ds" cache="false"/>
     <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds" cache="false"/>
     <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds" cache="false"/>
+    <resource name="CopartSTG_G2M_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/CopartSTG_G2M_TC1_Pub_HPNav.ds" cache="false"/>
+    <resource name="CopartSTG_G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/Stage/DesignerScripts/CopartSTG_G2M_TC2_Pub_VehicleFinder.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC7_VehicleFinder.csv" cache="false"/>
@@ -181,17 +183,17 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_NewSprocs_LT_300_01">
-      <round name="G2M_NewSprocs_LT_300_01" totalusers="300" time="30" testtype="users" totaliterations="2400"/>
+    <controller name="G2M_STG_Copart_300U">
+      <round name="G2M_STG_Copart_300U" totalusers="300" time="30" testtype="users" totaliterations="2400"/>
     </controller>
-    <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
+    <testcase name="CopartSTG_G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds"/>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="CopartSTG_G2M_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
     <testcase name="G2M_TC2_Pub_VehicleFinder" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds">
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="CopartSTG_G2M_TC2_Pub_VehicleFinder.ds">
           <argument name="G2M_TC2" method="getNextData" dpl="G2M_TC2"/>
         </run>
       </test>
@@ -302,8 +304,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_NewSprocs_LT_300_01" name="G2M_NewSprocs_LT_300_01">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="18"/>
+    <iteration controller="G2M_STG_Copart_300U" name="G2M_STG_Copart_300U">
+      <testcase name="CopartSTG_G2M_TC1_Pub_HPNavigation" users="18"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="18"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="18"/>
       <testcase name="G2M_TC4_Pub_SalesList" users="18"/>
