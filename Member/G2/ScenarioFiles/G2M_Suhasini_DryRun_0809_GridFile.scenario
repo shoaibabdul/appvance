@@ -55,7 +55,8 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Node1" location="http://ec2-54-152-100-131.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Node1" location="http://ec2-54-208-141-58.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="Node2" location="http://ec2-174-129-183-159.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -182,7 +183,7 @@
   </options>
   <templates>
     <controller name="G2M_DryRun_50U_01">
-      <round name="G2M_DryRun_50U_01" totalusers="50" time="20" testtype="users" totaliterations="600"/>
+      <round name="G2M_DryRun_50U_01" totalusers="50" time="10" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
