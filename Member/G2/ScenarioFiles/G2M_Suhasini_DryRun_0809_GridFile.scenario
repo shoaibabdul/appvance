@@ -182,7 +182,7 @@
   </options>
   <templates>
     <controller name="G2M_DryRun_50U_01">
-      <round name="G2M_DryRun_50U_01" totalusers="50" time="10" testtype="users" totaliterations="600"/>
+      <round name="G2M_DryRun_50U_01" totalusers="50" time="20" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
