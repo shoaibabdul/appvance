@@ -55,8 +55,8 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="Node1" location="http://ec2-54-208-141-58.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="Node2" location="http://ec2-174-129-183-159.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="Node1" location="http://ec2-54-208-141-58.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -157,7 +157,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
