@@ -1,0 +1,961 @@
+UserID,Password,VehicleFinder
+110588,copart1,Automobiles
+474758,copart1,Motorcycles
+483572,copart1,All Over
+483599,copart1,Front End
+483581,copart1,Rear End
+483621,copart1,Salvage Title
+483628,copart1,Boats
+483659,copart1,Jet Skis
+483648,copart1,Buy It Now
+483665,copart1,Run and Drive
+483687,copart1,ATVs
+483701,copart1,Trailers
+483706,copart1,Acura
+483709,copart1,Audi
+483722,copart1,BMW
+483726,copart1,Chevrolet
+483765,copart1,Chrysler
+483805,copart1,Dodge
+483816,copart1,Ford
+483819,copart2,GMC
+483825,copart1,Harley
+110588,copart1,Honda
+474758,copart1,Hyundai
+483572,copart1,Infiniti
+483599,copart1,Jeep
+483581,copart1,Kia
+483621,copart1,Lexus
+483628,copart1,Mazda
+483659,copart1,Mitsubishi
+483648,copart1,Nissan
+483665,copart1,Pontiac
+483687,copart1,Subaru
+483701,copart1,Suzuki
+483706,copart1,Toyota
+483709,copart1,Volkswagen
+483722,copart1,Harley-Davidson
+483726,copart1,Kawasaki
+483765,copart1,Yamaha
+483805,copart1,Polaris
+483816,copart1,Ski-Doo
+483819,copart2,Automobiles
+483825,copart1,Motorcycles
+110588,copart1,All Over
+474758,copart1,Front End
+483572,copart1,Rear End
+483599,copart1,Salvage Title
+483581,copart1,Boats
+483621,copart1,Jet Skis
+483628,copart1,Buy It Now
+483659,copart1,Run and Drive
+483648,copart1,ATVs
+483665,copart1,Trailers
+483687,copart1,Acura
+483701,copart1,Audi
+483706,copart1,BMW
+483709,copart1,Chevrolet
+483722,copart1,Chrysler
+483726,copart1,Dodge
+483765,copart1,Ford
+483805,copart1,GMC
+483816,copart1,Harley
+483819,copart2,Honda
+483825,copart1,Hyundai
+110588,copart1,Infiniti
+474758,copart1,Jeep
+483572,copart1,Kia
+483599,copart1,Lexus
+483581,copart1,Mazda
+483621,copart1,Mitsubishi
+483628,copart1,Nissan
+483659,copart1,Pontiac
+483648,copart1,Subaru
+483665,copart1,Suzuki
+483687,copart1,Toyota
+483701,copart1,Volkswagen
+483706,copart1,Harley-Davidson
+483709,copart1,Kawasaki
+483722,copart1,Yamaha
+483726,copart1,Polaris
+483765,copart1,Ski-Doo
+483805,copart1,Automobiles
+483816,copart1,Motorcycles
+483819,copart2,All Over
+483825,copart1,Front End
+110588,copart1,Rear End
+474758,copart1,Salvage Title
+483572,copart1,Boats
+483599,copart1,Jet Skis
+483581,copart1,Buy It Now
+483621,copart1,Run and Drive
+483628,copart1,ATVs
+483659,copart1,Trailers
+483648,copart1,Acura
+483665,copart1,Audi
+483687,copart1,BMW
+483701,copart1,Chevrolet
+483706,copart1,Chrysler
+483709,copart1,Dodge
+483722,copart1,Ford
+483726,copart1,GMC
+483765,copart1,Harley
+483805,copart1,Honda
+483816,copart1,Hyundai
+483819,copart2,Infiniti
+483825,copart1,Jeep
+110588,copart1,Kia
+474758,copart1,Lexus
+483572,copart1,Mazda
+483599,copart1,Mitsubishi
+483581,copart1,Nissan
+483621,copart1,Pontiac
+483628,copart1,Subaru
+483659,copart1,Suzuki
+483648,copart1,Toyota
+483665,copart1,Volkswagen
+483687,copart1,Harley-Davidson
+483701,copart1,Kawasaki
+483706,copart1,Yamaha
+483709,copart1,Polaris
+483722,copart1,Ski-Doo
+483726,copart1,Automobiles
+483765,copart1,Motorcycles
+483805,copart1,All Over
+483816,copart1,Front End
+483819,copart2,Rear End
+483825,copart1,Salvage Title
+110588,copart1,Boats
+474758,copart1,Jet Skis
+483572,copart1,Buy It Now
+483599,copart1,Run and Drive
+483581,copart1,ATVs
+483621,copart1,Trailers
+483628,copart1,Acura
+483659,copart1,Audi
+483648,copart1,BMW
+483665,copart1,Chevrolet
+483687,copart1,Chrysler
+483701,copart1,Dodge
+483706,copart1,Ford
+483709,copart1,GMC
+483722,copart1,Harley
+483726,copart1,Honda
+483765,copart1,Hyundai
+483805,copart1,Infiniti
+483816,copart1,Jeep
+483819,copart2,Kia
+483825,copart1,Lexus
+110588,copart1,Mazda
+474758,copart1,Mitsubishi
+483572,copart1,Nissan
+483599,copart1,Pontiac
+483581,copart1,Subaru
+483621,copart1,Suzuki
+483628,copart1,Toyota
+483659,copart1,Volkswagen
+483648,copart1,Harley-Davidson
+483665,copart1,Kawasaki
+483687,copart1,Yamaha
+483701,copart1,Polaris
+483706,copart1,Ski-Doo
+483709,copart1,Automobiles
+483722,copart1,Motorcycles
+483726,copart1,All Over
+483765,copart1,Front End
+483805,copart1,Rear End
+483816,copart1,Salvage Title
+483819,copart2,Boats
+483825,copart1,Jet Skis
+110588,copart1,Buy It Now
+474758,copart1,Run and Drive
+483572,copart1,ATVs
+483599,copart1,Trailers
+483581,copart1,Acura
+483621,copart1,Audi
+483628,copart1,BMW
+483659,copart1,Chevrolet
+483648,copart1,Chrysler
+483665,copart1,Dodge
+483687,copart1,Ford
+483701,copart1,GMC
+483706,copart1,Harley
+483709,copart1,Honda
+483722,copart1,Hyundai
+483726,copart1,Infiniti
+483765,copart1,Jeep
+483805,copart1,Kia
+483816,copart1,Lexus
+483819,copart2,Mazda
+483825,copart1,Mitsubishi
+110588,copart1,Nissan
+474758,copart1,Pontiac
+483572,copart1,Subaru
+483599,copart1,Suzuki
+483581,copart1,Toyota
+483621,copart1,Volkswagen
+483628,copart1,Harley-Davidson
+483659,copart1,Kawasaki
+483648,copart1,Yamaha
+483665,copart1,Polaris
+483687,copart1,Ski-Doo
+483701,copart1,Automobiles
+483706,copart1,Motorcycles
+483709,copart1,All Over
+483722,copart1,Front End
+483726,copart1,Rear End
+483765,copart1,Salvage Title
+483805,copart1,Boats
+483816,copart1,Jet Skis
+483819,copart2,Buy It Now
+483825,copart1,Run and Drive
+110588,copart1,ATVs
+474758,copart1,Trailers
+483572,copart1,Acura
+483599,copart1,Audi
+483581,copart1,BMW
+483621,copart1,Chevrolet
+483628,copart1,Chrysler
+483659,copart1,Dodge
+483648,copart1,Ford
+483665,copart1,GMC
+483687,copart1,Harley
+483701,copart1,Honda
+483706,copart1,Hyundai
+483709,copart1,Infiniti
+483722,copart1,Jeep
+483726,copart1,Kia
+483765,copart1,Lexus
+483805,copart1,Mazda
+483816,copart1,Mitsubishi
+483819,copart2,Nissan
+483825,copart1,Pontiac
+110588,copart1,Subaru
+474758,copart1,Suzuki
+483572,copart1,Toyota
+483599,copart1,Volkswagen
+483581,copart1,Harley-Davidson
+483621,copart1,Kawasaki
+483628,copart1,Yamaha
+483659,copart1,Polaris
+483648,copart1,Ski-Doo
+483665,copart1,Automobiles
+483687,copart1,Motorcycles
+483701,copart1,All Over
+483706,copart1,Front End
+483709,copart1,Rear End
+483722,copart1,Salvage Title
+483726,copart1,Boats
+483765,copart1,Jet Skis
+483805,copart1,Buy It Now
+483816,copart1,Run and Drive
+483819,copart2,ATVs
+483825,copart1,Trailers
+110588,copart1,Acura
+474758,copart1,Audi
+483572,copart1,BMW
+483599,copart1,Chevrolet
+483581,copart1,Chrysler
+483621,copart1,Dodge
+483628,copart1,Ford
+483659,copart1,GMC
+483648,copart1,Harley
+483665,copart1,Honda
+483687,copart1,Hyundai
+483701,copart1,Infiniti
+483706,copart1,Jeep
+483709,copart1,Kia
+483722,copart1,Lexus
+483726,copart1,Mazda
+483765,copart1,Mitsubishi
+483805,copart1,Nissan
+483816,copart1,Pontiac
+483819,copart2,Subaru
+483825,copart1,Suzuki
+110588,copart1,Toyota
+474758,copart1,Volkswagen
+483572,copart1,Harley-Davidson
+483599,copart1,Kawasaki
+483581,copart1,Yamaha
+483621,copart1,Polaris
+483628,copart1,Ski-Doo
+483659,copart1,Automobiles
+483648,copart1,Motorcycles
+483665,copart1,All Over
+483687,copart1,Front End
+483701,copart1,Rear End
+483706,copart1,Salvage Title
+483709,copart1,Boats
+483722,copart1,Jet Skis
+483726,copart1,Buy It Now
+483765,copart1,Run and Drive
+483805,copart1,ATVs
+483816,copart1,Trailers
+483819,copart2,Acura
+483825,copart1,Audi
+110588,copart1,BMW
+474758,copart1,Chevrolet
+483572,copart1,Chrysler
+483599,copart1,Dodge
+483581,copart1,Ford
+483621,copart1,GMC
+483628,copart1,Harley
+483659,copart1,Honda
+483648,copart1,Hyundai
+483665,copart1,Infiniti
+483687,copart1,Jeep
+483701,copart1,Kia
+483706,copart1,Lexus
+483709,copart1,Mazda
+483722,copart1,Mitsubishi
+483726,copart1,Nissan
+483765,copart1,Pontiac
+483805,copart1,Subaru
+483816,copart1,Suzuki
+483819,copart2,Toyota
+483825,copart1,Volkswagen
+110588,copart1,Harley-Davidson
+474758,copart1,Kawasaki
+483572,copart1,Yamaha
+483599,copart1,Polaris
+483581,copart1,Ski-Doo
+483621,copart1,Automobiles
+483628,copart1,Motorcycles
+483659,copart1,All Over
+483648,copart1,Front End
+483665,copart1,Rear End
+483687,copart1,Salvage Title
+483701,copart1,Boats
+483706,copart1,Jet Skis
+483709,copart1,Buy It Now
+483722,copart1,Run and Drive
+483726,copart1,ATVs
+483765,copart1,Trailers
+483805,copart1,Acura
+483816,copart1,Audi
+483819,copart2,BMW
+483825,copart1,Chevrolet
+110588,copart1,Chrysler
+474758,copart1,Dodge
+483572,copart1,Ford
+483599,copart1,GMC
+483581,copart1,Harley
+483621,copart1,Honda
+483628,copart1,Hyundai
+483659,copart1,Infiniti
+483648,copart1,Jeep
+483665,copart1,Kia
+483687,copart1,Lexus
+483701,copart1,Mazda
+483706,copart1,Mitsubishi
+483709,copart1,Nissan
+483722,copart1,Pontiac
+483726,copart1,Subaru
+483765,copart1,Suzuki
+483805,copart1,Toyota
+483816,copart1,Volkswagen
+483819,copart2,Harley-Davidson
+483825,copart1,Kawasaki
+110588,copart1,Yamaha
+474758,copart1,Polaris
+483572,copart1,Ski-Doo
+483599,copart1,Automobiles
+483581,copart1,Motorcycles
+483621,copart1,All Over
+483628,copart1,Front End
+483659,copart1,Rear End
+483648,copart1,Salvage Title
+483665,copart1,Boats
+483687,copart1,Jet Skis
+483701,copart1,Buy It Now
+483706,copart1,Run and Drive
+483709,copart1,ATVs
+483722,copart1,Trailers
+483726,copart1,Acura
+483765,copart1,Audi
+483805,copart1,BMW
+483816,copart1,Chevrolet
+483819,copart2,Chrysler
+483825,copart1,Dodge
+110588,copart1,Ford
+474758,copart1,GMC
+483572,copart1,Harley
+483599,copart1,Honda
+483581,copart1,Hyundai
+483621,copart1,Infiniti
+483628,copart1,Jeep
+483659,copart1,Kia
+483648,copart1,Lexus
+483665,copart1,Mazda
+483687,copart1,Mitsubishi
+483701,copart1,Nissan
+483706,copart1,Pontiac
+483709,copart1,Subaru
+483722,copart1,Suzuki
+483726,copart1,Toyota
+483765,copart1,Volkswagen
+483805,copart1,Harley-Davidson
+483816,copart1,Kawasaki
+483819,copart2,Yamaha
+483825,copart1,Polaris
+110588,copart1,Ski-Doo
+474758,copart1,Automobiles
+483572,copart1,Motorcycles
+483599,copart1,All Over
+483581,copart1,Front End
+483621,copart1,Rear End
+483628,copart1,Salvage Title
+483659,copart1,Boats
+483648,copart1,Jet Skis
+483665,copart1,Buy It Now
+483687,copart1,Run and Drive
+483701,copart1,ATVs
+483706,copart1,Trailers
+483709,copart1,Acura
+483722,copart1,Audi
+483726,copart1,BMW
+483765,copart1,Chevrolet
+483805,copart1,Chrysler
+483816,copart1,Dodge
+483819,copart2,Ford
+483825,copart1,GMC
+110588,copart1,Harley
+474758,copart1,Honda
+483572,copart1,Hyundai
+483599,copart1,Infiniti
+483581,copart1,Jeep
+483621,copart1,Kia
+483628,copart1,Lexus
+483659,copart1,Mazda
+483648,copart1,Mitsubishi
+483665,copart1,Nissan
+483687,copart1,Pontiac
+483701,copart1,Subaru
+483706,copart1,Suzuki
+483709,copart1,Toyota
+483722,copart1,Volkswagen
+483726,copart1,Harley-Davidson
+483765,copart1,Kawasaki
+483805,copart1,Yamaha
+483816,copart1,Polaris
+483819,copart2,Ski-Doo
+483825,copart1,Automobiles
+110588,copart1,Motorcycles
+474758,copart1,All Over
+483572,copart1,Front End
+483599,copart1,Rear End
+483581,copart1,Salvage Title
+483621,copart1,Boats
+483628,copart1,Jet Skis
+483659,copart1,Buy It Now
+483648,copart1,Run and Drive
+483665,copart1,ATVs
+483687,copart1,Trailers
+483701,copart1,Acura
+483706,copart1,Audi
+483709,copart1,BMW
+483722,copart1,Chevrolet
+483726,copart1,Chrysler
+483765,copart1,Dodge
+483805,copart1,Ford
+483816,copart1,GMC
+483819,copart2,Harley
+483825,copart1,Honda
+110588,copart1,Hyundai
+474758,copart1,Infiniti
+483572,copart1,Jeep
+483599,copart1,Kia
+483581,copart1,Lexus
+483621,copart1,Mazda
+483628,copart1,Mitsubishi
+483659,copart1,Nissan
+483648,copart1,Pontiac
+483665,copart1,Subaru
+483687,copart1,Suzuki
+483701,copart1,Toyota
+483706,copart1,Volkswagen
+483709,copart1,Harley-Davidson
+483722,copart1,Kawasaki
+483726,copart1,Yamaha
+483765,copart1,Polaris
+483805,copart1,Ski-Doo
+483816,copart1,Automobiles
+483819,copart2,Motorcycles
+483825,copart1,All Over
+110588,copart1,Front End
+474758,copart1,Rear End
+483572,copart1,Salvage Title
+483599,copart1,Boats
+483581,copart1,Jet Skis
+483621,copart1,Buy It Now
+483628,copart1,Run and Drive
+483659,copart1,ATVs
+483648,copart1,Trailers
+483665,copart1,Acura
+483687,copart1,Audi
+483701,copart1,BMW
+483706,copart1,Chevrolet
+483709,copart1,Chrysler
+483722,copart1,Dodge
+483726,copart1,Ford
+483765,copart1,GMC
+483805,copart1,Harley
+483816,copart1,Honda
+483819,copart2,Hyundai
+483825,copart1,Infiniti
+110588,copart1,Jeep
+474758,copart1,Kia
+483572,copart1,Lexus
+483599,copart1,Mazda
+483581,copart1,Mitsubishi
+483621,copart1,Nissan
+483628,copart1,Pontiac
+483659,copart1,Subaru
+483648,copart1,Suzuki
+483665,copart1,Toyota
+483687,copart1,Volkswagen
+483701,copart1,Harley-Davidson
+483706,copart1,Kawasaki
+483709,copart1,Yamaha
+483722,copart1,Polaris
+483726,copart1,Ski-Doo
+483765,copart1,Automobiles
+483805,copart1,Motorcycles
+483816,copart1,All Over
+483819,copart2,Front End
+483825,copart1,Rear End
+110588,copart1,Salvage Title
+474758,copart1,Boats
+483572,copart1,Jet Skis
+483599,copart1,Buy It Now
+483581,copart1,Run and Drive
+483621,copart1,ATVs
+483628,copart1,Trailers
+483659,copart1,Acura
+483648,copart1,Audi
+483665,copart1,BMW
+483687,copart1,Chevrolet
+483701,copart1,Chrysler
+483706,copart1,Dodge
+483709,copart1,Ford
+483722,copart1,GMC
+483726,copart1,Harley
+483765,copart1,Honda
+483805,copart1,Hyundai
+483816,copart1,Infiniti
+483819,copart2,Jeep
+483825,copart1,Kia
+110588,copart1,Lexus
+474758,copart1,Mazda
+483572,copart1,Mitsubishi
+483599,copart1,Nissan
+483581,copart1,Pontiac
+483621,copart1,Subaru
+483628,copart1,Suzuki
+483659,copart1,Toyota
+483648,copart1,Volkswagen
+483665,copart1,Harley-Davidson
+483687,copart1,Kawasaki
+483701,copart1,Yamaha
+483706,copart1,Polaris
+483709,copart1,Ski-Doo
+483722,copart1,Automobiles
+483726,copart1,Motorcycles
+483765,copart1,All Over
+483805,copart1,Front End
+483816,copart1,Rear End
+483819,copart2,Salvage Title
+483825,copart1,Boats
+110588,copart1,Jet Skis
+474758,copart1,Buy It Now
+483572,copart1,Run and Drive
+483599,copart1,ATVs
+483581,copart1,Trailers
+483621,copart1,Acura
+483628,copart1,Audi
+483659,copart1,BMW
+483648,copart1,Chevrolet
+483665,copart1,Chrysler
+483687,copart1,Dodge
+483701,copart1,Ford
+483706,copart1,GMC
+483709,copart1,Harley
+483722,copart1,Honda
+483726,copart1,Hyundai
+483765,copart1,Infiniti
+483805,copart1,Jeep
+483816,copart1,Kia
+483819,copart2,Lexus
+483825,copart1,Mazda
+110588,copart1,Mitsubishi
+474758,copart1,Nissan
+483572,copart1,Pontiac
+483599,copart1,Subaru
+483581,copart1,Suzuki
+483621,copart1,Toyota
+483628,copart1,Volkswagen
+483659,copart1,Harley-Davidson
+483648,copart1,Kawasaki
+483665,copart1,Yamaha
+483687,copart1,Polaris
+483701,copart1,Ski-Doo
+483706,copart1,Automobiles
+483709,copart1,Motorcycles
+483722,copart1,All Over
+483726,copart1,Front End
+483765,copart1,Rear End
+483805,copart1,Salvage Title
+483816,copart1,Boats
+483819,copart2,Jet Skis
+483825,copart1,Buy It Now
+110588,copart1,Run and Drive
+474758,copart1,ATVs
+483572,copart1,Trailers
+483599,copart1,Acura
+483581,copart1,Audi
+483621,copart1,BMW
+483628,copart1,Chevrolet
+483659,copart1,Chrysler
+483648,copart1,Dodge
+483665,copart1,Ford
+483687,copart1,GMC
+483701,copart1,Harley
+483706,copart1,Honda
+483709,copart1,Hyundai
+483722,copart1,Infiniti
+483726,copart1,Jeep
+483765,copart1,Kia
+483805,copart1,Lexus
+483816,copart1,Mazda
+483819,copart2,Mitsubishi
+483825,copart1,Nissan
+110588,copart1,Pontiac
+474758,copart1,Subaru
+483572,copart1,Suzuki
+483599,copart1,Toyota
+483581,copart1,Volkswagen
+483621,copart1,Harley-Davidson
+483628,copart1,Kawasaki
+483659,copart1,Yamaha
+483648,copart1,Polaris
+483665,copart1,Ski-Doo
+483687,copart1,Automobiles
+483701,copart1,Motorcycles
+483706,copart1,All Over
+483709,copart1,Front End
+483722,copart1,Rear End
+483726,copart1,Salvage Title
+483765,copart1,Boats
+483805,copart1,Jet Skis
+483816,copart1,Buy It Now
+483819,copart2,Run and Drive
+483825,copart1,ATVs
+110588,copart1,Trailers
+474758,copart1,Acura
+483572,copart1,Audi
+483599,copart1,BMW
+483581,copart1,Chevrolet
+483621,copart1,Chrysler
+483628,copart1,Dodge
+483659,copart1,Ford
+483648,copart1,GMC
+483665,copart1,Harley
+483687,copart1,Honda
+483701,copart1,Hyundai
+483706,copart1,Infiniti
+483709,copart1,Jeep
+483722,copart1,Kia
+483726,copart1,Lexus
+483765,copart1,Mazda
+483805,copart1,Mitsubishi
+483816,copart1,Nissan
+483819,copart2,Pontiac
+483825,copart1,Subaru
+110588,copart1,Suzuki
+474758,copart1,Toyota
+483572,copart1,Volkswagen
+483599,copart1,Harley-Davidson
+483581,copart1,Kawasaki
+483621,copart1,Yamaha
+483628,copart1,Polaris
+483659,copart1,Ski-Doo
+483648,copart1,Automobiles
+483665,copart1,Motorcycles
+483687,copart1,All Over
+483701,copart1,Front End
+483706,copart1,Rear End
+483709,copart1,Salvage Title
+483722,copart1,Boats
+483726,copart1,Jet Skis
+483765,copart1,Buy It Now
+483805,copart1,Run and Drive
+483816,copart1,ATVs
+483819,copart2,Trailers
+483825,copart1,Acura
+110588,copart1,Audi
+474758,copart1,BMW
+483572,copart1,Chevrolet
+483599,copart1,Chrysler
+483581,copart1,Dodge
+483621,copart1,Ford
+483628,copart1,GMC
+483659,copart1,Harley
+483648,copart1,Honda
+483665,copart1,Hyundai
+483687,copart1,Infiniti
+483701,copart1,Jeep
+483706,copart1,Kia
+483709,copart1,Lexus
+483722,copart1,Mazda
+483726,copart1,Mitsubishi
+483765,copart1,Nissan
+483805,copart1,Pontiac
+483816,copart1,Subaru
+483819,copart2,Suzuki
+483825,copart1,Toyota
+110588,copart1,Volkswagen
+474758,copart1,Harley-Davidson
+483572,copart1,Kawasaki
+483599,copart1,Yamaha
+483581,copart1,Polaris
+483621,copart1,Ski-Doo
+483628,copart1,Automobiles
+483659,copart1,Motorcycles
+483648,copart1,All Over
+483665,copart1,Front End
+483687,copart1,Rear End
+483701,copart1,Salvage Title
+483706,copart1,Boats
+483709,copart1,Jet Skis
+483722,copart1,Buy It Now
+483726,copart1,Run and Drive
+483765,copart1,ATVs
+483805,copart1,Trailers
+483816,copart1,Acura
+483819,copart2,Audi
+483825,copart1,BMW
+110588,copart1,Chevrolet
+474758,copart1,Chrysler
+483572,copart1,Dodge
+483599,copart1,Ford
+483581,copart1,GMC
+483621,copart1,Harley
+483628,copart1,Honda
+483659,copart1,Hyundai
+483648,copart1,Infiniti
+483665,copart1,Jeep
+483687,copart1,Kia
+483701,copart1,Lexus
+483706,copart1,Mazda
+483709,copart1,Mitsubishi
+483722,copart1,Nissan
+483726,copart1,Pontiac
+483765,copart1,Subaru
+483805,copart1,Suzuki
+483816,copart1,Toyota
+483819,copart2,Volkswagen
+483825,copart1,Harley-Davidson
+110588,copart1,Kawasaki
+474758,copart1,Yamaha
+483572,copart1,Polaris
+483599,copart1,Ski-Doo
+483581,copart1,Automobiles
+483621,copart1,Motorcycles
+483628,copart1,All Over
+483659,copart1,Front End
+483648,copart1,Rear End
+483665,copart1,Salvage Title
+483687,copart1,Boats
+483701,copart1,Jet Skis
+483706,copart1,Buy It Now
+483709,copart1,Run and Drive
+483722,copart1,ATVs
+483726,copart1,Trailers
+483765,copart1,Acura
+483805,copart1,Audi
+483816,copart1,BMW
+483819,copart2,Chevrolet
+483825,copart1,Chrysler
+110588,copart1,Dodge
+474758,copart1,Ford
+483572,copart1,GMC
+483599,copart1,Harley
+483581,copart1,Honda
+483621,copart1,Hyundai
+483628,copart1,Infiniti
+483659,copart1,Jeep
+483648,copart1,Kia
+483665,copart1,Lexus
+483687,copart1,Mazda
+483701,copart1,Mitsubishi
+483706,copart1,Nissan
+483709,copart1,Pontiac
+483722,copart1,Subaru
+483726,copart1,Suzuki
+483765,copart1,Toyota
+483805,copart1,Volkswagen
+483816,copart1,Harley-Davidson
+483819,copart2,Kawasaki
+483825,copart1,Yamaha
+110588,copart1,Polaris
+474758,copart1,Ski-Doo
+483572,copart1,Automobiles
+483599,copart1,Motorcycles
+483581,copart1,All Over
+483621,copart1,Front End
+483628,copart1,Rear End
+483659,copart1,Salvage Title
+483648,copart1,Boats
+483665,copart1,Jet Skis
+483687,copart1,Buy It Now
+483701,copart1,Run and Drive
+483706,copart1,ATVs
+483709,copart1,Trailers
+483722,copart1,Acura
+483726,copart1,Audi
+483765,copart1,BMW
+483805,copart1,Chevrolet
+483816,copart1,Chrysler
+483819,copart2,Dodge
+483825,copart1,Ford
+110588,copart1,GMC
+474758,copart1,Harley
+483572,copart1,Honda
+483599,copart1,Hyundai
+483581,copart1,Infiniti
+483621,copart1,Jeep
+483628,copart1,Kia
+483659,copart1,Lexus
+483648,copart1,Mazda
+483665,copart1,Mitsubishi
+483687,copart1,Nissan
+483701,copart1,Pontiac
+483706,copart1,Subaru
+483709,copart1,Suzuki
+483722,copart1,Toyota
+483726,copart1,Volkswagen
+483765,copart1,Harley-Davidson
+483805,copart1,Kawasaki
+483816,copart1,Yamaha
+483819,copart2,Polaris
+483825,copart1,Ski-Doo
+110588,copart1,Automobiles
+474758,copart1,Motorcycles
+483572,copart1,All Over
+483599,copart1,Front End
+483581,copart1,Rear End
+483621,copart1,Salvage Title
+483628,copart1,Boats
+483659,copart1,Jet Skis
+483648,copart1,Buy It Now
+483665,copart1,Run and Drive
+483687,copart1,ATVs
+483701,copart1,Trailers
+483706,copart1,Acura
+483709,copart1,Audi
+483722,copart1,BMW
+483726,copart1,Chevrolet
+483765,copart1,Chrysler
+483805,copart1,Dodge
+483816,copart1,Ford
+483819,copart2,GMC
+483825,copart1,Harley
+110588,copart1,Honda
+474758,copart1,Hyundai
+483572,copart1,Infiniti
+483599,copart1,Jeep
+483581,copart1,Kia
+483621,copart1,Lexus
+483628,copart1,Mazda
+483659,copart1,Mitsubishi
+483648,copart1,Nissan
+483665,copart1,Pontiac
+483687,copart1,Subaru
+483701,copart1,Suzuki
+483706,copart1,Toyota
+483709,copart1,Volkswagen
+483722,copart1,Harley-Davidson
+483726,copart1,Kawasaki
+483765,copart1,Yamaha
+483805,copart1,Polaris
+483816,copart1,Ski-Doo
+483819,copart2,Automobiles
+483825,copart1,Motorcycles
+110588,copart1,All Over
+474758,copart1,Front End
+483572,copart1,Rear End
+483599,copart1,Salvage Title
+483581,copart1,Boats
+483621,copart1,Jet Skis
+483628,copart1,Buy It Now
+483659,copart1,Run and Drive
+483648,copart1,ATVs
+483665,copart1,Trailers
+483687,copart1,Acura
+483701,copart1,Audi
+483706,copart1,BMW
+483709,copart1,Chevrolet
+483722,copart1,Chrysler
+483726,copart1,Dodge
+483765,copart1,Ford
+483805,copart1,GMC
+483816,copart1,Harley
+483819,copart2,Honda
+483825,copart1,Hyundai
+110588,copart1,Infiniti
+474758,copart1,Jeep
+483572,copart1,Kia
+483599,copart1,Lexus
+483581,copart1,Mazda
+483621,copart1,Mitsubishi
+483628,copart1,Nissan
+483659,copart1,Pontiac
+483648,copart1,Subaru
+483665,copart1,Suzuki
+483687,copart1,Toyota
+483701,copart1,Volkswagen
+483706,copart1,Harley-Davidson
+483709,copart1,Kawasaki
+483722,copart1,Yamaha
+483726,copart1,Polaris
+483765,copart1,Ski-Doo
+483805,copart1,Automobiles
+483816,copart1,Motorcycles
+483819,copart2,All Over
+483825,copart1,Front End
+110588,copart1,Rear End
+474758,copart1,Salvage Title
+483572,copart1,Boats
+483599,copart1,Jet Skis
+483581,copart1,Buy It Now
+483621,copart1,Run and Drive
+483628,copart1,ATVs
+483659,copart1,Trailers
+483648,copart1,Acura
+483665,copart1,Audi
+483687,copart1,BMW
+483701,copart1,Chevrolet
+483706,copart1,Chrysler
+483709,copart1,Dodge
+483722,copart1,Ford
+483726,copart1,GMC
+483765,copart1,Harley
+483805,copart1,Honda
+483816,copart1,Hyundai
+483819,copart2,Infiniti
+483825,copart1,Jeep
+110588,copart1,Kia
+474758,copart1,Lexus
+483572,copart1,Mazda
+483599,copart1,Mitsubishi
+483581,copart1,Nissan
+483621,copart1,Pontiac
+483628,copart1,Subaru
+483659,copart1,Suzuki
+483648,copart1,Toyota
+483665,copart1,Volkswagen
+483687,copart1,Harley-Davidson
+483701,copart1,Kawasaki
+483706,copart1,Yamaha
+483709,copart1,Polaris
+483722,copart1,Ski-Doo
