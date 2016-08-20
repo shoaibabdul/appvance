@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_STG_Copart_DryRun_50Users</name>
+    <name>G2M_Beta_DryRun_50U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -181,8 +181,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_STG_Copart_50U">
-      <round name="G2M_STG_Copart_50U" totalusers="50" time="10" testtype="users" totaliterations="600"/>
+    <controller name="G2M_Beta_Dryrun_50U">
+      <round name="G2M_Beta_Dryrun_50U" totalusers="50" time="10" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -302,7 +302,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_STG_Copart_50U" name="G2M_STG_Copart_50U">
+    <iteration controller="G2M_Beta_Dryrun_50U" name="G2M_Beta_Dryrun_50U">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
