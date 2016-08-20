@@ -292,7 +292,7 @@
     </testcase>
     <testcase name="G2M_TC17_Member_SavedSearchs" expand="yes">
       <test>
-        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="Beta_G2M_TC17_Mem_SavedSearches.ds">
+        <run name="Untitled17" testclass="sahi" method="firefox" langtype="ds" resource="Beta_G2M_TC17_Mem_SavedSearches.ds">
           <argument name="TC17_TestData" method="getNextData" dpl="TC17_TestData"/>
         </run>
       </test>
