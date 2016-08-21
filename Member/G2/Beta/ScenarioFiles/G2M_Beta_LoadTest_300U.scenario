@@ -182,7 +182,7 @@
   </options>
   <templates>
     <controller name="G2M_Beta_LT_300U">
-      <round name="G2M_Beta_LT_300U" totalusers="300" time="65" testtype="users" totaliterations="600"/>
+      <round name="G2M_Beta_LT_300U" totalusers="300" time="30" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
