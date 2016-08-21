@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_Beta_LT_300U</name>
+    <name>G2M_Beta_LT_600U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -181,8 +181,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_Beta_LT_300U">
-      <round name="G2M_Beta_LT_300U" totalusers="600" time="30" testtype="users" totaliterations="7200"/>
+    <controller name="G2M_Beta_LT_600U">
+      <round name="G2M_Beta_LT_600U" totalusers="600" time="30" testtype="users" totaliterations="7200"/>
     </controller>
     <testcase name="G2M_TC1_Pub_HPNavigation" expand="yes">
       <test>
@@ -302,7 +302,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_Beta_LT_300U" name="G2M_Beta_LT_300U">
+    <iteration controller="G2M_Beta_LT_600U" name="G2M_Beta_LT_600U">
       <testcase name="G2M_TC1_Pub_HPNavigation" users="36"/>
       <testcase name="G2M_TC2_Pub_VehicleFinder" users="36"/>
       <testcase name="G2M_TC3_Pub_LotNoSearch" users="36"/>
