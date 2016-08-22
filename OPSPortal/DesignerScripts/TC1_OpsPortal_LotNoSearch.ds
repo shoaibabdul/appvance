@@ -30,11 +30,11 @@
 
 <step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-18003&quot;)" selected="false"/>
-		<accessor type="setValue" value="emailbox(0)" selected="true"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-36153&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-18003']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-36153']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[1]/div/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
 	</dialect>
@@ -42,7 +42,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="wait" value="10114" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -55,11 +55,11 @@
 
 <step action="setValue" value="&quot;N3wUse56#&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-52996&quot;)" selected="false"/>
-		<accessor type="setValue" value="password(0)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-12976&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-52996']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-12976']&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[2]/div/input&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//div[2]/div/input&quot;" selected="false"/>
 	</dialect>
@@ -67,7 +67,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+<step action="wait" value="2035" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -80,12 +80,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
-		<accessor type="click" value="span(2)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="true"/>
+		<accessor type="click" value="submit(&quot;LOGIN&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[3]/div/button/div/div/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/button/div/div/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/form/div[3]/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
