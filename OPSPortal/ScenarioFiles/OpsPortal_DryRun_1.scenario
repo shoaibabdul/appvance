@@ -35,6 +35,12 @@
     <resource name="TC4_OpsPortal_ExtSearch_VINNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo.ds" cache="false"/>
     <resource name="TC5_OpsPortal_ExtSearch_ClaimNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo.ds" cache="false"/>
     <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC2_OpsPortal_LotNosWithData.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_OpsPortal_YardNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC4_OpsPortal_VINs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC5_OpsPortal_ClaimNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -47,7 +53,38 @@
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="TC1_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC1_OpsPortal_LotNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC2_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC2_OpsPortal_LotNosWithData.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC3_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC3_OpsPortal_YardNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC4_OpsPortal_VINs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC5_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC5_OpsPortal_ClaimNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC6_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC6_OpsPortal_AuctionDates.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -90,36 +127,48 @@
   </options>
   <templates>
     <controller name="OpsPortal_DryRun_01">
-      <round name="OpsPortal_DryRun_01" totalusers="12" time="10" testtype="users" totaliterations="12"/>
+      <round name="OpsPortal_DryRun_01" totalusers="6" time="5" testtype="users" totaliterations="6"/>
     </controller>
     <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_OpsPortal_LotNoSearch.ds"/>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_OpsPortal_LotNoSearch.ds">
+          <argument name="TC1_TD" method="getNextData" dpl="TC1_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch.ds"/>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch.ds">
+          <argument name="TC2_TD" method="getNextData" dpl="TC2_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC3_OpsPortal_ExtSearch_YardNo" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo.ds"/>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo.ds">
+          <argument name="TC3_TD" method="getNextData" dpl="TC3_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC4_OpsPortal_ExtSearch_VINNo" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo.ds"/>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo.ds">
+          <argument name="TC4_TD" method="getNextData" dpl="TC4_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC5_OpsPortal_ExtSearch_YardNo" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo.ds"/>
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo.ds">
+          <argument name="TC5_TD" method="getNextData" dpl="TC5_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds"/>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds">
+          <argument name="TC6_TD" method="getNextData" dpl="TC6_TD"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
