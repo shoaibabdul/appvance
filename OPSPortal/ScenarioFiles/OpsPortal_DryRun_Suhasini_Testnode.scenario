@@ -130,7 +130,7 @@
   </options>
   <templates>
     <controller name="OpsPortal_DryRun_01">
-      <round name="OpsPortal_DryRun_01" totalusers="6" time="10" testtype="users" totaliterations="6"/>
+      <round name="OpsPortal_DryRun_01" totalusers="12" time="15" testtype="users" totaliterations="12"/>
     </controller>
     <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
       <test>
@@ -180,12 +180,12 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="OpsPortal_DryRun_01" name="OpsPortal_DryRun_01">
-      <testcase name="TC1_OpsPortal_LotNoSearch" users="1"/>
-      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="1"/>
-      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="1"/>
-      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="1"/>
-      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="1"/>
-      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="1"/>
+      <testcase name="TC1_OpsPortal_LotNoSearch" users="2"/>
+      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="2"/>
+      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="2"/>
+      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="2"/>
+      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="2"/>
+      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="2"/>
     </iteration>
   </execution>
   <logs>
