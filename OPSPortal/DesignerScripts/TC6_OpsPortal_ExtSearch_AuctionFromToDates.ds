@@ -155,7 +155,7 @@
 
 
 
-<step action="setValue" value="&quot;&quot;" type="web" desc="Clear YardNo" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;10&quot;" type="web" desc="Clear YardNo" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;yardNumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;yardNumber-YardNumber-YardNumber-25895&quot;)" selected="false"/>
