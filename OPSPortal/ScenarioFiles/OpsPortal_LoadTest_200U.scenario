@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>OpsPortal_LoadTest_100U</name>
+    <name>OpsPortal_LoadTest_200U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -43,16 +43,14 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="OpsPortal10" location="http://ec2-107-23-194-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal9" location="http://ec2-54-243-25-198.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal8" location="http://ec2-54-209-171-31.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal7" location="http://ec2-107-21-17-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal6" location="http://ec2-54-211-125-130.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal5" location="http://ec2-107-21-88-163.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal4" location="http://ec2-107-20-130-251.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="OpsPortal1" location="http://ec2-107-21-141-168.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal4" location="http://ec2-107-20-130-251.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal5" location="http://ec2-107-21-88-163.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal6" location="http://ec2-54-211-125-130.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal7" location="http://ec2-107-21-17-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal8" location="http://ec2-54-209-171-31.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -138,8 +136,8 @@
     </options>
   </options>
   <templates>
-    <controller name="OpsPortal_LT_100U">
-      <round name="OpsPortal_LT_100U" totalusers="100" time="30" testtype="users" totaliterations="100"/>
+    <controller name="OpsPortal_LT_200U">
+      <round name="OpsPortal_LT_200U" totalusers="200" time="30" testtype="users" totaliterations="2000"/>
     </controller>
     <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
       <test>
@@ -188,13 +186,13 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="OpsPortal_LT_100U" name="OpsPortal_LT_100U">
-      <testcase name="TC1_OpsPortal_LotNoSearch" users="17"/>
-      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="17"/>
-      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="17"/>
-      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="17"/>
-      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="16"/>
-      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="16"/>
+    <iteration controller="OpsPortal_LT_200U" name="OpsPortal_LT_200U">
+      <testcase name="TC1_OpsPortal_LotNoSearch" users="34"/>
+      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="34"/>
+      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="33"/>
+      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="33"/>
+      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="33"/>
+      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="33"/>
     </iteration>
   </execution>
   <logs>
