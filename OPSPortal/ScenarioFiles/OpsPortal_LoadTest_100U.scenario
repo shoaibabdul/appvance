@@ -43,16 +43,10 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="OpsPortal1" location="http://ec2-107-21-141-168.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="OpsPortal4" location="http://ec2-107-20-130-251.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal5" location="http://ec2-107-21-88-163.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal6" location="http://ec2-54-211-125-130.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal7" location="http://ec2-107-21-17-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal8" location="http://ec2-54-209-171-31.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal9" location="http://ec2-54-243-25-198.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal10" location="http://ec2-107-23-194-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal1" location="http://ec2-107-21-141-168.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -101,10 +95,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
