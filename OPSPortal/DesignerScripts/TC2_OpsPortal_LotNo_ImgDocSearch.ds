@@ -105,7 +105,8 @@
 
 <step action="click" value='' type="web" desc="Clk Lot Review" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="div(18)" selected="true"/>
+		<accessor type="click" value="div(18)" selected="false"/>
+		<accessor type="click" value="div(19)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/div&quot;" selected="true"/>
@@ -201,7 +202,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Sel LotNo Link" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Sel LotNo Link" isThinkTime='false' isCommented="true" sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;20000415 N&quot;)" selected="false"/>
 		<accessor type="click" value="link(2)" selected="true"/>
@@ -216,7 +217,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
