@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>OpsPortal_DryRun_suhasini_TN</name>
+    <name>OpsPortal_LoadTest_100U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -92,10 +92,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpUsers" value="2"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownUsers" value="2"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -129,8 +129,8 @@
     </options>
   </options>
   <templates>
-    <controller name="OpsPortal_DryRun_01">
-      <round name="OpsPortal_DryRun_01" totalusers="12" time="15" testtype="users" totaliterations="12"/>
+    <controller name="OpsPortal_LT_100U">
+      <round name="OpsPortal_LT_100U" totalusers="100" time="30" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
       <test>
@@ -179,13 +179,13 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="OpsPortal_DryRun_01" name="OpsPortal_DryRun_01">
-      <testcase name="TC1_OpsPortal_LotNoSearch" users="2"/>
-      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="2"/>
-      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="2"/>
-      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="2"/>
-      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="2"/>
-      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="2"/>
+    <iteration controller="OpsPortal_LT_100U" name="OpsPortal_LT_100U">
+      <testcase name="TC1_OpsPortal_LotNoSearch" users="17"/>
+      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="17"/>
+      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="17"/>
+      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="17"/>
+      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="16"/>
+      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="16"/>
     </iteration>
   </execution>
   <logs>
