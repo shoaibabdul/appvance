@@ -43,14 +43,14 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="OpsPortal1" location="http://ec2-107-21-141-168.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal4" location="http://ec2-107-20-130-251.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal5" location="http://ec2-107-21-88-163.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal6" location="http://ec2-54-211-125-130.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal7" location="http://ec2-107-21-17-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="OpsPortal8" location="http://ec2-54-209-171-31.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal7" location="http://ec2-107-21-17-126.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal6" location="http://ec2-54-211-125-130.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal5" location="http://ec2-107-21-88-163.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal4" location="http://ec2-107-20-130-251.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal3" location="http://ec2-54-227-55-24.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal2" location="http://ec2-107-21-79-196.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal1" location="http://ec2-107-21-141-168.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
