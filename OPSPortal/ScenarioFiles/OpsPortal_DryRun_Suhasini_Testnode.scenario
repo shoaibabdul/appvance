@@ -43,7 +43,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="ec2" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="OP" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="2" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
