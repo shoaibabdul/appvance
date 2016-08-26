@@ -43,18 +43,18 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="OpsPortal8" location="http://ec2-54-197-10-51.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal7" location="http://ec2-52-91-244-104.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal6" location="http://ec2-52-91-50-4.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal5" location="http://ec2-54-174-216-235.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal4" location="http://ec2-54-172-39-166.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal3" location="http://ec2-54-84-56-74.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal2" location="http://ec2-54-160-79-23.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal1" location="http://ec2-54-197-4-16.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal9" location=" http://ec2-52-201-252-199.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal10" location="http://ec2-54-227-82-234.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="OpsPortal11" location="http://ec2-54-174-16-214.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="OpsPortal12" location="http://ec2-54-162-196-45.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal11" location="http://ec2-54-174-16-214.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal10" location="http://ec2-54-227-82-234.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal9" location=" http://ec2-52-201-252-199.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal1" location="http://ec2-54-197-4-16.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal2" location="http://ec2-54-160-79-23.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal3" location="http://ec2-54-84-56-74.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal4" location="http://ec2-54-172-39-166.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal5" location="http://ec2-54-174-216-235.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal6" location="http://ec2-52-91-50-4.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal7" location="http://ec2-52-91-244-104.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OpsPortal8" location="http://ec2-54-197-10-51.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -103,10 +103,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="2"/>
+      <opt name="RampUpUsers" value="3"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="2"/>
+      <opt name="RampDownUsers" value="3"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
