@@ -182,8 +182,8 @@
 
 <step action="setValue" value="&quot;$FromDate&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateFrom-16686&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(18)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateFrom-16686&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(18)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-MMDDYYYY-AuctionDateFrom-16686']&quot;" selected="true"/>
@@ -207,8 +207,8 @@
 
 <step action="setValue" value="&quot;$ToDate&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateTo-18696&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(19)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateTo-18696&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(19)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-MMDDYYYY-AuctionDateTo-18696']&quot;" selected="true"/>
