@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-op-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-17816&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;N3wUse56#&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-32163&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
@@ -151,7 +151,7 @@
 
 
 
-<step action="setValue" value="&quot;12121693&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;solr-search&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;solr-search-SearchF2-undefined-28295&quot;)" selected="false"/>
