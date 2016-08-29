@@ -30,17 +30,7 @@
   </basics>
   <resources>
     <resource name="TC1_OpsPortal_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC1_OpsPortal_LotNoSearch.ds" cache="false"/>
-    <resource name="TC2_OpsPortal_LotNo_ImgDocSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC2_OpsPortal_LotNo_ImgDocSearch.ds" cache="false"/>
-    <resource name="TC3_OpsPortal_ExtSearch_YardNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC3_OpsPortal_ExtSearch_YardNo.ds" cache="false"/>
-    <resource name="TC4_OpsPortal_ExtSearch_VINNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo.ds" cache="false"/>
-    <resource name="TC5_OpsPortal_ExtSearch_ClaimNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo.ds" cache="false"/>
-    <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" cache="false"/>
     <resource name="TC1_OpsPortal_LotNoSearch_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC1_OpsPortal_LotNoSearch_FF.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC2_OpsPortal_LotNosWithData.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_OpsPortal_YardNos.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC4_OpsPortal_VINs.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC5_OpsPortal_ClaimNos.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" cache="false"/>
   </resources>
   <testnodes>
@@ -133,8 +123,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="OpsPortal_BrowserDebugTest_01" name="OpsPortal_BrowserDebugTest_01">
-      <testcase name="TC1_OpsPortal_LotNoSearch" users="1"/>
-      <testcase name="TC1_OpsPortal_LotNoSearch_FF" users="1"/>
+      <testcase name="TC1_OpsPortal_LotNoSearch" users="10"/>
+      <testcase name="TC1_OpsPortal_LotNoSearch_FF" users="10"/>
     </iteration>
   </execution>
   <logs>
