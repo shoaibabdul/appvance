@@ -1,0 +1,206 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>OpsPortal_DryRun</name>
+    <defaultdirectory>{scenario}</defaultdirectory>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <links/>
+    <versions>v1.0</versions>
+    <categorization>OpsPortal</categorization>
+  </basics>
+  <resources>
+    <resource name="TC1_OpsPortal_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC1_OpsPortal_LotNoSearch.ds" cache="false"/>
+    <resource name="TC2_OpsPortal_LotNo_ImgDocSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC2_OpsPortal_LotNo_ImgDocSearch.ds" cache="false"/>
+    <resource name="TC3_OpsPortal_ExtSearch_YardNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC3_OpsPortal_ExtSearch_YardNo.ds" cache="false"/>
+    <resource name="TC4_OpsPortal_ExtSearch_VINNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo.ds" cache="false"/>
+    <resource name="TC5_OpsPortal_ExtSearch_ClaimNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo.ds" cache="false"/>
+    <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC2_OpsPortal_LotNosWithData.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_OpsPortal_YardNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC4_OpsPortal_VINs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC5_OpsPortal_ClaimNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
+  </resources>
+  <testnodes>
+    <cloud name="OPS" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC346_Mobile.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="appvance"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
+  </bundles>
+  <datasources>
+    <dpl name="TC1_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC1_OpsPortal_LotNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC2_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC2_OpsPortal_LotNosWithData.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC3_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC3_OpsPortal_YardNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC4_OpsPortal_VINs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC5_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC5_OpsPortal_ClaimNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC6_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC6_OpsPortal_AuctionDates.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SleepTime" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="ThinkTime" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="throwExceptionOnScriptError" value="true"/>
+      <opt name="throwExceptionOnFailingStatusCode" value="true"/>
+    </options>
+    <options type="sahi">
+      <opt name="fullPageLoaded" value="true"/>
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+      <opt name="debugMode" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="port" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="OpsPortal_DryRun_01">
+      <round name="OpsPortal_DryRun_01" totalusers="6" time="10" testtype="users" totaliterations="6"/>
+    </controller>
+    <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
+      <test>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_OpsPortal_LotNoSearch.ds">
+          <argument name="TC1_TD" method="getNextData" dpl="TC1_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch.ds">
+          <argument name="TC2_TD" method="getNextData" dpl="TC2_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC3_OpsPortal_ExtSearch_YardNo" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo.ds">
+          <argument name="TC3_TD" method="getNextData" dpl="TC3_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC4_OpsPortal_ExtSearch_VINNo" expand="yes">
+      <test>
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo.ds">
+          <argument name="TC4_TD" method="getNextData" dpl="TC4_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC5_OpsPortal_ExtSearch_YardNo" expand="yes">
+      <test>
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo.ds">
+          <argument name="TC5_TD" method="getNextData" dpl="TC5_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" expand="yes">
+      <test>
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds">
+          <argument name="TC6_TD" method="getNextData" dpl="TC6_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest">
+    <iteration controller="OpsPortal_DryRun_01" name="OpsPortal_DryRun_01">
+      <testcase name="TC1_OpsPortal_LotNoSearch" users="1"/>
+      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="1"/>
+      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="1"/>
+      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="1"/>
+      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="1"/>
+      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="1"/>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+    </log>
+  </logs>
+  <integrations>
+    <integration type="RQM">
+      <opt name="Enabled" value="false"/>
+    </integration>
+  </integrations>
+  <notifications/>
+</testscenario>
