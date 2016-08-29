@@ -42,7 +42,7 @@
 
 
 
-<step action="wait" value="11003" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -92,7 +92,7 @@
 
 
 
-<step action="wait" value="4948" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
