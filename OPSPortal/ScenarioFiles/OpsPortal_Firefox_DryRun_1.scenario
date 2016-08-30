@@ -147,35 +147,35 @@
     </testcase>
     <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch_FF" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds">
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds">
           <argument name="TC2_TD" method="getNextData" dpl="TC2_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC3_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo_FF.ds">
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo_FF.ds">
           <argument name="TC3_TD" method="getNextData" dpl="TC3_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC4_OpsPortal_ExtSearch_VINNo_FF" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo_FF.ds">
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo_FF.ds">
           <argument name="TC4_TD" method="getNextData" dpl="TC4_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC5_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds">
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds">
           <argument name="TC5_TD" method="getNextData" dpl="TC5_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates_FF" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds">
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds">
           <argument name="TC6_TD" method="getNextData" dpl="TC6_TD"/>
         </run>
       </test>
