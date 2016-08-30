@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>OpsPortal_DryRun</name>
+    <name>OpsPortal_Firefox_DryRun_1</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -35,6 +35,12 @@
     <resource name="TC4_OpsPortal_ExtSearch_VINNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo.ds" cache="false"/>
     <resource name="TC5_OpsPortal_ExtSearch_ClaimNo.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo.ds" cache="false"/>
     <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds" cache="false"/>
+    <resource name="TC1_OpsPortal_LotNoSearch_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC1_OpsPortal_LotNoSearch_FF.ds" cache="false"/>
+    <resource name="TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds" cache="false"/>
+    <resource name="TC3_OpsPortal_ExtSearch_YardNo_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC3_OpsPortal_ExtSearch_YardNo_FF.ds" cache="false"/>
+    <resource name="TC4_OpsPortal_ExtSearch_VINNo_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo_FF.ds" cache="false"/>
+    <resource name="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds" cache="false"/>
+    <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC2_OpsPortal_LotNosWithData.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_OpsPortal_YardNos.csv" cache="false"/>
@@ -129,47 +135,47 @@
     </options>
   </options>
   <templates>
-    <controller name="OpsPortal_DryRun_01">
-      <round name="OpsPortal_DryRun_01" totalusers="6" time="10" testtype="users" totaliterations="6"/>
+    <controller name="OpsPortal_FF_DryRun_01">
+      <round name="OpsPortal_FF_DryRun_01" totalusers="6" time="10" testtype="users" totaliterations="6"/>
     </controller>
-    <testcase name="TC1_OpsPortal_LotNoSearch" expand="yes">
+    <testcase name="TC1_OpsPortal_LotNoSearch_FF" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="TC1_OpsPortal_LotNoSearch.ds">
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_OpsPortal_LotNoSearch_FF.ds">
           <argument name="TC1_TD" method="getNextData" dpl="TC1_TD"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" expand="yes">
+    <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch_FF" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch.ds">
+        <run name="Untitled2" testclass="sahi" method="chrome" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds">
           <argument name="TC2_TD" method="getNextData" dpl="TC2_TD"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC3_OpsPortal_ExtSearch_YardNo" expand="yes">
+    <testcase name="TC3_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo.ds">
+        <run name="Untitled3" testclass="sahi" method="chrome" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo_FF.ds">
           <argument name="TC3_TD" method="getNextData" dpl="TC3_TD"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC4_OpsPortal_ExtSearch_VINNo" expand="yes">
+    <testcase name="TC4_OpsPortal_ExtSearch_VINNo_FF" expand="yes">
       <test>
-        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo.ds">
+        <run name="Untitled4" testclass="sahi" method="chrome" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo_FF.ds">
           <argument name="TC4_TD" method="getNextData" dpl="TC4_TD"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC5_OpsPortal_ExtSearch_YardNo" expand="yes">
+    <testcase name="TC5_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo.ds">
+        <run name="Untitled5" testclass="sahi" method="chrome" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds">
           <argument name="TC5_TD" method="getNextData" dpl="TC5_TD"/>
         </run>
       </test>
     </testcase>
-    <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" expand="yes">
+    <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates_FF" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates.ds">
+        <run name="Untitled6" testclass="sahi" method="chrome" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds">
           <argument name="TC6_TD" method="getNextData" dpl="TC6_TD"/>
         </run>
       </test>
@@ -179,13 +185,13 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="OpsPortal_DryRun_01" name="OpsPortal_DryRun_01">
-      <testcase name="TC1_OpsPortal_LotNoSearch" users="1"/>
-      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch" users="1"/>
-      <testcase name="TC3_OpsPortal_ExtSearch_YardNo" users="1"/>
-      <testcase name="TC4_OpsPortal_ExtSearch_VINNo" users="1"/>
-      <testcase name="TC5_OpsPortal_ExtSearch_YardNo" users="1"/>
-      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates" users="1"/>
+    <iteration controller="OpsPortal_FF_DryRun_01" name="OpsPortal_FF_DryRun_01">
+      <testcase name="TC1_OpsPortal_LotNoSearch_FF" users="1"/>
+      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch_FF" users="1"/>
+      <testcase name="TC3_OpsPortal_ExtSearch_YardNo_FF" users="1"/>
+      <testcase name="TC4_OpsPortal_ExtSearch_VINNo_FF" users="1"/>
+      <testcase name="TC5_OpsPortal_ExtSearch_YardNo_FF" users="1"/>
+      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates_FF" users="1"/>
     </iteration>
   </execution>
   <logs>
