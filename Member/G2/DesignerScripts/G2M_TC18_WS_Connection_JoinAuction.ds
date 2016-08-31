@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="wait" value="5069" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -17,7 +17,7 @@
 
 
 
-<step action="navigateTo" value="&quot;http://nirvanaloadtesttool.copart.com:3001/index?sessions=10&amp;chn=1-60&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;http://nirvanaloadtesttool.copart.com:3001/index?sessions=10&amp;chn=1-60&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
