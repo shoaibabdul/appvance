@@ -101,7 +101,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_WS_Auction_01" name="G2M_WS_Auction_01">
-      <testcase name="G2M_WS_Auction" users="1"/>
+      <testcase name="G2M_WS_Auction" users="10"/>
     </iteration>
   </execution>
   <logs>
