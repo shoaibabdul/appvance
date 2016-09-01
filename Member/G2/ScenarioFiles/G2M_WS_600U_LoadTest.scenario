@@ -88,7 +88,7 @@
   </options>
   <templates>
     <controller name="G2M_WS_Auction_600U_LT_01">
-      <round name="G2M_WS_Auction_600U_LT_01" totalusers="600" time="60" testtype="users" totaliterations="1200"/>
+      <round name="G2M_WS_Auction_600U_LT_01" totalusers="600" time="35" testtype="users" totaliterations="1200"/>
     </controller>
     <testcase name="G2M_WS_Auction" expand="yes">
       <test>
