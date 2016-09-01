@@ -92,7 +92,7 @@
     </controller>
     <testcase name="G2M_WS_Auction" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC18_WS_Connection_JoinAuction.ds"/>
+        <run name="Untitled1" testclass="sahi" method="chrome" langtype="ds" resource="G2M_TC18_WS_Connection_JoinAuction.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
