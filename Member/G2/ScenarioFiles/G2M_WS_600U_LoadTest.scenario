@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_Auction_WS_Conn</name>
+    <name>G2M_Auction_WS_600Users_LT</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -32,7 +32,7 @@
     <resource name="G2M_TC18_WS_Connection_JoinAuction.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC18_WS_Connection_JoinAuction.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="30" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -50,10 +50,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpUsers" value="2"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownUsers" value="2"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -87,8 +87,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_WS_Auction_01">
-      <round name="G2M_WS_Auction_01" totalusers="50" time="10" testtype="users" totaliterations="100"/>
+    <controller name="G2M_WS_Auction_600U_LT_01">
+      <round name="G2M_WS_Auction_600U_LT_01" totalusers="600" time="60" testtype="users" totaliterations="1200"/>
     </controller>
     <testcase name="G2M_WS_Auction" expand="yes">
       <test>
@@ -100,8 +100,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_WS_Auction_01" name="G2M_WS_Auction_01">
-      <testcase name="G2M_WS_Auction" users="50"/>
+    <iteration controller="G2M_WS_Auction_600U_LT_01" name="G2M_WS_Auction_600U_LT_01">
+      <testcase name="G2M_WS_Auction" users="600"/>
     </iteration>
   </execution>
   <logs>
