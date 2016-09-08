@@ -4,20 +4,9 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +17,7 @@
 
 
 
-<step action="wait" value="18084" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -39,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Auctions Calendar[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(104)" selected="false"/>
@@ -53,7 +42,7 @@
 
 
 
-<step action="wait" value="6965" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -64,7 +53,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Auctions Dashboard&quot;)" selected="true"/>
 		<accessor type="click" value="link(105)" selected="false"/>
@@ -79,7 +68,7 @@
 
 
 
-<step action="wait" value="7878" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -90,7 +79,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Night Cap Sale&quot;)" selected="true"/>
 		<accessor type="click" value="link(65)" selected="false"/>
@@ -106,7 +95,7 @@
 
 
 
-<step action="wait" value="7939" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -117,7 +106,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(72)" selected="false"/>
@@ -131,7 +120,7 @@
 
 
 
-<step action="wait" value="7925" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -142,7 +131,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Saved Searches[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(242)" selected="false"/>
@@ -156,7 +145,7 @@
 
 
 
-<step action="wait" value="5902" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -167,7 +156,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Alerts[2]&quot;)" selected="true"/>
 		<accessor type="click" value="link(80)" selected="false"/>
@@ -181,7 +170,7 @@
 
 
 
-<step action="wait" value="4859" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -192,7 +181,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(78)" selected="false"/>
@@ -206,7 +195,7 @@
 
 
 
-<step action="wait" value="4858" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -217,7 +206,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Watchlist[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(162)" selected="false"/>
@@ -231,7 +220,7 @@
 
 
 
-<step action="wait" value="19859" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -242,7 +231,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -259,7 +248,7 @@
 
 
 
-<step action="wait" value="17874" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -270,7 +259,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Detroit&quot;)" selected="true"/>
 		<accessor type="click" value="link(134)" selected="false"/>
@@ -287,7 +276,7 @@
 
 
 
-<step action="wait" value="9784" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -298,7 +287,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -315,7 +304,7 @@
 
 
 
-<step action="wait" value="12813" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -326,7 +315,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sacramento&quot;)" selected="true"/>
 		<accessor type="click" value="link(76)" selected="false"/>
@@ -342,7 +331,7 @@
 
 
 
-<step action="wait" value="4733" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -353,7 +342,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -370,7 +359,7 @@
 
 
 
-<step action="wait" value="17768" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -381,7 +370,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Chicago North&quot;)" selected="true"/>
 		<accessor type="click" value="link(109)" selected="false"/>
@@ -398,7 +387,7 @@
 
 
 
-<step action="wait" value="3721" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -409,7 +398,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -426,7 +415,7 @@
 
 
 
-<step action="wait" value="12716" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -437,7 +426,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Dallas&quot;)" selected="true"/>
 		<accessor type="click" value="link(195)" selected="false"/>
@@ -452,7 +441,7 @@
 
 
 
-<step action="wait" value="5689" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -463,7 +452,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -480,7 +469,7 @@
 
 
 
-<step action="wait" value="13783" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -491,7 +480,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Richmond&quot;)" selected="true"/>
 		<accessor type="click" value="link(208)" selected="false"/>
@@ -508,7 +497,7 @@
 
 
 
-<step action="wait" value="4518" type="web" desc='' isThinkTime="true" isCommented='false' sequence="38">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -519,7 +508,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="39">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
 		<accessor type="click" value="link(34)" selected="false"/>
@@ -536,7 +525,7 @@
 
 
 
-<step action="wait" value="12530" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -547,7 +536,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Honolulu&quot;)" selected="true"/>
 		<accessor type="click" value="link(107)" selected="false"/>
@@ -564,7 +553,7 @@
 
 
 
-<step action="wait" value="17566" type="web" desc='' isThinkTime="true" isCommented='false' sequence="42">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -575,7 +564,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="43">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(21)" selected="false"/>
@@ -585,6 +574,17 @@
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
