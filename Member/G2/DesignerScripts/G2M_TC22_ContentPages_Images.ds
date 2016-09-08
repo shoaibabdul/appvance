@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='G2M_TC22_ContentPages_Images' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="11011" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;RVs-658x355.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(2)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='RVs HP']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='copart-r-view']/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div[1]/div/div/div/div/a/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="23008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4931" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;asset_upload_file222_152374.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(4)" selected="false"/>
+		<accessor type="click" value="image(&quot;img-responsive&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='contentmodule_cleantitle']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[2]/div/div/div[2]/div[6]/div[1]/div/div/div/p/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p/a/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5926" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3883" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;asset_upload_file421_152371.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(5)" selected="false"/>
+		<accessor type="click" value="image(&quot;img-responsive[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='contentmodule_smartbuying']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[2]/div/div/div[2]/div[6]/div[2]/div/div/div/p/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div/div/p/a/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8919" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3854" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;asset_upload_file557_152372.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(6)" selected="false"/>
+		<accessor type="click" value="image(&quot;img-responisve&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='contentmodule_puresale']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[2]/div/div/div[2]/div[6]/div[3]/div/div/div/p/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div/div/p/a/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3870" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3834" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;easset_upload_file582_157084_e.jpg&quot;)" selected="true"/>
+		<accessor type="click" value="image(7)" selected="false"/>
+		<accessor type="click" value="image(&quot;img-responsive[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'https://www.copart.com//Content/US/EN/easset_upload_file582_157084_e.jpg')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[2]/div/div/div[2]/div[6]/div[4]/div/div/div/p/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div/div/div/p/a/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="18912" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(21)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://www.copart.com/home.html#/[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
