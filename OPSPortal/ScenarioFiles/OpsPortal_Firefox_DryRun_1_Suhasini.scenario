@@ -130,7 +130,7 @@
   </options>
   <templates>
     <controller name="OpsPortal_FF_DryRun_01">
-      <round name="OpsPortal_FF_DryRun_01" totalusers="12" time="10" testtype="users" totaliterations="12"/>
+      <round name="OpsPortal_FF_DryRun_01" totalusers="12" time="15" testtype="users" totaliterations="12"/>
     </controller>
     <testcase name="TC1_OpsPortal_LotNoSearch_FF" expand="yes">
       <test>
