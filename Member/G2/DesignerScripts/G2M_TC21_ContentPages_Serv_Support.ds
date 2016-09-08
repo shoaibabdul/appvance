@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="clk Brokers" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Brokers&quot;)" selected="true"/>
 		<accessor type="click" value="link(160)" selected="false"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="clk Inspectors" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Inspectors[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(119)" selected="false"/>
@@ -78,7 +78,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="clk Int Shipping" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;International Shipping&quot;)" selected="true"/>
 		<accessor type="click" value="link(128)" selected="false"/>
@@ -105,7 +105,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="clk Tow Providers" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Tow Providers[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(125)" selected="false"/>
@@ -131,7 +131,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="clk FAQ" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;FAQ[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(89)" selected="false"/>
@@ -156,7 +156,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="clk Help with Lic" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(121)" selected="false"/>
@@ -181,7 +181,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="clk CA state" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;california,%20United-States\&quot;)&quot;)" selected="true"/>
 		<accessor type="click" value="area(&quot;poly[2]&quot;)" selected="false"/>
@@ -206,7 +206,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="clk Help with Lic" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(119)" selected="false"/>
@@ -231,7 +231,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="clk TX state" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;texas,%20United-States\&quot;)&quot;)" selected="true"/>
 		<accessor type="click" value="area(&quot;poly&quot;)" selected="false"/>
@@ -256,7 +256,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="clk Mobile" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Mobile[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(125)" selected="false"/>
@@ -282,7 +282,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="clk Videos" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Videos[1]&quot;)" selected="true"/>
 		<accessor type="click" value="link(106)" selected="false"/>
@@ -307,7 +307,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="clk Home" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(21)" selected="false"/>
