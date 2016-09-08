@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -30,14 +30,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
-		<accessor type="click" value="link(21)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Brokers&quot;)" selected="true"/>
+		<accessor type="click" value="link(160)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/brokersmarketmakers/1[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -56,13 +55,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Brokers&quot;)" selected="true"/>
-		<accessor type="click" value="link(160)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/brokersmarketmakers/1[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Inspectors[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(119)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/inspectors[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[1]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -81,13 +80,15 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Inspectors[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(119)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/inspectors[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;International Shipping&quot;)" selected="true"/>
+		<accessor type="click" value="link(128)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/Content/us/en/landing-page/International-shipping-index&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'International Shipping')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/us/en/landing-page/International-shipping-index')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[4]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -106,15 +107,14 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;International Shipping&quot;)" selected="true"/>
-		<accessor type="click" value="link(128)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/Content/us/en/landing-page/International-shipping-index&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Tow Providers[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(125)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/towproviders[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;crtoys-noshow&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'International Shipping')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[4]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/us/en/landing-page/International-shipping-index')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[5]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -133,14 +133,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Tow Providers[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(125)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/towproviders[1]&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;crtoys-noshow&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;FAQ[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(89)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/faq[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content14']/ul/li[5]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[1]/div/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -159,13 +158,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;FAQ[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(89)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/faq[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(121)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/helpWithLicensing[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[1]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -184,13 +183,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(121)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/helpWithLicensing[1]&quot;)" selected="false"/>
+		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;california,%20United-States\&quot;)&quot;)" selected="true"/>
+		<accessor type="click" value="area(&quot;poly[2]&quot;)" selected="false"/>
+		<accessor type="click" value="area(2)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='fallback-map']/map/area[3]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//area[3]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -209,13 +208,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;california,%20United-States\&quot;)&quot;)" selected="true"/>
-		<accessor type="click" value="area(&quot;poly[2]&quot;)" selected="false"/>
-		<accessor type="click" value="area(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(119)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/helpWithLicensing[2]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fallback-map']/map/area[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//area[3]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -234,13 +233,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Help With Licensing[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(119)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/helpWithLicensing[2]&quot;)" selected="false"/>
+		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;texas,%20United-States\&quot;)&quot;)" selected="true"/>
+		<accessor type="click" value="area(&quot;poly&quot;)" selected="false"/>
+		<accessor type="click" value="area(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='fallback-map']/map/area[1]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//area[1]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -259,13 +258,14 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="area(&quot;javascript:loadstate(\&quot;texas,%20United-States\&quot;)&quot;)" selected="true"/>
-		<accessor type="click" value="area(&quot;poly&quot;)" selected="false"/>
-		<accessor type="click" value="area(0)" selected="false"/>
+		<accessor type="click" value="link(&quot;Mobile[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(125)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/Content/US/en/landing-page/copart-mobile&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='fallback-map']/map/area[1]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//area[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[7]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/US/en/landing-page/copart-mobile')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[7]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -284,14 +284,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Mobile[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(125)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/Content/US/en/landing-page/copart-mobile&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Videos[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(106)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#copartVideos[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[7]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/US/en/landing-page/copart-mobile')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div/ul/li[7]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[9]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div/ul/li[9]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -310,31 +309,6 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Videos[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(106)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#copartVideos[1]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content15']/ul/li[9]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div/ul/li[9]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
-	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(21)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
@@ -348,7 +322,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
