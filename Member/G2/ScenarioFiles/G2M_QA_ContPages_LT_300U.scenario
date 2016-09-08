@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_QA_ContPages_LT_100U</name>
+    <name>G2M_QA_ContPages_LT_300U</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -35,7 +35,7 @@
     <resource name="G2M_TC22_ContentPages_Images.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC22_ContentPages_Images.ds" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="4" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="15" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -53,10 +53,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpUsers" value="3"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownUsers" value="3"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -90,8 +90,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_QA_ContPages_100U">
-      <round name="G2M_QA_ContPages_100U" totalusers="100" time="30" testtype="users" totaliterations="200"/>
+    <controller name="G2M_QA_ContPages_300U">
+      <round name="G2M_QA_ContPages_300U" totalusers="300" time="30" testtype="users" totaliterations="1200"/>
     </controller>
     <testcase name="G2M_TC19_ContentPages_AboutCopart" expand="yes">
       <test>
@@ -118,11 +118,11 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_QA_ContPages_100U" name="G2M_QA_ContPages_100U">
-      <testcase name="G2M_TC19_ContentPages_AboutCopart" users="25"/>
-      <testcase name="G2M_TC20_ContentPages_Loc_Veh" users="25"/>
-      <testcase name="G2M_TC21_ContentPages_Serv_Support" users="25"/>
-      <testcase name="G2M_TC22_ContentPages_Images" users="25"/>
+    <iteration controller="G2M_QA_ContPages_300U" name="G2M_QA_ContPages_300U">
+      <testcase name="G2M_TC19_ContentPages_AboutCopart" users="75"/>
+      <testcase name="G2M_TC20_ContentPages_Loc_Veh" users="75"/>
+      <testcase name="G2M_TC21_ContentPages_Serv_Support" users="75"/>
+      <testcase name="G2M_TC22_ContentPages_Images" users="75"/>
     </iteration>
   </execution>
   <logs>
