@@ -43,7 +43,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="OP1" location="http://ec2-54-197-4-16.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="OP1" location="http://ec2-54-163-66-48.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
