@@ -55,14 +55,15 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Auctions Dashboard&quot;)" selected="true"/>
-		<accessor type="click" value="link(105)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/auctionDashboard[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Night Cap Sale&quot;)" selected="true"/>
+		<accessor type="click" value="link(65)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/auctions.html#/Content/US/EN/Member-News/Second-Chance-Evening-Sales-3-27-13&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Auctions Dashboard')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='toggle-content11']/ul/li[2]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Night Cap Sale')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content11']/ul/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/US/EN/Member-News/Second-Chance-Evening-Sales-3-27-13')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[3]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -81,15 +82,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Night Cap Sale&quot;)" selected="true"/>
-		<accessor type="click" value="link(65)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/auctions.html#/Content/US/EN/Member-News/Second-Chance-Evening-Sales-3-27-13&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(72)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/salesListResult[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Night Cap Sale')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='toggle-content11']/ul/li[3]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/Content/US/EN/Member-News/Second-Chance-Evening-Sales-3-27-13')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div/ul/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content11']/ul/li[6]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/ul/li[6]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -108,13 +107,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sales List[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(72)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/salesListResult[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Saved Searches[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(242)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/savedsearch[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content11']/ul/li[6]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/ul/li[6]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -133,13 +132,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Saved Searches[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(242)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/savedsearch[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Vehicle Alerts[2]&quot;)" selected="true"/>
+		<accessor type="click" value="link(80)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/vehicleAlerts[2]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[1]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[2]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[2]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -158,13 +157,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Vehicle Alerts[2]&quot;)" selected="true"/>
-		<accessor type="click" value="link(80)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/vehicleAlerts[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Vehicle Finder[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(78)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/vehicleFinder[2]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[2]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[2]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[3]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[3]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -183,13 +182,13 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Vehicle Finder[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(78)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/vehicleFinder[2]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Watchlist[1]&quot;)" selected="true"/>
+		<accessor type="click" value="link(162)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/public/watchList[1]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[3]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[4]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[4]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -208,13 +207,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Watchlist[1]&quot;)" selected="true"/>
-		<accessor type="click" value="link(162)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/public/watchList[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='toggle-content12']/ul/li[4]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/div[1]/div/ul/li[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -233,16 +235,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Detroit&quot;)" selected="true"/>
+		<accessor type="click" value="link(134)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/61&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[73]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Detroit')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[3]/div[4]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/61')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div[4]/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -261,16 +263,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Detroit&quot;)" selected="true"/>
-		<accessor type="click" value="link(134)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/61&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[73]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Detroit')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[3]/div[4]/ul/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/61')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[3]/div[4]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -289,16 +291,15 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sacramento&quot;)" selected="true"/>
+		<accessor type="click" value="link(76)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/2&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[15]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sacramento')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[1]/div[5]/ul/li[7]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/ul/li[7]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -317,15 +318,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sacramento&quot;)" selected="true"/>
-		<accessor type="click" value="link(76)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/2&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[15]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Sacramento')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[1]/div[5]/ul/li[7]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[5]/ul/li[7]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -344,16 +346,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Chicago North&quot;)" selected="true"/>
+		<accessor type="click" value="link(109)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/36&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[48]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Chicago North')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[2]/div[4]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/36')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[4]/ul/li[1]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -372,16 +374,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Chicago North&quot;)" selected="true"/>
-		<accessor type="click" value="link(109)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/36&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[48]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Chicago North')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[2]/div[4]/ul/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/36')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div[4]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -400,16 +402,14 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Dallas&quot;)" selected="true"/>
+		<accessor type="click" value="link(195)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/12&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[134]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[5]/div[4]/ul/li[6]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[4]/ul/li[6]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -428,14 +428,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Dallas&quot;)" selected="true"/>
-		<accessor type="click" value="link(195)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/12&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[134]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[5]/div[4]/ul/li[6]/a&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[4]/ul/li[6]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -454,16 +456,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Richmond&quot;)" selected="true"/>
+		<accessor type="click" value="link(208)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/139&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[147]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Richmond')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[5]/div[6]/ul/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/139')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/div[6]/ul/li[3]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -482,16 +484,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Richmond&quot;)" selected="true"/>
-		<accessor type="click" value="link(208)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/139&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[147]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
+		<accessor type="click" value="link(34)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Richmond')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[5]/div[6]/ul/li[3]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/139')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[5]/div[6]/ul/li[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -510,16 +512,16 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Locations&quot;)" selected="true"/>
-		<accessor type="click" value="link(34)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationsList&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click[10]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;Honolulu&quot;)" selected="true"/>
+		<accessor type="click" value="link(107)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/110&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;scrollup[46]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Locations')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[5]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationsList')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/ul/li[5]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'Honolulu')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[2]/div[2]/ul/li/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/110')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/ul/li/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -538,34 +540,6 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Honolulu&quot;)" selected="true"/>
-		<accessor type="click" value="link(107)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/locationDetail/110&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;scrollup[46]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Honolulu')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[4]/div[6]/div/div[1]/div/div[2]/div[2]/ul/li/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/locationDetail/110')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[2]/div[2]/ul/li/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
-	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(21)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#/[2]&quot;)" selected="false"/>
@@ -579,7 +553,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
