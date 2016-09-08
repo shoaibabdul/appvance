@@ -53,12 +53,14 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -77,7 +79,7 @@
       <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
-      <opt name="domComplete" value="true"/>
+      <opt name="fullPageLoaded" value="true"/>
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugMode" value="false"/>
