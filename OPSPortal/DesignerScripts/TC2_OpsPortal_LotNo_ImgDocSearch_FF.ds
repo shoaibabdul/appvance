@@ -255,7 +255,8 @@
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Tax Exemption Document&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;imageAndDocumentTabs[1]&quot;)" selected="false"/>
-		<accessor type="click" value="button(13)" selected="true"/>
+		<accessor type="click" value="button(13)" selected="false"/>
+		<accessor type="click" value="button(15)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[1]/div/div/div[1]/div/div[1]/button[2]&quot;" selected="true"/>
