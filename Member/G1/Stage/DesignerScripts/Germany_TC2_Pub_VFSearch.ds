@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='Germany_TC2_Pub_VFSearch' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://g-member-stg1.copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5983" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Ein Fahrzeug finden&quot;)" selected="true"/>
+		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/DE/Search/VehicleFinder&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Ein Fahrzeug finden')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-findvehicle']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/DE/Search/VehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5988" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='txtsearchBox']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5993" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Honda&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
+		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
+		<accessor type="setValue" value="searchbox(0)" selected="false"/>
+		<accessor type="setValue" value="searchbox(&quot;search-input hideWhilePrinting ui-autocomplete-input ui-autocomplete-loading&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='txtsearchBox']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="931" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;header_btnSubmit&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;search-submit hideWhilePrinting&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='header_btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9964" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;50 Ergebnisse anzeigen&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[1]/div[2]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10964" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;100 Ergebnisse anzeigen&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(&quot;PageSize&quot;)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;pageSizeSelector&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(0)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;filter-type&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//select[@id='pageSizeSelector']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='results_list_id']/div/div[1]/div[2]/div[1]/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9828" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Startseite&quot;)" selected="true"/>
+		<accessor type="click" value="link(7)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Startseite')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
