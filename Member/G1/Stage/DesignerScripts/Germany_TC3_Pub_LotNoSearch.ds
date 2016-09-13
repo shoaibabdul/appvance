@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Germany_TC3_Pub_LotNos.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g-member-stg1.copart.de&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;50014312&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$GermanyLotNos&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="searchbox(&quot;q&quot;)" selected="true"/>
 		<accessor type="setValue" value="searchbox(&quot;txtsearchBox&quot;)" selected="false"/>
