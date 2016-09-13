@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='Germany_TC5_Mem_HPNav' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5011" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://g-member-stg1.copart.de&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="18017" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Anmelden&quot;)" selected="true"/>
+		<accessor type="click" value="link(3)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/de/Account/LogOn&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Anmelden')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Account/LogOn')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[1]/a[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7977" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;germanymem3@mailinator.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;UserName&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;right emailval&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7971" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;copart1234&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;Password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;right&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='Password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/div[2]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Melden Sie sich an&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btnSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;button large blue right&quot;)" selected="false"/>
+		<accessor type="click" value="submit(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='btnSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='LoginFields']/fieldset/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//fieldset/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7864" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Auktionen&quot;)" selected="true"/>
+		<accessor type="click" value="link(19)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/DE/Auctions/Today[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Auktionen')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-auction']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[2]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6837" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Standorte&quot;)" selected="true"/>
+		<accessor type="click" value="link(24)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/DE/Locations&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Standorte')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-location']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/DE/Locations')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4895" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Mein Account&quot;)" selected="true"/>
+		<accessor type="click" value="link(25)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/DE/buyer/Profile/AccountInformation&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Mein Account')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-account']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/DE/buyer/Profile/AccountInformation')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8960" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Hilfe&quot;)" selected="true"/>
+		<accessor type="click" value="link(26)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/Content/DE/de/Support/How-to-Buy/Overview&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Hilfe')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-support']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/Content/DE/de/Support/How-to-Buy/Overview')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//nav/ul/li[5]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7935" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Mein Copart&quot;)" selected="true"/>
+		<accessor type="click" value="link(7)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/DE/Buyer&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Mein Copart')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li[@id='menu-home']/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/DE/Buyer')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5924" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Abmelden&quot;)" selected="true"/>
+		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.de/de/Account/LogOff&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Abmelden')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/de/Account/LogOff')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//p[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
