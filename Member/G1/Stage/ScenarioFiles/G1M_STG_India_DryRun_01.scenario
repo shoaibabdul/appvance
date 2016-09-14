@@ -35,9 +35,11 @@
     <resource name="Ind_TC4_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC4_Pub_HeaderSearch.ds" cache="false"/>
     <resource name="Ind_TC5_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC5_Mem_HPNav.ds" cache="false"/>
     <resource name="Ind_TC6_Mem_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC6_Mem_VFSearch.ds" cache="false"/>
+    <resource name="Ind_TC7_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC7_Mem_LotNoSearch.ds" cache="false"/>
+    <resource name="Ind_TC8_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC8_Mem_HeaderSearch.ds" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -46,6 +48,7 @@
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.45"/>
     <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources/>
   <options>
@@ -54,12 +57,14 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -78,7 +83,7 @@
       <opt name="throwExceptionOnFailingStatusCode" value="true"/>
     </options>
     <options type="sahi">
-      <opt name="domComplete" value="true"/>
+      <opt name="fullPageLoaded" value="true"/>
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugMode" value="false"/>
@@ -90,36 +95,46 @@
   </options>
   <templates>
     <controller name="G1M_Stg_India_DryRun01">
-      <round name="G1M_Stg_India_DryRun01" totalusers="16" time="15" testtype="users" totaliterations="16"/>
+      <round name="G1M_Stg_India_DryRun01" totalusers="8" time="10" testtype="users" totaliterations="8"/>
     </controller>
-    <testcase name="Untitled1" expand="yes">
+    <testcase name="Ind_TC1" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC1_Pub_HPNav.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled2" expand="yes">
+    <testcase name="Ind_TC2" expand="yes">
       <test>
         <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC2_Pub_VFSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled3" expand="yes">
+    <testcase name="Ind_TC3" expand="yes">
       <test>
         <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC3_Pub_LotNoSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled4" expand="yes">
+    <testcase name="Ind_TC4" expand="yes">
       <test>
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC4_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled5" expand="yes">
+    <testcase name="Ind_TC5" expand="yes">
       <test>
         <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC5_Mem_HPNav.ds"/>
       </test>
     </testcase>
-    <testcase name="Untitled6" expand="yes">
+    <testcase name="Ind_TC6" expand="yes">
       <test>
         <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC6_Mem_VFSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Ind_TC7" expand="yes">
+      <test>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC7_Mem_LotNoSearch.ds"/>
+      </test>
+    </testcase>
+    <testcase name="Ind_TC8" expand="yes">
+      <test>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC8_Mem_HeaderSearch.ds"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -128,21 +143,23 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G1M_Stg_India_DryRun01" name="G1M_Stg_India_DryRun01">
-      <testcase name="Untitled1" users="1"/>
-      <testcase name="Untitled2" users="1"/>
-      <testcase name="Untitled3" users="1"/>
-      <testcase name="Untitled4" users="1"/>
-      <testcase name="Untitled5" users="1"/>
-      <testcase name="Untitled6" users="1"/>
+      <testcase name="Ind_TC1" users="1"/>
+      <testcase name="Ind_TC2" users="1"/>
+      <testcase name="Ind_TC3" users="1"/>
+      <testcase name="Ind_TC4" users="1"/>
+      <testcase name="Ind_TC5" users="1"/>
+      <testcase name="Ind_TC6" users="1"/>
+      <testcase name="Ind_TC7" users="1"/>
+      <testcase name="Ind_TC8" users="1"/>
     </iteration>
   </execution>
   <logs>
     <log type="database">
       <opt name="hibernate.connection.username" value="apc"/>
       <opt name="hibernate.connection.password" value="apc"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
       <opt name="hibernate.default_schema" value="apc"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
     </log>
   </logs>
   <integrations>
