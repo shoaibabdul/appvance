@@ -37,6 +37,11 @@
     <resource name="Ind_TC6_Mem_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC6_Mem_VFSearch.ds" cache="false"/>
     <resource name="Ind_TC7_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC7_Mem_LotNoSearch.ds" cache="false"/>
     <resource name="Ind_TC8_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC8_Mem_HeaderSearch.ds" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC2_Pub_VFList.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC3_Pub_LotNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC6_Mem_VFList.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC7_Mem_LotNos.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC5_8_Mem.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
@@ -50,7 +55,38 @@
     <bundle name="htmlunit" version="2.15.2648"/>
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Ind_TC2_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC2_Pub_VFList.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Ind_TC3_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC3_Pub_LotNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Ind_TC5_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC5_8_Mem.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Ind_TC6_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC6_Mem_VFList.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Ind_TC7_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC7_Mem_LotNos.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="Ind_TC8_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="India_TC5_8_Mem.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="apc">
       <opt name="SleepTime" value="0"/>
@@ -104,37 +140,49 @@
     </testcase>
     <testcase name="Ind_TC2" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC2_Pub_VFSearch.ds"/>
+        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC2_Pub_VFSearch.ds">
+          <argument name="Ind_TC2_TD" method="getNextData" dpl="Ind_TC2_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Ind_TC3" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC3_Pub_LotNoSearch.ds"/>
+        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC3_Pub_LotNoSearch.ds">
+          <argument name="Ind_TC3_TD" method="getNextData" dpl="Ind_TC3_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Ind_TC4" expand="yes">
       <test>
-        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC4_Pub_HeaderSearch.ds"/>
+        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC4_Pub_HeaderSearch.ds"/>
       </test>
     </testcase>
     <testcase name="Ind_TC5" expand="yes">
       <test>
-        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC5_Mem_HPNav.ds"/>
+        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC5_Mem_HPNav.ds">
+          <argument name="Ind_TC5_TD" method="getNextData" dpl="Ind_TC5_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Ind_TC6" expand="yes">
       <test>
-        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC6_Mem_VFSearch.ds"/>
+        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC6_Mem_VFSearch.ds">
+          <argument name="Ind_TC6_TD" method="getNextData" dpl="Ind_TC6_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Ind_TC7" expand="yes">
       <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC7_Mem_LotNoSearch.ds"/>
+        <run name="Untitled7" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC7_Mem_LotNoSearch.ds">
+          <argument name="Ind_TC7_TD" method="getNextData" dpl="Ind_TC7_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="Ind_TC8" expand="yes">
       <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC8_Mem_HeaderSearch.ds"/>
+        <run name="Untitled8" testclass="sahi" method="firefox" langtype="ds" resource="Ind_TC8_Mem_HeaderSearch.ds">
+          <argument name="Ind_TC8_TD" method="getNextData" dpl="Ind_TC8_TD"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
