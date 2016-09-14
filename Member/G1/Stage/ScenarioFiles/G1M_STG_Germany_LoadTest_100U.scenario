@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Germany_TC5_8_Mem.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="5" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -130,8 +130,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G1M_Stg_Germany_DryRun01">
-      <round name="G1M_Stg_Germany_DryRun01" totalusers="8" time="10" testtype="users" totaliterations="8"/>
+    <controller name="G1M_Stg_Germany_100U">
+      <round name="G1M_Stg_Germany_100U" totalusers="100" time="30" testtype="users" totaliterations="100"/>
     </controller>
     <testcase name="Germany_TC1" expand="yes">
       <test>
@@ -190,15 +190,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1M_Stg_Germany_DryRun01" name="G1M_Stg_Germany_DryRun01">
-      <testcase name="Germany_TC1" users="1"/>
-      <testcase name="Germany_TC2" users="1"/>
-      <testcase name="Germany_TC3" users="1"/>
-      <testcase name="Germany_TC4" users="1"/>
-      <testcase name="Germany_TC5" users="1"/>
-      <testcase name="Germany_TC6" users="1"/>
-      <testcase name="Germany_TC7" users="1"/>
-      <testcase name="Germany_TC8" users="1"/>
+    <iteration controller="G1M_Stg_Germany_100U" name="G1M_Stg_Germany_100U">
+      <testcase name="Germany_TC1" users="13"/>
+      <testcase name="Germany_TC2" users="13"/>
+      <testcase name="Germany_TC3" users="13"/>
+      <testcase name="Germany_TC4" users="13"/>
+      <testcase name="Germany_TC5" users="12"/>
+      <testcase name="Germany_TC6" users="12"/>
+      <testcase name="Germany_TC7" users="12"/>
+      <testcase name="Germany_TC8" users="12"/>
     </iteration>
   </execution>
   <logs>
