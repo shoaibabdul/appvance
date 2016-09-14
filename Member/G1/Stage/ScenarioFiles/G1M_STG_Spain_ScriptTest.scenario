@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G1M_Stg_Spain_DryRun</name>
+    <name>G1M_Stg_Spain_ScriptTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -56,16 +56,6 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="Spain_TC2_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Spain_TC2_Pub_VFList.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="Spain_TC3_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Spain_TC3_Pub_LotNos.csv"/>
-      </argument>
-    </dpl>
     <dpl name="Spain_TC5_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="Spain_TC5_8_Mem.csv"/>
@@ -130,33 +120,9 @@
     </options>
   </options>
   <templates>
-    <controller name="G1M_Stg_Spain_DryRun01">
-      <round name="G1M_Stg_Spain_DryRun01" totalusers="20" time="10" testtype="users" totaliterations="20"/>
+    <controller name="G1M_Stg_Spain_ST01">
+      <round name="G1M_Stg_Spain_ST01" totalusers="8" time="5" testtype="users" totaliterations="40"/>
     </controller>
-    <testcase name="Spain_TC1" expand="yes">
-      <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="Spain_TC1_Pub_HPNav.ds"/>
-      </test>
-    </testcase>
-    <testcase name="Spain_TC2" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="Spain_TC2_Pub_VFSearch.ds">
-          <argument name="Spain_TC2_TD" method="getNextData" dpl="Spain_TC2_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Spain_TC3" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="Spain_TC3_Pub_LotNoSearch.ds">
-          <argument name="Spain_TC3_TD" method="getNextData" dpl="Spain_TC3_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="Spain_TC4" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="Spain_TC4_Pub_HeaderSearch.ds"/>
-      </test>
-    </testcase>
     <testcase name="Spain_TC5" expand="yes">
       <test>
         <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="Spain_TC5_Mem_HPNav.ds">
@@ -190,11 +156,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G1M_Stg_Spain_DryRun01" name="G1M_Stg_Spain_DryRun01">
-      <testcase name="Spain_TC1" users="3"/>
-      <testcase name="Spain_TC2" users="3"/>
-      <testcase name="Spain_TC3" users="3"/>
-      <testcase name="Spain_TC4" users="3"/>
+    <iteration controller="G1M_Stg_Spain_ST01" name="G1M_Stg_Spain_ST01">
       <testcase name="Spain_TC5" users="2"/>
       <testcase name="Spain_TC6" users="2"/>
       <testcase name="Spain_TC7" users="2"/>
