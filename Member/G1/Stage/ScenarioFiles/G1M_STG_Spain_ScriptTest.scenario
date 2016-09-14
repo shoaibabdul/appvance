@@ -29,22 +29,16 @@
     <categorization>G1Member Stage</categorization>
   </basics>
   <resources>
-    <resource name="Spain_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="Spain_TC2_Pub_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC2_Pub_VFSearch.ds" cache="false"/>
-    <resource name="Spain_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC3_Pub_LotNoSearch.ds" cache="false"/>
-    <resource name="Spain_TC4_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC4_Pub_HeaderSearch.ds" cache="false"/>
     <resource name="Spain_TC5_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC5_Mem_HPNav.ds" cache="false"/>
     <resource name="Spain_TC6_Mem_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC6_Mem_VFSearch.ds" cache="false"/>
     <resource name="Spain_TC7_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC7_Mem_LotNoSearch.ds" cache="false"/>
     <resource name="Spain_TC8_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC8_Mem_HeaderSearch.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC2_Pub_VFList.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC3_Pub_LotNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC6_Mem_VFList.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC7_Mem_LotNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC5_8_Mem.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="5" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G1M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
