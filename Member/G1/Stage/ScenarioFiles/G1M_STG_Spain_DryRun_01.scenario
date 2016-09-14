@@ -29,14 +29,6 @@
     <categorization>G1Member Stage</categorization>
   </basics>
   <resources>
-    <resource name="Ind_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC1_Pub_HPNav.ds" cache="false"/>
-    <resource name="Ind_TC2_Pub_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC2_Pub_VFSearch.ds" cache="false"/>
-    <resource name="Ind_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC3_Pub_LotNoSearch.ds" cache="false"/>
-    <resource name="Ind_TC4_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC4_Pub_HeaderSearch.ds" cache="false"/>
-    <resource name="Ind_TC5_Mem_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC5_Mem_HPNav.ds" cache="false"/>
-    <resource name="Ind_TC6_Mem_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC6_Mem_VFSearch.ds" cache="false"/>
-    <resource name="Ind_TC7_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC7_Mem_LotNoSearch.ds" cache="false"/>
-    <resource name="Ind_TC8_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Ind_TC8_Mem_HeaderSearch.ds" cache="false"/>
     <resource name="Spain_TC1_Pub_HPNav.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC1_Pub_HPNav.ds" cache="false"/>
     <resource name="Spain_TC2_Pub_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC2_Pub_VFSearch.ds" cache="false"/>
     <resource name="Spain_TC3_Pub_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC3_Pub_LotNoSearch.ds" cache="false"/>
@@ -45,11 +37,6 @@
     <resource name="Spain_TC6_Mem_VFSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC6_Mem_VFSearch.ds" cache="false"/>
     <resource name="Spain_TC7_Mem_LotNoSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC7_Mem_LotNoSearch.ds" cache="false"/>
     <resource name="Spain_TC8_Mem_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/DesignerScripts/Spain_TC8_Mem_HeaderSearch.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC2_Pub_VFList.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC3_Pub_LotNos.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC6_Mem_VFList.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC7_Mem_LotNos.csv" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/India_TC5_8_Mem.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC2_Pub_VFList.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC3_Pub_LotNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G1/Stage/Testdata/Spain_TC6_Mem_VFList.csv" cache="false"/>
