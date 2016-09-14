@@ -30,8 +30,8 @@
 
 <step action="click" value='' type="web" desc="clk Find a Vehicle" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Buscar un vehículo&quot;)" selected="true"/>
-		<accessor type="click" value="link(8)" selected="false"/>
+		<accessor type="click" value="link(&quot;Buscar un vehículo&quot;)" selected="false"/>
+		<accessor type="click" value="link(8)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.es/ES/Search/VehicleFinder&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
