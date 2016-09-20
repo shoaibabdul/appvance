@@ -22,8 +22,8 @@
   <basics>
     <name>Nirvana_Auctions_LoadTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName/>
-    <creator/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
     <links/>
     <versions/>
     <categorization/>
@@ -32,7 +32,7 @@
     <resource name="nirvanaloadtesttool.copart.com.har" type="har" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/nirvanaloadtesttool.copart.com.har" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Nirvana" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="Nirvana" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -81,7 +81,7 @@
     <controller name="Nirvana_LT_01">
       <round name="Nirvana_LT_01" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
-    <testcase name="Untitled1" expand="yes">
+    <testcase name="Nirvana_LoadTest_01" expand="yes">
       <test>
         <run name="Untitled1" langtype="har" resource="nirvanaloadtesttool.copart.com.har"/>
       </test>
@@ -92,7 +92,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Nirvana_LT_01" name="Nirvana_LT_01">
-      <testcase name="Untitled1" users="10"/>
+      <testcase name="Nirvana_LoadTest_01" users="10"/>
     </iteration>
   </execution>
   <logs>
