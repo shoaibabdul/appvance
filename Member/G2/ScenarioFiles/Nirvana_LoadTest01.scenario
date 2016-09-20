@@ -79,7 +79,7 @@
   </options>
   <templates>
     <controller name="Nirvana_LT_01">
-      <round name="Nirvana_LT_01" totalusers="11" time="5" testtype="users" totaliterations="11"/>
+      <round name="Nirvana_LT_01" totalusers="10" time="5" testtype="users" totaliterations="10"/>
     </controller>
     <testcase name="Untitled1" expand="yes">
       <test>
@@ -92,7 +92,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="Nirvana_LT_01" name="Nirvana_LT_01">
-      <testcase name="Untitled1" users="1"/>
+      <testcase name="Untitled1" users="10"/>
     </iteration>
   </execution>
   <logs>
