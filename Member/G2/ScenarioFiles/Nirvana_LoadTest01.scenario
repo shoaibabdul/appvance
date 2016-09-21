@@ -25,14 +25,14 @@
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
-    <versions/>
-    <categorization/>
+    <versions>v1.1</versions>
+    <categorization>G2M Auctions</categorization>
   </basics>
   <resources>
     <resource name="nirvanaloadtesttool.copart.com.har" type="har" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/nirvanaloadtesttool.copart.com.har" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="Nirvana" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="Nirvana" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="1" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -59,7 +59,7 @@
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="PercentageLogsSaved" value="10"/>
+      <opt name="PercentageLogsSaved" value="50"/>
       <opt name="ThinkTime" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="DynamicIpAddress" value="false"/>
