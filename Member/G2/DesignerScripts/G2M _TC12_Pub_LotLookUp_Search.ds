@@ -119,20 +119,7 @@
 
 
 
-<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter LookUp LotNo" isThinkTime='false' isCommented='false' sequence="9">
-	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(3)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse ng-valid-editable&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div/div/aside/div/div[3]/div/div[2]/form/div[1]/input&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/div[2]/form/div[1]/input&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
