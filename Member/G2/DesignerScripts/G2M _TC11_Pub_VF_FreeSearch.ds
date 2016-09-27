@@ -55,7 +55,7 @@
 
 
 
-<step action="setSelected" value="&quot;Motorcycle&quot;" type="web" desc="Select Type" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setSelected" value="&quot;$VehicleTypes&quot;" type="web" desc="Select Type" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(4)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="setSelected" value="&quot;2009&quot;" type="web" desc="Sel YearFrom" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;$YearFrom&quot;" type="web" desc="Sel YearFrom" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(5)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -103,7 +103,7 @@
 
 
 
-<step action="setSelected" value="&quot;2014&quot;" type="web" desc="Sel YearTo" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setSelected" value="&quot;$YearTo&quot;" type="web" desc="Sel YearTo" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(6)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -127,7 +127,7 @@
 
 
 
-<step action="setSelected" value="&quot;BMW&quot;" type="web" desc="Sel Make" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Sel Make" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(7)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
