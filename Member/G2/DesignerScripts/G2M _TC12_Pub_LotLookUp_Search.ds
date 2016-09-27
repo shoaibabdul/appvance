@@ -55,7 +55,7 @@
 
 
 
-<step action="setValue" value="&quot;50009676&quot;" type="web" desc="Enter LookUp LotNo" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter LookUp LotNo" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(4)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
