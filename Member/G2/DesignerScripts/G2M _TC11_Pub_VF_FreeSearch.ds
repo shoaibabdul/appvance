@@ -55,7 +55,7 @@
 
 
 
-<step action="setSelected" value="&quot;Motorcycle&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="setSelected" value="&quot;Motorcycle&quot;" type="web" desc="Select Type" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(4)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="setSelected" value="&quot;2009&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;2009&quot;" type="web" desc="Sel YearFrom" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(5)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -103,7 +103,7 @@
 
 
 
-<step action="setSelected" value="&quot;2014&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="setSelected" value="&quot;2014&quot;" type="web" desc="Sel YearTo" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(6)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -127,7 +127,7 @@
 
 
 
-<step action="setSelected" value="&quot;BMW&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setSelected" value="&quot;BMW&quot;" type="web" desc="Sel Make" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(7)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -151,7 +151,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Submit Search" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
@@ -176,7 +176,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(23)" selected="false"/>
@@ -191,15 +191,15 @@
 
 
 
-<step action="setSelected" value="&quot;$VehicleTypes&quot;" type="web" desc="Select Type" isThinkTime='false' isCommented='false' sequence="15">
+<step action="setSelected" value="&quot;$YearTo&quot;" type="web" desc="Select YearTo" isThinkTime='false' isCommented='false' sequence="15">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(3)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(4)" selected="true"/>
+		<accessor type="setSelected" value="select(5)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(6)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[2]/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div/select&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[3]/div/select[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//select[2]&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -216,15 +216,15 @@
 
 
 
-<step action="setSelected" value="&quot;$YearFrom&quot;" type="web" desc="Select YearFrom" isThinkTime='false' isCommented='false' sequence="17">
+<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(4)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(5)" selected="true"/>
+		<accessor type="setSelected" value="select(6)" selected="false"/>
+		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="setSelected" value="select(7)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[3]/div/select[1]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/div/select[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[4]/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[4]/div/select&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -241,15 +241,15 @@
 
 
 
-<step action="setSelected" value="&quot;$YearTo&quot;" type="web" desc="Select YearTo" isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Clk Submit Search" isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
-		<accessor type="setSelected" value="select(5)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;vehicle_optionyear form-control inline ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(6)" selected="true"/>
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block ng-binding&quot;)" selected="false"/>
+		<accessor type="click" value="button(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[3]/div/select[2]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//select[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -266,57 +266,7 @@
 
 
 
-<step action="setSelected" value="&quot;$Make&quot;" type="web" desc="Select Make" isThinkTime='false' isCommented='false' sequence="21">
-	<dialect type="sahi">
-		<accessor type="setSelected" value="select(6)" selected="false"/>
-		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
-		<accessor type="setSelected" value="select(7)" selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[4]/div/select&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[4]/div/select&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Submit Search" isThinkTime='false' isCommented='false' sequence="23">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-lblue btn-block ng-binding&quot;)" selected="false"/>
-		<accessor type="click" value="button(1)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="25">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(10)" selected="false"/>
@@ -331,7 +281,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
