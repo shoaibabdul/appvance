@@ -6,7 +6,7 @@
 
 <dpl filename="" exectype="" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -28,7 +28,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="click" value='' type="web" desc="Clk Vehicle Finder link" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
 		<accessor type="click" value="link(25)" selected="false"/>
@@ -56,7 +56,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Sel State Radio Button" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="radio(&quot;radios-1&quot;)" selected="true"/>
 		<accessor type="click" value="radio(&quot;radios&quot;)" selected="false"/>
@@ -84,7 +84,7 @@
 
 
 
-<step action="setSelected" value="&quot;CALIFORNIA&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;CALIFORNIA&quot;" type="web" desc="Sel State" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(9)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -108,7 +108,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Submit Search1" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
@@ -133,7 +133,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk Vehicle Finder" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
 		<accessor type="click" value="link(25)" selected="false"/>
@@ -161,7 +161,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Sel Location Radio Button" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="radio(&quot;radios-0&quot;)" selected="true"/>
 		<accessor type="click" value="radio(&quot;5420&quot;)" selected="false"/>
@@ -189,7 +189,7 @@
 
 
 
-<step action="setSelected" value="&quot;CA - Hayward&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="setSelected" value="&quot;CA - Hayward&quot;" type="web" desc="Sel Location" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(9)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -213,7 +213,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Submit Search2" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
@@ -238,7 +238,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk Vehicle Finder" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
 		<accessor type="click" value="link(25)" selected="false"/>
@@ -266,7 +266,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Sel Zip Radio Button" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="radio(&quot;radios-2&quot;)" selected="true"/>
 		<accessor type="click" value="radio(&quot;radios[1]&quot;)" selected="false"/>
@@ -317,7 +317,7 @@
 
 
 
-<step action="setValue" value="&quot;95116&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="setValue" value="&quot;95116&quot;" type="web" desc="Enter Zip Code" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;zipcode&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(3)" selected="false"/>
@@ -343,7 +343,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Submit Search3" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
@@ -368,32 +368,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
-		<accessor type="click" value="button(3)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(23)" selected="false"/>
@@ -408,7 +383,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
