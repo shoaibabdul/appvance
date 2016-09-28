@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='G2M_TC23_Pub_VF_SolrSearch' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling="stop"/>
+
+<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://g2-member-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10011" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
+		<accessor type="click" value="link(25)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/vehicleFinder&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Vehicle Finder')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './vehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="11059" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="radio(&quot;radios-1&quot;)" selected="true"/>
+		<accessor type="click" value="radio(&quot;radios&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;state&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;radio_location ng-pristine ng-untouched ng-valid ng-not-empty[1]&quot;)" selected="false"/>
+		<accessor type="click" value="radio(1)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='radios-1']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[6]/div/div[2]/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3919" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3932" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;CALIFORNIA&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(9)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[7]/div/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[7]/div/div/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1842" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="button(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8914" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
+		<accessor type="click" value="link(25)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/vehicleFinder&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Vehicle Finder')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './vehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6885" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="radio(&quot;radios-0&quot;)" selected="true"/>
+		<accessor type="click" value="radio(&quot;5420&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;locations&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;radio_location ng-pristine ng-untouched ng-valid ng-not-empty&quot;)" selected="false"/>
+		<accessor type="click" value="radio(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='radios-0']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[6]/div/div[1]/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9917" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setSelected" value="&quot;CA - Hayward&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="setSelected" value="select(9)" selected="true"/>
+		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[7]/div/div/select&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[7]/div/div/select&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="2743" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="button(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="5845" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
+		<accessor type="click" value="link(25)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/vehicleFinder&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Vehicle Finder')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './vehicleFinder')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="6674" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="radio(&quot;radios-2&quot;)" selected="true"/>
+		<accessor type="click" value="radio(&quot;radios[1]&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;zip&quot;)" selected="false"/>
+		<accessor type="click" value="radio(&quot;radio_location ng-pristine ng-untouched ng-valid ng-not-empty[2]&quot;)" selected="false"/>
+		<accessor type="click" value="radio(2)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='radios-2']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[6]/div/div[3]/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/label/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8836" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="div(68)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//body/div[1]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value='' type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;95116&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;zipcode&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(3)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-valid-pattern ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='' and @name='zipcode']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[7]/div/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[7]/div/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3526" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="button(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9769" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="button(3)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10754" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
+		<accessor type="click" value="link(23)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/[4]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
