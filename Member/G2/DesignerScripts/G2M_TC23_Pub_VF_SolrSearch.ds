@@ -294,13 +294,16 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="22">
+<step action="setValue" value="&quot;95116&quot;" type="web" desc="Enter Zip Code" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="div(68)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;zipcode&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(3)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-valid-pattern ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//body/div[1]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='' and @name='zipcode']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[7]/div/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[7]/div/div/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -317,16 +320,15 @@
 
 
 
-<step action="setValue" value="&quot;95116&quot;" type="web" desc="Enter Zip Code" isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Submit Search3" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;zipcode&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(3)" selected="false"/>
-		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-valid-pattern ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
+		<accessor type="click" value="button(3)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='' and @name='zipcode']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[7]/div/div/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//div[7]/div/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -343,32 +345,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Submit Search3" isThinkTime='false' isCommented='false' sequence="26">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Search&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-lblue btn-block&quot;)" selected="false"/>
-		<accessor type="click" value="button(3)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='vehicleFinder']/ng-form/div[8]/div/div/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[8]/div/div/button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(23)" selected="false"/>
@@ -383,7 +360,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
