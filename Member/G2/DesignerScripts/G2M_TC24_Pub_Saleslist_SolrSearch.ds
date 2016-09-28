@@ -52,7 +52,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="click" value='' type="web" desc="Sel FI BIN Checkbox1" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;FETI&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;buy_it_now_codeB1&quot;)" selected="false"/>
@@ -79,7 +79,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="click" value='' type="web" desc="Expand Sale Date" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sale Date&quot;)" selected="true"/>
 		<accessor type="click" value="link(83)" selected="false"/>
@@ -106,7 +106,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Sel Sale Date Checkbox1" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;SDAT[1]&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;auction_date_utc20160929T000000ZTO20160929T235959Z&quot;)" selected="false"/>
@@ -133,7 +133,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="click" value='' type="web" desc="Clk Clear All link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
 		<accessor type="click" value="div(80)" selected="false"/>
@@ -158,7 +158,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc="Sel FI RAD Checkbox2" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="checkbox(&quot;FETI[1]&quot;)" selected="true"/>
 		<accessor type="click" value="checkbox(&quot;lot_condition_codeCERTD&quot;)" selected="false"/>
@@ -185,17 +185,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Sel Sale Date Checkbox2" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sale Date&quot;)" selected="true"/>
-		<accessor type="click" value="link(83)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#collapseinside7&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;SDAT[2]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;auction_date_utc20160930T000000ZTO20160930T235959Z&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;09-29-2016&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(63)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Sale Date')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/ul/li[7]/h4/a[1]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#collapseinside7')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/h4/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160930T000000ZTO20160930T235959Z']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[3]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/div/ul/li[3]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -212,18 +212,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk Clear All link" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sale Date&quot;)" selected="true"/>
-		<accessor type="click" value="link(83)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.com/#collapseinside7&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;collapsed&quot;)" selected="false"/>
+		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="div(80)" selected="false"/>
+		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Sale Date')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/ul/li[7]/h4/a[1]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#collapseinside7')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/h4/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -240,17 +237,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Sel FI NLR Checkbox3" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;SDAT[2]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;auction_date_utc20160930T000000ZTO20160930T235959Z&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;09-29-2016&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(63)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;FETI[3]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;on_approvalYANDminimum_bid_amount0&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;Pure Sale Items&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(3)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160930T000000ZTO20160930T235959Z']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[3]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/div/ul/li[3]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='on_approvalYANDminimum_bid_amount0']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside1']/ul/li[4]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[4]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -267,15 +264,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Sale Date Checkbox3" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
-		<accessor type="click" value="div(80)" selected="false"/>
-		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;SDAT[4]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;auction_date_utc20161003T000000ZTO20161003T235959Z&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;10-03-2016&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(65)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20161003T000000ZTO20161003T235959Z']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[5]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/div/ul/li[5]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -292,17 +291,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Clk Clear All" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;FETI[3]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;on_approvalYANDminimum_bid_amount0&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;Pure Sale Items&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(3)" selected="false"/>
+		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="div(80)" selected="false"/>
+		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='on_approvalYANDminimum_bid_amount0']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside1']/ul/li[4]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[4]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -319,17 +316,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk Make Checkbox1" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;SDAT[4]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;auction_date_utc20161003T000000ZTO20161003T235959Z&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;10-03-2016&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(65)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;MAKE&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;lot_make_descACURA&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;Acura&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(10)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20161003T000000ZTO20161003T235959Z']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[5]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/div/ul/li[5]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='lot_make_descACURA']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[1]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[2]/div/ul/li[1]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -346,15 +343,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Clk Sale Date Checkbox1" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
-		<accessor type="click" value="div(80)" selected="false"/>
-		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;SDAT&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;auction_date_utc20160928T000000ZTO20160928T235959Z&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;09-28-2016&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(247)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160928T000000ZTO20160928T235959Z']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[1]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/div/ul/li[1]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -371,17 +370,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Clk Clear All" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;MAKE&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;lot_make_descACURA&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;Acura&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(10)" selected="false"/>
+		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="div(80)" selected="false"/>
+		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='lot_make_descACURA']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[1]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[2]/div/ul/li[1]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -398,17 +395,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc="Clk Make Checkbox42" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;SDAT&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;auction_date_utc20160928T000000ZTO20160928T235959Z&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;09-28-2016&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(247)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;MAKE[42]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;lot_make_descCHEVROLET&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;Chevrolet&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(52)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160928T000000ZTO20160928T235959Z']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[1]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/div/ul/li[1]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='lot_make_descCHEVROLET']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[43]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[43]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -425,15 +422,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+<step action="click" value='' type="web" desc="Clk Sale Date Checkbox2" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
-		<accessor type="click" value="div(80)" selected="false"/>
-		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;SDAT[1]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;auction_date_utc20160929T000000ZTO20160929T235959Z&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;09-29-2016&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(248)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160929T000000ZTO20160929T235959Z']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[2]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/div/ul/li[2]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -450,17 +449,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc="Clk Clear All" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;MAKE[42]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;lot_make_descCHEVROLET&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;Chevrolet&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(52)" selected="false"/>
+		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="div(80)" selected="false"/>
+		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='lot_make_descCHEVROLET']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[43]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[43]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -477,17 +474,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="Clk Make Checkbox56" isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;SDAT[1]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;auction_date_utc20160929T000000ZTO20160929T235959Z&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;09-29-2016&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(248)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;MAKE[56]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;lot_make_descDODGE&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;Dodge&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(66)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160929T000000ZTO20160929T235959Z']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[2]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/div/ul/li[2]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='lot_make_descDODGE']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[57]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[57]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -504,15 +501,17 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+<step action="click" value='' type="web" desc="Clk Sale Date Checkbox3" isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
-		<accessor type="click" value="div(80)" selected="false"/>
-		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;SDAT[2]&quot;)" selected="true"/>
+		<accessor type="click" value="checkbox(&quot;auction_date_utc20160930T000000ZTO20160930T235959Z&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(&quot;09-30-2016&quot;)" selected="false"/>
+		<accessor type="click" value="checkbox(249)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160930T000000ZTO20160930T235959Z']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[3]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/div/ul/li[3]/div/label/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -529,17 +528,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
+<step action="click" value='' type="web" desc="Clk Clear All link" isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;MAKE[56]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;lot_make_descDODGE&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;Dodge&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(66)" selected="false"/>
+		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
+		<accessor type="click" value="div(80)" selected="false"/>
+		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='lot_make_descDODGE']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside2']/ul/li[57]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[57]/div/label/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -556,59 +553,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
-	<dialect type="sahi">
-		<accessor type="click" value="checkbox(&quot;SDAT[2]&quot;)" selected="true"/>
-		<accessor type="click" value="checkbox(&quot;auction_date_utc20160930T000000ZTO20160930T235959Z&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(&quot;09-30-2016&quot;)" selected="false"/>
-		<accessor type="click" value="checkbox(249)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='auction_date_utc20160930T000000ZTO20160930T235959Z']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='collapseinside7']/ul/li[3]/div/label/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[7]/div/ul/li[3]/div/label/input&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Clear All&quot;)" selected="true"/>
-		<accessor type="click" value="div(80)" selected="false"/>
-		<accessor type="click" value="div(&quot;clearall&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='filters-collapse-1']/div[1]/h3/a[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a[2]/div&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="46">
+<step action="click" value='' type="web" desc="Clk Home" isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(23)" selected="false"/>
@@ -623,7 +568,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
