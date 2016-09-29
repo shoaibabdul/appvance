@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_Solr_Pub_DryRun_50Users</name>
+    <name>G2M_Solr_Pub_300Users</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -44,7 +44,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC23_Pub_VF.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="15" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -88,10 +88,10 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpUsers" value="3"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownUsers" value="3"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ThinkTimeMin" value="1000"/>
@@ -125,8 +125,8 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_Solr_Pub_50Users_01">
-      <round name="G2M_Solr_Pub_50Users_01" totalusers="50" time="10" testtype="users" totaliterations="400"/>
+    <controller name="G2M_Solr_Pub_300Users_01">
+      <round name="G2M_Solr_Pub_300Users_01" totalusers="300" time="30" testtype="users" totaliterations="600"/>
     </controller>
     <testcase name="G2M_TC2_Pub_VehicleFinder" expand="yes">
       <test>
@@ -183,15 +183,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="G2M_Solr_Pub_50Users_01" name="G2M_Solr_Pub_50Users_01">
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="7"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="7"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="6"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="6"/>
-      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="6"/>
-      <testcase name="G2M _TC12_Public_LotLookUp" users="6"/>
-      <testcase name="G2M _TC23_Pub_VF_SolrSearch" users="6"/>
-      <testcase name="G2M _TC24_Pub_Saleslist_SolrSearch" users="6"/>
+    <iteration controller="G2M_Solr_Pub_300Users_01" name="G2M_Solr_Pub_300Users_01">
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="38"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="38"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="38"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="38"/>
+      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="37"/>
+      <testcase name="G2M _TC12_Public_LotLookUp" users="37"/>
+      <testcase name="G2M _TC23_Pub_VF_SolrSearch" users="37"/>
+      <testcase name="G2M _TC24_Pub_Saleslist_SolrSearch" users="37"/>
     </iteration>
   </execution>
   <logs>
