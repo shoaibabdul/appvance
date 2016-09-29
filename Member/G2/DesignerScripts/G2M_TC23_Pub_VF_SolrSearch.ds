@@ -84,7 +84,7 @@
 
 
 
-<step action="setSelected" value="&quot;CALIFORNIA&quot;" type="web" desc="Sel State" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setSelected" value="&quot;$STATE&quot;" type="web" desc="Sel State" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(9)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -189,7 +189,7 @@
 
 
 
-<step action="setSelected" value="&quot;CA - Hayward&quot;" type="web" desc="Sel Location" isThinkTime='false' isCommented='false' sequence="14">
+<step action="setSelected" value="&quot;$LOCATION&quot;" type="web" desc="Sel Location" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="setSelected" value="select(9)" selected="true"/>
 		<accessor type="setSelected" value="select(&quot;vehicle_option form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -294,7 +294,7 @@
 
 
 
-<step action="setValue" value="&quot;95116&quot;" type="web" desc="Enter Zip Code" isThinkTime='false' isCommented='false' sequence="22">
+<step action="setValue" value="&quot;$ZIPCODE&quot;" type="web" desc="Enter Zip Code" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;zipcode&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(3)" selected="false"/>
