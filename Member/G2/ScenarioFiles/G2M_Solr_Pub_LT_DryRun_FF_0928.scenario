@@ -35,10 +35,13 @@
     <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds" cache="false"/>
     <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" cache="false"/>
     <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds" cache="false"/>
+    <resource name="G2M_TC23_Pub_VF_SolrSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC23_Pub_VF_SolrSearch.ds" cache="false"/>
+    <resource name="G2M_TC24_Pub_Saleslist_SolrSearch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Member/G2/DesignerScripts/G2M_TC24_Pub_Saleslist_SolrSearch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC2_VehicleFinder.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC3_LotNumbers.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC11_VF_FreeSearch.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC12_LotNo_LookUpSearch.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC23_Pub_VF.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="G2M" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
@@ -71,6 +74,11 @@
     <dpl name="TC12_Testdata" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC23_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC23_Pub_VF.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -158,18 +166,32 @@
         </run>
       </test>
     </testcase>
+    <testcase name="G2M _TC23_Pub_VF_SolrSearch" expand="yes">
+      <test>
+        <run name="Untitled23" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC23_Pub_VF_SolrSearch.ds">
+          <argument name="TC23_TD" method="getNextData" dpl="TC23_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M _TC24_Pub_Saleslist_SolrSearch" expand="yes">
+      <test>
+        <run name="Untitled24" testclass="sahi" method="firefox" langtype="ds" resource="G2M_TC24_Pub_Saleslist_SolrSearch.ds"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="G2M_Solr_Pub_50Users_01" name="G2M_Solr_Pub_50Users_01">
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="3"/>
-      <testcase name="G2M _TC12_Public_LotLookUp" users="3"/>
+      <testcase name="G2M_TC2_Pub_VehicleFinder" users="7"/>
+      <testcase name="G2M_TC3_Pub_LotNoSearch" users="7"/>
+      <testcase name="G2M_TC4_Pub_SalesList" users="6"/>
+      <testcase name="G2M_TC5_Pub_HeaderSearch" users="6"/>
+      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="6"/>
+      <testcase name="G2M _TC12_Public_LotLookUp" users="6"/>
+      <testcase name="G2M _TC23_Pub_VF_SolrSearch" users="6"/>
+      <testcase name="G2M _TC24_Pub_Saleslist_SolrSearch" users="6"/>
     </iteration>
   </execution>
   <logs>
