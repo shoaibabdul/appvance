@@ -267,8 +267,8 @@
 
 <step action="click" value='' type="web" desc="clk My Copart" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="true"/>
-		<accessor type="click" value="link(7)" selected="false"/>
+		<accessor type="click" value="link(&quot;My Copart&quot;)" selected="false"/>
+		<accessor type="click" value="link(7)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.in/IN/Buyer&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -294,8 +294,8 @@
 
 <step action="click" value='' type="web" desc="clk Logout" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
-		<accessor type="click" value="link(4)" selected="false"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
+		<accessor type="click" value="link(4)" selected="true"/>
 		<accessor type="click" value="link(&quot;https://g-member-stg1.copart.in/in/Account/LogOff&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
