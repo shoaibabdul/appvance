@@ -205,18 +205,7 @@
 
 
 
-<step action="wait" value="8037" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="click" value='' type="web" desc="Submit Search" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(0)" selected="true"/>
 		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple&quot;)" selected="false"/>
@@ -231,7 +220,7 @@
 
 
 
-<step action="wait" value="8069" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -242,7 +231,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Clk Image #1 and select Image" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Drag and Drop image here or click to upload[20]&quot;)" selected="true"/>
 		<accessor type="click" value="div(188)" selected="false"/>
@@ -256,7 +245,7 @@
 
 
 
-<step action="wait" value="12066" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -267,7 +256,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+<step action="click" value='' type="web" desc="Clk Upload Button" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Upload&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple flex&quot;)" selected="false"/>
@@ -281,7 +270,7 @@
 
 
 
-<step action="wait" value="1039" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -292,7 +281,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+<step action="click" value='' type="web" desc="Clk Got It! Button" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Got it!&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;md-primary md-button md-default-theme md-ink-ripple md-autofocus md-focused&quot;)" selected="false"/>
@@ -300,6 +289,17 @@
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-dialog-actions/button&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
