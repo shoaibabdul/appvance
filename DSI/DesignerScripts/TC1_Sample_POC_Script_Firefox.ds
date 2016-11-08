@@ -231,32 +231,321 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Image #1 and select Image" isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;Drag and Drop image here or click to upload[20]&quot;)" selected="true"/>
-		<accessor type="click" value="div(188)" selected="false"/>
-		<accessor type="click" value="div(&quot;select-zone ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required[40]&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Browse&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;md-raised  md-companyX-theme btn md-button md-ink-ripple flex ng-empty ng-valid&quot;)" selected="false"/>
+		<accessor type="click" value="button(83)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[21]/form/div/div[1]/div[3]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-card[21]/form/div/div[1]/div[3]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[2]/div[3]/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
+		<accessor type="click" value="image(&quot;e36f506e-d09b-401a-9bf2-764520995f64&quot;)" selected="true"/>
+		<accessor type="click" value="image(81)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/e36f506e-d09b-401a-9bf2-764520995f64')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[1]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-card/img&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="click" value='' type="web" desc="Clk Upload Button" isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;8c01a2fa-8fe8-4caf-b681-358f919f31f0&quot;)" selected="true"/>
+		<accessor type="click" value="image(82)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/8c01a2fa-8fe8-4caf-b681-358f919f31f0')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[2]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;02831611-520c-46e0-aa67-4baba843b28a&quot;)" selected="true"/>
+		<accessor type="click" value="image(83)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[2]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/02831611-520c-46e0-aa67-4baba843b28a')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[3]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;1f1d79ea-91a3-49db-95bf-9548350ba903&quot;)" selected="true"/>
+		<accessor type="click" value="image(84)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[3]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/1f1d79ea-91a3-49db-95bf-9548350ba903')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[4]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;728a85e8-803c-4dff-b6c8-b4c6e190ac10&quot;)" selected="true"/>
+		<accessor type="click" value="image(85)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[4]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/728a85e8-803c-4dff-b6c8-b4c6e190ac10')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[5]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;565b9999-0087-4e7d-8c1a-5de6dbdf0b5f&quot;)" selected="true"/>
+		<accessor type="click" value="image(86)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[5]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/565b9999-0087-4e7d-8c1a-5de6dbdf0b5f')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[6]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[6]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;99895f8c-72fd-43c3-a35b-d14d960a6a82&quot;)" selected="true"/>
+		<accessor type="click" value="image(87)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[6]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/99895f8c-72fd-43c3-a35b-d14d960a6a82')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[7]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[7]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;99895f8c-72fd-43c3-a35b-d14d960a6a82&quot;)" selected="true"/>
+		<accessor type="click" value="image(87)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[6]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/99895f8c-72fd-43c3-a35b-d14d960a6a82')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[7]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[7]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;76c51947-151f-4a7c-8bf2-511f536196ea&quot;)" selected="true"/>
+		<accessor type="click" value="image(88)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[7]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/76c51947-151f-4a7c-8bf2-511f536196ea')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[8]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[8]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;d8a04d37-6df7-4276-af2e-7f1865b7c3eb&quot;)" selected="true"/>
+		<accessor type="click" value="image(89)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[8]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/d8a04d37-6df7-4276-af2e-7f1865b7c3eb')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[9]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[9]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;44320beb-0a93-41f9-a565-6b89a23e721c&quot;)" selected="true"/>
+		<accessor type="click" value="image(90)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[9]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/44320beb-0a93-41f9-a565-6b89a23e721c')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[10]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[10]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;d657d994-0bcf-4ff6-9d33-159efa2d151c&quot;)" selected="true"/>
+		<accessor type="click" value="image(91)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[10]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/d657d994-0bcf-4ff6-9d33-159efa2d151c')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[11]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[11]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;c2206d91-3aa8-4189-9069-008e8b5689bd&quot;)" selected="true"/>
+		<accessor type="click" value="image(93)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[12]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/c2206d91-3aa8-4189-9069-008e8b5689bd')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[13]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[13]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;9133ebbb-69d5-49be-add6-acb5faea9cce&quot;)" selected="true"/>
+		<accessor type="click" value="image(94)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[13]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/9133ebbb-69d5-49be-add6-acb5faea9cce')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[14]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[14]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;9693822e-6599-4283-84be-bf4d5acf38f4&quot;)" selected="true"/>
+		<accessor type="click" value="image(95)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[14]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/9693822e-6599-4283-84be-bf4d5acf38f4')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[15]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[15]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;daf0cc48-de89-4be8-9887-eac98e145fef&quot;)" selected="true"/>
+		<accessor type="click" value="image(97)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[16]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/daf0cc48-de89-4be8-9887-eac98e145fef')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[17]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[17]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;c3e6886c-414c-4509-bc2a-e120ad61f6ba&quot;)" selected="true"/>
+		<accessor type="click" value="image(98)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[17]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/c3e6886c-414c-4509-bc2a-e120ad61f6ba')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[18]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[18]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;ab5054d7-4271-4e84-adf0-920b7a6799da&quot;)" selected="true"/>
+		<accessor type="click" value="image(99)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[18]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/ab5054d7-4271-4e84-adf0-920b7a6799da')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[19]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[19]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;16e957e4-6204-4ced-8860-fed6fee793cc&quot;)" selected="true"/>
+		<accessor type="click" value="image(100)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[19]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/16e957e4-6204-4ced-8860-fed6fee793cc')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[20]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[20]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;16e957e4-6204-4ced-8860-fed6fee793cc&quot;)" selected="true"/>
+		<accessor type="click" value="image(100)" selected="false"/>
+		<accessor type="click" value="image(&quot;thumb bottom-thumbnail[19]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[contains(@src,'blob:https://c-dsi-qa1.copart.com/16e957e4-6204-4ced-8860-fed6fee793cc')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[3]/md-content/div/div[20]/md-card/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[20]/md-card/img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Upload Button" isThinkTime='false' isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Upload&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple flex&quot;)" selected="false"/>
@@ -270,7 +559,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -281,31 +570,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Got It! Button" isThinkTime='false' isCommented='false' sequence="22">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Got it!&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;md-primary md-button md-default-theme md-ink-ripple md-autofocus md-focused&quot;)" selected="false"/>
-		<accessor type="click" value="button(90)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-actions/button&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk User Dropdown2" isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="Clk User Dropdown2" isThinkTime='false' isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="true"/>
 		<accessor type="click" value="button(0)" selected="false"/>
@@ -318,7 +583,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -329,7 +594,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk LogOut" isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Clk LogOut" isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
 		<accessor type="click" value="span(16)" selected="false"/>
@@ -343,7 +608,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
