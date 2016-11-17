@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UK_ImageURLs.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -17,7 +17,7 @@
 
 
 
-<step action="navigateTo" value="&quot;https://images.copart.com/website/data/pix/qa/50351286_05X.JPG&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;$TestURLs&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
