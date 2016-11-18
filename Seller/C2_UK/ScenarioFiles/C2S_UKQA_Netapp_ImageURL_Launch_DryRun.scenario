@@ -29,9 +29,7 @@
     <categorization>C2Seller_UK_QA</categorization>
   </basics>
   <resources>
-    <resource name="TC1_C2S_UKQA_SS_ImageURL_Launch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/TC1_C2S_UKQA_SS_ImageURL_Launch.ds" cache="false"/>
     <resource name="TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds" cache="false"/>
-    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_SS_ImageURLs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_Netapp_ImageURLs.csv" cache="false"/>
   </resources>
   <testnodes>
