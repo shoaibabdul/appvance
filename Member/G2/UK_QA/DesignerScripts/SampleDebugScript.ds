@@ -359,7 +359,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk B&amp;M Makers link" isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Clk B&amp;M Makers link" isThinkTime='false' isCommented="true" sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Brokers and Market Makers&quot;)" selected="true"/>
 		<accessor type="click" value="link(44)" selected="false"/>
@@ -376,7 +376,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="27">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
