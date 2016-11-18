@@ -20,13 +20,13 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>OpsPortal_LoadTest_300U_FF</name>
+    <name>C2S_UKQA_SS_ImageURL</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <links/>
     <versions>v1.0</versions>
-    <categorization>OpsPortal</categorization>
+    <categorization>C2Seller_UK_QA</categorization>
   </basics>
   <resources>
     <resource name="TC1_OpsPortal_LotNoSearch_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC1_OpsPortal_LotNoSearch_FF.ds" cache="false"/>
@@ -35,12 +35,14 @@
     <resource name="TC4_OpsPortal_ExtSearch_VINNo_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC4_OpsPortal_ExtSearch_VINNo_FF.ds" cache="false"/>
     <resource name="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds" cache="false"/>
     <resource name="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds" type="ds" path="REPOSITORY/C3Seller_Perf/OPSPortal/DesignerScripts/TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds" cache="false"/>
+    <resource name="TC1_C2S_UKQA_SS_ImageURL_Launch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/TC1_C2S_UKQA_SS_ImageURL_Launch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC1_OpsPortal_LotNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC2_OpsPortal_LotNosWithData.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_OpsPortal_YardNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC4_OpsPortal_VINs.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC5_OpsPortal_ClaimNos.csv" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_OpsPortal_AuctionDates.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_SS_ImageURLs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="OPS" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.354.cloud" amount="15" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
@@ -57,32 +59,7 @@
   <datasources>
     <dpl name="TC1_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC1_OpsPortal_LotNos.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC2_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC2_OpsPortal_LotNosWithData.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC3_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC3_OpsPortal_YardNos.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC4_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC4_OpsPortal_VINs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC5_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC5_OpsPortal_ClaimNos.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC6_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC6_OpsPortal_AuctionDates.csv"/>
+        <argument name="file" value="C2S_UKQA_SS_ImageURLs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -129,48 +106,13 @@
     </options>
   </options>
   <templates>
-    <controller name="OpsPortal_300U_FF">
-      <round name="OpsPortal_300U_FF" totalusers="300" time="30" testtype="users" totaliterations="2400"/>
+    <controller name="C2S_UKQA_SS_ImageURL">
+      <round name="C2S_UKQA_SS_ImageURL" totalusers="10" time="5" testtype="users" totaliterations="150"/>
     </controller>
-    <testcase name="TC1_OpsPortal_LotNoSearch_FF" expand="yes">
+    <testcase name="TC1_C2S_UKQA_SS_ImageURL" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_OpsPortal_LotNoSearch_FF.ds">
-          <argument name="TC1_TD" method="getNextData" dpl="TC1_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch_FF" expand="yes">
-      <test>
-        <run name="Untitled2" testclass="sahi" method="firefox" langtype="ds" resource="TC2_OpsPortal_LotNo_ImgDocSearch_FF.ds">
-          <argument name="TC2_TD" method="getNextData" dpl="TC2_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC3_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
-      <test>
-        <run name="Untitled3" testclass="sahi" method="firefox" langtype="ds" resource="TC3_OpsPortal_ExtSearch_YardNo_FF.ds">
-          <argument name="TC3_TD" method="getNextData" dpl="TC3_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC4_OpsPortal_ExtSearch_VINNo_FF" expand="yes">
-      <test>
-        <run name="Untitled4" testclass="sahi" method="firefox" langtype="ds" resource="TC4_OpsPortal_ExtSearch_VINNo_FF.ds">
-          <argument name="TC4_TD" method="getNextData" dpl="TC4_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC5_OpsPortal_ExtSearch_YardNo_FF" expand="yes">
-      <test>
-        <run name="Untitled5" testclass="sahi" method="firefox" langtype="ds" resource="TC5_OpsPortal_ExtSearch_ClaimNo_FF.ds">
-          <argument name="TC5_TD" method="getNextData" dpl="TC5_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates_FF" expand="yes">
-      <test>
-        <run name="Untitled6" testclass="sahi" method="firefox" langtype="ds" resource="TC6_OpsPortal_ExtSearch_AuctionFromToDates_FF.ds">
-          <argument name="TC6_TD" method="getNextData" dpl="TC6_TD"/>
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC1_C2S_UKQA_SS_ImageURL_Launch.ds">
+          <argument name="TC1_TD" method="getRandomData" dpl="TC1_TD"/>
         </run>
       </test>
     </testcase>
@@ -179,13 +121,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="OpsPortal_300U_FF" name="OpsPortal_300U_FF">
-      <testcase name="TC1_OpsPortal_LotNoSearch_FF" users="50"/>
-      <testcase name="TC2_OpsPortal_LotNo_ImgDocSearch_FF" users="50"/>
-      <testcase name="TC3_OpsPortal_ExtSearch_YardNo_FF" users="50"/>
-      <testcase name="TC4_OpsPortal_ExtSearch_VINNo_FF" users="50"/>
-      <testcase name="TC5_OpsPortal_ExtSearch_YardNo_FF" users="50"/>
-      <testcase name="TC6_OpsPortal_ExtSearch_AuctionDates_FF" users="50"/>
+    <iteration controller="C2S_UKQA_SS_ImageURL" name="C2S_UKQA_SS_ImageURL">
+      <testcase name="TC1_C2S_UKQA_SS_ImageURL" users="10"/>
     </iteration>
   </execution>
   <logs>
