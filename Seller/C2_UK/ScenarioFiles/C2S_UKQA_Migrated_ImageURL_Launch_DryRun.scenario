@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>C2S_UKQA_Netapp_ImageURL</name>
+    <name>C2S_UKQA_Migrated_ImageURL</name>
     <defaultdirectory>{scenario}</defaultdirectory>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
@@ -30,7 +30,9 @@
   </basics>
   <resources>
     <resource name="TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds" cache="false"/>
+    <resource name="TC3_C2S_UKQA_Migrated_ImageURL_Launch.ds" type="ds" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/TC3_C2S_UKQA_Migrated_ImageURL_Launch.ds" cache="false"/>
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_Netapp_ImageURLs.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_Migrated_ImageURLs.csv" cache="false"/>
   </resources>
   <testnodes>
     <cloud name="C2S_UKQA" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.363.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
@@ -47,7 +49,7 @@
   <datasources>
     <dpl name="TC1_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="C2S_UKQA_Netapp_ImageURLs.csv"/>
+        <argument name="file" value="C2S_UKQA_Migrated_ImageURLs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -94,12 +96,12 @@
     </options>
   </options>
   <templates>
-    <controller name="C2S_UKQA_Netapp_ImageURL">
-      <round name="C2S_UKQA_Netapp_ImageURL" totalusers="10" time="5" testtype="users" totaliterations="150"/>
+    <controller name="C2S_UKQA_Migrated_ImageURL">
+      <round name="C2S_UKQA_Migrated_ImageURL" totalusers="10" time="5" testtype="users" totaliterations="150"/>
     </controller>
     <testcase name="TC1_C2S_UKQA_SS_ImageURL" expand="yes">
       <test>
-        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds">
+        <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC3_C2S_UKQA_Migrated_ImageURL_Launch.ds">
           <argument name="TC1_TD" method="getRandomData" dpl="TC1_TD"/>
         </run>
       </test>
@@ -109,7 +111,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="C2S_UKQA_Netapp_ImageURL" name="C2S_UKQA_Netapp_ImageURL">
+    <iteration controller="C2S_UKQA_Migrated_ImageURL" name="C2S_UKQA_Migrated_ImageURL">
       <testcase name="TC1_C2S_UKQA_SS_ImageURL" users="10"/>
     </iteration>
   </execution>
