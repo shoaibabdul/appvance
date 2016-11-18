@@ -45,7 +45,7 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="TC1_TD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="TC2_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="C2S_UKQA_Netapp_ImageURLs.csv"/>
       </argument>
@@ -97,10 +97,10 @@
     <controller name="C2S_UKQA_Netapp_ImageURL">
       <round name="C2S_UKQA_Netapp_ImageURL" totalusers="10" time="5" testtype="users" totaliterations="150"/>
     </controller>
-    <testcase name="TC1_C2S_UKQA_SS_ImageURL" expand="yes">
+    <testcase name="TC2_C2S_UKQA_Netapp_ImageURL" expand="yes">
       <test>
         <run name="Untitled1" testclass="sahi" method="firefox" langtype="ds" resource="TC2_C2S_UKQA_Netapp_ImageURL_Launch.ds">
-          <argument name="TC1_TD" method="getRandomData" dpl="TC1_TD"/>
+          <argument name="TC2_TD" method="getRandomData" dpl="TC2_TD"/>
         </run>
       </test>
     </testcase>
@@ -110,7 +110,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="C2S_UKQA_Netapp_ImageURL" name="C2S_UKQA_Netapp_ImageURL">
-      <testcase name="TC1_C2S_UKQA_SS_ImageURL" users="10"/>
+      <testcase name="TC2_C2S_UKQA_Netapp_ImageURL" users="10"/>
     </iteration>
   </execution>
   <logs>
