@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_SS_ImageURLs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="C2S_UKQA" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.413.cloud" amount="2" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
+    <cloud name="C2S_UKQA" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.413.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -95,7 +95,9 @@
   </options>
   <templates>
     <controller name="C2S_UKQA_SS_ImageURL">
-      <round name="C2S_UKQA_SS_ImageURL" totalusers="10" time="5" testtype="users" totaliterations="150"/>
+      <round name="C2S_UKQA_SS_ImageURL" totalusers="5" testtype="users" totaliterations="10">
+        <testcase name="TC1_C2S_UKQA_SS_ImageURL" totalexecutions="1"/>
+      </round>
     </controller>
     <testcase name="TC1_C2S_UKQA_SS_ImageURL" expand="yes">
       <test>
@@ -110,7 +112,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="C2S_UKQA_SS_ImageURL" name="C2S_UKQA_SS_ImageURL">
-      <testcase name="TC1_C2S_UKQA_SS_ImageURL" users="10"/>
+      <testcase name="TC1_C2S_UKQA_SS_ImageURL" totalexecutions="1" users="5"/>
     </iteration>
   </execution>
   <logs>
