@@ -85,7 +85,7 @@
 
 
 
-<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;33516&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -112,7 +112,7 @@
 
 
 
-<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;copart1&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
