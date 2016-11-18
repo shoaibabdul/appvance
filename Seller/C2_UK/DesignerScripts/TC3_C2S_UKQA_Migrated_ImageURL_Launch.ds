@@ -17,7 +17,7 @@
 
 
 
-<step action="navigateTo" value="&quot;https://images.copart.com/website/data/pix/qa/12797624_01X.JPG&quot;" type="web" desc="Launch Migrated URL" isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;https://images.copart.com/website/data/pix/qa/12797624_01X.JPG&quot;" type="web" desc="Launch Migrated ImageURL" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
