@@ -33,7 +33,7 @@
     <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/C2S_UKQA_Netapp_ImageURLs.csv" cache="false"/>
   </resources>
   <testnodes>
-    <cloud name="C2S_UKQA" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.363.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="C2S_UKQA" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.413.cloud" amount="2" instantiate="All" terminate="All" reboot="After" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
