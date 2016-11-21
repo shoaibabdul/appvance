@@ -57,8 +57,9 @@
 
 <step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter LookUp LotNo" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(4)" selected="true"/>
+		<accessor type="setValue" value="textbox(4)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;form-control ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(3)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//body[@id='mainBody']/div[1]/div/div/div[1]/aside/div/div[3]/div/div[2]/form/div[1]/input&quot;" selected="true"/>
