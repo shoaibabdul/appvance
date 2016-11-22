@@ -22,11 +22,11 @@
   <basics>
     <name>Images_DebugTest</name>
     <defaultdirectory>{scenario}</defaultdirectory>
-    <basicName/>
-    <creator/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
     <links/>
-    <versions/>
-    <categorization/>
+    <versions>v1</versions>
+    <categorization>C2S_UKQA</categorization>
   </basics>
   <resources>
     <resource name="ImagesURL_DebugScript.har" type="har" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/ImagesURL_DebugScript.har" cache="false"/>
@@ -42,7 +42,7 @@
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
-    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
+    <dpl name="ImgData01" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
         <argument name="file" value="ImagesURL_HAR_TestData.csv"/>
       </argument>
@@ -54,12 +54,14 @@
       <opt name="testnode_concurrent_users" value="0"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="SleepTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -83,15 +85,13 @@
     </options>
   </options>
   <templates>
-    <controller name="Untitled2">
-      <round name="Untitled2" totalusers="5" testtype="users" totaliterations="5">
-        <testcase name="Untitled1" executions="1"/>
-      </round>
+    <controller name="ImgURL_01">
+      <round name="ImgURL_01" totalusers="5" time="5" testtype="users" totaliterations="5"/>
     </controller>
-    <testcase name="Untitled1" expand="yes">
+    <testcase name="ImgURL_DebugScript" expand="yes">
       <test>
         <run name="Untitled1" langtype="har" resource="ImagesURL_DebugScript.har">
-          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
+          <argument name="ImgData01" method="getNextData" dpl="ImgData01"/>
         </run>
       </test>
     </testcase>
@@ -100,8 +100,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
-    <iteration controller="Untitled2" name="Untitled2">
-      <testcase name="Untitled1" totalexecutions="1" users="5"/>
+    <iteration controller="ImgURL_01" name="ImgURL_01">
+      <testcase name="ImgURL_DebugScript" totalexecutions="1" users="5"/>
     </iteration>
   </execution>
   <logs>
