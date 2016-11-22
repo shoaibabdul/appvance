@@ -30,10 +30,12 @@
   </basics>
   <resources>
     <resource name="images.copart.com.har" type="har" path="{scenario}/images.copart.com.har" cache="false"/>
+    <resource name="ImagesURL_DebugScript.har" type="har" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/DesignerScripts/ImagesURL_DebugScript.har" cache="false"/>
     <resource type="data" path="{scenario}/copartdata.csv" cache="false"/>
+    <resource type="data" path="REPOSITORY/C3Seller_Perf/Seller/C2_UK/TestData/ImagesURL_HAR_TestData.csv" cache="false"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="C2S_UK" type="EC2" config="SERVER/C:/Users/Administrator/Appvance_Personal/APC2.2.413.cloud" amount="1" instantiate="Required" terminate="None" reboot="Never" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -43,7 +45,7 @@
   <datasources>
     <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="copartdata.csv"/>
+        <argument name="file" value="ImagesURL_HAR_TestData.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -89,7 +91,7 @@
     </controller>
     <testcase name="Untitled1" expand="yes">
       <test>
-        <run name="Untitled1" langtype="har" resource="images.copart.com.har">
+        <run name="Untitled1" langtype="har" resource="ImagesURL_DebugScript.har">
           <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
         </run>
       </test>
