@@ -101,7 +101,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest">
     <iteration controller="ImgURL_01" name="ImgURL_01">
-      <testcase name="ImgURL_DebugScript" totalexecutions="1" users="5"/>
+      <testcase name="ImgURL_DebugScript" users="5"/>
     </iteration>
   </execution>
   <logs>
