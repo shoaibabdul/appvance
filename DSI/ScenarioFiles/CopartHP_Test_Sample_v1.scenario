@@ -29,7 +29,6 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="CopartHome_sample.har" type="har" path="{scenario}/../DesignerScripts/CopartHome_sample.har"/>
     <resource name="CopartHome1_Sample.har" type="har" path="{scenario}/../DesignerScripts/CopartHome1_Sample.har"/>
   </resources>
   <testnodes>
