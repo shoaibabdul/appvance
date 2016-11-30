@@ -32,7 +32,7 @@
     <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
   </resources>
   <testnodes>
-    <cloud name="G2MUK" type="EC2" instantiate="None" terminate="None" reboot="After" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud" username="appvance" password="appvance"/>
+    <cloud name="G2MUK" type="EC2" instantiate="None" terminate="None" reboot="After" amount="2" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
