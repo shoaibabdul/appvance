@@ -26,7 +26,7 @@
     <creator>Balram</creator>
     <versions>v1.0</versions>
     <categorization>G2M UKQA Proj</categorization>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
