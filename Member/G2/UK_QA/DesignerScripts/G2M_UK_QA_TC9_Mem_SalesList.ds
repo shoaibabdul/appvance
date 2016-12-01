@@ -472,7 +472,8 @@
 		<accessor type="click" value="link(&quot;08/10/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;09/27/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;09/30/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;24/11/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;24/11/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;06/12/2016&quot;)" value="link(&quot;06/12/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/18/2016')]&quot;" selected="true"/>
@@ -532,7 +533,8 @@
 		<accessor type="click" value="link(&quot;08/11/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;09/30/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;10/03/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;30/11/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;30/11/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;08/12/2016&quot;)" value="link(&quot;08/12/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/20/2016')]&quot;" selected="true"/>
