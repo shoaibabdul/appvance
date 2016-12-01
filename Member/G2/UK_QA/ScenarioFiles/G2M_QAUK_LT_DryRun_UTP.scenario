@@ -20,16 +20,17 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>G2M_QAUK_LT_DryRun.scenario</name>
+    <name>G2M_QAUK_LT_DryRun_UTP.scenario</name>
     <defaultdirectory/>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
     <versions>v1.0</versions>
     <categorization>G2M UKQA Proj</categorization>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
+    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2MUK" type="EC2" instantiate="None" terminate="None" reboot="After" amount="2" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud" username="appvance" password="appvance"/>
@@ -43,7 +44,13 @@
     <bundle name="htmlunit" version="2.15.2648"/>
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="G2M_UKQA_TC6Data" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_UKQA_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
@@ -59,8 +66,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
