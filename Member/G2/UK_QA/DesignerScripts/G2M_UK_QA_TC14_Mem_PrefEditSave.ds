@@ -189,7 +189,43 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="wait" value="7010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Contact Information&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;flagpad&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//ul[@id='menu-content']/a[1]/li/span[1]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li/span[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="11046" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;Edit Contact Information&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;btn btn-lblue edit_contactinfo editbtn&quot;)" selected="false"/>
@@ -203,7 +239,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+<step action="wait" value="8193" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -214,32 +250,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Edit Contact Information&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;btn btn-lblue edit_contactinfo editbtn&quot;)" selected="false"/>
-		<accessor type="click" value="button(6)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='tab1']/div[1]/div/div[1]/h3/button&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//h3/button&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-lblue pswd_btn&quot;)" selected="false"/>
@@ -253,29 +264,15 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
-		<accessor type="click" value="link(11)" selected="false"/>
-		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/dashboard&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;Edit Contact Information&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue edit_contactinfo editbtn&quot;)" selected="false"/>
+		<accessor type="click" value="button(6)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, './dashboard')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='tab1']/div[1]/div/div[1]/h3/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//h3/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -292,7 +289,21 @@
 
 
 
-<step action="wait" value="4012" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Edit Contact Information&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue edit_contactinfo editbtn&quot;)" selected="false"/>
+		<accessor type="click" value="button(6)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='tab1']/div[1]/div/div[1]/h3/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//h3/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -303,7 +314,71 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-lblue pswd_btn&quot;)" selected="false"/>
+		<accessor type="click" value="submit(13)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='tab1']/div[3]/div/div/div[2]/form/div/button[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/form/div/button[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/dashboard&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './dashboard')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4012" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;btn btn-lblue pswd_btn&quot;)" selected="false"/>
