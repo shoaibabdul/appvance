@@ -48,7 +48,7 @@
     <resource name="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC17_Mem_SavedSearchs.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="None" terminate="None" reboot="After" amount="2" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
