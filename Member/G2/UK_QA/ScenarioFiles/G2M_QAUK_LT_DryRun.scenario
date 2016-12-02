@@ -29,30 +29,10 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
-    <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
     <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch.ds"/>
-    <resource name="G2M_UK_QA_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC4_Pub_SalesList.ds"/>
-    <resource name="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC5_Pub_HeaderSearch.ds"/>
-    <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
-    <resource name="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC7_Mem_VehicleFinder.ds"/>
     <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch.ds"/>
-    <resource name="G2M_UK_QA_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC9_Mem_SalesList.ds"/>
-    <resource name="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC10_Mem_HeaderSearch.ds"/>
-    <resource name="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds"/>
-    <resource name="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds"/>
-    <resource name="G2M_UK_QA_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC13_Mem_WatchList.ds"/>
-    <resource name="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC14_Mem_PrefEditSave.ds"/>
-    <resource name="G2M_UK_QA_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC15_Mem_CompareLots.ds"/>
-    <resource name="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC16_Mem_LotsWonLost.ds"/>
-    <resource name="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC17_Mem_SavedSearchs.ds"/>
-    <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
     <resource name="G2M_UKQA_TC3_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC3_LotNumbers.csv"/>
-    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
-    <resource name="G2M_UKQA_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC7_VehicleFinder.csv"/>
     <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
-    <resource name="G2M_UKQA_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC11_VF_FreeSearch.csv"/>
-    <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="1" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud"/>
