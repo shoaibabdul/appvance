@@ -30,9 +30,11 @@
   </basics>
   <resources>
     <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch.ds"/>
-    <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch.ds"/>
     <resource name="G2M_UKQA_TC3_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC3_LotNumbers.csv"/>
     <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
+    <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
+    <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
+    <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="1" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud"/>
@@ -52,9 +54,9 @@
         <argument name="file" value="G2M_UKQA_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2M_UKQA_TC8Data" type="HashDPL" langtype="java" method="setup">
+    <dpl name="G2M_UKQA_TC2Data" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_UKQA_TC8_LotNumbers.csv"/>
+        <argument name="file" value="G2M_UKQA_TC2_VehicleFinder.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -113,18 +115,18 @@
     <controller name="G2M_QAUK_LT_DryRun_01">
       <round time="10" name="10 Minutes"/>
     </controller>
-    <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch">
+    <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch-copy">
       <test>
         <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_UKQA_TC8_Mem_LotNoS">
+    <testcase name="G2M_UK_TC">
       <test>
-        <run name="G2M_UK_QA_TC8_Mem_LotNoS" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC8Data"/>
-        </run>
+        <run name="G2M_UK_TC1" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_TC2" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_TC3" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -133,8 +135,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
-      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="5"/>
-      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="5"/>
+      <testcase name="G2M_UK_TC" users="15"/>
     </iteration>
   </execution>
   <logs>
