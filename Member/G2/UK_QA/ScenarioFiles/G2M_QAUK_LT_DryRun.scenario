@@ -141,15 +141,7 @@
       <testcase name="G2M_UK_TC" users="15"/>
     </iteration>
   </execution>
-  <logs>
-    <log type="database">
-      <opt name="hibernate.connection.username" value="utp"/>
-      <opt name="hibernate.connection.password" value="utp"/>
-      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
-      <opt name="hibernate.default_schema" value="utp"/>
-      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
-    </log>
-  </logs>
+  <logs/>
   <integrations xmlns="www.pushtotest.com/tm5"/>
   <notifications/>
 </testscenario>
