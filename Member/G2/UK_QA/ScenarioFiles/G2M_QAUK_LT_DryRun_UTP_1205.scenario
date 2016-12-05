@@ -213,7 +213,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="G2M_QAUK_LT_DryRun" controller="G2M_QAUK_LT_DryRun" completiontype="duration">
-      <testcase name="G2M_QAUK_LT_DryRun_01" users="17"/>
+      <testcase name="G2M_QAUK_LT_DryRun_01" state="users" users="17"/>
     </iteration>
   </execution>
   <logs/>
