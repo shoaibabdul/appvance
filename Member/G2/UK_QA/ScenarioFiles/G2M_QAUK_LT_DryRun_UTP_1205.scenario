@@ -48,7 +48,7 @@
     <resource name="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC17_Mem_SavedSearchs.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="required" terminate="none" reboot="never" amount="2" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -66,27 +66,27 @@
     </options>
     <options type="apc">
       <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="PercentageLogsSaved" value="0"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
-      <opt name="ThinkTime" value="default"/>
+      <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="RampUpUsers" value="0"/>
-      <opt name="RampUpSeconds" value="0"/>
-      <opt name="MaxRampUpTime" value="0"/>
-      <opt name="RampDownUsers" value="0"/>
-      <opt name="RampDownSeconds" value="0"/>
-      <opt name="MaxRampDownTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
@@ -97,7 +97,7 @@
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugModeSahi" value="false"/>
-      <opt name="domComplete" value="true"/>
+      <opt name="fullPageLoaded" value="true"/>
     </options>
     <options type="har">
       <opt name="printDebugInfo" value="false"/>
