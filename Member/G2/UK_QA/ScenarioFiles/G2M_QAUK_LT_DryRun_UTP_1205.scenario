@@ -161,22 +161,50 @@
     <testcase name="G2M_QAUK_LT_DryRun_01">
       <test>
         <run name="Untitled1" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled2" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled3" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="Untitled2" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC2Data"/>
+        </run>
+        <run name="Untitled3" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
+        </run>
         <run name="Untitled4" langtype="ds" resource="G2M_UK_QA_TC4_Pub_SalesList.ds" testclass="Sahi" method="firefox"/>
         <run name="Untitled5" langtype="ds" resource="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled6" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled7" langtype="ds" resource="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled8" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled9" langtype="ds" resource="G2M_UK_QA_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled10" langtype="ds" resource="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled11" langtype="ds" resource="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled12" langtype="ds" resource="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled13" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled14" langtype="ds" resource="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled15" langtype="ds" resource="G2M_UK_QA_TC15_Mem_CompareLots.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled16" langtype="ds" resource="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" testclass="Sahi" method="firefox"/>
-        <run name="Untitled17" langtype="ds" resource="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" testclass="Sahi" method="firefox"/>
+        <run name="Untitled6" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled7" langtype="ds" resource="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC7Data"/>
+        </run>
+        <run name="Untitled8" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC8Data"/>
+        </run>
+        <run name="Untitled9" langtype="ds" resource="G2M_UK_QA_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled10" langtype="ds" resource="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled11" langtype="ds" resource="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC11Data"/>
+        </run>
+        <run name="Untitled12" langtype="ds" resource="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC12Data"/>
+        </run>
+        <run name="Untitled13" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled14" langtype="ds" resource="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled15" langtype="ds" resource="G2M_UK_QA_TC15_Mem_CompareLots.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled16" langtype="ds" resource="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+        <run name="Untitled17" langtype="ds" resource="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
