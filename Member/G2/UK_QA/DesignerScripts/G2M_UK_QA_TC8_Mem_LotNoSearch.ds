@@ -164,7 +164,7 @@
 
 
 
-<step action="setValue" value="&quot;$Lot Number&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$LotNumber&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;ng-untouched ng-valid ng-dirty ng-valid-parse&quot;)" selected="false"/>
