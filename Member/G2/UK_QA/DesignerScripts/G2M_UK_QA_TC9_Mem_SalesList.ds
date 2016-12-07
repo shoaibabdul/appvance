@@ -462,7 +462,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Upcoming Sale" isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc="Clk Upcoming Sale" isThinkTime='false' isCommented="true" sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;07/18/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(70)" selected="false"/>
@@ -486,7 +486,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="35">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -497,7 +497,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SalesList" isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="Clk SalesList" isThinkTime='false' isCommented="true" sequence="36">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
 		<accessor type="click" value="link(10)" selected="false"/>
@@ -513,7 +513,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="37">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -536,7 +536,8 @@
 		<accessor type="click" value="link(&quot;10/03/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;30/11/2016&quot;)" selected="false"/>
 		<accessor type="link(&quot;08/12/2016&quot;)" value="link(&quot;08/12/2016&quot;)" selected="false"/>
-		<accessor type="link(&quot;12/12/2016&quot;)" value="link(&quot;12/12/2016&quot;)" selected="true"/>
+		<accessor type="link(&quot;12/12/2016&quot;)" value="link(&quot;12/12/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;13/12/2016&quot;)" value="link(&quot;13/12/2016&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/20/2016')]&quot;" selected="true"/>
