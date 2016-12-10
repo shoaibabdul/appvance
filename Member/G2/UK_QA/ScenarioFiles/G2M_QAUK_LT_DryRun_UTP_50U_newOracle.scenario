@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <node name="cloudhost" location="http://ec2-54-173-118-76.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="cloudhost" location="http://ec2-54-173-118-76.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
