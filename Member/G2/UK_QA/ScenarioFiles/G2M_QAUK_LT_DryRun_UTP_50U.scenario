@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost 1" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="2" config="SERVER/C:/Users/Administrator/Appvance_Personal/utp3.1-master-7207899.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -160,9 +160,7 @@
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
-        <run name="G2M_UK_QA_TC1_Pub_HPNav" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox">
-          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
-        </run>
+        <run name="G2M_UK_QA_TC1_Pub_HPNav" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC2_Pub_VF">
@@ -298,15 +296,7 @@
       <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="3"/>
     </iteration>
   </execution>
-  <logs>
-    <log type="database">
-      <opt name="hibernate.connection.username" value="utp"/>
-      <opt name="hibernate.connection.password" value="utp"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/utp?useSSL=false"/>
-      <opt name="hibernate.default_schema" value="utp"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-    </log>
-  </logs>
+  <logs/>
   <integrations xmlns="www.pushtotest.com/tm5"/>
   <notifications/>
 </testscenario>
