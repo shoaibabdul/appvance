@@ -301,7 +301,7 @@
       <opt name="hibernate.connection.username" value="utp"/>
       <opt name="hibernate.connection.password" value="utp"/>
       <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-175-64-117.compute-1.amazonaws.com:3306/utp?useSSL=false"/>
-      <opt name="hibernate.default_schema" value="utp2"/>
+      <opt name="hibernate.default_schema" value="utp"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
   </logs>
