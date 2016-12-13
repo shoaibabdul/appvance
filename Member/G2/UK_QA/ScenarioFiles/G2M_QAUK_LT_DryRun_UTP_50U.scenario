@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost1" location="http://ec2-54-175-64-117.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="localhost1" location="http://ec2-52-90-160-231.compute-1.amazonaws.com/:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
