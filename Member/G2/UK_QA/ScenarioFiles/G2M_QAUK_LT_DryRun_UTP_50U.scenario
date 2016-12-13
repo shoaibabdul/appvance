@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_UK" type="EC2" instantiate="required" terminate="none" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-master-7207899.cloud" username="appvance" password="CopartWindows$1234"/>
+    <node name="localhost1" location="http://ec2-54-175-64-117.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -118,18 +118,18 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="MaxRampUpTime" value="50"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="MaxRampDownTime" value="50"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
@@ -156,7 +156,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round time="20" name="20 Minutes"/>
+      <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -300,7 +300,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="utp"/>
       <opt name="hibernate.connection.password" value="utp"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-175-64-117.compute-1.amazonaws.com:3306/utp?useSSL=false"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://copartmysql.crcj5yottaxf.us-east-1.rds.amazonaws.com:3306/utp?useSSL=false"/>
       <opt name="hibernate.default_schema" value="utp"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
