@@ -118,8 +118,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -300,7 +300,7 @@
     <log type="database">
       <opt name="hibernate.connection.username" value="utp"/>
       <opt name="hibernate.connection.password" value="utp"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://ec2-54-175-64-117.compute-1.amazonaws.com:3306/utp?useSSL=false"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://copartmysql.crcj5yottaxf.us-east-1.rds.amazonaws.com:3306/utp?useSSL=false"/>
       <opt name="hibernate.default_schema" value="utp"/>
       <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
     </log>
