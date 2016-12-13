@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_UK" type="EC2" instantiate="required" terminate="none" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="required" terminate="started" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
