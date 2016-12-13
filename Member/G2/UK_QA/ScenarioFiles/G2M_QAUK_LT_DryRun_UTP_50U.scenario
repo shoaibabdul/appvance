@@ -156,7 +156,25 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" name="Executions per User">
+        <testcase name="G2M_UKQA_TC1_Pub_HPNav" executions="1"/>
+        <testcase name="G2M_UKQA_TC2_Pub_VF" executions="1"/>
+        <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" executions="1"/>
+        <testcase name="G2M_UKQA_TC4_Pub_SalesList" executions="1"/>
+        <testcase name="G2M_UKQA_TC5_Pub_HS" executions="1"/>
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav" executions="1"/>
+        <testcase name="G2M_UKQA_TC7_Mem_VF" executions="1"/>
+        <testcase name="G2M_UKQA_TC8_Mem_LotNoS" executions="1"/>
+        <testcase name="G2M_UKQA_TC9_Mem_SalesList" executions="1"/>
+        <testcase name="G2M_UKQA_TC10_Mem_HS" executions="1"/>
+        <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" executions="1"/>
+        <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" executions="1"/>
+        <testcase name="G2M_UKQA_TC13_Mem_WatchList" executions="1"/>
+        <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" executions="1"/>
+        <testcase name="G2M_UKQA_TC15_Mem_CompLots" executions="1"/>
+        <testcase name="G2M_UKQA_TC16_Mem_LotsWL" executions="1"/>
+        <testcase name="G2M_UKQA_TC17_Mem_SavedS" executions="1"/>
+      </round>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -276,7 +294,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
+    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="exacttestcaseexecutions">
       <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="2"/>
       <testcase name="G2M_UKQA_TC2_Pub_VF" users="3"/>
       <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="3"/>
