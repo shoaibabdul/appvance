@@ -106,9 +106,10 @@
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
+      <opt name="ConsoleAsProxy" value="true"/>
     </options>
     <options type="apc">
-      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="0"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
@@ -156,7 +157,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round time="20" name="20 Minutes"/>
+      <round time="30" name="30 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
