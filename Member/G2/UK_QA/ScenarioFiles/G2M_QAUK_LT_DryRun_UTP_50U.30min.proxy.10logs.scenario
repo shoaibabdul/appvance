@@ -110,7 +110,7 @@
     </options>
     <options type="apc">
       <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
