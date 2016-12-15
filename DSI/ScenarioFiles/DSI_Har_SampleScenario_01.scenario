@@ -32,7 +32,7 @@
     <resource name="Apple_HPNew.har" type="har" path="{scenario}/../DesignerScripts/Apple_HPNew.har"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="DSI" type="EC2" instantiate="required" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/utp3.1-7345884.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
