@@ -81,7 +81,7 @@
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugModeSahi" value="false"/>
-      <opt name="domComplete" value="true"/>
+      <opt name="fullPageLoaded" value="true"/>
     </options>
     <options type="har">
       <opt name="printDebugInfo" value="false"/>
