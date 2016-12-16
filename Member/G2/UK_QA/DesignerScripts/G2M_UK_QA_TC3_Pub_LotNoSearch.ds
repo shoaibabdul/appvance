@@ -79,11 +79,11 @@
 
 <step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="true"/>
 		<accessor type="click" value="link(40)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/[5]&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;view-all-photos&quot;)" selected="false"/>
-		<accessor type="link(&quot;View All Photos&quot;)" value="link(&quot;View All Photos&quot;)" selected="true"/>
+		<accessor type="link(&quot;View All Photos&quot;)" value="link(&quot;View All Photos&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'view all photos')]&quot;" selected="true"/>
@@ -105,7 +105,35 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="false"/>
+		<accessor type="click" value="link(40)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/[5]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;view-all-photos&quot;)" selected="false"/>
+		<accessor type="link(&quot;View All Photos&quot;)" value="link(&quot;View All Photos&quot;)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'view all photos')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/div[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Home link" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(9)" selected="false"/>
@@ -120,7 +148,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
