@@ -213,7 +213,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented="true" sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="true"/>
 		<accessor type="click" value="link(52)" selected="false"/>
@@ -229,7 +229,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -240,18 +240,18 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk View All Photos link Chorme" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
-		<accessor type="click" value="link(6)" selected="false"/>
-		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/dashboard&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;ng-binding[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="false"/>
+		<accessor type="click" value="link(52)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/[5]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;view-all-photos&quot;)" selected="false"/>
+		<accessor type="link(&quot;View All Photos&quot;)" value="link(&quot;View All Photos&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//a[contains(@href, '#/dashboard')]&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(text(),'view all photos')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='carouselcontainer']/div[1]/div[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/a&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -268,7 +268,35 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Clk Dashboard link" isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
+		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/#/dashboard&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ng-binding[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '#/dashboard')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
 		<accessor type="click" value="link(3)" selected="false"/>
@@ -285,7 +313,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
