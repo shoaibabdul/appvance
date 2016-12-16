@@ -160,7 +160,7 @@
     </controller>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav">
       <test>
-        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
