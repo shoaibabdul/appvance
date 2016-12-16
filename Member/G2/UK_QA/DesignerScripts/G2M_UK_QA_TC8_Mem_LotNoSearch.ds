@@ -213,7 +213,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented="true" sequence="16">
+<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="true"/>
 		<accessor type="click" value="link(52)" selected="false"/>
@@ -229,7 +229,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="17">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -240,7 +240,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk View All Photos link Chorme" isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="Clk View All Photos link Chorme" isThinkTime='false' isCommented="true" sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="false"/>
 		<accessor type="click" value="link(52)" selected="false"/>
@@ -257,7 +257,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
