@@ -24,7 +24,7 @@
     <defaultdirectory/>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
-    <versions>v1.1</versions>
+    <versions>v1.2</versions>
     <categorization>G2M UK QA</categorization>
     <links>    </links>
   </basics>
@@ -155,118 +155,118 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_QAUK_LT_DryRun_01">
+    <controller name="G2M_QAUK_LT_DryRun_01_Chrome">
       <round time="20" name="20 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
-        <run name="G2M_UK_QA_TC1_Pub_HPNav" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_QA_TC1_Pub_HPNav" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="chrome"/>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC2_Pub_VF">
       <test>
-        <run name="G2M_UK_QA_TC2_Pub_VF" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC2_Pub_VF" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC2Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch">
       <test>
-        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC4_Pub_SalesList">
       <test>
-        <run name="G2M_UK_QA_TC4_Pub_SalesList" langtype="ds" resource="G2M_UK_QA_TC4_Pub_SalesList.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_QA_TC4_Pub_SalesList" langtype="ds" resource="G2M_UK_QA_TC4_Pub_SalesList.ds" testclass="Sahi" method="chrome"/>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC5_Pub_HS">
       <test>
-        <run name="G2M_UK_QA_TC5_Pub_HS" langtype="ds" resource="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_QA_TC5_Pub_HS" langtype="ds" resource="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" testclass="Sahi" method="chrome"/>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav">
       <test>
-        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC7_Mem_VF">
       <test>
-        <run name="G2M_UK_QA_TC7_Mem_VF" langtype="ds" resource="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC7_Mem_VF" langtype="ds" resource="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC7Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC8_Mem_LotNoS">
       <test>
-        <run name="G2M_UK_QA_TC8_Mem_LotNoS" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC8_Mem_LotNoS" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC8Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC9_Mem_SalesList">
       <test>
-        <run name="G2M_UK_QA_TC9_Mem_SalesList" langtype="ds" resource="G2M_UK_QA_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC9_Mem_SalesList" langtype="ds" resource="G2M_UK_QA_TC9_Mem_SalesList.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC10_Mem_HS">
       <test>
-        <run name="G2M_UK_QA_TC10_Mem_HS" langtype="ds" resource="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC10_Mem_HS" langtype="ds" resource="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS">
       <test>
-        <run name="G2M_UK_QA_TC11_Pub_VF_FreeS" langtype="ds" resource="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC11_Pub_VF_FreeS" langtype="ds" resource="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC11Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS">
       <test>
-        <run name="G2M_UK_QA_TC12_Pub_LotLookUpS" langtype="ds" resource="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC12_Pub_LotLookUpS" langtype="ds" resource="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC12Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC13_Mem_WatchList">
       <test>
-        <run name="G2M_UK_QA_TC13_Mem_WatchList" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC13_Mem_WatchList" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave">
       <test>
-        <run name="G2M_UK_QA_TC14_Mem_PrefEditSave" langtype="ds" resource="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC14_Mem_PrefEditSave" langtype="ds" resource="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC15_Mem_CompLots">
       <test>
-        <run name="G2M_UK_QA_TC15_Mem_CompLots" langtype="ds" resource="G2M_UK_QA_TC15_Mem_CompareLots.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC15_Mem_CompLots" langtype="ds" resource="G2M_UK_QA_TC15_Mem_CompareLots.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC16_Mem_LotsWL">
       <test>
-        <run name="G2M_UK_QA_TC16_Mem_LotsWL" langtype="ds" resource="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC16_Mem_LotsWL" langtype="ds" resource="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC17_Mem_SavedS">
       <test>
-        <run name="G2M_UK_QA_TC17_Mem_SavedS" langtype="ds" resource="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC17_Mem_SavedS" langtype="ds" resource="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
@@ -276,7 +276,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
+    <iteration name="G2M_QAUK_LT_DryRun_01_Chrome" controller="G2M_QAUK_LT_DryRun_01_Chrome" completiontype="duration">
       <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="2"/>
       <testcase name="G2M_UKQA_TC2_Pub_VF" users="3"/>
       <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="3"/>
