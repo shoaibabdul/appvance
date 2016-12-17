@@ -31,6 +31,7 @@
   <resources>
     <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
     <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
+    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud"/>
@@ -44,7 +45,13 @@
     <bundle name="htmlunit" version="2.15.2648"/>
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="TestData_TC6" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_UKQA_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
