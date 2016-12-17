@@ -44,13 +44,7 @@
     <bundle name="htmlunit" version="2.15.2648"/>
     <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
-  <datasources>
-    <dpl name="G2M_UKQA_TC3Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_UKQA_TC3_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
