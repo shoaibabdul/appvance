@@ -34,9 +34,11 @@
     <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
     <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
     <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
+    <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
+    <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="1" config="SERVER/C:/Users/Administrator/Appvance_Personal/UTP3.1-master-6746758.cloud"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -121,15 +123,14 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_UK_TC">
+    <testcase name="G2M_UKQA_TC5_Mem">
       <test>
-        <run name="G2M_UK_TC1" langtype="ds" resource="G2M_UK_QA_TC1_Pub_HPNav.ds" testclass="Sahi" method="firefox"/>
-        <run name="G2M_UK_TC2" langtype="ds" resource="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC2Data"/>
-        </run>
-        <run name="G2M_UK_TC3" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
-        </run>
+        <run name="G2M_UK_TC5" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="DebugTest_G2M_UKQA_TC6">
+      <test>
+        <run name="Debug_G2M_UKQA_TC6_Mem" langtype="ds" resource="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
@@ -138,7 +139,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
-      <testcase name="G2M_UK_TC" users="15"/>
+      <testcase name="G2M_UKQA_TC5_Mem" users="5"/>
+      <testcase name="DebugTest_G2M_UKQA_TC6" users="5"/>
     </iteration>
   </execution>
   <logs/>
