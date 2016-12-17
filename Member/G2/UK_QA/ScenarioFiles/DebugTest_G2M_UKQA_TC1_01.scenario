@@ -50,11 +50,6 @@
         <argument name="file" value="G2M_UKQA_TC3_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2M_UKQA_TC2Data" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_UKQA_TC2_VehicleFinder.csv"/>
-      </argument>
-    </dpl>
   </datasources>
   <options>
     <options type="global">
@@ -111,13 +106,6 @@
     <controller name="G2M_QAUK_LT_DryRun_01">
       <round time="10" name="10 Minutes"/>
     </controller>
-    <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch-copy">
-      <test>
-        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
-        </run>
-      </test>
-    </testcase>
     <testcase name="G2M_UKQA_TC5_Mem">
       <test>
         <run name="G2M_UK_TC5" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox"/>
