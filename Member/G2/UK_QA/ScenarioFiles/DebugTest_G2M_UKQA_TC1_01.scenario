@@ -34,7 +34,7 @@
     <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_UK" type="EC2" instantiate="all" terminate="all" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud"/>
+    <cloud name="G2M_UK" type="EC2" instantiate="required" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
