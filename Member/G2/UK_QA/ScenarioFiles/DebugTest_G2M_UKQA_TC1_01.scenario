@@ -29,11 +29,6 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch.ds"/>
-    <resource name="G2M_UKQA_TC3_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC3_LotNumbers.csv"/>
-    <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
-    <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
-    <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
     <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
     <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
   </resources>
