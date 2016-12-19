@@ -29,33 +29,33 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
-    <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
-    <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch.ds"/>
-    <resource name="G2M_UK_QA_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC4_Pub_SalesList.ds"/>
-    <resource name="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC5_Pub_HeaderSearch.ds"/>
-    <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
-    <resource name="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC7_Mem_VehicleFinder.ds"/>
-    <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch.ds"/>
-    <resource name="G2M_UK_QA_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC9_Mem_SalesList.ds"/>
-    <resource name="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC10_Mem_HeaderSearch.ds"/>
-    <resource name="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds"/>
-    <resource name="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds"/>
-    <resource name="G2M_UK_QA_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC13_Mem_WatchList.ds"/>
-    <resource name="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC14_Mem_PrefEditSave.ds"/>
-    <resource name="G2M_UK_QA_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC15_Mem_CompareLots.ds"/>
-    <resource name="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC16_Mem_LotsWonLost.ds"/>
-    <resource name="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/DesignerScripts/G2M_UK_QA_TC17_Mem_SavedSearchs.ds"/>
-    <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
-    <resource name="G2M_UKQA_TC3_LotNumbers.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC3_LotNumbers.csv"/>
-    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
-    <resource name="G2M_UKQA_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC7_VehicleFinder.csv"/>
-    <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
-    <resource name="G2M_UKQA_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC11_VF_FreeSearch.csv"/>
-    <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../../../../../..///REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
+    <resource name="G2M_UK_QA_TC1_Pub_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC1_Pub_HPNav.ds"/>
+    <resource name="G2M_UK_QA_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC2_Pub_VehicleFinder.ds"/>
+    <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch.ds"/>
+    <resource name="G2M_UK_QA_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC4_Pub_SalesList.ds"/>
+    <resource name="G2M_UK_QA_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC5_Pub_HeaderSearch.ds"/>
+    <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
+    <resource name="G2M_UK_QA_TC7_Mem_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC7_Mem_VehicleFinder.ds"/>
+    <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch.ds"/>
+    <resource name="G2M_UK_QA_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC9_Mem_SalesList.ds"/>
+    <resource name="G2M_UK_QA_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC10_Mem_HeaderSearch.ds"/>
+    <resource name="G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC11_Pub_VehF_FreeSearch.ds"/>
+    <resource name="G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC12_Pub_LotLookUp_Search.ds"/>
+    <resource name="G2M_UK_QA_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC13_Mem_WatchList.ds"/>
+    <resource name="G2M_UK_QA_TC14_Mem_PrefEditSave.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC14_Mem_PrefEditSave.ds"/>
+    <resource name="G2M_UK_QA_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC15_Mem_CompareLots.ds"/>
+    <resource name="G2M_UK_QA_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC16_Mem_LotsWonLost.ds"/>
+    <resource name="G2M_UK_QA_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC17_Mem_SavedSearchs.ds"/>
+    <resource name="G2M_UKQA_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC2_VehicleFinder.csv"/>
+    <resource name="G2M_UKQA_TC3_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC3_LotNumbers.csv"/>
+    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
+    <resource name="G2M_UKQA_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC7_VehicleFinder.csv"/>
+    <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
+    <resource name="G2M_UKQA_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC11_VF_FreeSearch.csv"/>
+    <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost1" location="http://ec2-52-90-163-207.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="localhost1" location="http://ec2-54-175-64-117.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -108,8 +108,8 @@
       <opt name="trustAllSSLCertificates" value="false"/>
     </options>
     <options type="apc">
-      <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="PercentageLogsSaved" value="0"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
@@ -126,12 +126,12 @@
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="MaxRampUpTime" value="50"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="MaxRampDownTime" value="50"/>
       <opt name="global_concurrent_users" value="0"/>
-      <opt name="testnode_concurrent_users" value="5"/>
+      <opt name="testnode_concurrent_users" value="0"/>
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
@@ -139,8 +139,8 @@
     <options type="sahi">
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="true"/>
-      <opt name="domComplete" value="true"/>
+      <opt name="debugModeSahi" value="false"/>
+      <opt name="fullPageLoaded" value="true"/>
     </options>
     <options type="har">
       <opt name="printDebugInfo" value="false"/>
@@ -156,7 +156,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round iterations="1" totalusers="1"/>
+      <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -275,28 +275,36 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest" subtype="functional">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01">
-      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="1"/>
-      <testcase name="G2M_UKQA_TC2_Pub_VF" users="1"/>
-      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="1"/>
-      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="1"/>
-      <testcase name="G2M_UKQA_TC5_Pub_HS" users="1"/>
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="1"/>
-      <testcase name="G2M_UKQA_TC7_Mem_VF" users="1"/>
-      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="1"/>
-      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="1"/>
-      <testcase name="G2M_UKQA_TC10_Mem_HS" users="1"/>
-      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="1"/>
-      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="1"/>
-      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="1"/>
-      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="1"/>
-      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="1"/>
-      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="1"/>
-      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="1"/>
+  <execution type="loadtest" subtype="performance">
+    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
+      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="2"/>
+      <testcase name="G2M_UKQA_TC2_Pub_VF" users="3"/>
+      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="3"/>
+      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="3"/>
+      <testcase name="G2M_UKQA_TC5_Pub_HS" users="3"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="3"/>
+      <testcase name="G2M_UKQA_TC7_Mem_VF" users="3"/>
+      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="3"/>
+      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="3"/>
+      <testcase name="G2M_UKQA_TC10_Mem_HS" users="3"/>
+      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="3"/>
+      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="3"/>
+      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="3"/>
+      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="3"/>
+      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="3"/>
+      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="3"/>
+      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="3"/>
     </iteration>
   </execution>
-  <logs/>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="utp"/>
+      <opt name="hibernate.connection.password" value="utp"/>
+      <opt name="hibernate.connection.url" value="jdbc:mysql://copartmysql.crcj5yottaxf.us-east-1.rds.amazonaws.com:3306/utp?useSSL=false"/>
+      <opt name="hibernate.default_schema" value="utp"/>
+      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+    </log>
+  </logs>
   <integrations xmlns="www.pushtotest.com/tm5"/>
   <notifications/>
 </testscenario>
