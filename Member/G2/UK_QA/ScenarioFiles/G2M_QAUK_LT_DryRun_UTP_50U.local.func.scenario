@@ -109,7 +109,7 @@
     </options>
     <options type="apc">
       <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
@@ -126,10 +126,10 @@
       <opt name="MaxIntervalTime" value="0"/>
       <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
-      <opt name="MaxRampUpTime" value="50"/>
+      <opt name="MaxRampUpTime" value="1000"/>
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
-      <opt name="MaxRampDownTime" value="50"/>
+      <opt name="MaxRampDownTime" value="1000"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="1"/>
     </options>
@@ -296,15 +296,7 @@
       <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="1"/>
     </iteration>
   </execution>
-  <logs>
-    <log type="database">
-      <opt name="hibernate.connection.username" value="utp"/>
-      <opt name="hibernate.connection.password" value="utp"/>
-      <opt name="hibernate.connection.url" value="jdbc:mysql://copartmysql.crcj5yottaxf.us-east-1.rds.amazonaws.com:3306/utp?useSSL=false"/>
-      <opt name="hibernate.default_schema" value="utp"/>
-      <opt name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-    </log>
-  </logs>
+  <logs/>
   <integrations xmlns="www.pushtotest.com/tm5"/>
   <notifications/>
 </testscenario>
