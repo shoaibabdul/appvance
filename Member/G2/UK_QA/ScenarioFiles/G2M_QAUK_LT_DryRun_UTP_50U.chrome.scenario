@@ -156,7 +156,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round iterations="1" totalusers="1"/>
+      <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -275,8 +275,8 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest" subtype="functional">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01">
+  <execution type="loadtest" subtype="load">
+    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
       <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="1"/>
       <testcase name="G2M_UKQA_TC2_Pub_VF" users="1"/>
       <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="1"/>
