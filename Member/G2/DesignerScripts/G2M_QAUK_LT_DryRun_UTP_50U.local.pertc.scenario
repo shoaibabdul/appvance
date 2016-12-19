@@ -295,23 +295,23 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="testcaseexecutions">
-      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="2"/>
-      <testcase name="G2M_UKQA_TC2_Pub_VF" users="3"/>
-      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_UKQA_TC5_Pub_HS" users="3"/>
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="3"/>
-      <testcase name="G2M_UKQA_TC7_Mem_VF" users="3"/>
-      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="3"/>
-      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="3"/>
-      <testcase name="G2M_UKQA_TC10_Mem_HS" users="3"/>
-      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="3"/>
-      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="3"/>
-      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="3"/>
-      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="3"/>
-      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="3"/>
-      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="3"/>
-      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="3"/>
+      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="1"/>
+      <testcase name="G2M_UKQA_TC2_Pub_VF" users="1"/>
+      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="1"/>
+      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="1"/>
+      <testcase name="G2M_UKQA_TC5_Pub_HS" users="1"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="1"/>
+      <testcase name="G2M_UKQA_TC7_Mem_VF" users="1"/>
+      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="1"/>
+      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="1"/>
+      <testcase name="G2M_UKQA_TC10_Mem_HS" users="1"/>
+      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="1"/>
+      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="1"/>
+      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="1"/>
+      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="1"/>
+      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="1"/>
+      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="1"/>
+      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="1"/>
     </iteration>
   </execution>
   <logs/>
