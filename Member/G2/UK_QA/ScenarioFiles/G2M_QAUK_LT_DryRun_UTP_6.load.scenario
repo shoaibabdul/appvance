@@ -156,7 +156,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round totalexecutions="1" name="1 Executions Controller"/>
+      <round time="6" name="6 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav">
       <test>
@@ -170,7 +170,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="load">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="totalexecutions">
+    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
       <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="10"/>
     </iteration>
   </execution>
