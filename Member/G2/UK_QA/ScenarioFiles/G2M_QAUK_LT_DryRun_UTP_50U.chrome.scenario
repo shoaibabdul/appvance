@@ -238,7 +238,7 @@
     </testcase>
     <testcase name="G2M_UKQA_TC13_Mem_WatchList">
       <test>
-        <run name="G2M_UK_QA_TC13_Mem_WatchList" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC13_Mem_WatchList" langtype="ds" resource="G2M_UK_QA_TC13_Mem_WatchList.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
