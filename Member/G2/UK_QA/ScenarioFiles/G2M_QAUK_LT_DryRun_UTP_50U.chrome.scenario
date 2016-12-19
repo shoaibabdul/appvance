@@ -108,8 +108,8 @@
       <opt name="trustAllSSLCertificates" value="false"/>
     </options>
     <options type="apc">
-      <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="PercentageLogsSaved" value="0"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
@@ -131,7 +131,7 @@
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="global_concurrent_users" value="0"/>
-      <opt name="testnode_concurrent_users" value="1"/>
+      <opt name="testnode_concurrent_users" value="0"/>
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
