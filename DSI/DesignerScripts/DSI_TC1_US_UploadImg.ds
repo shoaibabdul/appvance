@@ -262,9 +262,10 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
 		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="button(&quot;SAVE&quot;)" value="button(&quot;SAVE&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -603,8 +604,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="48">
 	<dialect type="sahi">
-		<accessor type="click" value="div(408)" selected="true"/>
+		<accessor type="click" value="div(408)" selected="false"/>
 		<accessor type="click" value="div(&quot;md-container&quot;)" selected="false"/>
+		<accessor type="div(&quot;md-thumb md-ink-ripple&quot;)" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_24']/div/div/md-content/section[4]/md-switch/div[1]&quot;" selected="true"/>
