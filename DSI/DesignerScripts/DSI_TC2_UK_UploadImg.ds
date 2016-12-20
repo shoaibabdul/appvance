@@ -52,7 +52,7 @@
 
 
 
-<step action="setValue" value="&quot;Test.DSI15@corp.copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;Test.DSI17@corp.copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="false"/>
@@ -129,7 +129,7 @@
 
 
 
-<step action="setValue" value="&quot;51288416&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;50366396&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;input_3&quot;)" selected="false"/>
