@@ -527,15 +527,15 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
+<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
-		<accessor type="click" value="span(15)" selected="false"/>
-		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
+		<accessor type='' value='' selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//a/span&quot;" selected="false"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
@@ -552,21 +552,21 @@
 
 
 
-<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
 	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
+		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
+		<accessor type="click" value="span(15)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
