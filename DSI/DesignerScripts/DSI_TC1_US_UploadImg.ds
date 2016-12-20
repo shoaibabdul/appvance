@@ -237,8 +237,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="div(403)" selected="true"/>
+		<accessor type="click" value="div(403)" selected="false"/>
 		<accessor type="click" value="div(&quot;md-container&quot;)" selected="false"/>
+		<accessor type="div(&quot;md-thumb md-ink-ripple&quot;)" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_6']/div/div/md-content/section[4]/md-switch/div[1]&quot;" selected="true"/>
