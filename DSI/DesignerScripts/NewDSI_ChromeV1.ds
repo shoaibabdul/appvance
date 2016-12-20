@@ -551,4 +551,18 @@
 </step>
 
 
+
+<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
 </testcase>
