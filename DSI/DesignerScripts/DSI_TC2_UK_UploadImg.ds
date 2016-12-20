@@ -182,7 +182,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc="Edit Img1" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[20]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[41]&quot;)" selected="false"/>
@@ -207,7 +207,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc="Close Link x" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;X&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
@@ -235,7 +235,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc="AutoEn1" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -260,7 +260,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc="Save1" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -284,7 +284,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc="Edit Img2" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[21]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[43]&quot;)" selected="false"/>
@@ -309,7 +309,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc="AutoEn2" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -334,7 +334,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc="Save2" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -358,7 +358,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc="Edit Img3" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[22]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[45]&quot;)" selected="false"/>
@@ -383,7 +383,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc="AutoEn3" isThinkTime='false' isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -408,7 +408,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+<step action="click" value='' type="web" desc="Save3" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -432,7 +432,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc="Edit Img4" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[23]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[47]&quot;)" selected="false"/>
@@ -457,7 +457,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc="AutoEn4" isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -482,7 +482,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="38">
+<step action="click" value='' type="web" desc="Save4" isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -506,7 +506,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="40">
+<step action="click" value='' type="web" desc="Edit Img5" isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[24]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[49]&quot;)" selected="false"/>
@@ -531,7 +531,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="42">
+<step action="click" value='' type="web" desc="AutoEn5" isThinkTime='false' isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -556,7 +556,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="44">
+<step action="click" value='' type="web" desc="Save5" isThinkTime='false' isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -580,7 +580,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="46">
+<step action="click" value='' type="web" desc="Edit Img6" isThinkTime='false' isCommented='false' sequence="46">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[25]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[51]&quot;)" selected="false"/>
@@ -605,7 +605,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="48">
+<step action="click" value='' type="web" desc="AutoEn6" isThinkTime='false' isCommented='false' sequence="48">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -630,7 +630,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="50">
+<step action="click" value='' type="web" desc="Save6" isThinkTime='false' isCommented='false' sequence="50">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -654,7 +654,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="52">
+<step action="click" value='' type="web" desc="Edit Img7" isThinkTime='false' isCommented='false' sequence="52">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[26]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[53]&quot;)" selected="false"/>
@@ -679,7 +679,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="54">
+<step action="click" value='' type="web" desc="AutoEn7" isThinkTime='false' isCommented='false' sequence="54">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -704,7 +704,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="56">
+<step action="click" value='' type="web" desc="Save7" isThinkTime='false' isCommented='false' sequence="56">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -728,7 +728,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="58">
+<step action="click" value='' type="web" desc="Edit Img8" isThinkTime='false' isCommented='false' sequence="58">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[27]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[55]&quot;)" selected="false"/>
@@ -753,7 +753,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="60">
+<step action="click" value='' type="web" desc="AutoEn8" isThinkTime='false' isCommented='false' sequence="60">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -778,7 +778,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="62">
+<step action="click" value='' type="web" desc="Save8" isThinkTime='false' isCommented='false' sequence="62">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -802,7 +802,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="64">
+<step action="click" value='' type="web" desc="Edit Img9" isThinkTime='false' isCommented='false' sequence="64">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[28]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[57]&quot;)" selected="false"/>
@@ -827,7 +827,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="66">
+<step action="click" value='' type="web" desc="AutoEn9" isThinkTime='false' isCommented='false' sequence="66">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -852,7 +852,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="68">
+<step action="click" value='' type="web" desc="Save9" isThinkTime='false' isCommented='false' sequence="68">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -876,7 +876,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="70">
+<step action="click" value='' type="web" desc="Edit Img10" isThinkTime='false' isCommented='false' sequence="70">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[29]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[59]&quot;)" selected="false"/>
@@ -901,7 +901,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="72">
+<step action="click" value='' type="web" desc="AutoEn10" isThinkTime='false' isCommented='false' sequence="72">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
 		<accessor type="click" value="span(23)" selected="false"/>
@@ -926,7 +926,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="74">
+<step action="click" value='' type="web" desc="Save10" isThinkTime='false' isCommented='false' sequence="74">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -950,7 +950,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="76">
+<step action="click" value='' type="web" desc="Clk UPLOAD" isThinkTime='false' isCommented='false' sequence="76">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="true"/>
 		<accessor type="click" value="span(15)" selected="false"/>
@@ -975,7 +975,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="78">
+<step action="click" value='' type="web" desc="Clk YES" isThinkTime='false' isCommented='false' sequence="78">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;YES&quot;)" selected="true"/>
 		<accessor type="click" value="span(17)" selected="false"/>
@@ -999,7 +999,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="80">
+<step action="click" value='' type="web" desc="Clk OK!" isThinkTime='false' isCommented='false' sequence="80">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;OK!&quot;)" selected="true"/>
 		<accessor type="click" value="span(22)" selected="false"/>
@@ -1024,7 +1024,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="82">
+<step action="click" value='' type="web" desc="Clk User Dropdown" isThinkTime='false' isCommented='false' sequence="82">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="true"/>
 		<accessor type="click" value="button(0)" selected="false"/>
@@ -1048,7 +1048,7 @@
 
 
 
-<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="84">
+<step action="call" value="window.onbeforeunload = null" type="web" desc="Call Function" isThinkTime='false' isCommented='false' sequence="84">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
@@ -1073,7 +1073,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="86">
+<step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="86">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
 		<accessor type="click" value="span(15)" selected="false"/>
