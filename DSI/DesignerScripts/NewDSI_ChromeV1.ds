@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='NewDSI_ChromeV1' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="wait" value="5007" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="navigateTo" value="&quot;https://c-dsi-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="18090" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
+		<accessor type="click" value="span(0)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="15093" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Test.DSI13@corp.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;ng-untouched ng-valid md-input ng-valid-email ng-not-empty ng-dirty&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8079" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;ng-valid md-input ng-touched ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-input-container[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;LOGIN&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="32197" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;51299486&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;input_3&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;ng-untouched md-input ng-valid-pattern ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='input_3']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/div/div[1]/form/div/div[1]/md-input-container/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7057" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;ENTER&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='submit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/div/div[1]/form/div/div[1]/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[1]/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="18135" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type="click" value="italic(&quot;mode_edit[20]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;material-icons ng-scope[41]&quot;)" selected="false"/>
+		<accessor type="click" value="italic(41)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[21]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-card[21]/form/div/div[1]/div[2]/button/i&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="15126" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;X&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;javascript: void(0)&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;ClosetblCanNotScan&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'X')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='dwt-InstallBody']/div/div[1]/div/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'javascript: void(0)')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/div/div/div/div[1]/div/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="2001" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="click" value="div(416)" selected="true"/>
+		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_6']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7060" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7035" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="click" value="italic(&quot;mode_edit[21]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;material-icons ng-scope[43]&quot;)" selected="false"/>
+		<accessor type="click" value="italic(43)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[22]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-card[22]/form/div/div[1]/div[2]/button/i&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8052" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="click" value="div(417)" selected="true"/>
+		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_8']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8041" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
+		<accessor type="click" value="button(99)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="7037" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="click" value="italic(&quot;mode_edit[22]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;material-icons ng-scope[45]&quot;)" selected="false"/>
+		<accessor type="click" value="italic(45)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[23]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-card[23]/form/div/div[1]/div[2]/button/i&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="9091" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="click" value="div(418)" selected="true"/>
+		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_12']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8055" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="2999" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="true"/>
+		<accessor type="click" value="span(15)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[2]/div[4]/button/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[4]/button/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4005" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;YES&quot;)" selected="true"/>
+		<accessor type="click" value="span(17)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-binding ng-scope[5]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[2]/span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="10061" type="web" desc='' isThinkTime="true" isCommented='false' sequence="38">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="39">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;OK!&quot;)" selected="true"/>
+		<accessor type="click" value="span(22)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_19']/div[2]/div[2]/button/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/button/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="4028" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="true"/>
+		<accessor type="click" value="button(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@type='button']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="2996" type="web" desc='' isThinkTime="true" isCommented='false' sequence="42">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="43">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
+		<accessor type="click" value="span(15)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
