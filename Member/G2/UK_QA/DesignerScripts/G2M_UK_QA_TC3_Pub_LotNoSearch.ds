@@ -77,7 +77,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented="true" sequence="6">
+<step action="click" value='' type="web" desc="Clk View All Photos link" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="true"/>
 		<accessor type="click" value="link(40)" selected="false"/>
@@ -105,7 +105,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk View All Photos link Chrome" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc="Clk View All Photos link Chrome" isThinkTime='false' isCommented="true" sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;view all photos&quot;)" selected="false"/>
 		<accessor type="click" value="link(40)" selected="false"/>
