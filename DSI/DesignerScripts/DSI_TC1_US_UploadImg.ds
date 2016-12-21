@@ -4,20 +4,9 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="" exectype="" errorhandling=""/>
 
-<step action="navigateTo" value="&quot;https://c-dsi-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
-	<dialect type="sahi">
-		<accessor type="navigateTo" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+<step action="wait" value="5006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -28,7 +17,29 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk LOGIN" isThinkTime='false' isCommented='false' sequence="2">
+<step action="navigateTo" value="&quot;https://c-dsi-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8017" type="web" desc='' isThinkTime="true" isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
 		<accessor type="click" value="span(0)" selected="false"/>
@@ -41,7 +52,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+<step action="wait" value="6993" type="web" desc='' isThinkTime="true" isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -52,7 +63,7 @@
 
 
 
-<step action="setValue" value="&quot;Test.DSI05@corp.copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;Test.DSI07@corp.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="false"/>
@@ -67,7 +78,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+<step action="wait" value="7011" type="web" desc='' isThinkTime="true" isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -78,7 +89,7 @@
 
 
 
-<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -93,7 +104,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+<step action="wait" value="2998" type="web" desc='' isThinkTime="true" isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -104,7 +115,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Submit Login" isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;LOGIN&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
@@ -118,7 +129,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+<step action="wait" value="14031" type="web" desc='' isThinkTime="true" isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -129,7 +140,7 @@
 
 
 
-<step action="setValue" value="&quot;50245486&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;51288356&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;input_3&quot;)" selected="false"/>
@@ -145,7 +156,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+<step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -156,7 +167,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Submit LotNo" isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;ENTER&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
@@ -171,7 +182,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+<step action="wait" value="8020" type="web" desc='' isThinkTime="true" isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -182,7 +193,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img1" isThinkTime='false' isCommented='false' sequence="14">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[20]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[41]&quot;)" selected="false"/>
@@ -196,7 +207,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+<step action="wait" value="8055" type="web" desc='' isThinkTime="true" isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -207,7 +218,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Close Link x" isThinkTime='false' isCommented='false' sequence="16">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;X&quot;)" selected="true"/>
 		<accessor type="click" value="link(2)" selected="false"/>
@@ -224,7 +235,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -235,21 +246,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn1" isThinkTime='false' isCommented='false' sequence="18">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
-		<accessor type="click" value="div(403)" selected="false"/>
-		<accessor type="click" value="div(&quot;md-container&quot;)" selected="false"/>
-		<accessor type="div(&quot;md-thumb md-ink-ripple&quot;)" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_6']/div/div/md-content/section[4]/md-switch/div[1]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_6']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="3017" type="web" desc='' isThinkTime="true" isCommented='false' sequence="20">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -260,12 +271,11 @@
 
 
 
-<step action="click" value='' type="web" desc="Save1" isThinkTime='false' isCommented='false' sequence="20">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
-		<accessor type="button(&quot;SAVE&quot;)" value="button(&quot;SAVE&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -274,7 +284,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="4026" type="web" desc='' isThinkTime="true" isCommented='false' sequence="22">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -285,7 +295,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img2" isThinkTime='false' isCommented='false' sequence="22">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[21]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[43]&quot;)" selected="false"/>
@@ -299,7 +309,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+<step action="wait" value="6013" type="web" desc='' isThinkTime="true" isCommented='false' sequence="24">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -310,44 +320,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn2" isThinkTime='false' isCommented='false' sequence="24">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
-		<accessor type="click" value="div(407)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_8']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_8']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Save2" isThinkTime='false' isCommented='false' sequence="26">
-	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
-		<accessor type="click" value="button(99)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+<step action="wait" value="3013" type="web" desc='' isThinkTime="true" isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -358,7 +345,31 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img3" isThinkTime='false' isCommented='false' sequence="28">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3003" type="web" desc='' isThinkTime="true" isCommented='false' sequence="28">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[22]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[45]&quot;)" selected="false"/>
@@ -372,7 +383,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+<step action="wait" value="4008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="30">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -383,20 +394,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn3" isThinkTime='false' isCommented='false' sequence="30">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
-		<accessor type="click" value="div(408)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_12']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_12']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+<step action="wait" value="2991" type="web" desc='' isThinkTime="true" isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -407,7 +419,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save3" isThinkTime='false' isCommented='false' sequence="32">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -420,7 +432,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+<step action="wait" value="2000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="34">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -431,7 +443,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img4" isThinkTime='false' isCommented='false' sequence="34">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="35">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[23]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[47]&quot;)" selected="false"/>
@@ -445,7 +457,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
+<step action="wait" value="4007" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -456,20 +468,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn4" isThinkTime='false' isCommented='false' sequence="36">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="37">
 	<dialect type="sahi">
-		<accessor type="click" value="div(409)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_16']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_16']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="37">
+<step action="wait" value="3017" type="web" desc='' isThinkTime="true" isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -480,7 +493,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save4" isThinkTime='false' isCommented='false' sequence="38">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -493,7 +506,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="39">
+<step action="wait" value="3002" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -504,7 +517,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img5" isThinkTime='false' isCommented='false' sequence="40">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="41">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[24]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[49]&quot;)" selected="false"/>
@@ -518,7 +531,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="41">
+<step action="wait" value="4028" type="web" desc='' isThinkTime="true" isCommented='false' sequence="42">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -529,20 +542,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn5" isThinkTime='false' isCommented='false' sequence="42">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="43">
 	<dialect type="sahi">
-		<accessor type="click" value="div(410)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_20']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_20']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="43">
+<step action="wait" value="1992" type="web" desc='' isThinkTime="true" isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -553,7 +567,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save5" isThinkTime='false' isCommented='false' sequence="44">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="45">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -566,7 +580,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="45">
+<step action="wait" value="3010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="46">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -577,7 +591,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img6" isThinkTime='false' isCommented='false' sequence="46">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="47">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[25]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[51]&quot;)" selected="false"/>
@@ -591,7 +605,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="47">
+<step action="wait" value="3009" type="web" desc='' isThinkTime="true" isCommented='false' sequence="48">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -602,21 +616,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn6" isThinkTime='false' isCommented='false' sequence="48">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="49">
 	<dialect type="sahi">
-		<accessor type="click" value="div(408)" selected="false"/>
-		<accessor type="click" value="div(&quot;md-container&quot;)" selected="false"/>
-		<accessor type="div(&quot;md-thumb md-ink-ripple&quot;)" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_24']/div/div/md-content/section[4]/md-switch/div[1]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_24']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="49">
+<step action="wait" value="3000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="50">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -627,7 +641,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save6" isThinkTime='false' isCommented='false' sequence="50">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="51">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -640,7 +654,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="51">
+<step action="wait" value="4010" type="web" desc='' isThinkTime="true" isCommented='false' sequence="52">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -651,7 +665,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img7" isThinkTime='false' isCommented='false' sequence="52">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="53">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[26]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[53]&quot;)" selected="false"/>
@@ -665,7 +679,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="53">
+<step action="wait" value="4014" type="web" desc='' isThinkTime="true" isCommented='false' sequence="54">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -676,20 +690,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn7" isThinkTime='false' isCommented='false' sequence="54">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="55">
 	<dialect type="sahi">
-		<accessor type="click" value="div(412)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_28']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_28']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="55">
+<step action="wait" value="4036" type="web" desc='' isThinkTime="true" isCommented='false' sequence="56">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -700,7 +715,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save7" isThinkTime='false' isCommented='false' sequence="56">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="57">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -713,7 +728,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="57">
+<step action="wait" value="3006" type="web" desc='' isThinkTime="true" isCommented='false' sequence="58">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -724,7 +739,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img8" isThinkTime='false' isCommented='false' sequence="58">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="59">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[27]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[55]&quot;)" selected="false"/>
@@ -738,7 +753,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="59">
+<step action="wait" value="4004" type="web" desc='' isThinkTime="true" isCommented='false' sequence="60">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -749,20 +764,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn8" isThinkTime='false' isCommented='false' sequence="60">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="61">
 	<dialect type="sahi">
-		<accessor type="click" value="div(413)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_32']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_32']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="61">
+<step action="wait" value="3021" type="web" desc='' isThinkTime="true" isCommented='false' sequence="62">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -773,7 +789,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save8" isThinkTime='false' isCommented='false' sequence="62">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="63">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -786,7 +802,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="63">
+<step action="wait" value="3025" type="web" desc='' isThinkTime="true" isCommented='false' sequence="64">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -797,7 +813,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img9" isThinkTime='false' isCommented='false' sequence="64">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="65">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[28]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[57]&quot;)" selected="false"/>
@@ -811,7 +827,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="65">
+<step action="wait" value="8077" type="web" desc='' isThinkTime="true" isCommented='false' sequence="66">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -822,44 +838,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn9" isThinkTime='false' isCommented='false' sequence="66">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="67">
 	<dialect type="sahi">
-		<accessor type="click" value="div(414)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_36']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_36']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="67">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Save9" isThinkTime='false' isCommented='false' sequence="68">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
-		<accessor type="click" value="span(27)" selected="false"/>
-		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="69">
+<step action="wait" value="4031" type="web" desc='' isThinkTime="true" isCommented='false' sequence="68">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -870,7 +863,31 @@
 
 
 
-<step action="click" value='' type="web" desc="Edit Img10" isThinkTime='false' isCommented='false' sequence="70">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="69">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
+		<accessor type="click" value="button(99)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="3013" type="web" desc='' isThinkTime="true" isCommented='false' sequence="70">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="71">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;mode_edit[29]&quot;)" selected="true"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[59]&quot;)" selected="false"/>
@@ -884,7 +901,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="71">
+<step action="wait" value="4014" type="web" desc='' isThinkTime="true" isCommented='false' sequence="72">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -895,20 +912,21 @@
 
 
 
-<step action="click" value='' type="web" desc="AutoEn10" isThinkTime='false' isCommented='false' sequence="72">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="73">
 	<dialect type="sahi">
-		<accessor type="click" value="div(415)" selected="true"/>
-		<accessor type="click" value="div(&quot;md-thumb md-ink-ripple&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_40']/div/div/md-content/section[4]/md-switch/div[1]/div[2]/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//md-switch/div[1]/div[2]/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_40']/div/div/md-content/section[4]/md-switch/div[2]/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-switch/div[2]/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="73">
+<step action="wait" value="3022" type="web" desc='' isThinkTime="true" isCommented='false' sequence="74">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -919,7 +937,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Save10" isThinkTime='false' isCommented='false' sequence="74">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="75">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="true"/>
 		<accessor type="click" value="span(27)" selected="false"/>
@@ -932,7 +950,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="75">
+<step action="wait" value="5036" type="web" desc='' isThinkTime="true" isCommented='false' sequence="76">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -943,7 +961,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Click Upload" isThinkTime='false' isCommented='false' sequence="76">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="77">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="true"/>
 		<accessor type="click" value="span(15)" selected="false"/>
@@ -957,7 +975,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="77">
+<step action="wait" value="6049" type="web" desc='' isThinkTime="true" isCommented='false' sequence="78">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -968,20 +986,45 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk YES" isThinkTime='false' isCommented='false' sequence="78">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="79">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;YES&quot;)" selected="true"/>
-		<accessor type="click" value="button(&quot;md-primary md-button md-default-theme md-ink-ripple md-focused&quot;)" selected="false"/>
+		<accessor type="click" value="span(&quot;YES&quot;)" selected="true"/>
+		<accessor type="click" value="span(17)" selected="false"/>
+		<accessor type="click" value="span(&quot;ng-binding ng-scope[5]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[2]/span&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="8035" type="web" desc='' isThinkTime="true" isCommented='false' sequence="80">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="81">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;OK!&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;md-primary md-button md-ink-ripple&quot;)" selected="false"/>
 		<accessor type="click" value="button(90)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_47']/div[2]/div[2]/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/div[2]/button&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="79">
+<step action="wait" value="5008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="82">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -992,32 +1035,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk OK!" isThinkTime='false' isCommented='false' sequence="80">
-	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;OK!&quot;)" selected="true"/>
-		<accessor type="click" value="span(22)" selected="false"/>
-		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//md-dialog-content[@id='dialogContent_47']/div[2]/div[2]/button/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[2]/div[2]/button/span&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="81">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk User Dropdown" isThinkTime='false' isCommented='false' sequence="82">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="83">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="true"/>
 		<accessor type="click" value="button(0)" selected="false"/>
@@ -1030,7 +1048,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="83">
+<step action="wait" value="3998" type="web" desc='' isThinkTime="true" isCommented='false' sequence="84">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -1041,32 +1059,7 @@
 
 
 
-<step action="call" value="window.onbeforeunload = null" type="web" desc="Call Function" isThinkTime='false' isCommented='false' sequence="84">
-	<dialect type="sahi">
-		<accessor type='' value='' selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="false"/>
-	</dialect>
-	<dialect type="flextesting">
-		<accessor type='' attribute='' value='' selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="85">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="86">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="85">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;LOGOUT&quot;)" selected="true"/>
 		<accessor type="click" value="link(1)" selected="false"/>
@@ -1077,17 +1070,6 @@
 		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//a[contains(@href, 'logout')]&quot;" selected="false"/>
 		<accessor attribute='' value="&quot;//md-menu-item[5]/a&quot;" selected="false"/>
-	</dialect>
-</step>
-
-
-
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="87">
-	<dialect type="sahi">
-		<accessor type="wait" value='' selected="true"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value='' selected="true"/>
 	</dialect>
 </step>
 
