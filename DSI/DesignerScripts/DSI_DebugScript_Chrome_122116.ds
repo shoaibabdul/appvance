@@ -17,7 +17,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
 		<accessor type="click" value="span(0)" selected="false"/>
@@ -30,7 +44,21 @@
 
 
 
-<step action="setValue" value="&quot;Test.DSI04@corp.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;Test.DSI04@corp.copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="false"/>
@@ -45,7 +73,21 @@
 
 
 
-<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -60,7 +102,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGIN&quot;)" selected="true"/>
 		<accessor type="click" value="span(0)" selected="false"/>
@@ -73,7 +129,21 @@
 
 
 
-<step action="setValue" value="&quot;51288356&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;51288356&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;input_3&quot;)" selected="false"/>
@@ -89,7 +159,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;ENTER&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
@@ -104,7 +188,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="true"/>
 		<accessor type="click" value="button(0)" selected="false"/>
@@ -117,7 +215,21 @@
 
 
 
-<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
+	</dialect>
+</step>
+
+
+
+<step action="call" value="window.onbeforeunload = null" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
@@ -131,7 +243,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="true"/>
 		<accessor type="click" value="span(15)" selected="false"/>
@@ -140,6 +266,20 @@
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a/span&quot;" selected="true"/>
 		<accessor attribute='' value="&quot;//a/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type='' value='' selected=''/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected=''/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected=''/>
 	</dialect>
 </step>
 
