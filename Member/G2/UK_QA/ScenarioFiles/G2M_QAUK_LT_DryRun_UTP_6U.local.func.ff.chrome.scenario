@@ -156,11 +156,18 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01">
-      <round iterations="1" totalusers="1"/>
+      <round iterations="6" totalusers="1"/>
     </controller>
-    <testcase name="G2M_UKQA_TC6_Mem_HPNav">
+    <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox">
       <test>
         <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome">
+      <test>
+        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC6-17Data"/>
         </run>
       </test>
@@ -171,7 +178,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="functionaltest" subtype="functional">
     <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01">
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="1"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" users="1"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" users="1"/>
     </iteration>
   </execution>
   <logs/>
