@@ -53,6 +53,8 @@
     <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
     <resource name="G2M_UKQA_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC11_VF_FreeSearch.csv"/>
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
+    <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds"/>
+    <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds"/>
   </resources>
   <testnodes>
     <cloud name="G2MUK" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
@@ -156,7 +158,7 @@
   </options>
   <templates>
     <controller name="G2M_QAUK_LT_DryRun_01_Chrome">
-      <round time="10" name="10 Minutes"/>
+      <round time="20" name="20 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -172,7 +174,7 @@
     </testcase>
     <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch">
       <test>
-        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="chrome">
+        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
         </run>
       </test>
@@ -203,7 +205,7 @@
     </testcase>
     <testcase name="G2M_UKQA_TC8_Mem_LotNoS">
       <test>
-        <run name="G2M_UK_QA_TC8_Mem_LotNoS" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="chrome">
+        <run name="G2M_UK_QA_TC8_Mem_LotNoS" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC8Data"/>
         </run>
       </test>
