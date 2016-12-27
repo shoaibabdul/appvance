@@ -92,6 +92,16 @@
         <argument name="file" value="G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
+    <dpl name="G2M_UKQA_TC3Data" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_UKQA_TC3_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_UKQA_TC8Data" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_UKQA_TC8_LotNumbers.csv"/>
+      </argument>
+    </dpl>
   </datasources>
   <options>
     <options type="global">
