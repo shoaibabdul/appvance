@@ -288,8 +288,8 @@
       <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="3"/>
       <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="3"/>
       <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="3"/>
-      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch_Chrome" users="1"/>
-      <testcase name="G2M_UKQA_TC8_Mem_LotNoSearch_Chrome" users="1"/>
+      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch_Chrome" users="3"/>
+      <testcase name="G2M_UKQA_TC8_Mem_LotNoSearch_Chrome" users="3"/>
     </iteration>
   </execution>
   <logs/>
