@@ -184,9 +184,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img1" isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[20]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[20]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[41]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(41)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit&quot;)" value="italic(&quot;mode_edit&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[21]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -286,9 +287,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img2" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[21]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[21]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[43]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(43)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[1]&quot;)" value="italic(&quot;mode_edit[1]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[22]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -360,9 +362,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img3" isThinkTime='false' isCommented='false' sequence="28">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[22]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[22]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[45]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(45)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[2]&quot;)" value="italic(&quot;mode_edit[2]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[23]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -434,9 +437,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img4" isThinkTime='false' isCommented='false' sequence="34">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[23]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[23]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[47]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(47)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[3]&quot;)" value="italic(&quot;mode_edit[3]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[24]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -508,9 +512,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img5" isThinkTime='false' isCommented='false' sequence="40">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[24]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[24]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[49]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(49)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[4]&quot;)" value="italic(&quot;mode_edit[4]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[25]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -582,9 +587,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img6" isThinkTime='false' isCommented='false' sequence="46">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[25]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[25]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[51]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(51)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[5]&quot;)" value="italic(&quot;mode_edit[5]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[26]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -656,9 +662,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img7" isThinkTime='false' isCommented='false' sequence="52">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[26]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[26]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[53]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(53)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[6]&quot;)" value="italic(&quot;mode_edit[6]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[27]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -730,9 +737,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img8" isThinkTime='false' isCommented='false' sequence="58">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[27]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[27]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[55]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(55)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[7]&quot;)" value="italic(&quot;mode_edit[7]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[28]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -804,9 +812,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img9" isThinkTime='false' isCommented='false' sequence="64">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[28]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[28]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[57]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(57)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[8]&quot;)" value="italic(&quot;mode_edit[8]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[29]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -878,9 +887,10 @@
 
 <step action="click" value='' type="web" desc="Edit Img10" isThinkTime='false' isCommented='false' sequence="70">
 	<dialect type="sahi">
-		<accessor type="click" value="italic(&quot;mode_edit[29]&quot;)" selected="true"/>
+		<accessor type="click" value="italic(&quot;mode_edit[29]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(&quot;material-icons ng-scope[59]&quot;)" selected="false"/>
 		<accessor type="click" value="italic(59)" selected="false"/>
+		<accessor type="italic(&quot;mode_edit[9]&quot;)" value="italic(&quot;mode_edit[9]&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[1]/md-content/div[2]/md-card[30]/form/div/div[1]/div[2]/button/i&quot;" selected="true"/>
@@ -999,7 +1009,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk OK!" isThinkTime='false' isCommented='false' sequence="80">
+<step action="click" value='' type="web" desc="Clk OK!" isThinkTime='false' isCommented="true" sequence="80">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;OK!&quot;)" selected="true"/>
 		<accessor type="click" value="button(&quot;md-primary md-button md-ink-ripple&quot;)" selected="false"/>
@@ -1013,7 +1023,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="81">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="81">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
