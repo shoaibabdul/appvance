@@ -51,6 +51,8 @@
     <resource name="G2M_UKQA_TC8_LotNumbers.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC8_LotNumbers.csv"/>
     <resource name="G2M_UKQA_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC11_VF_FreeSearch.csv"/>
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
+    <resource name="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds"/>
+    <resource name="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds"/>
   </resources>
   <testnodes>
     <cloud name="G2MUK" type="EC2" instantiate="none" terminate="none" reboot="never" amount="4" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
@@ -245,6 +247,16 @@
         </run>
       </test>
     </testcase>
+    <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch_Chrome">
+      <test>
+        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKQA_TC8_Mem_LotNoSearch_Chrome">
+      <test>
+        <run name="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -266,6 +278,8 @@
       <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="3"/>
       <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="3"/>
       <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="3"/>
+      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch_Chrome" users="1"/>
+      <testcase name="G2M_UKQA_TC8_Mem_LotNoSearch_Chrome" users="1"/>
     </iteration>
   </execution>
   <logs/>
