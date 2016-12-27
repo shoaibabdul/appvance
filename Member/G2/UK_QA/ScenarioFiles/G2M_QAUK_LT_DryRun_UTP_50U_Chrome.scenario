@@ -259,12 +259,16 @@
     </testcase>
     <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch_Chrome">
       <test>
-        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome"/>
+        <run name="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC3_Pub_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC3Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKQA_TC8_Mem_LotNoSearch_Chrome">
       <test>
-        <run name="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome"/>
+        <run name="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome" langtype="ds" resource="G2M_UK_QA_TC8_Mem_LotNoSearch_Chrome.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKQA_TC8Data"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
