@@ -863,9 +863,10 @@
 
 <step action="click" value='' type="web" desc="Save9" isThinkTime='false' isCommented='false' sequence="68">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
 		<accessor type="click" value="button(99)" selected="false"/>
+		<accessor type="span(27)" value="span(27)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
@@ -962,8 +963,8 @@
 
 <step action="click" value='' type="web" desc="Clk UPLOAD" isThinkTime='false' isCommented='false' sequence="76">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="true"/>
-		<accessor type="click" value="span(15)" selected="false"/>
+		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="false"/>
+		<accessor type="click" value="span(15)" selected="true"/>
 		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
