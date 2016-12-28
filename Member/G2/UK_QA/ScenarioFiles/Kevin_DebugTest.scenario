@@ -86,8 +86,8 @@
     <options type="sahi">
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="true"/>
-      <opt name="fullPageLoaded" value="true"/>
+      <opt name="debugModeSahi" value="false"/>
+      <opt name="domComplete" value="true"/>
     </options>
     <options type="har">
       <opt name="printDebugInfo" value="false"/>
@@ -107,7 +107,7 @@
     </controller>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav">
       <test>
-        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+        <run name="G2M_UK_QA_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC6_TestData"/>
         </run>
       </test>
