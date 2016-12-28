@@ -29,7 +29,6 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_QA_TC6_Mem_HPNav.ds"/>
     <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
     <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../DesignerScripts/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
   </resources>
