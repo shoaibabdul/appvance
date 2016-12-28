@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
+    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -110,7 +110,7 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_DryRun_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" totalexecutions="1" name="1 Executions Controller"/>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
@@ -131,9 +131,9 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="duration">
-      <testcase name="TC1_DSI_US_UploadImg" users="5"/>
-      <testcase name="TC2_DSI_UK_UploadImg" users="5"/>
+    <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="totalexecutions">
+      <testcase name="TC1_DSI_US_UploadImg" users="1"/>
+      <testcase name="TC2_DSI_UK_UploadImg" users="1"/>
     </iteration>
   </execution>
   <logs/>
