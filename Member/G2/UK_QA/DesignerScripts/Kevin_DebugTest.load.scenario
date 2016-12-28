@@ -103,7 +103,10 @@
   </options>
   <templates>
     <controller name="Iteration1">
-      <round iterations="1" totalusers="1"/>
+      <round name="Executions per User">
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" executions="5"/>
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" executions="5"/>
+      </round>
     </controller>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome">
       <test>
@@ -123,10 +126,10 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest" subtype="functional">
-    <iteration name="Iteration1" controller="Iteration1">
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" users="1"/>
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" users="1"/>
+  <execution type="loadtest" subtype="load">
+    <iteration name="Iteration1" controller="Iteration1" completiontype="exacttestcaseexecutions">
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" users="5"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" users="5"/>
     </iteration>
   </execution>
   <logs/>
