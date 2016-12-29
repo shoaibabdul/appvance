@@ -478,7 +478,8 @@
 		<accessor type="link(&quot;15/12/2016&quot;)" value="link(&quot;15/12/2016&quot;)" selected="false"/>
 		<accessor type="link(&quot;19/12/2016&quot;)" value="link(&quot;19/12/2016&quot;)" selected="false"/>
 		<accessor type="link(&quot;23/12/2016&quot;)" value="link(&quot;23/12/2016&quot;)" selected="false"/>
-		<accessor type="link(&quot;29/12/2016&quot;)" value="link(&quot;29/12/2016&quot;)" selected="true"/>
+		<accessor type="link(&quot;29/12/2016&quot;)" value="link(&quot;29/12/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;02/01/2017&quot;)" value="link(&quot;02/01/2017&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/18/2016')]&quot;" selected="true"/>
