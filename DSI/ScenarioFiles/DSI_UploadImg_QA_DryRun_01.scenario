@@ -72,8 +72,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -110,7 +110,7 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_DryRun_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="15" name="15 Minutes"/>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
