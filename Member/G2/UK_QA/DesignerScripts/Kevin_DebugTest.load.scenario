@@ -104,8 +104,8 @@
   <templates>
     <controller name="Iteration1">
       <round name="Executions per User">
-        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" executions="2"/>
-        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" executions="2"/>
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome" executions="5"/>
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav-Firefox" executions="5"/>
       </round>
     </controller>
     <testcase name="G2M_UKQA_TC6_Mem_HPNav-Chrome">
