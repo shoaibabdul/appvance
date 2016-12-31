@@ -106,7 +106,8 @@
 <step action="click" value='' type="web" desc="Clk Lot Review" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="div(18)" selected="false"/>
-		<accessor type="click" value="div(19)" selected="true"/>
+		<accessor type="click" value="div(19)" selected="false"/>
+		<accessor type="div(25)" value="div(25)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/div&quot;" selected="true"/>
