@@ -30,8 +30,8 @@
 
 <step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-5025&quot;)" selected="true"/>
-		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-5025&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-5025']&quot;" selected="true"/>
@@ -55,8 +55,8 @@
 
 <step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-10012&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-10012&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-10012']&quot;" selected="true"/>
@@ -151,10 +151,10 @@
 
 
 
-<step action="setValue" value="{&quot;type&quot;:&quot;custom&quot;,&quot;value&quot;:&quot;&quot;}" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="{&quot;type&quot;:&quot;custom&quot;,&quot;value&quot;:&quot;&quot;}" type="web" desc='' isThinkTime='false' isCommented="true" sequence="12">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-16121&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-16121&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-16121']&quot;" selected="true"/>
@@ -178,8 +178,8 @@
 
 <step action="setValue" value="&quot;10&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-16121&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-16121&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-16121']&quot;" selected="true"/>
