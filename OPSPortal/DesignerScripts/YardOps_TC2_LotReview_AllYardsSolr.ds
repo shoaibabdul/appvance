@@ -30,8 +30,8 @@
 
 <step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
-		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-59866&quot;)" selected="true"/>
-		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-59866&quot;)" selected="false"/>
+		<accessor type="setValue" value="emailbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Email-59866']&quot;" selected="true"/>
@@ -55,8 +55,8 @@
 
 <step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
-		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-19234&quot;)" selected="true"/>
-		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-19234&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-undefined-Password-19234']&quot;" selected="true"/>
@@ -154,8 +154,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="click" value="span(10)" selected="true"/>
+		<accessor type="click" value="span(10)" selected="false"/>
 		<accessor type="click" value="span(&quot;fa fa-search&quot;)" selected="false"/>
+		<accessor type="span(6)" value="span(6)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/div/div/div/div[3]/button/div/span[2]&quot;" selected="true"/>
@@ -314,7 +315,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="25">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -325,7 +326,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="div(21)" selected="true"/>
 	</dialect>
