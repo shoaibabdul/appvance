@@ -32,7 +32,7 @@
     <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC6_Mem_HPNavigation.ds"/>
   </resources>
   <testnodes>
-    <cloud name="Cloud 1" type="EC2" instantiate="all" terminate="none" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="CloudAWS" type="EC2" instantiate="all" terminate="none" reboot="after" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
