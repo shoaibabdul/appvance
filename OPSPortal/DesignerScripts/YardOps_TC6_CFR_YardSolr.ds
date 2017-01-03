@@ -127,7 +127,7 @@
 
 
 
-<step action="setValue" value="{&quot;type&quot;:&quot;custom&quot;,&quot;value&quot;:&quot;&quot;}" type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="{&quot;type&quot;:&quot;custom&quot;,&quot;value&quot;:&quot;&quot;}" type="web" desc='' isThinkTime='false' isCommented="true" sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-9286&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
@@ -152,7 +152,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="12">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;10&quot;)" selected="true"/>
 		<accessor type="click" value="div(57)" selected="false"/>
@@ -177,8 +177,8 @@
 
 <step action="setValue" value="&quot;10&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-9286&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(0)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-9286&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-9286']&quot;" selected="true"/>
