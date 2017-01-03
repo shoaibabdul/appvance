@@ -205,7 +205,7 @@
 
 
 
-<step action="setValue" value="&quot;12102016&quot;" type="web" desc='' isThinkTime='false' isCommented="true" sequence="16">
+<step action="setValue" value="&quot;12102016&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateFrom-9855&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(18)" selected="true"/>
@@ -230,7 +230,7 @@
 
 
 
-<step action="setValue" value="&quot;01312017&quot;" type="web" desc='' isThinkTime='false' isCommented="true" sequence="18">
+<step action="setValue" value="&quot;01312017&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateTo-47200&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(19)" selected="true"/>
