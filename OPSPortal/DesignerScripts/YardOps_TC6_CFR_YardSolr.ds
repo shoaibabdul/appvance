@@ -62,7 +62,8 @@
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="click" value="span(3)" selected="false"/>
-		<accessor type="click" value="span(&quot;fa fa-pencil&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-pencil&quot;)" selected="false"/>
+		<accessor type="button(&quot;Click here to change yard&quot;)" value="button(&quot;Click here to change yard&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[1]/button/div/span&quot;" selected="true"/>
