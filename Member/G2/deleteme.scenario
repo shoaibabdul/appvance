@@ -1,0 +1,155 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>deleteme.scenario</name>
+    <defaultdirectory/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <versions>v1.1</versions>
+    <categorization>G2Member Project</categorization>
+    <links>      v1.1      G2Member Project    </links>
+  </basics>
+  <resources>
+    <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC1_Pub_HPNavigation.ds"/>
+    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds"/>
+    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds"/>
+    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC4_Pub_SalesList.ds"/>
+    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds"/>
+    <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC6_Mem_HPNavigation.ds"/>
+    <resource name="G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC7_Mem_VehicleFinder.ds"/>
+    <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds"/>
+    <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC9_Mem_SalesList.ds"/>
+    <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds"/>
+    <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="{scenario}/DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds"/>
+    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds"/>
+    <resource name="G2M_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC13_Mem_WatchList.ds"/>
+    <resource name="G2M_TC14_Mem_PreferencesEditSave.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC14_Mem_PreferencesEditSave.ds"/>
+    <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC15_Mem_CompareLots.ds"/>
+    <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds"/>
+    <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC2_VehicleFinder.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC3_LotNumbers.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC7_VehicleFinder.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC8_LotNumbers.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC11_VF_FreeSearch.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
+    <resource type="data" path="{scenario}/Testdata/G2M_TC6-9-10_UserIDs.csv"/>
+  </resources>
+  <testnodes>
+    <cloud name="AmazonG2" type="EC2" instantiate="All" terminate="none" reboot="After" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud" username="appvance" password="appvance"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources/>
+  <options>
+    <options type="global">
+      <opt name="trustAllSSLCertificates" value="false"/>
+    </options>
+    <options type="apc">
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="FixedSleepTime" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="ThinkTime" value="default"/>
+      <opt name="FixedThinkTime" value="0"/>
+      <opt name="StandardDeviation" value="0"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="FixedIntervalTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+    </options>
+    <options type="commandline">
+      <opt name="async" value="false"/>
+    </options>
+    <options type="sahi">
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+      <opt name="debugModeSahi" value="false"/>
+      <opt name="domComplete" value="true"/>
+    </options>
+    <options type="har">
+      <opt name="printDebugInfo" value="false"/>
+      <opt name="doNotStopOnFailure" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="rc" value="true"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="serverport" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="G2M_NewSprocs_100U1Ser_01">
+      <round time="30" testtype="users" totalexecutions="1" name="1 Executions Controller"/>
+    </controller>
+    <testcase name="G2M_TC1_Pub_HPNavigation">
+      <test>
+        <run name="Untitled1" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds" testclass="sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest" subtype="load">
+    <iteration name="G2M_NewSprocs_100U1Ser_01" controller="G2M_NewSprocs_100U1Ser_01" completiontype="totalexecutions">
+      <testcase name="G2M_TC1_Pub_HPNavigation" users="6"/>
+    </iteration>
+  </execution>
+  <logs>
+    <log type="database">
+      <opt name="hibernate.connection.username" value="apc"/>
+      <opt name="hibernate.connection.password" value="apc"/>
+      <opt name="hibernate.connection.url" value="jdbc:oracle:thin:@oraclesecopart.crcj5yottaxf.us-east-1.rds.amazonaws.com:1521:ORCL"/>
+      <opt name="hibernate.default_schema" value="apc"/>
+      <opt name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+    </log>
+  </logs>
+  <integrations xmlns="www.pushtotest.com/tm5">
+    <integration type="RQM"/>
+  </integrations>
+  <notifications/>
+</testscenario>
