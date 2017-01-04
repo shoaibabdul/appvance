@@ -118,8 +118,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -155,7 +155,7 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_QAUK_LT_DryRun_01">
+    <controller name="G2M_QAUK_LT_300U">
       <round time="30" name="30 Minutes"/>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
@@ -276,7 +276,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="G2M_QAUK_LT_DryRun_01" controller="G2M_QAUK_LT_DryRun_01" completiontype="duration">
+    <iteration name="G2M_QAUK_LT_300U" controller="G2M_QAUK_LT_300U" completiontype="duration">
       <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="18"/>
       <testcase name="G2M_UKQA_TC2_Pub_VF" users="18"/>
       <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="18"/>
