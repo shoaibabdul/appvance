@@ -116,7 +116,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+<step action="wait" value="2716" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -127,7 +127,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="10">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="click" value="svg(4)" selected="true"/>
 	</dialect>
@@ -135,7 +135,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+<step action="wait" value="14807" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -146,21 +146,20 @@
 
 
 
-<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-32437&quot;)" selected="false"/>
-		<accessor type="setValue" value="textbox(1)" selected="true"/>
+		<accessor type="click" value="span(5)" selected="true"/>
+		<accessor type="click" value="span(&quot;fa fa-pencil&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-32437']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[1]/div[1]/input&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//section/div[1]/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[1]/button/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[1]/button/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+<step action="wait" value="7623" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -171,10 +170,10 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="14">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="14">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;15&quot;)" selected="true"/>
-		<accessor type="click" value="div(99)" selected="false"/>
+		<accessor type="click" value="div(98)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//span/div/div/div&quot;" selected="true"/>
@@ -183,7 +182,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
+<step action="wait" value="763" type="web" desc='' isThinkTime="true" isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -194,21 +193,21 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
+<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="submit(&quot;2&quot;)" selected="true"/>
-		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2&quot;)" selected="false"/>
-		<accessor type="click" value="submit(4)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-32863&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(1)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/section/div/div/div[2]/button[2]&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//button[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-32863']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[1]/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//section/div[1]/div[1]/input&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+<step action="wait" value="63997" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -233,7 +232,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+<step action="wait" value="3721" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -244,19 +243,20 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="20">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="div(21)" selected="true"/>
+		<accessor type="click" value="span(&quot;O&quot;)" selected="true"/>
+		<accessor type="click" value="span(7)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/button/div&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/button/div/div/span&quot;" selected="false"/>
 	</dialect>
 </step>
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+<step action="wait" value="747" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -268,6 +268,173 @@
 
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="div(21)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/button/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="729" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
+		<accessor type="click" value="div(58)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//span/div/div&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="25">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="26">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-32437&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(1)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='undefined-YardNumber-YardNumber-32437']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[1]/div[1]/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//section/div[1]/div[1]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="27">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="28">
+	<dialect type="sahi">
+		<accessor type="click" value="div(&quot;15&quot;)" selected="true"/>
+		<accessor type="click" value="div(99)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//span/div/div/div&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="29">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="30">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;2&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2&quot;)" selected="false"/>
+		<accessor type="click" value="submit(4)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/section/div/div/div[2]/button[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//button[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type="click" value="image(&quot;logoNew.png&quot;)" selected="true"/>
+		<accessor type="click" value="image(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[1]/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="33">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="34">
+	<dialect type="sahi">
+		<accessor type="click" value="div(21)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/button/div&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="36">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
 		<accessor type="click" value="div(59)" selected="false"/>
