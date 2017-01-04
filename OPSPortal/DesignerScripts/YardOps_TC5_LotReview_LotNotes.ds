@@ -225,7 +225,7 @@
 
 
 
-<step action="setValue" value="&quot;Load Test Sample&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
+<step action="setValue" value="&quot;LoadTest123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(&quot;undefined-AddLotNotesPressEnterfornewline-undefined-39601&quot;)" selected="false"/>
 		<accessor type="setValue" value="textarea(1)" selected="true"/>
