@@ -274,8 +274,8 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="span(29)" selected="true"/>
-		<accessor type="click" value="span(&quot;fa fa-times&quot;)" selected="false"/>
+		<accessor type="click" value="span(29)" selected="false"/>
+		<accessor type="click" value="span(&quot;fa fa-times&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[1]/div[2]/button/div/span&quot;" selected="true"/>
@@ -297,8 +297,8 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="span(31)" selected="true"/>
-		<accessor type="click" value="span(&quot;fa fa-times-circle&quot;)" selected="false"/>
+		<accessor type="click" value="span(31)" selected="false"/>
+		<accessor type="click" value="span(&quot;fa fa-times-circle&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div/div[1]/div/div/div[3]/button/div/span&quot;" selected="true"/>
