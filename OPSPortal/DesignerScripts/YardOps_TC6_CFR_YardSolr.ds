@@ -103,7 +103,8 @@
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type="textbox(1)" value="textbox(1)" selected="false"/>
-		<accessor type="submit(1)" value="submit(1)" selected="true"/>
+		<accessor type="submit(1)" value="submit(1)" selected="false"/>
+		<accessor type="submit(0)" value="submit(0)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="false"/>
