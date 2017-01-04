@@ -85,19 +85,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
-	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;15&quot;)" selected="true"/>
-		<accessor type="click" value="div(98)" selected="false"/>
-	</dialect>
-	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//span/div/div/div&quot;" selected="true"/>
-	</dialect>
-</step>
-
-
-
-<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-60166&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(1)" selected="false"/>
@@ -111,7 +99,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;O&quot;)" selected="true"/>
 		<accessor type="click" value="span(9)" selected="false"/>
@@ -124,7 +112,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
 		<accessor type="click" value="div(184)" selected="false"/>
