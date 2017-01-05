@@ -152,7 +152,7 @@
 
 
 
-<step action="setValue" value="&quot;15882756&quot;" type="web" desc="Enter ImgLotNo" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;15879806&quot;" type="web" desc="Enter ImgLotNo" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;solr-search&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;solr-search-SearchF2-undefined-20958&quot;)" selected="false"/>
