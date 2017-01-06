@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="SERVER/C:/Builds/timings/yard_Details.csv" exectype="runallstep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/yard_Details.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="wait" value="5013" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
