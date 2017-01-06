@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC3_YOP_LR_ExtSearch.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-ops-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-60972&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-48232&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
@@ -156,7 +156,7 @@
 
 
 
-<step action="setValue" value="&quot;10&quot;" type="web" desc="Enter Yard No" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$YardNo&quot;" type="web" desc="Enter Yard No" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;yardNumber&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;yardNumber-YardNumber-YardNumber-21128&quot;)" selected="false"/>
@@ -205,7 +205,7 @@
 
 
 
-<step action="setValue" value="&quot;12102016&quot;" type="web" desc="Enter AuctionFromDate" isThinkTime='false' isCommented='false' sequence="16">
+<step action="setValue" value="&quot;$FromDate&quot;" type="web" desc="Enter AuctionFromDate" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateFrom-9855&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(18)" selected="true"/>
@@ -230,7 +230,7 @@
 
 
 
-<step action="setValue" value="&quot;01312017&quot;" type="web" desc="Enter AuctionToDate" isThinkTime='false' isCommented='false' sequence="18">
+<step action="setValue" value="&quot;$ToDate&quot;" type="web" desc="Enter AuctionToDate" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-MMDDYYYY-AuctionDateTo-47200&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(19)" selected="true"/>
