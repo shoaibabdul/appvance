@@ -62,7 +62,7 @@
         <argument name="file" value="TC1_YOP_LR_YardNoSolr.csv"/>
       </argument>
     </dpl>
-    <dpl name="TC1_TC7_YOP_TD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="TC2_TC7_YOP_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
       </argument>
@@ -150,12 +150,16 @@
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
-        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC1_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC2_LR_AllYardsSolr">
       <test>
-        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC3_LR_ExtSearchSproc">
