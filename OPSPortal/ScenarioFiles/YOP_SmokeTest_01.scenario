@@ -37,6 +37,13 @@
     <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
     <resource name="YardOps_TC7_CFR_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr.ds"/>
     <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
+    <resource name="TC1_YOP_LR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC1_YOP_LR_YardNoSolr.csv"/>
+    <resource name="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv" type="csv" path="{scenario}/../TestData/TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
+    <resource name="TC3_YOP_LR_ExtSearch.csv" type="csv" path="{scenario}/../TestData/TC3_YOP_LR_ExtSearch.csv"/>
+    <resource name="TC4_YOP_LR_ImgLotNo_Search.csv" type="csv" path="{scenario}/../TestData/TC4_YOP_LR_ImgLotNo_Search.csv"/>
+    <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
+    <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
+    <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
   </resources>
   <testnodes>
     <cloud name="YardOps" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
@@ -49,7 +56,43 @@
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="TC1_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC1_YOP_LR_YardNoSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC1_TC7_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC3_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC3_YOP_LR_ExtSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC4_YOP_LR_ImgLotNo_Search.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC5_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC5_YOP_LR_LotNo_LotNotes.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC6_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC6_YOP_CFR_YardNoSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC8_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
@@ -102,7 +145,7 @@
     </options>
   </options>
   <templates>
-    <controller name="YardOpsPortal_DryRun_01">
+    <controller name="YardOpsPortal_SmokeTest_01">
       <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
@@ -150,7 +193,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
+    <iteration name="YardOpsPortal_SmokeTest_01" controller="YardOpsPortal_SmokeTest_01" completiontype="duration">
       <testcase name="TC1_LR_YardSolr" users="1"/>
       <testcase name="TC2_LR_AllYardsSolr" users="1"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
