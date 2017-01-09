@@ -158,38 +158,50 @@
     <testcase name="TC2_LR_AllYardsSolr">
       <test>
         <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
+          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC3_LR_ExtSearchSproc">
       <test>
-        <run name="YardOps_TC3_LR_ExtSearchSproc" langtype="ds" resource="YardOps_TC3_LotReview_ExtSearchSproc.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC3_LR_ExtSearchSproc" langtype="ds" resource="YardOps_TC3_LotReview_ExtSearchSproc.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC3_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC4_LR_ImgLotNo">
       <test>
-        <run name="YardOps_TC4_LR_ImgLotNo" langtype="ds" resource="YardOps_TC4_LotReview_ImgLotNo.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC4_LR_ImgLotNo" langtype="ds" resource="YardOps_TC4_LotReview_ImgLotNo.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC4_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC5_LR_LotNotes">
       <test>
-        <run name="YardOps_TC5_LR_LotNotes" langtype="ds" resource="YardOps_TC5_LotReview_LotNotes.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC5_LR_LotNotes" langtype="ds" resource="YardOps_TC5_LotReview_LotNotes.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC5_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC6_CFR_YardSolr">
       <test>
-        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC6_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC7_CFR_AllYardsSolr">
       <test>
-        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <testcase name="TC8_CFR_LotNotes">
       <test>
-        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC8_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
