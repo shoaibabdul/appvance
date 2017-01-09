@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC5_YOP_LR_LotNo_LotNotes.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-ops-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -28,7 +28,7 @@
 
 
 
-<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-31533&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
@@ -53,7 +53,7 @@
 
 
 
-<step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-13618&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
@@ -151,7 +151,7 @@
 
 
 
-<step action="setValue" value="&quot;51316036&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="12">
+<step action="setValue" value="&quot;$LotNo&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="12">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;solr-search&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;solr-search-SearchF2-undefined-34612&quot;)" selected="false"/>
@@ -225,7 +225,7 @@
 
 
 
-<step action="setValue" value="&quot;LoadTest123&quot;" type="web" desc="Enter Test Notes" isThinkTime='false' isCommented='false' sequence="18">
+<step action="setValue" value="&quot;LoadTest1234&quot;" type="web" desc="Enter Test Notes" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textarea(&quot;undefined-AddLotNotesPressEnterfornewline-undefined-39601&quot;)" selected="false"/>
 		<accessor type="setValue" value="textarea(1)" selected="true"/>
