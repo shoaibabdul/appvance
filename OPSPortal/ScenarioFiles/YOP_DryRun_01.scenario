@@ -26,7 +26,7 @@
     <creator>Balram</creator>
     <versions>v1.1</versions>
     <categorization>YardOpsPortal</categorization>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="YardOps_TC1_LotReview_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr.ds"/>
@@ -108,8 +108,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
