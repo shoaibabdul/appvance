@@ -29,21 +29,8 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="YardOps_TC1_LotReview_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr.ds"/>
-    <resource name="YardOps_TC2_LotReview_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC2_LotReview_AllYardsSolr.ds"/>
-    <resource name="YardOps_TC3_LotReview_ExtSearchSproc.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC3_LotReview_ExtSearchSproc.ds"/>
-    <resource name="YardOps_TC4_LotReview_ImgLotNo.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC4_LotReview_ImgLotNo.ds"/>
-    <resource name="YardOps_TC5_LotReview_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC5_LotReview_LotNotes.ds"/>
-    <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
-    <resource name="YardOps_TC7_CFR_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr.ds"/>
-    <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
-    <resource name="TC1_YOP_LR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC1_YOP_LR_YardNoSolr.csv"/>
-    <resource name="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv" type="csv" path="{scenario}/../TestData/TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
-    <resource name="TC3_YOP_LR_ExtSearch.csv" type="csv" path="{scenario}/../TestData/TC3_YOP_LR_ExtSearch.csv"/>
-    <resource name="TC4_YOP_LR_ImgLotNo_Search.csv" type="csv" path="{scenario}/../TestData/TC4_YOP_LR_ImgLotNo_Search.csv"/>
-    <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
-    <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
-    <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+    <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../../../..//SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
+    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../../../../SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
   </resources>
   <testnodes>
     <node name="localhost1" location="http://ec2-52-90-139-154.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
@@ -57,39 +44,9 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="TC1_YOP_TD" type="HashDPL" langtype="java" method="setup">
+    <dpl name="Untitled8" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC1_YOP_LR_YardNoSolr.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC2_TC7_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC3_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC3_YOP_LR_ExtSearch.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC4_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC4_YOP_LR_ImgLotNo_Search.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC5_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC5_YOP_LR_LotNo_LotNotes.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC6_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC6_YOP_CFR_YardNoSolr.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC8_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+        <argument name="file" value="G2M_UKQA_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -150,15 +107,8 @@
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
-        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC1_YOP_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC2_LR_AllYardsSolr">
-      <test>
-        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
+        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="Untitled8"/>
         </run>
       </test>
     </testcase>
@@ -169,7 +119,6 @@
   <execution type="functionaltest" subtype="functional">
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01">
       <testcase name="TC1_LR_YardSolr" users="1"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="1"/>
     </iteration>
   </execution>
   <logs/>
