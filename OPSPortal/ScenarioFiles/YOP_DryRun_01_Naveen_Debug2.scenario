@@ -29,8 +29,8 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../../../..//SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
-    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../../../../SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
+    <resource name="Debug_G2M_UK_QA_TC6_Mem_HPNav.ds" type="ds" path="{scenario}/../../../..///SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/Debug_G2M_UK_QA_TC6_Mem_HPNav.ds"/>
+    <resource name="G2M_UKQA_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../../../..//SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/MyScripts/1/G2M_UKQA_TC6-9-10_UserIDs.csv"/>
   </resources>
   <testnodes>
     <node name="localhost1" location="http://ec2-52-90-139-154.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
