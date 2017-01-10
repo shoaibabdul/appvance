@@ -98,7 +98,7 @@
       <opt name="trustAllSSLCertificates" value="false"/>
     </options>
     <options type="apc">
-      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
@@ -108,8 +108,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
