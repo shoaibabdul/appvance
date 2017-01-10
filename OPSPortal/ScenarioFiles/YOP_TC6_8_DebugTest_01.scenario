@@ -29,19 +29,8 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="YardOps_TC1_LotReview_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr.ds"/>
-    <resource name="YardOps_TC2_LotReview_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC2_LotReview_AllYardsSolr.ds"/>
-    <resource name="YardOps_TC3_LotReview_ExtSearchSproc.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC3_LotReview_ExtSearchSproc.ds"/>
-    <resource name="YardOps_TC4_LotReview_ImgLotNo.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC4_LotReview_ImgLotNo.ds"/>
-    <resource name="YardOps_TC5_LotReview_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC5_LotReview_LotNotes.ds"/>
     <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
-    <resource name="YardOps_TC7_CFR_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr.ds"/>
     <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
-    <resource name="TC1_YOP_LR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC1_YOP_LR_YardNoSolr.csv"/>
-    <resource name="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv" type="csv" path="{scenario}/../TestData/TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
-    <resource name="TC3_YOP_LR_ExtSearch.csv" type="csv" path="{scenario}/../TestData/TC3_YOP_LR_ExtSearch.csv"/>
-    <resource name="TC4_YOP_LR_ImgLotNo_Search.csv" type="csv" path="{scenario}/../TestData/TC4_YOP_LR_ImgLotNo_Search.csv"/>
-    <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
   </resources>
