@@ -146,16 +146,7 @@
   </options>
   <templates>
     <controller name="YardOpsPortal_SmokeTest_01">
-      <round time="10" name="Executions per User">
-        <testcase name="TC1_LR_YardSolr" executions="1"/>
-        <testcase name="TC2_LR_AllYardsSolr" executions="1"/>
-        <testcase name="TC3_LR_ExtSearchSproc" executions="1"/>
-        <testcase name="TC4_LR_ImgLotNo" executions="1"/>
-        <testcase name="TC5_LR_LotNotes" executions="1"/>
-        <testcase name="TC6_CFR_YardSolr" executions="1"/>
-        <testcase name="TC7_CFR_AllYardsSolr" executions="1"/>
-        <testcase name="TC8_CFR_LotNotes" executions="1"/>
-      </round>
+      <round totalexecutions="1" name="1 Executions Controller"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
@@ -218,7 +209,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_SmokeTest_01" controller="YardOpsPortal_SmokeTest_01" completiontype="exacttestcaseexecutions">
+    <iteration name="YardOpsPortal_SmokeTest_01" controller="YardOpsPortal_SmokeTest_01" completiontype="totalexecutions">
       <testcase name="TC1_LR_YardSolr" users="1"/>
       <testcase name="TC2_LR_AllYardsSolr" users="1"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
