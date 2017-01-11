@@ -29,11 +29,8 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
-    <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
+    <resource name="YardOps_TC6_CFR_YardSolr_V2.ds" type="ds" path="{scenario}/../../../..///SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/TestNode/repositories/C3Seller_Perf/OPSPortal/DesignerScripts/YardOps_TC6_CFR_YardSolr_V2.ds"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
-    <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
-    <resource name="YardOps_TC6_CFR_YardSolr_V2.ds" type="ds" path="{scenario}/../../../..//SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/TestNode/repositories/C3Seller_Perf/OPSPortal/DesignerScripts/YardOps_TC6_CFR_YardSolr_V2.ds"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -50,11 +47,6 @@
     <dpl name="TC6_YOP_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="TC6_YOP_CFR_YardNoSolr.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="TC8_YOP_TD" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="TC8_YOP_CFR_LotNo_LotNotes.csv"/>
       </argument>
     </dpl>
   </datasources>
