@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -17,7 +17,7 @@
 
 
 
-<step action="navigateTo" value="&quot;https://c-ops-qa1.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;https://c-ops-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -39,7 +39,7 @@
 
 
 
-<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-59012&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
@@ -64,7 +64,7 @@
 
 
 
-<step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-55276&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
@@ -89,7 +89,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="click" value='' type="web" desc="Submit Login" isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;LOGIN&quot;)" selected="false"/>
 		<accessor type="click" value="submit(0)" selected="true"/>
@@ -114,7 +114,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc="Clk Yard Box" isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="span(3)" selected="false"/>
 		<accessor type="click" value="span(&quot;fa fa-pencil&quot;)" selected="false"/>
@@ -139,7 +139,7 @@
 
 
 
-<step action="setValue" value="&quot;15&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="setValue" value="&quot;15&quot;" type="web" desc="Enter Yard No" isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-55358&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
@@ -164,7 +164,7 @@
 
 
 
-<step action="focus" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="13">
+<step action="focus" value='' type="web" desc="Focus Yard Box" isThinkTime='false' isCommented='false' sequence="13">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 		<accessor type="textbox(0)" value="textbox(0)" selected="true"/>
@@ -190,7 +190,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="15">
+<step action="click" value='' type="web" desc="Sel Yard No" isThinkTime='false' isCommented='false' sequence="15">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;15&quot;)" selected="true"/>
 		<accessor type="click" value="div(58)" selected="false"/>
@@ -213,7 +213,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="17">
+<step action="click" value='' type="web" desc="Clk CFR Module" isThinkTime='false' isCommented='false' sequence="17">
 	<dialect type="sahi">
 		<accessor type="click" value="div(29)" selected="true"/>
 		<accessor type="click" value="div(&quot;Dashboard__moduleListItem___1beaj[2]&quot;)" selected="false"/>
@@ -237,7 +237,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="19">
+<step action="click" value='' type="web" desc="Clk Page2" isThinkTime='false' isCommented='false' sequence="19">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;2&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2&quot;)" selected="false"/>
@@ -262,7 +262,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="21">
+<step action="click" value='' type="web" desc="Clk Page3" isThinkTime='false' isCommented='false' sequence="21">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;3&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2[1]&quot;)" selected="false"/>
@@ -287,7 +287,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="23">
+<step action="click" value='' type="web" desc="Clk Page4" isThinkTime='false' isCommented='false' sequence="23">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;4&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2[2]&quot;)" selected="false"/>
@@ -312,7 +312,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="25">
+<step action="click" value='' type="web" desc="Clk Page5" isThinkTime='false' isCommented='false' sequence="25">
 	<dialect type="sahi">
 		<accessor type="click" value="submit(&quot;5&quot;)" selected="true"/>
 		<accessor type="click" value="submit(&quot;Footer__pageButton___Ge6Y2[2]&quot;)" selected="false"/>
@@ -337,7 +337,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type="click" value="image(&quot;logoNew.png&quot;)" selected="true"/>
 		<accessor type="click" value="image(0)" selected="false"/>
@@ -362,7 +362,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
+<step action="click" value='' type="web" desc="Sel Dropdown" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;O&quot;)" selected="true"/>
 		<accessor type="click" value="span(7)" selected="false"/>
@@ -409,7 +409,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
+<step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
 		<accessor type="click" value="div(59)" selected="false"/>
