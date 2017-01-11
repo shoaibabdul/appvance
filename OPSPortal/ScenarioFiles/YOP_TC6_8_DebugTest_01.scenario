@@ -70,10 +70,10 @@
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
       <opt name="ThinkTime" value="fixed"/>
-      <opt name="FixedThinkTime" value="5000"/>
+      <opt name="FixedThinkTime" value="10000"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="5000"/>
-      <opt name="ThinkTimeMax" value="5000"/>
+      <opt name="ThinkTimeMin" value="10000"/>
+      <opt name="ThinkTimeMax" value="10000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -84,7 +84,7 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
-      <opt name="AddThinkTimeToStep" value="true"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
