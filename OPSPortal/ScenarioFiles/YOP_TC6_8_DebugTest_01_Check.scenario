@@ -29,8 +29,8 @@
     <links>    </links>
   </basics>
   <resources>
-    <resource name="YardOps_TC6_CFR_YardSolr_V2.ds" type="ds" path="{scenario}/../../../..///SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/TestNode/repositories/C3Seller_Perf/OPSPortal/DesignerScripts/YardOps_TC6_CFR_YardSolr_V2.ds"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
+    <resource name="YardOps_TC6_CFR_YardSolr_V2.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr_V2.ds"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
