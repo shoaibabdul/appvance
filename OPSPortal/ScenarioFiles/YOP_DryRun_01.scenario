@@ -98,7 +98,7 @@
       <opt name="trustAllSSLCertificates" value="false"/>
     </options>
     <options type="apc">
-      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="EnableSavingLogs" value="false"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
