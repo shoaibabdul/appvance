@@ -110,7 +110,7 @@
     <testcase name="TC6_CFR_YardSolr">
       <test>
         <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC6_YOP_TD"/>
+          <argument name="Untitled1" method="getRandomData" dpl="TC6_YOP_TD"/>
         </run>
       </test>
     </testcase>
