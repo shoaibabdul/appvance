@@ -33,6 +33,7 @@
     <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+    <resource name="YardOps_TC6_CFR_YardSolr_V2.ds" type="ds" path="{scenario}/../../../..//SERVER/C:/Builds/utp3.1-copart-hotfix-7345884/utp_distribution/TestNode/repositories/C3Seller_Perf/OPSPortal/DesignerScripts/YardOps_TC6_CFR_YardSolr_V2.ds"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -117,7 +118,7 @@
     </controller>
     <testcase name="TC6_CFR_YardSolr">
       <test>
-        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome">
+        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr_V2.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC6_YOP_TD"/>
         </run>
       </test>
