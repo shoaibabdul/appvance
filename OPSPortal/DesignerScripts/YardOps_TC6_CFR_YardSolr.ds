@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC6_YOP_CFR_YardNoSolr.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -39,7 +39,7 @@
 
 
 
-<step action="setValue" value="&quot;opsportusr@copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="3">
+<step action="setValue" value="&quot;$UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;undefined-undefined-Email-59012&quot;)" selected="false"/>
 		<accessor type="setValue" value="emailbox(0)" selected="true"/>
@@ -64,7 +64,7 @@
 
 
 
-<step action="setValue" value="&quot;Nhslt9aike!2&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="5">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;undefined-undefined-Password-55276&quot;)" selected="false"/>
 		<accessor type="setValue" value="password(0)" selected="true"/>
@@ -139,7 +139,7 @@
 
 
 
-<step action="setValue" value="&quot;15&quot;" type="web" desc="Enter Yard No" isThinkTime='false' isCommented='false' sequence="11">
+<step action="setValue" value="&quot;$YardNo&quot;" type="web" desc="Enter Yard No" isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;undefined-YardNumber-YardNumber-55358&quot;)" selected="false"/>
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
@@ -192,8 +192,9 @@
 
 <step action="click" value='' type="web" desc="Sel Yard No" isThinkTime='false' isCommented='false' sequence="15">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;15&quot;)" selected="true"/>
+		<accessor type="click" value="div(&quot;15&quot;)" selected="false"/>
 		<accessor type="click" value="div(58)" selected="false"/>
+		<accessor type="div($YardNo)" value="div($YardNo)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//span/div/div/div&quot;" selected="true"/>
