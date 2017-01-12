@@ -112,8 +112,8 @@
   <templates>
     <controller name="YOP_DebugTest_01">
       <round name="Executions per User">
-        <testcase name="TC6_CFR_YardSolr" executions="5"/>
-        <testcase name="TC8_CFR_LotNotes" executions="5"/>
+        <testcase name="TC6_CFR_YardSolr" executions="1"/>
+        <testcase name="TC8_CFR_LotNotes" executions="1"/>
       </round>
     </controller>
     <testcase name="TC6_CFR_YardSolr">
@@ -136,8 +136,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YOP_DebugTest_01" controller="YOP_DebugTest_01" completiontype="exacttestcaseexecutions">
-      <testcase name="TC6_CFR_YardSolr" users="5"/>
-      <testcase name="TC8_CFR_LotNotes" users="5"/>
+      <testcase name="TC6_CFR_YardSolr" users="1"/>
+      <testcase name="TC8_CFR_LotNotes" users="1"/>
     </iteration>
   </execution>
   <logs/>
