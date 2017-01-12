@@ -72,8 +72,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -94,7 +94,7 @@
     <options type="sahi">
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="false"/>
+      <opt name="debugModeSahi" value="true"/>
       <opt name="domComplete" value="true"/>
     </options>
     <options type="har">
