@@ -110,7 +110,7 @@
 
 
 
-<step action="setValue" value="&quot;copart&quot;6" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;copart6&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
