@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/UK_STG/Testdata/G2M_UKSTG_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g2-member-stg1.copart.co.uk&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -83,7 +83,7 @@
 
 
 
-<step action="setValue" value="&quot;365146&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$UserId&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
@@ -110,7 +110,7 @@
 
 
 
-<step action="setValue" value="&quot;copart6&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
