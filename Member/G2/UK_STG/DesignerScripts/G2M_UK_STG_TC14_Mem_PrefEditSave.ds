@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='G2M_UK_STG_TC14_Mem_PrefEditSave' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
+
+<step action="navigateTo" value="&quot;https://g2-member-stg1.copart.co.uk&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk SignIn" isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="link(6)" selected="false"/>
+		<accessor type="click" value="link(&quot;btn btn-lblue textbtn dropdown-toggle&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign In')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div[1]/div[2]/div[1]/div/div[2]/div/div[3]/div/div/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Sel Member" isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Member&quot;)" selected="true"/>
+		<accessor type="click" value="link(7)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/login&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;btn btn-lblue[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Member')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//a[@type='button']&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div[1]/div[2]/div[1]/div/div[2]/div/div[3]/div/div/ul/li[1]/div/div/a[1]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './login')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/div/div/a[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$UserId&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;username&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(3)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;form-control  email ipemaildisplay ng-untouched ng-valid ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='username']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='show']/div[1]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div/div[1]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control  password ipemaildisplay ng-untouched ng-valid ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='password']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='show']/div[2]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div/div[2]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Submit Login" isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Sign Into Your Account&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-lblue loginfloatright margin15&quot;)" selected="false"/>
+		<accessor type="click" value="submit(10)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='show']/div[4]/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[4]/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="11">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Account Info" isThinkTime='false' isCommented='false' sequence="12">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Account Information&quot;)" selected="true"/>
+		<accessor type="click" value="link(35)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/accountInformation/contactInfo[1]&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click[18]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Account Information')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[7]/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[7]/ul/li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="13">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="14">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Contact Information&quot;)" selected="true"/>
+		<accessor type="click" value="span(23)" selected="false"/>
+		<accessor type="click" value="span(&quot;flagpad&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//ul[@id='menu-content']/a[1]/li/span[1]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//li/span[1]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="15">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Edit Contact Info" isThinkTime='false' isCommented='false' sequence="16">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Edit Contact Information&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;btn btn-lblue edit_contactinfo editbtn&quot;)" selected="false"/>
+		<accessor type="click" value="button(6)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='tab1']/div[1]/div/div[1]/h3/button&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//h3/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="17">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Submit Save" isThinkTime='false' isCommented='false' sequence="18">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Save&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn btn-lblue pswd_btn&quot;)" selected="false"/>
+		<accessor type="click" value="submit(13)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='tab1']/div[3]/div/div/div[2]/form/div/button[2]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[2]/form/div/button[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="19">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Dashboard" isThinkTime='false' isCommented='false' sequence="20">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Dashboard&quot;)" selected="true"/>
+		<accessor type="click" value="link(11)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/dashboard&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;menu_click&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Dashboard')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='bs-example-navbar-collapse-1']/ul/li[1]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, './dashboard')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li[1]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="21">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="Clk Sign Out" isThinkTime='false' isCommented='false' sequence="22">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(7)" selected="false"/>
+		<accessor type="click" value="link(&quot;https://g2-member-qa1.copart.co.uk/logout&quot;)" selected="false"/>
+		<accessor type="click" value="link(&quot;signout&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//header[@id='top']/div[1]/div[2]/div[1]/div/div[2]/div/div[3]/ul/li/div/span/a[2]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, '/logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//span/a[2]&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="23">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+</testcase>
