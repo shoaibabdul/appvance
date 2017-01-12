@@ -1,0 +1,1009 @@
+VehicleTypes,YearFrom,YearTo,Make
+Motorcycle/ATV,1950,2000,All Makes
+HGV,1951,2001,All Makes
+Agricultural,1952,2002,All Makes
+Boat,1953,2003,All Makes
+Plant,1954,2004,All Makes
+Recreational Vehicle (RV),1955,2005,All Makes
+Vehicles Under 7.5 Tonnes,1956,2006,All Makes
+Motorcycle/ATV,1957,2007,All Makes
+HGV,1958,2008,All Makes
+Agricultural,1959,2009,All Makes
+Boat,1960,2010,All Makes
+Plant,1961,2011,All Makes
+Recreational Vehicle (RV),1962,2012,All Makes
+Vehicles Under 7.5 Tonnes,1963,2013,All Makes
+Motorcycle/ATV,1964,2014,All Makes
+HGV,1965,2015,All Makes
+Agricultural,1966,2016,All Makes
+Boat,1967,2017,All Makes
+Plant,1968,2018,All Makes
+Recreational Vehicle (RV),1969,2000,All Makes
+Vehicles Under 7.5 Tonnes,1970,2001,All Makes
+Motorcycle/ATV,1971,2002,All Makes
+HGV,1972,2003,All Makes
+Agricultural,1973,2004,All Makes
+Boat,1974,2005,All Makes
+Plant,1975,2006,All Makes
+Recreational Vehicle (RV),1976,2007,All Makes
+Vehicles Under 7.5 Tonnes,1977,2008,All Makes
+Motorcycle/ATV,1978,2009,All Makes
+HGV,1979,2010,All Makes
+Agricultural,1980,2011,All Makes
+Boat,1981,2012,All Makes
+Plant,1982,2013,All Makes
+Recreational Vehicle (RV),1983,2014,All Makes
+Vehicles Under 7.5 Tonnes,1984,2015,All Makes
+Motorcycle/ATV,1985,2016,All Makes
+HGV,1986,2017,All Makes
+Agricultural,1987,2018,All Makes
+Boat,1988,2000,All Makes
+Plant,1989,2001,All Makes
+Recreational Vehicle (RV),1990,2002,All Makes
+Vehicles Under 7.5 Tonnes,1991,2003,All Makes
+Motorcycle/ATV,1992,2004,All Makes
+HGV,1993,2005,All Makes
+Agricultural,1994,2006,All Makes
+Boat,1995,2007,All Makes
+Plant,1996,2008,All Makes
+Recreational Vehicle (RV),1997,2009,All Makes
+Vehicles Under 7.5 Tonnes,1998,2010,All Makes
+Motorcycle/ATV,1999,2011,All Makes
+HGV,2000,2012,All Makes
+Agricultural,2001,2013,All Makes
+Boat,2002,2014,All Makes
+Plant,2003,2015,All Makes
+Recreational Vehicle (RV),2004,2016,All Makes
+Vehicles Under 7.5 Tonnes,2005,2017,All Makes
+Motorcycle/ATV,2006,2018,All Makes
+HGV,2007,2010,All Makes
+Agricultural,2008,2011,All Makes
+Boat,2009,2012,All Makes
+Plant,2010,2013,All Makes
+Recreational Vehicle (RV),2011,2014,All Makes
+Vehicles Under 7.5 Tonnes,2012,2015,All Makes
+Motorcycle/ATV,2013,2016,All Makes
+HGV,2014,2017,All Makes
+Agricultural,2015,2018,All Makes
+Boat,2016,2018,All Makes
+Plant,1950,2000,All Makes
+Recreational Vehicle (RV),1951,2001,All Makes
+Vehicles Under 7.5 Tonnes,1952,2002,All Makes
+Motorcycle/ATV,1953,2003,All Makes
+HGV,1954,2004,All Makes
+Agricultural,1955,2005,All Makes
+Boat,1956,2006,All Makes
+Plant,1957,2007,All Makes
+Recreational Vehicle (RV),1958,2008,All Makes
+Vehicles Under 7.5 Tonnes,1959,2009,All Makes
+Motorcycle/ATV,1960,2010,All Makes
+HGV,1961,2011,All Makes
+Agricultural,1962,2012,All Makes
+Boat,1963,2013,All Makes
+Plant,1964,2014,All Makes
+Recreational Vehicle (RV),1965,2015,All Makes
+Vehicles Under 7.5 Tonnes,1966,2016,All Makes
+Motorcycle/ATV,1967,2017,All Makes
+HGV,1968,2018,All Makes
+Agricultural,1969,2000,All Makes
+Boat,1970,2001,All Makes
+Plant,1971,2002,All Makes
+Recreational Vehicle (RV),1972,2003,All Makes
+Vehicles Under 7.5 Tonnes,1973,2004,All Makes
+Motorcycle/ATV,1974,2000,All Makes
+HGV,1975,2001,All Makes
+Agricultural,1976,2002,All Makes
+Boat,1977,2003,All Makes
+Plant,1978,2004,All Makes
+Recreational Vehicle (RV),1979,2005,All Makes
+Vehicles Under 7.5 Tonnes,1980,2006,All Makes
+Motorcycle/ATV,1981,2007,All Makes
+HGV,1982,2008,All Makes
+Agricultural,1983,2009,All Makes
+Boat,1984,2010,All Makes
+Plant,1985,2011,All Makes
+Recreational Vehicle (RV),1986,2012,All Makes
+Vehicles Under 7.5 Tonnes,1987,2013,All Makes
+Motorcycle/ATV,1988,2014,All Makes
+HGV,1989,2015,All Makes
+Agricultural,1990,2016,All Makes
+Boat,1991,2017,All Makes
+Plant,1992,2018,All Makes
+Recreational Vehicle (RV),1993,2000,All Makes
+Vehicles Under 7.5 Tonnes,1994,2001,All Makes
+Motorcycle/ATV,1995,2002,All Makes
+HGV,1996,2003,All Makes
+Agricultural,1997,2004,All Makes
+Boat,1998,2000,All Makes
+Plant,1999,2001,All Makes
+Recreational Vehicle (RV),2000,2002,All Makes
+Vehicles Under 7.5 Tonnes,2001,2003,All Makes
+Motorcycle/ATV,2002,2004,All Makes
+HGV,2003,2005,All Makes
+Agricultural,2004,2006,All Makes
+Boat,2005,2007,All Makes
+Plant,2006,2008,All Makes
+Recreational Vehicle (RV),2007,2009,All Makes
+Vehicles Under 7.5 Tonnes,2008,2010,All Makes
+Motorcycle/ATV,2009,2018,All Makes
+HGV,2010,2018,All Makes
+Agricultural,2011,2018,All Makes
+Boat,2012,2018,All Makes
+Plant,2013,2018,All Makes
+Recreational Vehicle (RV),2014,2018,All Makes
+Vehicles Under 7.5 Tonnes,2015,2018,All Makes
+Motorcycle/ATV,2016,2018,All Makes
+HGV,1950,2017,All Makes
+Agricultural,1951,2017,All Makes
+Boat,1952,2017,All Makes
+Plant,1953,2017,All Makes
+Recreational Vehicle (RV),1954,2017,All Makes
+Vehicles Under 7.5 Tonnes,1955,2017,All Makes
+Motorcycle/ATV,1956,2017,All Makes
+HGV,1957,2017,All Makes
+Agricultural,1958,2017,All Makes
+Boat,1959,2017,All Makes
+Plant,1960,2017,All Makes
+Recreational Vehicle (RV),1961,2017,All Makes
+Vehicles Under 7.5 Tonnes,1962,2017,All Makes
+Motorcycle/ATV,1963,2017,All Makes
+HGV,1964,2017,All Makes
+Agricultural,1965,2017,All Makes
+Boat,1966,2017,All Makes
+Plant,1967,2017,All Makes
+Recreational Vehicle (RV),1968,2017,All Makes
+Vehicles Under 7.5 Tonnes,1969,2017,All Makes
+Motorcycle/ATV,1970,2017,All Makes
+HGV,1971,2017,All Makes
+Agricultural,1972,2017,All Makes
+Boat,1973,2017,All Makes
+Plant,1974,2017,All Makes
+Recreational Vehicle (RV),1975,2017,All Makes
+Vehicles Under 7.5 Tonnes,1976,2017,All Makes
+Motorcycle/ATV,1977,2017,All Makes
+HGV,1978,2017,All Makes
+Agricultural,1979,2017,All Makes
+Boat,1980,2017,All Makes
+Plant,1981,2017,All Makes
+Recreational Vehicle (RV),1982,2017,All Makes
+Vehicles Under 7.5 Tonnes,1983,2017,All Makes
+Motorcycle/ATV,1984,2017,All Makes
+HGV,1985,2017,All Makes
+Agricultural,1986,2017,All Makes
+Boat,1987,2017,All Makes
+Plant,1988,2017,All Makes
+Recreational Vehicle (RV),1989,2017,All Makes
+Vehicles Under 7.5 Tonnes,1990,2017,All Makes
+Motorcycle/ATV,1991,2017,All Makes
+HGV,1992,2017,All Makes
+Agricultural,1993,2017,All Makes
+Boat,1994,2017,All Makes
+Plant,1995,2017,All Makes
+Recreational Vehicle (RV),1996,2017,All Makes
+Vehicles Under 7.5 Tonnes,1997,2017,All Makes
+Motorcycle/ATV,1998,2017,All Makes
+HGV,1999,2017,All Makes
+Agricultural,2000,2017,All Makes
+Boat,2001,2017,All Makes
+Plant,2002,2017,All Makes
+Recreational Vehicle (RV),2003,2017,All Makes
+Vehicles Under 7.5 Tonnes,2004,2017,All Makes
+Motorcycle/ATV,2005,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
+Boat,2015,2017,All Makes
+Plant,2016,2017,All Makes
+Recreational Vehicle (RV),1950,2017,All Makes
+Vehicles Under 7.5 Tonnes,1951,2017,All Makes
+Motorcycle/ATV,1952,2017,All Makes
+HGV,1953,2017,All Makes
+Agricultural,1954,2017,All Makes
+Boat,1955,2017,All Makes
+Plant,1956,2017,All Makes
+Recreational Vehicle (RV),1957,2017,All Makes
+Vehicles Under 7.5 Tonnes,1958,2017,All Makes
+Motorcycle/ATV,1959,2017,All Makes
+HGV,1960,2017,All Makes
+Agricultural,1961,2017,All Makes
+Boat,1962,2017,All Makes
+Plant,1963,2017,All Makes
+Recreational Vehicle (RV),1964,2017,All Makes
+Vehicles Under 7.5 Tonnes,1965,2017,All Makes
+Motorcycle/ATV,1966,2017,All Makes
+HGV,1967,2017,All Makes
+Agricultural,1968,2017,All Makes
+Boat,1969,2017,All Makes
+Plant,1970,2017,All Makes
+Recreational Vehicle (RV),1971,2017,All Makes
+Vehicles Under 7.5 Tonnes,1972,2017,All Makes
+Motorcycle/ATV,1973,2017,All Makes
+HGV,1974,2017,All Makes
+Agricultural,1975,2017,All Makes
+Boat,1976,2017,All Makes
+Plant,1977,2017,All Makes
+Recreational Vehicle (RV),1978,2017,All Makes
+Vehicles Under 7.5 Tonnes,1979,2017,All Makes
+Motorcycle/ATV,1980,2017,All Makes
+HGV,1981,2017,All Makes
+Agricultural,1982,2017,All Makes
+Boat,1983,2017,All Makes
+Plant,1984,2017,All Makes
+Recreational Vehicle (RV),1985,2017,All Makes
+Vehicles Under 7.5 Tonnes,1986,2017,All Makes
+Motorcycle/ATV,1987,2017,All Makes
+HGV,1988,2017,All Makes
+Agricultural,1989,2017,All Makes
+Boat,1990,2018,All Makes
+Plant,1991,2018,All Makes
+Recreational Vehicle (RV),1992,2018,All Makes
+Vehicles Under 7.5 Tonnes,1993,2018,All Makes
+Motorcycle/ATV,1994,2018,All Makes
+HGV,1995,2018,All Makes
+Agricultural,1996,2018,All Makes
+Boat,1997,2018,All Makes
+Plant,1998,2018,All Makes
+Recreational Vehicle (RV),1999,2018,All Makes
+Vehicles Under 7.5 Tonnes,2000,2018,All Makes
+Motorcycle/ATV,2001,2018,All Makes
+HGV,2002,2018,All Makes
+Agricultural,2003,2018,All Makes
+Boat,2004,2018,All Makes
+Plant,2005,2018,All Makes
+Recreational Vehicle (RV),2006,2018,All Makes
+Vehicles Under 7.5 Tonnes,2007,2018,All Makes
+Motorcycle/ATV,2008,2018,All Makes
+HGV,2009,2018,All Makes
+Agricultural,2010,2018,All Makes
+Boat,2011,2018,All Makes
+Plant,2012,2018,All Makes
+Recreational Vehicle (RV),2013,2018,All Makes
+Vehicles Under 7.5 Tonnes,2014,2018,All Makes
+Motorcycle/ATV,2015,2018,All Makes
+HGV,2016,2018,All Makes
+Agricultural,1950,2018,All Makes
+Boat,1951,2018,All Makes
+Plant,1952,2018,All Makes
+Recreational Vehicle (RV),1953,2018,All Makes
+Vehicles Under 7.5 Tonnes,1954,2018,All Makes
+Motorcycle/ATV,1955,2018,All Makes
+HGV,1956,2018,All Makes
+Agricultural,1957,2018,All Makes
+Boat,1958,2018,All Makes
+Plant,1959,2018,All Makes
+Recreational Vehicle (RV),1960,2018,All Makes
+Vehicles Under 7.5 Tonnes,1961,2018,All Makes
+Motorcycle/ATV,1962,2018,All Makes
+HGV,1963,2018,All Makes
+Agricultural,1964,2018,All Makes
+Boat,1965,2018,All Makes
+Plant,1966,2018,All Makes
+Recreational Vehicle (RV),1967,2018,All Makes
+Vehicles Under 7.5 Tonnes,1968,2018,All Makes
+Motorcycle/ATV,1969,2018,All Makes
+HGV,1970,2018,All Makes
+Agricultural,1971,2018,All Makes
+Boat,1972,2018,All Makes
+Plant,1973,2018,All Makes
+Recreational Vehicle (RV),1974,2018,All Makes
+Vehicles Under 7.5 Tonnes,1975,2018,All Makes
+Motorcycle/ATV,1976,2018,All Makes
+HGV,1977,2018,All Makes
+Agricultural,1978,2018,All Makes
+Boat,1979,2018,All Makes
+Plant,1980,2018,All Makes
+Recreational Vehicle (RV),1981,2018,All Makes
+Vehicles Under 7.5 Tonnes,1982,2018,All Makes
+Motorcycle/ATV,1983,2018,All Makes
+HGV,1984,2018,All Makes
+Agricultural,1985,2018,All Makes
+Boat,1986,2018,All Makes
+Plant,1987,2018,All Makes
+Recreational Vehicle (RV),1988,2018,All Makes
+Vehicles Under 7.5 Tonnes,1989,2018,All Makes
+Motorcycle/ATV,1990,2018,All Makes
+HGV,1991,2018,All Makes
+Agricultural,1992,2018,All Makes
+Boat,1993,2018,All Makes
+Plant,1994,2018,All Makes
+Recreational Vehicle (RV),1995,2018,All Makes
+Vehicles Under 7.5 Tonnes,1996,2018,All Makes
+Motorcycle/ATV,1997,2018,All Makes
+HGV,1998,2018,All Makes
+Agricultural,1999,2018,All Makes
+Boat,2000,2018,All Makes
+Plant,2001,2018,All Makes
+Recreational Vehicle (RV),2002,2018,All Makes
+Vehicles Under 7.5 Tonnes,2003,2018,All Makes
+Motorcycle/ATV,2004,2018,All Makes
+HGV,2005,2018,All Makes
+Agricultural,2006,2018,All Makes
+Boat,2007,2018,All Makes
+Plant,2008,2018,All Makes
+Recreational Vehicle (RV),2009,2018,All Makes
+Vehicles Under 7.5 Tonnes,2010,2018,All Makes
+Motorcycle/ATV,2011,2018,All Makes
+HGV,2012,2018,All Makes
+Agricultural,2013,2018,All Makes
+Boat,2014,2018,All Makes
+Plant,2015,2018,All Makes
+Recreational Vehicle (RV),2016,2018,All Makes
+Vehicles Under 7.5 Tonnes,2016,2018,All Makes
+Motorcycle/ATV,1950,2000,All Makes
+HGV,1951,2001,All Makes
+Agricultural,1952,2002,All Makes
+Boat,1953,2003,All Makes
+Plant,1954,2004,All Makes
+Recreational Vehicle (RV),1955,2005,All Makes
+Vehicles Under 7.5 Tonnes,1956,2006,All Makes
+Motorcycle/ATV,1957,2007,All Makes
+HGV,1958,2008,All Makes
+Agricultural,1959,2009,All Makes
+Boat,1960,2010,All Makes
+Plant,1961,2011,All Makes
+Recreational Vehicle (RV),1962,2012,All Makes
+Vehicles Under 7.5 Tonnes,1963,2013,All Makes
+Motorcycle/ATV,1964,2014,All Makes
+HGV,1965,2015,All Makes
+Agricultural,1966,2016,All Makes
+Boat,1967,2017,All Makes
+Plant,1968,2018,All Makes
+Recreational Vehicle (RV),1969,2000,All Makes
+Vehicles Under 7.5 Tonnes,1970,2001,All Makes
+Motorcycle/ATV,1971,2002,All Makes
+HGV,1972,2003,All Makes
+Agricultural,1973,2004,All Makes
+Boat,1974,2005,All Makes
+Plant,1975,2006,All Makes
+Recreational Vehicle (RV),1976,2007,All Makes
+Vehicles Under 7.5 Tonnes,1977,2008,All Makes
+Motorcycle/ATV,1978,2009,All Makes
+HGV,1979,2010,All Makes
+Agricultural,1980,2011,All Makes
+Boat,1981,2012,All Makes
+Plant,1982,2013,All Makes
+Recreational Vehicle (RV),1983,2014,All Makes
+Vehicles Under 7.5 Tonnes,1984,2015,All Makes
+Motorcycle/ATV,1985,2016,All Makes
+HGV,1986,2017,All Makes
+Agricultural,1987,2018,All Makes
+Boat,1988,2000,All Makes
+Plant,1989,2001,All Makes
+Recreational Vehicle (RV),1990,2002,All Makes
+Vehicles Under 7.5 Tonnes,1991,2003,All Makes
+Motorcycle/ATV,1992,2004,All Makes
+HGV,1993,2005,All Makes
+Agricultural,1994,2006,All Makes
+Boat,1995,2007,All Makes
+Plant,1996,2008,All Makes
+Recreational Vehicle (RV),1997,2009,All Makes
+Vehicles Under 7.5 Tonnes,1998,2010,All Makes
+Motorcycle/ATV,1999,2011,All Makes
+HGV,2000,2012,All Makes
+Agricultural,2001,2013,All Makes
+Boat,2002,2014,All Makes
+Plant,2003,2015,All Makes
+Recreational Vehicle (RV),2004,2016,All Makes
+Vehicles Under 7.5 Tonnes,2005,2017,All Makes
+Motorcycle/ATV,2006,2018,All Makes
+HGV,2007,2010,All Makes
+Agricultural,2008,2011,All Makes
+Boat,2009,2012,All Makes
+Plant,2010,2013,All Makes
+Recreational Vehicle (RV),2011,2014,All Makes
+Vehicles Under 7.5 Tonnes,2012,2015,All Makes
+Motorcycle/ATV,2013,2016,All Makes
+HGV,2014,2017,All Makes
+Agricultural,2015,2018,All Makes
+Boat,2016,2018,All Makes
+Plant,1950,2000,All Makes
+Recreational Vehicle (RV),1951,2001,All Makes
+Vehicles Under 7.5 Tonnes,1952,2002,All Makes
+Motorcycle/ATV,1953,2003,All Makes
+HGV,1954,2004,All Makes
+Agricultural,1955,2005,All Makes
+Boat,1956,2006,All Makes
+Plant,1957,2007,All Makes
+Recreational Vehicle (RV),1958,2008,All Makes
+Vehicles Under 7.5 Tonnes,1959,2009,All Makes
+Motorcycle/ATV,1960,2010,All Makes
+HGV,1961,2011,All Makes
+Agricultural,1962,2012,All Makes
+Boat,1963,2013,All Makes
+Plant,1964,2014,All Makes
+Recreational Vehicle (RV),1965,2015,All Makes
+Vehicles Under 7.5 Tonnes,1966,2016,All Makes
+Motorcycle/ATV,1967,2017,All Makes
+HGV,1968,2018,All Makes
+Agricultural,1969,2000,All Makes
+Boat,1970,2001,All Makes
+Plant,1971,2002,All Makes
+Recreational Vehicle (RV),1972,2003,All Makes
+Vehicles Under 7.5 Tonnes,1973,2004,All Makes
+Motorcycle/ATV,1974,2000,All Makes
+HGV,1975,2001,All Makes
+Agricultural,1976,2002,All Makes
+Boat,1977,2003,All Makes
+Plant,1978,2004,All Makes
+Recreational Vehicle (RV),1979,2005,All Makes
+Vehicles Under 7.5 Tonnes,1980,2006,All Makes
+Motorcycle/ATV,1981,2007,All Makes
+HGV,1982,2008,All Makes
+Agricultural,1983,2009,All Makes
+Boat,1984,2010,All Makes
+Plant,1985,2011,All Makes
+Recreational Vehicle (RV),1986,2012,All Makes
+Vehicles Under 7.5 Tonnes,1987,2013,All Makes
+Motorcycle/ATV,1988,2014,All Makes
+HGV,1989,2015,All Makes
+Agricultural,1990,2016,All Makes
+Boat,1991,2017,All Makes
+Plant,1992,2018,All Makes
+Recreational Vehicle (RV),1993,2000,All Makes
+Vehicles Under 7.5 Tonnes,1994,2001,All Makes
+Motorcycle/ATV,1995,2002,All Makes
+HGV,1996,2003,All Makes
+Agricultural,1997,2004,All Makes
+Boat,1998,2000,All Makes
+Plant,1999,2001,All Makes
+Recreational Vehicle (RV),2000,2002,All Makes
+Vehicles Under 7.5 Tonnes,2001,2003,All Makes
+Motorcycle/ATV,2002,2004,All Makes
+HGV,2003,2005,All Makes
+Agricultural,2004,2006,All Makes
+Boat,2005,2007,All Makes
+Plant,2006,2008,All Makes
+Recreational Vehicle (RV),2007,2009,All Makes
+Vehicles Under 7.5 Tonnes,2008,2010,All Makes
+Motorcycle/ATV,2009,2018,All Makes
+HGV,2010,2018,All Makes
+Agricultural,2011,2018,All Makes
+Boat,2012,2018,All Makes
+Plant,2013,2018,All Makes
+Recreational Vehicle (RV),2014,2018,All Makes
+Vehicles Under 7.5 Tonnes,2015,2018,All Makes
+Motorcycle/ATV,2016,2018,All Makes
+HGV,1950,2017,All Makes
+Agricultural,1951,2017,All Makes
+Boat,1952,2017,All Makes
+Plant,1953,2017,All Makes
+Recreational Vehicle (RV),1954,2017,All Makes
+Vehicles Under 7.5 Tonnes,1955,2017,All Makes
+Motorcycle/ATV,1956,2017,All Makes
+HGV,1957,2017,All Makes
+Agricultural,1958,2017,All Makes
+Boat,1959,2017,All Makes
+Plant,1960,2017,All Makes
+Recreational Vehicle (RV),1961,2017,All Makes
+Vehicles Under 7.5 Tonnes,1962,2017,All Makes
+Motorcycle/ATV,1963,2017,All Makes
+HGV,1964,2017,All Makes
+Agricultural,1965,2017,All Makes
+Boat,1966,2017,All Makes
+Plant,1967,2017,All Makes
+Recreational Vehicle (RV),1968,2017,All Makes
+Vehicles Under 7.5 Tonnes,1969,2017,All Makes
+Motorcycle/ATV,1970,2017,All Makes
+HGV,1971,2017,All Makes
+Agricultural,1972,2017,All Makes
+Boat,1973,2017,All Makes
+Plant,1974,2017,All Makes
+Recreational Vehicle (RV),1975,2017,All Makes
+Vehicles Under 7.5 Tonnes,1976,2017,All Makes
+Motorcycle/ATV,1977,2017,All Makes
+HGV,1978,2017,All Makes
+Agricultural,1979,2017,All Makes
+Boat,1980,2017,All Makes
+Plant,1981,2017,All Makes
+Recreational Vehicle (RV),1982,2017,All Makes
+Vehicles Under 7.5 Tonnes,1983,2017,All Makes
+Motorcycle/ATV,1984,2017,All Makes
+HGV,1985,2017,All Makes
+Agricultural,1986,2017,All Makes
+Boat,1987,2017,All Makes
+Plant,1988,2017,All Makes
+Recreational Vehicle (RV),1989,2017,All Makes
+Vehicles Under 7.5 Tonnes,1990,2017,All Makes
+Motorcycle/ATV,1991,2017,All Makes
+HGV,1992,2017,All Makes
+Agricultural,1993,2017,All Makes
+Boat,1994,2017,All Makes
+Plant,1995,2017,All Makes
+Recreational Vehicle (RV),1996,2017,All Makes
+Vehicles Under 7.5 Tonnes,1997,2017,All Makes
+Motorcycle/ATV,1998,2017,All Makes
+HGV,1999,2017,All Makes
+Agricultural,2000,2017,All Makes
+Boat,2001,2017,All Makes
+Plant,2002,2017,All Makes
+Recreational Vehicle (RV),2003,2017,All Makes
+Vehicles Under 7.5 Tonnes,2004,2017,All Makes
+Motorcycle/ATV,2005,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
+Boat,2015,2017,All Makes
+Plant,2016,2017,All Makes
+Recreational Vehicle (RV),1950,2017,All Makes
+Vehicles Under 7.5 Tonnes,1951,2017,All Makes
+Motorcycle/ATV,1952,2017,All Makes
+HGV,1953,2017,All Makes
+Agricultural,1954,2017,All Makes
+Boat,1955,2017,All Makes
+Plant,1956,2017,All Makes
+Recreational Vehicle (RV),1957,2017,All Makes
+Vehicles Under 7.5 Tonnes,1958,2017,All Makes
+Motorcycle/ATV,1959,2017,All Makes
+HGV,1960,2017,All Makes
+Agricultural,1961,2017,All Makes
+Boat,1962,2017,All Makes
+Plant,1963,2017,All Makes
+Recreational Vehicle (RV),1964,2017,All Makes
+Vehicles Under 7.5 Tonnes,1965,2017,All Makes
+Motorcycle/ATV,1966,2017,All Makes
+HGV,1967,2017,All Makes
+Agricultural,1968,2017,All Makes
+Boat,1969,2017,All Makes
+Plant,1970,2017,All Makes
+Recreational Vehicle (RV),1971,2017,All Makes
+Vehicles Under 7.5 Tonnes,1972,2017,All Makes
+Motorcycle/ATV,1973,2017,All Makes
+HGV,1974,2017,All Makes
+Agricultural,1975,2017,All Makes
+Boat,1976,2017,All Makes
+Plant,1977,2017,All Makes
+Recreational Vehicle (RV),1978,2017,All Makes
+Vehicles Under 7.5 Tonnes,1979,2017,All Makes
+Motorcycle/ATV,1980,2017,All Makes
+HGV,1981,2017,All Makes
+Agricultural,1982,2017,All Makes
+Boat,1983,2017,All Makes
+Plant,1984,2017,All Makes
+Recreational Vehicle (RV),1985,2017,All Makes
+Vehicles Under 7.5 Tonnes,1986,2017,All Makes
+Motorcycle/ATV,1987,2017,All Makes
+HGV,1988,2017,All Makes
+Agricultural,1989,2017,All Makes
+Boat,1990,2018,All Makes
+Plant,1991,2018,All Makes
+Recreational Vehicle (RV),1992,2018,All Makes
+Vehicles Under 7.5 Tonnes,1993,2018,All Makes
+Motorcycle/ATV,1994,2018,All Makes
+HGV,1995,2018,All Makes
+Agricultural,1996,2018,All Makes
+Boat,1997,2018,All Makes
+Plant,1998,2018,All Makes
+Recreational Vehicle (RV),1999,2018,All Makes
+Vehicles Under 7.5 Tonnes,2000,2018,All Makes
+Motorcycle/ATV,2001,2018,All Makes
+HGV,2002,2018,All Makes
+Agricultural,2003,2018,All Makes
+Boat,2004,2018,All Makes
+Plant,2005,2018,All Makes
+Recreational Vehicle (RV),2006,2018,All Makes
+Vehicles Under 7.5 Tonnes,2007,2018,All Makes
+Motorcycle/ATV,2008,2018,All Makes
+HGV,2009,2018,All Makes
+Agricultural,2010,2018,All Makes
+Boat,2011,2018,All Makes
+Plant,2012,2018,All Makes
+Recreational Vehicle (RV),2013,2018,All Makes
+Vehicles Under 7.5 Tonnes,2014,2018,All Makes
+Motorcycle/ATV,2015,2018,All Makes
+HGV,2016,2018,All Makes
+Agricultural,1950,2018,All Makes
+Boat,1951,2018,All Makes
+Plant,1952,2018,All Makes
+Recreational Vehicle (RV),1953,2018,All Makes
+Vehicles Under 7.5 Tonnes,1954,2018,All Makes
+Motorcycle/ATV,1955,2018,All Makes
+HGV,1956,2018,All Makes
+Agricultural,1957,2018,All Makes
+Boat,1958,2018,All Makes
+Plant,1959,2018,All Makes
+Recreational Vehicle (RV),1960,2018,All Makes
+Vehicles Under 7.5 Tonnes,1961,2018,All Makes
+Motorcycle/ATV,1962,2018,All Makes
+HGV,1963,2018,All Makes
+Agricultural,1964,2018,All Makes
+Boat,1965,2018,All Makes
+Plant,1966,2018,All Makes
+Recreational Vehicle (RV),1967,2018,All Makes
+Vehicles Under 7.5 Tonnes,1968,2018,All Makes
+Motorcycle/ATV,1969,2018,All Makes
+HGV,1970,2018,All Makes
+Agricultural,1971,2018,All Makes
+Boat,1972,2018,All Makes
+Plant,1973,2018,All Makes
+Recreational Vehicle (RV),1974,2018,All Makes
+Vehicles Under 7.5 Tonnes,1975,2018,All Makes
+Motorcycle/ATV,1976,2018,All Makes
+HGV,1977,2018,All Makes
+Agricultural,1978,2018,All Makes
+Boat,1979,2018,All Makes
+Plant,1980,2018,All Makes
+Recreational Vehicle (RV),1981,2018,All Makes
+Vehicles Under 7.5 Tonnes,1982,2018,All Makes
+Motorcycle/ATV,1983,2018,All Makes
+HGV,1984,2018,All Makes
+Agricultural,1985,2018,All Makes
+Boat,1986,2018,All Makes
+Plant,1987,2018,All Makes
+Recreational Vehicle (RV),1988,2018,All Makes
+Vehicles Under 7.5 Tonnes,1989,2018,All Makes
+Motorcycle/ATV,1990,2018,All Makes
+HGV,1991,2018,All Makes
+Agricultural,1992,2018,All Makes
+Boat,1993,2018,All Makes
+Plant,1994,2018,All Makes
+Recreational Vehicle (RV),1995,2018,All Makes
+Vehicles Under 7.5 Tonnes,1996,2018,All Makes
+Motorcycle/ATV,1997,2018,All Makes
+HGV,1998,2018,All Makes
+Agricultural,1999,2018,All Makes
+Boat,2000,2018,All Makes
+Plant,2001,2018,All Makes
+Recreational Vehicle (RV),2002,2018,All Makes
+Vehicles Under 7.5 Tonnes,2003,2018,All Makes
+Motorcycle/ATV,2004,2018,All Makes
+HGV,2005,2018,All Makes
+Agricultural,2006,2018,All Makes
+Boat,2007,2018,All Makes
+Plant,2008,2018,All Makes
+Recreational Vehicle (RV),2009,2018,All Makes
+Vehicles Under 7.5 Tonnes,2010,2018,All Makes
+Motorcycle/ATV,2011,2018,All Makes
+HGV,2012,2018,All Makes
+Agricultural,2013,2018,All Makes
+Boat,2014,2018,All Makes
+Plant,2015,2018,All Makes
+Recreational Vehicle (RV),2016,2018,All Makes
+Vehicles Under 7.5 Tonnes,2016,2018,All Makes
+Motorcycle/ATV,1950,2000,All Makes
+HGV,1951,2001,All Makes
+Agricultural,1952,2002,All Makes
+Boat,1953,2003,All Makes
+Plant,1954,2004,All Makes
+Recreational Vehicle (RV),1955,2005,All Makes
+Vehicles Under 7.5 Tonnes,1956,2006,All Makes
+Motorcycle/ATV,1957,2007,All Makes
+HGV,1958,2008,All Makes
+Agricultural,1959,2009,All Makes
+Boat,1960,2010,All Makes
+Plant,1961,2011,All Makes
+Recreational Vehicle (RV),1962,2012,All Makes
+Vehicles Under 7.5 Tonnes,1963,2013,All Makes
+Motorcycle/ATV,1964,2014,All Makes
+HGV,1965,2015,All Makes
+Agricultural,1966,2016,All Makes
+Boat,1967,2017,All Makes
+Plant,1968,2018,All Makes
+Recreational Vehicle (RV),1969,2000,All Makes
+Vehicles Under 7.5 Tonnes,1970,2001,All Makes
+Motorcycle/ATV,1971,2002,All Makes
+HGV,1972,2003,All Makes
+Agricultural,1973,2004,All Makes
+Boat,1974,2005,All Makes
+Plant,1975,2006,All Makes
+Recreational Vehicle (RV),1976,2007,All Makes
+Vehicles Under 7.5 Tonnes,1977,2008,All Makes
+Motorcycle/ATV,1978,2009,All Makes
+HGV,1979,2010,All Makes
+Agricultural,1980,2011,All Makes
+Boat,1981,2012,All Makes
+Plant,1982,2013,All Makes
+Recreational Vehicle (RV),1983,2014,All Makes
+Vehicles Under 7.5 Tonnes,1984,2015,All Makes
+Motorcycle/ATV,1985,2016,All Makes
+HGV,1986,2017,All Makes
+Agricultural,1987,2018,All Makes
+Boat,1988,2000,All Makes
+Plant,1989,2001,All Makes
+Recreational Vehicle (RV),1990,2002,All Makes
+Vehicles Under 7.5 Tonnes,1991,2003,All Makes
+Motorcycle/ATV,1992,2004,All Makes
+HGV,1993,2005,All Makes
+Agricultural,1994,2006,All Makes
+Boat,1995,2007,All Makes
+Plant,1996,2008,All Makes
+Recreational Vehicle (RV),1997,2009,All Makes
+Vehicles Under 7.5 Tonnes,1998,2010,All Makes
+Motorcycle/ATV,1999,2011,All Makes
+HGV,2000,2012,All Makes
+Agricultural,2001,2013,All Makes
+Boat,2002,2014,All Makes
+Plant,2003,2015,All Makes
+Recreational Vehicle (RV),2004,2016,All Makes
+Vehicles Under 7.5 Tonnes,2005,2017,All Makes
+Motorcycle/ATV,2006,2018,All Makes
+HGV,2007,2010,All Makes
+Agricultural,2008,2011,All Makes
+Boat,2009,2012,All Makes
+Plant,2010,2013,All Makes
+Recreational Vehicle (RV),2011,2014,All Makes
+Vehicles Under 7.5 Tonnes,2012,2015,All Makes
+Motorcycle/ATV,2013,2016,All Makes
+HGV,2014,2017,All Makes
+Agricultural,2015,2018,All Makes
+Boat,2016,2018,All Makes
+Plant,1950,2000,All Makes
+Recreational Vehicle (RV),1951,2001,All Makes
+Vehicles Under 7.5 Tonnes,1952,2002,All Makes
+Motorcycle/ATV,1953,2003,All Makes
+HGV,1954,2004,All Makes
+Agricultural,1955,2005,All Makes
+Boat,1956,2006,All Makes
+Plant,1957,2007,All Makes
+Recreational Vehicle (RV),1958,2008,All Makes
+Vehicles Under 7.5 Tonnes,1959,2009,All Makes
+Motorcycle/ATV,1960,2010,All Makes
+HGV,1961,2011,All Makes
+Agricultural,1962,2012,All Makes
+Boat,1963,2013,All Makes
+Plant,1964,2014,All Makes
+Recreational Vehicle (RV),1965,2015,All Makes
+Vehicles Under 7.5 Tonnes,1966,2016,All Makes
+Motorcycle/ATV,1967,2017,All Makes
+HGV,1968,2018,All Makes
+Agricultural,1969,2000,All Makes
+Boat,1970,2001,All Makes
+Plant,1971,2002,All Makes
+Recreational Vehicle (RV),1972,2003,All Makes
+Vehicles Under 7.5 Tonnes,1973,2004,All Makes
+Motorcycle/ATV,1974,2000,All Makes
+HGV,1975,2001,All Makes
+Agricultural,1976,2002,All Makes
+Boat,1977,2003,All Makes
+Plant,1978,2004,All Makes
+Recreational Vehicle (RV),1979,2005,All Makes
+Vehicles Under 7.5 Tonnes,1980,2006,All Makes
+Motorcycle/ATV,1981,2007,All Makes
+HGV,1982,2008,All Makes
+Agricultural,1983,2009,All Makes
+Boat,1984,2010,All Makes
+Plant,1985,2011,All Makes
+Recreational Vehicle (RV),1986,2012,All Makes
+Vehicles Under 7.5 Tonnes,1987,2013,All Makes
+Motorcycle/ATV,1988,2014,All Makes
+HGV,1989,2015,All Makes
+Agricultural,1990,2016,All Makes
+Boat,1991,2017,All Makes
+Plant,1992,2018,All Makes
+Recreational Vehicle (RV),1993,2000,All Makes
+Vehicles Under 7.5 Tonnes,1994,2001,All Makes
+Motorcycle/ATV,1995,2002,All Makes
+HGV,1996,2003,All Makes
+Agricultural,1997,2004,All Makes
+Boat,1998,2000,All Makes
+Plant,1999,2001,All Makes
+Recreational Vehicle (RV),2000,2002,All Makes
+Vehicles Under 7.5 Tonnes,2001,2003,All Makes
+Motorcycle/ATV,2002,2004,All Makes
+HGV,2003,2005,All Makes
+Agricultural,2004,2006,All Makes
+Boat,2005,2007,All Makes
+Plant,2006,2008,All Makes
+Recreational Vehicle (RV),2007,2009,All Makes
+Vehicles Under 7.5 Tonnes,2008,2010,All Makes
+Motorcycle/ATV,2009,2018,All Makes
+HGV,2010,2018,All Makes
+Agricultural,2011,2018,All Makes
+Boat,2012,2018,All Makes
+Plant,2013,2018,All Makes
+Recreational Vehicle (RV),2014,2018,All Makes
+Vehicles Under 7.5 Tonnes,2015,2018,All Makes
+Motorcycle/ATV,2016,2018,All Makes
+HGV,1950,2017,All Makes
+Agricultural,1951,2017,All Makes
+Boat,1952,2017,All Makes
+Plant,1953,2017,All Makes
+Recreational Vehicle (RV),1954,2017,All Makes
+Vehicles Under 7.5 Tonnes,1955,2017,All Makes
+Motorcycle/ATV,1956,2017,All Makes
+HGV,1957,2017,All Makes
+Agricultural,1958,2017,All Makes
+Boat,1959,2017,All Makes
+Plant,1960,2017,All Makes
+Recreational Vehicle (RV),1961,2017,All Makes
+Vehicles Under 7.5 Tonnes,1962,2017,All Makes
+Motorcycle/ATV,1963,2017,All Makes
+HGV,1964,2017,All Makes
+Agricultural,1965,2017,All Makes
+Boat,1966,2017,All Makes
+Plant,1967,2017,All Makes
+Recreational Vehicle (RV),1968,2017,All Makes
+Vehicles Under 7.5 Tonnes,1969,2017,All Makes
+Motorcycle/ATV,1970,2017,All Makes
+HGV,1971,2017,All Makes
+Agricultural,1972,2017,All Makes
+Boat,1973,2017,All Makes
+Plant,1974,2017,All Makes
+Recreational Vehicle (RV),1975,2017,All Makes
+Vehicles Under 7.5 Tonnes,1976,2017,All Makes
+Motorcycle/ATV,1977,2017,All Makes
+HGV,1978,2017,All Makes
+Agricultural,1979,2017,All Makes
+Boat,1980,2017,All Makes
+Plant,1981,2017,All Makes
+Recreational Vehicle (RV),1982,2017,All Makes
+Vehicles Under 7.5 Tonnes,1983,2017,All Makes
+Motorcycle/ATV,1984,2017,All Makes
+HGV,1985,2017,All Makes
+Agricultural,1986,2017,All Makes
+Boat,1987,2017,All Makes
+Plant,1988,2017,All Makes
+Recreational Vehicle (RV),1989,2017,All Makes
+Vehicles Under 7.5 Tonnes,1990,2017,All Makes
+Motorcycle/ATV,1991,2017,All Makes
+HGV,1992,2017,All Makes
+Agricultural,1993,2017,All Makes
+Boat,1994,2017,All Makes
+Plant,1995,2017,All Makes
+Recreational Vehicle (RV),1996,2017,All Makes
+Vehicles Under 7.5 Tonnes,1997,2017,All Makes
+Motorcycle/ATV,1998,2017,All Makes
+HGV,1999,2017,All Makes
+Agricultural,2000,2017,All Makes
+Boat,2001,2017,All Makes
+Plant,2002,2017,All Makes
+Recreational Vehicle (RV),2003,2017,All Makes
+Vehicles Under 7.5 Tonnes,2004,2017,All Makes
+Motorcycle/ATV,2005,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
+Boat,2015,2017,All Makes
+Plant,2016,2017,All Makes
+Recreational Vehicle (RV),1950,2017,All Makes
+Vehicles Under 7.5 Tonnes,1951,2017,All Makes
+Motorcycle/ATV,1952,2017,All Makes
+HGV,1953,2017,All Makes
+Agricultural,1954,2017,All Makes
+Boat,1955,2017,All Makes
+Plant,1956,2017,All Makes
+Recreational Vehicle (RV),1957,2017,All Makes
+Vehicles Under 7.5 Tonnes,1958,2017,All Makes
+Motorcycle/ATV,1959,2017,All Makes
+HGV,1960,2017,All Makes
+Agricultural,1961,2017,All Makes
+Boat,1962,2017,All Makes
+Plant,1963,2017,All Makes
+Recreational Vehicle (RV),1964,2017,All Makes
+Vehicles Under 7.5 Tonnes,1965,2017,All Makes
+Motorcycle/ATV,1966,2017,All Makes
+HGV,1967,2017,All Makes
+Agricultural,1968,2017,All Makes
+Boat,1969,2017,All Makes
+Plant,1970,2017,All Makes
+Recreational Vehicle (RV),1971,2017,All Makes
+Vehicles Under 7.5 Tonnes,1972,2017,All Makes
+Motorcycle/ATV,1973,2017,All Makes
+HGV,1974,2017,All Makes
+Agricultural,1975,2017,All Makes
+Boat,1976,2017,All Makes
+Plant,1977,2017,All Makes
+Recreational Vehicle (RV),1978,2017,All Makes
+Vehicles Under 7.5 Tonnes,1979,2017,All Makes
+Motorcycle/ATV,1980,2017,All Makes
+HGV,1981,2017,All Makes
+Agricultural,1982,2017,All Makes
+Boat,1983,2017,All Makes
+Plant,1984,2017,All Makes
+Recreational Vehicle (RV),1985,2017,All Makes
+Vehicles Under 7.5 Tonnes,1986,2017,All Makes
+Motorcycle/ATV,1987,2017,All Makes
+HGV,1988,2017,All Makes
+Agricultural,1989,2017,All Makes
+Boat,1990,2018,All Makes
+Plant,1991,2018,All Makes
+Recreational Vehicle (RV),1992,2018,All Makes
+Vehicles Under 7.5 Tonnes,1993,2018,All Makes
+Motorcycle/ATV,1994,2018,All Makes
+HGV,1995,2018,All Makes
+Agricultural,1996,2018,All Makes
+Boat,1997,2018,All Makes
+Plant,1998,2018,All Makes
+Recreational Vehicle (RV),1999,2018,All Makes
+Vehicles Under 7.5 Tonnes,2000,2018,All Makes
+Motorcycle/ATV,2001,2018,All Makes
+HGV,2002,2018,All Makes
+Agricultural,2003,2018,All Makes
+Boat,2004,2018,All Makes
+Plant,2005,2018,All Makes
+Recreational Vehicle (RV),2006,2018,All Makes
+Vehicles Under 7.5 Tonnes,2007,2018,All Makes
+Motorcycle/ATV,2008,2018,All Makes
+HGV,2009,2018,All Makes
+Agricultural,2010,2018,All Makes
+Boat,2011,2018,All Makes
+Plant,2012,2018,All Makes
+Recreational Vehicle (RV),2013,2018,All Makes
+Vehicles Under 7.5 Tonnes,2014,2018,All Makes
+Motorcycle/ATV,2015,2018,All Makes
+HGV,2016,2018,All Makes
+Agricultural,1950,2018,All Makes
+Boat,1951,2018,All Makes
+Plant,1952,2018,All Makes
+Recreational Vehicle (RV),1953,2018,All Makes
+Vehicles Under 7.5 Tonnes,1954,2018,All Makes
+Motorcycle/ATV,1955,2018,All Makes
+HGV,1956,2018,All Makes
+Agricultural,1957,2018,All Makes
+Boat,1958,2018,All Makes
+Plant,1959,2018,All Makes
+Recreational Vehicle (RV),1960,2018,All Makes
+Vehicles Under 7.5 Tonnes,1961,2018,All Makes
+Motorcycle/ATV,1962,2018,All Makes
+HGV,1963,2018,All Makes
+Agricultural,1964,2018,All Makes
+Boat,1965,2018,All Makes
+Plant,1966,2018,All Makes
+Recreational Vehicle (RV),1967,2018,All Makes
+Vehicles Under 7.5 Tonnes,1968,2018,All Makes
+Motorcycle/ATV,1969,2018,All Makes
+HGV,1970,2018,All Makes
+Agricultural,1971,2018,All Makes
+Boat,1972,2018,All Makes
+Plant,1973,2018,All Makes
+Recreational Vehicle (RV),1974,2018,All Makes
+Vehicles Under 7.5 Tonnes,1975,2018,All Makes
+Motorcycle/ATV,1976,2018,All Makes
+HGV,1977,2018,All Makes
+Agricultural,1978,2018,All Makes
+Boat,1979,2018,All Makes
+Plant,1980,2018,All Makes
+Recreational Vehicle (RV),1981,2018,All Makes
+Vehicles Under 7.5 Tonnes,1982,2018,All Makes
+Motorcycle/ATV,1983,2018,All Makes
+HGV,1984,2018,All Makes
+Agricultural,1985,2018,All Makes
+Boat,1986,2018,All Makes
+Plant,1987,2018,All Makes
+Recreational Vehicle (RV),1988,2018,All Makes
+Vehicles Under 7.5 Tonnes,1989,2018,All Makes
+Motorcycle/ATV,1990,2018,All Makes
+HGV,1991,2018,All Makes
+Agricultural,1992,2018,All Makes
+Boat,1993,2018,All Makes
+Plant,1994,2018,All Makes
+Recreational Vehicle (RV),1995,2018,All Makes
+Vehicles Under 7.5 Tonnes,1996,2018,All Makes
+Motorcycle/ATV,1997,2018,All Makes
+HGV,1998,2018,All Makes
+Agricultural,1999,2018,All Makes
+Boat,2000,2018,All Makes
+Plant,2001,2018,All Makes
+Recreational Vehicle (RV),2002,2018,All Makes
+Vehicles Under 7.5 Tonnes,2003,2018,All Makes
+Motorcycle/ATV,2004,2018,All Makes
+HGV,2005,2018,All Makes
+Agricultural,2006,2018,All Makes
+Boat,2007,2018,All Makes
+Plant,2008,2018,All Makes
+Recreational Vehicle (RV),2009,2018,All Makes
+Vehicles Under 7.5 Tonnes,2010,2018,All Makes
+Motorcycle/ATV,2011,2018,All Makes
+HGV,2012,2018,All Makes
+Agricultural,2013,2018,All Makes
+Boat,2014,2018,All Makes
+Plant,2015,2018,All Makes
+Recreational Vehicle (RV),2016,2018,All Makes
+Vehicles Under 7.5 Tonnes,2016,2018,All Makes
