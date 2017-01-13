@@ -98,6 +98,7 @@
       <opt name="trustAllSSLCertificates" value="false"/>
     </options>
     <options type="apc">
+      <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="false"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
@@ -120,6 +121,7 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
