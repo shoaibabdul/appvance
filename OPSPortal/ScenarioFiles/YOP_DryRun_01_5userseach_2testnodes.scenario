@@ -47,6 +47,7 @@
   </resources>
   <testnodes>
     <node name="Machine214" location="http://ec2-54-92-206-180.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="server2" location="http://ec2-52-90-249-214.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
