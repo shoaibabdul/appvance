@@ -46,7 +46,6 @@
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
   </resources>
   <testnodes>
-    <node name="Machine214" location="http://ec2-52-90-249-214.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
     <node name="Machine214" location="http://ec2-54-92-206-180.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
