@@ -1,0 +1,229 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>YOP_DryRun_01_2_Testnodes.scenario</name>
+    <defaultdirectory/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <versions>v1.1</versions>
+    <categorization>YardOpsPortal</categorization>
+    <links>    </links>
+  </basics>
+  <resources>
+    <resource name="YardOps_TC1_LotReview_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr.ds"/>
+    <resource name="YardOps_TC2_LotReview_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC2_LotReview_AllYardsSolr.ds"/>
+    <resource name="YardOps_TC3_LotReview_ExtSearchSproc.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC3_LotReview_ExtSearchSproc.ds"/>
+    <resource name="YardOps_TC4_LotReview_ImgLotNo.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC4_LotReview_ImgLotNo.ds"/>
+    <resource name="YardOps_TC5_LotReview_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC5_LotReview_LotNotes.ds"/>
+    <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
+    <resource name="YardOps_TC7_CFR_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr.ds"/>
+    <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
+    <resource name="TC1_YOP_LR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC1_YOP_LR_YardNoSolr.csv"/>
+    <resource name="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv" type="csv" path="{scenario}/../TestData/TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
+    <resource name="TC3_YOP_LR_ExtSearch.csv" type="csv" path="{scenario}/../TestData/TC3_YOP_LR_ExtSearch.csv"/>
+    <resource name="TC4_YOP_LR_ImgLotNo_Search.csv" type="csv" path="{scenario}/../TestData/TC4_YOP_LR_ImgLotNo_Search.csv"/>
+    <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
+    <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
+    <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+  </resources>
+  <testnodes>
+    <cloud name="YardOps" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.1.39"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.53"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="TC1_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC1_YOP_LR_YardNoSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC2_TC7_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC2_TC7_YOP_LR_CFR_AllYardsSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC3_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC3_YOP_LR_ExtSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC4_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC4_YOP_LR_ImgLotNo_Search.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC5_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC5_YOP_LR_LotNo_LotNotes.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC6_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC6_YOP_CFR_YardNoSolr.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC8_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="global">
+      <opt name="trustAllSSLCertificates" value="false"/>
+    </options>
+    <options type="apc">
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="FixedSleepTime" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="ThinkTime" value="random"/>
+      <opt name="FixedThinkTime" value="0"/>
+      <opt name="StandardDeviation" value="0"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="FixedIntervalTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="true"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+    </options>
+    <options type="commandline">
+      <opt name="async" value="false"/>
+    </options>
+    <options type="sahi">
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+      <opt name="debugModeSahi" value="false"/>
+      <opt name="domComplete" value="true"/>
+    </options>
+    <options type="har">
+      <opt name="printDebugInfo" value="false"/>
+      <opt name="doNotStopOnFailure" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="rc" value="true"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="serverport" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="YardOpsPortal_DryRun_01">
+      <round time="10" name="10 Minutes"/>
+    </controller>
+    <testcase name="TC1_LR_YardSolr">
+      <test>
+        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC1_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC2_LR_AllYardsSolr">
+      <test>
+        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC3_LR_ExtSearchSproc">
+      <test>
+        <run name="YardOps_TC3_LR_ExtSearchSproc" langtype="ds" resource="YardOps_TC3_LotReview_ExtSearchSproc.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC3_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC4_LR_ImgLotNo">
+      <test>
+        <run name="YardOps_TC4_LR_ImgLotNo" langtype="ds" resource="YardOps_TC4_LotReview_ImgLotNo.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC4_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC5_LR_LotNotes">
+      <test>
+        <run name="YardOps_TC5_LR_LotNotes" langtype="ds" resource="YardOps_TC5_LotReview_LotNotes.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC5_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC6_CFR_YardSolr">
+      <test>
+        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC6_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC7_CFR_AllYardsSolr">
+      <test>
+        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC8_CFR_LotNotes">
+      <test>
+        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC8_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest" subtype="performance">
+    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
+      <testcase name="TC1_LR_YardSolr" users="5"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="5"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="5"/>
+      <testcase name="TC4_LR_ImgLotNo" users="5"/>
+      <testcase name="TC5_LR_LotNotes" users="5"/>
+      <testcase name="TC6_CFR_YardSolr" users="5"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="5"/>
+      <testcase name="TC8_CFR_LotNotes" users="5"/>
+    </iteration>
+  </execution>
+  <logs/>
+  <integrations xmlns="www.pushtotest.com/tm5"/>
+  <notifications/>
+</testscenario>
