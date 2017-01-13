@@ -362,8 +362,9 @@
 
 <step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
-		<accessor type="click" value="span(34)" selected="true"/>
+		<accessor type="click" value="span(34)" selected="false"/>
 		<accessor type="italic(&quot;fa fa-arrow-right&quot;)" value="italic(&quot;fa fa-arrow-right&quot;)" selected="false"/>
+		<accessor type="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" value="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="true"/>
