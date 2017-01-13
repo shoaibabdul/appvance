@@ -113,8 +113,8 @@
   <templates>
     <controller name="YOP_DebugTest_01">
       <round name="Executions per User">
-        <testcase name="TC6_CFR_YardSolr" executions="5"/>
-        <testcase name="TC8_CFR_LotNotes" executions="5"/>
+        <testcase name="TC6_CFR_YardSolr" executions="1"/>
+        <testcase name="TC8_CFR_LotNotes" executions="1"/>
       </round>
     </controller>
     <testcase name="TC6_CFR_YardSolr">
