@@ -149,7 +149,16 @@
   </options>
   <templates>
     <controller name="YardOpsPortal_DryRun_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" name="Executions per User">
+        <testcase name="TC1_LR_YardSolr" executions="5"/>
+        <testcase name="TC2_LR_AllYardsSolr" executions="5"/>
+        <testcase name="TC3_LR_ExtSearchSproc" executions="5"/>
+        <testcase name="TC4_LR_ImgLotNo" executions="5"/>
+        <testcase name="TC5_LR_LotNotes" executions="5"/>
+        <testcase name="TC6_CFR_YardSolr" executions="5"/>
+        <testcase name="TC7_CFR_AllYardsSolr" executions="5"/>
+        <testcase name="TC8_CFR_LotNotes" executions="5"/>
+      </round>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
@@ -212,15 +221,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
-      <testcase name="TC1_LR_YardSolr" users="5"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="5"/>
-      <testcase name="TC3_LR_ExtSearchSproc" users="5"/>
-      <testcase name="TC4_LR_ImgLotNo" users="5"/>
-      <testcase name="TC5_LR_LotNotes" users="5"/>
-      <testcase name="TC6_CFR_YardSolr" users="5"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="5"/>
-      <testcase name="TC8_CFR_LotNotes" users="5"/>
+    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="exacttestcaseexecutions">
+      <testcase name="TC1_LR_YardSolr" users="1"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="1"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
+      <testcase name="TC4_LR_ImgLotNo" users="1"/>
+      <testcase name="TC5_LR_LotNotes" users="1"/>
+      <testcase name="TC6_CFR_YardSolr" users="1"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="1"/>
+      <testcase name="TC8_CFR_LotNotes" users="1"/>
     </iteration>
   </execution>
   <logs/>
