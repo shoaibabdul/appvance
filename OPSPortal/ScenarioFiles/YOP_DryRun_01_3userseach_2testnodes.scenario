@@ -212,14 +212,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
-      <testcase name="TC1_LR_YardSolr" users="3"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="3"/>
-      <testcase name="TC3_LR_ExtSearchSproc" users="3"/>
-      <testcase name="TC4_LR_ImgLotNo" users="3"/>
-      <testcase name="TC5_LR_LotNotes" users="3"/>
-      <testcase name="TC6_CFR_YardSolr" users="3"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="3"/>
-      <testcase name="TC8_CFR_LotNotes" users="3"/>
+      <testcase name="TC1_LR_YardSolr" users="5"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="5"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="5"/>
+      <testcase name="TC4_LR_ImgLotNo" users="5"/>
+      <testcase name="TC5_LR_LotNotes" users="5"/>
+      <testcase name="TC6_CFR_YardSolr" users="5"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="5"/>
+      <testcase name="TC8_CFR_LotNotes" users="5"/>
     </iteration>
   </execution>
   <logs/>
