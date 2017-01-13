@@ -336,7 +336,8 @@
 <step action="setValue" value="&quot;Y - Yes&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
-		<accessor type="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" value="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" selected="true"/>
+		<accessor type="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" value="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" selected="false"/>
+		<accessor type="textbox(21)" value="textbox(21)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="false"/>
