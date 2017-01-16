@@ -146,16 +146,7 @@
   </options>
   <templates>
     <controller name="YardOpsPortal_DryRun_01">
-      <round time="10" name="Testcase Executions">
-        <testcase name="TC1_LR_YardSolr" totalexecutions="3"/>
-        <testcase name="TC2_LR_AllYardsSolr" totalexecutions="3"/>
-        <testcase name="TC3_LR_ExtSearchSproc" totalexecutions="3"/>
-        <testcase name="TC4_LR_ImgLotNo" totalexecutions="3"/>
-        <testcase name="TC5_LR_LotNotes" totalexecutions="3"/>
-        <testcase name="TC6_CFR_YardSolr" totalexecutions="3"/>
-        <testcase name="TC7_CFR_AllYardsSolr" totalexecutions="3"/>
-        <testcase name="TC8_CFR_LotNotes" totalexecutions="3"/>
-      </round>
+      <round time="5" name="5 Minutes"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
@@ -218,7 +209,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="testcaseexecutions">
+    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
       <testcase name="TC1_LR_YardSolr" users="3"/>
       <testcase name="TC2_LR_AllYardsSolr" users="3"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="3"/>
