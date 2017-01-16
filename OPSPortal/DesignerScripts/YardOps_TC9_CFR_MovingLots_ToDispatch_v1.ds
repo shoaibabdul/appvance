@@ -336,11 +336,10 @@
 
 
 
-<step action="setValue" value="&quot;Y - Yes&quot;" type="web" desc="Sel Yes - Override" isThinkTime='false' isCommented='false' sequence="27">
+<step action="setValue" value="&quot;LOADTEST123&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="27">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
-		<accessor type="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" value="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" selected="false"/>
-		<accessor type="textbox(21)" value="textbox(21)" selected="true"/>
+		<accessor type="textbox(&quot;miscellaneousChargesDescription&quot;)" value="textbox(&quot;miscellaneousChargesDescription&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="false"/>
@@ -363,14 +362,17 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Save &amp; Move Button" isThinkTime='false' isCommented='false' sequence="29">
+<step action="setValue" value="&quot;Y - Yes&quot;" type="web" desc="Sel Yes - Override" isThinkTime='false' isCommented='false' sequence="29">
 	<dialect type="sahi">
-		<accessor type="click" value="span(34)" selected="false"/>
-		<accessor type="italic(&quot;fa fa-arrow-right&quot;)" value="italic(&quot;fa fa-arrow-right&quot;)" selected="false"/>
-		<accessor type="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" value="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" selected="true"/>
+		<accessor type='' value='' selected="false"/>
+		<accessor type="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" value="textbox(&quot;undefined-undefined-OverrideSellerLimit-28081&quot;)" selected="false"/>
+		<accessor type="textbox(21)" value="textbox(21)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="true"/>
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
 	</dialect>
 </step>
 
@@ -387,15 +389,14 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="31">
+<step action="click" value='' type="web" desc="Clk Save &amp; Move Button" isThinkTime='false' isCommented='false' sequence="31">
 	<dialect type="sahi">
-		<accessor type="click" value="image(&quot;logoNew.png&quot;)" selected="true"/>
-		<accessor type="click" value="image(0)" selected="false"/>
+		<accessor type="click" value="span(34)" selected="false"/>
+		<accessor type="italic(&quot;fa fa-arrow-right&quot;)" value="italic(&quot;fa fa-arrow-right&quot;)" selected="false"/>
+		<accessor type="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" value="button(&quot;SAVE &amp; MOVE LOT TO DISPATCH&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[1]/a/img&quot;" selected="false"/>
-		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button[2]/div/span&quot;" selected="true"/>
 	</dialect>
 </step>
 
@@ -412,14 +413,15 @@
 
 
 
-<step action="click" value='' type="web" desc="Sel Dropdown" isThinkTime='false' isCommented='false' sequence="33">
+<step action="click" value='' type="web" desc="Clk Copart Home" isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;O&quot;)" selected="true"/>
-		<accessor type="click" value="span(7)" selected="false"/>
+		<accessor type="click" value="image(&quot;logoNew.png&quot;)" selected="true"/>
+		<accessor type="click" value="image(0)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
-		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div/div/span&quot;" selected="true"/>
-		<accessor attribute='' value="&quot;//div[3]/button/div/div/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//img[@alt='Copart']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[1]/a/img&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//img&quot;" selected="false"/>
 	</dialect>
 </step>
 
@@ -436,7 +438,31 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="35">
+<step action="click" value='' type="web" desc="Sel Dropdown" isThinkTime='false' isCommented='false' sequence="35">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;O&quot;)" selected="true"/>
+		<accessor type="click" value="span(7)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='app']/div/div/header/div/section[3]/div[2]/section/div[3]/button/div/div/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[3]/button/div/div/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="36">
+	<dialect type="sahi">
+		<accessor type="wait" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented="true" sequence="37">
 	<dialect type="sahi">
 		<accessor type="click" value="div(21)" selected="true"/>
 	</dialect>
@@ -448,7 +474,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="36">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented="true" sequence="38">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
@@ -459,7 +485,7 @@
 
 
 
-<step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="37">
+<step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="39">
 	<dialect type="sahi">
 		<accessor type="click" value="div(&quot;Logout&quot;)" selected="true"/>
 		<accessor type="click" value="div(59)" selected="false"/>
@@ -471,7 +497,7 @@
 
 
 
-<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="38">
+<step action="wait" value="1000" type="web" desc='' isThinkTime="true" isCommented='false' sequence="40">
 	<dialect type="sahi">
 		<accessor type="wait" value='' selected="true"/>
 	</dialect>
