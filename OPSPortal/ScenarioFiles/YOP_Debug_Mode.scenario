@@ -46,8 +46,7 @@
     <resource name="YardOps_TC8_CFR_LotNotes_No_Wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes_No_Wait.ds"/>
   </resources>
   <testnodes>
-    <node name="Server1" location="http://ec2-52-206-119-243.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="Server2" location="http://ec2-54-90-224-137.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
