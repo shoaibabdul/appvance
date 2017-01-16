@@ -145,7 +145,7 @@
     </options>
   </options>
   <templates>
-    <controller name="Iteration1">
+    <controller name="YardOpsPortal_DryRun_01_Debug">
       <round name="Executions per User">
         <testcase name="TC1_LR_YardSolr" executions="1"/>
         <testcase name="TC2_LR_AllYardsSolr" executions="1"/>
@@ -218,7 +218,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="Iteration1" controller="Iteration1" completiontype="exacttestcaseexecutions">
+    <iteration name="YardOpsPortal_DryRun_01_Debug" controller="YardOpsPortal_DryRun_01_Debug" completiontype="exacttestcaseexecutions">
       <testcase name="TC1_LR_YardSolr" users="1"/>
       <testcase name="TC2_LR_AllYardsSolr" users="1"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
