@@ -215,7 +215,9 @@
     </testcase>
     <testcase name="TC9_CFR_AwLotsToDispatch">
       <test>
-        <run name="YardOps_TC9_CFR_AwLots_ToDispatch" langtype="ds" resource="YardOps_TC9_CFR_AwaitingLots_ToDispatch.ds" testclass="Sahi" method="chrome"/>
+        <run name="YardOps_TC9_CFR_AwLots_ToDispatch" langtype="ds" resource="YardOps_TC9_CFR_AwaitingLots_ToDispatch.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC9_YOP_TD"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
