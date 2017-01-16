@@ -46,7 +46,7 @@
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
   </resources>
   <testnodes>
-    <node name="MC114" location="http://ec2-52-207-87-114.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <cloud name="Ops" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -109,8 +109,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="2000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -148,7 +148,16 @@
   </options>
   <templates>
     <controller name="YardOpsPortal_DryRun_01">
-      <round time="5" name="5 Minutes"/>
+      <round time="5" name="Testcase Executions">
+        <testcase name="TC1_LR_YardSolr" totalexecutions="1"/>
+        <testcase name="TC2_LR_AllYardsSolr" totalexecutions="1"/>
+        <testcase name="TC3_LR_ExtSearchSproc" totalexecutions="1"/>
+        <testcase name="TC4_LR_ImgLotNo" totalexecutions="1"/>
+        <testcase name="TC5_LR_LotNotes" totalexecutions="1"/>
+        <testcase name="TC6_CFR_YardSolr" totalexecutions="1"/>
+        <testcase name="TC7_CFR_AllYardsSolr" totalexecutions="1"/>
+        <testcase name="TC8_CFR_LotNotes" totalexecutions="1"/>
+      </round>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
@@ -211,15 +220,15 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
-      <testcase name="TC1_LR_YardSolr" users="2"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="2"/>
-      <testcase name="TC3_LR_ExtSearchSproc" users="2"/>
-      <testcase name="TC4_LR_ImgLotNo" users="2"/>
-      <testcase name="TC5_LR_LotNotes" users="2"/>
-      <testcase name="TC6_CFR_YardSolr" users="2"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="2"/>
-      <testcase name="TC8_CFR_LotNotes" users="2"/>
+    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="testcaseexecutions">
+      <testcase name="TC1_LR_YardSolr" users="1"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="1"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
+      <testcase name="TC4_LR_ImgLotNo" users="1"/>
+      <testcase name="TC5_LR_LotNotes" users="1"/>
+      <testcase name="TC6_CFR_YardSolr" users="1"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="1"/>
+      <testcase name="TC8_CFR_LotNotes" users="1"/>
     </iteration>
   </execution>
   <logs/>
