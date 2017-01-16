@@ -36,14 +36,14 @@
     <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
-    <resource name="YardOps_TC1_LotReview_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr.ds"/>
-    <resource name="YardOps_TC2_LotReview_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC2_LotReview_AllYardsSolr.ds"/>
-    <resource name="YardOps_TC3_LotReview_ExtSearchSproc.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC3_LotReview_ExtSearchSproc.ds"/>
-    <resource name="YardOps_TC4_LotReview_ImgLotNo.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC4_LotReview_ImgLotNo.ds"/>
-    <resource name="YardOps_TC5_LotReview_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC5_LotReview_LotNotes.ds"/>
-    <resource name="YardOps_TC6_CFR_YardSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr.ds"/>
-    <resource name="YardOps_TC7_CFR_AllYardsSolr.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr.ds"/>
-    <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
+    <resource name="YardOps_TC1_LotReview_YardSolr_no_wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC1_LotReview_YardSolr_no_wait.ds"/>
+    <resource name="YardOps_TC2_LotReview_AllYardsSolr_no_wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC2_LotReview_AllYardsSolr_no_wait.ds"/>
+    <resource name="YardOps_TC3_LotReview_ExtSearchSproc_no_wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC3_LotReview_ExtSearchSproc_no_wait.ds"/>
+    <resource name="YardOps_TC4_LotReview_ImgLotNo_No_wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC4_LotReview_ImgLotNo_No_wait.ds"/>
+    <resource name="YardOps_TC5_LotReview_LotNotes_No_Wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC5_LotReview_LotNotes_No_Wait.ds"/>
+    <resource name="YardOps_TC6_CFR_YardSolr_No_Wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC6_CFR_YardSolr_No_Wait.ds"/>
+    <resource name="YardOps_TC7_CFR_AllYardsSolr_No_Wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC7_CFR_AllYardsSolr_No_Wait.ds"/>
+    <resource name="YardOps_TC8_CFR_LotNotes_No_Wait.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes_No_Wait.ds"/>
   </resources>
   <testnodes>
     <node name="Server1" location="http://ec2-52-206-119-243.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
@@ -149,30 +149,58 @@
     <controller name="YardOpsPortal_DryRun_01_Debug">
       <round time="10" name="10 Minutes"/>
     </controller>
+    <testcase name="TC1_LR_YardSolr">
+      <test>
+        <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr_no_wait.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC1_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC2_LR_AllYardsSolr">
+      <test>
+        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr_no_wait.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
     <testcase name="TC3_LR_ExtSearchSproc">
       <test>
-        <run name="YardOps_TC3_LR_ExtSearchSproc" langtype="ds" resource="YardOps_TC3_LotReview_ExtSearchSproc.ds" testclass="Sahi" method="firefox">
+        <run name="YardOps_TC3_LR_ExtSearchSproc" langtype="ds" resource="YardOps_TC3_LotReview_ExtSearchSproc_no_wait.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC3_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC4_LR_ImgLotNo">
+      <test>
+        <run name="YardOps_TC4_LR_ImgLotNo" langtype="ds" resource="YardOps_TC4_LotReview_ImgLotNo_No_wait.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC4_YOP_TD"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="TC5_LR_LotNotes">
+      <test>
+        <run name="YardOps_TC5_LR_LotNotes" langtype="ds" resource="YardOps_TC5_LotReview_LotNotes_No_Wait.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="TC5_YOP_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC6_CFR_YardSolr">
       <test>
-        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr.ds" testclass="Sahi" method="chrome">
+        <run name="YardOps_TC6_CFR_YardSolr" langtype="ds" resource="YardOps_TC6_CFR_YardSolr_No_Wait.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC6_YOP_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC7_CFR_AllYardsSolr">
       <test>
-        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr.ds" testclass="Sahi" method="chrome">
+        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr_No_Wait.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
         </run>
       </test>
     </testcase>
     <testcase name="TC8_CFR_LotNotes">
       <test>
-        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes.ds" testclass="Sahi" method="chrome">
+        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes_No_Wait.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC8_YOP_TD"/>
         </run>
       </test>
@@ -183,7 +211,11 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YardOpsPortal_DryRun_01_Debug" controller="YardOpsPortal_DryRun_01_Debug" completiontype="duration">
+      <testcase name="TC1_LR_YardSolr" users="1"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="1"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="1"/>
+      <testcase name="TC4_LR_ImgLotNo" users="1"/>
+      <testcase name="TC5_LR_LotNotes" users="1"/>
       <testcase name="TC6_CFR_YardSolr" users="1"/>
       <testcase name="TC7_CFR_AllYardsSolr" users="1"/>
       <testcase name="TC8_CFR_LotNotes" users="1"/>
