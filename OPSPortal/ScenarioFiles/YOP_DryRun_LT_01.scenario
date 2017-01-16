@@ -44,6 +44,8 @@
     <resource name="TC5_YOP_LR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC5_YOP_LR_LotNo_LotNotes.csv"/>
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+    <resource name="YardOps_TC9_CFR_AwaitingLots_ToDispatch.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC9_CFR_AwaitingLots_ToDispatch.ds"/>
+    <resource name="TC9_YOP_CFR_Awaiting_LotNos.csv" type="csv" path="{scenario}/../TestData/TC9_YOP_CFR_Awaiting_LotNos.csv"/>
   </resources>
   <testnodes>
     <cloud name="YardOps" type="EC2" instantiate="none" terminate="none" reboot="after" amount="1" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
@@ -90,6 +92,11 @@
     <dpl name="TC8_YOP_TD" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="TC8_YOP_CFR_LotNo_LotNotes.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="TC9_YOP_TD" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="TC9_YOP_CFR_Awaiting_LotNos.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -147,7 +154,7 @@
     </options>
   </options>
   <templates>
-    <controller name="YardOpsPortal_DryRun_01">
+    <controller name="YOP_DryRun_LT_01">
       <round time="5" name="5 Minutes"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
@@ -206,12 +213,17 @@
         </run>
       </test>
     </testcase>
+    <testcase name="TC9_CFR_AwLotsToDispatch">
+      <test>
+        <run name="YardOps_TC9_CFR_AwLots_ToDispatch" langtype="ds" resource="YardOps_TC9_CFR_AwaitingLots_ToDispatch.ds" testclass="Sahi" method="chrome"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
+    <iteration name="YOP_DryRun_LT_01" controller="YOP_DryRun_LT_01" completiontype="duration">
       <testcase name="TC1_LR_YardSolr" users="3"/>
       <testcase name="TC2_LR_AllYardsSolr" users="3"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="3"/>
@@ -220,6 +232,7 @@
       <testcase name="TC6_CFR_YardSolr" users="3"/>
       <testcase name="TC7_CFR_AllYardsSolr" users="3"/>
       <testcase name="TC8_CFR_LotNotes" users="3"/>
+      <testcase name="TC9_CFR_AwLotsToDispatch" users="1"/>
     </iteration>
   </execution>
   <logs/>
