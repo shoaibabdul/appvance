@@ -234,7 +234,7 @@
       <testcase name="TC6_CFR_YardSolr" users="3"/>
       <testcase name="TC7_CFR_AllYardsSolr" users="3"/>
       <testcase name="TC8_CFR_LotNotes" users="3"/>
-      <testcase name="TC9_CFR_AwLotsToDispatch" users="1"/>
+      <testcase name="TC9_CFR_AwLotsToDispatch" users="3"/>
     </iteration>
   </execution>
   <logs/>
