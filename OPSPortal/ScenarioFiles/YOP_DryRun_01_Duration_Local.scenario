@@ -212,12 +212,12 @@
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
       <testcase name="TC1_LR_YardSolr" users="4"/>
       <testcase name="TC2_LR_AllYardsSolr" users="4"/>
-      <testcase name="TC3_LR_ExtSearchSproc" users="4"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="6"/>
       <testcase name="TC4_LR_ImgLotNo" users="4"/>
       <testcase name="TC5_LR_LotNotes" users="4"/>
-      <testcase name="TC6_CFR_YardSolr" users="4"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="4"/>
-      <testcase name="TC8_CFR_LotNotes" users="4"/>
+      <testcase name="TC6_CFR_YardSolr" users="7"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="8"/>
+      <testcase name="TC8_CFR_LotNotes" users="9"/>
     </iteration>
   </execution>
   <logs/>
