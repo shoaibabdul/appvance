@@ -96,8 +96,13 @@
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
+      <opt name="ntlmEnabled" value="false"/>
+      <opt name="EnableHttpTimingDetailsLogging" value="false"/>
+      <opt name="ConsoleAsProxy" value="false"/>
     </options>
     <options type="apc">
+      <opt name="SummaryStepIsEmpty" value="false"/>
+      <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="false"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
@@ -108,8 +113,8 @@
       <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="0"/>
-      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -120,6 +125,8 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
@@ -131,13 +138,18 @@
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugModeSahi" value="false"/>
       <opt name="domComplete" value="true"/>
+      <opt name="replaceNextStepReady" value="true"/>
     </options>
     <options type="har">
+      <opt name="connectionResetMarksTestcaseFailure" value="false"/>
+      <opt name="markRequestAsSteps" value="false"/>
+      <opt name="useHarResponses" value="false"/>
       <opt name="printDebugInfo" value="false"/>
       <opt name="doNotStopOnFailure" value="false"/>
     </options>
     <options type="selenium">
       <opt name="rc" value="true"/>
+      <opt name="synchronized" value="false"/>
     </options>
     <options type="seleniumrc">
       <opt name="listenport" value="6543"/>
@@ -210,14 +222,14 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
-      <testcase name="TC1_LR_YardSolr" users="10"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="10"/>
-      <testcase name="TC3_LR_ExtSearchSproc" users="10"/>
-      <testcase name="TC4_LR_ImgLotNo" users="10"/>
-      <testcase name="TC5_LR_LotNotes" users="10"/>
-      <testcase name="TC6_CFR_YardSolr" users="10"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="10"/>
-      <testcase name="TC8_CFR_LotNotes" users="10"/>
+      <testcase name="TC1_LR_YardSolr" users="3"/>
+      <testcase name="TC2_LR_AllYardsSolr" users="3"/>
+      <testcase name="TC3_LR_ExtSearchSproc" users="3"/>
+      <testcase name="TC4_LR_ImgLotNo" users="3"/>
+      <testcase name="TC5_LR_LotNotes" users="3"/>
+      <testcase name="TC6_CFR_YardSolr" users="3"/>
+      <testcase name="TC7_CFR_AllYardsSolr" users="3"/>
+      <testcase name="TC8_CFR_LotNotes" users="3"/>
     </iteration>
   </execution>
   <logs/>
