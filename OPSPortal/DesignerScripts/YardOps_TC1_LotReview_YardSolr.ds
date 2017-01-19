@@ -31,8 +31,8 @@
 <step action="click" value='' type="web" desc="Close pop-up" isThinkTime='false' isCommented='false' sequence="2">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
-		<accessor type="span(&quot;fa fa-times-circle&quot;)" value="span(&quot;fa fa-times-circle&quot;)" selected="false"/>
-		<accessor type="span(&quot;Cancel&quot;)" value="span(&quot;Cancel&quot;)" selected="true"/>
+		<accessor type="span(&quot;fa fa-times-circle&quot;)" value="span(&quot;fa fa-times-circle&quot;)" selected="true"/>
+		<accessor type="span(&quot;Cancel&quot;)" value="span(&quot;Cancel&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value='' selected="false"/>
