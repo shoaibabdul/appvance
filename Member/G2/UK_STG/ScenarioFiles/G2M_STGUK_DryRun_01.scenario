@@ -39,6 +39,13 @@
     <resource name="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC8_Mem_LotNoSearch.ds"/>
     <resource name="G2M_UK_STG_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC9_Mem_SalesList.ds"/>
     <resource name="G2M_UK_STG_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC10_Mem_HeaderSearch.ds"/>
+    <resource name="G2M_UK_STG_TC11_Pub_VehF_FreeSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC11_Pub_VehF_FreeSearch.ds"/>
+    <resource name="G2M_UK_STG_TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC12_Pub_LotLookUp_Search.ds"/>
+    <resource name="G2M_UK_STG_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC13_Mem_WatchList.ds"/>
+    <resource name="G2M_UK_STG_TC14_Mem_PrefEditSave.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC14_Mem_PrefEditSave.ds"/>
+    <resource name="G2M_UK_STG_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC15_Mem_CompareLots.ds"/>
+    <resource name="G2M_UK_STG_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC16_Mem_LotsWonLost.ds"/>
+    <resource name="G2M_UK_STG_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC17_Mem_SavedSearchs.ds"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
@@ -169,6 +176,41 @@
         <run name="G2M_UK_STG_TC10_Mem_HeaderSearch" langtype="ds" resource="G2M_UK_STG_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
+    <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch">
+      <test>
+        <run name="G2M_UK_STG_TC11_Pub_VehF_FreeSearch" langtype="ds" resource="G2M_UK_STG_TC11_Pub_VehF_FreeSearch.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC12_Pub_LotLookUp_Search">
+      <test>
+        <run name="G2M_UK_STG_TC12_Pub_LotLookUp_Search" langtype="ds" resource="G2M_UK_STG_TC12_Pub_LotLookUp_Search.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC13_Mem_WatchList">
+      <test>
+        <run name="G2M_UK_STG_TC13_Mem_WatchList" langtype="ds" resource="G2M_UK_STG_TC13_Mem_WatchList.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC14_Mem_PrefEditSave">
+      <test>
+        <run name="G2M_UK_STG_TC14_Mem_PrefEditSave" langtype="ds" resource="G2M_UK_STG_TC14_Mem_PrefEditSave.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC15_Mem_CompareLots">
+      <test>
+        <run name="G2M_UK_STG_TC15_Mem_CompareLots" langtype="ds" resource="G2M_UK_STG_TC15_Mem_CompareLots.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC16_Mem_LotsWonLost">
+      <test>
+        <run name="G2M_UK_STG_TC16_Mem_LotsWonLost" langtype="ds" resource="G2M_UK_STG_TC16_Mem_LotsWonLost.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_UKSTG_TC17_Mem_SavedSearchs">
+      <test>
+        <run name="G2M_UK_STG_TC17_Mem_SavedSearchs" langtype="ds" resource="G2M_UK_STG_TC17_Mem_SavedSearchs.ds" testclass="Sahi" method="firefox"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
@@ -185,6 +227,13 @@
       <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch" users="1"/>
       <testcase name="G2M_UKSTG_TC9_Mem_SalesList" users="1"/>
       <testcase name="G2M_UKSTG_TC10_Mem_HS" users="1"/>
+      <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch" users="1"/>
+      <testcase name="G2M_UKSTG_TC12_Pub_LotLookUp_Search" users="1"/>
+      <testcase name="G2M_UKSTG_TC13_Mem_WatchList" users="1"/>
+      <testcase name="G2M_UKSTG_TC14_Mem_PrefEditSave" users="1"/>
+      <testcase name="G2M_UKSTG_TC15_Mem_CompareLots" users="1"/>
+      <testcase name="G2M_UKSTG_TC16_Mem_LotsWonLost" users="1"/>
+      <testcase name="G2M_UKSTG_TC17_Mem_SavedSearchs" users="1"/>
     </iteration>
   </execution>
   <logs/>
