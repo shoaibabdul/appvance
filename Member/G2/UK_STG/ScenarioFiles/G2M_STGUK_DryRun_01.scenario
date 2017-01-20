@@ -48,7 +48,7 @@
     <resource name="G2M_UK_STG_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_UK_STG_TC17_Mem_SavedSearchs.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="G2M_UKSTG" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
