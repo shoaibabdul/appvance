@@ -42,8 +42,8 @@
     <resource name="YardOps_TC8_CFR_LotNotes.ds" type="ds" path="{scenario}/../DesignerScripts/YardOps_TC8_CFR_LotNotes.ds"/>
   </resources>
   <testnodes>
-    <node name="Server1" location="http://ec2-52-23-165-28.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
-    <node name="Server2" location="http://ec2-107-20-130-69.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="Server1" location="http://ec2-52-23-165-28.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Server2" location="http://ec2-107-20-130-69.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
