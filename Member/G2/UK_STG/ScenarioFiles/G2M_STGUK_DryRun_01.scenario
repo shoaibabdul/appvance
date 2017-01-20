@@ -156,12 +156,12 @@
     </testcase>
     <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch">
       <test>
-        <run name="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" langtype="ds" resource="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC8_Mem_LotNoSearch" langtype="ds" resource="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC9_Mem_SalesList">
       <test>
-        <run name="G2M_UK_STG_TC9_Mem_SalesList.ds" langtype="ds" resource="G2M_UK_STG_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC9_Mem_SalesList" langtype="ds" resource="G2M_UK_STG_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox"/>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC10_Mem_HS">
