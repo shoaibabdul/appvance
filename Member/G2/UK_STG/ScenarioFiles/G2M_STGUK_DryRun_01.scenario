@@ -176,12 +176,16 @@
     </testcase>
     <testcase name="G2M_UKSTG_TC2_Pub_VF">
       <test>
-        <run name="G2M_UK_STG_TC2_Pub_VehicleFinder" langtype="ds" resource="G2M_UK_STG_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC2_Pub_VehicleFinder" langtype="ds" resource="G2M_UK_STG_TC2_Pub_VehicleFinder.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC2Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC3_Pub_LotNoSearch">
       <test>
-        <run name="G2M_UK_STG_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_STG_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_UK_STG_TC3_Pub_LotNoSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC3Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC4_Pub_SalesList">
@@ -196,27 +200,37 @@
     </testcase>
     <testcase name="G2M_UKSTG_TC6_Mem_HPNav">
       <test>
-        <run name="G2M_UK_STG_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_STG_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC6_Mem_HPNav" langtype="ds" resource="G2M_UK_STG_TC6_Mem_HPNav.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC6-17Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC7_Mem_VF">
       <test>
-        <run name="G2M_UK_STG_TC7_Mem_VehicleFinder" langtype="ds" resource="G2M_UK_STG_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC7_Mem_VehicleFinder" langtype="ds" resource="G2M_UK_STG_TC7_Mem_VehicleFinder.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC7Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch">
       <test>
-        <run name="G2M_UK_STG_TC8_Mem_LotNoSearch" langtype="ds" resource="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC8_Mem_LotNoSearch" langtype="ds" resource="G2M_UK_STG_TC8_Mem_LotNoSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC8Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC9_Mem_SalesList">
       <test>
-        <run name="G2M_UK_STG_TC9_Mem_SalesList" langtype="ds" resource="G2M_UK_STG_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC9_Mem_SalesList" langtype="ds" resource="G2M_UK_STG_TC9_Mem_SalesList.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC6-17Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC10_Mem_HS">
       <test>
-        <run name="G2M_UK_STG_TC10_Mem_HeaderSearch" langtype="ds" resource="G2M_UK_STG_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox"/>
+        <run name="G2M_UK_STG_TC10_Mem_HeaderSearch" langtype="ds" resource="G2M_UK_STG_TC10_Mem_HeaderSearch.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_UKSTG_TC6-17Data"/>
+        </run>
       </test>
     </testcase>
     <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch">
