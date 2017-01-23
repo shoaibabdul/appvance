@@ -111,7 +111,7 @@
       <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
-      <opt name="ReportThinkTime" value="true"/>
+      <opt name="ReportThinkTime" value="false"/>
       <opt name="AddThinkTimeToStep" value="false"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
