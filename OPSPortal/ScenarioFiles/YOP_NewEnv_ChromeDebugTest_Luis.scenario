@@ -42,7 +42,7 @@
     <resource name="TC8_YOP_CFR_LotNo_LotNotes.csv" type="csv" path="{scenario}/../TestData/TC8_YOP_CFR_LotNo_LotNotes.csv"/>
   </resources>
   <testnodes>
-    <cloud name="YardOps" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
+    <cloud name="YardOps" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -144,26 +144,15 @@
   </options>
   <templates>
     <controller name="YardOpsPortal_DryRun_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" name="Executions per User">
+        <testcase name="TC1_LR_YardSolr" executions="1"/>
+        <testcase name="TC6_CFR_YardSolr" executions="1"/>
+      </round>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
         <run name="YardOps_TC1_LR_YardSolr" langtype="ds" resource="YardOps_TC1_LotReview_YardSolr.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="TC1_YOP_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC2_LR_AllYardsSolr">
-      <test>
-        <run name="YardOps_TC2_LR_AllYardsSolr" langtype="ds" resource="YardOps_TC2_LotReview_AllYardsSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC5_LR_LotNotes">
-      <test>
-        <run name="YardOps_TC5_LR_LotNotes" langtype="ds" resource="YardOps_TC5_LotReview_LotNotes.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC5_YOP_TD"/>
         </run>
       </test>
     </testcase>
@@ -174,32 +163,14 @@
         </run>
       </test>
     </testcase>
-    <testcase name="TC7_CFR_AllYardsSolr">
-      <test>
-        <run name="YardOps_TC7_CFR_AllYardsSolr" langtype="ds" resource="YardOps_TC7_CFR_AllYardsSolr.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC2_TC7_YOP_TD"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC8_CFR_LotNotes">
-      <test>
-        <run name="YardOps_TC8_CFR_LotNotes" langtype="ds" resource="YardOps_TC8_CFR_LotNotes.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="TC8_YOP_TD"/>
-        </run>
-      </test>
-    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="duration">
+    <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="exacttestcaseexecutions">
       <testcase name="TC1_LR_YardSolr" users="2"/>
-      <testcase name="TC2_LR_AllYardsSolr" users="2"/>
-      <testcase name="TC5_LR_LotNotes" users="2"/>
       <testcase name="TC6_CFR_YardSolr" users="2"/>
-      <testcase name="TC7_CFR_AllYardsSolr" users="2"/>
-      <testcase name="TC8_CFR_LotNotes" users="2"/>
     </iteration>
   </execution>
   <logs/>
