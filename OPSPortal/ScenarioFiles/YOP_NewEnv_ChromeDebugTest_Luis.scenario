@@ -147,8 +147,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="exacttestcaseexecutions">
-      <testcase name="TC1_LR_YardSolr" users="2"/>
-      <testcase name="TC6_CFR_YardSolr" users="2"/>
+      <testcase name="TC1_LR_YardSolr" users="1"/>
+      <testcase name="TC6_CFR_YardSolr" users="1"/>
     </iteration>
   </execution>
   <logs/>
