@@ -167,7 +167,7 @@
   </options>
   <templates>
     <controller name="G2M_STGUK_LT_DryRun1">
-      <round time="10" name="Executions per User">
+      <round name="Executions per User">
         <testcase name="G2M_UKSTG_TC1_Pub_HPNav" executions="1"/>
         <testcase name="G2M_UKSTG_TC2_Pub_VF" executions="1"/>
         <testcase name="G2M_UKSTG_TC3_Pub_LotNoSearch" executions="1"/>
