@@ -123,8 +123,8 @@
   <templates>
     <controller name="YardOpsPortal_DryRun_01">
       <round time="10" name="Executions per User">
-        <testcase name="TC1_LR_YardSolr" executions="1"/>
-        <testcase name="TC6_CFR_YardSolr" executions="1"/>
+        <testcase name="TC1_LR_YardSolr" executions="2"/>
+        <testcase name="TC6_CFR_YardSolr" executions="2"/>
       </round>
     </controller>
     <testcase name="TC1_LR_YardSolr">
@@ -147,8 +147,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="YardOpsPortal_DryRun_01" controller="YardOpsPortal_DryRun_01" completiontype="exacttestcaseexecutions">
-      <testcase name="TC1_LR_YardSolr" users="1"/>
-      <testcase name="TC6_CFR_YardSolr" users="1"/>
+      <testcase name="TC1_LR_YardSolr" users="5"/>
+      <testcase name="TC6_CFR_YardSolr" users="5"/>
     </iteration>
   </execution>
   <logs/>
