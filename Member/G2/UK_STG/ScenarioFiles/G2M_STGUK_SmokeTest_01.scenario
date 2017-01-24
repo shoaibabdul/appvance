@@ -55,7 +55,7 @@
     <resource name="G2M_UKSTG_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_UKSTG_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2M_UKSTG" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
+    <cloud name="G2M_UKSTG" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -167,7 +167,25 @@
   </options>
   <templates>
     <controller name="G2M_STGUK_LT_DryRun1">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" name="Executions per User">
+        <testcase name="G2M_UKSTG_TC1_Pub_HPNav" executions="1"/>
+        <testcase name="G2M_UKSTG_TC2_Pub_VF" executions="1"/>
+        <testcase name="G2M_UKSTG_TC3_Pub_LotNoSearch" executions="1"/>
+        <testcase name="G2M_UKSTG_TC4_Pub_SalesList" executions="1"/>
+        <testcase name="G2M_UKSTG_TC5_Pub_HS" executions="1"/>
+        <testcase name="G2M_UKSTG_TC6_Mem_HPNav" executions="1"/>
+        <testcase name="G2M_UKSTG_TC7_Mem_VF" executions="1"/>
+        <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch" executions="1"/>
+        <testcase name="G2M_UKSTG_TC9_Mem_SalesList" executions="1"/>
+        <testcase name="G2M_UKSTG_TC10_Mem_HS" executions="1"/>
+        <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch" executions="1"/>
+        <testcase name="G2M_UKSTG_TC12_Pub_LotLookUp_Search" executions="1"/>
+        <testcase name="G2M_UKSTG_TC13_Mem_WatchList" executions="1"/>
+        <testcase name="G2M_UKSTG_TC14_Mem_PrefEditSave" executions="1"/>
+        <testcase name="G2M_UKSTG_TC15_Mem_CompareLots" executions="1"/>
+        <testcase name="G2M_UKSTG_TC16_Mem_LotsWonLost" executions="1"/>
+        <testcase name="G2M_UKSTG_TC17_Mem_SavedSearchs" executions="1"/>
+      </round>
     </controller>
     <testcase name="G2M_UKSTG_TC1_Pub_HPNav">
       <test>
@@ -287,24 +305,24 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="G2M_STGUK_LT_DryRun1" controller="G2M_STGUK_LT_DryRun1" completiontype="duration">
-      <testcase name="G2M_UKSTG_TC1_Pub_HPNav" users="3"/>
-      <testcase name="G2M_UKSTG_TC2_Pub_VF" users="3"/>
-      <testcase name="G2M_UKSTG_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_UKSTG_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_UKSTG_TC5_Pub_HS" users="3"/>
-      <testcase name="G2M_UKSTG_TC6_Mem_HPNav" users="3"/>
-      <testcase name="G2M_UKSTG_TC7_Mem_VF" users="3"/>
-      <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch" users="3"/>
-      <testcase name="G2M_UKSTG_TC9_Mem_SalesList" users="3"/>
-      <testcase name="G2M_UKSTG_TC10_Mem_HS" users="3"/>
-      <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch" users="3"/>
-      <testcase name="G2M_UKSTG_TC12_Pub_LotLookUp_Search" users="3"/>
-      <testcase name="G2M_UKSTG_TC13_Mem_WatchList" users="3"/>
-      <testcase name="G2M_UKSTG_TC14_Mem_PrefEditSave" users="3"/>
-      <testcase name="G2M_UKSTG_TC15_Mem_CompareLots" users="3"/>
-      <testcase name="G2M_UKSTG_TC16_Mem_LotsWonLost" users="3"/>
-      <testcase name="G2M_UKSTG_TC17_Mem_SavedSearchs" users="2"/>
+    <iteration name="G2M_STGUK_LT_DryRun1" controller="G2M_STGUK_LT_DryRun1" completiontype="exacttestcaseexecutions">
+      <testcase name="G2M_UKSTG_TC1_Pub_HPNav" users="1"/>
+      <testcase name="G2M_UKSTG_TC2_Pub_VF" users="1"/>
+      <testcase name="G2M_UKSTG_TC3_Pub_LotNoSearch" users="1"/>
+      <testcase name="G2M_UKSTG_TC4_Pub_SalesList" users="1"/>
+      <testcase name="G2M_UKSTG_TC5_Pub_HS" users="1"/>
+      <testcase name="G2M_UKSTG_TC6_Mem_HPNav" users="1"/>
+      <testcase name="G2M_UKSTG_TC7_Mem_VF" users="1"/>
+      <testcase name="G2M_UKSTG_TC8_Mem_LotNoSearch" users="1"/>
+      <testcase name="G2M_UKSTG_TC9_Mem_SalesList" users="1"/>
+      <testcase name="G2M_UKSTG_TC10_Mem_HS" users="1"/>
+      <testcase name="G2M_UKSTG_TC11_Pub_VF_FreeSearch" users="1"/>
+      <testcase name="G2M_UKSTG_TC12_Pub_LotLookUp_Search" users="1"/>
+      <testcase name="G2M_UKSTG_TC13_Mem_WatchList" users="1"/>
+      <testcase name="G2M_UKSTG_TC14_Mem_PrefEditSave" users="1"/>
+      <testcase name="G2M_UKSTG_TC15_Mem_CompareLots" users="1"/>
+      <testcase name="G2M_UKSTG_TC16_Mem_LotsWonLost" users="1"/>
+      <testcase name="G2M_UKSTG_TC17_Mem_SavedSearchs" users="1"/>
     </iteration>
   </execution>
   <logs/>
