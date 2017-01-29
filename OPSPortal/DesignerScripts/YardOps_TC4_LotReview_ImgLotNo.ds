@@ -259,8 +259,9 @@
 
 <step action="click" value='' type="web" desc="Clk Documents" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;DOCUMENTS&quot;)" selected="true"/>
+		<accessor type="click" value="span(&quot;DOCUMENTS&quot;)" selected="false"/>
 		<accessor type="click" value="span(11)" selected="false"/>
+		<accessor type="span(&quot;Documents&quot;)" value="span(&quot;Documents&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div/div[1]/div/section[2]/div[1]/div/section/button/div/span[2]&quot;" selected="true"/>
@@ -283,8 +284,9 @@
 
 <step action="click" value='' type="web" desc="Clk Images" isThinkTime='false' isCommented='false' sequence="22">
 	<dialect type="sahi">
-		<accessor type="click" value="div(&quot;IMAGES&quot;)" selected="true"/>
+		<accessor type="click" value="div(&quot;IMAGES&quot;)" selected="false"/>
 		<accessor type="click" value="div(324)" selected="false"/>
+		<accessor type="div(&quot;Images&quot;)" value="div(&quot;Images&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div/div[1]/div/div/div[1]/div/div[1]/button[1]/div/div&quot;" selected="true"/>
