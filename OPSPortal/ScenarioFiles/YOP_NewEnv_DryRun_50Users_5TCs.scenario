@@ -82,7 +82,7 @@
     <options type="apc">
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
-      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="EnableSavingLogs" value="false"/>
       <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
