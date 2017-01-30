@@ -165,7 +165,7 @@
   </options>
   <templates>
     <controller name="YOP_DryRun_LT_01">
-      <round time="30" name="30 Minutes"/>
+      <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
