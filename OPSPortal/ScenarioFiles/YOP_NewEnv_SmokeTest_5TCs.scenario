@@ -40,7 +40,7 @@
     <resource name="TC6_YOP_CFR_YardNoSolr.csv" type="csv" path="{scenario}/../TestData/TC6_YOP_CFR_YardNoSolr.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost-1" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <cloud name="Cloud-1" type="EC2" instantiate="none" terminate="none" reboot="never" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
