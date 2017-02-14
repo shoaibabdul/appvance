@@ -157,8 +157,8 @@
     </options>
   </options>
   <templates>
-    <controller name="YOP_DryRun_LT_01">
-      <round time="20" name="20 Minutes"/>
+    <controller name="YOP_DryRun_50U">
+      <round time="30" name="30 Minutes"/>
     </controller>
     <testcase name="TC1_LR_YardSolr">
       <test>
@@ -221,7 +221,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="YOP_DryRun_LT_01" controller="YOP_DryRun_LT_01" completiontype="duration">
+    <iteration name="YOP_DryRun_50U" controller="YOP_DryRun_50U" completiontype="duration">
       <testcase name="TC1_LR_YardSolr" users="7"/>
       <testcase name="TC2_LR_AllYardsSolr" users="7"/>
       <testcase name="TC3_LR_ExtSearchSproc" users="6"/>
