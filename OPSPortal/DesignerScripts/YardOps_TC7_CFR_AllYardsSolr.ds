@@ -134,7 +134,8 @@
 	<dialect type="sahi">
 		<accessor type="click" value="div(29)" selected="false"/>
 		<accessor type="click" value="div(&quot;Dashboard__moduleListItem___1beaj[2]&quot;)" selected="false"/>
-		<accessor type="div(31)" value="div(31)" selected="true"/>
+		<accessor type="div(31)" value="div(31)" selected="false"/>
+		<accessor type="div(32)" value="div(32)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='app']/div/div/section/div/div[3]&quot;" selected="true"/>
