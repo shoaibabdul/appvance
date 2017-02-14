@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC9_YOP_CFR_Awaiting_LotNos.csv" exectype="runspecificstep1" errorhandling="stop"/>
+<dpl filename="REPOSITORY/C3Seller_Perf/OPSPortal/TestData/TC9_YOP_CFR_Awaiting_LotNos.csv" exectype="runspecificstep2" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-ops-qa4.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
