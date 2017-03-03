@@ -341,8 +341,9 @@
 <step action="click" value='' type="web" desc="Save2" isThinkTime='false' isCommented='false' sequence="26">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -416,8 +417,9 @@
 <step action="click" value='' type="web" desc="Save3" isThinkTime='false' isCommented='false' sequence="32">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -491,8 +493,9 @@
 <step action="click" value='' type="web" desc="Save4" isThinkTime='false' isCommented='false' sequence="38">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -566,8 +569,9 @@
 <step action="click" value='' type="web" desc="Save5" isThinkTime='false' isCommented='false' sequence="44">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -641,8 +645,9 @@
 <step action="click" value='' type="web" desc="Save6" isThinkTime='false' isCommented='false' sequence="50">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -716,8 +721,9 @@
 <step action="click" value='' type="web" desc="Save7" isThinkTime='false' isCommented='false' sequence="56">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -791,8 +797,9 @@
 <step action="click" value='' type="web" desc="Save8" isThinkTime='false' isCommented='false' sequence="62">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
@@ -868,7 +875,8 @@
 		<accessor type="click" value="button(&quot;SAVE&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
 		<accessor type="click" value="button(99)" selected="false"/>
-		<accessor type="span(27)" value="span(27)" selected="true"/>
+		<accessor type="span(27)" value="span(27)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
@@ -942,8 +950,9 @@
 <step action="click" value='' type="web" desc="Save10" isThinkTime='false' isCommented='false' sequence="74">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;SAVE&quot;)" selected="false"/>
-		<accessor type="click" value="span(27)" selected="true"/>
+		<accessor type="click" value="span(27)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[12]&quot;)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]/span&quot;" selected="true"/>
