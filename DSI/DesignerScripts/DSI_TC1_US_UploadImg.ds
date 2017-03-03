@@ -975,8 +975,10 @@
 <step action="click" value='' type="web" desc="Clk UPLOAD" isThinkTime='false' isCommented='false' sequence="76">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;UPLOAD&quot;)" selected="false"/>
-		<accessor type="click" value="span(15)" selected="true"/>
+		<accessor type="click" value="span(15)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
+		<accessor type="span(&quot;Upload&quot;)" value="span(&quot;Upload&quot;)" selected="false"/>
+		<accessor type="span(14)" value="span(14)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//md-tab-content[@id='content']/div/div/md-content/md-content/md-content[2]/div[4]/button/span&quot;" selected="true"/>
@@ -1000,8 +1002,10 @@
 <step action="click" value='' type="web" desc="Clk YES" isThinkTime='false' isCommented='false' sequence="78">
 	<dialect type="sahi">
 		<accessor type="click" value="span(&quot;YES&quot;)" selected="false"/>
-		<accessor type="click" value="span(17)" selected="true"/>
+		<accessor type="click" value="span(17)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-binding ng-scope[5]&quot;)" selected="false"/>
+		<accessor type="span(16)" value="span(16)" selected="true"/>
+		<accessor type="span(&quot;Yes&quot;)" value="span(&quot;Yes&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[2]/span&quot;" selected="true"/>
@@ -1049,7 +1053,9 @@
 <step action="click" value='' type="web" desc="Clk User Dropdown" isThinkTime='false' isCommented='false' sequence="82">
 	<dialect type="sahi">
 		<accessor type="click" value="button(&quot;md-fab md-mini md-button md-ink-ripple&quot;)" selected="false"/>
-		<accessor type="click" value="button(0)" selected="true"/>
+		<accessor type="click" value="button(0)" selected="false"/>
+		<accessor type="span(&quot;TD&quot;)" value="span(&quot;TD&quot;)" selected="false"/>
+		<accessor type="span(1)" value="span(1)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[@type='button']&quot;" selected="true"/>
@@ -1097,10 +1103,12 @@
 
 <step action="click" value='' type="web" desc="Clk Logout" isThinkTime='false' isCommented='false' sequence="86">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;LOGOUT&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;LOGOUT&quot;)" selected="false"/>
 		<accessor type="click" value="link(1)" selected="false"/>
 		<accessor type="click" value="link(&quot;https://c-dsi-qa1.copart.com/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;md-raised md-accent md-button md-ink-ripple md-focused&quot;)" selected="false"/>
+		<accessor type="span(&quot;Logout&quot;)" value="span(&quot;Logout&quot;)" selected="true"/>
+		<accessor type="span(14)" value="span(14)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a&quot;" selected="true"/>
