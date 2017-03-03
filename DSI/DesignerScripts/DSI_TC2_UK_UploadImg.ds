@@ -1104,8 +1104,8 @@
 		<accessor type="click" value="span(&quot;LOGOUT&quot;)" selected="false"/>
 		<accessor type="click" value="span(15)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[9]&quot;)" selected="false"/>
-		<accessor type="span(&quot;Logout&quot;)" value="span(&quot;Logout&quot;)" selected="false"/>
-		<accessor type="span(14)" value="span(14)" selected="true"/>
+		<accessor type="span(&quot;Logout&quot;)" value="span(&quot;Logout&quot;)" selected="true"/>
+		<accessor type="span(14)" value="span(14)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//div[@id='menu_container_0']/md-menu-content/md-menu-item[5]/a/span&quot;" selected="true"/>
