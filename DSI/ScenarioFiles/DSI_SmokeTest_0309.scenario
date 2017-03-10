@@ -85,8 +85,8 @@
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
-      <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="false"/>
+      <opt name="takeSnapshot" value="true"/>
+      <opt name="debugModeSahi" value="true"/>
       <opt name="domComplete" value="true"/>
       <opt name="replaceAjaxTime" value="true"/>
     </options>
@@ -108,7 +108,7 @@
   </options>
   <templates>
     <controller name="DSI_SmokeTest_0309">
-      <round time="15" name="Executions per User">
+      <round name="Executions per User">
         <testcase name="DSI_TC1_ImgUS_0309" executions="1"/>
       </round>
     </controller>
