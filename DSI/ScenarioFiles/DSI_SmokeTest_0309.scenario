@@ -32,7 +32,7 @@
     <resource name="DSI_TC1_US_UploadImg_0309.ds" type="ds" path="{scenario}/../DesignerScripts/DSI_TC1_US_UploadImg_0309.ds"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud"/>
+    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
