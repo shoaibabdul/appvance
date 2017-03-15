@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
+    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -74,11 +74,11 @@
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
-      <opt name="ThinkTime" value="random"/>
+      <opt name="ThinkTime" value="none"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="1000000"/>
-      <opt name="ThinkTimeMax" value="8000000"/>
+      <opt name="ThinkTimeMin" value="-1"/>
+      <opt name="ThinkTimeMax" value="-1"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
