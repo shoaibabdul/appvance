@@ -32,7 +32,7 @@
     <resource name="DSI_TC1_US_UploadImg_0309.ds" type="ds" path="{scenario}/../DesignerScripts/DSI_TC1_US_UploadImg_0309.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost-1" location="http://ec2-52-70-194-92.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="localhost-1" location="http://ec2-107-21-129-37.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
