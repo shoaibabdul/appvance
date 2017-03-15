@@ -115,8 +115,8 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_DryRun_01">
-      <round name="Executions per User">
-        <testcase name="TC1_DSI_US_UploadImg" executions="1"/>
+      <round name="Testcase Executions">
+        <testcase name="TC1_DSI_US_UploadImg" totalexecutions="1"/>
       </round>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
@@ -131,8 +131,8 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="exacttestcaseexecutions">
-      <testcase name="TC1_DSI_US_UploadImg" users="1"/>
+    <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="testcaseexecutions">
+      <testcase name="TC1_DSI_US_UploadImg" users="5"/>
     </iteration>
   </execution>
   <logs/>
