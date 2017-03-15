@@ -30,9 +30,7 @@
   </basics>
   <resources>
     <resource name="DSI_TC1_US_UploadImg.ds" type="ds" path="{scenario}/../DesignerScripts/DSI_TC1_US_UploadImg.ds"/>
-    <resource name="DSI_TC2_UK_UploadImg.ds" type="ds" path="{scenario}/../DesignerScripts/DSI_TC2_UK_UploadImg.ds"/>
     <resource name="DSI_US_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_US_Testdata.csv"/>
-    <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
     <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
@@ -49,11 +47,6 @@
     <dpl name="DSI_TC1_US" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="DSI_US_Testdata.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="DSI_TC2_UK" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="DSI_UK_Testdata.csv"/>
       </argument>
     </dpl>
   </datasources>
@@ -124,20 +117,12 @@
     <controller name="DSI_QA_LT_DryRun_01">
       <round name="Executions per User">
         <testcase name="TC1_DSI_US_UploadImg" executions="1"/>
-        <testcase name="TC2_DSI_UK_UploadImg" executions="1"/>
       </round>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
         <run name="DSI_TC1_US_UploadImg" langtype="ds" resource="DSI_TC1_US_UploadImg.ds" testclass="Sahi" method="chrome">
           <argument name="Untitled1" method="getNextData" dpl="DSI_TC1_US"/>
-        </run>
-      </test>
-    </testcase>
-    <testcase name="TC2_DSI_UK_UploadImg">
-      <test>
-        <run name="DSI_TC2_UK_UploadImg" langtype="ds" resource="DSI_TC2_UK_UploadImg.ds" testclass="Sahi" method="chrome">
-          <argument name="Untitled1" method="getNextData" dpl="DSI_TC2_UK"/>
         </run>
       </test>
     </testcase>
@@ -148,7 +133,6 @@
   <execution type="loadtest" subtype="performance">
     <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="exacttestcaseexecutions">
       <testcase name="TC1_DSI_US_UploadImg" users="1"/>
-      <testcase name="TC2_DSI_UK_UploadImg" users="1"/>
     </iteration>
   </execution>
   <logs/>
