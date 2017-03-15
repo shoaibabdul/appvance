@@ -67,18 +67,18 @@
     <options type="apc">
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
-      <opt name="EnableSavingLogs" value="false"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
       <opt name="MaxSleepTime" value="0"/>
-      <opt name="ThinkTime" value="none"/>
+      <opt name="ThinkTime" value="random"/>
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
-      <opt name="ThinkTimeMin" value="-1"/>
-      <opt name="ThinkTimeMax" value="-1"/>
+      <opt name="ThinkTimeMin" value="1000000"/>
+      <opt name="ThinkTimeMax" value="8000000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -122,7 +122,7 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_DryRun_01">
-      <round time="15" name="Executions per User">
+      <round name="Executions per User">
         <testcase name="TC1_DSI_US_UploadImg" executions="1"/>
         <testcase name="TC2_DSI_UK_UploadImg" executions="1"/>
       </round>
