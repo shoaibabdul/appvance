@@ -253,52 +253,52 @@
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch">
+    <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch">
       <test>
-        <run name="Untitled11" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox">
-          <argument name="TC11_TestData" method="getNextData" dpl="G2MQA_TC11"/>
+        <run name="G2M_TC11 _Public_VF_FreeSearch" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC11" method="getNextData" dpl="G2MQA_TC11"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M _TC12_Public_LotLookUp">
+    <testcase name="G2M_USQA_TC12_Pub_LotLookUp">
       <test>
-        <run name="Untitled12" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
-          <argument name="TC12_Testdata" method="getNextData" dpl="G2MQA_TC12"/>
+        <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC12" method="getNextData" dpl="G2MQA_TC12"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC13_Member_WatchList">
+    <testcase name="G2M_USQA_TC13_Mem_WL">
       <test>
-        <run name="Untitled13" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds" testclass="sahi" method="firefox">
-          <argument name="TC13_TestData" method="getNextData" dpl="G2MQA_T"/>
+        <run name="G2M_TC13_Member_WatchList" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC13" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC14_Member_PreferencesEdit">
+    <testcase name="G2M_USQA_TC14_Mem_PrefEdit">
       <test>
-        <run name="Untitled14" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds" testclass="sahi" method="firefox">
-          <argument name="TC14_TestData" method="getNextData" dpl="G2MQA_T"/>
+        <run name="G2M_TC14_Member_PreferencesEdit" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC14" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC15_Member_CompareLots">
+    <testcase name="G2M_USQA_TC15_Mem_CompLots">
       <test>
-        <run name="Untitled15" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds" testclass="sahi" method="firefox">
-          <argument name="TC15_TestData" method="getNextData" dpl="G2MQA_T"/>
+        <run name="G2M_TC15_Member_CompareLots" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC15" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC16_Member_LotsWonLost">
+    <testcase name="G2M_USQA_TC16_Mem_LotsWonLost">
       <test>
-        <run name="Untitled16" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds" testclass="sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2MQA_T"/>
+        <run name="G2M_TC16_Member_LotsWonLost" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC16" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC17_Member_SavedSearchs">
+    <testcase name="G2M_USQA_TC17_Mem_SavedSearchs">
       <test>
-        <run name="Untitled8" langtype="ds" resource="G2M_TC17_Mem_SavedSearchs.ds" testclass="sahi" method="firefox">
-          <argument name="TC17_TestData" method="getNextData" dpl="G2MQA_T"/>
+        <run name="G2M_TC17_Member_SavedSearchs" langtype="ds" resource="G2M_TC17_Mem_SavedSearchs.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC17" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
@@ -318,13 +318,13 @@
       <testcase name="G2M_USQA_TC8_Mem_LotNoS" users="3"/>
       <testcase name="G2M_USQA_TC9_Mem_SL" users="3"/>
       <testcase name="G2M_USQA_TC10_Mem_HS" users="3"/>
-      <testcase name="G2M_TC11 _Public_VehicleFinder_FreeSearch" users="3"/>
-      <testcase name="G2M _TC12_Public_LotLookUp" users="3"/>
-      <testcase name="G2M_TC13_Member_WatchList" users="3"/>
-      <testcase name="G2M_TC14_Member_PreferencesEdit" users="3"/>
-      <testcase name="G2M_TC15_Member_CompareLots" users="3"/>
-      <testcase name="G2M_TC16_Member_LotsWonLost" users="3"/>
-      <testcase name="G2M_TC17_Member_SavedSearchs" users="3"/>
+      <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch" users="3"/>
+      <testcase name="G2M_USQA_TC12_Pub_LotLookUp" users="3"/>
+      <testcase name="G2M_USQA_TC13_Mem_WL" users="3"/>
+      <testcase name="G2M_USQA_TC14_Mem_PrefEdit" users="3"/>
+      <testcase name="G2M_USQA_TC15_Mem_CompLots" users="3"/>
+      <testcase name="G2M_USQA_TC16_Mem_LotsWonLost" users="3"/>
+      <testcase name="G2M_USQA_TC17_Mem_SavedSearchs" users="3"/>
     </iteration>
   </execution>
   <logs>
