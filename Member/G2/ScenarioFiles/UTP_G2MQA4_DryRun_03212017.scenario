@@ -51,7 +51,6 @@
     <resource name="G2M_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../Testdata/G2M_TC6-9-10_UserIDs.csv"/>
     <resource name="G2M_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC7_VehicleFinder.csv"/>
     <resource name="G2M_TC8_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC8_LotNumbers.csv"/>
-    <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
     <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
   </resources>
   <testnodes>
@@ -94,12 +93,6 @@
       <argument name="Remote path of the file"/>
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_TC12" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
       </argument>
     </dpl>
     <dpl name="G2MUSQA_TC11" type="HashDPL" langtype="java" method="setup">
@@ -249,7 +242,7 @@
     <testcase name="G2M_USQA_TC12_Pub_LotLookUp">
       <test>
         <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC12" method="getNextData" dpl="G2MQA_TC12"/>
+          <argument name="G2M_TC12" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
