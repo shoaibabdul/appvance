@@ -66,36 +66,6 @@
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
-    <dpl name="G2MQA_TC2" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC2_VehicleFinder.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_TC3" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_TC6-17" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_TC7" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_TC8" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
-      </argument>
-    </dpl>
     <dpl name="G2MUSQA_TC11" type="HashDPL" langtype="java" method="setup">
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
