@@ -6,7 +6,7 @@
 
 <dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/Testdata/G2M_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
 
-<step action="navigateTo" value="&quot;http://g2-member-qa1.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
+<step action="navigateTo" value="&quot;http://g2-member-qa4.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -471,7 +471,8 @@
 		<accessor type="click" value="link(&quot;08/05/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;08/10/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;09/27/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;09/30/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;09/30/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;03/29/2017&quot;)" value="link(&quot;03/29/2017&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/18/2016')]&quot;" selected="true"/>
@@ -530,7 +531,8 @@
 		<accessor type="click" value="link(&quot;08/08/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;08/11/2016&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;09/30/2016&quot;)" selected="false"/>
-		<accessor type="click" value="link(&quot;10/03/2016&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;10/03/2016&quot;)" selected="false"/>
+		<accessor type="link(&quot;03/30/2017&quot;)" value="link(&quot;03/30/2017&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'07/20/2016')]&quot;" selected="true"/>
