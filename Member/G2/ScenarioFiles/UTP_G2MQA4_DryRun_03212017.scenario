@@ -243,7 +243,7 @@
     <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch">
       <test>
         <run name="G2M_TC11_Public_VF_FreeSearch" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC11" method="getNextData" dpl="G2MQA_TC11"/>
+          <argument name="G2M_TC11" method="getNextData" dpl="G2MQA_TC6-17"/>
         </run>
       </test>
     </testcase>
