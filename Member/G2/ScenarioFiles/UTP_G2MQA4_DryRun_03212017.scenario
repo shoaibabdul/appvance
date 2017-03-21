@@ -174,7 +174,7 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_QA4_DryRun">
+    <controller name="UTP_G2MQA4_DryRun">
       <round time="10" testtype="users" name="10 Minutes"/>
     </controller>
     <testcase name="G2M_USQA_TC1_Pub_HPNav">
@@ -295,7 +295,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="load">
-    <iteration name="G2M_QA4_DryRun" controller="G2M_QA4_DryRun" completiontype="duration">
+    <iteration name="UTP_G2MQA4_DryRun" controller="UTP_G2MQA4_DryRun" completiontype="duration">
       <testcase name="G2M_USQA_TC1_Pub_HPNav" users="2"/>
       <testcase name="G2M_USQA_TC2_Pub_VF" users="3"/>
       <testcase name="G2M_USQA_TC3_Pub_LotNoS" users="3"/>
