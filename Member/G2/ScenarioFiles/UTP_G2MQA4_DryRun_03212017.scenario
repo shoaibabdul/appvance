@@ -46,6 +46,13 @@
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC15_Mem_CompareLots.ds"/>
     <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds"/>
     <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds"/>
+    <resource name="G2M_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC2_VehicleFinder.csv"/>
+    <resource name="G2M_TC3_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC3_LotNumbers.csv"/>
+    <resource name="G2M_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../Testdata/G2M_TC6-9-10_UserIDs.csv"/>
+    <resource name="G2M_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC7_VehicleFinder.csv"/>
+    <resource name="G2M_TC8_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC8_LotNumbers.csv"/>
+    <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
+    <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2MQA" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
@@ -58,7 +65,43 @@
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="G2M_USQA_TC2" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC2_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC3" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC6-17" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC7" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC8" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC11" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC12" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
