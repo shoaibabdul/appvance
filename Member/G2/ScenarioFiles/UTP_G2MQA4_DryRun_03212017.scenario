@@ -59,11 +59,10 @@
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
-    <bundle name="mysql" version="5.0"/>
-    <bundle name="oracle" version="10.2.0.5"/>
+    <bundle name="mysql" version="5.1.39"/>
     <bundle name="sahi" version="sahi_pro"/>
     <bundle name="ds" version="2.0"/>
-    <bundle name="seleniumrc" version="2.45"/>
+    <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
   <datasources>
@@ -165,7 +164,7 @@
       <opt name="doNotStopOnFailure" value="false"/>
     </options>
     <options type="selenium">
-      <opt name="rc" value="true"/>
+      <opt name="rc" value="false"/>
       <opt name="synchronized" value="false"/>
     </options>
     <options type="seleniumrc">
