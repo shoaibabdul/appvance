@@ -248,7 +248,7 @@
     <testcase name="G2M_USQA_TC12_Pub_LotLookUp">
       <test>
         <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC12" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="G2M_TC12" method="getNextData" dpl="G2MUSQA_TC12"/>
         </run>
       </test>
     </testcase>
