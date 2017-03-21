@@ -46,11 +46,6 @@
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC15_Mem_CompareLots.ds"/>
     <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds"/>
     <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds"/>
-    <resource name="G2M_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC2_VehicleFinder.csv"/>
-    <resource name="G2M_TC3_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC3_LotNumbers.csv"/>
-    <resource name="G2M_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../Testdata/G2M_TC6-9-10_UserIDs.csv"/>
-    <resource name="G2M_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC7_VehicleFinder.csv"/>
-    <resource name="G2M_TC8_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC8_LotNumbers.csv"/>
     <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
     <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
@@ -196,16 +191,12 @@
     </testcase>
     <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch">
       <test>
-        <run name="G2M_TC11_Public_VF_FreeSearch" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC11" method="getNextData" dpl="G2MUSQA_TC11"/>
-        </run>
+        <run name="G2M_TC11_Public_VF_FreeSearch" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox"/>
       </test>
     </testcase>
     <testcase name="G2M_USQA_TC12_Pub_LotLookUp">
       <test>
-        <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC12" method="getNextData" dpl="G2MUSQA_TC12"/>
-        </run>
+        <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox"/>
       </test>
     </testcase>
     <testcase name="G2M_USQA_TC13_Mem_WL">
