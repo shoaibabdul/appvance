@@ -24,9 +24,9 @@
     <defaultdirectory/>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
-    <versions>QA4</versions>
+    <versions>UTP</versions>
     <categorization>G2M QA</categorization>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC1_Pub_HPNavigation.ds"/>
