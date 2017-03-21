@@ -96,12 +96,6 @@
         <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2MQA_TC11" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
-      </argument>
-    </dpl>
     <dpl name="G2MQA_TC12" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file"/>
       <argument name="resource" dpl="Resources" method="getResourceByName">
