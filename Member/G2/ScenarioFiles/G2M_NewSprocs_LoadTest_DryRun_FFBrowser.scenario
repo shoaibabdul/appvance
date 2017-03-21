@@ -55,7 +55,7 @@
     <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="AmazonG2" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2MQA" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -95,18 +95,6 @@
       <argument name="Remote path of the file"/>
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_T" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MQA_T" type="HashDPL" langtype="java" method="setup">
-      <argument name="Remote path of the file"/>
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
     <dpl name="G2MQA_TC11" type="HashDPL" langtype="java" method="setup">
