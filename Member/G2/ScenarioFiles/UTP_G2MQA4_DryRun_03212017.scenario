@@ -46,8 +46,6 @@
     <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC15_Mem_CompareLots.ds"/>
     <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds"/>
     <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds"/>
-    <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
-    <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
     <cloud name="G2MQA" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
@@ -60,18 +58,7 @@
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
   </bundles>
-  <datasources>
-    <dpl name="G2MUSQA_TC11" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
-      </argument>
-    </dpl>
-    <dpl name="G2MUSQA_TC12" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
