@@ -51,7 +51,6 @@
     <resource name="G2M_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../Testdata/G2M_TC6-9-10_UserIDs.csv"/>
     <resource name="G2M_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC7_VehicleFinder.csv"/>
     <resource name="G2M_TC8_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC8_LotNumbers.csv"/>
-    <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
     <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
