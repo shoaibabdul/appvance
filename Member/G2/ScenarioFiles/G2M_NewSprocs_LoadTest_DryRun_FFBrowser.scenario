@@ -97,13 +97,13 @@
         <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2MQA_TC6-17" type="HashDPL" langtype="java" method="setup">
+    <dpl name="G2MQA_T" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file"/>
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
       </argument>
     </dpl>
-    <dpl name="G2MQA_TC6-17" type="HashDPL" langtype="java" method="setup">
+    <dpl name="G2MQA_T" type="HashDPL" langtype="java" method="setup">
       <argument name="Remote path of the file"/>
       <argument name="resource" dpl="Resources" method="getResourceByName">
         <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
@@ -189,39 +189,39 @@
     <controller name="G2M_QA4_DryRun">
       <round time="10" testtype="users" name="10 Minutes"/>
     </controller>
-    <testcase name="G2M_TC1_Pub_HPNavigation">
+    <testcase name="G2M_USQA_TC1_Pub_HPNav">
       <test>
-        <run name="Untitled1" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds" testclass="sahi" method="firefox"/>
+        <run name="G2M_TC1_Pub_HPNavigation" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds" testclass="sahi" method="firefox"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC2_Pub_VehicleFinder">
+    <testcase name="G2M_USQA_TC2_Pub_VF">
       <test>
-        <run name="Untitled2" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds" testclass="sahi" method="firefox">
+        <run name="G2M_TC2_Pub_VehicleFinder" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds" testclass="sahi" method="firefox">
           <argument name="G2M_TC2" method="getNextData" dpl="G2MQA_TC2"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC3_Pub_LotNoSearch">
+    <testcase name="G2M_USQA_TC3_Pub_LotNoS">
       <test>
-        <run name="Untitled3" langtype="ds" resource="G2M_TC3_Pub_LotNoSearch.ds" testclass="sahi" method="firefox">
+        <run name="G2M_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_TC3_Pub_LotNoSearch.ds" testclass="sahi" method="firefox">
           <argument name="G2M_TC3" method="getNextData" dpl="G2MQA_TC3"/>
         </run>
       </test>
     </testcase>
-    <testcase name="G2M_TC4_Pub_SalesList">
+    <testcase name="G2M_USQA_TC4_Pub_SL">
       <test>
-        <run name="Untitled4" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds" testclass="sahi" method="firefox"/>
+        <run name="G2M_TC4_Pub_SalesList" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds" testclass="sahi" method="firefox"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC5_Pub_HeaderSearch">
+    <testcase name="G2M_USQA_TC5_Pub_HS">
       <test>
-        <run name="Untitled5" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds" testclass="sahi" method="firefox"/>
+        <run name="G2M_TC5_Pub_HeaderSearch" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds" testclass="sahi" method="firefox"/>
       </test>
     </testcase>
-    <testcase name="G2M_TC6_Mem_HPNavigation">
+    <testcase name="G2M_USQA_TC6_Mem_HPNav">
       <test>
-        <run name="Untitled6" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC6" method="getNextData" dpl="G2MQA_TC6-17"/>
+        <run name="G2M_TC6_Mem_HPNavigation" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds" testclass="sahi" method="firefox">
+          <argument name="G2M_TC6" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
@@ -242,14 +242,14 @@
     <testcase name="G2M_TC9_Mem_SalesList">
       <test>
         <run name="Untitled9" langtype="ds" resource="G2M_TC9_Mem_SalesList.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC9" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="G2M_TC9" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC10_Mem_HeaderSearch">
       <test>
         <run name="Untitled10" langtype="ds" resource="G2M_TC10_Mem_HeaderSearch.ds" testclass="sahi" method="firefox">
-          <argument name="G2M_TC10" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="G2M_TC10" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
@@ -270,35 +270,35 @@
     <testcase name="G2M_TC13_Member_WatchList">
       <test>
         <run name="Untitled13" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds" testclass="sahi" method="firefox">
-          <argument name="TC13_TestData" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="TC13_TestData" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC14_Member_PreferencesEdit">
       <test>
         <run name="Untitled14" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds" testclass="sahi" method="firefox">
-          <argument name="TC14_TestData" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="TC14_TestData" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC15_Member_CompareLots">
       <test>
         <run name="Untitled15" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds" testclass="sahi" method="firefox">
-          <argument name="TC15_TestData" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="TC15_TestData" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC16_Member_LotsWonLost">
       <test>
         <run name="Untitled16" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds" testclass="sahi" method="firefox">
-          <argument name="Untitled1" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="Untitled1" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
     <testcase name="G2M_TC17_Member_SavedSearchs">
       <test>
         <run name="Untitled8" langtype="ds" resource="G2M_TC17_Mem_SavedSearchs.ds" testclass="sahi" method="firefox">
-          <argument name="TC17_TestData" method="getNextData" dpl="G2MQA_TC6-17"/>
+          <argument name="TC17_TestData" method="getNextData" dpl="G2MQA_T"/>
         </run>
       </test>
     </testcase>
@@ -308,12 +308,12 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="load">
     <iteration name="G2M_QA4_DryRun" controller="G2M_QA4_DryRun" completiontype="duration">
-      <testcase name="G2M_TC1_Pub_HPNavigation" users="2"/>
-      <testcase name="G2M_TC2_Pub_VehicleFinder" users="3"/>
-      <testcase name="G2M_TC3_Pub_LotNoSearch" users="3"/>
-      <testcase name="G2M_TC4_Pub_SalesList" users="3"/>
-      <testcase name="G2M_TC5_Pub_HeaderSearch" users="3"/>
-      <testcase name="G2M_TC6_Mem_HPNavigation" users="3"/>
+      <testcase name="G2M_USQA_TC1_Pub_HPNav" users="2"/>
+      <testcase name="G2M_USQA_TC2_Pub_VF" users="3"/>
+      <testcase name="G2M_USQA_TC3_Pub_LotNoS" users="3"/>
+      <testcase name="G2M_USQA_TC4_Pub_SL" users="3"/>
+      <testcase name="G2M_USQA_TC5_Pub_HS" users="3"/>
+      <testcase name="G2M_USQA_TC6_Mem_HPNav" users="3"/>
       <testcase name="G2M_TC7_Mem_VehicleFinder" users="3"/>
       <testcase name="G2M_TC8_Mem_LotNoSearch" users="3"/>
       <testcase name="G2M_TC9_Mem_SalesList" users="3"/>
