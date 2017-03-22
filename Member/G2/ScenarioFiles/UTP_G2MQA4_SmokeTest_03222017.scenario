@@ -1,0 +1,315 @@
+<!--
+*
+* Appvance Inc. Confidential
+* ________________
+*
+*  Copyright 2014 Appvance Inc. All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Appvance Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Appvance Inc.
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Appvance Incorporated.
+*
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+-->
+<testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
+  <basics>
+    <name>UTP_G2MQA4_SmokeTest_03222017.scenario</name>
+    <defaultdirectory/>
+    <basicName>Balram Anthareddy</basicName>
+    <creator>Balram</creator>
+    <versions>UTP</versions>
+    <categorization>G2M QA</categorization>
+    <links>    </links>
+  </basics>
+  <resources>
+    <resource name="G2M_TC1_Pub_HPNavigation.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC1_Pub_HPNavigation.ds"/>
+    <resource name="G2M_TC2_Pub_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC2_Pub_VehicleFinder.ds"/>
+    <resource name="G2M_TC3_Pub_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC3_Pub_LotNoSearch.ds"/>
+    <resource name="G2M_TC4_Pub_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC4_Pub_SalesList.ds"/>
+    <resource name="G2M_TC5_Pub_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC5_Pub_HeaderSearch.ds"/>
+    <resource name="G2M_TC6_Mem_HPNavigation.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC6_Mem_HPNavigation.ds"/>
+    <resource name="G2M_TC7_Mem_VehicleFinder.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC7_Mem_VehicleFinder.ds"/>
+    <resource name="G2M_TC8_Mem_LotNoSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC8_Mem_LotNoSearch.ds"/>
+    <resource name="G2M_TC9_Mem_SalesList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC9_Mem_SalesList.ds"/>
+    <resource name="G2M_TC10_Mem_HeaderSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC10_Mem_HeaderSearch.ds"/>
+    <resource name="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" type="ds" path="{scenario}/../DesignerScripts/G2M _TC11_Pub_VehicleFinder_FreeSearch.ds"/>
+    <resource name="G2M _TC12_Pub_LotLookUp_Search.ds" type="ds" path="{scenario}/../DesignerScripts/G2M _TC12_Pub_LotLookUp_Search.ds"/>
+    <resource name="G2M_TC13_Mem_WatchList.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC13_Mem_WatchList.ds"/>
+    <resource name="G2M_TC14_Mem_PreferencesEditSave.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC14_Mem_PreferencesEditSave.ds"/>
+    <resource name="G2M_TC15_Mem_CompareLots.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC15_Mem_CompareLots.ds"/>
+    <resource name="G2M_TC16_Mem_LotsWonLost.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC16_Mem_LotsWonLost.ds"/>
+    <resource name="G2M_TC17_Mem_SavedSearchs.ds" type="ds" path="{scenario}/../DesignerScripts/G2M_TC17_Mem_SavedSearchs.ds"/>
+    <resource name="G2M_TC2_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC2_VehicleFinder.csv"/>
+    <resource name="G2M_TC3_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC3_LotNumbers.csv"/>
+    <resource name="G2M_TC6-9-10_UserIDs.csv" type="csv" path="{scenario}/../Testdata/G2M_TC6-9-10_UserIDs.csv"/>
+    <resource name="G2M_TC7_VehicleFinder.csv" type="csv" path="{scenario}/../Testdata/G2M_TC7_VehicleFinder.csv"/>
+    <resource name="G2M_TC8_LotNumbers.csv" type="csv" path="{scenario}/../Testdata/G2M_TC8_LotNumbers.csv"/>
+    <resource name="G2M_TC11_VF_FreeSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC11_VF_FreeSearch.csv"/>
+    <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
+  </resources>
+  <testnodes>
+    <cloud name="G2MQA" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud" username="appvance" password="CopartWindows$1234"/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.1.39"/>
+    <bundle name="sahi" version="sahi_pro"/>
+    <bundle name="ds" version="2.0"/>
+    <bundle name="seleniumrc" version="2.53"/>
+    <bundle name="htmlunit" version="2.15.2648"/>
+  </bundles>
+  <datasources>
+    <dpl name="G2M_USQA_TC2" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC2_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC3" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC3_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC6-17" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC6-9-10_UserIDs.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC7" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC7_VehicleFinder.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC8" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC8_LotNumbers.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC11" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC11_VF_FreeSearch.csv"/>
+      </argument>
+    </dpl>
+    <dpl name="G2M_USQA_TC12" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="G2M_TC12_LotNo_LookUpSearch.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="global">
+      <opt name="trustAllSSLCertificates" value="false"/>
+      <opt name="ntlmEnabled" value="false"/>
+      <opt name="EnableHttpTimingDetailsLogging" value="false"/>
+      <opt name="ConsoleAsProxy" value="false"/>
+    </options>
+    <options type="apc">
+      <opt name="SummaryStepIsEmpty" value="false"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="PercentageLogsSaved" value="10"/>
+      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="FixedSleepTime" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="ThinkTime" value="random"/>
+      <opt name="FixedThinkTime" value="0"/>
+      <opt name="StandardDeviation" value="0"/>
+      <opt name="ThinkTimeMin" value="1000"/>
+      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="FixedIntervalTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+      <opt name="MaxRampUpTime" value="1000"/>
+      <opt name="RampDownUsers" value="1"/>
+      <opt name="RampDownSeconds" value="1"/>
+      <opt name="MaxRampDownTime" value="1000"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
+    </options>
+    <options type="commandline">
+      <opt name="async" value="false"/>
+    </options>
+    <options type="sahi">
+      <opt name="clearCache" value="true"/>
+      <opt name="takeSnapshot" value="false"/>
+      <opt name="debugModeSahi" value="false"/>
+      <opt name="domComplete" value="true"/>
+      <opt name="replaceAjaxTime" value="true"/>
+    </options>
+    <options type="har">
+      <opt name="connectionResetMarksTestcaseFailure" value="false"/>
+      <opt name="markRequestAsSteps" value="false"/>
+      <opt name="useHarResponses" value="false"/>
+      <opt name="printDebugInfo" value="false"/>
+      <opt name="doNotStopOnFailure" value="false"/>
+    </options>
+    <options type="selenium">
+      <opt name="rc" value="false"/>
+      <opt name="synchronized" value="false"/>
+    </options>
+    <options type="seleniumrc">
+      <opt name="listenport" value="6543"/>
+      <opt name="serverport" value="5555"/>
+    </options>
+  </options>
+  <templates>
+    <controller name="UTP_G2MQA4_DryRun">
+      <round time="15" testtype="users" name="15 Minutes"/>
+    </controller>
+    <testcase name="G2M_USQA_TC1_Pub_HPNav">
+      <test>
+        <run name="G2M_TC1_Pub_HPNavigation" langtype="ds" resource="G2M_TC1_Pub_HPNavigation.ds" testclass="sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC2_Pub_VF">
+      <test>
+        <run name="G2M_TC2_Pub_VehicleFinder" langtype="ds" resource="G2M_TC2_Pub_VehicleFinder.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC2"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC3_Pub_LotNoS">
+      <test>
+        <run name="G2M_TC3_Pub_LotNoSearch" langtype="ds" resource="G2M_TC3_Pub_LotNoSearch.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC3"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC4_Pub_SL">
+      <test>
+        <run name="G2M_TC4_Pub_SalesList" langtype="ds" resource="G2M_TC4_Pub_SalesList.ds" testclass="sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC5_Pub_HS">
+      <test>
+        <run name="G2M_TC5_Pub_HeaderSearch" langtype="ds" resource="G2M_TC5_Pub_HeaderSearch.ds" testclass="sahi" method="firefox"/>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC6_Mem_HPNav">
+      <test>
+        <run name="G2M_TC6_Mem_HPNavigation" langtype="ds" resource="G2M_TC6_Mem_HPNavigation.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC7_Mem_VF">
+      <test>
+        <run name="G2M_TC7_Mem_VehicleFinder" langtype="ds" resource="G2M_TC7_Mem_VehicleFinder.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC7"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC8_Mem_LotNoS">
+      <test>
+        <run name="G2M_TC8_Mem_LotNoSearch" langtype="ds" resource="G2M_TC8_Mem_LotNoSearch.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC8"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC9_Mem_SL">
+      <test>
+        <run name="G2M_TC9_Mem_SalesList" langtype="ds" resource="G2M_TC9_Mem_SalesList.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC10_Mem_HS">
+      <test>
+        <run name="G2M_TC10_Mem_HeaderSearch" langtype="ds" resource="G2M_TC10_Mem_HeaderSearch.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch">
+      <test>
+        <run name="G2M_TC11_Public_VF_FreeSearch" langtype="ds" resource="G2M _TC11_Pub_VehicleFinder_FreeSearch.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC11"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC12_Pub_LotLookUp">
+      <test>
+        <run name="G2M_TC12_Public_LotLookUp" langtype="ds" resource="G2M _TC12_Pub_LotLookUp_Search.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC12"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC13_Mem_WL">
+      <test>
+        <run name="G2M_TC13_Member_WatchList" langtype="ds" resource="G2M_TC13_Mem_WatchList.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC14_Mem_PrefEdit">
+      <test>
+        <run name="G2M_TC14_Member_PreferencesEdit" langtype="ds" resource="G2M_TC14_Mem_PreferencesEditSave.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC15_Mem_CompLots">
+      <test>
+        <run name="G2M_TC15_Member_CompareLots" langtype="ds" resource="G2M_TC15_Mem_CompareLots.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC16_Mem_LotsWonLost">
+      <test>
+        <run name="G2M_TC16_Member_LotsWonLost" langtype="ds" resource="G2M_TC16_Mem_LotsWonLost.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase name="G2M_USQA_TC17_Mem_SavedSearchs">
+      <test>
+        <run name="G2M_TC17_Member_SavedSearchs" langtype="ds" resource="G2M_TC17_Mem_SavedSearchs.ds" testclass="sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="G2M_USQA_TC6-17"/>
+        </run>
+      </test>
+    </testcase>
+    <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+    <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
+  </templates>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <execution type="loadtest" subtype="load">
+    <iteration name="UTP_G2MQA4_DryRun" controller="UTP_G2MQA4_DryRun" completiontype="duration">
+      <testcase name="G2M_USQA_TC1_Pub_HPNav" users="2"/>
+      <testcase name="G2M_USQA_TC2_Pub_VF" users="3"/>
+      <testcase name="G2M_USQA_TC3_Pub_LotNoS" users="3"/>
+      <testcase name="G2M_USQA_TC4_Pub_SL" users="3"/>
+      <testcase name="G2M_USQA_TC5_Pub_HS" users="3"/>
+      <testcase name="G2M_USQA_TC6_Mem_HPNav" users="3"/>
+      <testcase name="G2M_USQA_TC7_Mem_VF" users="3"/>
+      <testcase name="G2M_USQA_TC8_Mem_LotNoS" users="3"/>
+      <testcase name="G2M_USQA_TC9_Mem_SL" users="3"/>
+      <testcase name="G2M_USQA_TC10_Mem_HS" users="3"/>
+      <testcase name="G2M_USQA_TC11 _Pub_VF_FreeSearch" users="3"/>
+      <testcase name="G2M_USQA_TC12_Pub_LotLookUp" users="3"/>
+      <testcase name="G2M_USQA_TC13_Mem_WL" users="3"/>
+      <testcase name="G2M_USQA_TC14_Mem_PrefEdit" users="3"/>
+      <testcase name="G2M_USQA_TC15_Mem_CompLots" users="3"/>
+      <testcase name="G2M_USQA_TC16_Mem_LotsWonLost" users="3"/>
+      <testcase name="G2M_USQA_TC17_Mem_SavedSearchs" users="3"/>
+    </iteration>
+  </execution>
+  <logs/>
+  <integrations xmlns="www.pushtotest.com/tm5">
+    <integration type="RQM"/>
+  </integrations>
+  <notifications/>
+</testscenario>
