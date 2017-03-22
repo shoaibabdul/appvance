@@ -146,7 +146,7 @@
       <opt name="clearCache" value="true"/>
       <opt name="takeSnapshot" value="false"/>
       <opt name="debugModeSahi" value="false"/>
-      <opt name="domComplete" value="true"/>
+      <opt name="fullPageLoaded" value="true"/>
       <opt name="replaceAjaxTime" value="true"/>
     </options>
     <options type="har">
@@ -166,7 +166,7 @@
     </options>
   </options>
   <templates>
-    <controller name="UTP_G2MQA4_DryRun">
+    <controller name="UTP_G2MQA4_SmokeTest">
       <round time="15" testtype="users" name="Executions per User">
         <testcase name="G2M_USQA_TC1_Pub_HPNav" executions="1"/>
         <testcase name="G2M_USQA_TC2_Pub_VF" executions="1"/>
@@ -305,7 +305,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="load">
-    <iteration name="UTP_G2MQA4_DryRun" controller="UTP_G2MQA4_DryRun" completiontype="exacttestcaseexecutions">
+    <iteration name="UTP_G2MQA4_SmokeTest" controller="UTP_G2MQA4_SmokeTest" completiontype="exacttestcaseexecutions">
       <testcase name="G2M_USQA_TC1_Pub_HPNav" users="1"/>
       <testcase name="G2M_USQA_TC2_Pub_VF" users="1"/>
       <testcase name="G2M_USQA_TC3_Pub_LotNoS" users="1"/>
