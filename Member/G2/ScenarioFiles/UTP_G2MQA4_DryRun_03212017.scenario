@@ -128,10 +128,10 @@
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
       <opt name="MaxIntervalTime" value="0"/>
-      <opt name="RampUpUsers" value="3"/>
+      <opt name="RampUpUsers" value="1"/>
       <opt name="RampUpSeconds" value="1"/>
       <opt name="MaxRampUpTime" value="1000"/>
-      <opt name="RampDownUsers" value="3"/>
+      <opt name="RampDownUsers" value="1"/>
       <opt name="RampDownSeconds" value="1"/>
       <opt name="MaxRampDownTime" value="1000"/>
       <opt name="ReportThinkTime" value="false"/>
@@ -167,7 +167,7 @@
   </options>
   <templates>
     <controller name="UTP_G2MQA4_DryRun">
-      <round time="10" testtype="users" name="10 Minutes"/>
+      <round time="15" testtype="users" name="15 Minutes"/>
     </controller>
     <testcase name="G2M_USQA_TC1_Pub_HPNav">
       <test>
