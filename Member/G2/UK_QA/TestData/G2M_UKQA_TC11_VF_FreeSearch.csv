@@ -1,337 +1,1345 @@
 VehicleTypes,YearFrom,YearTo,Make
 Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2006,2011,All Makes
+Vehicles Under 7.5 Tonnes,2006,2012,All Makes
+Motorcycle/ATV,2006,2013,All Makes
+HGV,2006,2014,All Makes
+Agricultural,2006,2015,All Makes
+Boat,2006,2016,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2012,2017,All Makes
+Boat,2013,2017,All Makes
+Plant,2014,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2011,All Makes
+Motorcycle/ATV,2006,2012,All Makes
+HGV,2006,2013,All Makes
+Agricultural,2006,2014,All Makes
+Boat,2006,2015,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2012,2017,All Makes
+Plant,2013,2017,All Makes
+Recreational Vehicle (RV),2014,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2006,2011,All Makes
+HGV,2006,2012,All Makes
+Agricultural,2006,2013,All Makes
+Boat,2006,2014,All Makes
+Plant,2006,2015,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2012,2017,All Makes
+Recreational Vehicle (RV),2013,2017,All Makes
+Vehicles Under 7.5 Tonnes,2014,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2006,2011,All Makes
+Agricultural,2006,2012,All Makes
+Boat,2006,2013,All Makes
+Plant,2006,2014,All Makes
+Recreational Vehicle (RV),2006,2015,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2012,2017,All Makes
+Vehicles Under 7.5 Tonnes,2013,2017,All Makes
+Motorcycle/ATV,2014,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2006,2011,All Makes
+Boat,2006,2012,All Makes
+Plant,2006,2013,All Makes
+Recreational Vehicle (RV),2006,2014,All Makes
+Vehicles Under 7.5 Tonnes,2006,2015,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2008,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2012,2017,All Makes
+Motorcycle/ATV,2013,2017,All Makes
+HGV,2014,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2006,2011,All Makes
+Plant,2006,2012,All Makes
+Recreational Vehicle (RV),2006,2013,All Makes
+Vehicles Under 7.5 Tonnes,2006,2014,All Makes
+Motorcycle/ATV,2006,2015,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2016,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2006,2011,All Makes
+Vehicles Under 7.5 Tonnes,2006,2012,All Makes
+Motorcycle/ATV,2006,2013,All Makes
+HGV,2006,2014,All Makes
+Agricultural,2006,2015,All Makes
+Boat,2006,2016,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2012,2017,All Makes
+Boat,2013,2017,All Makes
+Plant,2014,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2011,All Makes
+Motorcycle/ATV,2006,2012,All Makes
+HGV,2006,2013,All Makes
+Agricultural,2006,2014,All Makes
+Boat,2006,2015,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2012,2017,All Makes
+Plant,2013,2017,All Makes
+Recreational Vehicle (RV),2014,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2006,2011,All Makes
+HGV,2006,2012,All Makes
+Agricultural,2006,2013,All Makes
+Boat,2006,2014,All Makes
+Plant,2006,2015,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2012,2017,All Makes
+Recreational Vehicle (RV),2013,2017,All Makes
+Vehicles Under 7.5 Tonnes,2014,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2006,2011,All Makes
+Agricultural,2006,2012,All Makes
+Boat,2006,2013,All Makes
+Plant,2006,2014,All Makes
+Recreational Vehicle (RV),2006,2015,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2012,2017,All Makes
+Vehicles Under 7.5 Tonnes,2013,2017,All Makes
+Motorcycle/ATV,2014,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2006,2011,All Makes
+Boat,2006,2012,All Makes
+Plant,2006,2013,All Makes
+Recreational Vehicle (RV),2006,2014,All Makes
+Vehicles Under 7.5 Tonnes,2006,2015,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2008,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2012,2017,All Makes
+Motorcycle/ATV,2013,2017,All Makes
+HGV,2014,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2006,2011,All Makes
+Plant,2006,2012,All Makes
+Recreational Vehicle (RV),2006,2013,All Makes
+Vehicles Under 7.5 Tonnes,2006,2014,All Makes
+Motorcycle/ATV,2006,2015,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2016,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2006,2011,All Makes
+Vehicles Under 7.5 Tonnes,2006,2012,All Makes
+Motorcycle/ATV,2006,2013,All Makes
+HGV,2006,2014,All Makes
+Agricultural,2006,2015,All Makes
+Boat,2006,2016,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2012,2017,All Makes
+Boat,2013,2017,All Makes
+Plant,2014,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2011,All Makes
+Motorcycle/ATV,2006,2012,All Makes
+HGV,2006,2013,All Makes
+Agricultural,2006,2014,All Makes
+Boat,2006,2015,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2012,2017,All Makes
+Plant,2013,2017,All Makes
+Recreational Vehicle (RV),2014,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2006,2011,All Makes
+HGV,2006,2012,All Makes
+Agricultural,2006,2013,All Makes
+Boat,2006,2014,All Makes
+Plant,2006,2015,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2012,2017,All Makes
+Recreational Vehicle (RV),2013,2017,All Makes
+Vehicles Under 7.5 Tonnes,2014,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2006,2011,All Makes
+Agricultural,2006,2012,All Makes
+Boat,2006,2013,All Makes
+Plant,2006,2014,All Makes
+Recreational Vehicle (RV),2006,2015,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2012,2017,All Makes
+Vehicles Under 7.5 Tonnes,2013,2017,All Makes
+Motorcycle/ATV,2014,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2006,2011,All Makes
+Boat,2006,2012,All Makes
+Plant,2006,2013,All Makes
+Recreational Vehicle (RV),2006,2014,All Makes
+Vehicles Under 7.5 Tonnes,2006,2015,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2008,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2012,2017,All Makes
+Motorcycle/ATV,2013,2017,All Makes
+HGV,2014,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2006,2011,All Makes
+Plant,2006,2012,All Makes
+Recreational Vehicle (RV),2006,2013,All Makes
+Vehicles Under 7.5 Tonnes,2006,2014,All Makes
+Motorcycle/ATV,2006,2015,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2016,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2006,2011,All Makes
+Vehicles Under 7.5 Tonnes,2006,2012,All Makes
+Motorcycle/ATV,2006,2013,All Makes
+HGV,2006,2014,All Makes
+Agricultural,2006,2015,All Makes
+Boat,2006,2016,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2012,2017,All Makes
+Boat,2013,2017,All Makes
+Plant,2014,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2011,All Makes
+Motorcycle/ATV,2006,2012,All Makes
+HGV,2006,2013,All Makes
+Agricultural,2006,2014,All Makes
+Boat,2006,2015,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2006,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2012,2017,All Makes
+Plant,2013,2017,All Makes
+Recreational Vehicle (RV),2014,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2006,2011,All Makes
+HGV,2006,2012,All Makes
+Agricultural,2006,2013,All Makes
+Boat,2006,2014,All Makes
+Plant,2006,2015,All Makes
+Recreational Vehicle (RV),2006,2016,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2009,2017,All Makes
+Motorcycle/ATV,2010,2017,All Makes
+HGV,2011,2017,All Makes
+Agricultural,2006,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2012,2017,All Makes
+Recreational Vehicle (RV),2013,2017,All Makes
+Vehicles Under 7.5 Tonnes,2014,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2006,2011,All Makes
+Agricultural,2006,2012,All Makes
+Boat,2006,2013,All Makes
+Plant,2006,2014,All Makes
+Recreational Vehicle (RV),2006,2015,All Makes
+Vehicles Under 7.5 Tonnes,2006,2016,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2008,2017,All Makes
+Motorcycle/ATV,2009,2017,All Makes
+HGV,2010,2017,All Makes
+Agricultural,2011,2017,All Makes
+Boat,2006,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2012,2017,All Makes
+Vehicles Under 7.5 Tonnes,2013,2017,All Makes
+Motorcycle/ATV,2014,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2006,2011,All Makes
+Boat,2006,2012,All Makes
+Plant,2006,2013,All Makes
+Recreational Vehicle (RV),2006,2014,All Makes
+Vehicles Under 7.5 Tonnes,2006,2015,All Makes
+Motorcycle/ATV,2006,2016,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2008,2017,All Makes
+Plant,2007,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2008,2017,All Makes
+HGV,2009,2017,All Makes
+Agricultural,2010,2017,All Makes
+Boat,2011,2017,All Makes
+Plant,2006,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2012,2017,All Makes
+Motorcycle/ATV,2013,2017,All Makes
+HGV,2014,2017,All Makes
 Agricultural,2006,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2006,2011,All Makes
+Plant,2006,2012,All Makes
+Recreational Vehicle (RV),2006,2013,All Makes
+Vehicles Under 7.5 Tonnes,2006,2014,All Makes
+Motorcycle/ATV,2006,2015,All Makes
+HGV,2006,2016,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2006,2016,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2007,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2007,2017,All Makes
+HGV,2008,2017,All Makes
+Agricultural,2009,2017,All Makes
+Boat,2010,2017,All Makes
+Plant,2011,2017,All Makes
+Recreational Vehicle (RV),2006,2017,All Makes
+Vehicles Under 7.5 Tonnes,2006,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2012,2017,All Makes
+HGV,2013,2017,All Makes
+Agricultural,2014,2017,All Makes
 Boat,2006,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
+Agricultural,2007,2017,All Makes
+Boat,2008,2017,All Makes
+Plant,2009,2017,All Makes
+Recreational Vehicle (RV),2010,2017,All Makes
+Vehicles Under 7.5 Tonnes,2011,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2006,2011,All Makes
+Recreational Vehicle (RV),2006,2012,All Makes
+Vehicles Under 7.5 Tonnes,2006,2013,All Makes
+Motorcycle/ATV,2006,2014,All Makes
+HGV,2006,2015,All Makes
+Agricultural,2006,2016,All Makes
+Boat,2007,2017,All Makes
+Plant,2006,2016,All Makes
+Recreational Vehicle (RV),2008,2017,All Makes
+Vehicles Under 7.5 Tonnes,2007,2017,All Makes
+Motorcycle/ATV,2006,2017,All Makes
+HGV,2007,2017,All Makes
+Agricultural,2008,2017,All Makes
+Boat,2009,2017,All Makes
+Plant,2010,2017,All Makes
+Recreational Vehicle (RV),2011,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
 Motorcycle/ATV,2006,2017,All Makes
 HGV,2006,2017,All Makes
 Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
-Plant,2006,2017,All Makes
-Recreational Vehicle (RV),2006,2017,All Makes
-Vehicles Under 7.5 Tonnes,2006,2017,All Makes
-Motorcycle/ATV,2006,2017,All Makes
-HGV,2006,2017,All Makes
-Agricultural,2006,2017,All Makes
-Boat,2006,2017,All Makes
+Boat,2007,2017,All Makes
+Plant,2008,2017,All Makes
+Recreational Vehicle (RV),2009,2017,All Makes
+Vehicles Under 7.5 Tonnes,2010,2017,All Makes
+Motorcycle/ATV,2011,2017,All Makes
+HGV,2012,2017,All Makes
+Agricultural,2013,2017,All Makes
+Boat,2014,2017,All Makes
 Plant,2006,2017,All Makes
 Recreational Vehicle (RV),2006,2017,All Makes
 Vehicles Under 7.5 Tonnes,2006,2017,All Makes
