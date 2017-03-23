@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 
-<dpl filename="REPOSITORY/C3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
+<dpl filename="REPOSITORY/appvanceC3Seller_Perf/Member/G2/UK_QA/TestData/G2M_UKQA_TC6-9-10_UserIDs.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g2-member-qa4.copart.co.uk/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -433,6 +433,35 @@
 
 
 <step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="31">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc="clk Home" isThinkTime='false' isCommented='false' sequence="32">
+	<dialect type="sahi">
+		<accessor type='' value='' selected="false"/>
+		<accessor type="link(&quot;Home (current)&quot;)" value="link(&quot;Home (current)&quot;)" selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type='' attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="wait" value="1000" type="web" desc='' isThinkTime='false' isCommented='false' sequence="33">
 	<dialect type="sahi">
 		<accessor type='' value='' selected="false"/>
 	</dialect>
