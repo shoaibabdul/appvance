@@ -115,7 +115,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="10"/>
-      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="maxSizeReponseSavings" value="true"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
@@ -171,7 +171,7 @@
   </options>
   <templates>
     <controller name="UTP_G2MUKQA_SmokeTest">
-      <round time="30" name="Executions per User">
+      <round name="Executions per User">
         <testcase name="G2M_UKQA_TC1_Pub_HPNav" executions="1"/>
         <testcase name="G2M_UKQA_TC2_Pub_VF" executions="1"/>
         <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" executions="1"/>
