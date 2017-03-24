@@ -24,8 +24,8 @@
     <defaultdirectory/>
     <basicName>Balram Anthareddy</basicName>
     <creator>Balram</creator>
-    <versions>v1.1</versions>
-    <categorization>G2M UK QA</categorization>
+    <versions>UTP</versions>
+    <categorization>G2M UK QA4</categorization>
     <links>    </links>
   </basics>
   <resources>
@@ -55,7 +55,7 @@
     <resource name="G2M_UKQA_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../TestData/G2M_UKQA_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2MUK" type="EC2" instantiate="none" terminate="none" reboot="never" amount="12" config="SERVER/C:/Builds/utp3.1-7345884.warmup.cloud"/>
+    <cloud name="G2MUK" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -114,10 +114,10 @@
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="false"/>
-      <opt name="PercentageLogsSaved" value="0"/>
+      <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
       <opt name="maxSizeReponseSavings" value="true"/>
-      <opt name="sizeValueResponseSavings" value="0"/>
+      <opt name="sizeValueResponseSavings" value="64"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
@@ -170,8 +170,26 @@
     </options>
   </options>
   <templates>
-    <controller name="G2M_QAUK_LT_300U">
-      <round time="30" name="30 Minutes"/>
+    <controller name="UTP_G2MUKQA_SmokeTest">
+      <round time="30" name="Executions per User">
+        <testcase name="G2M_UKQA_TC1_Pub_HPNav" executions="1"/>
+        <testcase name="G2M_UKQA_TC2_Pub_VF" executions="1"/>
+        <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" executions="1"/>
+        <testcase name="G2M_UKQA_TC4_Pub_SalesList" executions="1"/>
+        <testcase name="G2M_UKQA_TC5_Pub_HS" executions="1"/>
+        <testcase name="G2M_UKQA_TC6_Mem_HPNav" executions="1"/>
+        <testcase name="G2M_UKQA_TC7_Mem_VF" executions="1"/>
+        <testcase name="G2M_UKQA_TC8_Mem_LotNoS" executions="1"/>
+        <testcase name="G2M_UKQA_TC9_Mem_SalesList" executions="1"/>
+        <testcase name="G2M_UKQA_TC10_Mem_HS" executions="1"/>
+        <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" executions="1"/>
+        <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" executions="1"/>
+        <testcase name="G2M_UKQA_TC13_Mem_WatchList" executions="1"/>
+        <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" executions="1"/>
+        <testcase name="G2M_UKQA_TC15_Mem_CompLots" executions="1"/>
+        <testcase name="G2M_UKQA_TC16_Mem_LotsWL" executions="1"/>
+        <testcase name="G2M_UKQA_TC17_Mem_SavedS" executions="1"/>
+      </round>
     </controller>
     <testcase name="G2M_UKQA_TC1_Pub_HPNav">
       <test>
@@ -290,25 +308,25 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="loadtest" subtype="performance">
-    <iteration name="G2M_QAUK_LT_300U" controller="G2M_QAUK_LT_300U" completiontype="duration">
-      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="18"/>
-      <testcase name="G2M_UKQA_TC2_Pub_VF" users="18"/>
-      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="18"/>
-      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="18"/>
-      <testcase name="G2M_UKQA_TC5_Pub_HS" users="18"/>
-      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="18"/>
-      <testcase name="G2M_UKQA_TC7_Mem_VF" users="18"/>
-      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="18"/>
-      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="18"/>
-      <testcase name="G2M_UKQA_TC10_Mem_HS" users="18"/>
-      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="18"/>
-      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="17"/>
-      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="17"/>
-      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="17"/>
-      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="17"/>
-      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="17"/>
-      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="17"/>
+  <execution type="loadtest" subtype="load">
+    <iteration name="UTP_G2MUKQA_SmokeTest" controller="UTP_G2MUKQA_SmokeTest" completiontype="exacttestcaseexecutions">
+      <testcase name="G2M_UKQA_TC1_Pub_HPNav" users="1"/>
+      <testcase name="G2M_UKQA_TC2_Pub_VF" users="1"/>
+      <testcase name="G2M_UKQA_TC3_Pub_LotNoSearch" users="1"/>
+      <testcase name="G2M_UKQA_TC4_Pub_SalesList" users="1"/>
+      <testcase name="G2M_UKQA_TC5_Pub_HS" users="1"/>
+      <testcase name="G2M_UKQA_TC6_Mem_HPNav" users="1"/>
+      <testcase name="G2M_UKQA_TC7_Mem_VF" users="1"/>
+      <testcase name="G2M_UKQA_TC8_Mem_LotNoS" users="1"/>
+      <testcase name="G2M_UKQA_TC9_Mem_SalesList" users="1"/>
+      <testcase name="G2M_UKQA_TC10_Mem_HS" users="1"/>
+      <testcase name="G2M_UKQA_TC11_Pub_VF_FreeS" users="1"/>
+      <testcase name="G2M_UKQA_TC12_Pub_LotLookUpS" users="1"/>
+      <testcase name="G2M_UKQA_TC13_Mem_WatchList" users="1"/>
+      <testcase name="G2M_UKQA_TC14_Mem_PrefEditSave" users="1"/>
+      <testcase name="G2M_UKQA_TC15_Mem_CompLots" users="1"/>
+      <testcase name="G2M_UKQA_TC16_Mem_LotsWL" users="1"/>
+      <testcase name="G2M_UKQA_TC17_Mem_SavedS" users="1"/>
     </iteration>
   </execution>
   <logs/>
