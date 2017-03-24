@@ -218,10 +218,11 @@
 
 <step action="click" value='' type="web" desc="Clk SignOut" isThinkTime='false' isCommented='false' sequence="16">
 	<dialect type="sahi">
-		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="false"/>
 		<accessor type="click" value="link(3)" selected="false"/>
 		<accessor type="click" value="link(&quot;http://g2-member-qa1.copart.com/home.html#/logout&quot;)" selected="false"/>
 		<accessor type="click" value="link(&quot;ng-binding&quot;)" selected="false"/>
+		<accessor type="span(&quot;Sign Out&quot;)" value="span(&quot;Sign Out&quot;)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
