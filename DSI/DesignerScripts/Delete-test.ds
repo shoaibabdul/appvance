@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='Delete-test' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://www.nacion.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="click" value="span(&quot;Deportes&quot;)" selected="true"/>
+		<accessor type="click" value="span(5)" selected="false"/>
+		<accessor type="click" value="span(&quot;tx[1]&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//nav[@id='nav']/div/ul/li[2]/a/span&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//nav/div/ul/li[2]/a/span&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
