@@ -55,7 +55,7 @@
     <resource name="G2M_TC12_LotNo_LookUpSearch.csv" type="csv" path="{scenario}/../Testdata/G2M_TC12_LotNo_LookUpSearch.csv"/>
   </resources>
   <testnodes>
-    <cloud name="G2MQA" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="G2MQA" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="4" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -64,6 +64,7 @@
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
     <dpl name="G2M_USQA_TC2" type="HashDPL" langtype="java" method="setup">
