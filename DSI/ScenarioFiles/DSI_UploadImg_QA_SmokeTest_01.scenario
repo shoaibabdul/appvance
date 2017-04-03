@@ -70,7 +70,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="10"/>
-      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="maxSizeReponseSavings" value="true"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
@@ -102,8 +102,8 @@
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
-      <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="false"/>
+      <opt name="takeSnapshot" value="true"/>
+      <opt name="debugModeSahi" value="true"/>
       <opt name="domComplete" value="true"/>
       <opt name="replaceAjaxTime" value="true"/>
       <opt name="ajaxTimeout" value="10"/>
