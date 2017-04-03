@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="none" terminate="none" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master8972995.cloud"/>
+    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -70,6 +70,8 @@
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="maxSizeReponseSavings" value="true"/>
+      <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
@@ -103,6 +105,7 @@
       <opt name="debugModeSahi" value="false"/>
       <opt name="domComplete" value="true"/>
       <opt name="replaceAjaxTime" value="true"/>
+      <opt name="ajaxTimeout" value="10"/>
     </options>
     <options type="har">
       <opt name="connectionResetMarksTestcaseFailure" value="false"/>
