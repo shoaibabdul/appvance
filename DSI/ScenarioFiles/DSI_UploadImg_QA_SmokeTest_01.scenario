@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="CopartWindows$1234"/>
+    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
