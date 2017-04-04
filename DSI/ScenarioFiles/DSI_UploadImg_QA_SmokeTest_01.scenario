@@ -71,7 +71,7 @@
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="maxSizeReponseSavings" value="true"/>
+      <opt name="maxSizeReponseSavings" value="false"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
