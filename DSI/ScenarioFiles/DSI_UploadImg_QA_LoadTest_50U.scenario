@@ -125,7 +125,7 @@
     </options>
   </options>
   <templates>
-    <controller name="DSI_QA_LT_DryRun_01">
+    <controller name="DSI_QA_LT_LoadTest_50U">
       <round time="15" name="15 Minutes"/>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
@@ -147,7 +147,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="duration">
+    <iteration name="DSI_QA_LT_LoadTest_50U" controller="DSI_QA_LT_LoadTest_50U" completiontype="duration">
       <testcase name="TC1_DSI_US_UploadImg" users="25"/>
       <testcase name="TC2_DSI_UK_UploadImg" users="25"/>
     </iteration>
