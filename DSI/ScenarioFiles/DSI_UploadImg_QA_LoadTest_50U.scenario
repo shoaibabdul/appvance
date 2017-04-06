@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
+    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="4" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -68,9 +68,8 @@
     <options type="apc">
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
-      <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="10"/>
-      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="EnableSavingLogs" value="false"/>
+      <opt name="PercentageLogsSaved" value="0"/>
       <opt name="maxSizeReponseSavings" value="false"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
