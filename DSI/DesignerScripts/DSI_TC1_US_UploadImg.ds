@@ -131,8 +131,8 @@
 
 <step action="setValue" value="&quot;$US_LotNumber&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
-		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
-		<accessor type="setValue" value="textbox(&quot;input_4&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;input_4&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(0)" selected="false"/>
 		<accessor type="setValue" value="textbox(&quot;ng-untouched md-input ng-valid-pattern ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required&quot;)" selected="false"/>
 	</dialect>
