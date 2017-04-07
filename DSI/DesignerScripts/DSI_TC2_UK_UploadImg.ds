@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 <accessorprefs values=""/>
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="{ds}/../TestData/DSI_UK_Testdata.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://c-dsi-qa4.copart.com/&quot;" type="web" desc="Launch URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -52,7 +52,7 @@
 
 
 
-<step action="setValue" value="&quot;Test.DSI13@corp.copart.com&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
+<step action="setValue" value="&quot;$UK_UserID&quot;" type="web" desc="Enter UserID" isThinkTime='false' isCommented='false' sequence="4">
 	<dialect type="sahi">
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="true"/>
 		<accessor type="setValue" value="emailbox(&quot;username&quot;)" selected="false"/>
@@ -78,7 +78,7 @@
 
 
 
-<step action="setValue" value="&quot;@uctionSV067!&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$Password&quot;" type="web" desc="Enter Password" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="true"/>
 		<accessor type="setValue" value="password(&quot;password&quot;)" selected="false"/>
@@ -129,7 +129,7 @@
 
 
 
-<step action="setValue" value="&quot;51299486&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="10">
+<step action="setValue" value="&quot;$UK_LotNumber&quot;" type="web" desc="Enter Lot No" isThinkTime='false' isCommented='false' sequence="10">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(&quot;lotnumber&quot;)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;input_4&quot;)" selected="false"/>
