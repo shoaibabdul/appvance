@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 <accessorprefs values=""/>
-<dpl filename="" exectype="" errorhandling=""/>
+<dpl filename="" exectype="" errorhandling="stop"/>
 
 <step action="wait" value="5008" type="web" desc='' isThinkTime="true" isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -17,7 +17,7 @@
 
 
 
-<step action="navigateTo" value="&quot;https://g2-member-qa4.copart.com/&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+<step action="navigateTo" value="&quot;https://g2-member-qa4.copart.com/&quot;" type="web" desc="Launching URL" isThinkTime='false' isCommented='false' sequence="1">
 	<dialect type="sahi">
 		<accessor type="navigateTo" value='' selected="true"/>
 	</dialect>
@@ -39,7 +39,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+<step action="click" value='' type="web" desc="Clk VF" isThinkTime='false' isCommented='false' sequence="3">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Vehicle Finder&quot;)" selected="true"/>
 		<accessor type="click" value="link(25)" selected="false"/>
@@ -66,7 +66,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+<step action="click" value='' type="web" desc="Clk SL" isThinkTime='false' isCommented='false' sequence="5">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Sales List&quot;)" selected="true"/>
 		<accessor type="click" value="link(26)" selected="false"/>
@@ -93,7 +93,7 @@
 
 
 
-<step action="setValue" value="&quot;50022036&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+<step action="setValue" value="&quot;50022036&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="7">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;my_textarea ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
@@ -118,7 +118,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+<step action="click" value='' type="web" desc="Clk SearchButton" isThinkTime='false' isCommented='false' sequence="9">
 	<dialect type="sahi">
 		<accessor type="click" value="italic(&quot;fa fa-search&quot;)" selected="true"/>
 		<accessor type="click" value="italic(0)" selected="false"/>
@@ -142,7 +142,7 @@
 
 
 
-<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="11">
+<step action="click" value='' type="web" desc="Clk HomePage" isThinkTime='false' isCommented='false' sequence="11">
 	<dialect type="sahi">
 		<accessor type="click" value="link(&quot;Home (current)&quot;)" selected="true"/>
 		<accessor type="click" value="link(23)" selected="false"/>
