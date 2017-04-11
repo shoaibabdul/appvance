@@ -4,7 +4,7 @@
 <metainfo>
 </metainfo>
 <accessorprefs values=""/>
-<dpl filename="" exectype="" errorhandling="stop"/>
+<dpl filename="{ds}/../Testdata/G2M_TC3_LotNumbers.csv" exectype="runstepbystep" errorhandling="stop"/>
 
 <step action="navigateTo" value="&quot;https://g2-member-qa4.copart.com/&quot;" type="web" desc="Launching URL" isThinkTime='false' isCommented='false' sequence="0">
 	<dialect type="sahi">
@@ -82,7 +82,7 @@
 
 
 
-<step action="setValue" value="&quot;50022036&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="6">
+<step action="setValue" value="&quot;$LotNumbers&quot;" type="web" desc="Enter LotNo" isThinkTime='false' isCommented='false' sequence="6">
 	<dialect type="sahi">
 		<accessor type="setValue" value="textbox(0)" selected="true"/>
 		<accessor type="setValue" value="textbox(&quot;my_textarea ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;)" selected="false"/>
