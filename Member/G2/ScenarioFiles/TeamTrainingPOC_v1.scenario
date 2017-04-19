@@ -119,7 +119,7 @@
   </options>
   <templates>
     <controller name="G2M Sample Training Test">
-      <round time="10" name="10 Minutes"/>
+      <round time="5" name="5 Minutes"/>
     </controller>
     <testcase name="TeamTraining_POC">
       <test>
@@ -134,7 +134,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="G2M Sample Training Test" controller="G2M Sample Training Test" completiontype="duration">
-      <testcase name="TeamTraining_POC" users="1"/>
+      <testcase name="TeamTraining_POC" users="10"/>
     </iteration>
   </execution>
   <logs/>
