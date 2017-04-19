@@ -123,7 +123,9 @@
     </controller>
     <testcase name="TeamTraining_POC">
       <test>
-        <run name="TeamTrainingPOC" langtype="ds" resource="TeamTraining_POC1.ds" testclass="Sahi" method="firefox"/>
+        <run name="TeamTrainingPOC" langtype="ds" resource="TeamTraining_POC1.ds" testclass="Sahi" method="firefox">
+          <argument name="Untitled1" method="getNextData" dpl="TC3_TD"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
