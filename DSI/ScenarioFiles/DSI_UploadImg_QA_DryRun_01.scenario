@@ -70,7 +70,7 @@
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="10"/>
-      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="maxSizeReponseSavings" value="false"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
@@ -102,8 +102,8 @@
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
-      <opt name="takeSnapshot" value="false"/>
-      <opt name="debugModeSahi" value="false"/>
+      <opt name="takeSnapshot" value="true"/>
+      <opt name="debugModeSahi" value="true"/>
       <opt name="domComplete" value="true"/>
       <opt name="replaceAjaxTime" value="true"/>
       <opt name="ajaxTimeout" value="10"/>
@@ -148,8 +148,8 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="DSI_QA_LT_DryRun_01" controller="DSI_QA_LT_DryRun_01" completiontype="duration">
-      <testcase name="TC1_DSI_US_UploadImg" users="5"/>
-      <testcase name="TC2_DSI_UK_UploadImg" users="5"/>
+      <testcase name="TC1_DSI_US_UploadImg" users="10"/>
+      <testcase name="TC2_DSI_UK_UploadImg" users="10"/>
     </iteration>
   </execution>
   <logs/>
