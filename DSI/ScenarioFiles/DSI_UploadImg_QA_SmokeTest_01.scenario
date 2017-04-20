@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="Cloud1" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="1" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
+    <cloud name="Cloud1" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="2" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -126,10 +126,7 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_SmokeTest_01">
-      <round time="5" name="Executions per User">
-        <testcase name="TC1_DSI_US_UploadImg" executions="1"/>
-        <testcase name="TC2_DSI_UK_UploadImg" executions="1"/>
-      </round>
+      <round time="15" name="15 Minutes"/>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
@@ -150,7 +147,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="exacttestcaseexecutions">
+    <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="duration">
       <testcase name="TC1_DSI_US_UploadImg" users="10"/>
       <testcase name="TC2_DSI_UK_UploadImg" users="10"/>
     </iteration>
