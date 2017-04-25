@@ -26,7 +26,7 @@
     <creator>Balram</creator>
     <versions>G2M V1</versions>
     <categorization/>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="TeamTraining_POC1.ds" type="ds" path="{scenario}/../DesignerScripts/TeamTraining_POC1.ds"/>
@@ -92,6 +92,9 @@
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
+    </options>
+    <options type="ds3">
+      <opt name="reuseBrowser" value="false"/>
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
