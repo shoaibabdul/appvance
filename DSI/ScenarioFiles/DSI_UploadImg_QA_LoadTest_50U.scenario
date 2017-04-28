@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="4" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
+    <cloud name="DSI" type="EC2" instantiate="startAll" terminate="stopAll" reboot="never" amount="10" config="SERVER/C:/Builds/warm.up.master.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -68,9 +68,9 @@
     <options type="apc">
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
-      <opt name="EnableSavingLogs" value="false"/>
-      <opt name="PercentageLogsSaved" value="0"/>
-      <opt name="AlwaysSaveLogOnFailure" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="PercentageLogsSaved" value="10"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="maxSizeReponseSavings" value="false"/>
       <opt name="sizeValueResponseSavings" value="0"/>
       <opt name="SleepTime" value="0"/>
@@ -81,7 +81,7 @@
       <opt name="FixedThinkTime" value="0"/>
       <opt name="StandardDeviation" value="0"/>
       <opt name="ThinkTimeMin" value="1000"/>
-      <opt name="ThinkTimeMax" value="8000"/>
+      <opt name="ThinkTimeMax" value="5000"/>
       <opt name="IntervalTime" value="0"/>
       <opt name="FixedIntervalTime" value="0"/>
       <opt name="MinIntervalTime" value="0"/>
@@ -99,6 +99,9 @@
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
+    </options>
+    <options type="ds3">
+      <opt name="reuseBrowser" value="false"/>
     </options>
     <options type="sahi">
       <opt name="clearCache" value="true"/>
