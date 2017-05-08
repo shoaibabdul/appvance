@@ -67,7 +67,7 @@
     </options>
     <options type="apc">
       <opt name="SummaryStepIsEmpty" value="false"/>
-      <opt name="DynamicIpAddress" value="true"/>
+      <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
