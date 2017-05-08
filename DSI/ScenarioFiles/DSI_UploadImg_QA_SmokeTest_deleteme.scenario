@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost-1" location="http://ec2-54-152-210-4.compute-1.amazonaws.com:8080/TMServer/ws/TestNode"/>
+    <node name="localhost-1" location="http://ec2-54-152-210-4.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="CopartWindows$1234"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
