@@ -44,7 +44,7 @@
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
     <bundle name="oracle" version="10.2.0.5"/>
-    <bundle name="mysql" version="5.1.39"/>
+    <bundle name="ds" version="3.0"/>
   </bundles>
   <datasources>
     <dpl name="DSI_TC1_US" type="HashDPL" langtype="java" method="setup">
@@ -69,7 +69,7 @@
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="true"/>
       <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="10"/>
+      <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
       <opt name="maxSizeReponseSavings" value="false"/>
       <opt name="sizeValueResponseSavings" value="0"/>
