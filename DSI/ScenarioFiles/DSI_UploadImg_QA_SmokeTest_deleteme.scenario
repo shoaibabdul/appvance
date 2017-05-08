@@ -148,7 +148,7 @@
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
-  <monitoring enablednodes="true" enabledtarget="false"/>
+  <monitoring enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="duration">
       <testcase name="TC1_DSI_US_UploadImg" users="5"/>
