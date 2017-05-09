@@ -130,7 +130,10 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_SmokeTest_01">
-      <round time="10" name="10 Minutes"/>
+      <round time="10" name="Testcase Executions">
+        <testcase name="TC1_DSI_US_UploadImg" totalexecutions="2"/>
+        <testcase name="TC2_DSI_UK_UploadImg" totalexecutions="2"/>
+      </round>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
@@ -151,9 +154,9 @@
   </templates>
   <monitoring enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="duration">
-      <testcase name="TC1_DSI_US_UploadImg" users="5"/>
-      <testcase name="TC2_DSI_UK_UploadImg" users="5"/>
+    <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="testcaseexecutions">
+      <testcase name="TC1_DSI_US_UploadImg" users="2"/>
+      <testcase name="TC2_DSI_UK_UploadImg" users="2"/>
     </iteration>
   </execution>
   <logs/>
