@@ -35,7 +35,7 @@
     <resource name="DSI_UK_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_UK_Testdata.csv"/>
   </resources>
   <testnodes>
-    <node name="Testnode" location="http://ec2-52-91-112-131.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="Testnode" location="http://ec2-54-210-137-77.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -130,7 +130,7 @@
   </options>
   <templates>
     <controller name="DSI_QA_LT_SmokeTest_01">
-      <round time="5" name="5 Minutes"/>
+      <round time="10" name="10 Minutes"/>
     </controller>
     <testcase name="TC1_DSI_US_UploadImg">
       <test>
