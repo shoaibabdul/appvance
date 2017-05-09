@@ -235,8 +235,8 @@
 
 <step action="click" value='' type="web" desc="AutoEn1" isThinkTime='false' isCommented='false' sequence="18">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="false"/>
-		<accessor type="click" value="span(22)" selected="true"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(22)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
@@ -260,10 +260,10 @@
 
 <step action="click" value='' type="web" desc="Save1" isThinkTime='false' isCommented='false' sequence="20">
 	<dialect type="sahi">
-		<accessor type="click" value="button(&quot;Save&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;Save&quot;)" selected="false"/>
 		<accessor type="click" value="button(&quot;md-companyX-theme btn md-raised md-button md-ink-ripple[1]&quot;)" selected="false"/>
 		<accessor type="click" value="button(57)" selected="false"/>
-		<accessor type="span(26)" value="span(26)" selected="false"/>
+		<accessor type="span(26)" value="span(26)" selected="true"/>
 	</dialect>
 	<dialect type="selenium">
 		<accessor attribute='' value="&quot;//button[10]&quot;" selected="true"/>
@@ -310,8 +310,8 @@
 
 <step action="click" value='' type="web" desc="AutoEn2" isThinkTime='false' isCommented='false' sequence="24">
 	<dialect type="sahi">
-		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="false"/>
-		<accessor type="click" value="span(22)" selected="true"/>
+		<accessor type="click" value="span(&quot;Auto Enhance&quot;)" selected="true"/>
+		<accessor type="click" value="span(22)" selected="false"/>
 		<accessor type="click" value="span(&quot;ng-scope[10]&quot;)" selected="false"/>
 	</dialect>
 	<dialect type="selenium">
