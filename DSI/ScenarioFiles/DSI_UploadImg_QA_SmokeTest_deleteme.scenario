@@ -36,7 +36,6 @@
   </resources>
   <testnodes>
     <node name="DSI-1" location="http://ec2-54-210-137-77.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
-    <node name="DSI-2" location="http://ec2-54-80-83-39.compute-1.amazonaws.com:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
