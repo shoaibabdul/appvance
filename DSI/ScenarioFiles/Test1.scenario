@@ -33,7 +33,7 @@
     <resource name="DSI_US_Testdata.csv" type="csv" path="{scenario}/../TestData/DSI_US_Testdata.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode"/>
+    <node name="localhost-1" location="http://localhost:8080/TMServer/ws/TestNode"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -43,6 +43,7 @@
     <bundle name="ds" version="3.0"/>
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
+    <bundle name="oracle" version="10.2.0.5"/>
   </bundles>
   <datasources>
     <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
