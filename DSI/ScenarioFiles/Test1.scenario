@@ -26,7 +26,7 @@
     <creator/>
     <versions/>
     <categorization/>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="DSI_TC1_US_UploadImg.ds" type="ds" path="{scenario}/../DesignerScripts/DSI_TC1_US_UploadImg.ds"/>
@@ -55,8 +55,13 @@
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
+      <opt name="ntlmEnabled" value="false"/>
+      <opt name="EnableHttpTimingDetailsLogging" value="false"/>
+      <opt name="ConsoleAsProxy" value="false"/>
     </options>
     <options type="apc">
+      <opt name="SummaryStepIsEmpty" value="false"/>
+      <opt name="DynamicIpAddress" value="true"/>
       <opt name="EnableSavingLogs" value="true"/>
       <opt name="PercentageLogsSaved" value="100"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
@@ -81,6 +86,8 @@
       <opt name="RampDownUsers" value="0"/>
       <opt name="RampDownSeconds" value="0"/>
       <opt name="MaxRampDownTime" value="0"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
       <opt name="global_concurrent_users" value="0"/>
       <opt name="testnode_concurrent_users" value="0"/>
     </options>
@@ -88,6 +95,7 @@
       <opt name="async" value="false"/>
     </options>
     <options type="ds3">
+      <opt name="reuseBrowser" value="false"/>
       <opt name="optionsTimings" value="actionDuration"/>
     </options>
     <options type="sahi">
@@ -99,11 +107,15 @@
       <opt name="ajaxTimeout" value="10"/>
     </options>
     <options type="har">
+      <opt name="connectionResetMarksTestcaseFailure" value="false"/>
+      <opt name="markRequestAsSteps" value="false"/>
+      <opt name="useHarResponses" value="false"/>
       <opt name="printDebugInfo" value="false"/>
       <opt name="doNotStopOnFailure" value="false"/>
     </options>
     <options type="selenium">
       <opt name="rc" value="true"/>
+      <opt name="synchronized" value="false"/>
     </options>
     <options type="seleniumrc">
       <opt name="listenport" value="6543"/>
