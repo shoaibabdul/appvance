@@ -115,7 +115,9 @@
     </controller>
     <testcase name="Testcase1">
       <test>
-        <run name="Untitled1" langtype="ds" resource="DSI_TC1_US_UploadImg.ds" testclass="Sahi" method="chrome"/>
+        <run name="Untitled1" langtype="ds" resource="DSI_TC1_US_UploadImg.ds" testclass="Sahi" method="chrome">
+          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
