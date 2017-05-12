@@ -152,7 +152,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="DSI_QA_LT_SmokeTest_01" controller="DSI_QA_LT_SmokeTest_01" completiontype="duration">
-      <testcase name="TC1_DSI_US_UploadImg" users="1"/>
+      <testcase name="TC1_DSI_US_UploadImg" users="10"/>
       <testcase name="TC2_DSI_UK_UploadImg" users="1"/>
     </iteration>
   </execution>
